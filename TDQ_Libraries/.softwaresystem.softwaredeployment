@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:softwaredeployment="http://www.talend.org/cwm/foundation/softwaredeployment/2010">
-  <softwaredeployment:TdSoftwareSystem xmi:id="_9Os5sBTqEemVD4zWimUOgw" name="PostgreSQL" subtype="PostgreSQL" version="8.2.15"/>
-  <softwaredeployment:TdSoftwareSystem xmi:id="_fW-UUM_cEem8vqXhbZem1A" name="PostgreSQL" subtype="PostgreSQL" version="9.3.9"/>
-  <softwaredeployment:TdSoftwareSystem xmi:id="_86RjIE5tEeqprNbx3_OvQA" name="PostgreSQL" subtype="PostgreSQL" version="10.10"/>
-  <softwaredeployment:TdSoftwareSystem xmi:id="_AKU-oE5uEeqprNbx3_OvQA" name="PostgreSQL" subtype="PostgreSQL" version="9.5.10"/>
-</xmi:XMI>
