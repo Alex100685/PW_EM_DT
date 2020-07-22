@@ -23,7 +23,7 @@
     <project.distribution-management.repository.id>${project.distributionManagement.repository.id}</project.distribution-management.repository.id>
     <maven.build.timestamp.format>yyyy-MM-dd HHmmssSSS</maven.build.timestamp.format>
     <talend.project.name>PW_EM_DT</talend.project.name>
-    <talend.product.version>7.2.1.20200413_0821-patch</talend.product.version>
+    <talend.product.version>7.2.1.20190620_1446</talend.product.version>
     <talend.job.finalName>j_rally_ingestion_0_1</talend.job.finalName>
     <talend.pigudf.groupid>org.example.pw_em_dt.pigudf</talend.pigudf.groupid>
     <talend.routine.groupid>org.example.pw_em_dt.code</talend.routine.groupid>
@@ -50,11 +50,6 @@
     <dependency>
       <groupId>org.talend.libraries</groupId>
       <artifactId>activation</artifactId>
-      <version>6.0.0</version>
-    </dependency>
-    <dependency>
-      <groupId>org.talend.libraries</groupId>
-      <artifactId>antlr-runtime-3.5.2</artifactId>
       <version>6.0.0</version>
     </dependency>
     <dependency>
@@ -203,9 +198,9 @@
       <version>3.3.1</version>
     </dependency>
     <dependency>
-      <groupId>org.talend.libraries</groupId>
-      <artifactId>dom4j-1.6.1</artifactId>
-      <version>6.0.0</version>
+      <groupId>dom4j</groupId>
+      <artifactId>dom4j</artifactId>
+      <version>1.6.1</version>
     </dependency>
     <dependency>
       <groupId>org.talend.libraries</groupId>
@@ -314,9 +309,9 @@
       <version>2.2.1</version>
     </dependency>
     <dependency>
-      <groupId>org.talend.libraries</groupId>
-      <artifactId>log4j-1.2.17</artifactId>
-      <version>6.0.0</version>
+      <groupId>log4j</groupId>
+      <artifactId>log4j</artifactId>
+      <version>1.2.17</version>
     </dependency>
     <dependency>
       <groupId>ch.qos.logback</groupId>
@@ -425,11 +420,6 @@
     </dependency>
     <dependency>
       <groupId>org.talend.libraries</groupId>
-      <artifactId>org.talend.dataquality.parser</artifactId>
-      <version>6.0.0</version>
-    </dependency>
-    <dependency>
-      <groupId>org.talend.libraries</groupId>
       <artifactId>security-common-7.2.1</artifactId>
       <version>6.0.0</version>
     </dependency>
@@ -439,14 +429,14 @@
       <version>2.7.2</version>
     </dependency>
     <dependency>
-      <groupId>org.talend.libraries</groupId>
+      <groupId>org.slf4j</groupId>
       <artifactId>slf4j-api</artifactId>
-      <version>1.7.26</version>
+      <version>1.7.10</version>
     </dependency>
     <dependency>
       <groupId>org.slf4j</groupId>
       <artifactId>slf4j-api</artifactId>
-      <version>1.7.10</version>
+      <version>1.7.26</version>
     </dependency>
     <dependency>
       <groupId>org.talend.libraries</groupId>

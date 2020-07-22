@@ -23,7 +23,7 @@
     <project.distribution-management.repository.id>${project.distributionManagement.repository.id}</project.distribution-management.repository.id>
     <maven.build.timestamp.format>yyyy-MM-dd HHmmssSSS</maven.build.timestamp.format>
     <talend.project.name>PW_EM_DT</talend.project.name>
-    <talend.product.version>7.2.1.20200324_1406-patch</talend.product.version>
+    <talend.product.version>7.2.1.20190620_1446</talend.product.version>
     <talend.job.finalName>box_dl_int_mastercontrol_table_0_1</talend.job.finalName>
     <talend.pigudf.groupid>org.example.pw_em_dt.pigudf</talend.pigudf.groupid>
     <talend.routine.groupid>org.example.pw_em_dt.code</talend.routine.groupid>
@@ -50,11 +50,6 @@
     <dependency>
       <groupId>org.talend.libraries</groupId>
       <artifactId>activation</artifactId>
-      <version>6.0.0</version>
-    </dependency>
-    <dependency>
-      <groupId>org.talend.libraries</groupId>
-      <artifactId>antlr-runtime-3.5.2</artifactId>
       <version>6.0.0</version>
     </dependency>
     <dependency>
@@ -119,9 +114,9 @@
       <version>1.18</version>
     </dependency>
     <dependency>
-      <groupId>org.talend.libraries</groupId>
-      <artifactId>commons-io-2.4</artifactId>
-      <version>6.0.0</version>
+      <groupId>commons-io</groupId>
+      <artifactId>commons-io</artifactId>
+      <version>2.4</version>
     </dependency>
     <dependency>
       <groupId>commons-lang</groupId>
@@ -229,9 +224,9 @@
       <version>6.0.0</version>
     </dependency>
     <dependency>
-      <groupId>org.talend.libraries</groupId>
-      <artifactId>log4j-1.2.17</artifactId>
-      <version>6.0.0</version>
+      <groupId>log4j</groupId>
+      <artifactId>log4j</artifactId>
+      <version>1.2.17</version>
     </dependency>
     <dependency>
       <groupId>ch.qos.logback</groupId>
@@ -255,28 +250,18 @@
     </dependency>
     <dependency>
       <groupId>org.talend.libraries</groupId>
-      <artifactId>minimal-json-0.9.4</artifactId>
+      <artifactId>minimal-json-0.9.3</artifactId>
       <version>6.0.0</version>
     </dependency>
     <dependency>
       <groupId>org.talend.libraries</groupId>
-      <artifactId>namedpipe-1.0</artifactId>
+      <artifactId>minimal-json-0.9.4</artifactId>
       <version>6.0.0</version>
     </dependency>
     <dependency>
       <groupId>org.talend.libraries</groupId>
       <artifactId>nekohtml-1.9.22</artifactId>
       <version>6.0.0-SNAPSHOT</version>
-    </dependency>
-    <dependency>
-      <groupId>org.talend.libraries</groupId>
-      <artifactId>om-cafutil-1.0</artifactId>
-      <version>6.0.0-SNAPSHOT</version>
-    </dependency>
-    <dependency>
-      <groupId>org.talend.libraries</groupId>
-      <artifactId>org.talend.dataquality.parser</artifactId>
-      <version>6.0.0</version>
     </dependency>
     <dependency>
       <groupId>org.talend.libraries</groupId>
@@ -304,9 +289,9 @@
       <version>4.1.0-20190523141255_modified_talend</version>
     </dependency>
     <dependency>
-      <groupId>org.talend.libraries</groupId>
-      <artifactId>postgresql-8.3-603.jdbc3</artifactId>
-      <version>6.0.0</version>
+      <groupId>postgresql</groupId>
+      <artifactId>postgresql</artifactId>
+      <version>8.4-703.jdbc4</version>
     </dependency>
     <dependency>
       <groupId>org.talend.libraries</groupId>

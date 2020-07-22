@@ -454,6 +454,11 @@
     <module>jobs/process/EDL_Framework_Aurora/edl_aurora_data_pipe_for_multiload_aurora_0.1</module>
     <module>jobs/process/EDL_Framework_Aurora/edl_greenplum_data_pipe_for_multiload_aurora_0.1</module>
     <module>jobs/process/Governance/j_rbadet_tableau_access_0.1</module>
+    <module>jobs/process_storm/End_to_end/e2em_tableau_extract_refresh_0.1</module>
+    <module>jobs/process/CHILD_JOBS/BOX_Test/copy_of_box_dl_generic_ingestion_0.2</module>
+    <module>jobs/process/CHILD_JOBS/BOX_Test/copy_of_box_dl_generic_ingestion_0.3</module>
+    <module>jobs/process/CHILD_JOBS/BOX_Test/j_box_mapping_file_0.1</module>
+    <module>jobs/process/CHILD_JOBS/BOX_Test/j_data_load_0.1</module>
   </modules>
   <properties>
     <signer.version>7.2.1</signer.version>

@@ -23,7 +23,7 @@
     <project.distribution-management.repository.id>${project.distributionManagement.repository.id}</project.distribution-management.repository.id>
     <maven.build.timestamp.format>yyyy-MM-dd HHmmssSSS</maven.build.timestamp.format>
     <talend.project.name>PW_EM_DT</talend.project.name>
-    <talend.product.version>7.2.1.20200203_0812-patch</talend.product.version>
+    <talend.product.version>7.2.1.20190620_1446</talend.product.version>
     <talend.job.finalName>test_box_dl_generic_ingestion_a_0_3</talend.job.finalName>
     <talend.pigudf.groupid>org.example.pw_em_dt.pigudf</talend.pigudf.groupid>
     <talend.routine.groupid>org.example.pw_em_dt.code</talend.routine.groupid>
@@ -46,11 +46,6 @@
       <groupId>net.minidev</groupId>
       <artifactId>accessors-smart</artifactId>
       <version>1.1</version>
-    </dependency>
-    <dependency>
-      <groupId>org.talend.libraries</groupId>
-      <artifactId>antlr-runtime-3.5.2</artifactId>
-      <version>6.0.0</version>
     </dependency>
     <dependency>
       <groupId>org.ow2.asm</groupId>
@@ -98,9 +93,9 @@
       <version>6.0.0</version>
     </dependency>
     <dependency>
-      <groupId>org.talend.libraries</groupId>
-      <artifactId>commons-io-2.4</artifactId>
-      <version>6.0.0</version>
+      <groupId>commons-io</groupId>
+      <artifactId>commons-io</artifactId>
+      <version>2.4</version>
     </dependency>
     <dependency>
       <groupId>commons-lang</groupId>
@@ -198,9 +193,9 @@
       <version>6.0.0</version>
     </dependency>
     <dependency>
-      <groupId>org.talend.libraries</groupId>
-      <artifactId>log4j-1.2.17</artifactId>
-      <version>6.0.0</version>
+      <groupId>log4j</groupId>
+      <artifactId>log4j</artifactId>
+      <version>1.2.17</version>
     </dependency>
     <dependency>
       <groupId>ch.qos.logback</groupId>
@@ -234,18 +229,13 @@
     </dependency>
     <dependency>
       <groupId>org.talend.libraries</groupId>
-      <artifactId>org.talend.dataquality.parser</artifactId>
-      <version>6.0.0</version>
-    </dependency>
-    <dependency>
-      <groupId>org.talend.libraries</groupId>
       <artifactId>page_scraper</artifactId>
       <version>6.0.0-SNAPSHOT</version>
     </dependency>
     <dependency>
-      <groupId>org.talend.libraries</groupId>
-      <artifactId>postgresql-8.3-603.jdbc3</artifactId>
-      <version>6.0.0</version>
+      <groupId>postgresql</groupId>
+      <artifactId>postgresql</artifactId>
+      <version>8.4-703.jdbc4</version>
     </dependency>
     <dependency>
       <groupId>org.talend.libraries</groupId>
