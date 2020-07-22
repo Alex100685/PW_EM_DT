@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties">
-  <TalendProperties:Project xmi:id="_o6-S8ZAxEeifRow1DkYMwg" label="PW_EM_DT" description="" language="java" technicalLabel="PW_EM_DT" creationDate="2018-07-24T21:09:38.000+0530" author="_o6-S8pAxEeifRow1DkYMwg" productVersion="Talend Real-time Big Data Platform-7.2.1.20200203_0812-patch" url="{&quot;commitLogPattern&quot;:&quot;{0}&quot;,&quot;location&quot;:&quot;https://github.build.ge.com/gps-talend-dev/PW_EM_DT&quot;,&quot;settings&quot;:&quot;000&quot;,&quot;storage&quot;:&quot;git&quot;}" type="DQ" itemsRelationVersion="1.3">
+  <TalendProperties:Project xmi:id="_o6-S8ZAxEeifRow1DkYMwg" label="PW_EM_DT" description="" language="java" technicalLabel="PW_EM_DT" creationDate="2018-07-24T18:39:38.000+0300" author="_o6-S8pAxEeifRow1DkYMwg" productVersion="Talend Data Fabric-7.2.1.20190620_1446" url="{&quot;commitLogPattern&quot;:&quot;{0}&quot;,&quot;location&quot;:&quot;https://github.com/Alex100685/PW_EM_DT.git&quot;,&quot;settings&quot;:&quot;000&quot;,&quot;storage&quot;:&quot;git&quot;}" type="DI" itemsRelationVersion="1.3">
     <componentsSettings xmi:id="_33CV0JRVEequ7qqwr6Od0w" name="DI|tArray" family="Technical"/>
     <componentsSettings xmi:id="_33CV0ZRVEequ7qqwr6Od0w" name="DI|tHashInput" family="Technical"/>
     <componentsSettings xmi:id="_33CV0pRVEequ7qqwr6Od0w" name="DI|tHashOutput" family="Technical"/>
@@ -422,4 +422,6 @@
   <TalendProperties:User xmi:id="_EGGuoLYfEeqF36f5Gce_Ug" login="212595319" firstName="Manoj" lastName="Kumar" type="DQ" additionnalData="{}"/>
   <TalendProperties:User xmi:id="_EGKZALYfEeqF36f5Gce_Ug" login="Gokulnath.Varadhan@ge.com" firstName="Gokulnath" lastName="Varadhan" type="DQ" additionnalData="{}"/>
   <TalendProperties:User xmi:id="_nPwusL-QEeql-OJXv7mVjQ" login="Amarjeet.Kumar1@ge.com" firstName="Amarjeet" lastName="Kumar" type="DQ" additionnalData="{}"/>
+  <TalendProperties:User xmi:id="_UCiFMMwPEeqbYLtq4lIBow" login="security@company.com" firstName="security" lastName="security" type="DI" additionnalData="{}"/>
+  <TalendProperties:User xmi:id="_UCiFMcwPEeqbYLtq4lIBow" login="security@company.com" firstName="security" lastName="security" type="DI" additionnalData="{}"/>
 </xmi:XMI>
