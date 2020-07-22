@@ -295,7 +295,7 @@
     <contextParameter comment="" name="TALEND_PATH" prompt="TALEND_PATH?" promptNeeded="false" type="id_String" value="TALEND_PATH?"/>
   </context>
   <parameters>
-    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="128"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="160"/>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="544"/>
     <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value=""/>
     <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value=""/>
@@ -339,8 +339,8 @@
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" show="false" value=""/>
-    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" show="false" value="Warning"/>
     <elementParameter field="CHECK" name="PRINT_OPERATIONS" show="false" value="false"/>
     <elementParameter field="CHECK" name="DISABLE_ERROR" show="false" value="false"/>
     <elementParameter field="CHECK" name="DISABLE_WARNINGS" show="false" value="false"/>
@@ -389,24 +389,24 @@
     <elementParameter field="TEXT" name="FOOTER_LIBRARY" show="false" value=""/>
     <elementParameter field="TEXT" name="FOOTER_CODE" show="false" value=""/>
     <elementParameter field="TEXT" name="FOOTER_IMPORT" show="false" value=""/>
-    <routinesParameter id="_HmaXUHV5EeSKLdzYF6RhtA" name="DataOperation"/>
-    <routinesParameter id="_HnRS8HV5EeSKLdzYF6RhtA" name="Mathematical"/>
-    <routinesParameter id="_Hnjm0HV5EeSKLdzYF6RhtA" name="Numeric"/>
-    <routinesParameter id="_HnwbIHV5EeSKLdzYF6RhtA" name="Relational"/>
-    <routinesParameter id="_HpA_YHV5EeSKLdzYF6RhtA" name="SQLike"/>
-    <routinesParameter id="_Hn92gHV5EeSKLdzYF6RhtA" name="StringHandling"/>
-    <routinesParameter id="_HoZUUHV5EeSKLdzYF6RhtA" name="TalendDataGenerator"/>
-    <routinesParameter id="_Hok6gHV5EeSKLdzYF6RhtA" name="TalendDate"/>
-    <routinesParameter id="_HozkAHV5EeSKLdzYF6RhtA" name="TalendString"/>
-    <routinesParameter id="_maQgsHk3EeS7X5ngmleQlQ" name="DQTechnical"/>
-    <routinesParameter id="_maZDkHk3EeS7X5ngmleQlQ" name="DataQuality"/>
-    <routinesParameter id="_mWSmsHk3EeS7X5ngmleQlQ" name="DqStringHandling"/>
-    <routinesParameter id="_maiNgHk3EeS7X5ngmleQlQ" name="MDM"/>
     <routinesParameter id="_Hc9lgNd6EeOnOOburoyA_A" name="GEDynamicRoutine"/>
     <routinesParameter id="_4aqMYKq1EeOJ7OfbfHqp1A" name="GEroutines"/>
     <routinesParameter id="_6POf0NCdEeOM8OmeleCgvg" name="GPLoadRoutine"/>
-    <routinesParameter id="_BOtvUD5oEemAzodgCWkf4w" name="DataMasking"/>
-    <routinesParameter id="_BPLpYD5oEemAzodgCWkf4w" name="DataQualityDependencies"/>
+    <routinesParameter id="_v8dYsJAxEeifRow1DkYMwg" name="Mathematical"/>
+    <routinesParameter id="_v-lfoJAxEeifRow1DkYMwg" name="DataQualityDependencies"/>
+    <routinesParameter id="_v9QC4JAxEeifRow1DkYMwg" name="StringHandling"/>
+    <routinesParameter id="_vztFUJAxEeifRow1DkYMwg" name="DataOperation"/>
+    <routinesParameter id="_v9wZMJAxEeifRow1DkYMwg" name="TalendString"/>
+    <routinesParameter id="_v948EJAxEeifRow1DkYMwg" name="DataMasking"/>
+    <routinesParameter id="_v_OY0JAxEeifRow1DkYMwg" name="SQLike"/>
+    <routinesParameter id="_v9cQIJAxEeifRow1DkYMwg" name="TalendDate"/>
+    <routinesParameter id="_v81MIJAxEeifRow1DkYMwg" name="Relational"/>
+    <routinesParameter id="_v-3McJAxEeifRow1DkYMwg" name="DqStringHandling"/>
+    <routinesParameter id="_v-CtEJAxEeifRow1DkYMwg" name="DataQuality"/>
+    <routinesParameter id="_rJV7sIRxEeqbPcwPO7GjHA" name="TalendStringUtil"/>
+    <routinesParameter id="_v8uecJAxEeifRow1DkYMwg" name="Numeric"/>
+    <routinesParameter id="_v_En0JAxEeifRow1DkYMwg" name="DQTechnical"/>
+    <routinesParameter id="_v9WJgJAxEeifRow1DkYMwg" name="TalendDataGenerator"/>
   </parameters>
   <node componentName="tFileExist" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="320" posY="1120">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileExist_1"/>
@@ -455,61 +455,9 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_4"/>
   </node>
-  <node componentName="tGEGreenplumGPLoad" componentVersion="0.3" offsetLabelX="0" offsetLabelY="0" posX="352" posY="1248">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tGEGreenplumGPLoad_1"/>
-    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="postgres_id"/>
-    <elementParameter field="TEXT" name="TYPE" show="false" value="PostgreSQL"/>
-    <elementParameter field="TEXT" name="HOST" value="context.SOURCING_Server"/>
-    <elementParameter field="TEXT" name="PORT" value="context.SOURCING_Port"/>
-    <elementParameter field="TEXT" name="DBNAME" value="context.SOURCING_Database"/>
-    <elementParameter field="TEXT" name="SCHEMA_DB" value="((String)globalMap.get(&quot;row1.target_schema_orig&quot;))"/>
-    <elementParameter field="TEXT" name="USER" value="context.SOURCING_Login"/>
-    <elementParameter field="TEXT" name="PASS" value="context.SOURCING_Password"/>
-    <elementParameter field="DBTABLE" name="TABLE" value="((String)globalMap.get(&quot;row1.log_table_name&quot;)) + &quot;_stg&quot;"/>
-    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
-    <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
-    <elementParameter field="CHECK" name="USE_SL" value="true"/>
-    <elementParameter field="FILE" name="DATA_FILE" value="&quot;\&quot;&quot;+(String)globalMap.get(&quot;filetocheck&quot;)+&quot;\&quot;&quot;"/>
-    <elementParameter field="CHECK" name="GUESS_COLUMN_LIST" value="false"/>
-    <elementParameter field="TEXT" name="COLUMN_LIST" value="GPLoadRoutine.getGPLoadColumnList((String)globalMap.get(&quot;columnlist&quot;))"/>
-    <elementParameter field="TEXT" name="SOURCE_LOCALHOSTNAME" value="context.ETL_LOCALHOSTNAME"/>
-    <elementParameter field="TEXT" name="SOURCE_PORT" value="context.HAWQ_Source_Ports"/>
-    <elementParameter field="CHECK" name="USE_NAMED_PIPE" value="false"/>
-    <elementParameter field="TEXT" name="NAMED_PIPE" show="false" value="context.STOCK_ORACLE_DB_SharedConnection+&quot;GPLoader.pipe&quot;"/>
-    <elementParameter field="TABLE" name="UPDATE_OPTIONS" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="FinalData"/>
-      <elementValue elementRef="MATCH_KEY" value="false"/>
-      <elementValue elementRef="UPDATE_KEY" value="false"/>
-    </elementParameter>
-    <elementParameter field="TEXT" name="UPDATE_CONDITION" show="false" value="&quot;&quot;"/>
-    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
-    <elementParameter field="LABEL" name="NOTE1" value="* these fields doesn't needs to be filled can be left empty: &quot;&quot;"/>
-    <elementParameter field="CHECK" name="USE_EXISTING_CLT_FILE" value="false"/>
-    <elementParameter field="FILE" name="CLT_FILE" show="false" value="&quot;/Users/502294012/Downloads/Talend-Studio-r111943-V5.4.1/workspace/gpload.ctl&quot;"/>
-    <elementParameter field="CHECK" name="CSV_OPTIONS" value="false"/>
-    <elementParameter field="TEXT" name="FIELD_SEPARATOR" value="(String)globalMap.get(&quot;row1.flat_file_separator&quot;)"/>
-    <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;\\&quot;"/>
-    <elementParameter field="TEXT" name="QUOTE_CHAR" show="false" value="&quot;\&quot;&quot;"/>
-    <elementParameter field="CHECK" name="HEADER_ROW" value="true"/>
-    <elementParameter field="TABLE" name="OPTIONS">
-      <elementValue elementRef="KEY" value="ERROR_LIMIT"/>
-      <elementValue elementRef="VALUE" value="context.GPLOAD_ERROR_LIMIT"/>
-      <elementValue elementRef="KEY" value="ERROR_TABLE"/>
-      <elementValue elementRef="VALUE" value="&quot;sbdt.gpload_errors_&quot;"/>
-      <elementValue elementRef="KEY" value="NULL_AS"/>
-      <elementValue elementRef="VALUE" value="(String)globalMap.get(&quot;row1.flat_file_null_string&quot;)"/>
-    </elementParameter>
-    <elementParameter field="TEXT" name="LOG_FILE" value="context.ETL_STORAGE_PATH + &quot;/&quot; +context.GP_SOURCE_NAME + &quot;/data/&quot; + context.SOURCE_DATABASE  + &quot;/&quot; + ((String)globalMap.get(&quot;row1.log_table_name&quot;)).replace(&quot;\&quot;&quot;,&quot;&quot;).replace(&quot;#&quot;,&quot;__hash__&quot;).replace(&quot;$&quot;,&quot;__dollar__&quot;)  + new SimpleDateFormat(&quot;yyyyMMddHHmmss&quot;).format(((java.util.Date)globalMap.get(&quot;row1.now&quot;))).toString() + &quot;.log&quot;"/>
-    <elementParameter field="TEXT" name="ENCODING" value="&quot;UTF8&quot;"/>
-    <elementParameter field="FILE" name="YAML_PATH" value="context.ETL_STORAGE_PATH + &quot;/&quot; + context.GP_SOURCE_NAME + &quot;/data/&quot; +context.SOURCE_DATABASE  + &quot;/&quot; + ((String)globalMap.get(&quot;row1.log_table_name&quot;))  + &quot;.yaml&quot;"/>
-    <elementParameter field="CHECK" name="SPECIFY_GPLOAD_PATH" value="true"/>
-    <elementParameter field="FILE" name="GPLOAD_PATH" value="&quot;gpload&quot;"/>
-    <elementParameter field="CHECK" name="REMOVE_DATAFILE" value="false"/>
-    <elementParameter field="CHECK" name="USE_GZIP_COMPRESSION" value="false"/>
-    <elementParameter field="TABLE" name="YAML_SQL"/>
-    <elementParameter field="CHECK" name="PRINT_LOG_TO_CONSOLE" value="false"/>
-    <elementParameter field="TEXT" name="LABEL" value="TXT ingestion"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  <node componentName="tGEGreenplumGPLoad" offsetLabelX="0" offsetLabelY="0" posX="352" posY="1248" sizeX="32" sizeY="35">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tGEGreenplumGPLoad_1"/>
+    <elementParameter field="CHECK" name="STARTABLE" show="false" value="true"/>
     <metadata connector="FLOW" name="tGEGreenplumGPLoad_1">
       <column comment="" key="false" length="-1" name="FinalData" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
     </metadata>
@@ -527,7 +475,8 @@
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="SHARED_CONNECTION_NAME" show="false" value=""/>
-    <elementParameter field="CHECK" name="USE_SSL" value="true"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="DB_DRIVER" value="POSTGRESQL"/>
     <elementParameter field="CHECK" name="AUTO_COMMIT" value="true"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
@@ -543,12 +492,12 @@
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
     <elementParameter field="PASSWORD" name="PASS" show="false" value="0RMsyjmybrE="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
-    <elementParameter field="CHECK" name="USE_SSL" show="false" value="true"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;insert into sbdt.edl_table_last_update (system_name, target_schema, target_table_name, last_update_date, last_update_value, row_id, run_id, update_type) values (&quot; +&#13;&#10;&quot;'&quot; + ((String)globalMap.get(&quot;row1.source_name&quot;)) + &quot;',&quot; +&#13;&#10;&quot;'&quot; + (String)globalMap.get(&quot;row1.target_schema_orig&quot;) + &quot;',&quot; +&#13;&#10;&quot;'&quot; + (String)globalMap.get(&quot;row1.log_table_name&quot;) + &quot;',&quot; +&#13;&#10;&quot;to_timestamp('&quot; +new SimpleDateFormat(&quot;yyyy-MM-dd HH:mm:ss&quot;).format(((java.util.Date)globalMap.get(&quot;row1.now&quot;))).toString() + &quot;', 'YYYY-MM-DD HH24:MI:SS')::timestamp without time zone ,&quot; +&#13;&#10;&quot;NULL,&quot; +&#13;&#10;&quot;(select min(row_id) from sbdt.edl_log where run_id = &quot;+((Integer)context.LOG_RUN_ID).toString() + &quot;),&quot; +&#13;&#10;((Integer)context.LOG_RUN_ID).toString() + &quot;,&quot; +&#13;&#10;&quot;'&quot; + ((String)globalMap.get(&quot;row1.update_type&quot;)) + &quot;'&quot; +&#13;&#10;&quot;);&quot; + &#13;&#10;&#13;&#10;/*&#13;&#10;&quot; update sbdt.edl_table set last_update_value= &quot; + context.LAST_UPDATE_VALUE  +&#13;&#10;&quot; , last_update_date = to_timestamp('&quot; + (String)globalMap.get(&quot;update_date&quot;) + &quot;', 'YYYY-MM-DD HH24:MI:SS')::timestamp without time zone &quot; +&#13;&#10;&quot;, previous_last_update_date=&quot; +&#13;&#10;&quot;case when update_type='Incremental' then to_timestamp(&quot; + &#13;&#10;((globalMap.get(&quot;row1.last_update_date&quot;)==null) ? &quot;null&quot; : (&quot;'&quot; + String.valueOf(new SimpleDateFormat(&quot;yyyy-MM-dd HH:mm:ss&quot;).format(((java.util.Date)globalMap.get(&quot;row1.last_update_date&quot;)))) + &quot;'&quot;)) +&#13;&#10;&quot;, 'YYYY-MM-DD HH24:MI:SS')::timestamp without time zone else null end &quot; + &#13;&#10;&quot; where system_name='&quot; + ((String)globalMap.get(&quot;row1.source_name&quot;)) + &quot;' and &quot; +&#13;&#10;&quot; target_table_name='&quot; + ((String)globalMap.get(&quot;row1.log_table_name&quot;)) + &quot;';&quot; +&#13;&#10;*/&#13;&#10;&quot; select sbdt.db_size('&quot; + globalMap.get(&quot;row1.target_schema_orig&quot;) + &quot;', '&quot; + globalMap.get(&quot;row1.log_table_name&quot;) + &quot;');&quot;"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="DB_DRIVER" show="false" value="POSTGRESQL"/>
     <elementParameter field="CHECK" name="PROPAGATE_RECORD_SET" value="false"/>
     <elementParameter field="COLUMN_LIST" name="RECORD_SET_COLUMN" show="false" value=""/>
     <elementParameter field="CHECK" name="USE_PREPAREDSTATEMENT" value="false"/>
@@ -574,7 +523,6 @@
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
     <elementParameter field="PASSWORD" name="PASS" show="false" value="0RMsyjmybrE="/>
-    <elementParameter field="CHECK" name="USE_SSL" show="false" value="true"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -582,6 +530,7 @@
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
     <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;with edl_table_ext as (&#13;&#10;select distinct et.system_name, et.source_table_name, et.update_type, et.target_schema, et.target_table_name, et.update_col, et.time_correction_hour, et.source_schema, et.sql_text, et.update_pk, &#13;&#10;et.flat_file_name, et.flat_file_separator, et.flat_file_enclosure, et.flat_file_quote, et.flat_file_header, et.flat_file_null_string,&#13;&#10;max(lu.last_update_date) over (partition by et.system_name, et.target_schema, et.target_table_name) last_update_date&#13;&#10;from sbdt.edl_table et&#13;&#10;left join sbdt.edl_table_last_update lu on (et.system_name = lu.system_name and et.target_schema = lu.target_schema and et.target_table_name = lu.target_table_name)&#13;&#10;where 1 = 1&#13;&#10;and et.enabled='Y'&#13;&#10;and et.source_schema&lt;&gt;'na'&#13;&#10;and et.system_name='&quot; + context.getProperty(&quot;GP_SOURCE_NAME&quot;) + &quot;'&#13;&#10;and et.update_type IN ('Incremental', 'Full', 'Append')&#13;&#10;)&#13;&#10;SELECT system_name as source_name, &#13;&#10;source_table_name, &#13;&#10;case when update_type='Full' or last_update_date is null  or '&quot;+context.FORCE_BATCH+&quot;'='Y' or update_type = 'Append' then target_table_name&#13;&#10;else lower(target_schema)||'_'||target_table_name&#13;&#10;end as target_table_name, &#13;&#10;target_table_name as log_table_name,&#13;&#10;case when last_update_date is null or '&quot;+context.FORCE_BATCH+&quot;'='Y' then 'Full' &#13;&#10;else update_type&#13;&#10;end as update_type, &#13;&#10;update_col, &#13;&#10;last_update_date,&#13;&#10;source_schema, &#13;&#10;case when update_type='Full' or last_update_date is null or '&quot;+context.FORCE_BATCH+&quot;'='Y' or update_type = 'Append' then target_schema&#13;&#10;else 'increments'&#13;&#10;end as target_schema, &#13;&#10;lower(target_schema) as target_schema_orig,&#13;&#10;now() as now,&#13;&#10;flat_file_name,&#13;&#10;flat_file_separator,&#13;&#10;flat_file_enclosure,&#13;&#10;coalesce(flat_file_quote,'\\\\') flat_file_quote,&#13;&#10;flat_file_header, &#13;&#10;flat_file_null_string&#13;&#10;FROM edl_table_ext&#13;&#10;WHERE 1 = 1 &quot; +&#13;&#10;context.getProperty(&quot;TABLE_NAME&quot;)"/>
     <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="postgres_id"/>
+    <elementParameter field="CLOSED_LIST" name="DB_DRIVER" show="false" value="POSTGRESQL"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="CHECK" name="USE_CURSOR" value="false"/>
@@ -668,12 +617,12 @@
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
     <elementParameter field="PASSWORD" name="PASS" show="false" value="0RMsyjmybrE="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
-    <elementParameter field="CHECK" name="USE_SSL" show="false" value="true"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;CREATE TABLE &quot; + (String)globalMap.get(&quot;row1.target_schema_orig&quot;) + &quot;.&quot; + &#13;&#10;(String)globalMap.get(&quot;row1.log_table_name&quot;)+&quot;_stg&quot; +&quot;  ( &quot; + &#13;&#10;(String)globalMap.get(&quot;columnlist&quot;) + &quot; )&quot;+&#13;&#10;globalMap.get(&quot;distributed&quot;)"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="DB_DRIVER" show="false" value="POSTGRESQL"/>
     <elementParameter field="CHECK" name="PROPAGATE_RECORD_SET" value="false"/>
     <elementParameter field="COLUMN_LIST" name="RECORD_SET_COLUMN" show="false" value=""/>
     <elementParameter field="CHECK" name="USE_PREPAREDSTATEMENT" value="false"/>
@@ -701,12 +650,12 @@
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
     <elementParameter field="PASSWORD" name="PASS" show="false" value="0RMsyjmybrE="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
-    <elementParameter field="CHECK" name="USE_SSL" show="false" value="true"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="MEMO_SQL" name="QUERY" value="GEroutines.sqlDropTable((String)globalMap.get(&quot;row1.target_schema_orig&quot;), &quot;&quot;, (String)globalMap.get(&quot;row1.log_table_name&quot;) + &quot;_stg&quot;)"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="DB_DRIVER" show="false" value="POSTGRESQL"/>
     <elementParameter field="CHECK" name="PROPAGATE_RECORD_SET" value="false"/>
     <elementParameter field="COLUMN_LIST" name="RECORD_SET_COLUMN" show="false" value=""/>
     <elementParameter field="CHECK" name="USE_PREPAREDSTATEMENT" value="false"/>
@@ -821,7 +770,8 @@
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="SHARED_CONNECTION_NAME" show="false" value=""/>
-    <elementParameter field="CHECK" name="USE_SSL" value="true"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="DB_DRIVER" value="POSTGRESQL"/>
     <elementParameter field="CHECK" name="AUTO_COMMIT" value="true"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
@@ -838,7 +788,8 @@
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="SHARED_CONNECTION_NAME" show="false" value=""/>
-    <elementParameter field="CHECK" name="USE_SSL" value="true"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="DB_DRIVER" value="POSTGRESQL"/>
     <elementParameter field="CHECK" name="AUTO_COMMIT" value="true"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
@@ -871,12 +822,12 @@
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
     <elementParameter field="PASSWORD" name="PASS" show="false" value="0RMsyjmybrE="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
-    <elementParameter field="CHECK" name="USE_SSL" show="false" value="true"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;CREATE TABLE &quot; + (String)globalMap.get(&quot;row1.target_schema_orig&quot;) + &quot;.&quot; + &#13;&#10;(String)globalMap.get(&quot;row1.log_table_name&quot;) +&quot; ( &quot; + &#13;&#10;(String)globalMap.get(&quot;columnlist&quot;) + &quot; )&quot;+&#13;&#10;globalMap.get(&quot;distributed&quot;)"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="DB_DRIVER" show="false" value="POSTGRESQL"/>
     <elementParameter field="CHECK" name="PROPAGATE_RECORD_SET" value="false"/>
     <elementParameter field="COLUMN_LIST" name="RECORD_SET_COLUMN" show="false" value=""/>
     <elementParameter field="CHECK" name="USE_PREPAREDSTATEMENT" value="false"/>
@@ -903,12 +854,12 @@
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
     <elementParameter field="PASSWORD" name="PASS" show="false" value="0RMsyjmybrE="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
-    <elementParameter field="CHECK" name="USE_SSL" show="false" value="true"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="MEMO_SQL" name="QUERY" value="GEroutines.sqlDropTable((String)globalMap.get(&quot;row1.target_schema_orig&quot;), &quot;&quot;, (String)globalMap.get(&quot;row1.log_table_name&quot;) )"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="DB_DRIVER" show="false" value="POSTGRESQL"/>
     <elementParameter field="CHECK" name="PROPAGATE_RECORD_SET" value="false"/>
     <elementParameter field="COLUMN_LIST" name="RECORD_SET_COLUMN" show="false" value=""/>
     <elementParameter field="CHECK" name="USE_PREPAREDSTATEMENT" value="false"/>
@@ -936,7 +887,8 @@
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="SHARED_CONNECTION_NAME" show="false" value=""/>
-    <elementParameter field="CHECK" name="USE_SSL" value="true"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="DB_DRIVER" value="POSTGRESQL"/>
     <elementParameter field="CHECK" name="AUTO_COMMIT" value="true"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
@@ -951,7 +903,6 @@
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
     <elementParameter field="PASSWORD" name="PASS" show="false" value="0RMsyjmybrE="/>
-    <elementParameter field="CHECK" name="USE_SSL" show="false" value="true"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -959,6 +910,7 @@
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
     <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select string_agg(column_name, ',' order by ordinal_position) as column_list&#13;&#10;FROM sbdt.flat_files_struct&#13;&#10;where date_until='9999-12-31' and lower(source_name) = '&quot; + ((String)context.GP_SOURCE_NAME).toLowerCase() + &quot;'&#13;&#10;and table_name = '&quot; + ((String)globalMap.get(&quot;row1.log_table_name&quot;)).toLowerCase() +&quot;'&#13;&#10;and distributed_by = 'Y'&quot;"/>
     <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="postgres_id"/>
+    <elementParameter field="CLOSED_LIST" name="DB_DRIVER" show="false" value="POSTGRESQL"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="CHECK" name="USE_CURSOR" value="false"/>
@@ -998,7 +950,6 @@
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
     <elementParameter field="PASSWORD" name="PASS" show="false" value="0RMsyjmybrE="/>
-    <elementParameter field="CHECK" name="USE_SSL" show="false" value="true"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -1006,6 +957,7 @@
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
     <elementParameter field="MEMO_SQL" name="QUERY" value="&quot; select string_agg( &quot; +&#13;&#10;&quot;&#9;column_name||decode(data_type,'text',' text',' varchar(3999)') &quot; +&#13;&#10;&quot; , ', ' ORDER BY ordinal_position) as ColumnList&quot; +&#13;&#10;&quot; from sbdt.flat_files_struct&quot; +&#13;&#10;&quot; where date_until='9999-12-31' and lower(source_name) = lower('&quot; +&#13;&#10;context.GP_SOURCE_NAME&#13;&#10;+ &quot;') and table_name = '&quot; + &#13;&#10;(String)globalMap.get(&quot;row1.log_table_name&quot;)&#13;&#10;+ &quot;'&quot;&#13;&#10;"/>
     <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="postgres_id"/>
+    <elementParameter field="CLOSED_LIST" name="DB_DRIVER" show="false" value="POSTGRESQL"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="CHECK" name="USE_CURSOR" value="false"/>
@@ -1049,7 +1001,6 @@
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
     <elementParameter field="PASSWORD" name="PASS" show="false" value="0RMsyjmybrE="/>
-    <elementParameter field="CHECK" name="USE_SSL" show="false" value="true"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -1057,6 +1008,7 @@
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
     <elementParameter field="MEMO_SQL" name="QUERY" value="&quot; select string_agg( &quot; +&#13;&#10;&quot;&#9;column_name||' '||coalesce(data_type,'')||' '||&quot; +&#13;&#10;&quot;&#9;case when character_maximum_length is not null then '('||character_maximum_length||')' &quot; +&#13;&#10;&quot;&#9;&#9; when numeric_scale not in (null, 0) then '('||numeric_precision||','||numeric_scale||')'&quot; +&#13;&#10;&quot;&#9;else '' end&quot; + &#13;&#10;&quot; , ', ' ORDER BY ordinal_position) as ColumnList&quot; +&#13;&#10;&quot; from sbdt.flat_files_struct&quot; +&#13;&#10;&quot; where date_until='9999-12-31' and lower(source_name) = lower('&quot; +&#13;&#10;context.GP_SOURCE_NAME&#13;&#10;+ &quot;') and table_name = '&quot; + &#13;&#10;(String)globalMap.get(&quot;row1.log_table_name&quot;)&#13;&#10;+ &quot;'&quot;"/>
     <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="postgres_id"/>
+    <elementParameter field="CLOSED_LIST" name="DB_DRIVER" show="false" value="POSTGRESQL"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="CHECK" name="USE_CURSOR" value="false"/>
@@ -1091,7 +1043,8 @@
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="SHARED_CONNECTION_NAME" show="false" value=""/>
-    <elementParameter field="CHECK" name="USE_SSL" value="true"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="DB_DRIVER" value="POSTGRESQL"/>
     <elementParameter field="CHECK" name="AUTO_COMMIT" value="true"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
@@ -1179,7 +1132,8 @@
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="SHARED_CONNECTION_NAME" show="false" value=""/>
-    <elementParameter field="CHECK" name="USE_SSL" value="true"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="DB_DRIVER" value="POSTGRESQL"/>
     <elementParameter field="CHECK" name="AUTO_COMMIT" value="true"/>
     <elementParameter field="TEXT" name="LABEL" value="ERROR_CONN"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
@@ -1206,12 +1160,12 @@
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
     <elementParameter field="PASSWORD" name="PASS" show="false" value="k3WNzwEJ9MTsQqCStv4d5g=="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
-    <elementParameter field="CHECK" name="USE_SSL" show="false" value="true"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="MEMO_SQL" name="QUERY" value="(String)globalMap.get(&quot;insert_log_sql&quot;)"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="DB_DRIVER" show="false" value="POSTGRESQL"/>
     <elementParameter field="CHECK" name="PROPAGATE_RECORD_SET" value="false"/>
     <elementParameter field="COLUMN_LIST" name="RECORD_SET_COLUMN" show="false" value=""/>
     <elementParameter field="CHECK" name="USE_PREPAREDSTATEMENT" value="false"/>
@@ -1297,7 +1251,8 @@
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="SHARED_CONNECTION_NAME" show="false" value=""/>
-    <elementParameter field="CHECK" name="USE_SSL" value="true"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="DB_DRIVER" value="POSTGRESQL"/>
     <elementParameter field="CHECK" name="AUTO_COMMIT" value="true"/>
     <elementParameter field="TEXT" name="LABEL" value="START_LOG_CONN"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
@@ -1338,12 +1293,12 @@
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
     <elementParameter field="PASSWORD" name="PASS" show="false" value="k3WNzwEJ9MTsQqCStv4d5g=="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
-    <elementParameter field="CHECK" name="USE_SSL" show="false" value="true"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="MEMO_SQL" name="QUERY" value="(String)globalMap.get(&quot;insert_log_sql&quot;)"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="DB_DRIVER" show="false" value="POSTGRESQL"/>
     <elementParameter field="CHECK" name="PROPAGATE_RECORD_SET" value="false"/>
     <elementParameter field="COLUMN_LIST" name="RECORD_SET_COLUMN" show="false" value="moment"/>
     <elementParameter field="CHECK" name="USE_PREPAREDSTATEMENT" value="false"/>
@@ -1425,7 +1380,8 @@
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="SHARED_CONNECTION_NAME" show="false" value=""/>
-    <elementParameter field="CHECK" name="USE_SSL" value="true"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="DB_DRIVER" value="POSTGRESQL"/>
     <elementParameter field="CHECK" name="AUTO_COMMIT" value="true"/>
     <elementParameter field="TEXT" name="LABEL" value="END_LOG_CONN"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
@@ -1464,12 +1420,12 @@
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
     <elementParameter field="PASSWORD" name="PASS" show="false" value="k3WNzwEJ9MTsQqCStv4d5g=="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
-    <elementParameter field="CHECK" name="USE_SSL" show="false" value="true"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="MEMO_SQL" name="QUERY" value="(String)globalMap.get(&quot;insert_log_sql&quot;)"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="DB_DRIVER" show="false" value="POSTGRESQL"/>
     <elementParameter field="CHECK" name="PROPAGATE_RECORD_SET" value="false"/>
     <elementParameter field="COLUMN_LIST" name="RECORD_SET_COLUMN" show="false" value="moment"/>
     <elementParameter field="CHECK" name="USE_PREPAREDSTATEMENT" value="false"/>
@@ -1573,7 +1529,6 @@
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
     <elementParameter field="PASSWORD" name="PASS" show="false" value="0RMsyjmybrE="/>
-    <elementParameter field="CHECK" name="USE_SSL" show="false" value="true"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -1581,6 +1536,7 @@
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
     <elementParameter field="MEMO_SQL" name="QUERY" value="(String)globalMap.get(&quot;get_run_id_sql&quot;)&#13;&#10;"/>
     <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="postgres_id"/>
+    <elementParameter field="CLOSED_LIST" name="DB_DRIVER" show="false" value="POSTGRESQL"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="CHECK" name="USE_CURSOR" value="false"/>
@@ -1648,7 +1604,6 @@
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
     <elementParameter field="PASSWORD" name="PASS" show="false" value="0RMsyjmybrE="/>
-    <elementParameter field="CHECK" name="USE_SSL" show="false" value="true"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -1656,6 +1611,7 @@
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
     <elementParameter field="MEMO_SQL" name="QUERY" value="(String)globalMap.get(&quot;get_row_id_sql&quot;)&#13;&#10;"/>
     <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="postgres_id"/>
+    <elementParameter field="CLOSED_LIST" name="DB_DRIVER" show="false" value="POSTGRESQL"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="CHECK" name="USE_CURSOR" value="false"/>
@@ -1716,7 +1672,6 @@
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
     <elementParameter field="PASSWORD" name="PASS" show="false" value="0RMsyjmybrE="/>
-    <elementParameter field="CHECK" name="USE_SSL" show="false" value="true"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -1724,6 +1679,7 @@
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
     <elementParameter field="MEMO_SQL" name="QUERY" value="(String)globalMap.get(&quot;get_row_id_sql&quot;)&#13;&#10;"/>
     <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="postgres_id"/>
+    <elementParameter field="CLOSED_LIST" name="DB_DRIVER" show="false" value="POSTGRESQL"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="CHECK" name="USE_CURSOR" value="false"/>
@@ -1761,12 +1717,12 @@
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
     <elementParameter field="PASSWORD" name="PASS" show="false" value="0RMsyjmybrE="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
-    <elementParameter field="CHECK" name="USE_SSL" show="false" value="true"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="MEMO_SQL" name="QUERY" value="GEroutines.sqlDropTable((String)globalMap.get(&quot;row1.target_schema_orig&quot;), &quot;&quot;, (String)globalMap.get(&quot;row1.log_table_name&quot;) + &quot;_tmp&quot;)"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="DB_DRIVER" show="false" value="POSTGRESQL"/>
     <elementParameter field="CHECK" name="PROPAGATE_RECORD_SET" value="false"/>
     <elementParameter field="COLUMN_LIST" name="RECORD_SET_COLUMN" show="false" value=""/>
     <elementParameter field="CHECK" name="USE_PREPAREDSTATEMENT" value="false"/>
@@ -1794,12 +1750,12 @@
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
     <elementParameter field="PASSWORD" name="PASS" show="false" value="0RMsyjmybrE="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
-    <elementParameter field="CHECK" name="USE_SSL" show="false" value="true"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;CREATE TABLE &quot; + (String)globalMap.get(&quot;row1.target_schema_orig&quot;) + &quot;.&quot; + &#13;&#10;(String)globalMap.get(&quot;row1.log_table_name&quot;)+&quot;_tmp&quot; +&quot;  ( &quot; + &#13;&#10;(String)globalMap.get(&quot;columnlist&quot;) + &quot; )&quot;+&#13;&#10;globalMap.get(&quot;distributed&quot;)"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="DB_DRIVER" show="false" value="POSTGRESQL"/>
     <elementParameter field="CHECK" name="PROPAGATE_RECORD_SET" value="false"/>
     <elementParameter field="COLUMN_LIST" name="RECORD_SET_COLUMN" show="false" value=""/>
     <elementParameter field="CHECK" name="USE_PREPAREDSTATEMENT" value="false"/>
@@ -1827,12 +1783,12 @@
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
     <elementParameter field="PASSWORD" name="PASS" show="false" value="0RMsyjmybrE="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
-    <elementParameter field="CHECK" name="USE_SSL" show="false" value="true"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;INSERT INTO &quot; + (String)globalMap.get(&quot;row1.target_schema_orig&quot;) + &quot;.&quot; + &#13;&#10;(String)globalMap.get(&quot;row1.log_table_name&quot;)+&quot;_tmp&quot; + &quot; &quot; +&#13;&#10;(String)globalMap.get(&quot;transform_qry&quot;)"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="DB_DRIVER" show="false" value="POSTGRESQL"/>
     <elementParameter field="CHECK" name="PROPAGATE_RECORD_SET" value="false"/>
     <elementParameter field="COLUMN_LIST" name="RECORD_SET_COLUMN" show="false" value=""/>
     <elementParameter field="CHECK" name="USE_PREPAREDSTATEMENT" value="false"/>
@@ -1859,7 +1815,6 @@
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
     <elementParameter field="PASSWORD" name="PASS" show="false" value="0RMsyjmybrE="/>
-    <elementParameter field="CHECK" name="USE_SSL" show="false" value="true"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -1867,6 +1822,7 @@
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
     <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#13;&#10;config_params&#13;&#10;FROM sbdt.edl_table WHERE source_schema &lt;&gt; 'na' and system_name = '&quot; + context.getProperty(&quot;GP_SOURCE_NAME&quot;) + &#13;&#10;&quot;' and update_type in ('Incremental', 'Full', 'Append')&quot; +&#13;&#10;context.getProperty(&quot;TABLE_NAME&quot;)"/>
     <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="postgres_id"/>
+    <elementParameter field="CLOSED_LIST" name="DB_DRIVER" show="false" value="POSTGRESQL"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="CHECK" name="USE_CURSOR" value="false"/>
@@ -1940,7 +1896,6 @@
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
     <elementParameter field="PASSWORD" name="PASS" show="false" value="0RMsyjmybrE="/>
-    <elementParameter field="CHECK" name="USE_SSL" show="false" value="true"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -1948,6 +1903,7 @@
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
     <elementParameter field="MEMO_SQL" name="QUERY" value="&quot; select count(*) as cnt_inserted&quot; +&#13;&#10;&quot; from &quot; + &#13;&#10;((String)globalMap.get(&quot;row1.target_schema&quot;)) + &quot;.&quot; + ((String)globalMap.get(&quot;row1.target_table_name&quot;))  "/>
     <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="postgres_id"/>
+    <elementParameter field="CLOSED_LIST" name="DB_DRIVER" show="false" value="POSTGRESQL"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="CHECK" name="USE_CURSOR" value="false"/>
@@ -1991,7 +1947,6 @@
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
     <elementParameter field="PASSWORD" name="PASS" show="false" value="0RMsyjmybrE="/>
-    <elementParameter field="CHECK" name="USE_SSL" show="false" value="true"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -1999,6 +1954,7 @@
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
     <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select sbdt.edl_increments_rolling_struct('&quot; + &#13;&#10;globalMap.get(&quot;row1.target_schema_orig&quot;) + &quot;', '&quot; +&#13;&#10;globalMap.get(&quot;row1.log_table_name&quot;) + &quot;', &quot; + &#13;&#10;&quot;to_timestamp('&quot; + (String)globalMap.get(&quot;update_date&quot;) + &#13;&#10;&quot;', 'YYYY-MM-DD HH24:MI:SS')::timestamp without time zone &quot;+&#13;&#10;&quot;,'&quot;+((String)globalMap.get(&quot;row1.source_name&quot;))+&quot;'&quot;+&#13;&#10;&quot;);&quot; &#13;&#10;/*&#13;&#10;&quot;select sbdt.edl_increments_rolling_struct('&quot; + &#13;&#10;globalMap.get(&quot;row1.target_schema_orig&quot;) + &quot;', '&quot; +&#13;&#10;globalMap.get(&quot;row1.log_table_name&quot;) + &quot;', &quot; + &#13;&#10;&quot;to_timestamp('&quot; + (String)globalMap.get(&quot;update_date&quot;) + &#13;&#10;&quot;', 'YYYY-MM-DD HH24:MI:SS')::timestamp without time zone + &#13;&#10;&quot;',' &quot;+ context.GP_SOURCE_NAME +&quot;');&quot; &#13;&#10;*/"/>
     <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="postgres_id"/>
+    <elementParameter field="CLOSED_LIST" name="DB_DRIVER" show="false" value="POSTGRESQL"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="CHECK" name="USE_CURSOR" value="false"/>
@@ -2044,12 +2000,12 @@
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
     <elementParameter field="PASSWORD" name="PASS" show="false" value="0RMsyjmybrE="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
-    <elementParameter field="CHECK" name="USE_SSL" show="false" value="true"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;ALTER TABLE &quot;+((String)globalMap.get(&quot;row1.target_schema_orig&quot;))+&#13;&#10;&quot;.&quot;+((String)globalMap.get(&quot;row1.log_table_name&quot;))+&#13;&#10;&quot; ADD COLUMN edl_is_deleted VARCHAR (1), &quot;+&#13;&#10;&quot; ADD COLUMN edl_last_updated_date TIMESTAMP WITH TIME ZONE&quot;"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="DB_DRIVER" show="false" value="POSTGRESQL"/>
     <elementParameter field="CHECK" name="PROPAGATE_RECORD_SET" value="false"/>
     <elementParameter field="COLUMN_LIST" name="RECORD_SET_COLUMN" show="false" value=""/>
     <elementParameter field="CHECK" name="USE_PREPAREDSTATEMENT" value="false"/>
@@ -2077,12 +2033,12 @@
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
     <elementParameter field="PASSWORD" name="PASS" show="false" value="0RMsyjmybrE="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
-    <elementParameter field="CHECK" name="USE_SSL" show="false" value="true"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;UPDATE &quot; +(String)globalMap.get(&quot;row1.target_schema_orig&quot;) + &quot;.&quot; + (String)globalMap.get(&quot;row1.log_table_name&quot;) + &#13;&#10;&quot; SET edl_is_deleted='0', edl_last_updated_date=to_timestamp('&quot; +&#13;&#10;(String)globalMap.get(&quot;update_date&quot;) + &#13;&#10;&quot;', 'YYYY-MM-DD HH24:MI:SS')::timestamp without time zone &quot; +&#13;&#10;(((String)globalMap.get(&quot;row1.update_type&quot;)).equals(&quot;Append&quot;) ? &quot;where COALESCE(edl_last_updated_date, to_timestamp('', 'yyyymmddhh24miss')) = to_timestamp('', 'yyyymmddhh24miss')&quot; : &quot;&quot;)&#13;&#10;&#13;&#10;"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="DB_DRIVER" show="false" value="POSTGRESQL"/>
     <elementParameter field="CHECK" name="PROPAGATE_RECORD_SET" value="false"/>
     <elementParameter field="COLUMN_LIST" name="RECORD_SET_COLUMN" show="false" value=""/>
     <elementParameter field="CHECK" name="USE_PREPAREDSTATEMENT" value="false"/>
@@ -2109,7 +2065,6 @@
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
     <elementParameter field="PASSWORD" name="PASS" show="false" value="0RMsyjmybrE="/>
-    <elementParameter field="CHECK" name="USE_SSL" show="false" value="true"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -2117,6 +2072,7 @@
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
     <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT&#13;&#10;&#9;string_agg (&#13;&#10;&#9;&#9;CASE&#13;&#10;&#9;&#9;WHEN unique_key = 'Y' THEN&#13;&#10;&#9;&#9;&#9;' CASE WHEN (' || COLUMN_NAME || ' IS NULL OR ' || COLUMN_NAME || ' = '''' ) THEN ''-1'' ELSE ' || COLUMN_NAME || ' end  ' || column_name ||' ' ELSE column_name end , ',&#13;&#10;&#9;&#9;&#9;' ORDER BY ordinal_position) as columnlist_transform_cols &#13;&#10; from sbdt.flat_files_struct  &#13;&#10; where date_until='9999-12-31' and lower(source_name) = lower('&quot; +context.GP_SOURCE_NAME + &quot;') and TABLE_NAME ='&quot;+ (String)globalMap.get(&quot;row1.log_table_name&quot;) +&quot;'&quot;"/>
     <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="postgres_id"/>
+    <elementParameter field="CLOSED_LIST" name="DB_DRIVER" show="false" value="POSTGRESQL"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="CHECK" name="USE_CURSOR" value="false"/>
@@ -2149,7 +2105,6 @@
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
     <elementParameter field="PASSWORD" name="PASS" show="false" value="0RMsyjmybrE="/>
-    <elementParameter field="CHECK" name="USE_SSL" show="false" value="true"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -2157,6 +2112,7 @@
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
     <elementParameter field="MEMO_SQL" name="QUERY" value="&quot; select string_agg( CASE WHEN unique_key='Y' then ' CASE WHEN (' || column_name || ' IS NULL OR ' || column_name  ||' = '''' ) THEN ''-1'' ELSE ' || column_name || ' end  ' ELSE column_name end , ', ' ORDER BY ordinal_position) as columnlist_transform_uq &quot; +&#13;&#10;&quot; from sbdt.flat_files_struct&quot; + &#13;&#10;&quot; where date_until='9999-12-31' and unique_key='Y' and lower(source_name) = lower('&quot; +context.GP_SOURCE_NAME +&#13;&#10;&quot;') and TABLE_NAME ='&quot; + (String)globalMap.get(&quot;row1.log_table_name&quot;) +&quot;'&quot;&#13;&#10;"/>
     <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="postgres_id"/>
+    <elementParameter field="CLOSED_LIST" name="DB_DRIVER" show="false" value="POSTGRESQL"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="CHECK" name="USE_CURSOR" value="false"/>
@@ -2189,7 +2145,7 @@
       <column comment="" key="false" length="-1" name="ColumnList" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tDie" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1792" posY="1728">
+  <node componentName="tDie" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1792" posY="1728">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDie_1"/>
     <elementParameter field="TEXT" name="MESSAGE" value="&quot;Error occurred when rolling increments&quot;"/>
     <elementParameter field="TEXT" name="CODE" value="999"/>
@@ -2214,7 +2170,8 @@
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="SHARED_CONNECTION_NAME" show="false" value=""/>
-    <elementParameter field="CHECK" name="USE_SSL" value="true"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="DB_DRIVER" value="POSTGRESQL"/>
     <elementParameter field="CHECK" name="AUTO_COMMIT" value="true"/>
     <elementParameter field="TEXT" name="LABEL" value="START_LOG_CONN"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
@@ -2230,7 +2187,6 @@
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
     <elementParameter field="PASSWORD" name="PASS" show="false" value="0RMsyjmybrE="/>
-    <elementParameter field="CHECK" name="USE_SSL" show="false" value="true"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -2238,6 +2194,7 @@
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
     <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select NEXTVAL('sbdt.edl_run_id_seq')&quot;;&#13;&#10;"/>
     <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="postgres_id"/>
+    <elementParameter field="CLOSED_LIST" name="DB_DRIVER" show="false" value="POSTGRESQL"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="CHECK" name="USE_CURSOR" value="true"/>
@@ -2297,12 +2254,12 @@
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
     <elementParameter field="PASSWORD" name="PASS" show="false" value="k3WNzwEJ9MTsQqCStv4d5g=="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
-    <elementParameter field="CHECK" name="USE_SSL" show="false" value="true"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="MEMO_SQL" name="QUERY" value="(String)globalMap.get(&quot;insert_log_sql&quot;)"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="DB_DRIVER" show="false" value="POSTGRESQL"/>
     <elementParameter field="CHECK" name="PROPAGATE_RECORD_SET" value="false"/>
     <elementParameter field="COLUMN_LIST" name="RECORD_SET_COLUMN" show="false" value="moment"/>
     <elementParameter field="CHECK" name="USE_PREPAREDSTATEMENT" value="false"/>
@@ -2429,7 +2386,8 @@
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="SHARED_CONNECTION_NAME" show="false" value=""/>
-    <elementParameter field="CHECK" name="USE_SSL" value="true"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="DB_DRIVER" value="POSTGRESQL"/>
     <elementParameter field="CHECK" name="AUTO_COMMIT" value="true"/>
     <elementParameter field="TEXT" name="LABEL" value="ERROR_CONN"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
@@ -2445,7 +2403,6 @@
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
     <elementParameter field="PASSWORD" name="PASS" show="false" value="0RMsyjmybrE="/>
-    <elementParameter field="CHECK" name="USE_SSL" show="false" value="true"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -2453,6 +2410,7 @@
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
     <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select NEXTVAL('sbdt.edl_run_id_seq')&quot;"/>
     <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="postgres_id"/>
+    <elementParameter field="CLOSED_LIST" name="DB_DRIVER" show="false" value="POSTGRESQL"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="CHECK" name="USE_CURSOR" value="false"/>
@@ -2498,12 +2456,12 @@
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
     <elementParameter field="PASSWORD" name="PASS" show="false" value="k3WNzwEJ9MTsQqCStv4d5g=="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
-    <elementParameter field="CHECK" name="USE_SSL" show="false" value="true"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="MEMO_SQL" name="QUERY" value="(String)globalMap.get(&quot;insert_log_sql&quot;)"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="DB_DRIVER" show="false" value="POSTGRESQL"/>
     <elementParameter field="CHECK" name="PROPAGATE_RECORD_SET" value="false"/>
     <elementParameter field="COLUMN_LIST" name="RECORD_SET_COLUMN" show="false" value=""/>
     <elementParameter field="CHECK" name="USE_PREPAREDSTATEMENT" value="false"/>
@@ -2578,7 +2536,6 @@
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
     <elementParameter field="PASSWORD" name="PASS" show="false" value="0RMsyjmybrE="/>
-    <elementParameter field="CHECK" name="USE_SSL" show="false" value="true"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -2586,6 +2543,7 @@
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
     <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT&#13;&#10;&#9;string_agg (&#13;&#10;&#9;&#9;COLUMN_NAME,&#13;&#10;&#9;&#9;','&#13;&#10;&#9;ORDER BY&#13;&#10;&#9;&#9;ordinal_position&#13;&#10;&#9;) AS primary_keys&#13;&#10;FROM&#13;&#10;&#9;sbdt.flat_files_struct&#13;&#10;WHERE date_until='9999-12-31' and lower(source_name)=lower('&quot; +context.GP_SOURCE_NAME + &quot;') and TABLE_NAME ='&quot;+ (String)globalMap.get(&quot;row1.log_table_name&quot;) +&quot;'&quot;&#13;&#10;+ &quot; AND unique_key = 'Y'&quot;"/>
     <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="postgres_id"/>
+    <elementParameter field="CLOSED_LIST" name="DB_DRIVER" show="false" value="POSTGRESQL"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="CHECK" name="USE_CURSOR" value="false"/>
@@ -2620,12 +2578,12 @@
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
     <elementParameter field="PASSWORD" name="PASS" show="false" value="0RMsyjmybrE="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
-    <elementParameter field="CHECK" name="USE_SSL" show="false" value="true"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;alter table &quot;+(String)globalMap.get(&quot;row1.target_schema_orig&quot;)+&quot;.&quot;+(String)globalMap.get(&quot;row1.log_table_name&quot;)+&quot; add primary key (&quot;+ ((String)globalMap.get(&quot;row20.genPrimaryKeys&quot;))  +&quot;)&quot;"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_DRIVER" show="false" value="POSTGRESQL"/>
     <elementParameter field="CHECK" name="PROPAGATE_RECORD_SET" value="false"/>
     <elementParameter field="COLUMN_LIST" name="RECORD_SET_COLUMN" show="false" value=""/>
     <elementParameter field="CHECK" name="USE_PREPAREDSTATEMENT" value="false"/>
@@ -2653,12 +2611,12 @@
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
     <elementParameter field="PASSWORD" name="PASS" show="false" value="0RMsyjmybrE="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
-    <elementParameter field="CHECK" name="USE_SSL" show="false" value="true"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;DROP TABLE IF EXISTS &quot;+(String)globalMap.get(&quot;row1.target_schema&quot;) + &quot;.&quot; + &#13;&#10;(String)globalMap.get(&quot;row1.target_table_name&quot;)+&quot;; CREATE TABLE &quot; + (String)globalMap.get(&quot;row1.target_schema&quot;) + &quot;.&quot; + &#13;&#10;(String)globalMap.get(&quot;row1.target_table_name&quot;) +&quot; ( &quot; + &#13;&#10;(String)globalMap.get(&quot;columnlist&quot;) + &quot; )&quot;+&#13;&#10;globalMap.get(&quot;distributed&quot;)"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="DB_DRIVER" show="false" value="POSTGRESQL"/>
     <elementParameter field="CHECK" name="PROPAGATE_RECORD_SET" value="false"/>
     <elementParameter field="COLUMN_LIST" name="RECORD_SET_COLUMN" show="false" value=""/>
     <elementParameter field="CHECK" name="USE_PREPAREDSTATEMENT" value="false"/>
@@ -2674,7 +2632,7 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tDie" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="768" posY="1760">
+  <node componentName="tDie" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="768" posY="1760">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDie_2"/>
     <elementParameter field="TEXT" name="MESSAGE" value="&quot;error during converting flat files..&quot;"/>
     <elementParameter field="TEXT" name="CODE" value="4"/>
@@ -2694,7 +2652,6 @@
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
     <elementParameter field="PASSWORD" name="PASS" show="false" value="0RMsyjmybrE="/>
-    <elementParameter field="CHECK" name="USE_SSL" show="false" value="true"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -2702,6 +2659,7 @@
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
     <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select sbdt.edl_convert_flat_files_struct('&quot; + context.GP_SOURCE_NAME + &quot;','&quot; + (String)globalMap.get(&quot;row1.log_table_name&quot;) + &quot;','&quot;+((String)globalMap.get(&quot;row1.update_type&quot;))+&quot;','_tmp')&quot;"/>
     <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="postgres_id"/>
+    <elementParameter field="CLOSED_LIST" name="DB_DRIVER" show="false" value="POSTGRESQL"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="CHECK" name="USE_CURSOR" value="false"/>
@@ -2724,64 +2682,9 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tFlowToIterate_11"/>
   </node>
-  <node componentName="tGEGreenplumGPLoad" componentVersion="0.3" offsetLabelX="0" offsetLabelY="0" posX="352" posY="1344">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tGEGreenplumGPLoad_2"/>
-    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="postgres_id"/>
-    <elementParameter field="TEXT" name="TYPE" show="false" value="PostgreSQL"/>
-    <elementParameter field="TEXT" name="HOST" value="context.SOURCING_Server"/>
-    <elementParameter field="TEXT" name="PORT" value="context.SOURCING_Port"/>
-    <elementParameter field="TEXT" name="DBNAME" value="context.SOURCING_Database"/>
-    <elementParameter field="TEXT" name="SCHEMA_DB" value="((String)globalMap.get(&quot;row1.target_schema_orig&quot;))"/>
-    <elementParameter field="TEXT" name="USER" value="context.SOURCING_Login"/>
-    <elementParameter field="TEXT" name="PASS" value="context.SOURCING_Password"/>
-    <elementParameter field="DBTABLE" name="TABLE" value="((String)globalMap.get(&quot;row1.log_table_name&quot;)) + &quot;_stg&quot;"/>
-    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
-    <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
-    <elementParameter field="CHECK" name="USE_SL" value="true"/>
-    <elementParameter field="FILE" name="DATA_FILE" value="(String)globalMap.get(&quot;filetocheck&quot;)"/>
-    <elementParameter field="CHECK" name="GUESS_COLUMN_LIST" value="false"/>
-    <elementParameter field="TEXT" name="COLUMN_LIST" value="GPLoadRoutine.getGPLoadColumnList((String)globalMap.get(&quot;columnlist&quot;))"/>
-    <elementParameter field="TEXT" name="SOURCE_LOCALHOSTNAME" value="context.ETL_LOCALHOSTNAME"/>
-    <elementParameter field="TEXT" name="SOURCE_PORT" value="context.HAWQ_Source_Ports"/>
-    <elementParameter field="CHECK" name="USE_NAMED_PIPE" value="false"/>
-    <elementParameter field="TEXT" name="NAMED_PIPE" show="false" value="context.STOCK_ORACLE_DB_SharedConnection+&quot;GPLoader.pipe&quot;"/>
-    <elementParameter field="TABLE" name="UPDATE_OPTIONS" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="FinalData"/>
-      <elementValue elementRef="MATCH_KEY" value="false"/>
-      <elementValue elementRef="UPDATE_KEY" value="false"/>
-    </elementParameter>
-    <elementParameter field="TEXT" name="UPDATE_CONDITION" show="false" value="&quot;&quot;"/>
-    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
-    <elementParameter field="LABEL" name="NOTE1" value="* these fields doesn't needs to be filled can be left empty: &quot;&quot;"/>
-    <elementParameter field="CHECK" name="USE_EXISTING_CLT_FILE" value="false"/>
-    <elementParameter field="FILE" name="CLT_FILE" show="false" value="&quot;/Users/502294012/Downloads/Talend-Studio-r111943-V5.4.1/workspace/gpload.ctl&quot;"/>
-    <elementParameter field="CHECK" name="CSV_OPTIONS" value="true"/>
-    <elementParameter field="TEXT" name="FIELD_SEPARATOR" value="(String)globalMap.get(&quot;row1.flat_file_separator&quot;)"/>
-    <elementParameter field="TEXT" name="ESCAPE_CHAR" value="(String)globalMap.get(&quot;row1.flat_file_quote&quot;)"/>
-    <elementParameter field="TEXT" name="QUOTE_CHAR" value="((String)globalMap.get(&quot;row1.flat_file_enclosure&quot;))"/>
-    <elementParameter field="CHECK" name="HEADER_ROW" value="true"/>
-    <elementParameter field="TABLE" name="OPTIONS">
-      <elementValue elementRef="KEY" value="ERROR_LIMIT"/>
-      <elementValue elementRef="VALUE" value="context.GPLOAD_ERROR_LIMIT"/>
-      <elementValue elementRef="KEY" value="ERROR_TABLE"/>
-      <elementValue elementRef="VALUE" value="&quot;sbdt.gpload_errors_&quot;"/>
-      <elementValue elementRef="KEY" value="NULL_AS"/>
-      <elementValue elementRef="VALUE" value="(String)globalMap.get(&quot;row1.flat_file_null_string&quot;)"/>
-    </elementParameter>
-    <elementParameter field="TEXT" name="LOG_FILE" value="context.ETL_STORAGE_PATH + &quot;/&quot; +context.GP_SOURCE_NAME + &quot;/data/&quot; + context.SOURCE_DATABASE  + &quot;/&quot; + ((String)globalMap.get(&quot;row1.log_table_name&quot;)).replace(&quot;\&quot;&quot;,&quot;&quot;).replace(&quot;#&quot;,&quot;__hash__&quot;).replace(&quot;$&quot;,&quot;__dollar__&quot;)  + new SimpleDateFormat(&quot;yyyyMMddHHmmss&quot;).format(((java.util.Date)globalMap.get(&quot;row1.now&quot;))).toString() + &quot;.log&quot;"/>
-    <elementParameter field="TEXT" name="ENCODING" value="&quot;UTF8&quot;"/>
-    <elementParameter field="FILE" name="YAML_PATH" value="context.ETL_STORAGE_PATH + &quot;/&quot; + context.GP_SOURCE_NAME + &quot;/data/&quot; +context.SOURCE_DATABASE  + &quot;/&quot; + ((String)globalMap.get(&quot;row1.log_table_name&quot;))  + &quot;.yaml&quot;"/>
-    <elementParameter field="CHECK" name="SPECIFY_GPLOAD_PATH" value="true"/>
-    <elementParameter field="FILE" name="GPLOAD_PATH" value="&quot;gpload&quot;"/>
-    <elementParameter field="CHECK" name="REMOVE_DATAFILE" value="false"/>
-    <elementParameter field="CHECK" name="USE_GZIP_COMPRESSION" value="false"/>
-    <elementParameter field="TABLE" name="YAML_SQL">
-      <elementValue elementRef="SQL_TYPE" value="BEFORE:"/>
-      <elementValue elementRef="SQL_VALUE" value="&quot;set gp_max_csv_line_length=4000000&quot;"/>
-    </elementParameter>
-    <elementParameter field="CHECK" name="PRINT_LOG_TO_CONSOLE" value="false"/>
-    <elementParameter field="TEXT" name="LABEL" value="CSV ingestion"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  <node componentName="tGEGreenplumGPLoad" offsetLabelX="0" offsetLabelY="0" posX="352" posY="1344" sizeX="32" sizeY="35">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tGEGreenplumGPLoad_2"/>
+    <elementParameter field="CHECK" name="STARTABLE" show="false" value="true"/>
     <metadata connector="FLOW" name="tGEGreenplumGPLoad_2">
       <column comment="" key="false" length="-1" name="FinalData" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
     </metadata>
@@ -2805,12 +2708,12 @@
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
     <elementParameter field="PASSWORD" name="PASS" show="false" value="k3WNzwEJ9MTsQqCStv4d5g=="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
-    <elementParameter field="CHECK" name="USE_SSL" show="false" value="true"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="MEMO_SQL" name="QUERY" value="GEroutines.sqlDropTable((String)globalMap.get(&quot;row1.target_schema_orig&quot;), &quot;&quot;, (String)globalMap.get(&quot;row1.log_table_name&quot;) + &quot;_stg&quot;)"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="DB_DRIVER" show="false" value="POSTGRESQL"/>
     <elementParameter field="CHECK" name="PROPAGATE_RECORD_SET" value="false"/>
     <elementParameter field="COLUMN_LIST" name="RECORD_SET_COLUMN" show="false" value="moment"/>
     <elementParameter field="CHECK" name="USE_PREPAREDSTATEMENT" value="false"/>
@@ -2870,12 +2773,12 @@
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
     <elementParameter field="PASSWORD" name="PASS" show="false" value="k3WNzwEJ9MTsQqCStv4d5g=="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
-    <elementParameter field="CHECK" name="USE_SSL" show="false" value="true"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="MEMO_SQL" name="QUERY" value="GEroutines.sqlDropTable((String)globalMap.get(&quot;row1.target_schema_orig&quot;), &quot;&quot;, (String)globalMap.get(&quot;row1.log_table_name&quot;) + &quot;_tmp&quot;)"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="DB_DRIVER" show="false" value="POSTGRESQL"/>
     <elementParameter field="CHECK" name="PROPAGATE_RECORD_SET" value="false"/>
     <elementParameter field="COLUMN_LIST" name="RECORD_SET_COLUMN" show="false" value="moment"/>
     <elementParameter field="CHECK" name="USE_PREPAREDSTATEMENT" value="false"/>
@@ -2958,7 +2861,6 @@
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
     <elementParameter field="PASSWORD" name="PASS" show="false" value="0RMsyjmybrE="/>
-    <elementParameter field="CHECK" name="USE_SSL" show="false" value="true"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -2966,6 +2868,7 @@
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
     <elementParameter field="MEMO_SQL" name="QUERY" value="&quot; SELECT &quot; +&#13;&#10;&quot; 'ALTER TABLE &quot;+ ((String)globalMap.get(&quot;row1.target_schema_orig&quot;)) +&quot;.' || s. TABLE_NAME || ' ADD COLUMN ' || s. COLUMN_NAME || ' ' || s.data_type &quot; +&#13;&#10;&quot; FROM &quot; +&#13;&#10;&quot; ( &quot; +&#13;&#10;&quot; SELECT &quot; +&#13;&#10;&quot; COLUMN_NAME &quot; +&#13;&#10;&quot; FROM &quot; +&#13;&#10;&quot; sbdt.flat_files_struct &quot; +&#13;&#10;&quot; WHERE &quot; +&#13;&#10;&quot; date_until = '9999-12-31' &quot; +&#13;&#10;&quot; AND lower(source_name) = lower('&quot;+context.GP_SOURCE_NAME+&quot;') &quot; +&#13;&#10;&quot; AND TABLE_NAME = '&quot;+((String)globalMap.get(&quot;row1.log_table_name&quot;))+&quot;' &quot; +&#13;&#10;&quot; EXCEPT &quot; +&#13;&#10;&quot; SELECT &quot; +&#13;&#10;&quot; COLUMN_NAME &quot; +&#13;&#10;&quot; FROM &quot; +&#13;&#10;&quot; information_schema. COLUMNS &quot; +&#13;&#10;&quot; WHERE &quot; +&#13;&#10;&quot; table_catalog = '&quot;+context.SOURCING_Database+&quot;' &quot; +&#13;&#10;&quot; AND table_schema = '&quot;+((String)globalMap.get(&quot;row1.target_schema_orig&quot;))+&quot;' &quot; +&#13;&#10;&quot; AND TABLE_NAME = '&quot;+((String)globalMap.get(&quot;row1.log_table_name&quot;))+&quot;' &quot; +&#13;&#10;&quot; ) AS x &quot; +&#13;&#10;&quot; INNER JOIN sbdt.flat_files_struct s ON lower(s.source_name) = lower('&quot;+context.GP_SOURCE_NAME+&quot;') &quot; +&#13;&#10;&quot; AND s. TABLE_NAME = '&quot;+((String)globalMap.get(&quot;row1.log_table_name&quot;))+&quot;' &quot; +&#13;&#10;&quot; AND s.date_until = '9999-12-31' &quot; +&#13;&#10;&quot; AND s. COLUMN_NAME = x. COLUMN_NAME &quot;"/>
     <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="postgres_id"/>
+    <elementParameter field="CLOSED_LIST" name="DB_DRIVER" show="false" value="POSTGRESQL"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="CHECK" name="USE_CURSOR" value="false"/>
@@ -2999,12 +2902,12 @@
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
     <elementParameter field="PASSWORD" name="PASS" show="false" value="0RMsyjmybrE="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
-    <elementParameter field="CHECK" name="USE_SSL" show="false" value="true"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="MEMO_SQL" name="QUERY" value="((String)globalMap.get(&quot;row22.sqlText&quot;))"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="DB_DRIVER" show="false" value="POSTGRESQL"/>
     <elementParameter field="CHECK" name="PROPAGATE_RECORD_SET" value="false"/>
     <elementParameter field="COLUMN_LIST" name="RECORD_SET_COLUMN" show="false" value=""/>
     <elementParameter field="CHECK" name="USE_PREPAREDSTATEMENT" value="false"/>
@@ -3049,12 +2952,12 @@
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
     <elementParameter field="PASSWORD" name="PASS" show="false" value="0RMsyjmybrE="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
-    <elementParameter field="CHECK" name="USE_SSL" show="false" value="true"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT sbdt.edl_add_two_hvr_cols('&quot;  +((String)globalMap.get(&quot;row1.target_schema_orig&quot;)) + &quot;' )&quot;"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="DB_DRIVER" show="false" value="POSTGRESQL"/>
     <elementParameter field="CHECK" name="PROPAGATE_RECORD_SET" value="false"/>
     <elementParameter field="COLUMN_LIST" name="RECORD_SET_COLUMN" show="false" value=""/>
     <elementParameter field="CHECK" name="USE_PREPAREDSTATEMENT" value="false"/>
@@ -3081,7 +2984,6 @@
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
     <elementParameter field="PASSWORD" name="PASS" show="false" value="0RMsyjmybrE="/>
-    <elementParameter field="CHECK" name="USE_SSL" show="false" value="true"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -3089,6 +2991,7 @@
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
     <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &quot;+&#13;&#10;&quot;&#9;COUNT (*) exists &quot;+&#13;&#10;&quot;FROM &quot;+&#13;&#10;&quot;&#9;information_schema.tables &quot;+&#13;&#10;&quot;WHERE &quot;+&#13;&#10;&quot;&#9;lower(table_catalog) = lower('&quot;+context.SOURCING_Database+&quot;') &quot;+&#13;&#10;&quot;AND lower(table_schema) = lower('&quot;+((String)globalMap.get(&quot;row1.target_schema_orig&quot;))+&quot;') &quot;+&#13;&#10;&quot;AND lower(TABLE_NAME) = lower('&quot;+((String)globalMap.get(&quot;row1.log_table_name&quot;))+&quot;') &quot;"/>
     <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="postgres_id"/>
+    <elementParameter field="CLOSED_LIST" name="DB_DRIVER" show="false" value="POSTGRESQL"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="CHECK" name="USE_CURSOR" value="false"/>
@@ -3132,123 +3035,16 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_30"/>
   </node>
-  <node componentName="tGEGreenplumGPLoad" componentVersion="0.3" offsetLabelX="0" offsetLabelY="0" posX="352" posY="1440">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tGEGreenplumGPLoad_3"/>
-    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="postgres_id"/>
-    <elementParameter field="TEXT" name="TYPE" show="false" value="PostgreSQL"/>
-    <elementParameter field="TEXT" name="HOST" value="context.SOURCING_Server"/>
-    <elementParameter field="TEXT" name="PORT" value="context.SOURCING_Port"/>
-    <elementParameter field="TEXT" name="DBNAME" value="context.SOURCING_Database"/>
-    <elementParameter field="TEXT" name="SCHEMA_DB" value="((String)globalMap.get(&quot;row1.target_schema_orig&quot;))"/>
-    <elementParameter field="TEXT" name="USER" value="context.SOURCING_Login"/>
-    <elementParameter field="TEXT" name="PASS" value="context.SOURCING_Password"/>
-    <elementParameter field="DBTABLE" name="TABLE" value="((String)globalMap.get(&quot;row1.log_table_name&quot;)) + &quot;_stg&quot;"/>
-    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
-    <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
-    <elementParameter field="CHECK" name="USE_SL" value="true"/>
-    <elementParameter field="FILE" name="DATA_FILE" value="(String)globalMap.get(&quot;filetocheck&quot;)"/>
-    <elementParameter field="CHECK" name="GUESS_COLUMN_LIST" value="false"/>
-    <elementParameter field="TEXT" name="COLUMN_LIST" value="GPLoadRoutine.getGPLoadColumnList((String)globalMap.get(&quot;columnlist&quot;))"/>
-    <elementParameter field="TEXT" name="SOURCE_LOCALHOSTNAME" value="context.ETL_LOCALHOSTNAME"/>
-    <elementParameter field="TEXT" name="SOURCE_PORT" value="context.HAWQ_Source_Ports"/>
-    <elementParameter field="CHECK" name="USE_NAMED_PIPE" value="false"/>
-    <elementParameter field="TEXT" name="NAMED_PIPE" show="false" value="context.STOCK_ORACLE_DB_SharedConnection+&quot;GPLoader.pipe&quot;"/>
-    <elementParameter field="TABLE" name="UPDATE_OPTIONS" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="FinalData"/>
-      <elementValue elementRef="MATCH_KEY" value="false"/>
-      <elementValue elementRef="UPDATE_KEY" value="false"/>
-    </elementParameter>
-    <elementParameter field="TEXT" name="UPDATE_CONDITION" show="false" value="&quot;&quot;"/>
-    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
-    <elementParameter field="LABEL" name="NOTE1" value="* these fields doesn't needs to be filled can be left empty: &quot;&quot;"/>
-    <elementParameter field="CHECK" name="USE_EXISTING_CLT_FILE" value="false"/>
-    <elementParameter field="FILE" name="CLT_FILE" show="false" value="&quot;/Users/502294012/Downloads/Talend-Studio-r111943-V5.4.1/workspace/gpload.ctl&quot;"/>
-    <elementParameter field="CHECK" name="CSV_OPTIONS" value="false"/>
-    <elementParameter field="TEXT" name="FIELD_SEPARATOR" value="(String)globalMap.get(&quot;row1.flat_file_separator&quot;)"/>
-    <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;\\&quot;"/>
-    <elementParameter field="TEXT" name="QUOTE_CHAR" show="false" value="&quot;\&quot;&quot;"/>
-    <elementParameter field="CHECK" name="HEADER_ROW" value="false"/>
-    <elementParameter field="TABLE" name="OPTIONS">
-      <elementValue elementRef="KEY" value="ERROR_LIMIT"/>
-      <elementValue elementRef="VALUE" value="context.GPLOAD_ERROR_LIMIT"/>
-      <elementValue elementRef="KEY" value="ERROR_TABLE"/>
-      <elementValue elementRef="VALUE" value="&quot;sbdt.gpload_errors_&quot;"/>
-      <elementValue elementRef="KEY" value="NULL_AS"/>
-      <elementValue elementRef="VALUE" value="(String)globalMap.get(&quot;row1.flat_file_null_string&quot;)"/>
-    </elementParameter>
-    <elementParameter field="TEXT" name="LOG_FILE" value="context.ETL_STORAGE_PATH + &quot;/&quot; +context.GP_SOURCE_NAME + &quot;/data/&quot; + context.SOURCE_DATABASE  + &quot;/&quot; + ((String)globalMap.get(&quot;row1.log_table_name&quot;)).replace(&quot;\&quot;&quot;,&quot;&quot;).replace(&quot;#&quot;,&quot;__hash__&quot;).replace(&quot;$&quot;,&quot;__dollar__&quot;)  + new SimpleDateFormat(&quot;yyyyMMddHHmmss&quot;).format(((java.util.Date)globalMap.get(&quot;row1.now&quot;))).toString() + &quot;.log&quot;"/>
-    <elementParameter field="TEXT" name="ENCODING" value="&quot;UTF8&quot;"/>
-    <elementParameter field="FILE" name="YAML_PATH" value="context.ETL_STORAGE_PATH + &quot;/&quot; + context.GP_SOURCE_NAME + &quot;/data/&quot; +context.SOURCE_DATABASE  + &quot;/&quot; + ((String)globalMap.get(&quot;row1.log_table_name&quot;))  + &quot;.yaml&quot;"/>
-    <elementParameter field="CHECK" name="SPECIFY_GPLOAD_PATH" value="true"/>
-    <elementParameter field="FILE" name="GPLOAD_PATH" value="&quot;gpload&quot;"/>
-    <elementParameter field="CHECK" name="REMOVE_DATAFILE" value="false"/>
-    <elementParameter field="CHECK" name="USE_GZIP_COMPRESSION" value="false"/>
-    <elementParameter field="TABLE" name="YAML_SQL"/>
-    <elementParameter field="CHECK" name="PRINT_LOG_TO_CONSOLE" value="false"/>
-    <elementParameter field="TEXT" name="LABEL" value="TXT ingestion"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  <node componentName="tGEGreenplumGPLoad" offsetLabelX="0" offsetLabelY="0" posX="352" posY="1440" sizeX="32" sizeY="35">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tGEGreenplumGPLoad_3"/>
+    <elementParameter field="CHECK" name="STARTABLE" show="false" value="true"/>
     <metadata connector="FLOW" name="tGEGreenplumGPLoad_3">
       <column comment="" key="false" length="-1" name="FinalData" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tGEGreenplumGPLoad" componentVersion="0.3" offsetLabelX="0" offsetLabelY="0" posX="352" posY="1536">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tGEGreenplumGPLoad_4"/>
-    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="postgres_id"/>
-    <elementParameter field="TEXT" name="TYPE" show="false" value="PostgreSQL"/>
-    <elementParameter field="TEXT" name="HOST" value="context.SOURCING_Server"/>
-    <elementParameter field="TEXT" name="PORT" value="context.SOURCING_Port"/>
-    <elementParameter field="TEXT" name="DBNAME" value="context.SOURCING_Database"/>
-    <elementParameter field="TEXT" name="SCHEMA_DB" value="((String)globalMap.get(&quot;row1.target_schema_orig&quot;))"/>
-    <elementParameter field="TEXT" name="USER" value="context.SOURCING_Login"/>
-    <elementParameter field="TEXT" name="PASS" value="context.SOURCING_Password"/>
-    <elementParameter field="DBTABLE" name="TABLE" value="((String)globalMap.get(&quot;row1.log_table_name&quot;)) + &quot;_stg&quot;"/>
-    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
-    <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
-    <elementParameter field="CHECK" name="USE_SL" value="true"/>
-    <elementParameter field="FILE" name="DATA_FILE" value="(String)globalMap.get(&quot;filetocheck&quot;)"/>
-    <elementParameter field="CHECK" name="GUESS_COLUMN_LIST" value="false"/>
-    <elementParameter field="TEXT" name="COLUMN_LIST" value="GPLoadRoutine.getGPLoadColumnList((String)globalMap.get(&quot;columnlist&quot;))"/>
-    <elementParameter field="TEXT" name="SOURCE_LOCALHOSTNAME" value="context.ETL_LOCALHOSTNAME"/>
-    <elementParameter field="TEXT" name="SOURCE_PORT" value="context.HAWQ_Source_Ports"/>
-    <elementParameter field="CHECK" name="USE_NAMED_PIPE" value="false"/>
-    <elementParameter field="TEXT" name="NAMED_PIPE" show="false" value="context.STOCK_ORACLE_DB_SharedConnection+&quot;GPLoader.pipe&quot;"/>
-    <elementParameter field="TABLE" name="UPDATE_OPTIONS" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="FinalData"/>
-      <elementValue elementRef="MATCH_KEY" value="false"/>
-      <elementValue elementRef="UPDATE_KEY" value="false"/>
-    </elementParameter>
-    <elementParameter field="TEXT" name="UPDATE_CONDITION" show="false" value="&quot;&quot;"/>
-    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
-    <elementParameter field="LABEL" name="NOTE1" value="* these fields doesn't needs to be filled can be left empty: &quot;&quot;"/>
-    <elementParameter field="CHECK" name="USE_EXISTING_CLT_FILE" value="false"/>
-    <elementParameter field="FILE" name="CLT_FILE" show="false" value="&quot;/Users/502294012/Downloads/Talend-Studio-r111943-V5.4.1/workspace/gpload.ctl&quot;"/>
-    <elementParameter field="CHECK" name="CSV_OPTIONS" value="true"/>
-    <elementParameter field="TEXT" name="FIELD_SEPARATOR" value="(String)globalMap.get(&quot;row1.flat_file_separator&quot;)"/>
-    <elementParameter field="TEXT" name="ESCAPE_CHAR" value="(String)globalMap.get(&quot;row1.flat_file_quote&quot;)"/>
-    <elementParameter field="TEXT" name="QUOTE_CHAR" value="((String)globalMap.get(&quot;row1.flat_file_enclosure&quot;))"/>
-    <elementParameter field="CHECK" name="HEADER_ROW" value="false"/>
-    <elementParameter field="TABLE" name="OPTIONS">
-      <elementValue elementRef="KEY" value="ERROR_LIMIT"/>
-      <elementValue elementRef="VALUE" value="context.GPLOAD_ERROR_LIMIT"/>
-      <elementValue elementRef="KEY" value="ERROR_TABLE"/>
-      <elementValue elementRef="VALUE" value="&quot;sbdt.gpload_errors_&quot;"/>
-      <elementValue elementRef="KEY" value="NULL_AS"/>
-      <elementValue elementRef="VALUE" value="(String)globalMap.get(&quot;row1.flat_file_null_string&quot;)"/>
-    </elementParameter>
-    <elementParameter field="TEXT" name="LOG_FILE" value="context.ETL_STORAGE_PATH + &quot;/&quot; +context.GP_SOURCE_NAME + &quot;/data/&quot; + context.SOURCE_DATABASE  + &quot;/&quot; + ((String)globalMap.get(&quot;row1.log_table_name&quot;)).replace(&quot;\&quot;&quot;,&quot;&quot;).replace(&quot;#&quot;,&quot;__hash__&quot;).replace(&quot;$&quot;,&quot;__dollar__&quot;)  + new SimpleDateFormat(&quot;yyyyMMddHHmmss&quot;).format(((java.util.Date)globalMap.get(&quot;row1.now&quot;))).toString() + &quot;.log&quot;"/>
-    <elementParameter field="TEXT" name="ENCODING" value="&quot;UTF8&quot;"/>
-    <elementParameter field="FILE" name="YAML_PATH" value="context.ETL_STORAGE_PATH + &quot;/&quot; + context.GP_SOURCE_NAME + &quot;/data/&quot; +context.SOURCE_DATABASE  + &quot;/&quot; + ((String)globalMap.get(&quot;row1.log_table_name&quot;))  + &quot;.yaml&quot;"/>
-    <elementParameter field="CHECK" name="SPECIFY_GPLOAD_PATH" value="true"/>
-    <elementParameter field="FILE" name="GPLOAD_PATH" value="&quot;gpload&quot;"/>
-    <elementParameter field="CHECK" name="REMOVE_DATAFILE" value="false"/>
-    <elementParameter field="CHECK" name="USE_GZIP_COMPRESSION" value="false"/>
-    <elementParameter field="TABLE" name="YAML_SQL">
-      <elementValue elementRef="SQL_TYPE" value="BEFORE:"/>
-      <elementValue elementRef="SQL_VALUE" value="&quot;set gp_max_csv_line_length=4000000&quot;"/>
-    </elementParameter>
-    <elementParameter field="CHECK" name="PRINT_LOG_TO_CONSOLE" value="false"/>
-    <elementParameter field="TEXT" name="LABEL" value="CSV ingestion"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  <node componentName="tGEGreenplumGPLoad" offsetLabelX="0" offsetLabelY="0" posX="352" posY="1536" sizeX="32" sizeY="35">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tGEGreenplumGPLoad_4"/>
+    <elementParameter field="CHECK" name="STARTABLE" show="false" value="true"/>
     <metadata connector="FLOW" name="tGEGreenplumGPLoad_4">
       <column comment="" key="false" length="-1" name="FinalData" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
     </metadata>
@@ -3275,7 +3071,8 @@
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="SHARED_CONNECTION_NAME" show="false" value=""/>
-    <elementParameter field="CHECK" name="USE_SSL" value="true"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="DB_DRIVER" value="POSTGRESQL"/>
     <elementParameter field="CHECK" name="AUTO_COMMIT" value="true"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
@@ -3294,7 +3091,8 @@
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="SHARED_CONNECTION_NAME" show="false" value=""/>
-    <elementParameter field="CHECK" name="USE_SSL" value="true"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="DB_DRIVER" value="POSTGRESQL"/>
     <elementParameter field="CHECK" name="AUTO_COMMIT" value="true"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
@@ -3315,12 +3113,12 @@
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
     <elementParameter field="PASSWORD" name="PASS" show="false" value="EmekHM+r0swh+R92AteNsCgNibbYUhmE+t92mu1Zfdo="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
-    <elementParameter field="CHECK" name="USE_SSL" show="false" value="true"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;truncate &quot; + (String)globalMap.get(&quot;row1.target_schema&quot;) + &quot;.&quot; + (String)globalMap.get(&quot;row1.target_table_name&quot;) + &quot;;&quot;"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_DRIVER" show="false" value="POSTGRESQL"/>
     <elementParameter field="CHECK" name="PROPAGATE_RECORD_SET" value="false"/>
     <elementParameter field="COLUMN_LIST" name="RECORD_SET_COLUMN" show="false" value=""/>
     <elementParameter field="CHECK" name="USE_PREPAREDSTATEMENT" value="false"/>
@@ -3347,12 +3145,12 @@
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
     <elementParameter field="PASSWORD" name="PASS" show="false" value="EmekHM+r0swh+R92AteNsCgNibbYUhmE+t92mu1Zfdo="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
-    <elementParameter field="CHECK" name="USE_SSL" show="false" value="true"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;insert into sbdt.edl_table_last_update (system_name, target_schema, target_table_name, last_update_date, last_update_value, row_id, run_id, update_type) values (&quot; +&#13;&#10;&quot;'&quot; + ((String)globalMap.get(&quot;row1.source_name&quot;)) + &quot;',&quot; +&#13;&#10;&quot;'&quot; + (String)globalMap.get(&quot;row1.target_schema_orig&quot;) + &quot;',&quot; +&#13;&#10;&quot;'&quot; + (String)globalMap.get(&quot;row1.log_table_name&quot;) + &quot;',&quot; +&#13;&#10;&quot;to_timestamp('&quot; +new SimpleDateFormat(&quot;yyyy-MM-dd HH:mm:ss&quot;).format(((java.util.Date)globalMap.get(&quot;row1.now&quot;))).toString() + &quot;', 'YYYY-MM-DD HH24:MI:SS')::timestamp without time zone ,&quot; +&#13;&#10;((globalMap.get(&quot;row7.last_update_value&quot;)==null) ? &quot;NULL&quot; : (&quot;to_timestamp('&quot; +new SimpleDateFormat(&quot;yyyy-MM-dd HH:mm:ss&quot;).format(((java.util.Date)globalMap.get(&quot;row7.last_update_value&quot;))).toString() + &quot;', 'YYYY-MM-DD HH24:MI:SS')::timestamp without time zone&quot;)) + &quot;,&quot; +&#13;&#10;&quot;(select min(row_id) from sbdt.edl_log where run_id = &quot;+((Integer)context.LOG_RUN_ID).toString() + &quot;),&quot; +&#13;&#10;((Integer)context.LOG_RUN_ID).toString() + &quot;,&quot; +&#13;&#10;&quot;'&quot; + ((String)globalMap.get(&quot;row1.update_type&quot;)) + &quot;'&quot; +&#13;&#10;&quot;);&quot;&#13;&#10;&#13;&#10;/*&quot;update sbdt.edl_table set last_update_date = to_timestamp('&quot; +&#13;&#10;new SimpleDateFormat(&quot;yyyy-MM-dd HH:mm:ss&quot;).format(((java.util.Date)globalMap.get(&quot;row1.now&quot;))).toString() + &#13;&#10;&quot;', 'YYYY-MM-DD HH24:MI:SS')::timestamp without time zone &quot; +&#13;&#10;&quot;, previous_last_update_date=&quot; +&#13;&#10;&quot;case when update_type='Incremental' then to_timestamp(&quot; + &#13;&#10;((globalMap.get(&quot;row1.last_update_date&quot;)==null) ? &quot;null&quot; : (&quot;'&quot; + String.valueOf(new SimpleDateFormat(&quot;yyyy-MM-dd HH:mm:ss&quot;).format(((java.util.Date)globalMap.get(&quot;row1.last_update_date&quot;)))) + &quot;'&quot;)) +&#13;&#10;&quot;, 'YYYY-MM-DD HH24:MI:SS')::timestamp without time zone else null end &quot; + &#13;&#10;&quot; where system_name='&quot; + ((String)globalMap.get(&quot;row1.source_name&quot;)) + &quot;' and &quot; +&#13;&#10;&quot; target_table_name='&quot; + ((String)globalMap.get(&quot;row1.log_table_name&quot;)) + &quot;';&quot;*/"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="DB_DRIVER" show="false" value="POSTGRESQL"/>
     <elementParameter field="CHECK" name="PROPAGATE_RECORD_SET" value="false"/>
     <elementParameter field="COLUMN_LIST" name="RECORD_SET_COLUMN" show="false" value=""/>
     <elementParameter field="CHECK" name="USE_PREPAREDSTATEMENT" value="false"/>
@@ -3378,7 +3176,6 @@
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
     <elementParameter field="PASSWORD" name="PASS" show="false" value="0RMsyjmybrE="/>
-    <elementParameter field="CHECK" name="USE_SSL" show="false" value="true"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -3386,6 +3183,7 @@
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
     <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select coalesce(&#13;&#10;(select max(&quot; + (String)globalMap.get(&quot;row1.update_col&quot;) + &quot;) last_update_value from &quot; + (String)globalMap.get(&quot;row1.target_schema&quot;) + &quot;.&quot; + (String)globalMap.get(&quot;row1.target_table_name&quot;) + &quot;),&#13;&#10;(select max(&quot; + (String)globalMap.get(&quot;row1.update_col&quot;) + &quot;) last_update_value from &quot; + (String)globalMap.get(&quot;row1.target_schema_orig&quot;) + &quot;.&quot; + (String)globalMap.get(&quot;row1.log_table_name&quot;) + &quot;)&#13;&#10;)&quot;;"/>
     <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="postgres_id"/>
+    <elementParameter field="CLOSED_LIST" name="DB_DRIVER" show="false" value="POSTGRESQL"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="CHECK" name="USE_CURSOR" value="false"/>
@@ -3426,12 +3224,12 @@
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
     <elementParameter field="PASSWORD" name="PASS" show="false" value="EmekHM+r0swh+R92AteNsCgNibbYUhmE+t92mu1Zfdo="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
-    <elementParameter field="CHECK" name="USE_SSL" show="false" value="true"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;insert into sbdt.edl_table_last_update (system_name, target_schema, target_table_name, last_update_date, last_update_value, row_id, run_id, update_type) values (&quot; +&#13;&#10;&quot;'&quot; + ((String)globalMap.get(&quot;row1.source_name&quot;)) + &quot;',&quot; +&#13;&#10;&quot;'&quot; + (String)globalMap.get(&quot;row1.target_schema_orig&quot;) + &quot;',&quot; +&#13;&#10;&quot;'&quot; + (String)globalMap.get(&quot;row1.log_table_name&quot;) + &quot;',&quot; +&#13;&#10;&quot;to_timestamp('&quot; +new SimpleDateFormat(&quot;yyyy-MM-dd HH:mm:ss&quot;).format(((java.util.Date)globalMap.get(&quot;row1.now&quot;))).toString() + &quot;', 'YYYY-MM-DD HH24:MI:SS')::timestamp without time zone ,&quot; +&#13;&#10;&quot;to_timestamp('&quot; +new SimpleDateFormat(&quot;yyyy-MM-dd HH:mm:ss&quot;).format(((java.util.Date)globalMap.get(&quot;row24_0_0.last_update_value&quot;))).toString() + &quot;', 'YYYY-MM-DD HH24:MI:SS')::timestamp without time zone ,&quot; +&#13;&#10;&quot;(select min(row_id) from sbdt.edl_log where run_id = &quot;+((Integer)context.LOG_RUN_ID).toString() + &quot;),&quot; +&#13;&#10;((Integer)context.LOG_RUN_ID).toString() + &quot;,&quot; +&#13;&#10;&quot;'&quot; + ((String)globalMap.get(&quot;row1.update_type&quot;)) + &quot;'&quot; +&#13;&#10;&quot;);&quot;&#13;&#10;&#13;&#10;/*&quot;update sbdt.edl_table set &#13;&#10;last_update_date = to_timestamp('&quot; +new SimpleDateFormat(&quot;yyyy-MM-dd HH:mm:ss&quot;).format(((java.util.Date)globalMap.get(&quot;row1.now&quot;))).toString() + &quot;', 'YYYY-MM-DD HH24:MI:SS')::timestamp without time zone &quot; +&#13;&#10;&quot;, previous_last_update_date = to_timestamp('&quot; +new SimpleDateFormat(&quot;yyyy-MM-dd HH:mm:ss&quot;).format(((java.util.Date)globalMap.get(&quot;row1.last_update_date_orig&quot;))).toString() + &quot;', 'YYYY-MM-DD HH24:MI:SS')::timestamp without time zone &quot; +&#13;&#10;&quot;, last_update_value = to_timestamp('&quot; +new SimpleDateFormat(&quot;yyyy-MM-dd HH:mm:ss&quot;).format(((java.util.Date)globalMap.get(&quot;row7.last_update_value&quot;))).toString() + &quot;', 'YYYY-MM-DD HH24:MI:SS')::timestamp without time zone &quot; +&#13;&#10;&quot; where system_name='&quot; + ((String)globalMap.get(&quot;row1.source_name&quot;)) + &quot;' and &quot; +&#13;&#10;&quot; target_table_name='&quot; + ((String)globalMap.get(&quot;row1.log_table_name&quot;)) + &quot;';&quot;*/"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="DB_DRIVER" show="false" value="POSTGRESQL"/>
     <elementParameter field="CHECK" name="PROPAGATE_RECORD_SET" value="false"/>
     <elementParameter field="COLUMN_LIST" name="RECORD_SET_COLUMN" show="false" value=""/>
     <elementParameter field="CHECK" name="USE_PREPAREDSTATEMENT" value="false"/>
@@ -3457,6 +3255,59 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tGreenplumClose_22"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tGreenplumConnection_11"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tGreenplumSCD" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="0" posY="-64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBSCD_1"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;5432&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="Greenplum"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="0RMsyjmybrE="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="COLUMN_LIST" name="SURROGATE_KEY" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="SK_CREATION" show="false" value="AUTO_INCREMENT"/>
+    <elementParameter field="TEXT" name="SK_DB_SEQUENCE" show="false" value=""/>
+    <elementParameter field="PREV_COLUMN_LIST" name="SK_INPUT_FIELD" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SK_ROUTINE" show="false" value="Numeric.sequence(&quot;seq&quot;, 1, 1)"/>
+    <elementParameter field="TABLE" name="SOURCE_KEYS" show="false"/>
+    <elementParameter field="CHECK" name="USE_SAVE_MEM_MODE" value="false"/>
+    <elementParameter field="CHECK" name="SOURCE_KEY_INC_NULL" value="false"/>
+    <elementParameter field="CHECK" name="USE_L0" show="false" value="false"/>
+    <elementParameter field="TABLE" name="L0_FIELDS" show="false"/>
+    <elementParameter field="CHECK" name="USE_L1" show="false" value="false"/>
+    <elementParameter field="TABLE" name="L1_FIELDS" show="false"/>
+    <elementParameter field="CHECK" name="ONLY_UPDATE_ACTIVE" show="false" value="false"/>
+    <elementParameter field="CHECK" name="USE_L2" show="false" value="false"/>
+    <elementParameter field="TABLE" name="L2_FIELDS" show="false"/>
+    <elementParameter field="COLUMN_LIST" name="L2_STARTDATE_FIELD" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="L2_STARTDATE_VALUE" show="false" value="JOB_START_TIME"/>
+    <elementParameter field="PREV_COLUMN_LIST" name="L2_STARTDATE_INPUT_FIELD" show="false" value=""/>
+    <elementParameter field="COLUMN_LIST" name="L2_ENDDATE_FIELD" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="L2_ENDDATE_VALUE" show="false" value="NULL_VALUE"/>
+    <elementParameter field="TEXT" name="L2_ENDDATE_FIXED_VALUE" show="false" value="&quot;2500&quot;"/>
+    <elementParameter field="CHECK" name="USE_L2_ACTIVE" show="false" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="L2_ACTIVE_FIELD" show="false" value=""/>
+    <elementParameter field="CHECK" name="USE_L2_VERSION" show="false" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="L2_VERSION_FIELD" show="false" value=""/>
+    <elementParameter field="LABEL" name="NOTE" show="false" value="(Version must be an Integer)"/>
+    <elementParameter field="CHECK" name="USE_L3" show="false" value="false"/>
+    <elementParameter field="TABLE" name="L3_FIELDS" show="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_DRIVER" value="POSTGRESQL"/>
+    <elementParameter field="TEXT" name="L2_ENDDATE_TIME_DETAILS" show="false" value="&quot;12:00:00&quot;"/>
+    <elementParameter field="LABEL" name="NOICE" show="false" value="(Time pattern: 'HH:mm:ss')"/>
+    <elementParameter field="CHECK" name="DEBUG" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDBSCD_1"/>
+    <metadata connector="REJECT" name="REJECT">
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
   </node>
   <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tFileExist_1" offsetLabelX="0" offsetLabelY="0" source="tFileExist_1" target="tFileProperties_1">
     <elementParameter field="MEMO_JAVA" name="CONDITION" value="((Boolean)globalMap.get(&quot;tFileExist_1_EXISTS&quot;))"/>
@@ -3797,15 +3648,15 @@
     <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk42"/>
   </connection>
-  <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tGreenplumConnection_8" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tGreenplumConnection_8" target="tJava_13">
-    <elementParameter field="MEMO_JAVA" name="CONDITION" value="context.LOG_ROW_ID != -1"/>
-    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="If21"/>
-  </connection>
-  <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tGreenplumConnection_8" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tGreenplumConnection_8" target="tJava_23">
+  <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tGreenplumConnection_8" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tGreenplumConnection_8" target="tJava_23">
     <elementParameter field="MEMO_JAVA" name="CONDITION" value="context.LOG_ROW_ID == -1"/>
     <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="If27"/>
+  </connection>
+  <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tGreenplumConnection_8" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tGreenplumConnection_8" target="tJava_13">
+    <elementParameter field="MEMO_JAVA" name="CONDITION" value="context.LOG_ROW_ID != -1"/>
+    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="If21"/>
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tJava_13" offsetLabelX="0" offsetLabelY="0" source="tJava_13" target="tGreenplumRow_12">
     <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
@@ -3826,15 +3677,15 @@
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tSetGlobalVar_6" offsetLabelX="0" offsetLabelY="0" source="tSetGlobalVar_6" target="tJava_19">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk64"/>
   </connection>
-  <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tGreenplumConnection_9" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tGreenplumConnection_9" target="tJava_18">
-    <elementParameter field="MEMO_JAVA" name="CONDITION" value="context.LOG_RUN_ID == -1"/>
-    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="If30"/>
-  </connection>
-  <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tGreenplumConnection_9" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tGreenplumConnection_9" target="tJava_22">
+  <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tGreenplumConnection_9" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tGreenplumConnection_9" target="tJava_22">
     <elementParameter field="MEMO_JAVA" name="CONDITION" value="context.LOG_RUN_ID != -1"/>
     <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="If31"/>
+  </connection>
+  <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tGreenplumConnection_9" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tGreenplumConnection_9" target="tJava_18">
+    <elementParameter field="MEMO_JAVA" name="CONDITION" value="context.LOG_RUN_ID == -1"/>
+    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="If30"/>
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tJava_15" offsetLabelX="0" offsetLabelY="0" source="tJava_15" target="tGreenplumRow_13">
     <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
@@ -5030,13 +4881,18 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_7b757793-3366-47af-aae4-5e09f435ff78"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>RDbyaw5NwdYA299tsBd9h6CS8w43iDEOiU9SVIUjxara+lZmGhyzVcG/De2A9wP9O/PnjTE6Xn/f&#13;
-3frLxe8ScQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_f2680adb-f0ba-483f-894c-622e7ffa048c"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>/tXC6Yg/WZYb8sANs20r38KnZ4/gWtDtU2jERtYcwlj8MyEPMvcFKuQTy3PMCkcZz8HPyUhkXYfq&#13;
-795/1iLlyg==</DigestValue></Reference></SignedInfo><SignatureValue>VJaEXSH1AigsXlFopO3E+YpCHs4wnPg/FJlOFpyym7LtG2evbXLQq9huAwkRC71obah8NgPuz+g7&#13;
-jfPglOWBPY0VPCtR8HOyVSDk9qTRBnqnzC2uYF8fDRsIN6Ma+rdrgYq4lCzJNYh1p3EzkVtW9tqj&#13;
-jSzw2TZl4smddlcjbJM4BYwK0yIdyZMx7INOgnpB3JmyW9bBzYc92i87u+zSNI6jluJCilgecnmZ&#13;
-InBOTVBo1kc0Nt/QlCkDz8wNKwvQVOKyK2i8Ma50ditCiZ3Ahtpg8CZ1iYy+8+f/iSOXSa93ClVJ&#13;
-kwhlo1nWcIJVI8YDmE65wiB7B18np0EgprNyrA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBSCD_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_bf7d2bb4-34d4-414a-b5a1-12891b26140c"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>7a+rRPL+k/hAWmmIuybmZjrcZqva3OTo9MfaYpqZCsWMeyUPXxFVJf612nnozvvUEZWjbitse4fh&#13;
+avhu+fEvCw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_743281dd-7538-4790-99a9-4aebee5445ad"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>47Y126Yaqh77ngrZZqHb8jyJmdsmc7g8qyGO3l1nXWwVUCSUeogU+bq9ZymHBIPmzsFYftSI5Am1&#13;
+o1YolWzPdg==</DigestValue></Reference></SignedInfo><SignatureValue>WlXXSWDAzxp91LhhJRavxcO3GlNPjGFmo8GOCItArmjHo4TZJpE1MQbYY/eDjHauUtcEvslEw06q&#13;
+6GOeTJvF2OysDRgp9kEg7tSdGo+2EM+OEBC97uLD8LVjiCP5zBIJKz6up17MXfYwj4/tqGyZNJpv&#13;
+aEeJwLeZ9BPgt6zi9R5bNiA/y4W5J0YJURZtg5yNKI2gy/td3A/Tk6LU+77+T3Ul3HexnIFgxicY&#13;
+aCDTEDMqg637RhMa4g7qYnWjPM9rCISXOW3r2KRgRw5HOK7qfgHjZDY64Ioj2f3WBfD5jbCLV1N+&#13;
+8MQv+gAOhSDSTzjC0pZJx6AZNmA+U+MxvedoWw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -5058,4 +4914,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_f2680adb-f0ba-483f-894c-622e7ffa048c" Target="#_7b757793-3366-47af-aae4-5e09f435ff78"><Timestamp>2020-04-22 08:20:18</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_743281dd-7538-4790-99a9-4aebee5445ad" Target="#_bf7d2bb4-34d4-414a-b5a1-12891b26140c"><Timestamp>2020-07-22 12:21:02</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>

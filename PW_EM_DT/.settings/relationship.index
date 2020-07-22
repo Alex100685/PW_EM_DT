@@ -58108,10 +58108,6 @@
     "version" : "Latest",
     "type" : "routine"
   }, {
-    "id" : "MDM",
-    "version" : "Latest",
-    "type" : "routine"
-  }, {
     "id" : "Mathematical",
     "version" : "Latest",
     "type" : "routine"
@@ -58141,6 +58137,10 @@
     "type" : "routine"
   }, {
     "id" : "TalendString",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "TalendStringUtil",
     "version" : "Latest",
     "type" : "routine"
   } ]
