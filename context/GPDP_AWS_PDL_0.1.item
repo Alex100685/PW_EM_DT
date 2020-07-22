@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:version="2.0">
+  <talendfile:ContextType confirmationNeeded="false" name="Dev" xmi:id="_1LVFUHFREemuBYEJarZSNg">
+    <contextParameter comment="" name="GPDP_AWS_PDL_DEV_hostname" prompt="GPDP_AWS_PDL_DEV_hostname?" promptNeeded="false" type="id_String" value="&quot;dev-gpclient-pwr.cloud.digital.ge.com&quot;" xmi:id="_1LVFUXFREemuBYEJarZSNg"/>
+    <contextParameter comment="" name="GPDP_AWS_PDL_DEV_username" prompt="GPDP_AWS_PDL_DEV_username?" promptNeeded="false" type="id_String" value="&quot;502800684&quot;" xmi:id="_1LVFUnFREemuBYEJarZSNg"/>
+    <contextParameter comment="" name="GPDP_AWS_PDL_DEV_password" prompt="GPDP_AWS_PDL_DEV_password?" promptNeeded="false" type="id_Password" value="UUKOPGTUys9/ZlGr9rcILg==" xmi:id="_1LVFU3FREemuBYEJarZSNg"/>
+    <contextParameter comment="" name="GPDP_AWS_PDL_DEV_port" prompt="GPDP_AWS_PDL_DEV_port?" promptNeeded="false" type="id_String" value="&quot;5432&quot;" xmi:id="_1LVFVHFREemuBYEJarZSNg"/>
+    <contextParameter comment="" name="GPDP_AWS_PDL_DEV_database" prompt="GPDP_AWS_PDL_DEV_database?" promptNeeded="false" type="id_String" value="&quot;pgsdwh&quot;" xmi:id="_1LVFVXFREemuBYEJarZSNg"/>
+    <contextParameter comment="" name="GPDP_AWS_PDL_DEV_schema" prompt="GPDP_AWS_PDL_DEV_schema?" promptNeeded="false" type="id_String" value="&quot;ing_neocorpit_servicenow_tickets&quot;" xmi:id="_1LVFVnFREemuBYEJarZSNg"/>
+    <contextParameter comment="" name="GPDP_AWS_PDL_STG_schema" prompt="GPDP_AWS_PDL_STG_schema?" promptNeeded="false" type="id_String" value="&quot;ing_neocorpit_servicenow_tickets&quot;" xmi:id="_1LVFV3FREemuBYEJarZSNg"/>
+    <contextParameter comment="" name="GPDP_AWS_PDL_Target_schema" prompt="GPDP_AWS_PDL_Target_schema?" promptNeeded="false" type="id_String" value="&quot;&quot;" xmi:id="_1LVFWHFREemuBYEJarZSNg"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="Prod" xmi:id="_1LVFWXFREemuBYEJarZSNg">
+    <contextParameter comment="" name="GPDP_AWS_PDL_DEV_hostname" prompt="GPDP_AWS_PDL_DEV_hostname?" promptNeeded="false" type="id_String" value="9ha.cloud.digital.ge.com" xmi:id="_1LVFWnFREemuBYEJarZSNg"/>
+    <contextParameter comment="" name="GPDP_AWS_PDL_DEV_username" prompt="GPDP_AWS_PDL_DEV_username?" promptNeeded="false" type="id_String" value="&quot;502800684&quot;" xmi:id="_1LVFW3FREemuBYEJarZSNg"/>
+    <contextParameter comment="" name="GPDP_AWS_PDL_DEV_password" prompt="GPDP_AWS_PDL_DEV_password?" promptNeeded="false" type="id_Password" value="UUKOPGTUys9YSHOKWDERoQ==" xmi:id="_1LVFXHFREemuBYEJarZSNg"/>
+    <contextParameter comment="" name="GPDP_AWS_PDL_DEV_port" prompt="GPDP_AWS_PDL_DEV_port?" promptNeeded="false" type="id_String" value="&quot;5432&quot;" xmi:id="_1LVFXXFREemuBYEJarZSNg"/>
+    <contextParameter comment="" name="GPDP_AWS_PDL_DEV_database" prompt="GPDP_AWS_PDL_DEV_database?" promptNeeded="false" type="id_String" value="&quot;pgsdwh&quot;" xmi:id="_1LVFXnFREemuBYEJarZSNg"/>
+    <contextParameter comment="" name="GPDP_AWS_PDL_DEV_schema" prompt="GPDP_AWS_PDL_DEV_schema?" promptNeeded="false" type="id_String" value="&quot;ing_neocorpit_servicenow_tickets&quot;" xmi:id="_1LVFX3FREemuBYEJarZSNg"/>
+    <contextParameter comment="" name="GPDP_AWS_PDL_STG_schema" prompt="GPDP_AWS_PDL_STG_schema?" promptNeeded="false" type="id_String" value="&quot;ing_neocorpit_servicenow_tickets&quot;" xmi:id="_1LVFYHFREemuBYEJarZSNg"/>
+    <contextParameter comment="" name="GPDP_AWS_PDL_Target_schema" prompt="GPDP_AWS_PDL_Target_schema?" promptNeeded="false" type="id_String" value="&quot;&quot;" xmi:id="_1LVFYXFREemuBYEJarZSNg"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="QA" xmi:id="_1LVFYnFREemuBYEJarZSNg">
+    <contextParameter comment="" name="GPDP_AWS_PDL_DEV_hostname" prompt="GPDP_AWS_PDL_DEV_hostname?" promptNeeded="false" type="id_String" value="&quot;dev-9ha.cloud.digital.ge.com&quot;" xmi:id="_1LVFY3FREemuBYEJarZSNg"/>
+    <contextParameter comment="" name="GPDP_AWS_PDL_DEV_username" prompt="GPDP_AWS_PDL_DEV_username?" promptNeeded="false" type="id_String" value="&quot;502800684&quot;" xmi:id="_1LVFZHFREemuBYEJarZSNg"/>
+    <contextParameter comment="" name="GPDP_AWS_PDL_DEV_password" prompt="GPDP_AWS_PDL_DEV_password?" promptNeeded="false" type="id_Password" value="UUKOPGTUys9/ZlGr9rcILg==" xmi:id="_1LVFZXFREemuBYEJarZSNg"/>
+    <contextParameter comment="" name="GPDP_AWS_PDL_DEV_port" prompt="GPDP_AWS_PDL_DEV_port?" promptNeeded="false" type="id_String" value="&quot;5432&quot;" xmi:id="_1LVFZnFREemuBYEJarZSNg"/>
+    <contextParameter comment="" name="GPDP_AWS_PDL_DEV_database" prompt="GPDP_AWS_PDL_DEV_database?" promptNeeded="false" type="id_String" value="&quot;pgsdwh&quot;" xmi:id="_1LVFZ3FREemuBYEJarZSNg"/>
+    <contextParameter comment="" name="GPDP_AWS_PDL_DEV_schema" prompt="GPDP_AWS_PDL_DEV_schema?" promptNeeded="false" type="id_String" value="&quot;ing_neocorpit_servicenow_tickets&quot;" xmi:id="_1LVFaHFREemuBYEJarZSNg"/>
+    <contextParameter comment="" name="GPDP_AWS_PDL_STG_schema" prompt="GPDP_AWS_PDL_STG_schema?" promptNeeded="false" type="id_String" value="&quot;ing_neocorpit_servicenow_tickets&quot;" xmi:id="_1LVFaXFREemuBYEJarZSNg"/>
+    <contextParameter comment="" name="GPDP_AWS_PDL_Target_schema" prompt="GPDP_AWS_PDL_Target_schema?" promptNeeded="false" type="id_String" value="&quot;&quot;" xmi:id="_1LVFanFREemuBYEJarZSNg"/>
+  </talendfile:ContextType>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_70f06e61-8ef2-49e4-83b4-bcf0db31620b"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>/cO2DjdVLEg4+KHecGu/g1gHuOCerl21aUc9ja1M2yHcvi39vYfawYCuJFwa7YgMWvcQTBZ7i8I/&#13;
+HSBglsL4Ug==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_5897f12b-f909-4d49-bd36-0d0a56edbc63"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>uaU4Bq7q2chE02utZ2OYmF8/xYrTFIjxPkgEsni6QKB4uI3nmY6p6BlVDuccuWZkrCm3hfJy08fA&#13;
+fyg+eZksYA==</DigestValue></Reference></SignedInfo><SignatureValue>B9+/l1uF1G67U1QZRGNgTExGwdxabE6Cjv0H86ZvNE33UfyuzJunZ0ysvihSvQ3xygN2258NOLmk&#13;
+/9u/SDbqg4SCCrw8aPs9Dkhii62E15G3qM/jmD5FwGwIZuHTMXoUWi8MRNmaYcI4bDLZH2XRVvMB&#13;
+EcLyHdGaAaGAYBVzxUkmagy4G//43nx/yXJTD62P6B1DqR2XMku83gulbvMv810sPlbmGangWdRc&#13;
+cJxQ9k51qtjOBs8plBBbFjtT87+DW7lDdnVr3ZaDkA5n5H4AjQPvwnDR/obHX0xaIK2FiDvncmPY&#13;
+KjMTO81AdflkTPo81yRoPuBYBdRNZfTW0+v9eg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_5897f12b-f909-4d49-bd36-0d0a56edbc63" Target="#_70f06e61-8ef2-49e4-83b4-bcf0db31620b"><Timestamp>2020-04-22 08:18:03</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>

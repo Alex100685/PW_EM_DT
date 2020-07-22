@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:version="2.0">
+  <talendfile:ContextType confirmationNeeded="false" name="Default" xmi:id="_o16zIAu1Eeqj4N-9MP6pLg">
+    <contextParameter comment="" name="Tableau_Workgroup_Port" prompt="Tableau_Workgroup_Port?" promptNeeded="false" type="id_String" value="8060" xmi:id="_o16zIQu1Eeqj4N-9MP6pLg"/>
+    <contextParameter comment="" name="Tableau_Workgroup_Password" prompt="Tableau_Workgroup_Password?" promptNeeded="false" type="id_Password" value="eQonV6CsQjsgZ7JqWLtKVQ==" xmi:id="_o16zIgu1Eeqj4N-9MP6pLg"/>
+    <contextParameter comment="" name="Tableau_Workgroup_Server" prompt="Tableau_Workgroup_Server?" promptNeeded="false" type="id_String" value="10.202.218.13" xmi:id="_o16zIwu1Eeqj4N-9MP6pLg"/>
+    <contextParameter comment="" name="Tableau_Workgroup_Schema" prompt="Tableau_Workgroup_Schema?" promptNeeded="false" type="id_String" value="public" xmi:id="_o16zJAu1Eeqj4N-9MP6pLg"/>
+    <contextParameter comment="" name="Tableau_Workgroup_Login" prompt="Tableau_Workgroup_Login?" promptNeeded="false" type="id_String" value="readonly" xmi:id="_o16zJQu1Eeqj4N-9MP6pLg"/>
+    <contextParameter comment="" name="Tableau_Workgroup_Database" prompt="Tableau_Workgroup_Database?" promptNeeded="false" type="id_String" value="workgroup" xmi:id="_o16zJgu1Eeqj4N-9MP6pLg"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="DEV" xmi:id="_o16zJwu1Eeqj4N-9MP6pLg">
+    <contextParameter comment="" name="Tableau_Workgroup_Port" prompt="Tableau_Workgroup_Port?" promptNeeded="false" type="id_String" value="8060" xmi:id="_o16zKAu1Eeqj4N-9MP6pLg"/>
+    <contextParameter comment="" name="Tableau_Workgroup_Password" prompt="Tableau_Workgroup_Password?" promptNeeded="false" type="id_Password" value="eQonV6CsQjsgZ7JqWLtKVQ==" xmi:id="_o16zKQu1Eeqj4N-9MP6pLg"/>
+    <contextParameter comment="" name="Tableau_Workgroup_Server" prompt="Tableau_Workgroup_Server?" promptNeeded="false" type="id_String" value="10.202.218.13" xmi:id="_o16zKgu1Eeqj4N-9MP6pLg"/>
+    <contextParameter comment="" name="Tableau_Workgroup_Schema" prompt="Tableau_Workgroup_Schema?" promptNeeded="false" type="id_String" value="public" xmi:id="_o16zKwu1Eeqj4N-9MP6pLg"/>
+    <contextParameter comment="" name="Tableau_Workgroup_Login" prompt="Tableau_Workgroup_Login?" promptNeeded="false" type="id_String" value="readonly" xmi:id="_o16zLAu1Eeqj4N-9MP6pLg"/>
+    <contextParameter comment="" name="Tableau_Workgroup_Database" prompt="Tableau_Workgroup_Database?" promptNeeded="false" type="id_String" value="workgroup" xmi:id="_o16zLQu1Eeqj4N-9MP6pLg"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="QA" xmi:id="_o16zLgu1Eeqj4N-9MP6pLg">
+    <contextParameter comment="" name="Tableau_Workgroup_Port" prompt="Tableau_Workgroup_Port?" promptNeeded="false" type="id_String" value="8060" xmi:id="_o16zLwu1Eeqj4N-9MP6pLg"/>
+    <contextParameter comment="" name="Tableau_Workgroup_Password" prompt="Tableau_Workgroup_Password?" promptNeeded="false" type="id_Password" value="eQonV6CsQjsgZ7JqWLtKVQ==" xmi:id="_o16zMAu1Eeqj4N-9MP6pLg"/>
+    <contextParameter comment="" name="Tableau_Workgroup_Server" prompt="Tableau_Workgroup_Server?" promptNeeded="false" type="id_String" value="10.202.218.13" xmi:id="_o16zMQu1Eeqj4N-9MP6pLg"/>
+    <contextParameter comment="" name="Tableau_Workgroup_Schema" prompt="Tableau_Workgroup_Schema?" promptNeeded="false" type="id_String" value="public" xmi:id="_o16zMgu1Eeqj4N-9MP6pLg"/>
+    <contextParameter comment="" name="Tableau_Workgroup_Login" prompt="Tableau_Workgroup_Login?" promptNeeded="false" type="id_String" value="readonly" xmi:id="_o16zMwu1Eeqj4N-9MP6pLg"/>
+    <contextParameter comment="" name="Tableau_Workgroup_Database" prompt="Tableau_Workgroup_Database?" promptNeeded="false" type="id_String" value="workgroup" xmi:id="_o16zNAu1Eeqj4N-9MP6pLg"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="PROD" xmi:id="_o16zNQu1Eeqj4N-9MP6pLg">
+    <contextParameter comment="" name="Tableau_Workgroup_Port" prompt="Tableau_Workgroup_Port?" promptNeeded="false" type="id_String" value="8060" xmi:id="_o16zNgu1Eeqj4N-9MP6pLg"/>
+    <contextParameter comment="" name="Tableau_Workgroup_Password" prompt="Tableau_Workgroup_Password?" promptNeeded="false" type="id_Password" value="eQonV6CsQjsgZ7JqWLtKVQ==" xmi:id="_o16zNwu1Eeqj4N-9MP6pLg"/>
+    <contextParameter comment="" name="Tableau_Workgroup_Server" prompt="Tableau_Workgroup_Server?" promptNeeded="false" type="id_String" value="10.202.218.13" xmi:id="_o16zOAu1Eeqj4N-9MP6pLg"/>
+    <contextParameter comment="" name="Tableau_Workgroup_Schema" prompt="Tableau_Workgroup_Schema?" promptNeeded="false" type="id_String" value="public" xmi:id="_o16zOQu1Eeqj4N-9MP6pLg"/>
+    <contextParameter comment="" name="Tableau_Workgroup_Login" prompt="Tableau_Workgroup_Login?" promptNeeded="false" type="id_String" value="readonly" xmi:id="_o16zOgu1Eeqj4N-9MP6pLg"/>
+    <contextParameter comment="" name="Tableau_Workgroup_Database" prompt="Tableau_Workgroup_Database?" promptNeeded="false" type="id_String" value="workgroup" xmi:id="_o16zOwu1Eeqj4N-9MP6pLg"/>
+  </talendfile:ContextType>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_d1ec2906-490f-43fb-919d-8449f7ca72b8"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>3mJXeo/zroBmAcCFOVyyhZ2bJksWX1azg+RkkM1p6Q334g5GGHf5DeNQlZMJJmhoetXYFCCzP0vs&#13;
+NMS/DVH3Rg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_f04203d4-b00d-43b5-8fb0-9c7d25b5862e"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>DrKIQtlqPUSBzVSTmObDfhVve04i7hCa4Xmj1AjKMUD9faE1D8ZGkCCbSQIALIYxJ6EnAtWiHUcW&#13;
+PTZTgYKwkQ==</DigestValue></Reference></SignedInfo><SignatureValue>PntdcBWQjKr5D9sCYyjkw1/nTyR/C/U6wTRgF5mbGqB4VNC1lM9yhL/TG5hx0R/jAdSNeTMUZMPF&#13;
+Tx4Z6IoCvEbhu8pmDMCOrBazZ/wB0I5+tTW+3U2A+QN+bnl8aPbKssAeJgEkQJqthW6PDgyFQwat&#13;
+Gs8Tt988iHi9v3x6/ddUK40pTiCw62l4voX8cWAJyW6oAR53Ds8SVNtr7cBLDG5gjh8aT1Dzgh/T&#13;
+LMVp9wjSSEMb2jPv6his0v2AJdMD590Okz8U5e5LeoM4m0NtPiDd4oKTabbAJvIWGvSPEM4RYiUS&#13;
+L6MAL5h/VgRcRXAz0UvEXk0rWXOeRv8YKsPA/w==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_f04203d4-b00d-43b5-8fb0-9c7d25b5862e" Target="#_d1ec2906-490f-43fb-919d-8449f7ca72b8"><Timestamp>2020-04-22 08:18:04</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>

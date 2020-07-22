@@ -1,0 +1,68 @@
+package routines;
+import java.io.*;
+
+public class Trains {
+
+	public static String val2, type, is_a_steam_unit;
+	public static String total_val; //gt count
+	public static String total_val2; //st count
+	
+public void count_units() {
+
+	try{
+		
+		       System.out.println("we are in count units routine");
+                              
+                              
+} //end of try block
+
+catch (Exception e) {
+   
+         } 
+
+} //end method
+
+
+
+                         
+
+	public static void run(String val2, String type, java.util.Map<String, Object> globalMap) throws IOException {
+	//public static void main(String[] args) throws IOException {
+		//if (type==null)  { System.out.println("type is null");
+	    //continue;} continue does not work outside a loop, do null test instead
+		    if(type != null){
+		//System.out.println("variable passed "+val2);
+		//System.out.println("equip type= "+type);
+		
+		 if(type.equals("Steam Turbine")){
+                  is_a_steam_unit="yes";
+                Integer counter2=(Integer)globalMap.get("st_count");
+   			    globalMap.put("st_count", new Integer(counter2.intValue()+1));
+   		    	total_val2 = String.valueOf(globalMap.get("st_count"));
+                              }
+		 else {is_a_steam_unit="no";
+		        }
+		 
+		 if(type.equals("Gas Turbine") || type.equals("Aero Gas")){
+			//first cast global var to Integer then increment
+			 Integer counter1=(Integer)globalMap.get("count3");
+			   globalMap.put("count3", new Integer(counter1.intValue()+1));
+			       //  System.out.println(globalMap.get("count3"));
+			       //  System.out.println("we are in pass routine");
+			   
+			       //then pass values to output_row, as string
+				      // total_val = String.valueOf(counter1);
+	  total_val = String.valueOf(globalMap.get("count3")); //need incremented val
+							//System.out.println(total_val);
+			         
+		       } //end if gt
+		 
+		} //end null test
+		
+		//Trains ManageRecords = new Trains(); 
+	      // ManageRecords.count_units(); //need to call non static method this way
+		   // count_units();	//cannot call other method this way
+	}  //end of main method
+
+
+}  //end of class

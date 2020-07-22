@@ -1,0 +1,786 @@
+/**
+ * TripInformation.java
+ *
+ * This file was auto-generated from WSDL
+ * by the Apache Axis 1.4 Apr 22, 2006 (06:55:48 PDT) WSDL2Java emitter.
+ */
+
+package routines;
+
+public class TripInformation  implements java.io.Serializable {
+    private java.lang.String CBRProposedRootCause;
+
+    private java.lang.String customerName;
+
+    private java.lang.String eventDate;
+
+    private java.lang.String fuelDescription;
+
+    private java.lang.String fuelTransfer;
+
+    private java.lang.String operationStatus;
+
+    private java.lang.String recommendations;
+
+    private java.lang.String rootCause;
+
+    private java.lang.String siteName;
+
+    private java.lang.String siteQuestions;
+
+    private java.lang.String siteQuestionsNo;
+
+    private java.lang.String siteQuestionsOther;
+
+    private java.lang.String siteQuestionsYes;
+
+    private java.lang.String steamAugRunning;
+
+    private java.lang.String TSNo;
+
+    private java.lang.String tripCounter;
+
+    private java.lang.String tripId;
+
+    private java.lang.String tripType;
+
+    private java.lang.String waterInjectionRunning;
+
+    public TripInformation() {
+    }
+
+    public TripInformation(
+           java.lang.String CBRProposedRootCause,
+           java.lang.String customerName,
+           java.lang.String eventDate,
+           java.lang.String fuelDescription,
+           java.lang.String fuelTransfer,
+           java.lang.String operationStatus,
+           java.lang.String recommendations,
+           java.lang.String rootCause,
+           java.lang.String siteName,
+           java.lang.String siteQuestions,
+           java.lang.String siteQuestionsNo,
+           java.lang.String siteQuestionsOther,
+           java.lang.String siteQuestionsYes,
+           java.lang.String steamAugRunning,
+           java.lang.String TSNo,
+           java.lang.String tripCounter,
+           java.lang.String tripId,
+           java.lang.String tripType,
+           java.lang.String waterInjectionRunning) {
+           this.CBRProposedRootCause = CBRProposedRootCause;
+           this.customerName = customerName;
+           this.eventDate = eventDate;
+           this.fuelDescription = fuelDescription;
+           this.fuelTransfer = fuelTransfer;
+           this.operationStatus = operationStatus;
+           this.recommendations = recommendations;
+           this.rootCause = rootCause;
+           this.siteName = siteName;
+           this.siteQuestions = siteQuestions;
+           this.siteQuestionsNo = siteQuestionsNo;
+           this.siteQuestionsOther = siteQuestionsOther;
+           this.siteQuestionsYes = siteQuestionsYes;
+           this.steamAugRunning = steamAugRunning;
+           this.TSNo = TSNo;
+           this.tripCounter = tripCounter;
+           this.tripId = tripId;
+           this.tripType = tripType;
+           this.waterInjectionRunning = waterInjectionRunning;
+    }
+
+
+    /**
+     * Gets the CBRProposedRootCause value for this TripInformation.
+     * 
+     * @return CBRProposedRootCause
+     */
+    public java.lang.String getCBRProposedRootCause() {
+        return CBRProposedRootCause;
+    }
+
+
+    /**
+     * Sets the CBRProposedRootCause value for this TripInformation.
+     * 
+     * @param CBRProposedRootCause
+     */
+    public void setCBRProposedRootCause(java.lang.String CBRProposedRootCause) {
+        this.CBRProposedRootCause = CBRProposedRootCause;
+    }
+
+
+    /**
+     * Gets the customerName value for this TripInformation.
+     * 
+     * @return customerName
+     */
+    public java.lang.String getCustomerName() {
+        return customerName;
+    }
+
+
+    /**
+     * Sets the customerName value for this TripInformation.
+     * 
+     * @param customerName
+     */
+    public void setCustomerName(java.lang.String customerName) {
+        this.customerName = customerName;
+    }
+
+
+    /**
+     * Gets the eventDate value for this TripInformation.
+     * 
+     * @return eventDate
+     */
+    public java.lang.String getEventDate() {
+        return eventDate;
+    }
+
+
+    /**
+     * Sets the eventDate value for this TripInformation.
+     * 
+     * @param eventDate
+     */
+    public void setEventDate(java.lang.String eventDate) {
+        this.eventDate = eventDate;
+    }
+
+
+    /**
+     * Gets the fuelDescription value for this TripInformation.
+     * 
+     * @return fuelDescription
+     */
+    public java.lang.String getFuelDescription() {
+        return fuelDescription;
+    }
+
+
+    /**
+     * Sets the fuelDescription value for this TripInformation.
+     * 
+     * @param fuelDescription
+     */
+    public void setFuelDescription(java.lang.String fuelDescription) {
+        this.fuelDescription = fuelDescription;
+    }
+
+
+    /**
+     * Gets the fuelTransfer value for this TripInformation.
+     * 
+     * @return fuelTransfer
+     */
+    public java.lang.String getFuelTransfer() {
+        return fuelTransfer;
+    }
+
+
+    /**
+     * Sets the fuelTransfer value for this TripInformation.
+     * 
+     * @param fuelTransfer
+     */
+    public void setFuelTransfer(java.lang.String fuelTransfer) {
+        this.fuelTransfer = fuelTransfer;
+    }
+
+
+    /**
+     * Gets the operationStatus value for this TripInformation.
+     * 
+     * @return operationStatus
+     */
+    public java.lang.String getOperationStatus() {
+        return operationStatus;
+    }
+
+
+    /**
+     * Sets the operationStatus value for this TripInformation.
+     * 
+     * @param operationStatus
+     */
+    public void setOperationStatus(java.lang.String operationStatus) {
+        this.operationStatus = operationStatus;
+    }
+
+
+    /**
+     * Gets the recommendations value for this TripInformation.
+     * 
+     * @return recommendations
+     */
+    public java.lang.String getRecommendations() {
+        return recommendations;
+    }
+
+
+    /**
+     * Sets the recommendations value for this TripInformation.
+     * 
+     * @param recommendations
+     */
+    public void setRecommendations(java.lang.String recommendations) {
+        this.recommendations = recommendations;
+    }
+
+
+    /**
+     * Gets the rootCause value for this TripInformation.
+     * 
+     * @return rootCause
+     */
+    public java.lang.String getRootCause() {
+        return rootCause;
+    }
+
+
+    /**
+     * Sets the rootCause value for this TripInformation.
+     * 
+     * @param rootCause
+     */
+    public void setRootCause(java.lang.String rootCause) {
+        this.rootCause = rootCause;
+    }
+
+
+    /**
+     * Gets the siteName value for this TripInformation.
+     * 
+     * @return siteName
+     */
+    public java.lang.String getSiteName() {
+        return siteName;
+    }
+
+
+    /**
+     * Sets the siteName value for this TripInformation.
+     * 
+     * @param siteName
+     */
+    public void setSiteName(java.lang.String siteName) {
+        this.siteName = siteName;
+    }
+
+
+    /**
+     * Gets the siteQuestions value for this TripInformation.
+     * 
+     * @return siteQuestions
+     */
+    public java.lang.String getSiteQuestions() {
+        return siteQuestions;
+    }
+
+
+    /**
+     * Sets the siteQuestions value for this TripInformation.
+     * 
+     * @param siteQuestions
+     */
+    public void setSiteQuestions(java.lang.String siteQuestions) {
+        this.siteQuestions = siteQuestions;
+    }
+
+
+    /**
+     * Gets the siteQuestionsNo value for this TripInformation.
+     * 
+     * @return siteQuestionsNo
+     */
+    public java.lang.String getSiteQuestionsNo() {
+        return siteQuestionsNo;
+    }
+
+
+    /**
+     * Sets the siteQuestionsNo value for this TripInformation.
+     * 
+     * @param siteQuestionsNo
+     */
+    public void setSiteQuestionsNo(java.lang.String siteQuestionsNo) {
+        this.siteQuestionsNo = siteQuestionsNo;
+    }
+
+
+    /**
+     * Gets the siteQuestionsOther value for this TripInformation.
+     * 
+     * @return siteQuestionsOther
+     */
+    public java.lang.String getSiteQuestionsOther() {
+        return siteQuestionsOther;
+    }
+
+
+    /**
+     * Sets the siteQuestionsOther value for this TripInformation.
+     * 
+     * @param siteQuestionsOther
+     */
+    public void setSiteQuestionsOther(java.lang.String siteQuestionsOther) {
+        this.siteQuestionsOther = siteQuestionsOther;
+    }
+
+
+    /**
+     * Gets the siteQuestionsYes value for this TripInformation.
+     * 
+     * @return siteQuestionsYes
+     */
+    public java.lang.String getSiteQuestionsYes() {
+        return siteQuestionsYes;
+    }
+
+
+    /**
+     * Sets the siteQuestionsYes value for this TripInformation.
+     * 
+     * @param siteQuestionsYes
+     */
+    public void setSiteQuestionsYes(java.lang.String siteQuestionsYes) {
+        this.siteQuestionsYes = siteQuestionsYes;
+    }
+
+
+    /**
+     * Gets the steamAugRunning value for this TripInformation.
+     * 
+     * @return steamAugRunning
+     */
+    public java.lang.String getSteamAugRunning() {
+        return steamAugRunning;
+    }
+
+
+    /**
+     * Sets the steamAugRunning value for this TripInformation.
+     * 
+     * @param steamAugRunning
+     */
+    public void setSteamAugRunning(java.lang.String steamAugRunning) {
+        this.steamAugRunning = steamAugRunning;
+    }
+
+
+    /**
+     * Gets the TSNo value for this TripInformation.
+     * 
+     * @return TSNo
+     */
+    public java.lang.String getTSNo() {
+        return TSNo;
+    }
+
+
+    /**
+     * Sets the TSNo value for this TripInformation.
+     * 
+     * @param TSNo
+     */
+    public void setTSNo(java.lang.String TSNo) {
+        this.TSNo = TSNo;
+    }
+
+
+    /**
+     * Gets the tripCounter value for this TripInformation.
+     * 
+     * @return tripCounter
+     */
+    public java.lang.String getTripCounter() {
+        return tripCounter;
+    }
+
+
+    /**
+     * Sets the tripCounter value for this TripInformation.
+     * 
+     * @param tripCounter
+     */
+    public void setTripCounter(java.lang.String tripCounter) {
+        this.tripCounter = tripCounter;
+    }
+
+
+    /**
+     * Gets the tripId value for this TripInformation.
+     * 
+     * @return tripId
+     */
+    public java.lang.String getTripId() {
+        return tripId;
+    }
+
+
+    /**
+     * Sets the tripId value for this TripInformation.
+     * 
+     * @param tripId
+     */
+    public void setTripId(java.lang.String tripId) {
+        this.tripId = tripId;
+    }
+
+
+    /**
+     * Gets the tripType value for this TripInformation.
+     * 
+     * @return tripType
+     */
+    public java.lang.String getTripType() {
+        return tripType;
+    }
+
+
+    /**
+     * Sets the tripType value for this TripInformation.
+     * 
+     * @param tripType
+     */
+    public void setTripType(java.lang.String tripType) {
+        this.tripType = tripType;
+    }
+
+
+    /**
+     * Gets the waterInjectionRunning value for this TripInformation.
+     * 
+     * @return waterInjectionRunning
+     */
+    public java.lang.String getWaterInjectionRunning() {
+        return waterInjectionRunning;
+    }
+
+
+    /**
+     * Sets the waterInjectionRunning value for this TripInformation.
+     * 
+     * @param waterInjectionRunning
+     */
+    public void setWaterInjectionRunning(java.lang.String waterInjectionRunning) {
+        this.waterInjectionRunning = waterInjectionRunning;
+    }
+
+    private java.lang.Object __equalsCalc = null;
+    public synchronized boolean equals(java.lang.Object obj) {
+        if (!(obj instanceof TripInformation)) return false;
+        TripInformation other = (TripInformation) obj;
+        if (obj == null) return false;
+        if (this == obj) return true;
+        if (__equalsCalc != null) {
+            return (__equalsCalc == obj);
+        }
+        __equalsCalc = obj;
+        boolean _equals;
+        _equals = true && 
+            ((this.CBRProposedRootCause==null && other.getCBRProposedRootCause()==null) || 
+             (this.CBRProposedRootCause!=null &&
+              this.CBRProposedRootCause.equals(other.getCBRProposedRootCause()))) &&
+            ((this.customerName==null && other.getCustomerName()==null) || 
+             (this.customerName!=null &&
+              this.customerName.equals(other.getCustomerName()))) &&
+            ((this.eventDate==null && other.getEventDate()==null) || 
+             (this.eventDate!=null &&
+              this.eventDate.equals(other.getEventDate()))) &&
+            ((this.fuelDescription==null && other.getFuelDescription()==null) || 
+             (this.fuelDescription!=null &&
+              this.fuelDescription.equals(other.getFuelDescription()))) &&
+            ((this.fuelTransfer==null && other.getFuelTransfer()==null) || 
+             (this.fuelTransfer!=null &&
+              this.fuelTransfer.equals(other.getFuelTransfer()))) &&
+            ((this.operationStatus==null && other.getOperationStatus()==null) || 
+             (this.operationStatus!=null &&
+              this.operationStatus.equals(other.getOperationStatus()))) &&
+            ((this.recommendations==null && other.getRecommendations()==null) || 
+             (this.recommendations!=null &&
+              this.recommendations.equals(other.getRecommendations()))) &&
+            ((this.rootCause==null && other.getRootCause()==null) || 
+             (this.rootCause!=null &&
+              this.rootCause.equals(other.getRootCause()))) &&
+            ((this.siteName==null && other.getSiteName()==null) || 
+             (this.siteName!=null &&
+              this.siteName.equals(other.getSiteName()))) &&
+            ((this.siteQuestions==null && other.getSiteQuestions()==null) || 
+             (this.siteQuestions!=null &&
+              this.siteQuestions.equals(other.getSiteQuestions()))) &&
+            ((this.siteQuestionsNo==null && other.getSiteQuestionsNo()==null) || 
+             (this.siteQuestionsNo!=null &&
+              this.siteQuestionsNo.equals(other.getSiteQuestionsNo()))) &&
+            ((this.siteQuestionsOther==null && other.getSiteQuestionsOther()==null) || 
+             (this.siteQuestionsOther!=null &&
+              this.siteQuestionsOther.equals(other.getSiteQuestionsOther()))) &&
+            ((this.siteQuestionsYes==null && other.getSiteQuestionsYes()==null) || 
+             (this.siteQuestionsYes!=null &&
+              this.siteQuestionsYes.equals(other.getSiteQuestionsYes()))) &&
+            ((this.steamAugRunning==null && other.getSteamAugRunning()==null) || 
+             (this.steamAugRunning!=null &&
+              this.steamAugRunning.equals(other.getSteamAugRunning()))) &&
+            ((this.TSNo==null && other.getTSNo()==null) || 
+             (this.TSNo!=null &&
+              this.TSNo.equals(other.getTSNo()))) &&
+            ((this.tripCounter==null && other.getTripCounter()==null) || 
+             (this.tripCounter!=null &&
+              this.tripCounter.equals(other.getTripCounter()))) &&
+            ((this.tripId==null && other.getTripId()==null) || 
+             (this.tripId!=null &&
+              this.tripId.equals(other.getTripId()))) &&
+            ((this.tripType==null && other.getTripType()==null) || 
+             (this.tripType!=null &&
+              this.tripType.equals(other.getTripType()))) &&
+            ((this.waterInjectionRunning==null && other.getWaterInjectionRunning()==null) || 
+             (this.waterInjectionRunning!=null &&
+              this.waterInjectionRunning.equals(other.getWaterInjectionRunning())));
+        __equalsCalc = null;
+        return _equals;
+    }
+
+    private boolean __hashCodeCalc = false;
+    public synchronized int hashCode() {
+        if (__hashCodeCalc) {
+            return 0;
+        }
+        __hashCodeCalc = true;
+        int _hashCode = 1;
+        if (getCBRProposedRootCause() != null) {
+            _hashCode += getCBRProposedRootCause().hashCode();
+        }
+        if (getCustomerName() != null) {
+            _hashCode += getCustomerName().hashCode();
+        }
+        if (getEventDate() != null) {
+            _hashCode += getEventDate().hashCode();
+        }
+        if (getFuelDescription() != null) {
+            _hashCode += getFuelDescription().hashCode();
+        }
+        if (getFuelTransfer() != null) {
+            _hashCode += getFuelTransfer().hashCode();
+        }
+        if (getOperationStatus() != null) {
+            _hashCode += getOperationStatus().hashCode();
+        }
+        if (getRecommendations() != null) {
+            _hashCode += getRecommendations().hashCode();
+        }
+        if (getRootCause() != null) {
+            _hashCode += getRootCause().hashCode();
+        }
+        if (getSiteName() != null) {
+            _hashCode += getSiteName().hashCode();
+        }
+        if (getSiteQuestions() != null) {
+            _hashCode += getSiteQuestions().hashCode();
+        }
+        if (getSiteQuestionsNo() != null) {
+            _hashCode += getSiteQuestionsNo().hashCode();
+        }
+        if (getSiteQuestionsOther() != null) {
+            _hashCode += getSiteQuestionsOther().hashCode();
+        }
+        if (getSiteQuestionsYes() != null) {
+            _hashCode += getSiteQuestionsYes().hashCode();
+        }
+        if (getSteamAugRunning() != null) {
+            _hashCode += getSteamAugRunning().hashCode();
+        }
+        if (getTSNo() != null) {
+            _hashCode += getTSNo().hashCode();
+        }
+        if (getTripCounter() != null) {
+            _hashCode += getTripCounter().hashCode();
+        }
+        if (getTripId() != null) {
+            _hashCode += getTripId().hashCode();
+        }
+        if (getTripType() != null) {
+            _hashCode += getTripType().hashCode();
+        }
+        if (getWaterInjectionRunning() != null) {
+            _hashCode += getWaterInjectionRunning().hashCode();
+        }
+        __hashCodeCalc = false;
+        return _hashCode;
+    }
+
+    // Type metadata
+    private static org.apache.axis.description.TypeDesc typeDesc =
+        new org.apache.axis.description.TypeDesc(TripInformation.class, true);
+
+    static {
+        typeDesc.setXmlType(new javax.xml.namespace.QName("http://Www.GE.Com/Energy/Equipmenthealth/ServicesContract/2010/10", "TripInformation"));
+        org.apache.axis.description.ElementDesc elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("CBRProposedRootCause");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://Www.GE.Com/Energy/Equipmenthealth/ServicesContract/2010/10", "CBRProposedRootCause"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(true);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("customerName");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://Www.GE.Com/Energy/Equipmenthealth/ServicesContract/2010/10", "CustomerName"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(true);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("eventDate");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://Www.GE.Com/Energy/Equipmenthealth/ServicesContract/2010/10", "EventDate"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(true);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("fuelDescription");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://Www.GE.Com/Energy/Equipmenthealth/ServicesContract/2010/10", "FuelDescription"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(true);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("fuelTransfer");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://Www.GE.Com/Energy/Equipmenthealth/ServicesContract/2010/10", "FuelTransfer"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(true);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("operationStatus");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://Www.GE.Com/Energy/Equipmenthealth/ServicesContract/2010/10", "OperationStatus"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(true);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("recommendations");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://Www.GE.Com/Energy/Equipmenthealth/ServicesContract/2010/10", "Recommendations"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(true);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("rootCause");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://Www.GE.Com/Energy/Equipmenthealth/ServicesContract/2010/10", "RootCause"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(true);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("siteName");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://Www.GE.Com/Energy/Equipmenthealth/ServicesContract/2010/10", "SiteName"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(true);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("siteQuestions");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://Www.GE.Com/Energy/Equipmenthealth/ServicesContract/2010/10", "SiteQuestions"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(true);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("siteQuestionsNo");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://Www.GE.Com/Energy/Equipmenthealth/ServicesContract/2010/10", "SiteQuestionsNo"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(true);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("siteQuestionsOther");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://Www.GE.Com/Energy/Equipmenthealth/ServicesContract/2010/10", "SiteQuestionsOther"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(true);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("siteQuestionsYes");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://Www.GE.Com/Energy/Equipmenthealth/ServicesContract/2010/10", "SiteQuestionsYes"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(true);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("steamAugRunning");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://Www.GE.Com/Energy/Equipmenthealth/ServicesContract/2010/10", "SteamAugRunning"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(true);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("TSNo");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://Www.GE.Com/Energy/Equipmenthealth/ServicesContract/2010/10", "TSNo"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(true);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("tripCounter");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://Www.GE.Com/Energy/Equipmenthealth/ServicesContract/2010/10", "TripCounter"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(true);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("tripId");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://Www.GE.Com/Energy/Equipmenthealth/ServicesContract/2010/10", "TripId"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(true);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("tripType");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://Www.GE.Com/Energy/Equipmenthealth/ServicesContract/2010/10", "TripType"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(true);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("waterInjectionRunning");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://Www.GE.Com/Energy/Equipmenthealth/ServicesContract/2010/10", "WaterInjectionRunning"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(true);
+        typeDesc.addFieldDesc(elemField);
+    }
+
+    /**
+     * Return type metadata object
+     */
+    public static org.apache.axis.description.TypeDesc getTypeDesc() {
+        return typeDesc;
+    }
+
+    /**
+     * Get Custom Serializer
+     */
+    public static org.apache.axis.encoding.Serializer getSerializer(
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
+           javax.xml.namespace.QName _xmlType) {
+        return 
+          new  org.apache.axis.encoding.ser.BeanSerializer(
+            _javaType, _xmlType, typeDesc);
+    }
+
+    /**
+     * Get Custom Deserializer
+     */
+    public static org.apache.axis.encoding.Deserializer getDeserializer(
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
+           javax.xml.namespace.QName _xmlType) {
+        return 
+          new  org.apache.axis.encoding.ser.BeanDeserializer(
+            _javaType, _xmlType, typeDesc);
+    }
+
+}

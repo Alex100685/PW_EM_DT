@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:version="2.0">
+  <talendfile:ContextType confirmationNeeded="false" name="Default" xmi:id="_3w93gI0AEemX9oX_OU7TyA">
+    <contextParameter comment="" name="Port" prompt="Port?" promptNeeded="false" type="id_String" value="3306" xmi:id="_3w93go0AEemX9oX_OU7TyA"/>
+    <contextParameter comment="" name="Host" prompt="Host?" promptNeeded="false" type="id_String" value="readreplica-ge-talend-pwr-mysql-prod.c4sspcqw0zjf.us-east-1.rds.amazonaws.com" xmi:id="_3w93hI0AEemX9oX_OU7TyA"/>
+    <contextParameter comment="" name="Password" prompt="Password?" promptNeeded="false" type="id_Password" value="/1qtB7AwYDOjGBUefDEBKw==" xmi:id="_3w93hY0AEemX9oX_OU7TyA"/>
+    <contextParameter comment="" name="Login" prompt="Login?" promptNeeded="false" type="id_String" value="502780183" xmi:id="_3w93ho0AEemX9oX_OU7TyA"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="DEV" xmi:id="_3w93h40AEemX9oX_OU7TyA">
+    <contextParameter comment="" name="Port" prompt="Port?" promptNeeded="false" type="id_String" value="3306" xmi:id="_3w93iY0AEemX9oX_OU7TyA"/>
+    <contextParameter comment="" name="Host" prompt="Host?" promptNeeded="false" type="id_String" value="readreplica-ge-talend-pwr-mysql-prod.c4sspcqw0zjf.us-east-1.rds.amazonaws.com" xmi:id="_3w93i40AEemX9oX_OU7TyA"/>
+    <contextParameter comment="" name="Password" prompt="Password?" promptNeeded="false" type="id_Password" value="/1qtB7AwYDOjGBUefDEBKw==" xmi:id="_3w93jI0AEemX9oX_OU7TyA"/>
+    <contextParameter comment="" name="Login" prompt="Login?" promptNeeded="false" type="id_String" value="502780183" xmi:id="_3w93jY0AEemX9oX_OU7TyA"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="PROD" xmi:id="_3w93jo0AEemX9oX_OU7TyA">
+    <contextParameter comment="" name="Port" prompt="Port?" promptNeeded="false" type="id_String" value="3306" xmi:id="_3w93kI0AEemX9oX_OU7TyA"/>
+    <contextParameter comment="" name="Host" prompt="Host?" promptNeeded="false" type="id_String" value="readreplica-ge-talend-pwr-mysql-prod.c4sspcqw0zjf.us-east-1.rds.amazonaws.com" xmi:id="_3w93ko0AEemX9oX_OU7TyA"/>
+    <contextParameter comment="" name="Password" prompt="Password?" promptNeeded="false" type="id_Password" value="/1qtB7AwYDOjGBUefDEBKw==" xmi:id="_3w93k40AEemX9oX_OU7TyA"/>
+    <contextParameter comment="" name="Login" prompt="Login?" promptNeeded="false" type="id_String" value="502780183" xmi:id="_3w93lI0AEemX9oX_OU7TyA"/>
+  </talendfile:ContextType>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_bc5f2e0b-40ef-4d33-8339-8bbe5421570f"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>G4eSsj88yDNsATVZpclOF1m6RqljmGCFkzeuxznoQ9f8pBwagqzQIWiMhNKwj86eUvLb29bsHKA2&#13;
+9t1wnTzreg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_2bac8f5a-fe9e-474a-86bf-0f06b7d366b4"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>5sNpVZ2GBiQr10vY1mkNJnW7wAddxMo02OnKqJzoSdVYLDQ8l86PiIUX+dH1k3md2zVVe4MMdjBq&#13;
+2DJCjbKgzw==</DigestValue></Reference></SignedInfo><SignatureValue>V22TOQo9M7lc39XGD7Da1O9cgHnzhSkspIEJaLe65GJUuSD8OyVrRmGrFi6fTn78v7ptImq15Yet&#13;
+2WXKbMu3yqzQN/WQ9so85QzWUlviJMK5D6Xoc5DQb23HCAWf/t1tkfTbPLV/0bts8NbkBAsw9Xwp&#13;
+PKwjcBaJDYuuymna1vFsqPfNAFpmPo86tJg6nVIRfQ0OxJFA8Uqzk8alJ9B0OnyhpjmA4sewiexB&#13;
+Gteby1+6Etr4kMbf9cq7s9TmUnRHtYAAoBKND2Qo+0NRzd/wliAXT6RsshI4DtBZcpMHtUxL5rfs&#13;
+v8J4fFMEkIlU6+vJbGDi/WbPUJVLcx9bc7WGzA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_2bac8f5a-fe9e-474a-86bf-0f06b7d366b4" Target="#_bc5f2e0b-40ef-4d33-8339-8bbe5421570f"><Timestamp>2020-04-22 08:18:04</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>

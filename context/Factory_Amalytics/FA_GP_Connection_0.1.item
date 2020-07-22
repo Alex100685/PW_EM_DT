@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:version="2.0">
+  <talendfile:ContextType confirmationNeeded="false" name="Default" xmi:id="_oGcRUJEoEeqiKs0vpopWSQ">
+    <contextParameter comment="" name="GP_FA_Supply_Chain_SOT_Login" prompt="GP_FA_Supply_Chain_SOT_Login?" promptNeeded="false" type="id_String" value="503159337" xmi:id="_oGcRUZEoEeqiKs0vpopWSQ"/>
+    <contextParameter comment="" name="GP_FA_Supply_Chain_SOT_Password" prompt="GP_FA_Supply_Chain_SOT_Password?" promptNeeded="false" type="id_Password" value="JfngVoCGqnXyH8L3mqeF6w==" xmi:id="_oGcRUpEoEeqiKs0vpopWSQ"/>
+    <contextParameter comment="" name="GP_FA_Supply_Chain_SOT_Server" prompt="GP_FA_Supply_Chain_SOT_Server?" promptNeeded="false" type="id_String" value="dev-gpclient-pwr.cloud.digital.ge.com" xmi:id="_oGcRU5EoEeqiKs0vpopWSQ"/>
+    <contextParameter comment="" name="GP_FA_Supply_Chain_SOT_Schema" prompt="GP_FA_Supply_Chain_SOT_Schema?" promptNeeded="false" type="id_String" value="sot_supply_chain" xmi:id="_oGcRVJEoEeqiKs0vpopWSQ"/>
+    <contextParameter comment="" name="GP_FA_Supply_Chain_SOT_Database" prompt="GP_FA_Supply_Chain_SOT_Database?" promptNeeded="false" type="id_String" value="pgsdwh" xmi:id="_oGcRVZEoEeqiKs0vpopWSQ"/>
+    <contextParameter comment="" name="GP_FA_Supply_Chain_SOT_Port" prompt="GP_FA_Supply_Chain_SOT_Port?" promptNeeded="false" type="id_String" value="443" xmi:id="_oGcRVpEoEeqiKs0vpopWSQ"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="Dev" xmi:id="_oGcRV5EoEeqiKs0vpopWSQ">
+    <contextParameter comment="" name="GP_FA_Supply_Chain_SOT_Login" prompt="GP_FA_Supply_Chain_SOT_Login?" promptNeeded="false" type="id_String" value="503159337" xmi:id="_oGcRWJEoEeqiKs0vpopWSQ"/>
+    <contextParameter comment="" name="GP_FA_Supply_Chain_SOT_Password" prompt="GP_FA_Supply_Chain_SOT_Password?" promptNeeded="false" type="id_Password" value="JfngVoCGqnXyH8L3mqeF6w==" xmi:id="_oGcRWZEoEeqiKs0vpopWSQ"/>
+    <contextParameter comment="" name="GP_FA_Supply_Chain_SOT_Server" prompt="GP_FA_Supply_Chain_SOT_Server?" promptNeeded="false" type="id_String" value="dev-gpclient-pwr.cloud.digital.ge.com" xmi:id="_oGcRWpEoEeqiKs0vpopWSQ"/>
+    <contextParameter comment="" name="GP_FA_Supply_Chain_SOT_Schema" prompt="GP_FA_Supply_Chain_SOT_Schema?" promptNeeded="false" type="id_String" value="sot_supply_chain" xmi:id="_oGcRW5EoEeqiKs0vpopWSQ"/>
+    <contextParameter comment="" name="GP_FA_Supply_Chain_SOT_Database" prompt="GP_FA_Supply_Chain_SOT_Database?" promptNeeded="false" type="id_String" value="pgsdwh" xmi:id="_oGcRXJEoEeqiKs0vpopWSQ"/>
+    <contextParameter comment="" name="GP_FA_Supply_Chain_SOT_Port" prompt="GP_FA_Supply_Chain_SOT_Port?" promptNeeded="false" type="id_String" value="443" xmi:id="_oGcRXZEoEeqiKs0vpopWSQ"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="Prod" xmi:id="_oGcRXpEoEeqiKs0vpopWSQ">
+    <contextParameter comment="" name="GP_FA_Supply_Chain_SOT_Login" prompt="GP_FA_Supply_Chain_SOT_Login?" promptNeeded="false" type="id_String" value="503159337" xmi:id="_oGcRX5EoEeqiKs0vpopWSQ"/>
+    <contextParameter comment="" name="GP_FA_Supply_Chain_SOT_Password" prompt="GP_FA_Supply_Chain_SOT_Password?" promptNeeded="false" type="id_Password" value="JfngVoCGqnXyH8L3mqeF6w==" xmi:id="_oGcRYJEoEeqiKs0vpopWSQ"/>
+    <contextParameter comment="" name="GP_FA_Supply_Chain_SOT_Server" prompt="GP_FA_Supply_Chain_SOT_Server?" promptNeeded="false" type="id_String" value="dev-gpclient-pwr.cloud.digital.ge.com" xmi:id="_oGcRYZEoEeqiKs0vpopWSQ"/>
+    <contextParameter comment="" name="GP_FA_Supply_Chain_SOT_Schema" prompt="GP_FA_Supply_Chain_SOT_Schema?" promptNeeded="false" type="id_String" value="sot_supply_chain" xmi:id="_oGcRYpEoEeqiKs0vpopWSQ"/>
+    <contextParameter comment="" name="GP_FA_Supply_Chain_SOT_Database" prompt="GP_FA_Supply_Chain_SOT_Database?" promptNeeded="false" type="id_String" value="pgsdwh" xmi:id="_oGcRY5EoEeqiKs0vpopWSQ"/>
+    <contextParameter comment="" name="GP_FA_Supply_Chain_SOT_Port" prompt="GP_FA_Supply_Chain_SOT_Port?" promptNeeded="false" type="id_String" value="443" xmi:id="_oGcRZJEoEeqiKs0vpopWSQ"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="QA" xmi:id="_oGcRZZEoEeqiKs0vpopWSQ">
+    <contextParameter comment="" name="GP_FA_Supply_Chain_SOT_Login" prompt="GP_FA_Supply_Chain_SOT_Login?" promptNeeded="false" type="id_String" value="503159337" xmi:id="_oGc4YJEoEeqiKs0vpopWSQ"/>
+    <contextParameter comment="" name="GP_FA_Supply_Chain_SOT_Password" prompt="GP_FA_Supply_Chain_SOT_Password?" promptNeeded="false" type="id_Password" value="JfngVoCGqnXyH8L3mqeF6w==" xmi:id="_oGc4YZEoEeqiKs0vpopWSQ"/>
+    <contextParameter comment="" name="GP_FA_Supply_Chain_SOT_Server" prompt="GP_FA_Supply_Chain_SOT_Server?" promptNeeded="false" type="id_String" value="dev-gpclient-pwr.cloud.digital.ge.com" xmi:id="_oGc4YpEoEeqiKs0vpopWSQ"/>
+    <contextParameter comment="" name="GP_FA_Supply_Chain_SOT_Schema" prompt="GP_FA_Supply_Chain_SOT_Schema?" promptNeeded="false" type="id_String" value="sot_supply_chain" xmi:id="_oGc4Y5EoEeqiKs0vpopWSQ"/>
+    <contextParameter comment="" name="GP_FA_Supply_Chain_SOT_Database" prompt="GP_FA_Supply_Chain_SOT_Database?" promptNeeded="false" type="id_String" value="pgsdwh" xmi:id="_oGc4ZJEoEeqiKs0vpopWSQ"/>
+    <contextParameter comment="" name="GP_FA_Supply_Chain_SOT_Port" prompt="GP_FA_Supply_Chain_SOT_Port?" promptNeeded="false" type="id_String" value="443" xmi:id="_oGc4ZZEoEeqiKs0vpopWSQ"/>
+  </talendfile:ContextType>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_ebd080df-4e35-4d5a-b9e8-cd2166652a36"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>fYu3bEtoqmX/aYQBmhCkXcqjv9ekoB8NMmmJTPx3rd9uA6F+tL2VU2U6qs7le687ylHTc4YNcE/h
+mOXR8Qj4xA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_821281d5-2995-44fc-9feb-01a64c5c1854"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>6Yy2wmBK0z1XoPkjhEWiw8sZat/xXvm0Q8CWD8pGkePeFWedhWH6CMzcYYniUocQybZhWFtay4Ax
+6huEk0m+Ow==</DigestValue></Reference></SignedInfo><SignatureValue>V+gFM4l/RinV1E8JgLes04XSt2u/6zoGHKo3cy5ovFBUUBLiaQzu4JDm09yI0vB1KaT6XTbM9ecu
+Ckx+htwJJdp2HIergl9ke/q8XKiIQbC+u19RHX3PmGjNAF+0M1cRNyl5awPazT0lDxzEz/vkjZOm
+lEuGz1u8MPqbO3EKsU5NUymPk2bZu42D0p/aM6d1IFxoBuucORTIACl7/RfpiUrzNsriXQAQQw8+
+YPvNLGgoCW5pv0TGuNNb9YD2VkQ7jsuNVWVvczBP5VZuaElF1Si3GOVEDIm5jowkHhdz5DG2GY7/
+3NQtg4sb0mJAH2jrrg0Qn1booTtYANWQuM0fXQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_821281d5-2995-44fc-9feb-01a64c5c1854" Target="#_ebd080df-4e35-4d5a-b9e8-cd2166652a36"><Timestamp>2020-05-08 12:37:06</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>

@@ -1,0 +1,195 @@
+
+package routines;
+import java.util.*;
+import java.util.regex.*;
+
+/**
+ * Term processor for Payment Terms Mastering 
+ * Processes strings which contain
+ * non-atomic textual data to extract
+ * payment terms information.
+ * In details: net days, discount days
+ * and discount percent. 
+ * The extraction is done w/ regular 
+ * expressions, so the capabilities
+ * can be extended.
+ * for specification see: 
+ * https://devcloud.swcoe.ge.com/devspace/display/CUZQS/Payment+Terms+Mastering
+ * @author akos.barabas1@ge.com
+ * @version 0.1  - 13-10-2015
+ * 
+ */
+/* TODO 		2/10,1.5/15,1/20, NET 30
+ * */
+
+public class TermProcessor {
+	
+	private static String preProcessInput(String sin) {
+		
+		String sout = sin.toUpperCase();
+											
+		sout = sout.replace(",", " ");
+		sout = sout.replace(" / ", "/");
+		sout = sout.replace("\"", "");
+		sout = sout.replace("\n", "");
+		sout = sout.replace(";", " ");
+		sout = sout.replaceAll("- *[0-9A-Z]+", "");
+		sout = sout.replaceAll("[\\d]{4,}", "");
+		sout = sout.replaceAll("^(0[\\d]+[\\s])", ""); 
+		sout = sout
+				.replaceAll("([\\d]+)([A-Z]+)", "$1"+" "+"$2")
+				.replaceAll("([A-Z]+)([\\d]+)", "$1"+" "+"$2");
+		sout = sout.replaceAll("[\\s]{2,}", " ");
+		return sout;
+		
+	}
+	
+	/*
+	 * @param String to-be-processed
+	 * @return HashMap w/ extracted payment terms
+	 * */
+	public static HashMap extractTerms(HashMap<String,ArrayList<Pattern>> ptrnsmap, String sin)
+	{
+
+		HashMap terms = new HashMap();
+		HashMap comboterms =  new HashMap();
+		Set<Integer> days = new HashSet<Integer>(); //net&discount days
+		TreeMap<Integer, Double> combos = new TreeMap<Integer, Double>();
+		double discount=0;	
+		boolean combomatch=false;
+		Matcher m;
+		int netdays,
+			discdays;
+		double	discperc;
+		ArrayList<Pattern> ptrnsnet = ptrnsmap.get("patterns_net_day");
+		ArrayList<Pattern> ptrnsdisc = 	ptrnsmap.get("patterns_discount_day" );
+		ArrayList<Pattern> ptrnsperc = ptrnsmap.get("patterns_discount_percent" ); 
+		ArrayList<Pattern> ptrnsdiscperc = ptrnsmap.get("patterns_combo" );
+		boolean matchflag = false;
+		
+		
+		sin = preProcessInput(sin);
+		
+		//net days
+		for (Pattern p : ptrnsnet){
+			
+			m = p.matcher(sin);
+
+			while (m.find())
+			{
+				try{
+					days.add( Integer.parseInt(m.group(0).replaceAll("\\D", "")) );					
+				}
+				catch (NumberFormatException e) {days.add(0);}							
+			}
+		}
+		
+		if (days.size() > 0){
+			terms.put("net_days", Collections.max(days));
+			matchflag = true;			
+		}
+		else {
+			terms.put("net_days", 0);			
+			}
+		
+		days.clear();
+		
+		// discount days & percents
+		//case 1: discount days & percent together ("combomatch")
+		for (Pattern p : ptrnsdiscperc){
+			
+			m = p.matcher(sin);
+
+			while (m.find())
+			{
+
+				String[] arrdisc = m.group().split("\\/", 2);
+					
+				try{		
+					discount = Double.parseDouble(arrdisc[0]);						
+					}
+				catch (NumberFormatException e) {discount=0;}							
+			
+				try{		
+					discdays = Integer.parseInt(arrdisc[1]);						
+					}
+				catch (NumberFormatException e) {
+					discdays=0;
+					discount=0;
+					}							
+				
+				combos.put(discdays, discount);
+			}
+		}
+		
+		if (!combos.isEmpty()){
+			/* if there are multiple combo terms, then 
+			 the term w/ highest discount percent will be
+			 extracted (to get the highest APR)
+			 */
+			terms.put("discount_days", combos.firstKey());
+			terms.put("discount_percent", combos.get(combos.firstKey()));
+			combomatch = true;
+			days.clear();
+
+		}
+
+		// case 2: discount days & percents separated
+		if (!combomatch){
+			
+				//discount days
+			for (Pattern p : ptrnsdisc){
+	
+				m = p.matcher(sin);
+	
+				while (m.find())
+				{
+					//System.out.println("discount match for pattern: "+ p.toString());
+					try{		
+						days.add( Integer.parseInt(m.group(0).replaceAll("\\D", "")) );					
+					}
+					catch (NumberFormatException e) 
+						{days.add(0);}							
+				}
+			}
+			
+			if (days.size() > 0){
+				discdays = Collections.min(days);
+			}
+			else 
+				discdays = 0;
+						
+			// discount percent		
+			if (discdays > 0  ){
+							
+				for (Pattern p : ptrnsperc){
+	
+					m = p.matcher(sin);
+	
+					while (m.find())
+					{
+						try{		
+							discount =  Double.parseDouble(m.group(0).replaceAll("%", ""));					
+						}
+						catch (NumberFormatException e) 
+							{
+							discount =  0;					
+							}							
+					}
+				}
+			}
+			else {
+				discount =  0;		
+			}
+		
+		terms.put("discount_days", discdays);
+		terms.put("discount_percent", discount);		
+		}
+		
+		terms.put("match_flag", matchflag);	
+		
+		return terms;
+	}
+	
+
+}

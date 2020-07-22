@@ -1,0 +1,342 @@
+/**
+ * TripNotifierEvents.java
+ *
+ * This file was auto-generated from WSDL
+ * by the Apache Axis 1.4 Apr 22, 2006 (06:55:48 PDT) WSDL2Java emitter.
+ */
+
+package routines;
+
+public class TripNotifierEvents  implements java.io.Serializable {
+    private java.lang.String alarmDropName;
+
+    private java.lang.String classType;
+
+    private java.util.Calendar creationDate;
+
+    private java.util.Calendar eventDate;
+
+    private java.lang.Integer forcedOutageHours;
+
+    private java.lang.Integer tripCounter;
+
+    private java.lang.String turbineSN;
+
+    public TripNotifierEvents() {
+    }
+
+    public TripNotifierEvents(
+           java.lang.String alarmDropName,
+           java.lang.String classType,
+           java.util.Calendar creationDate,
+           java.util.Calendar eventDate,
+           java.lang.Integer forcedOutageHours,
+           java.lang.Integer tripCounter,
+           java.lang.String turbineSN) {
+           this.alarmDropName = alarmDropName;
+           this.classType = classType;
+           this.creationDate = creationDate;
+           this.eventDate = eventDate;
+           this.forcedOutageHours = forcedOutageHours;
+           this.tripCounter = tripCounter;
+           this.turbineSN = turbineSN;
+    }
+
+
+    /**
+     * Gets the alarmDropName value for this TripNotifierEvents.
+     * 
+     * @return alarmDropName
+     */
+    public java.lang.String getAlarmDropName() {
+        return alarmDropName;
+    }
+
+
+    /**
+     * Sets the alarmDropName value for this TripNotifierEvents.
+     * 
+     * @param alarmDropName
+     */
+    public void setAlarmDropName(java.lang.String alarmDropName) {
+        this.alarmDropName = alarmDropName;
+    }
+
+
+    /**
+     * Gets the classType value for this TripNotifierEvents.
+     * 
+     * @return classType
+     */
+    public java.lang.String getClassType() {
+        return classType;
+    }
+
+
+    /**
+     * Sets the classType value for this TripNotifierEvents.
+     * 
+     * @param classType
+     */
+    public void setClassType(java.lang.String classType) {
+        this.classType = classType;
+    }
+
+
+    /**
+     * Gets the creationDate value for this TripNotifierEvents.
+     * 
+     * @return creationDate
+     */
+    public java.util.Calendar getCreationDate() {
+        return creationDate;
+    }
+
+
+    /**
+     * Sets the creationDate value for this TripNotifierEvents.
+     * 
+     * @param creationDate
+     */
+    public void setCreationDate(java.util.Calendar creationDate) {
+        this.creationDate = creationDate;
+    }
+
+
+    /**
+     * Gets the eventDate value for this TripNotifierEvents.
+     * 
+     * @return eventDate
+     */
+    public java.util.Calendar getEventDate() {
+        return eventDate;
+    }
+
+
+    /**
+     * Sets the eventDate value for this TripNotifierEvents.
+     * 
+     * @param eventDate
+     */
+    public void setEventDate(java.util.Calendar eventDate) {
+        this.eventDate = eventDate;
+    }
+
+
+    /**
+     * Gets the forcedOutageHours value for this TripNotifierEvents.
+     * 
+     * @return forcedOutageHours
+     */
+    public java.lang.Integer getForcedOutageHours() {
+        return forcedOutageHours;
+    }
+
+
+    /**
+     * Sets the forcedOutageHours value for this TripNotifierEvents.
+     * 
+     * @param forcedOutageHours
+     */
+    public void setForcedOutageHours(java.lang.Integer forcedOutageHours) {
+        this.forcedOutageHours = forcedOutageHours;
+    }
+
+
+    /**
+     * Gets the tripCounter value for this TripNotifierEvents.
+     * 
+     * @return tripCounter
+     */
+    public java.lang.Integer getTripCounter() {
+        return tripCounter;
+    }
+
+
+    /**
+     * Sets the tripCounter value for this TripNotifierEvents.
+     * 
+     * @param tripCounter
+     */
+    public void setTripCounter(java.lang.Integer tripCounter) {
+        this.tripCounter = tripCounter;
+    }
+
+
+    /**
+     * Gets the turbineSN value for this TripNotifierEvents.
+     * 
+     * @return turbineSN
+     */
+    public java.lang.String getTurbineSN() {
+        return turbineSN;
+    }
+
+
+    /**
+     * Sets the turbineSN value for this TripNotifierEvents.
+     * 
+     * @param turbineSN
+     */
+    public void setTurbineSN(java.lang.String turbineSN) {
+        this.turbineSN = turbineSN;
+    }
+
+    private java.lang.Object __equalsCalc = null;
+    public synchronized boolean equals(java.lang.Object obj) {
+        if (!(obj instanceof TripNotifierEvents)) return false;
+        TripNotifierEvents other = (TripNotifierEvents) obj;
+        if (obj == null) return false;
+        if (this == obj) return true;
+        if (__equalsCalc != null) {
+            return (__equalsCalc == obj);
+        }
+        __equalsCalc = obj;
+        boolean _equals;
+        _equals = true && 
+            ((this.alarmDropName==null && other.getAlarmDropName()==null) || 
+             (this.alarmDropName!=null &&
+              this.alarmDropName.equals(other.getAlarmDropName()))) &&
+            ((this.classType==null && other.getClassType()==null) || 
+             (this.classType!=null &&
+              this.classType.equals(other.getClassType()))) &&
+            ((this.creationDate==null && other.getCreationDate()==null) || 
+             (this.creationDate!=null &&
+              this.creationDate.equals(other.getCreationDate()))) &&
+            ((this.eventDate==null && other.getEventDate()==null) || 
+             (this.eventDate!=null &&
+              this.eventDate.equals(other.getEventDate()))) &&
+            ((this.forcedOutageHours==null && other.getForcedOutageHours()==null) || 
+             (this.forcedOutageHours!=null &&
+              this.forcedOutageHours.equals(other.getForcedOutageHours()))) &&
+            ((this.tripCounter==null && other.getTripCounter()==null) || 
+             (this.tripCounter!=null &&
+              this.tripCounter.equals(other.getTripCounter()))) &&
+            ((this.turbineSN==null && other.getTurbineSN()==null) || 
+             (this.turbineSN!=null &&
+              this.turbineSN.equals(other.getTurbineSN())));
+        __equalsCalc = null;
+        return _equals;
+    }
+
+    private boolean __hashCodeCalc = false;
+    public synchronized int hashCode() {
+        if (__hashCodeCalc) {
+            return 0;
+        }
+        __hashCodeCalc = true;
+        int _hashCode = 1;
+        if (getAlarmDropName() != null) {
+            _hashCode += getAlarmDropName().hashCode();
+        }
+        if (getClassType() != null) {
+            _hashCode += getClassType().hashCode();
+        }
+        if (getCreationDate() != null) {
+            _hashCode += getCreationDate().hashCode();
+        }
+        if (getEventDate() != null) {
+            _hashCode += getEventDate().hashCode();
+        }
+        if (getForcedOutageHours() != null) {
+            _hashCode += getForcedOutageHours().hashCode();
+        }
+        if (getTripCounter() != null) {
+            _hashCode += getTripCounter().hashCode();
+        }
+        if (getTurbineSN() != null) {
+            _hashCode += getTurbineSN().hashCode();
+        }
+        __hashCodeCalc = false;
+        return _hashCode;
+    }
+
+    // Type metadata
+    private static org.apache.axis.description.TypeDesc typeDesc =
+        new org.apache.axis.description.TypeDesc(TripNotifierEvents.class, true);
+
+    static {
+        typeDesc.setXmlType(new javax.xml.namespace.QName("http://Www.GE.Com/Energy/Equipmenthealth/ServicesContract/2010/10", "TripNotifierEvents"));
+        org.apache.axis.description.ElementDesc elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("alarmDropName");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://Www.GE.Com/Energy/Equipmenthealth/ServicesContract/2010/10", "AlarmDropName"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(true);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("classType");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://Www.GE.Com/Energy/Equipmenthealth/ServicesContract/2010/10", "ClassType"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(true);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("creationDate");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://Www.GE.Com/Energy/Equipmenthealth/ServicesContract/2010/10", "CreationDate"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "dateTime"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("eventDate");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://Www.GE.Com/Energy/Equipmenthealth/ServicesContract/2010/10", "EventDate"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "dateTime"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("forcedOutageHours");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://Www.GE.Com/Energy/Equipmenthealth/ServicesContract/2010/10", "ForcedOutageHours"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "int"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("tripCounter");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://Www.GE.Com/Energy/Equipmenthealth/ServicesContract/2010/10", "TripCounter"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "int"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("turbineSN");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://Www.GE.Com/Energy/Equipmenthealth/ServicesContract/2010/10", "TurbineSN"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(true);
+        typeDesc.addFieldDesc(elemField);
+    }
+
+    /**
+     * Return type metadata object
+     */
+    public static org.apache.axis.description.TypeDesc getTypeDesc() {
+        return typeDesc;
+    }
+
+    /**
+     * Get Custom Serializer
+     */
+    public static org.apache.axis.encoding.Serializer getSerializer(
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
+           javax.xml.namespace.QName _xmlType) {
+        return 
+          new  org.apache.axis.encoding.ser.BeanSerializer(
+            _javaType, _xmlType, typeDesc);
+    }
+
+    /**
+     * Get Custom Deserializer
+     */
+    public static org.apache.axis.encoding.Deserializer getDeserializer(
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
+           javax.xml.namespace.QName _xmlType) {
+        return 
+          new  org.apache.axis.encoding.ser.BeanDeserializer(
+            _javaType, _xmlType, typeDesc);
+    }
+
+}

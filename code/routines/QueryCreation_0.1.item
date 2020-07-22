@@ -1,0 +1,225 @@
+package routines;
+
+import java.io.BufferedWriter;
+import java.io.FileOutputStream;
+import java.io.OutputStreamWriter;
+import java.io.Writer;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.nio.file.StandardOpenOption;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.ResultSetMetaData;
+import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.Date;
+/*
+ * user specification: the function's comment should contain keys as follows: 1. write about the function's comment.but
+ * it must be before the "{talendTypes}" key.
+ * 
+ * 2. {talendTypes} 's value must be talend Type, it is required . its value should be one of: String, char | Character,
+ * long | Long, int | Integer, boolean | Boolean, byte | Byte, Date, double | Double, float | Float, Object, short |
+ * Short
+ * 
+ * 3. {Category} define a category for the Function. it is required. its value is user-defined .
+ * 
+ * 4. {param} 's format is: {param} <type>[(<default value or closed list values>)] <name>[ : <comment>]
+ * 
+ * <type> 's value should be one of: string, int, list, double, object, boolean, long, char, date. <name>'s value is the
+ * Function's parameter name. the {param} is optional. so if you the Function without the parameters. the {param} don't
+ * added. you can have many parameters for the Function.
+ * 
+ * 5. {example} gives a example for the Function. it is optional.
+ */
+public class QueryCreation {
+
+    /**
+     * helloExample: not return value, only print "hello" + message.
+     * 
+     * 
+     * {talendTypes} String
+     * 
+     * {Category} User Defined
+     * 
+     * {param} string("world") input: The string need to be printed.
+     * 
+     * {example} helloExemple("world") # hello world !.
+     */
+    public static void InsertQueryCreation(String table_Name,String Schema_Name)
+    
+    {
+        //if (message == null) {
+        //    message = "World"; //$NON-NLS-1$
+      //  }
+        //System.out.println("Hello " + message + " !"); //$NON-NLS-1$ //$NON-NLS-2$
+
+        
+       // public static void main(String[] args)
+        
+
+    		String columnName[] = new String[100];
+    		String columnType[] = new String[100];
+    		ArrayList<String> insertStatements = new ArrayList<String>();
+    		String tableName =table_Name; 
+    		String schemaName =Schema_Name;
+    		String basicinsert = null;
+    		int columnCount = 0;
+    		int recordInsertedInFile=0;
+    		try {
+    			// step1 load the driver class
+    			Class.forName("org.postgresql.Driver");
+
+    			// step2 create the connection object
+    			Connection con = DriverManager.getConnection(
+    					"jdbc:postgresql://alpgpdbgp2dev.idc.ge.com:5432/pgsdwh",
+    					"502336065", "sso502pass01");
+
+    			// step3 create the statement object
+    			int rowCount = 0;
+    			int batchsize=10000;
+    			long timeStamp= new Date().getTime();
+    			Statement stmt = con.createStatement();
+    			con.setAutoCommit(false);
+    			
+    			String CountQuery = "Select count(*) from " + schemaName + "."
+    					+ tableName;
+    			ResultSet count = stmt.executeQuery(CountQuery);
+    			while (count.next()) {
+    				rowCount = count.getInt(1);
+    			}
+
+    			System.out.println("Query trigger started"+new Date().toString());
+    			String query = "Select * from " + schemaName + "." + tableName;
+    			// String query= "Select count(*) from "+schemaName+"."+tableName;
+    			// step4 execute query
+    			stmt.setFetchSize(1000);
+    			ResultSet rs = stmt.executeQuery(query);
+    			System.out.println("Query trigger finished"+new Date().toString());
+    			while (rs.next()) {
+    				
+    				ResultSetMetaData rmd = rs.getMetaData();
+    				tableName = rmd.getTableName(1);
+
+    				//System.out.println("Table Name" + tableName);
+    				//System.out.println("Schema Name" + schemaName);
+
+    				columnCount = rmd.getColumnCount();
+
+    				//System.out.println("column Count" + columnCount);
+    				basicinsert = new String();
+    				basicinsert = "insert into " + schemaName + "." + tableName
+    						+ " (";
+
+    				for (int i = 1; i < columnCount; i++) {
+    					columnName[i] = rmd.getColumnName(i);
+    					columnType[i] = rmd.getColumnTypeName(i);
+
+    				}
+
+    				for (int i = 1; i < columnCount; i++) {
+    					basicinsert += columnName[i] + ",";
+
+    				}
+    				basicinsert = basicinsert
+    						.substring(0, basicinsert.length() - 1);
+    				basicinsert += ") values(";
+    				for (int i = 0; i < columnCount; i++) {
+    					if (columnType[i] == "numeric") {
+    						basicinsert += rs.getInt(i) + ",";
+    					}
+    					if (columnType[i] == "varchar") {
+    						if (rs.getString(i) != null) {
+    							basicinsert += "'" + rs.getString(i) + "'" + ",";
+    						} else {
+    							basicinsert += null + ",";
+    						}
+    					}
+    					if (columnType[i] == "float") {
+    						basicinsert += rs.getFloat(i) + ",";
+    					}
+
+    				}
+    				basicinsert = basicinsert
+    						.substring(0, basicinsert.length() - 1);
+    				basicinsert += ");";
+
+    				insertStatements.add(basicinsert);
+    				
+    				
+    				if(rowCount <=10000)
+    				{
+    					batchsize=rowCount;
+    				}
+
+    				if (insertStatements.size() >= batchsize ) {
+    					
+    					try {
+    						System.out.println("File write batch started"+new Date().toString());
+    						Path filePath = Paths
+    								.get("C:/Users/791001.TCSGEGDC/filename_"+timeStamp+".txt");
+    						
+    						
+    					
+    						if (!Files.exists(filePath)) {
+    							Files.createFile(filePath);
+    						}
+    						
+    						else if(Files.size(filePath)>104857600L)
+    						{ 
+    						System.out.println("Old File Size "+(Files.size(filePath)/1000000L)+"MB");
+    						System.out.println("Creating new file");
+    						timeStamp= new Date().getTime();
+    						filePath = Paths
+    						.get("C:/Users/791001.TCSGEGDC/filename_"+timeStamp+".txt");
+    						if (!Files.exists(filePath)) {
+    						Files.createFile(filePath);
+    						}
+    						}
+    						
+    						for (String x : insertStatements) {
+    							//System.out.println(x);
+
+    							// writer.write(x);
+    							// writer.write("\r\n");
+    							Files.write(filePath, x.getBytes(),
+    									StandardOpenOption.APPEND);
+    							Files.write(filePath, "\r\n".getBytes(),
+    									StandardOpenOption.APPEND);
+
+    						}
+    						
+    						System.out.println("File write batch finished"+new Date().toString());
+    					} catch (Exception e) {
+    						System.out.println(e);
+    					}
+    					recordInsertedInFile+=insertStatements.size();
+    					System.out.println("Number of records inserted in file"
+    							+ recordInsertedInFile+new Date().toString());
+    					insertStatements.clear();
+    					
+    					if(rowCount >=10000)
+    					{
+    						rowCount=rowCount-batchsize;
+    					}
+    				}
+    				
+    				
+    			}
+
+    			con.close();
+    			System.out.println("Process Completed Connection closed"+new Date().toString());
+    		} catch (Exception e) {
+    			System.out.println(e);
+    		}
+
+    	
+
+    
+
+    		
+    }
+     
+    
+}

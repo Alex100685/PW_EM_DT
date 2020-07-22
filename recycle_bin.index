@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recyclebin:RecycleBin xmlns:recyclebin="http://www.talend.org/recyclebin" lastUpdate="2020-06-09T21:02:25.276+0530">
+  <deletedFolders>code/routines/MYFLEET4/TRIP_NOTIFICATION</deletedFolders>
+  <deletedFolders>code/routines/MYFLEET4</deletedFolders>
+  <deletedFolders>process/RISK_FINANCE_MEA_SOX</deletedFolders>
+  <deletedFolders>process/SOX_Controls/RISK_FINANCE_MEA_SOX/FINANCE_SOX/BACKLOG_ICAM_MASTER_SOX/ICAM_SOX</deletedFolders>
+  <deletedFolders>process/SOX_Controls/RISK_FINANCE_MEA_SOX/FINANCE_SOX/BACKLOG_ICAM_MASTER_SOX</deletedFolders>
+  <deletedFolders>process/SOX_Controls/RISK_FINANCE_MEA_SOX/FINANCE_SOX/BACKLOG_NON_ICAM_MASTER_SOX</deletedFolders>
+  <deletedFolders>process/SOX_Controls/RISK_FINANCE_MEA_SOX/FINANCE_SOX</deletedFolders>
+  <deletedFolders>process/SOX_Controls/RISK_FINANCE_MEA_SOX</deletedFolders>
+  <deletedFolders>process/SOX_RISK_FINANCE_MEA/RISK_FINANCE_MEA_SOX</deletedFolders>
+  <deletedFolders>process/End_to_end/GVL_L3</deletedFolders>
+  <deletedItems id="_h3nMsFeZEemyeINWrqE8RQ" path="" type="PROCESS"/>
+  <deletedItems id="_ceX3IFeZEemyeINWrqE8RQ" path="" type="CONTEXT"/>
+  <deletedItems id="_R67wwFedEemyeINWrqE8RQ" path="" type="METADATA_CONNECTIONS"/>
+  <deletedItems id="_1EMZgFedEemyeINWrqE8RQ" path="" type="METADATA_CONNECTIONS"/>
+  <deletedItems id="_P5qAEFeeEemyeINWrqE8RQ" path="" type="CONTEXT"/>
+  <deletedItems id="_GjZzAPyZEeWdz99VynzZsQ" path="POWER_TALEND_FRAMEWORK/reszegil" type="PROCESS"/>
+  <deletedItems id="_neTWoHr_Eembf5Tr2SxwYQ" path="" type="PROCESS"/>
+  <deletedItems id="_KrmVYHsBEembf5Tr2SxwYQ" path="" type="PROCESS"/>
+  <deletedItems id="_H46o8Iz1EemBXqkoTi00fQ" path="SOX_Controls" type="PROCESS"/>
+  <deletedItems id="_q9hrQLKREemiuuOyHNtciA" path="DT_Dashboard" type="PROCESS"/>
+  <deletedItems id="_Tn_YMMpLEemQJZos60LpkQ" path="/SOX_Controls" type="PROCESS"/>
+  <deletedItems id="_wQ_UgM_TEem8vqXhbZem1A" path="DT_Dashboard" type="PROCESS"/>
+  <deletedItems id="_TA0u4MWHEem4urgAy7igWQ" path="DT_Dashboard" type="PROCESS"/>
+  <deletedItems id="_B7Pe0M_LEem8vqXhbZem1A" path="DT_Dashboard" type="PROCESS"/>
+  <deletedItems id="_r8X1AC2lEeiqIPH8EZ8QBw" path="Box_Integration" type="PROCESS"/>
+  <deletedItems id="_1CoHMBdTEeqBCftb-ymULA" path="/SOX_Controls" type="PROCESS"/>
+  <deletedItems id="_xCUBIBvtEeqz0MbO_qcQgw" path="Temp" type="PROCESS"/>
+  <deletedItems id="_yLL4QBvuEeqz0MbO_qcQgw" path="SOX_Controls" type="PROCESS"/>
+  <deletedItems id="_BQZdgBvnEeqz0MbO_qcQgw" path="SOX_Controls" type="PROCESS"/>
+  <deletedItems id="_6aLmUDZCEeqOoITiutvKVw" path="Talend_DT" type="PROCESS"/>
+  <deletedItems id="_cPVEsFS0EeqNjPCIJ7EqMQ" path="test_email" type="PROCESS"/>
+  <deletedItems id="_DbMa8EkDEeaZXZX4c6XHPA" path="" type="ROUTINES"/>
+  <deletedItems id="_6GJOsLMoEeeGgdtAzfoc6Q" path="" type="ROUTINES"/>
+  <deletedItems id="_Vcst8ACIEeaiHOY563SpJw" path="" type="ROUTINES"/>
+  <deletedItems id="_I8ysAHiuEeqUAZYXhI9HMQ" path="SOX_Controls/SOX_Controls_OnPrem_Postgres_Job" type="PROCESS"/>
+  <deletedItems id="_oMxOEEVoEemsxMDYdKve_A" path="Governance" type="PROCESS"/>
+  <deletedItems id="_oXQp8NprEeeFXsqiEUBrSA" path="" type="ROUTINES"/>
+  <deletedItems id="_oM_4AMvpEeSPdv2U3VjjDw" path="" type="ROUTINES"/>
+  <deletedItems id="_m-0t8PpTEeWoDbEozfrjLg" path="MYFLEET4/TRIP_NOTIFICATION" type="ROUTINES"/>
+  <deletedItems id="_slTJECZXEeao7Z5pqPDerA" path="MYFLEET4/TRIP_NOTIFICATION" type="ROUTINES"/>
+  <deletedItems id="_MD7NQHydEeWRSYMZ4byklQ" path="MYFLEET4/TRIP_NOTIFICATION" type="ROUTINES"/>
+  <deletedItems id="_v4haoJOmEeq8jrZz2Vx2pw" path="End_to_end" type="PROCESS"/>
+  <deletedItems id="_EByCAHNcEemYd_i7nwPeFg" path="" type="ROUTINES"/>
+  <deletedItems id="_TrtzAJXdEeqILd1lFwCqmQ" path="Governance" type="PROCESS"/>
+  <deletedItems id="_maRy8HmZEeqV9JfobQmO6g" path="Governance" type="PROCESS"/>
+  <deletedItems id="_LAccEJXJEeqitoiSW-um6Q" path="End_to_end" type="PROCESS"/>
+  <deletedItems id="_MNvD8JUsEeqitoiSW-um6Q" path="End_to_end" type="PROCESS"/>
+  <deletedItems id="_v-8_sBlwEem-xcizEcUo3g" path="End_to_end/GVL_L3" type="PROCESS"/>
+  <deletedItems id="_npWRUGgtEemjlO9vst63wQ" path="End_to_end/GVL_L3" type="PROCESS"/>
+  <deletedItems id="_l6wWgBvwEeqz0MbO_qcQgw" path="SOX_Controls" type="PROCESS"/>
+  <deletedItems id="_vnuO4J91EeqEgalT3EqqSw" path="test_email" type="PROCESS"/>
+  <deletedItems id="_3BQ_oJxREeqibqQu4Ij15A" path="test_email" type="PROCESS"/>
+  <deletedItems id="_sKoicKo1EeqUMtSC9yv9AA" path="" type="METADATA_FILE_EXCEL"/>
+  <deletedItems id="_7lw7EKoyEeqUMtSC9yv9AA" path="" type="METADATA_CONNECTIONS"/>
+  <deletedItems id="_3gLzsKpcEeqhsrgNoe10vQ" path="" type="METADATA_FILE_EXCEL"/>
+</recyclebin:RecycleBin>

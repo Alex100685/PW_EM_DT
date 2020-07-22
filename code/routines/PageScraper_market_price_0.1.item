@@ -1,0 +1,178 @@
+package routines;
+
+import java.io.BufferedReader;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.net.URL;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Calendar;
+
+public class PageScraper_market_price {
+	
+	public void Market_Price() throws IOException{
+		
+		//define where the file should be output and open a FileWriter at that location
+	  	String outputLocation = "/data/files/INSTALL_BASE/OPERATIONAL_UK/BMReports/market_price_output.csv";
+	  	FileWriter fileWriter = new FileWriter(outputLocation);
+	  		
+	  	//define an error log showing which units had errors for which dates
+	  	String errorLocation = "/data/files/INSTALL_BASE/OPERATIONAL_UK/BMReports/market_price_error.csv";
+	  	FileWriter errorWriter = new FileWriter(errorLocation);
+	  	
+	  	//create a string to store which units had errors so they can be retried 
+		String errorString = null;
+			
+		int x = 1;
+		
+		//loop through the last 365 days for the current unit
+		while (x < 2){
+				
+				
+				//get the current date and format it the way it needs to be input on the BM website
+				DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+				Calendar cal = Calendar.getInstance();
+				
+				
+				//get the proper date for the current loop position and convert it to a string value
+				cal.add(Calendar.DAY_OF_MONTH, -x);
+				String dateValue = dateFormat.format(cal.getTime());
+				System.out.println(dateValue);
+				
+				try {
+					//get the page source using the unit and date as parameters 
+					URL oracle = new URL("http://www.bmreports.com/servlet/com.logica.neta.bwp_MarketIndexServlet?param0="+dateValue+"&param1=*&displayCsv=false");
+					
+					BufferedReader in = new BufferedReader(
+					new InputStreamReader(oracle.openStream()));
+		
+					String inputLine;
+		            StringBuilder a = new StringBuilder();
+		            while ((inputLine = in.readLine()) != null)
+		                a.append(inputLine);
+		            in.close();
+		
+		            String pageSource = a.toString();
+							
+			        // Find where the CSV variable is declared and ends in the page
+					int firstIndex = pageSource.indexOf("csv=") + 28;
+			        int secondIndex = pageSource.indexOf("FTR");
+			        
+			        
+			        //pull the data from the CSV variable on the page and append it to the CSV output file
+					String csvData = pageSource.substring(firstIndex, secondIndex);
+					//convert the \n text string in the page to a proper line break 
+					csvData = csvData.replaceAll("\\\\n", System.getProperty("line.separator"));
+			  		fileWriter.append(csvData);} 
+				
+				
+				//create a list with any units that encounter errors, so they can be re-tried later 
+				
+				catch (IOException e){
+					//if errorString is null (i.e. this is the first unit with an error), just add the current unit
+			  		if (errorString == null) {
+			  			errorString += dateValue;
+			  		}
+			  		
+			  		//if it is not null (i.e. this isn't the first error), add a comma and the current unit 
+			  		else{
+		  			errorString += "," + dateValue;
+		  			x++;
+			  		continue;
+					}
+			  		
+				}
+				
+				catch (StringIndexOutOfBoundsException e){
+					
+					if (errorString == null) {
+			  			errorString += dateValue;
+			  		}
+			  		
+			  		else{
+			  		System.out.println(errorString);
+					errorString += "," + dateValue;
+					x++;
+			  		continue;
+			  		}
+				}
+				
+				//continue the while loop
+				x++;   		      
+			}
+			
+		
+		//loop a second time through the list of units that had errors above to hopefully capture the data this time
+		if(errorString != null){
+		ArrayList<String> errorList = new ArrayList<String>(Arrays.asList(errorString.split(",")));
+		
+		for (int i=0; i < errorList.size(); i++){
+				
+				
+				//get the current date and format it the way it needs to be input on the BM website
+				DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+				Calendar cal = Calendar.getInstance();
+				
+				
+				//get the proper date for the current loop position and convert it to a string value
+				cal.add(Calendar.DAY_OF_MONTH, -x);
+				String dateValue = dateFormat.format(cal.getTime());
+				System.out.println(dateValue);
+				
+				try {
+					
+					//get the page source using the unit and date as parameters 
+					URL oracle = new URL("http://www.bmreports.com/servlet/com.logica.neta.bwp_MarketIndexServlet?param0="+errorList.get(i)+"&param1=*&displayCsv=false");
+					
+					BufferedReader in = new BufferedReader(
+					new InputStreamReader(oracle.openStream()));
+		
+					String inputLine;
+		            StringBuilder a = new StringBuilder();
+		            while ((inputLine = in.readLine()) != null)
+		                a.append(inputLine);
+		            in.close();
+		
+		            String pageSource = a.toString();
+							
+			        // Find where the CSV variable is declared and ends in the page
+					int firstIndex = pageSource.indexOf("csv=") + 28;
+			        int secondIndex = pageSource.indexOf("FTR");
+			        
+			        
+			        //pull the data from the CSV variable on the page and append it to the CSV output file
+					String csvData = pageSource.substring(firstIndex, secondIndex);
+					//convert the \n text string in the page to a proper line break 
+					csvData = csvData.replaceAll("\\\\n", System.getProperty("line.separator"));
+			  		fileWriter.append(csvData);} 
+			
+			catch (IOException e){
+				errorWriter.append(dateValue);
+				x++;
+				}
+			
+			catch (StringIndexOutOfBoundsException e){
+				errorWriter.append(dateValue);
+				x++;
+			}
+				
+				x++;
+			
+		}
+		}
+		
+		//close the fileWriter 
+				fileWriter.close();
+				errorWriter.close();
+		
+		
+		
+		
+			
+		}
+	
+
+}

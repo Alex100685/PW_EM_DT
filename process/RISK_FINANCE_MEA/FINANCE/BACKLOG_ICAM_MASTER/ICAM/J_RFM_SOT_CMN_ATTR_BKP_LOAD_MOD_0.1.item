@@ -1,0 +1,1605 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:xmi="http://www.omg.org/XMI" defaultContext="Dev" framework="" jobType="Standard" xmi:version="2.0">
+  <context confirmationNeeded="false" name="Dev">
+    <contextParameter comment="" name="LOG_JOB_NAME" prompt="LOG_JOB_NAME?" promptNeeded="false" repositoryContextId="_dMz3kHySEemOmLloURrY-w" type="id_String" value=""/>
+    <contextParameter comment="" name="LOG_MESSAGE" prompt="LOG_MESSAGE?" promptNeeded="false" repositoryContextId="_dMz3kHySEemOmLloURrY-w" type="id_String" value=""/>
+    <contextParameter comment="" name="LOG_NO_OF_ERRORS" prompt="LOG_NO_OF_ERRORS?" promptNeeded="false" repositoryContextId="_dMz3kHySEemOmLloURrY-w" type="id_Integer" value="0"/>
+    <contextParameter comment="" name="LOG_NO_OF_INSERTS" prompt="LOG_NO_OF_INSERTS?" promptNeeded="false" repositoryContextId="_dMz3kHySEemOmLloURrY-w" type="id_Integer" value="0"/>
+    <contextParameter comment="" name="LOG_NO_OF_UPDATES" prompt="LOG_NO_OF_UPDATES?" promptNeeded="false" repositoryContextId="_dMz3kHySEemOmLloURrY-w" type="id_Integer" value="0"/>
+    <contextParameter comment="" name="LOG_PLANT_NAME" prompt="LOG_PLANT_NAME?" promptNeeded="false" repositoryContextId="_dMz3kHySEemOmLloURrY-w" type="id_String" value=""/>
+    <contextParameter comment="" name="LOG_RUN_ID" prompt="LOG_RUN_ID?" promptNeeded="false" repositoryContextId="_dMz3kHySEemOmLloURrY-w" type="id_Integer" value="-1"/>
+    <contextParameter comment="" name="LOG_SOURCE_ROW_COUNT" prompt="LOG_SOURCE_ROW_COUNT?" promptNeeded="false" repositoryContextId="_dMz3kHySEemOmLloURrY-w" type="id_Integer" value="0"/>
+    <contextParameter comment="" name="LOG_SYSTEM_NAME" prompt="LOG_SYSTEM_NAME?" promptNeeded="false" repositoryContextId="_dMz3kHySEemOmLloURrY-w" type="id_String" value=""/>
+    <contextParameter comment="" name="LOG_TABLE_NAME" prompt="LOG_TABLE_NAME?" promptNeeded="false" repositoryContextId="_dMz3kHySEemOmLloURrY-w" type="id_String" value=""/>
+    <contextParameter comment="" name="LOG_TARGET_ROW_COUNT" prompt="LOG_TARGET_ROW_COUNT?" promptNeeded="false" repositoryContextId="_dMz3kHySEemOmLloURrY-w" type="id_Integer" value="0"/>
+    <contextParameter comment="" name="META_PREFIX" prompt="META_PREFIX?" promptNeeded="false" repositoryContextId="_dMz3kHySEemOmLloURrY-w" type="id_String" value="edl"/>
+    <contextParameter comment="" name="META_SCHEMA" prompt="META_SCHEMA?" promptNeeded="false" repositoryContextId="_dMz3kHySEemOmLloURrY-w" type="id_String" value="sbdt"/>
+    <contextParameter comment="" name="SOURCING_Database" prompt="SOURCING_Database?" promptNeeded="false" repositoryContextId="_dMz3kHySEemOmLloURrY-w" type="id_String" value="pgsdwh"/>
+    <contextParameter comment="" name="SOURCING_Login" prompt="SOURCING_Login?" promptNeeded="false" repositoryContextId="_dMz3kHySEemOmLloURrY-w" type="id_String" value="502799797"/>
+    <contextParameter comment="" name="SOURCING_Password" prompt="SOURCING_Password?" promptNeeded="false" repositoryContextId="_dMz3kHySEemOmLloURrY-w" type="id_Password" value="fi0GrmC/1V0ODoUV9RtJTQ=="/>
+    <contextParameter comment="" name="SOURCING_Port" prompt="SOURCING_Port?" promptNeeded="false" repositoryContextId="_dMz3kHySEemOmLloURrY-w" type="id_String" value="5432"/>
+    <contextParameter comment="" name="SOURCING_Schema" prompt="SOURCING_Schema?" promptNeeded="false" repositoryContextId="_dMz3kHySEemOmLloURrY-w" type="id_String" value="sbdt"/>
+    <contextParameter comment="" name="SOURCING_Server" prompt="SOURCING_Server?" promptNeeded="false" repositoryContextId="_dMz3kHySEemOmLloURrY-w" type="id_String" value="dev-9ha.cloud.digital.ge.com"/>
+    <contextParameter comment="" name="RFM_GPDB_SOT_BACKLOG_AWS_Database" prompt="RFM_GPDB_SOT_BACKLOG_AWS_Database?" promptNeeded="false" repositoryContextId="_woKUACKgEem6xLcLHx8Cdw" type="id_String" value="pgsdwh"/>
+    <contextParameter comment="" name="RFM_GPDB_SOT_BACKLOG_AWS_Login" prompt="RFM_GPDB_SOT_BACKLOG_AWS_Login?" promptNeeded="false" repositoryContextId="_woKUACKgEem6xLcLHx8Cdw" type="id_String" value="502799797"/>
+    <contextParameter comment="" name="RFM_GPDB_SOT_BACKLOG_AWS_Password" prompt="RFM_GPDB_SOT_BACKLOG_AWS_Password?" promptNeeded="false" repositoryContextId="_woKUACKgEem6xLcLHx8Cdw" type="id_Password" value="fi0GrmC/1V0ODoUV9RtJTQ=="/>
+    <contextParameter comment="" name="RFM_GPDB_SOT_BACKLOG_AWS_Port" prompt="RFM_GPDB_SOT_BACKLOG_AWS_Port?" promptNeeded="false" repositoryContextId="_woKUACKgEem6xLcLHx8Cdw" type="id_String" value="5432"/>
+    <contextParameter comment="" name="RFM_GPDB_SOT_BACKLOG_AWS_Schema" prompt="RFM_GPDB_SOT_BACKLOG_AWS_Schema?" promptNeeded="false" repositoryContextId="_woKUACKgEem6xLcLHx8Cdw" type="id_String" value="sot_pgsbacklog"/>
+    <contextParameter comment="" name="RFM_GPDB_SOT_BACKLOG_AWS_Server" prompt="RFM_GPDB_SOT_BACKLOG_AWS_Server?" promptNeeded="false" repositoryContextId="_woKUACKgEem6xLcLHx8Cdw" type="id_String" value="dev-9ha.cloud.digital.ge.com"/>
+    <contextParameter comment="" name="RFM_GPDB_SOT_BACKLOG_ON_PREM_Database" prompt="RFM_GPDB_SOT_BACKLOG_ON_PREM_Database?" promptNeeded="false" repositoryContextId="_tfCkUB4pEemZHoDl99SGXg" type="id_String" value="pgsdwh"/>
+    <contextParameter comment="" name="RFM_GPDB_SOT_BACKLOG_ON_PREM_Login" prompt="RFM_GPDB_SOT_BACKLOG_ON_PREM_Login?" promptNeeded="false" repositoryContextId="_tfCkUB4pEemZHoDl99SGXg" type="id_String" value="502799797"/>
+    <contextParameter comment="" name="RFM_GPDB_SOT_BACKLOG_ON_PREM_Password" prompt="RFM_GPDB_SOT_BACKLOG_ON_PREM_Password?" promptNeeded="false" repositoryContextId="_tfCkUB4pEemZHoDl99SGXg" type="id_Password" value="fi0GrmC/1V0ODoUV9RtJTQ=="/>
+    <contextParameter comment="" name="RFM_GPDB_SOT_BACKLOG_ON_PREM_Port" prompt="RFM_GPDB_SOT_BACKLOG_ON_PREM_Port?" promptNeeded="false" repositoryContextId="_tfCkUB4pEemZHoDl99SGXg" type="id_String" value="5432"/>
+    <contextParameter comment="" name="RFM_GPDB_SOT_BACKLOG_ON_PREM_Schema" prompt="RFM_GPDB_SOT_BACKLOG_ON_PREM_Schema?" promptNeeded="false" repositoryContextId="_tfCkUB4pEemZHoDl99SGXg" type="id_String" value="pgsbacklog"/>
+    <contextParameter comment="" name="RFM_GPDB_SOT_BACKLOG_ON_PREM_Server" prompt="RFM_GPDB_SOT_BACKLOG_ON_PREM_Server?" promptNeeded="false" repositoryContextId="_tfCkUB4pEemZHoDl99SGXg" type="id_String" value="10.141.145.121"/>
+    <contextParameter comment="" name="mail_to" prompt="mail_to?" promptNeeded="false" type="id_String" value="anjankumar.chand@ge.com"/>
+    <contextParameter comment="" name="mail_host" prompt="mail_host?" promptNeeded="false" type="id_String" value="e2ksmtp01.e2k.ad.ge.com"/>
+    <contextParameter comment="" name="mail_from" prompt="mail_from?" promptNeeded="false" type="id_String" value="backlogsupport@ge.com"/>
+  </context>
+  <context confirmationNeeded="false" name="Prod">
+    <contextParameter comment="" name="LOG_JOB_NAME" prompt="LOG_JOB_NAME?" promptNeeded="false" repositoryContextId="_dMz3kHySEemOmLloURrY-w" type="id_String" value=""/>
+    <contextParameter comment="" name="LOG_MESSAGE" prompt="LOG_MESSAGE?" promptNeeded="false" repositoryContextId="_dMz3kHySEemOmLloURrY-w" type="id_String" value=""/>
+    <contextParameter comment="" name="LOG_NO_OF_ERRORS" prompt="LOG_NO_OF_ERRORS?" promptNeeded="false" repositoryContextId="_dMz3kHySEemOmLloURrY-w" type="id_Integer" value="0"/>
+    <contextParameter comment="" name="LOG_NO_OF_INSERTS" prompt="LOG_NO_OF_INSERTS?" promptNeeded="false" repositoryContextId="_dMz3kHySEemOmLloURrY-w" type="id_Integer" value="0"/>
+    <contextParameter comment="" name="LOG_NO_OF_UPDATES" prompt="LOG_NO_OF_UPDATES?" promptNeeded="false" repositoryContextId="_dMz3kHySEemOmLloURrY-w" type="id_Integer" value="0"/>
+    <contextParameter comment="" name="LOG_PLANT_NAME" prompt="LOG_PLANT_NAME?" promptNeeded="false" repositoryContextId="_dMz3kHySEemOmLloURrY-w" type="id_String" value=""/>
+    <contextParameter comment="" name="LOG_RUN_ID" prompt="LOG_RUN_ID?" promptNeeded="false" repositoryContextId="_dMz3kHySEemOmLloURrY-w" type="id_Integer" value="-1"/>
+    <contextParameter comment="" name="LOG_SOURCE_ROW_COUNT" prompt="LOG_SOURCE_ROW_COUNT?" promptNeeded="false" repositoryContextId="_dMz3kHySEemOmLloURrY-w" type="id_Integer" value="0"/>
+    <contextParameter comment="" name="LOG_SYSTEM_NAME" prompt="LOG_SYSTEM_NAME?" promptNeeded="false" repositoryContextId="_dMz3kHySEemOmLloURrY-w" type="id_String" value=""/>
+    <contextParameter comment="" name="LOG_TABLE_NAME" prompt="LOG_TABLE_NAME?" promptNeeded="false" repositoryContextId="_dMz3kHySEemOmLloURrY-w" type="id_String" value=""/>
+    <contextParameter comment="" name="LOG_TARGET_ROW_COUNT" prompt="LOG_TARGET_ROW_COUNT?" promptNeeded="false" repositoryContextId="_dMz3kHySEemOmLloURrY-w" type="id_Integer" value="0"/>
+    <contextParameter comment="" name="META_PREFIX" prompt="META_PREFIX?" promptNeeded="false" repositoryContextId="_dMz3kHySEemOmLloURrY-w" type="id_String" value="edl"/>
+    <contextParameter comment="" name="META_SCHEMA" prompt="META_SCHEMA?" promptNeeded="false" repositoryContextId="_dMz3kHySEemOmLloURrY-w" type="id_String" value="sbdt"/>
+    <contextParameter comment="" name="SOURCING_Database" prompt="SOURCING_Database?" promptNeeded="false" repositoryContextId="_dMz3kHySEemOmLloURrY-w" type="id_String" value="pgsdwh"/>
+    <contextParameter comment="" name="SOURCING_Login" prompt="SOURCING_Login?" promptNeeded="false" repositoryContextId="_dMz3kHySEemOmLloURrY-w" type="id_String" value="502799797"/>
+    <contextParameter comment="" name="SOURCING_Password" prompt="SOURCING_Password?" promptNeeded="false" repositoryContextId="_dMz3kHySEemOmLloURrY-w" type="id_Password" value="rrc5fueW52wV6gxceuPvkA=="/>
+    <contextParameter comment="" name="SOURCING_Port" prompt="SOURCING_Port?" promptNeeded="false" repositoryContextId="_dMz3kHySEemOmLloURrY-w" type="id_String" value="5432"/>
+    <contextParameter comment="" name="SOURCING_Schema" prompt="SOURCING_Schema?" promptNeeded="false" repositoryContextId="_dMz3kHySEemOmLloURrY-w" type="id_String" value="sbdt"/>
+    <contextParameter comment="" name="SOURCING_Server" prompt="SOURCING_Server?" promptNeeded="false" repositoryContextId="_dMz3kHySEemOmLloURrY-w" type="id_String" value="9ha.cloud.digital.ge.com"/>
+    <contextParameter comment="" name="RFM_GPDB_SOT_BACKLOG_AWS_Database" prompt="RFM_GPDB_SOT_BACKLOG_AWS_Database?" promptNeeded="false" repositoryContextId="_woKUACKgEem6xLcLHx8Cdw" type="id_String" value="pgsdwh"/>
+    <contextParameter comment="" name="RFM_GPDB_SOT_BACKLOG_AWS_Login" prompt="RFM_GPDB_SOT_BACKLOG_AWS_Login?" promptNeeded="false" repositoryContextId="_woKUACKgEem6xLcLHx8Cdw" type="id_String" value="502799797"/>
+    <contextParameter comment="" name="RFM_GPDB_SOT_BACKLOG_AWS_Password" prompt="RFM_GPDB_SOT_BACKLOG_AWS_Password?" promptNeeded="false" repositoryContextId="_woKUACKgEem6xLcLHx8Cdw" type="id_Password" value="rrc5fueW52wV6gxceuPvkA=="/>
+    <contextParameter comment="" name="RFM_GPDB_SOT_BACKLOG_AWS_Port" prompt="RFM_GPDB_SOT_BACKLOG_AWS_Port?" promptNeeded="false" repositoryContextId="_woKUACKgEem6xLcLHx8Cdw" type="id_String" value="5432"/>
+    <contextParameter comment="" name="RFM_GPDB_SOT_BACKLOG_AWS_Schema" prompt="RFM_GPDB_SOT_BACKLOG_AWS_Schema?" promptNeeded="false" repositoryContextId="_woKUACKgEem6xLcLHx8Cdw" type="id_String" value="sot_pgsbacklog"/>
+    <contextParameter comment="" name="RFM_GPDB_SOT_BACKLOG_AWS_Server" prompt="RFM_GPDB_SOT_BACKLOG_AWS_Server?" promptNeeded="false" repositoryContextId="_woKUACKgEem6xLcLHx8Cdw" type="id_String" value="9ha.cloud.digital.ge.com"/>
+    <contextParameter comment="" name="RFM_GPDB_SOT_BACKLOG_ON_PREM_Database" prompt="RFM_GPDB_SOT_BACKLOG_ON_PREM_Database?" promptNeeded="false" repositoryContextId="_tfCkUB4pEemZHoDl99SGXg" type="id_String" value="pgsdwh"/>
+    <contextParameter comment="" name="RFM_GPDB_SOT_BACKLOG_ON_PREM_Login" prompt="RFM_GPDB_SOT_BACKLOG_ON_PREM_Login?" promptNeeded="false" repositoryContextId="_tfCkUB4pEemZHoDl99SGXg" type="id_String" value="502799797"/>
+    <contextParameter comment="" name="RFM_GPDB_SOT_BACKLOG_ON_PREM_Password" prompt="RFM_GPDB_SOT_BACKLOG_ON_PREM_Password?" promptNeeded="false" repositoryContextId="_tfCkUB4pEemZHoDl99SGXg" type="id_Password" value="rrc5fueW52wV6gxceuPvkA=="/>
+    <contextParameter comment="" name="RFM_GPDB_SOT_BACKLOG_ON_PREM_Port" prompt="RFM_GPDB_SOT_BACKLOG_ON_PREM_Port?" promptNeeded="false" repositoryContextId="_tfCkUB4pEemZHoDl99SGXg" type="id_String" value="5432"/>
+    <contextParameter comment="" name="RFM_GPDB_SOT_BACKLOG_ON_PREM_Schema" prompt="RFM_GPDB_SOT_BACKLOG_ON_PREM_Schema?" promptNeeded="false" repositoryContextId="_tfCkUB4pEemZHoDl99SGXg" type="id_String" value="pgsbacklog"/>
+    <contextParameter comment="" name="RFM_GPDB_SOT_BACKLOG_ON_PREM_Server" prompt="RFM_GPDB_SOT_BACKLOG_ON_PREM_Server?" promptNeeded="false" repositoryContextId="_tfCkUB4pEemZHoDl99SGXg" type="id_String" value="10.141.128.197"/>
+    <contextParameter comment="" name="mail_to" prompt="mail_to?" promptNeeded="false" type="id_String" value="anjankumar.chand@ge.com"/>
+    <contextParameter comment="" name="mail_host" prompt="mail_host?" promptNeeded="false" type="id_String" value="e2ksmtp01.e2k.ad.ge.com"/>
+    <contextParameter comment="" name="mail_from" prompt="mail_from?" promptNeeded="false" type="id_String" value="backlogsupport@ge.com"/>
+  </context>
+  <context confirmationNeeded="false" name="Default">
+    <contextParameter comment="" name="LOG_JOB_NAME" prompt="LOG_JOB_NAME?" promptNeeded="false" repositoryContextId="_dMz3kHySEemOmLloURrY-w" type="id_String" value=""/>
+    <contextParameter comment="" name="LOG_MESSAGE" prompt="LOG_MESSAGE?" promptNeeded="false" repositoryContextId="_dMz3kHySEemOmLloURrY-w" type="id_String" value=""/>
+    <contextParameter comment="" name="LOG_NO_OF_ERRORS" prompt="LOG_NO_OF_ERRORS?" promptNeeded="false" repositoryContextId="_dMz3kHySEemOmLloURrY-w" type="id_Integer" value="0"/>
+    <contextParameter comment="" name="LOG_NO_OF_INSERTS" prompt="LOG_NO_OF_INSERTS?" promptNeeded="false" repositoryContextId="_dMz3kHySEemOmLloURrY-w" type="id_Integer" value="0"/>
+    <contextParameter comment="" name="LOG_NO_OF_UPDATES" prompt="LOG_NO_OF_UPDATES?" promptNeeded="false" repositoryContextId="_dMz3kHySEemOmLloURrY-w" type="id_Integer" value="0"/>
+    <contextParameter comment="" name="LOG_PLANT_NAME" prompt="LOG_PLANT_NAME?" promptNeeded="false" repositoryContextId="_dMz3kHySEemOmLloURrY-w" type="id_String" value=""/>
+    <contextParameter comment="" name="LOG_RUN_ID" prompt="LOG_RUN_ID?" promptNeeded="false" repositoryContextId="_dMz3kHySEemOmLloURrY-w" type="id_Integer" value="-1"/>
+    <contextParameter comment="" name="LOG_SOURCE_ROW_COUNT" prompt="LOG_SOURCE_ROW_COUNT?" promptNeeded="false" repositoryContextId="_dMz3kHySEemOmLloURrY-w" type="id_Integer" value="0"/>
+    <contextParameter comment="" name="LOG_SYSTEM_NAME" prompt="LOG_SYSTEM_NAME?" promptNeeded="false" repositoryContextId="_dMz3kHySEemOmLloURrY-w" type="id_String" value=""/>
+    <contextParameter comment="" name="LOG_TABLE_NAME" prompt="LOG_TABLE_NAME?" promptNeeded="false" repositoryContextId="_dMz3kHySEemOmLloURrY-w" type="id_String" value=""/>
+    <contextParameter comment="" name="LOG_TARGET_ROW_COUNT" prompt="LOG_TARGET_ROW_COUNT?" promptNeeded="false" repositoryContextId="_dMz3kHySEemOmLloURrY-w" type="id_Integer" value="0"/>
+    <contextParameter comment="" name="META_PREFIX" prompt="META_PREFIX?" promptNeeded="false" repositoryContextId="_dMz3kHySEemOmLloURrY-w" type="id_String" value="edl"/>
+    <contextParameter comment="" name="META_SCHEMA" prompt="META_SCHEMA?" promptNeeded="false" repositoryContextId="_dMz3kHySEemOmLloURrY-w" type="id_String" value="sbdt"/>
+    <contextParameter comment="" name="SOURCING_Database" prompt="SOURCING_Database?" promptNeeded="false" repositoryContextId="_dMz3kHySEemOmLloURrY-w" type="id_String" value="pgsdwh"/>
+    <contextParameter comment="" name="SOURCING_Login" prompt="SOURCING_Login?" promptNeeded="false" repositoryContextId="_dMz3kHySEemOmLloURrY-w" type="id_String" value="502799797"/>
+    <contextParameter comment="" name="SOURCING_Password" prompt="SOURCING_Password?" promptNeeded="false" repositoryContextId="_dMz3kHySEemOmLloURrY-w" type="id_Password" value="fi0GrmC/1V0ODoUV9RtJTQ=="/>
+    <contextParameter comment="" name="SOURCING_Port" prompt="SOURCING_Port?" promptNeeded="false" repositoryContextId="_dMz3kHySEemOmLloURrY-w" type="id_String" value="5432"/>
+    <contextParameter comment="" name="SOURCING_Schema" prompt="SOURCING_Schema?" promptNeeded="false" repositoryContextId="_dMz3kHySEemOmLloURrY-w" type="id_String" value="sbdt"/>
+    <contextParameter comment="" name="SOURCING_Server" prompt="SOURCING_Server?" promptNeeded="false" repositoryContextId="_dMz3kHySEemOmLloURrY-w" type="id_String" value="dev-9ha.cloud.digital.ge.com"/>
+    <contextParameter comment="" name="RFM_GPDB_SOT_BACKLOG_AWS_Database" prompt="RFM_GPDB_SOT_BACKLOG_AWS_Database?" promptNeeded="false" repositoryContextId="_woKUACKgEem6xLcLHx8Cdw" type="id_String" value="pgsdwh"/>
+    <contextParameter comment="" name="RFM_GPDB_SOT_BACKLOG_AWS_Login" prompt="RFM_GPDB_SOT_BACKLOG_AWS_Login?" promptNeeded="false" repositoryContextId="_woKUACKgEem6xLcLHx8Cdw" type="id_String" value="502799797"/>
+    <contextParameter comment="" name="RFM_GPDB_SOT_BACKLOG_AWS_Password" prompt="RFM_GPDB_SOT_BACKLOG_AWS_Password?" promptNeeded="false" repositoryContextId="_woKUACKgEem6xLcLHx8Cdw" type="id_Password" value="fi0GrmC/1V0ODoUV9RtJTQ=="/>
+    <contextParameter comment="" name="RFM_GPDB_SOT_BACKLOG_AWS_Port" prompt="RFM_GPDB_SOT_BACKLOG_AWS_Port?" promptNeeded="false" repositoryContextId="_woKUACKgEem6xLcLHx8Cdw" type="id_String" value="5432"/>
+    <contextParameter comment="" name="RFM_GPDB_SOT_BACKLOG_AWS_Schema" prompt="RFM_GPDB_SOT_BACKLOG_AWS_Schema?" promptNeeded="false" repositoryContextId="_woKUACKgEem6xLcLHx8Cdw" type="id_String" value="sot_pgsbacklog"/>
+    <contextParameter comment="" name="RFM_GPDB_SOT_BACKLOG_AWS_Server" prompt="RFM_GPDB_SOT_BACKLOG_AWS_Server?" promptNeeded="false" repositoryContextId="_woKUACKgEem6xLcLHx8Cdw" type="id_String" value="dev-9ha.cloud.digital.ge.com"/>
+    <contextParameter comment="" name="RFM_GPDB_SOT_BACKLOG_ON_PREM_Database" prompt="RFM_GPDB_SOT_BACKLOG_ON_PREM_Database?" promptNeeded="false" repositoryContextId="_tfCkUB4pEemZHoDl99SGXg" type="id_String" value="pgsdwh"/>
+    <contextParameter comment="" name="RFM_GPDB_SOT_BACKLOG_ON_PREM_Login" prompt="RFM_GPDB_SOT_BACKLOG_ON_PREM_Login?" promptNeeded="false" repositoryContextId="_tfCkUB4pEemZHoDl99SGXg" type="id_String" value="502799797"/>
+    <contextParameter comment="" name="RFM_GPDB_SOT_BACKLOG_ON_PREM_Password" prompt="RFM_GPDB_SOT_BACKLOG_ON_PREM_Password?" promptNeeded="false" repositoryContextId="_tfCkUB4pEemZHoDl99SGXg" type="id_Password" value="fi0GrmC/1V0ODoUV9RtJTQ=="/>
+    <contextParameter comment="" name="RFM_GPDB_SOT_BACKLOG_ON_PREM_Port" prompt="RFM_GPDB_SOT_BACKLOG_ON_PREM_Port?" promptNeeded="false" repositoryContextId="_tfCkUB4pEemZHoDl99SGXg" type="id_String" value="5432"/>
+    <contextParameter comment="" name="RFM_GPDB_SOT_BACKLOG_ON_PREM_Schema" prompt="RFM_GPDB_SOT_BACKLOG_ON_PREM_Schema?" promptNeeded="false" repositoryContextId="_tfCkUB4pEemZHoDl99SGXg" type="id_String" value="pgsbacklog"/>
+    <contextParameter comment="" name="RFM_GPDB_SOT_BACKLOG_ON_PREM_Server" prompt="RFM_GPDB_SOT_BACKLOG_ON_PREM_Server?" promptNeeded="false" repositoryContextId="_tfCkUB4pEemZHoDl99SGXg" type="id_String" value="10.141.145.121"/>
+    <contextParameter comment="" name="mail_to" prompt="mail_to?" promptNeeded="false" type="id_String" value="anjankumar.chand@ge.com"/>
+    <contextParameter comment="" name="mail_host" prompt="mail_host?" promptNeeded="false" type="id_String" value="e2ksmtp01.e2k.ad.ge.com"/>
+    <contextParameter comment="" name="mail_from" prompt="mail_from?" promptNeeded="false" type="id_String" value="backlogsupport@ge.com"/>
+  </context>
+  <parameters>
+    <elementParameter field="TEXT" name="JOB_RUN_VM_ARGUMENTS" show="false" value="{&quot;JOB_RUN_VM_ARGUMENTS&quot;:[&quot;-Xms256M&quot;,&quot;-Xmx1024M&quot;]}"/>
+    <elementParameter field="CHECK" name="JOB_RUN_VM_ARGUMENTS_OPTION" show="false" value="true"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="352"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="256"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" show="false" value=""/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:PROPERTY_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:REPOSITORY_PROPERTY_TYPE" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="0RMsyjmybrE="/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" show="false" value=""/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="true"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="true"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="true"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="true"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" show="false" value="&quot;C:/talend/qa/.metadata&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" show="false" value="&quot;stats_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" show="false" value="&quot;logs_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" show="false" value="&quot;meter_file.txt&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="ISO-8859-15"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" value="tMysqlOutput"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_5"/>
+    <elementParameter field="TEXT" name="URL" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;3.48.32.71&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;"/>
+    <elementParameter field="TEXT" name="DATASOURCE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;testlogdb&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value=""/>
+    <elementParameter field="TEXT" name="USER" value="&quot;talend631&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="nSmcr40OOghDG8zEa9PpZw=="/>
+    <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;talend_stats&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;talend_logs&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" value="&quot;talend_flowmeter&quot;"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" value="true"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" show="false" value=""/>
+    <routinesParameter id="_QNVYYMpoEeO1jq8eAwNUvQ" name="DQTechnical"/>
+    <routinesParameter id="_Z4RCQMWqEeOb2v5_LgjFkA" name="DataOperation"/>
+    <routinesParameter id="_QNskwMpoEeO1jq8eAwNUvQ" name="DataQuality"/>
+    <routinesParameter id="_QNGH0MpoEeO1jq8eAwNUvQ" name="DqStringHandling"/>
+    <routinesParameter id="_QM2QMMpoEeO1jq8eAwNUvQ" name="MDM"/>
+    <routinesParameter id="_Z54L0MWqEeOb2v5_LgjFkA" name="Mathematical"/>
+    <routinesParameter id="_Z7cSEMWqEeOb2v5_LgjFkA" name="Numeric"/>
+    <routinesParameter id="_Z82AQMWqEeOb2v5_LgjFkA" name="Relational"/>
+    <routinesParameter id="_XojCYMWqEeOb2v5_LgjFkA" name="SQLike"/>
+    <routinesParameter id="_Z-SKsMWqEeOb2v5_LgjFkA" name="StringHandling"/>
+    <routinesParameter id="_Z_r44MWqEeOb2v5_LgjFkA" name="TalendDataGenerator"/>
+    <routinesParameter id="_aBUQkMWqEeOb2v5_LgjFkA" name="TalendDate"/>
+    <routinesParameter id="_aC0FYMWqEeOb2v5_LgjFkA" name="TalendString"/>
+    <routinesParameter id="_6kJxAITHEeacVarjMrbhgQ" name="DataQualityDependencies"/>
+    <routinesParameter id="_Jqq78BQLEem1brToNs9ZQg" name="DataMasking"/>
+  </parameters>
+  <node componentName="tGreenplumConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="-192" posY="128">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tGreenplumConnection_1"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_DAnE0B4pEemZHoDl99SGXg"/>
+    <elementParameter field="TEXT" name="HOST" value="context.RFM_GPDB_SOT_BACKLOG_ON_PREM_Server"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="GREENPLUM"/>
+    <elementParameter field="TEXT" name="PORT" value="context.RFM_GPDB_SOT_BACKLOG_ON_PREM_Port"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.RFM_GPDB_SOT_BACKLOG_ON_PREM_Database"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="context.RFM_GPDB_SOT_BACKLOG_ON_PREM_Schema"/>
+    <elementParameter field="TEXT" name="USER" value="context.RFM_GPDB_SOT_BACKLOG_ON_PREM_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kuetVPV/HFSFZ2C1BvSndzTrcF1fqNGUBxxUZghgF3ddzVjuPl6oSUsC"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="SHARED_CONNECTION_NAME" show="false" value=""/>
+    <elementParameter field="CHECK" name="USE_SSL" value="false"/>
+    <elementParameter field="CHECK" name="AUTO_COMMIT" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="GP PROD Conn"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tGreenplumRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="416" posY="256">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tGreenplumRow_1"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tGreenplumConnection_1"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;5432&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="PostgreSQL"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="0RMsyjmybrE="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;bcklg_cmn_attr_rpt&quot;"/>
+    <elementParameter field="CHECK" name="USE_SSL" show="false" value="true"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;INSERT INTO PGSBACKLOG.BCKLG_CMN_ATTR_RPT &#13;&#10;SELECT * FROM PGSBACKLOG.BCKLG_CMN_ATTR;&#13;&#10;update pgsbacklog.bcklg_cmn_attr_ltl_bcklg set \&quot;PLT3\&quot; = 'Fusion'&#13;&#10;from pgsbacklog.backlog_gib_src_extnd where turbine_serial_number = tsn &#13;&#10;and upper(COALESCE(train_type_1,'NA')) NOT IN ('CCSS','GTCC','GTSC') and &#13;&#10;(upper(COALESCE(train_type_1,'NA')) IN ('ST NUCLEAR','ST PLANT') or &#13;&#10;upper(coalesce(\&quot;PLT2\&quot;,\&quot;PT2\&quot;,'NA')) IN ('FOSSIL','INDUSTRIAL/SMALL STEAM','LARGE FOSSIL STEAM','NUCLEAR STEAM'));&#13;&#10;&#13;&#10;&#13;&#10;update pgsbacklog.bcklg_cmn_attr_ltl_bcklg set \&quot;PLT3\&quot; = 'Non-Fusion' where coalesce(\&quot;PLT3\&quot;,'NA')&lt;&gt;'Fusion';&#13;&#10;&#13;&#10;&#13;&#10;update pgsbacklog.bcklg_cmn_attr_big_bcklg set \&quot;PLF Tier 3\&quot; = 'Fusion'&#13;&#10;from pgsbacklog.backlog_gib_src_extnd where turbine_serial_number = tsn &#13;&#10;and upper(COALESCE(train_type_1,'NA')) NOT IN ('CCSS','GTCC','GTSC') and &#13;&#10;(upper(COALESCE(train_type_1,'NA')) IN ('ST NUCLEAR','ST PLANT') or &#13;&#10;upper(coalesce(\&quot;PLF Tier 2\&quot;,'NA')) IN ('FOSSIL','INDUSTRIAL/SMALL STEAM','LARGE FOSSIL STEAM','NUCLEAR STEAM'));&#13;&#10;&#13;&#10;update pgsbacklog.bcklg_cmn_attr_big_bcklg set \&quot;PLF Tier 3\&quot; = 'Non-Fusion' where coalesce(\&quot;PLF Tier 3\&quot;,'NA')&lt;&gt;'Fusion';&quot;"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="PROPAGATE_RECORD_SET" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="RECORD_SET_COLUMN" show="false" value="unique_id"/>
+    <elementParameter field="CHECK" name="USE_PREPAREDSTATEMENT" value="false"/>
+    <elementParameter field="TABLE" name="SET_PREPAREDSTATEMENT_PARAMETERS" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" show="false" value="10000"/>
+    <elementParameter field="TEXT" name="LABEL" value="LOAD CMN ATTR BACKUP"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="bcklg_cmn_attr_rpt" name="tGreenplumRow_1">
+      <column comment="" key="false" length="10" name="unique_id" nullable="true" pattern="" precision="0" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="data_source" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="pgs_region" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="pgs_sub_region" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="country" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="ship_to_state" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="250" name="segment_tier_1" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="250" name="segment_tier_2" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="250" name="segment_tier" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="project_number" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="300" name="ship_to_customer_name" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="4000" name="description" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="13" name="order_book_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="500" name="task_number" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="4000" name="turbine_serial_number" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1000" name="turbibe_tech" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="500" name="plf" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="me" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="250" name="operations_contact" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="250" name="pm" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="300" name="bill_to_customer_name" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="200" name="transaction_type" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="13" name="promise_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2000" name="po_number" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="3" name="qtr_convertible" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="200" name="line_status" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="order_amt" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="sales_amt" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="backlog_amt" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="mor" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="cm" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="cost" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="ind" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="event_id" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="13" name="event_start_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="13" name="date_received" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="500" name="event_type" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="500" name="scope" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="unit_cost" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="unit_sales" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="quantity" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="500" name="part_number" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="vertical" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+    <metadata connector="REJECT" label="bcklg_cmn_attr_rpt" name="REJECT">
+      <column comment="" key="false" length="10" name="unique_id" nullable="true" pattern="" precision="0" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="data_source" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="pgs_region" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="pgs_sub_region" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="country" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="ship_to_state" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="250" name="segment_tier_1" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="250" name="segment_tier_2" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="250" name="segment_tier" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="project_number" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="300" name="ship_to_customer_name" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="4000" name="description" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="13" name="order_book_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="500" name="task_number" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="4000" name="turbine_serial_number" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1000" name="turbibe_tech" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="500" name="plf" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="me" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="250" name="operations_contact" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="250" name="pm" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="300" name="bill_to_customer_name" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="200" name="transaction_type" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="13" name="promise_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2000" name="po_number" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="3" name="qtr_convertible" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="200" name="line_status" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="order_amt" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="sales_amt" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="backlog_amt" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="mor" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="cm" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="cost" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="ind" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="event_id" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="13" name="event_start_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="13" name="date_received" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="500" name="event_type" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="500" name="scope" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="unit_cost" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="unit_sales" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="quantity" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="500" name="part_number" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="vertical" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tGreenplumRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="0" posY="128">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tGreenplumRow_2"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tGreenplumConnection_1"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;5432&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="PostgreSQL"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="0RMsyjmybrE="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;bcklg_cmn_attr_rpt&quot;"/>
+    <elementParameter field="CHECK" name="USE_SSL" show="false" value="true"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;TRUNCATE TABLE PGSBACKLOG.BCKLG_CMN_ATTR_RPT;&#13;&#10; TRUNCATE TABLE PGSBACKLOG.BCKLG_CMN_ATTR_STG;&#13;&#10; TRUNCATE TABLE PGSBACKLOG.BCKLG_CMN_ATTR_REPORTING;&#13;&#10; TRUNCATE TABLE PGSBACKLOG.BCKLG_CMN_ATTR_BIG_BCKLG;&#13;&#10; TRUNCATE TABLE PGSBACKLOG.BCKLG_CMN_ATTR_LTL_BCKLG;&#13;&#10;&quot;"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="PROPAGATE_RECORD_SET" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="RECORD_SET_COLUMN" show="false" value="unique_id"/>
+    <elementParameter field="CHECK" name="USE_PREPAREDSTATEMENT" value="false"/>
+    <elementParameter field="TABLE" name="SET_PREPAREDSTATEMENT_PARAMETERS" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" show="false" value="10000"/>
+    <elementParameter field="TEXT" name="LABEL" value="TRUNCATE TABLES"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="bcklg_cmn_attr_rpt" name="tGreenplumRow_2">
+      <column comment="" key="false" length="10" name="unique_id" nullable="true" pattern="" precision="0" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="data_source" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="pgs_region" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="pgs_sub_region" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="country" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="ship_to_state" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="250" name="segment_tier_1" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="250" name="segment_tier_2" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="250" name="segment_tier" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="project_number" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="300" name="ship_to_customer_name" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="4000" name="description" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="13" name="order_book_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="500" name="task_number" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="4000" name="turbine_serial_number" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1000" name="turbibe_tech" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="500" name="plf" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="me" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="250" name="operations_contact" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="250" name="pm" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="300" name="bill_to_customer_name" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="200" name="transaction_type" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="13" name="promise_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2000" name="po_number" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="3" name="qtr_convertible" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="200" name="line_status" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="order_amt" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="sales_amt" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="backlog_amt" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="mor" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="cm" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="cost" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="ind" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="event_id" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="13" name="event_start_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="13" name="date_received" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="500" name="event_type" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="500" name="scope" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="unit_cost" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="unit_sales" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="quantity" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="500" name="part_number" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="vertical" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+    <metadata connector="REJECT" label="bcklg_cmn_attr_rpt" name="REJECT">
+      <column comment="" key="false" length="10" name="unique_id" nullable="true" pattern="" precision="0" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="data_source" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="pgs_region" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="pgs_sub_region" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="country" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="ship_to_state" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="250" name="segment_tier_1" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="250" name="segment_tier_2" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="250" name="segment_tier" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="project_number" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="300" name="ship_to_customer_name" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="4000" name="description" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="13" name="order_book_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="500" name="task_number" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="4000" name="turbine_serial_number" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1000" name="turbibe_tech" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="500" name="plf" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="me" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="250" name="operations_contact" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="250" name="pm" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="300" name="bill_to_customer_name" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="200" name="transaction_type" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="13" name="promise_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2000" name="po_number" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="3" name="qtr_convertible" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="200" name="line_status" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="order_amt" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="sales_amt" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="backlog_amt" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="mor" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="cm" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="cost" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="ind" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="event_id" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="13" name="event_start_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="13" name="date_received" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="500" name="event_type" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="500" name="scope" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="unit_cost" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="unit_sales" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="quantity" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="500" name="part_number" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="vertical" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tGreenplumClose" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="192" posY="256">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tGreenplumClose_1"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tGreenplumConnection_1"/>
+    <elementParameter field="TEXT" name="LABEL" value="Connection close"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tGreenplumRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="192" posY="128">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tGreenplumRow_3"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tGreenplumConnection_1"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;5432&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="PostgreSQL"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="0RMsyjmybrE="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="USE_SSL" show="false" value="true"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;INSERT INTO PGSBACKLOG.BCKLG_CMN_ATTR_STG&#13;&#10;SELECT&#13;&#10;  MAX(data_source) DATA_SOURCE,&#13;&#10;  MAX(pgs_region) PGS_REGION,&#13;&#10;  MAX(pgs_sub_region) PGS_SUB_REGION,&#13;&#10;  MAX(country) COUNTRY,&#13;&#10;  MAX(ship_to_state) SHIP_TO_STATE,&#13;&#10;  MAX(segment_tier_1) SEGMENT_TIER_1,&#13;&#10;  MAX(segment_tier_2) SEGMENT_TIER_2,&#13;&#10;  MAX(segment_tier) SEGMENT_TIER,&#13;&#10;  project_number,&#13;&#10;  MAX(COALESCE(\&quot;Hyperion Customer Name\&quot;,ship_to_customer_name)) SHIP_TO_CUSTOMER_NAME,&#13;&#10;  MAX(description) DESCRIPTION,&#13;&#10;  MAX(order_book_date) ORDER_BOOK_DATE,&#13;&#10;  MAX(TASK_NUMBER) TASK_NUMBER,&#13;&#10;  MAX(turbine_serial_number) TURBINE_SERIAL_NUMBER,&#13;&#10;  MAX(turbibe_tech) TURBIBE_TECH,&#13;&#10;  MAX(plf) PLF,&#13;&#10;  MAX(coalesce(PLF.FRM,PLFT.FRM)) FRAME,&#13;&#10;  MAX(coalesce(PLF.\&quot;PLF Tier 3\&quot;,PLFT.\&quot;PLF Tier 3\&quot;)) \&quot;PLF Tier 3\&quot;,&#13;&#10;MAX(upper(case when vertical='DP' then &#13;&#10;--DECODE(SUBSTR(PLF,1,3),'LM6','LM6','LMS','LMS','LM2','LM25','LML','LM25','LM1','LMS','AERO-OTHER')&#13;&#10;(case when SUBSTR(PLF,1,3) = 'LM6' then 'LM6'&#13;&#10;&#9;  when SUBSTR(PLF,1,3) = 'LMS' then 'LMS'&#13;&#10;&#9;  when SUBSTR(PLF,1,3) = 'LM2' then 'LM25'&#13;&#10;&#9;  when SUBSTR(PLF,1,3) = 'LML' then 'LM25'&#13;&#10;&#9;  when SUBSTR(PLF,1,3) = 'LM1' then 'LMS'&#13;&#10;&#9;  else 'AERO-OTHER'&#13;&#10; end)&#13;&#10; else&#13;&#10;coalesce(PLF.\&quot;PLF Tier 2\&quot;,PLFT.\&quot;PLF Tier 2\&quot;) end)) \&quot;PLF Tier 2\&quot;, &#13;&#10;MAX(upper(case when vertical='DP' then 'AERODERIVATIVES' else coalesce(PLF.\&quot;PLF Tier 1\&quot;,PLFT.\&quot;PLF Tier 1\&quot;) &#13;&#10;end)) \&quot;PLF Tier 1\&quot;,&#13;&#10;  MAX(me) ME,&#13;&#10;  MAX(operations_contact) OPERATIONS_CONTACT,&#13;&#10;  MAX(pm) PM,&#13;&#10;  MAX(CASE WHEN DATA_SOURCE LIKE 'Parts%' AND PM IS NOT NULL AND PM LIKE '%|%' THEN SUBSTR(PM,INSTR(PM,'|',1,1)+1,LENGTH(PM)) ELSE PM END) ADN,&#13;&#10;  MAX(COALESCE(\&quot;Hyperion Customer Name\&quot;,bill_to_customer_name)) BILL_TO_CUSTOMER_NAME,&#13;&#10;  MAX(transaction_type) TRANSACTION_TYPE,&#13;&#10;  PROMISE_DATE,&#13;&#10;  MAX(po_number) PO_NUMBER,&#13;&#10;  MAX(qtr_convertible) QTR_CONVERTIBLE,&#13;&#10;  CASE WHEN DATA_SOURCE LIKE 'Parts%' AND PM IS NOT NULL AND PM LIKE '%|%' THEN COALESCE(SUBSTR(PM,1,INSTR(PM,'|',1,1)-1),TASK_NUMBER) ELSE TASK_NUMBER END &#13;&#10;LINE_ID, &#13;&#10;  MAX(line_status) LINE_STATUS,&#13;&#10;  MAX(CASE WHEN DATA_SOURCE LIKE 'Repairs%' AND VERTICAL='PGS' THEN TRANSACTION_TYPE ELSE NULL END) RPRS_SHOP,&#13;&#10;  MAX(order_amt) ORDER_AMT,&#13;&#10;  SUM(sales_amt) SALES_AMT,&#13;&#10;  SUM(backlog_amt) BACKLOG_AMT,&#13;&#10;  MAX(mor) MOR,&#13;&#10;  MAX(cm) CM,&#13;&#10;  SUM(cost) \&quot;COST\&quot;,&#13;&#10;  IND,&#13;&#10;  MAX(event_id) EVENT_ID,&#13;&#10;  MAX(event_start_date) EVENT_START_DATE,&#13;&#10;  MAX(date_received) DATE_RECEIVED,&#13;&#10;  MAX(event_type) EVENT_TYPE,&#13;&#10;  MAX(scope) SCOPE,&#13;&#10;  MAX(unit_cost) UNIT_COST,&#13;&#10;  MAX(unit_sales) UNIT_SALES,&#13;&#10;  MAX(quantity) QUANTITY,&#13;&#10;  COALESCE(part_number,'NA') PART_NUMBER,&#13;&#10;  MAX(vertical) VERTICAL&#13;&#10;  FROM PGSBACKLOG.BCKLG_CMN_ATTR BASE&#13;&#10;  LEFT JOIN &#13;&#10;(select me HME,max(customer_name) \&quot;Hyperion Customer Name\&quot; from PGSBACKLOG.MYA_ME_DTL where source='Pacing' group by me) CUST&#13;&#10;ON BASE.qtr_convertible=CUST.HME &#13;&#10;LEFT JOIN (select UPPER(COL_4) FRM,MAX(COL_5) \&quot;PLF Tier 3\&quot;,&#13;&#10;MAX(COL_6) \&quot;PLF Tier 2\&quot;,MAX(COL_7) \&quot;PLF Tier 1\&quot; &#13;&#10;from pgsbacklog.backlog_bkp2 where upper(col_7) not like '%OTHER%' GROUP BY UPPER(COL_4)) PLF &#13;&#10;ON BASE.PLF=PLF.FRM&#13;&#10;LEFT JOIN (select UPPER(COL_4) FRM,MAX(COL_5) \&quot;PLF Tier 3\&quot;,&#13;&#10;MAX(COL_6) \&quot;PLF Tier 2\&quot;,MAX(COL_7) \&quot;PLF Tier 1\&quot; &#13;&#10;from pgsbacklog.backlog_bkp2 GROUP BY UPPER(COL_4)) PLFT &#13;&#10;ON PLFT.FRM=(CASE&#13;&#10;              WHEN PLF LIKE '%6B%'&#13;&#10;              OR PLF LIKE '%61B%' OR PLF like '%11NM%'&#13;&#10;              THEN '61B'&#13;&#10;              WHEN PLF LIKE '%9E%' or PLF LIKE '%9B%'&#13;&#10;              OR PLF LIKE '%91E%'&#13;&#10;              THEN '91E'&#13;&#10;              WHEN PLF LIKE '%7E%'&#13;&#10;              OR PLF LIKE '%71E%'&#13;&#10;              THEN '71E'&#13;&#10;              WHEN PLF LIKE '%7B%'&#13;&#10;              OR PLF LIKE '%71B%'&#13;&#10;              THEN '71B'&#13;&#10;              WHEN PLF LIKE '%7FH%'&#13;&#10;              THEN '7FH2'&#13;&#10;              WHEN PLF LIKE '%9H%'&#13;&#10;              THEN '9HA.01'&#13;&#10;              WHEN PLF LIKE '%7H%'&#13;&#10;              THEN '7HA.01'     &#13;&#10;              WHEN PLF LIKE '%6A%'&#13;&#10;              THEN '6A2'&#13;&#10;              WHEN PLF LIKE '%6F%'&#13;&#10;              THEN '6FA'&#13;&#10;              WHEN PLF LIKE '%9F%'&#13;&#10;              OR PLF LIKE '%91F%'&#13;&#10;              THEN '9FA.01'&#13;&#10;              WHEN PLF LIKE '%7F%'&#13;&#10;              OR PLF LIKE '%71F%'&#13;&#10;              THEN '7FA'&#13;&#10;              WHEN PLF LIKE '%32%' or upper(PLF) like '%FR 3%'&#13;&#10;              THEN '32F'&#13;&#10;              WHEN PLF LIKE '%52%' or upper(PLF) like '%FR 5%'&#13;&#10;              OR PLF LIKE '%51%'&#13;&#10;              THEN '51E'&#13;&#10;              WHEN UPPER(PLF) LIKE '%HYDRO%'&#13;&#10;              THEN 'HYDROGEN-CO'&#13;&#10;              WHEN UPPER(PLF) LIKE '%WATER%'&#13;&#10;              THEN 'WATER-COOLE'&#13;&#10;              WHEN UPPER(PLF) LIKE '%AIR%'&#13;&#10;              THEN 'AIR-COOLED'&#13;&#10;              WHEN UPPER(PLF) LIKE '%OIL%'&#13;&#10;&#9;&#9;&#9;  THEN 'OIL-COOLED'&#13;&#10;              WHEN UPPER(PLF) LIKE '%COOL%' OR description like '%HYDRO%'&#13;&#10;              OR UPPER(PLF) LIKE '%GEN%' &#13;&#10;              OR UPPER(Turbibe_Tech) LIKE '%GEN%'&#13;&#10;              THEN 'W28' &#13;&#10;              WHEN UPPER(PLF) LIKE '%STEAM%' OR description like '%STEAM%' and segment_tier_1 like '%MYA%'&#13;&#10;              OR UPPER(Turbibe_Tech) LIKE '%STEAM%'&#13;&#10;              THEN 'C7'&#13;&#10;              WHEN UPPER(PLF) LIKE '%STEAM%' OR description like '%STEAM%' and segment_tier_1 not like '%MYA%'&#13;&#10;              OR UPPER(Turbibe_Tech) LIKE '%STEAM%'&#13;&#10;              THEN 'A8'&#9;&#9;&#9;  &#13;&#10;              WHEN UPPER(PLF) LIKE '%BOIL%' OR description like '%BOIL%'&#13;&#10;              OR UPPER(Turbibe_Tech) LIKE '%BOI%'&#13;&#10;              THEN 'CFP'&#13;&#10;              WHEN UPPER(PLF) LIKE '%LM%' OR description like '%AERO%'&#13;&#10;              OR UPPER(Turbibe_Tech) LIKE '%AERO%'&#13;&#10;              then 'LM2500'&#13;&#10;              ELSE PLF&#13;&#10;            END)&#13;&#10;  GROUP BY PROJECT_NUMBER,CASE WHEN DATA_SOURCE LIKE 'Parts%' AND PM IS NOT NULL AND PM LIKE '%|%' THEN COALESCE(SUBSTR(PM,1,INSTR(PM,'|',1,1)-&#13;&#10;&#13;&#10;1),TASK_NUMBER) &#13;&#10;  ELSE TASK_NUMBER END,COALESCE(part_number,'NA'),promise_date,IND&quot;"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="PROPAGATE_RECORD_SET" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="RECORD_SET_COLUMN" show="false" value=""/>
+    <elementParameter field="CHECK" name="USE_PREPAREDSTATEMENT" value="false"/>
+    <elementParameter field="TABLE" name="SET_PREPAREDSTATEMENT_PARAMETERS" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" show="false" value="10000"/>
+    <elementParameter field="TEXT" name="LABEL" value="BCKLG CMN ATTR STG"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tGreenplumRow_3"/>
+    <metadata connector="REJECT" name="REJECT">
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tGreenplumRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="416" posY="128">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tGreenplumRow_4"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tGreenplumConnection_1"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;5432&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="PostgreSQL"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="0RMsyjmybrE="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="USE_SSL" show="false" value="true"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;INSERT INTO PGSBACKLOG.BCKLG_CMN_ATTR_REPORTING&#13;&#10;SELECT &#13;&#10;DATA_SOURCE,&#13;&#10;UPPER(PGS_REGION),&#13;&#10;UPPER(PGS_SUB_REGION),&#13;&#10;CASE WHEN UPPER(PGS_REGION)='NORTH AMERICA' AND UPPER(COUNTRY) IN ('US','USA','US AVERAGE',&#10; 'US AVERAGE ') THEN 'UNITED STATES' ELSE UPPER(COUNTRY) END,&#13;&#10;SHIP_TO_STATE,&#13;&#10;SEGMENT_TIER_1,&#13;&#10;SEGMENT_TIER_2,&#13;&#10;SEGMENT_TIER,&#13;&#10;PROJECT_NUMBER,&#13;&#10;SHIP_TO_CUSTOMER_NAME,&#13;&#10;DESCRIPTION,&#13;&#10;ORDER_BOOK_DATE,&#13;&#10;TASK_NUMBER,&#13;&#10;TURBINE_SERIAL_NUMBER,&#13;&#10;TURBIBE_TECH,&#13;&#10;PLF,&#13;&#10;FRAME,&#13;&#10;\&quot;PLF Tier 3\&quot;,&#13;&#10;\&quot;PLF Tier 2\&quot;, &#13;&#10;\&quot;PLF Tier 1\&quot;,&#13;&#10;ME,&#13;&#10;OPERATIONS_CONTACT,&#13;&#10;CASE WHEN VERTICAL IN ('TS - PLF','DP') THEN NULL ELSE ADN END ADN,&#13;&#10;BILL_TO_CUSTOMER_NAME,&#13;&#10;A.PROMISE_DATE,&#13;&#10;PO_NUMBER,&#13;&#10;QTR_CONVERTIBLE,&#13;&#10;A.LINE_ID, &#13;&#10;LINE_STATUS,&#13;&#10;case when position('^^' in event_type)&gt;0 then substr(event_type,1,&#10; position('^^' in event_type)-1) else null end MLI,&#13;&#10;DATE_RECEIVED SHIP_DATE,&#13;&#10;case when position('~~' in event_type)&gt;0 then substr(event_type,&#10; position('~~' in event_type)+2) else null end UOM,&#13;&#10;RPRS_SHOP,&#13;&#10;ORDER_AMT,&#13;&#10;SALES_AMT,&#13;&#10;BACKLOG_AMT,&#13;&#10;MOR,&#13;&#10;CM,&#13;&#10;COST,&#13;&#10;IND,&#13;&#10;EVENT_ID,&#13;&#10;EVENT_START_DATE,&#13;&#10;DATE_RECEIVED,&#13;&#10;case when position('^^' in event_type)&gt;0 and position('~~' in event_type)&gt;0 then substr(EVENT_TYPE,&#10; position('^^' in event_type)+2,&#13;&#10;(position('~~' in event_type)-position('^^' in event_type)-2)) else event_type end event_type,&#13;&#10;SCOPE,&#13;&#10;A.UNIT_COST,&#13;&#10;UNIT_SALES,&#13;&#10;QUANTITY,&#13;&#10;PART_NUMBER,&#13;&#10;CASE WHEN VERTICAL='TS - PLF' THEN 'TS' ELSE VERTICAL END VERTICAL,&#13;&#10;CASE WHEN GIB.TSN IS NOT NULL THEN 'MATCHED'&#13;&#10;ELSE 'NOT MATCHED' END GIB_IND&#13;&#10;FROM&#13;&#10;PGSBACKLOG.BCKLG_CMN_ATTR_STG A&#13;&#10;LEFT JOIN PGSBACKLOG.BACKLOG_GIB_SRC GIB&#13;&#10;ON (CASE WHEN INSTR(REPLACE(TURBINE_SERIAL_NUMBER,'',','),',')&gt;0 THEN&#13;&#10;    SUBSTR(TURBINE_SERIAL_NUMBER,1,INSTR(REPLACE(TURBINE_SERIAL_NUMBER,'',','),',')-1) ELSE&#13;&#10;TRIM(TURBINE_SERIAL_NUMBER) END =GIB.TSN)&#13;&#10;WHERE VERTICAL IN ('TS - PLF','DP','PGS')&quot;"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="PROPAGATE_RECORD_SET" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="RECORD_SET_COLUMN" show="false" value=""/>
+    <elementParameter field="CHECK" name="USE_PREPAREDSTATEMENT" value="false"/>
+    <elementParameter field="TABLE" name="SET_PREPAREDSTATEMENT_PARAMETERS" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" show="false" value="10000"/>
+    <elementParameter field="TEXT" name="LABEL" value="BCKLG CMN ATTR REPORTING"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tGreenplumRow_4"/>
+    <metadata connector="REJECT" name="REJECT">
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tGreenplumRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="672" posY="128">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tGreenplumRow_5"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tGreenplumConnection_1"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;5432&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="PostgreSQL"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="0RMsyjmybrE="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="USE_SSL" show="false" value="true"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;truncate table PGSBACKLOG.BCKLG_CMN_ATTR_BIG_BCKLG;&#13;&#10;&#13;&#10;INSERT INTO PGSBACKLOG.BCKLG_CMN_ATTR_BIG_BCKLG&#13;&#10;select * from &#13;&#10;(select BASE.*,coalesce(PLF.FRM,PLFT.FRM) FRM,coalesce(PLF.\&quot;PLF Tier 3\&quot;,&#10; PLFT.\&quot;PLF Tier 3\&quot;) \&quot;PLF Tier 3\&quot;,&#13;&#10;upper(case when vertical='DP' then&#13;&#10;--DECODE(SUBSTR(PLF,1,3),'LM6','LM6','LMS','LMS','LM2','LM25','LML','LM25','AERO-OTHER') &#13;&#10;(case when SUBSTR(PLF,1,3) = 'LM6' then 'LM6'&#13;&#10;&#9;       when SUBSTR(PLF,1,3) = 'LMS' then 'LMS'&#13;&#10;&#9;       when SUBSTR(PLF,1,3) = 'LM2' then 'LM25'&#13;&#10;&#9;       when SUBSTR(PLF,1,3) = 'LML' then 'LM25'&#13;&#10;&#9;      else 'AERO-OTHER'&#13;&#10; end)&#13;&#10;else&#13;&#10;coalesce(PLF.\&quot;PLF Tier 2\&quot;,PLFT.\&quot;PLF Tier 2\&quot;) end) \&quot;PLF Tier 2\&quot;,&#13;&#10;upper(case when vertical='DP' then 'AERODERIVATIVES' else coalesce(PLF.\&quot;PLF Tier 1\&quot;,&#10; PLFT.\&quot;PLF Tier 1\&quot;)&#13;&#10;end) \&quot;PLF Tier 1\&quot;, CUST.*,&#13;&#10;case when BASE.Promise_Date is null or (to_char(BASE.Promise_Date,'YYYYQ')&lt;to_char(current_date,&#10; 'YYYYQ')) then 'Prior' else 'Post' end PROJECTION from&#13;&#10;(select * from pgsbacklog.bcklg_cmn_attr where ind like '%B%' and Data_Source not like '%Accord%'&#13;&#10;and Data_Source not like '%FS%' and (backlog_amt &gt;= 0 OR Data_Source='CS' &#13;&#10;or Data_Source ilike '%real%track%') and vertical='PGS'&#13;&#10;union&#13;&#10;SELECT Unique_ID,Data_Source,PGS_Region,PGS_Sub_Region,Country,Ship_To_State,Segment_Tier_1,&#10; Segment_Tier_2,&#13;&#10;Segment_Tier,Project_Number,Ship_To_Customer_Name,Description,Order_Book_Date,Task_Number,&#10; Turbine_Serial_Number,&#13;&#10;Turbibe_Tech,PLF,ME,Operations_Contact,PM,Bill_To_Customer_Name,Transaction_Type,&#13;&#10;case when Promise_Date is null or (to_char(Promise_Date,'YYYYQ') &lt; to_char(Current_Date,'YYYYQ')) &#13;&#10;then Current_Date + 1460 else Promise_Date end Promise_Date,PO_Number,Qtr_Convertible,&#13;&#10;Line_Status,Order_Amt,Sales_Amt,coalesce(backlog_amt,0) bcklg,MOR,CM,&#13;&#10;coalesce(backlog_amt,0) * 0.65 cst,'B',EVENT_ID,EVENT_START_DATE,DATE_RECEIVED,EVENT_TYPE,&#13;&#10;SCOPE,UNIT_COST,UNIT_SALES,QUANTITY,PART_NUMBER,vertical&#13;&#10;FROM pgsbacklog.bcklg_cmn_attr &#13;&#10;WHERE Data_Source = 'FS' and Segment_Tier_2 in ('Core Maintenance','TDI')&#13;&#10;AND ind NOT LIKE '%C%' and vertical='PGS'&#13;&#10;union&#13;&#10;select * from pgsbacklog.bcklg_cmn_attr where ind like '%B%' and vertical ='DP' and Data_Source &#10; not like&#13;&#10;'%CQS%' and Data_Source not like '%MMP%' and Data_Source not like '%CSA%'&#13;&#10;union&#13;&#10;select * from pgsbacklog.bcklg_cmn_attr where ind like '%B%' and vertical ='TS' and Data_Source &#10; not like&#13;&#10;'%CQS%'&#13;&#10;) BASE&#13;&#10;LEFT JOIN&#13;&#10;(select me HME,&#10; max(customer_name) \&quot;Hyperion Customer Name\&quot; from PGSBACKLOG.MYA_ME_DTL where source='Pacing' &#10; group by me) CUST&#13;&#10;ON BASE.qtr_convertible=CUST.HME&#13;&#10;LEFT JOIN (select UPPER(COL_4) FRM,MAX(COL_5) \&quot;PLF Tier 3\&quot;,&#13;&#10;MAX(COL_6) \&quot;PLF Tier 2\&quot;,MAX(COL_7) \&quot;PLF Tier 1\&quot;&#13;&#10;from pgsbacklog.backlog_bkp2 where upper(col_7) not like '%OTHER%' GROUP BY UPPER(COL_4)&#13;&#10;) PLF&#13;&#10;ON BASE.PLF=PLF.FRM&#13;&#10;LEFT JOIN (select UPPER(COL_4) FRM,MAX(COL_5) \&quot;PLF Tier 3\&quot;,&#13;&#10;MAX(COL_6) \&quot;PLF Tier 2\&quot;,MAX(COL_7) \&quot;PLF Tier 1\&quot;&#13;&#10;from pgsbacklog.backlog_bkp2 GROUP BY UPPER(COL_4)) PLFT&#13;&#10;ON PLFT.FRM=(CASE&#13;&#10;              WHEN PLF LIKE '%6B%' OR description LIKE '%6B%'&#13;&#10;              OR PLF LIKE '%61B%' OR PLF like '%11NM%'&#13;&#10;              THEN '61B'&#13;&#10;              WHEN PLF LIKE '%9E%' or PLF LIKE '%9B%'&#13;&#10;              OR PLF LIKE '%91E%' OR description LIKE '%9E%'&#13;&#10;              THEN '91E'&#13;&#10;              WHEN PLF LIKE '%7E%'&#13;&#10;              OR PLF LIKE '%71E%' OR description LIKE '%7E%'&#13;&#10;              THEN '71E'&#13;&#10;              WHEN PLF LIKE '%7B%' OR description LIKE '%7B%'&#13;&#10;              OR PLF LIKE '%71B%'&#13;&#10;              THEN '71B'&#13;&#10;              WHEN PLF LIKE '%7FH%' OR description LIKE '%7FH%'&#13;&#10;              THEN '7FH2'&#13;&#10;              WHEN PLF LIKE '%9H%' OR description LIKE '%9H%'&#13;&#10;              THEN '9HA.01'&#13;&#10;              WHEN PLF LIKE '%7H%' OR description LIKE '%7H%'&#13;&#10;              THEN '7HA.01'    &#13;&#10;              WHEN PLF LIKE '%6A%' OR description LIKE '%6A%'&#13;&#10;              THEN '6A2'&#13;&#10;              WHEN PLF LIKE '%6F%' OR description LIKE '%6F%'&#13;&#10;              THEN '6FA'&#13;&#10;              WHEN PLF LIKE '%9F%' OR description LIKE '%9F%'&#13;&#10;              OR PLF LIKE '%91F%'&#13;&#10;              THEN '9FA.01'&#13;&#10;              WHEN PLF LIKE '%7F%' OR description LIKE '%7F%'&#13;&#10;              OR PLF LIKE '%71F%'&#13;&#10;              THEN '7FA'&#13;&#10;              WHEN PLF LIKE '%32%' or upper(PLF) like '%FR 3%' &#13;&#10;              THEN '32F'&#13;&#10;              WHEN PLF LIKE '%52%' or upper(PLF) like '%FR 5%'&#13;&#10;              OR PLF LIKE '%51%'&#13;&#10;              THEN '51E'&#13;&#10;              WHEN UPPER(PLF) LIKE '%HYDRO%' OR description LIKE '%HYDRO%'&#13;&#10;              THEN 'HYDROGEN-CO'&#13;&#10;              WHEN UPPER(PLF) LIKE '%WATER%' OR description LIKE '%WATER%'&#13;&#10;              THEN 'WATER-COOLE'&#13;&#10;              WHEN UPPER(PLF) LIKE '%AIR%' OR description LIKE '%AIR%'&#13;&#10;              THEN 'AIR-COOLED'&#13;&#10;              WHEN UPPER(PLF) LIKE '%OIL%' OR description LIKE '%OIL%'&#13;&#10;                    THEN 'OIL-COOLED'&#13;&#10;              WHEN UPPER(PLF) LIKE '%COOL%' OR description like '%HYDRO%'&#13;&#10;              OR UPPER(PLF) LIKE '%GEN%'&#13;&#10;              OR UPPER(Turbibe_Tech) LIKE '%GEN%'&#13;&#10;              THEN 'W28'&#13;&#10;              WHEN UPPER(PLF) LIKE '%STEAM%' OR description like '%STEAM%' and segment_tier_1 like &#10; '%MYA%'&#13;&#10;              OR UPPER(Turbibe_Tech) LIKE '%STEAM%'&#13;&#10;              THEN 'C7'&#13;&#10;              WHEN UPPER(PLF) LIKE '%STEAM%' OR description like '%STEAM%' and segment_tier_1 not &#10; like '%MYA%'&#13;&#10;              OR UPPER(Turbibe_Tech) LIKE '%STEAM%'&#13;&#10;              THEN 'A8'              &#13;&#10;              WHEN UPPER(PLF) LIKE '%BOIL%' OR description like '%BOIL%'&#13;&#10;              OR UPPER(Turbibe_Tech) LIKE '%BOI%'&#13;&#10;              THEN 'CFP'&#13;&#10;              WHEN UPPER(PLF) LIKE '%LM%' OR description like '%AERO%'&#13;&#10;              OR UPPER(Turbibe_Tech) LIKE '%AERO%'&#13;&#10;              then 'LM2500'&#13;&#10;              ELSE PLF&#13;&#10;         END)) base_data&#13;&#10;where data_source not ilike '%dr4%' and &#13;&#10;(data_source not ilike '%psp%' or data_source ilike '%realtrack%');&quot;"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="PROPAGATE_RECORD_SET" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="RECORD_SET_COLUMN" show="false" value=""/>
+    <elementParameter field="CHECK" name="USE_PREPAREDSTATEMENT" value="false"/>
+    <elementParameter field="TABLE" name="SET_PREPAREDSTATEMENT_PARAMETERS" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" show="false" value="10000"/>
+    <elementParameter field="TEXT" name="LABEL" value="BIG BACKLOG RPT"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tGreenplumRow_5"/>
+    <metadata connector="REJECT" name="REJECT">
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tGreenplumRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="672" posY="256">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tGreenplumRow_6"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tGreenplumConnection_1"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;5432&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="PostgreSQL"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="0RMsyjmybrE="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="USE_SSL" show="false" value="true"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;INSERT INTO PGSBACKLOG.BCKLG_CMN_ATTR_LTL_BCKLG&#13;&#10;SELECT * FROM pgsbacklog.BCKLG_CMN_ATTR &#13;&#10;left join &#13;&#10;(SELECT UPPER(COL_4) FRME,MAX(COL_5) \&quot;PLT3\&quot;,MAX(COL_6) \&quot;PLT2\&quot;,MAX(COL_7) \&quot;PLT1\&quot; &#13;&#10;FROM pgsbacklog.backlog_bkp2 where upper(col_7) not like '%OTHER%' GROUP BY UPPER(COL_4)) CC &#13;&#10;on upper(PLF)=upper(FRME)&#13;&#10;left join (select me mepcng,max(customer_name) customer_name from PGSBACKLOG.MYA_ME_DTL where source='Pacing' group by me) pcng&#13;&#10;on pcng.mepcng=qtr_convertible&#13;&#10;left join &#13;&#10;(SELECT UPPER(COL_4) FRM,MAX(COL_5) \&quot;PT3\&quot;,MAX(COL_6) \&quot;PT2\&quot;,MAX(COL_7) \&quot;PT1\&quot; &#13;&#10;FROM pgsbacklog.backlog_bkp2 GROUP BY UPPER(COL_4)) BB&#13;&#10;  ON upper(CASE&#13;&#10;              WHEN PLF LIKE '%6B%'&#13;&#10;              OR PLF LIKE '%61B%' OR PLF like '%11NM%'&#13;&#10;              THEN '61B'&#13;&#10;              WHEN PLF LIKE '%9E%' or PLF LIKE '%9B%'&#13;&#10;              OR PLF LIKE '%91E%'&#13;&#10;              THEN '91E'&#13;&#10;              WHEN PLF LIKE '%7E%'&#13;&#10;              OR PLF LIKE '%71E%'&#13;&#10;              THEN '71E'&#13;&#10;              WHEN PLF LIKE '%7B%'&#13;&#10;              OR PLF LIKE '%71B%'&#13;&#10;              THEN '71B'&#13;&#10;              WHEN PLF LIKE '%7FH%'&#13;&#10;              THEN '7FH2'&#13;&#10;              WHEN PLF LIKE '%9H%'&#13;&#10;              THEN '9HA.01'&#13;&#10;              WHEN PLF LIKE '%7H%'&#13;&#10;              THEN '7HA.01'     &#13;&#10;              WHEN PLF LIKE '%6A%'&#13;&#10;              THEN '6A2'&#13;&#10;              WHEN PLF LIKE '%6F%'&#13;&#10;              THEN '6FA'&#13;&#10;              WHEN PLF LIKE '%9F%'&#13;&#10;              OR PLF LIKE '%91F%'&#13;&#10;              THEN '9FA.01'&#13;&#10;              WHEN PLF LIKE '%7F%'&#13;&#10;              OR PLF LIKE '%71F%'&#13;&#10;              THEN '7FA'&#13;&#10;              WHEN PLF LIKE '%32%' or upper(PLF) like '%FR 3%'&#13;&#10;              THEN '32F'&#13;&#10;              WHEN PLF LIKE '%52%' or upper(PLF) like '%FR 5%'&#13;&#10;              OR PLF LIKE '%51%'&#13;&#10;              THEN '51E'&#13;&#10;              WHEN UPPER(PLF) LIKE '%HYDRO%'&#13;&#10;              THEN 'HYDROGEN-CO'&#13;&#10;              WHEN UPPER(PLF) LIKE '%WATER%'&#13;&#10;              THEN 'WATER-COOLE'&#13;&#10;              WHEN UPPER(PLF) LIKE '%AIR%'&#13;&#10;              THEN 'AIR-COOLED'&#13;&#10;              WHEN UPPER(PLF) LIKE '%OIL%'&#13;&#10;&#9;&#9;&#9;  THEN 'OIL-COOLED'&#13;&#10;              WHEN UPPER(PLF) LIKE '%COOL%' OR description like '%HYDRO%'&#13;&#10;              OR UPPER(PLF) LIKE '%GEN%' &#13;&#10;              OR UPPER(Turbibe_Tech) LIKE '%GEN%'&#13;&#10;              THEN 'W28' &#13;&#10;              WHEN UPPER(PLF) LIKE '%STEAM%' OR description like '%STEAM%' and segment_tier_1 like '%MYA%'&#13;&#10;              OR UPPER(Turbibe_Tech) LIKE '%STEAM%'&#13;&#10;              THEN 'C7'&#13;&#10;              WHEN UPPER(PLF) LIKE '%STEAM%' OR description like '%STEAM%' and segment_tier_1 not like '%MYA%'&#13;&#10;              OR UPPER(Turbibe_Tech) LIKE '%STEAM%'&#13;&#10;              THEN 'A8'&#9;&#9;&#9;  &#13;&#10;              WHEN UPPER(PLF) LIKE '%BOIL%' OR description like '%BOIL%'&#13;&#10;              OR UPPER(Turbibe_Tech) LIKE '%BOI%'&#13;&#10;              THEN 'CFP'&#13;&#10;              WHEN UPPER(PLF) LIKE '%LM%' OR description like '%AERO%'&#13;&#10;              OR UPPER(Turbibe_Tech) LIKE '%AERO%'&#13;&#10;              then 'LM2500'&#13;&#10;              ELSE PLF&#13;&#10;            END)=UPPER(BB.FRM)&#13;&#10;WHERE &#13;&#10;TO_CHAR(Promise_Date,'YYYYQ')&#13;&#10;&gt;= TO_CHAR(current_date,'YYYYQ') AND IND like '%L%' and Segment_Tier_2&#13;&#10;not in ('MMP','CSA')&quot;"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="PROPAGATE_RECORD_SET" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="RECORD_SET_COLUMN" show="false" value=""/>
+    <elementParameter field="CHECK" name="USE_PREPAREDSTATEMENT" value="false"/>
+    <elementParameter field="TABLE" name="SET_PREPAREDSTATEMENT_PARAMETERS" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" show="false" value="10000"/>
+    <elementParameter field="TEXT" name="LABEL" value="LITTLE BACKLOG RPT"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tGreenplumRow_6"/>
+    <metadata connector="REJECT" name="REJECT">
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tLogCatcher" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="960" posY="128">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogCatcher_1"/>
+    <elementParameter field="CHECK" name="CATCH_JAVA_EXCEPTION" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_TDIE" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_TWARN" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_TACTIONFAILURE" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tLogCatcher_1">
+      <column key="false" length="0" name="moment" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column key="false" length="20" name="pid" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column key="false" length="20" name="root_pid" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column key="false" length="20" name="father_pid" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column key="false" length="50" name="project" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column key="false" length="255" name="job" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column key="false" length="50" name="context" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="3" name="priority" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column key="false" length="255" name="type" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column key="false" length="255" name="origin" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column key="false" length="255" name="message" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="3" name="code" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tSendMail" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1120" posY="128">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tSendMail_1"/>
+    <elementParameter field="TEXT" name="TO" value="context.mail_to"/>
+    <elementParameter field="TEXT" name="FROM" value="context.mail_from"/>
+    <elementParameter field="CHECK" name="NEED_PERSONAL_NAME" value="false"/>
+    <elementParameter field="TEXT" name="PERSONAL_NAME" show="false" value="&quot;sender&quot;"/>
+    <elementParameter field="TEXT" name="CC" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="BCC" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SUBJECT" value="&quot;ICAM  :J_RFM_SOT_CMN_ATTR_BKP_LOAD_MOD &quot;+row5.context"/>
+    <elementParameter field="MEMO_MESSAGE" name="MESSAGE" value="&quot;Hi  &#13;&#10;Jb J_RFM_SOT_CMN_ATTR_BKP_LOAD_MOD load has failed&quot; +row5.job+&quot; Please check log for more information. Error Msg :&quot;+row5.message"/>
+    <elementParameter field="CHECK" name="CHECK_ATTACHMENT" value="true"/>
+    <elementParameter field="TABLE" name="ATTACHMENTS"/>
+    <elementParameter field="TABLE" name="HEADERS"/>
+    <elementParameter field="TEXT" name="SMTP_HOST" value="context.mail_host"/>
+    <elementParameter field="TEXT" name="SMTP_PORT" value="25"/>
+    <elementParameter field="CHECK" name="SSL" value="false"/>
+    <elementParameter field="CHECK" name="STARTTLS" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="IMPORTANCE" value="Normal"/>
+    <elementParameter field="CHECK" name="NEED_AUTH" value="false"/>
+    <elementParameter field="TEXT" name="AUTH_USERNAME" show="false" value="&quot;username&quot;"/>
+    <elementParameter field="PASSWORD" name="AUTH_PASSWORD" show="false" value="PoLvNyVG2XWndNDdLn696A=="/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="TEXT_SUBTYPE" value="plain"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="SET_LOCALHOST" value="false"/>
+    <elementParameter field="TEXT" name="LOCALHOST" show="false" value="&quot;localhost&quot;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tSendMail_1">
+      <column defaultValue="" key="false" length="0" name="moment" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="20" name="pid" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="20" name="root_pid" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="20" name="father_pid" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="50" name="project" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="job" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="50" name="context" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="3" name="priority" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="type" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="origin" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="message" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="3" name="code" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tLogCatcher" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="608" posY="-64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogCatcher_2"/>
+    <elementParameter field="CHECK" name="CATCH_JAVA_EXCEPTION" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_TDIE" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_TWARN" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_TACTIONFAILURE" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tLogCatcher_2">
+      <column defaultValue="" key="false" length="0" name="moment" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="20" name="pid" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="20" name="root_pid" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="20" name="father_pid" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="50" name="project" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="job" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="50" name="context" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="3" name="priority" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="type" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="origin" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="message" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="3" name="code" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tSetGlobalVar" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="736" posY="-64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tSetGlobalVar_1"/>
+    <elementParameter field="TABLE" name="VARIABLES">
+      <elementValue elementRef="KEY" value="&quot;error_message_desc&quot;"/>
+      <elementValue elementRef="VALUE" value="row4.job + &quot; - &quot; + row4.origin + &quot; - &quot; + row4.message"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tSetGlobalVar_1">
+      <column defaultValue="" key="false" length="0" name="moment" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="20" name="pid" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="20" name="root_pid" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="20" name="father_pid" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="50" name="project" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="job" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="50" name="context" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="3" name="priority" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="type" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="origin" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="message" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="3" name="code" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tGreenplumConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="896" posY="-64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tGreenplumConnection_4"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_Hh2X4Ph4EeiAgrX6wwvW1w"/>
+    <elementParameter field="TEXT" name="HOST" value="context.RFM_GPDB_SOT_BACKLOG_AWS_Server"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="GREENPLUM"/>
+    <elementParameter field="TEXT" name="PORT" value="context.RFM_GPDB_SOT_BACKLOG_AWS_Port"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.RFM_GPDB_SOT_BACKLOG_AWS_Database"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="context.RFM_GPDB_SOT_BACKLOG_AWS_Schema"/>
+    <elementParameter field="TEXT" name="USER" value="context.RFM_GPDB_SOT_BACKLOG_AWS_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kuetVPV/HFSFZ2C1BvSndzTrGdTks8c0L8743cGxd394MPzVRbZ1Z5LM"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="SHARED_CONNECTION_NAME" show="false" value=""/>
+    <elementParameter field="CHECK" name="USE_SSL" value="true"/>
+    <elementParameter field="CHECK" name="AUTO_COMMIT" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="ERROR_CONN"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tGreenplumRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1088" posY="-64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tGreenplumRow_9"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" show="false" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_Hh2X4Ph4EeiAgrX6wwvW1w"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tGreenplumConnection_4"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="context.RFM_GPDB_SOT_BACKLOG_AWS_Server"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="context.RFM_GPDB_SOT_BACKLOG_AWS_Port"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="context.RFM_GPDB_SOT_BACKLOG_AWS_Database"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="context.RFM_GPDB_SOT_BACKLOG_AWS_Schema"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="GREENPLUM"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="context.RFM_GPDB_SOT_BACKLOG_AWS_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="8pW6Nmy2kuetVPV/HFSFZ2C1BvSndzTrGdTks8c0L8743cGxd394MPzVRbZ1Z5LM"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="USE_SSL" show="false" value="true"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT * FROM sbdt.edl_log ( &#13;&#10;&quot; + context.LOG_RUN_ID + &quot;::INT8, -- run_id&#13;&#10;'&quot; + context.LOG_PLANT_NAME + &quot;'::varchar, -- plant&#13;&#10;'&quot; + context.LOG_SYSTEM_NAME + &quot;'::varchar, -- system_name&#13;&#10;'&quot; + context.LOG_PLANT_NAME + &quot;'::varchar, -- job_name&#13;&#10;'&quot; + context.LOG_TABLE_NAME + &quot;'::varchar, -- table_name&#13;&#10;'Job Error'::varchar, -- status&#13;&#10;'Prod2analytics'::varchar, -- data_path&#13;&#10;'Talend'::varchar, -- technology&#13;&#10;0::INT8, -- no_of_inserts&#13;&#10;0::INT8, -- no_of_updates&#13;&#10;0::INT8, -- no_of_errors&#13;&#10;'&quot; + (String)globalMap.get(&quot;error_message_desc&quot;) + &quot;'::varchar, -- message&#13;&#10;0::INT8, -- source_row_count&#13;&#10;0::INT8, -- target_row_count&#13;&#10;NULL::varchar -- error_category&#13;&#10;)&quot;"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="PROPAGATE_RECORD_SET" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="RECORD_SET_COLUMN" show="false" value=""/>
+    <elementParameter field="CHECK" name="USE_PREPAREDSTATEMENT" value="false"/>
+    <elementParameter field="TABLE" name="SET_PREPAREDSTATEMENT_PARAMETERS" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" show="false" value="10000"/>
+    <elementParameter field="TEXT" name="LABEL" value="ERROR_EXEC"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tGreenplumRow_9"/>
+    <metadata connector="REJECT" name="REJECT">
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tGreenplumClose" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1248" posY="-64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tGreenplumClose_4"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tGreenplumConnection_4"/>
+    <elementParameter field="TEXT" name="LABEL" value="ERROR_CLOSE"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tPrejob" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="-320" posY="-192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tPrejob_1"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="-160" posY="-192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_1"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="context.LOG_RUN_ID=0;&#10;context.LOG_PLANT_NAME=&quot;J_RFM_SOT_MYA_DETAIL_DATA_TRANSFER&quot;;&#10;context.LOG_PLANT_NAME=&quot;POWER&quot;;&#10;context.LOG_SYSTEM_NAME=&quot;FINANCE&quot;;&#10;context.LOG_TABLE_NAME=&quot;mya_me_dtl&quot;;&#10;context.LOG_MESSAGE=&quot;NULL&quot;;&#10;context.LOG_NO_OF_INSERTS=0;&#10;context.LOG_NO_OF_UPDATES=0;&#10;context.LOG_NO_OF_ERRORS=0;&#10;context.LOG_SOURCE_ROW_COUNT=0;&#10;context.LOG_TARGET_ROW_COUNT=0;"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="Set GloVars START"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_1"/>
+  </node>
+  <node componentName="tGreenplumClose" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="-288" posY="-32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tGreenplumClose_2"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tGreenplumConnection_2"/>
+    <elementParameter field="TEXT" name="LABEL" value="START_LOG_CLOSE"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tGreenplumRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="-64" posY="-32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tGreenplumRow_7"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" show="false" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_Hh2X4Ph4EeiAgrX6wwvW1w"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tGreenplumConnection_2"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="context.RFM_GPDB_SOT_BACKLOG_AWS_Server"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="context.RFM_GPDB_SOT_BACKLOG_AWS_Port"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="context.RFM_GPDB_SOT_BACKLOG_AWS_Database"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="context.RFM_GPDB_SOT_BACKLOG_AWS_Schema"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="GREENPLUM"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="context.RFM_GPDB_SOT_BACKLOG_AWS_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="8pW6Nmy2kuetVPV/HFSFZ2C1BvSndzTrGdTks8c0L8743cGxd394MPzVRbZ1Z5LM"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="USE_SSL" show="false" value="true"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT * FROM sbdt.edl_log ( &#13;&#10;&quot; + context.LOG_RUN_ID + &quot;::INT8, -- run_id&#13;&#10;'&quot; + context.LOG_PLANT_NAME + &quot;'::varchar, -- plant&#13;&#10;'&quot; + context.LOG_SYSTEM_NAME + &quot;'::varchar, -- system_name&#13;&#10;'&quot; + context.LOG_PLANT_NAME + &quot;'::varchar, -- job_name&#13;&#10;'&quot; + context.LOG_TABLE_NAME + &quot;'::varchar, -- table_name&#13;&#10;'Start'::varchar, -- status&#13;&#10;'Prod2analytics'::varchar, -- data_path&#13;&#10;'Talend'::varchar, -- technology&#13;&#10;0::INT8, -- no_of_inserts&#13;&#10;0::INT8, -- no_of_updates&#13;&#10;0::INT8, -- no_of_errors&#13;&#10;NULL::varchar, -- message&#13;&#10;0::INT8, -- source_row_count&#13;&#10;0::INT8, -- target_row_count&#13;&#10;NULL::varchar -- error_category&#13;&#10;)&quot;"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="PROPAGATE_RECORD_SET" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="RECORD_SET_COLUMN" show="false" value="moment"/>
+    <elementParameter field="CHECK" name="USE_PREPAREDSTATEMENT" value="false"/>
+    <elementParameter field="TABLE" name="SET_PREPAREDSTATEMENT_PARAMETERS" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" show="false" value="10000"/>
+    <elementParameter field="TEXT" name="LABEL" value="START_LOG_EXEC"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tGreenplumRow_7">
+      <column key="false" length="0" name="moment" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column key="false" length="20" name="pid" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column key="false" length="20" name="root_pid" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column key="false" length="20" name="father_pid" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column key="false" length="50" name="project" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column key="false" length="255" name="job" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column key="false" length="50" name="context" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="3" name="priority" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column key="false" length="255" name="type" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column key="false" length="255" name="origin" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column key="false" length="255" name="message" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="3" name="code" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" name="REJECT">
+      <column key="false" length="0" name="moment" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column key="false" length="20" name="pid" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column key="false" length="20" name="root_pid" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column key="false" length="20" name="father_pid" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column key="false" length="50" name="project" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column key="false" length="255" name="job" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column key="false" length="50" name="context" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="3" name="priority" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column key="false" length="255" name="type" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column key="false" length="255" name="origin" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column key="false" length="255" name="message" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="3" name="code" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tGreenplumConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="32" posY="-192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tGreenplumConnection_2"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_Hh2X4Ph4EeiAgrX6wwvW1w"/>
+    <elementParameter field="TEXT" name="HOST" value="context.RFM_GPDB_SOT_BACKLOG_AWS_Server"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="GREENPLUM"/>
+    <elementParameter field="TEXT" name="PORT" value="context.RFM_GPDB_SOT_BACKLOG_AWS_Port"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.RFM_GPDB_SOT_BACKLOG_AWS_Database"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="context.RFM_GPDB_SOT_BACKLOG_AWS_Schema"/>
+    <elementParameter field="TEXT" name="USER" value="context.RFM_GPDB_SOT_BACKLOG_AWS_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kuetVPV/HFSFZ2C1BvSndzTrGdTks8c0L8743cGxd394MPzVRbZ1Z5LM"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="SHARED_CONNECTION_NAME" show="false" value=""/>
+    <elementParameter field="CHECK" name="USE_SSL" value="true"/>
+    <elementParameter field="CHECK" name="AUTO_COMMIT" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="START_LOG_CONN"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tGreenplumInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="192" posY="-192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tGreenplumInput_1"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" show="false" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_Hh2X4Ph4EeiAgrX6wwvW1w"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tGreenplumConnection_2"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="context.RFM_GPDB_SOT_BACKLOG_AWS_Server"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="GREENPLUM"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="context.RFM_GPDB_SOT_BACKLOG_AWS_Port"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="context.RFM_GPDB_SOT_BACKLOG_AWS_Database"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="context.RFM_GPDB_SOT_BACKLOG_AWS_Schema"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="context.RFM_GPDB_SOT_BACKLOG_AWS_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="8pW6Nmy2kuetVPV/HFSFZ2C1BvSndzTrGdTks8c0L8743cGxd394MPzVRbZ1Z5LM"/>
+    <elementParameter field="CHECK" name="USE_SSL" show="false" value="true"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select NEXTVAL('sbdt.edl_run_id_seq');&quot;"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="postgres_id"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="USE_CURSOR" value="true"/>
+    <elementParameter field="TEXT" name="CURSOR_SIZE" value="1000"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="run_id"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="Get RUN_ID seq"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tGreenplumInput_1">
+      <column comment="" key="false" length="-1" name="run_id" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT8" type="id_Integer" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="256" posY="-32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJavaRow_1"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="context.LOG_RUN_ID=row3.run_id;&#10;&#10;"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="Set RUN_ID"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJavaRow_1">
+      <column comment="" key="false" length="-1" name="run_id" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT8" type="id_Integer" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tPostjob" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="-288" posY="416">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tPostjob_1"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tGreenplumConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="-128" posY="416">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tGreenplumConnection_3"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_Hh2X4Ph4EeiAgrX6wwvW1w"/>
+    <elementParameter field="TEXT" name="HOST" value="context.RFM_GPDB_SOT_BACKLOG_AWS_Server"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="GREENPLUM"/>
+    <elementParameter field="TEXT" name="PORT" value="context.RFM_GPDB_SOT_BACKLOG_AWS_Port"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.RFM_GPDB_SOT_BACKLOG_AWS_Database"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="context.RFM_GPDB_SOT_BACKLOG_AWS_Schema"/>
+    <elementParameter field="TEXT" name="USER" value="context.RFM_GPDB_SOT_BACKLOG_AWS_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kuetVPV/HFSFZ2C1BvSndzTrGdTks8c0L8743cGxd394MPzVRbZ1Z5LM"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="SHARED_CONNECTION_NAME" show="false" value=""/>
+    <elementParameter field="CHECK" name="USE_SSL" value="true"/>
+    <elementParameter field="CHECK" name="AUTO_COMMIT" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="FINISH_LOG_CONN"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tGreenplumRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="32" posY="416">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tGreenplumRow_8"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" show="false" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_Hh2X4Ph4EeiAgrX6wwvW1w"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tGreenplumConnection_3"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="context.RFM_GPDB_SOT_BACKLOG_AWS_Server"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="context.RFM_GPDB_SOT_BACKLOG_AWS_Port"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="context.RFM_GPDB_SOT_BACKLOG_AWS_Database"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="context.RFM_GPDB_SOT_BACKLOG_AWS_Schema"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="GREENPLUM"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="context.RFM_GPDB_SOT_BACKLOG_AWS_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="8pW6Nmy2kuetVPV/HFSFZ2C1BvSndzTrGdTks8c0L8743cGxd394MPzVRbZ1Z5LM"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="USE_SSL" show="false" value="true"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT * FROM sbdt.edl_log ( &#13;&#10;&quot; + context.LOG_RUN_ID + &quot;::INT8, -- run_id&#13;&#10;'&quot; + context.LOG_PLANT_NAME + &quot;'::varchar, -- plant&#13;&#10;'&quot; + context.LOG_SYSTEM_NAME + &quot;'::varchar, -- system_name&#13;&#10;'&quot; + context.LOG_PLANT_NAME + &quot;'::varchar, -- job_name&#13;&#10;'&quot; + context.LOG_TABLE_NAME + &quot;'::varchar, -- table_name&#13;&#10;'Finish'::varchar, -- status&#13;&#10;'Prod2analytics'::varchar, -- data_path&#13;&#10;'Talend'::varchar, -- technology&#13;&#10;&quot; + context.LOG_NO_OF_INSERTS + &quot;::INT8, -- no_of_inserts&#13;&#10;&quot; + context.LOG_NO_OF_UPDATES + &quot;::INT8, -- no_of_updates&#13;&#10;0::INT8, -- no_of_errors&#13;&#10;NULL::varchar, -- message&#13;&#10;&quot; + context.LOG_SOURCE_ROW_COUNT + &quot;::INT8, -- source_row_count&#13;&#10;&quot; + context.LOG_TARGET_ROW_COUNT + &quot;::INT8, -- target_row_count&#13;&#10;NULL::varchar -- error_category&#13;&#10;)&quot;"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="PROPAGATE_RECORD_SET" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="RECORD_SET_COLUMN" show="false" value="moment"/>
+    <elementParameter field="CHECK" name="USE_PREPAREDSTATEMENT" value="false"/>
+    <elementParameter field="TABLE" name="SET_PREPAREDSTATEMENT_PARAMETERS" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" show="false" value="10000"/>
+    <elementParameter field="TEXT" name="LABEL" value="finish_log_exec"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tGreenplumRow_8">
+      <column key="false" length="0" name="moment" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column key="false" length="20" name="pid" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column key="false" length="20" name="root_pid" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column key="false" length="20" name="father_pid" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column key="false" length="50" name="project" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column key="false" length="255" name="job" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column key="false" length="50" name="context" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="3" name="priority" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column key="false" length="255" name="type" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column key="false" length="255" name="origin" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column key="false" length="255" name="message" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="3" name="code" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" name="REJECT">
+      <column key="false" length="0" name="moment" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column key="false" length="20" name="pid" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column key="false" length="20" name="root_pid" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column key="false" length="20" name="father_pid" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column key="false" length="50" name="project" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column key="false" length="255" name="job" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column key="false" length="50" name="context" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="3" name="priority" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column key="false" length="255" name="type" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column key="false" length="255" name="origin" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column key="false" length="255" name="message" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="3" name="code" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tGreenplumClose" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="192" posY="416">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tGreenplumClose_3"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tGreenplumConnection_3"/>
+    <elementParameter field="TEXT" name="LABEL" value="FINISH_LOG_CLOSE"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tGreenplumConnection_1" offsetLabelX="0" offsetLabelY="0" source="tGreenplumConnection_1" target="tGreenplumRow_2">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk1"/>
+    <elementParameter field="MEMO" name="FAILURE_INSTRUCTIONS" value=""/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tGreenplumRow_1" offsetLabelX="0" offsetLabelY="0" source="tGreenplumRow_1" target="tGreenplumClose_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk8"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tGreenplumRow_2" offsetLabelX="0" offsetLabelY="0" source="tGreenplumRow_2" target="tGreenplumRow_3">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk2"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tGreenplumRow_3" offsetLabelX="0" offsetLabelY="0" source="tGreenplumRow_3" target="tGreenplumRow_4">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk3"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tGreenplumRow_4" offsetLabelX="0" offsetLabelY="0" source="tGreenplumRow_4" target="tGreenplumRow_5">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk5"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tGreenplumRow_5" offsetLabelX="0" offsetLabelY="0" source="tGreenplumRow_5" target="tGreenplumRow_6">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk6"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tGreenplumRow_6" offsetLabelX="0" offsetLabelY="0" source="tGreenplumRow_6" target="tGreenplumRow_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk7"/>
+  </connection>
+  <connection connectorName="FLOW" label="row5" lineStyle="0" metaname="tLogCatcher_1" offsetLabelX="0" offsetLabelY="0" source="tLogCatcher_1" target="tSendMail_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row5"/>
+  </connection>
+  <connection connectorName="FLOW" label="row4" lineStyle="0" metaname="tLogCatcher_2" offsetLabelX="0" offsetLabelY="0" source="tLogCatcher_2" target="tSetGlobalVar_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row4"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tSetGlobalVar_1" offsetLabelX="0" offsetLabelY="0" source="tSetGlobalVar_1" target="tGreenplumConnection_4">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk14"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tGreenplumConnection_4" offsetLabelX="0" offsetLabelY="0" source="tGreenplumConnection_4" target="tGreenplumRow_9">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk15"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tGreenplumRow_9" offsetLabelX="0" offsetLabelY="0" source="tGreenplumRow_9" target="tGreenplumClose_4">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk16"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPrejob_1" offsetLabelX="0" offsetLabelY="0" source="tPrejob_1" target="tJava_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk1"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tJava_1" offsetLabelX="0" offsetLabelY="0" source="tJava_1" target="tGreenplumConnection_2">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk2"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tGreenplumClose_2" offsetLabelX="0" offsetLabelY="0" source="tGreenplumClose_2" target="tGreenplumConnection_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk9"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tGreenplumRow_7" offsetLabelX="0" offsetLabelY="0" source="tGreenplumRow_7" target="tGreenplumClose_2">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk3"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tGreenplumConnection_2" offsetLabelX="0" offsetLabelY="0" source="tGreenplumConnection_2" target="tGreenplumInput_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk4"/>
+  </connection>
+  <connection connectorName="FLOW" label="row3" lineStyle="0" metaname="tGreenplumInput_1" offsetLabelX="0" offsetLabelY="0" source="tGreenplumInput_1" target="tJavaRow_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="run_id"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row3"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tJavaRow_1" offsetLabelX="0" offsetLabelY="0" source="tJavaRow_1" target="tGreenplumRow_7">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk5"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPostjob_1" offsetLabelX="0" offsetLabelY="0" source="tPostjob_1" target="tGreenplumConnection_3">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk11"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tGreenplumConnection_3" offsetLabelX="0" offsetLabelY="0" source="tGreenplumConnection_3" target="tGreenplumRow_8">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk12"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tGreenplumRow_8" offsetLabelX="0" offsetLabelY="0" source="tGreenplumRow_8" target="tGreenplumClose_3">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk13"/>
+  </connection>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tGreenplumConnection_1"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="GP PROD CONNECTION"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tGreenplumRow_1"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="LOAD BACKUP TABLE"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tGreenplumRow_2"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="TRUNCATE BACKUP TABLE"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tGreenplumClose_1"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="CLOSING THE CONNECTION"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tGreenplumRow_3"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="BCKLG CMN ATTR STG"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tGreenplumRow_4"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="BCKLG CMN ATTR REPORTING"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tGreenplumRow_5"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="BIG BACKLOG REPORTING"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tGreenplumRow_6"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="LITTLE BACKLOG REPORTING"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogCatcher_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="168;168;255"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogCatcher_2"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="168;168;255"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tGreenplumConnection_4"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="168;168;255"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tGreenplumRow_9"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="168;168;255"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tGreenplumClose_4"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="168;168;255"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" show="false" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tPrejob_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="230;100;0"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;220;180"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tGreenplumClose_2"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tGreenplumRow_7"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tGreenplumConnection_2"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tGreenplumInput_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" show="false" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tPostjob_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="230;100;0"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;220;180"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tGreenplumConnection_3"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tGreenplumRow_8"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tGreenplumClose_3"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_ef5e1f00-8165-495a-91bb-066b7c168519"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>nuQnZMNy2Grs+WH3H31yu58TIZeWdQBGG/9Oq8GLUenLQJdy/4E/HUVGbSwHa/ptyuWHkzB/8v/k
+6fI0rmUuQA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_ed2155da-618e-45b3-869c-485ec10b4630"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>f/6G33bD2bah3bc1LHE9zWv/f7ruC9ujJ1XPXoLV8GJh26I3dClChgWf8/1+YFlAZUZP6PJrczbW
+AwO7U8rP/A==</DigestValue></Reference></SignedInfo><SignatureValue>WJPQkGiDh03k3lvMj2vInQsbTG3YG/PapiPZfRbWFYhNRIkmR0BcPMLhXyaQqRcOnFmz9pus6xFs
+mW16aSfGM5+CYoWEh0alR2KxcOBA8h+xk7llemKB5bMyGneoPNlVTjU0FULl5drLwvcWgu30LcVm
+mTnPvRcnEhMHq0v4cK1npOggHmxnzA7jPekCtmcXTVm7yt++QSDsTZOq+dPk12rGa2ik4WmZU6ry
+EgUcw42YdRN4rNxfYc8Dhsj2Tsl4glQiy3EBA8vmlx6mzyHXr9+cjkvszZ6DcCPQkzyrJ1+8ie4y
+d8fIDRKDLZAnQB2ycx/+teOMnwJcGdvMgJ9JOw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_ed2155da-618e-45b3-869c-485ec10b4630" Target="#_ef5e1f00-8165-495a-91bb-066b7c168519"><Timestamp>2020-05-12 17:30:57</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>

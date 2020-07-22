@@ -1,0 +1,681 @@
+package routines;
+
+/*
+ */
+public class Copy_of_GEroutines {
+	 static {
+			System.setProperty("TalendJob.log",
+					"GEroutines.log");
+		}
+private static org.apache.log4j.Logger log = org.apache.log4j.Logger.getLogger(GEroutines.class);
+  private static Boolean debugModeOn = true;
+  private static java.util.Map<String, String> 	TYPE_CONEVERsION_MAP;
+  private static java.util.Map<String, String> 	TYPE_CONEVERsION_MAP_HDFS;
+  private static java.util.ArrayList<String> 	RESERVED_KEYWORDS;
+  static
+  {	  
+    TYPE_CONEVERsION_MAP = new java.util.HashMap<String, String>();
+    /*character varying*/
+    TYPE_CONEVERsION_MAP.put(  "varchar2"						, "character varying" );
+    TYPE_CONEVERsION_MAP.put(  "nvarchar2"						, "character varying" );
+    TYPE_CONEVERsION_MAP.put(  "varchar"						, "character varying" );
+    TYPE_CONEVERsION_MAP.put(  "nvarchar"						, "character varying" );
+    TYPE_CONEVERsION_MAP.put(  "uniqueidentifier"				, "character varying" );
+    TYPE_CONEVERsION_MAP.put(  "text"							, "character varying" );
+    TYPE_CONEVERsION_MAP.put(  "ntext"							, "character varying" );
+    TYPE_CONEVERsION_MAP.put(  "char varying"					, "character varying" );
+    TYPE_CONEVERsION_MAP.put(  "character varying"				, "character varying" );
+    TYPE_CONEVERsION_MAP.put(  "anydata"						, "character varying" );
+    TYPE_CONEVERsION_MAP.put(  "sys.anydata"					, "character varying" );
+    /** TODO
+    TYPE_CONEVERsION_MAP.put(  "system.xnp_message_type"		, "character varying" );*/
+    TYPE_CONEVERsION_MAP.put(  "mdsys.sdo_geometry"				, "polygon" );
+    /* bytea */  
+    TYPE_CONEVERsION_MAP.put(  "blob"							, "bytea" );
+    TYPE_CONEVERsION_MAP.put(  "raw"							, "bytea" );
+    TYPE_CONEVERsION_MAP.put(  "long raw"						, "bytea" );
+    TYPE_CONEVERsION_MAP.put(  "enum"							, "bytea" );
+    TYPE_CONEVERsION_MAP.put(  "set"							, "bytea" );
+    TYPE_CONEVERsION_MAP.put(  "char() for bit data"			, "bytea" );
+    TYPE_CONEVERsION_MAP.put(  "VARCHAR () FOR BIT DATA"		, "bytea" );
+    /* text */  
+    TYPE_CONEVERsION_MAP.put(  "urowid"							, "text" );
+    TYPE_CONEVERsION_MAP.put(  "rowid"							, "text" );
+    TYPE_CONEVERsION_MAP.put(  "long"							, "text" );
+    TYPE_CONEVERsION_MAP.put(  "clob"							, "text" );
+    TYPE_CONEVERsION_MAP.put(  "char large object"				, "text" );
+    TYPE_CONEVERsION_MAP.put(  "character large object"			, "text" );
+    /* date */  
+    TYPE_CONEVERsION_MAP.put(  "ansidate"						, "date" );
+    TYPE_CONEVERsION_MAP.put(  "date"							, "date" );
+    TYPE_CONEVERsION_MAP.put(  "datetime"						, "timestamp without time zone" );
+    TYPE_CONEVERsION_MAP.put(  "datetime2"						, "timestamp without time zone" );
+    /* numeric */  
+    TYPE_CONEVERsION_MAP.put(  "integer"						, "numeric" );
+    TYPE_CONEVERsION_MAP.put(  "integer1"						, "numeric" );
+    TYPE_CONEVERsION_MAP.put(  "small integer"					, "numeric" );
+    TYPE_CONEVERsION_MAP.put(  "int"							, "numeric" );
+    TYPE_CONEVERsION_MAP.put(  "int1"							, "numeric" );
+    TYPE_CONEVERsION_MAP.put(  "int2"							, "numeric" );
+    TYPE_CONEVERsION_MAP.put(  "int4"							, "numeric" );
+    TYPE_CONEVERsION_MAP.put(  "int8"							, "numeric" );
+    TYPE_CONEVERsION_MAP.put(  "smallint"						, "numeric" );
+    TYPE_CONEVERsION_MAP.put(  "byteint"						, "numeric" );
+    TYPE_CONEVERsION_MAP.put(  "smallint unsigned"				, "numeric" );
+    TYPE_CONEVERsION_MAP.put(  "tinyint"						, "numeric" );
+    TYPE_CONEVERsION_MAP.put(  "mediumint"						, "numeric" );
+    TYPE_CONEVERsION_MAP.put(  "bigint"							, "numeric" );
+    TYPE_CONEVERsION_MAP.put(  "decimal"						, "numeric" );
+    TYPE_CONEVERsION_MAP.put(  "large integer"					, "numeric" );
+    TYPE_CONEVERsION_MAP.put(  "big integer"					, "numeric" );
+    TYPE_CONEVERsION_MAP.put(  "single-precision floating-point", "double precision" );
+    TYPE_CONEVERsION_MAP.put(  "double-precision floating-point", "double precision" );
+    TYPE_CONEVERsION_MAP.put(  "numeric"						, "numeric" );
+    TYPE_CONEVERsION_MAP.put(  "number"							, "numeric" );
+    TYPE_CONEVERsION_MAP.put(  "float"							, "double precision" );
+    TYPE_CONEVERsION_MAP.put(  "float4"							, "double precision" );  
+    TYPE_CONEVERsION_MAP.put(  "double"							, "double precision" );
+    TYPE_CONEVERsION_MAP.put(  "decimal"						, "numeric" );
+    TYPE_CONEVERsION_MAP.put(  "real"							, "double precision" ); 
+    
+    /* character types */
+    TYPE_CONEVERsION_MAP.put(  "char"							, "character" );
+    TYPE_CONEVERsION_MAP.put(  "nchar"							, "character" );
+    /* timestamps with timezone*/
+    TYPE_CONEVERsION_MAP.put(  "timestamp with time zone"		, "timestamp with time zone" );
+    TYPE_CONEVERsION_MAP.put(  "timestamptz"					, "timestamp with time zone" );
+    TYPE_CONEVERsION_MAP.put(  "timestamp(6)"					, "timestamp(6) with time zone");
+    /* timestamps withOUT timezone */
+    TYPE_CONEVERsION_MAP.put(  "time"							, "time" );
+    TYPE_CONEVERsION_MAP.put(  "timestamp without time zone"	, "timestamp without time zone" );
+    TYPE_CONEVERsION_MAP.put(  "timestamp"						, "timestamp without time zone" );
+    
+    // SQL SERVER TYPES
+    TYPE_CONEVERsION_MAP.put(  "smalldatetime"					, "timestamp without time zone" );
+    TYPE_CONEVERsION_MAP.put(  "int identity"					, "serial" );
+    TYPE_CONEVERsION_MAP.put(  "image"       					, "bytea" );
+    TYPE_CONEVERsION_MAP.put(  "binary"       					, "bytea" );
+    TYPE_CONEVERsION_MAP.put(  "money"       					, "numeric" );
+    
+    //Bools everywhere and nowhere
+    TYPE_CONEVERsION_MAP.put(  "bit"							, "boolean" );
+    TYPE_CONEVERsION_MAP.put(  "bool"							, "boolean" );
+    TYPE_CONEVERsION_MAP.put(  "boolean"						, "boolean" );
+    
+    
+    //S  A  P
+    //                    SAP TYPE    SQL TYPE                 Java type
+    TYPE_CONEVERsION_MAP.put("P" , "numeric"			); // "id_Double");
+    TYPE_CONEVERsION_MAP.put("C" , "character varying"	); // "id_String");
+    TYPE_CONEVERsION_MAP.put("D" , "date"				); // "id_Date");
+    TYPE_CONEVERsION_MAP.put("F" , "numeric"			); // "id_Double");
+    TYPE_CONEVERsION_MAP.put("I" , "numeric"			); // "id_Integer");
+    TYPE_CONEVERsION_MAP.put("b" , "numeric"			); // "id_Double");
+    TYPE_CONEVERsION_MAP.put("s" , "numeric"			); // "id_Double");
+    TYPE_CONEVERsION_MAP.put("N" , "character varying"	); // "id_String");
+    TYPE_CONEVERsION_MAP.put("S" , "character varying"	); // "id_String");
+    TYPE_CONEVERsION_MAP.put("T" , "time"				); // "id_String");
+    TYPE_CONEVERsION_MAP.put("X" , "character varying"	); // "id_String");
+    TYPE_CONEVERsION_MAP.put("g" , "text"				); // "id_String"); ABAP Type ‘G’: Variable length character string
+    TYPE_CONEVERsION_MAP.put("y" , "text"				); // "id_String"); ABAP Type ‘Y’: Variable length byte array
+
+    TYPE_CONEVERsION_MAP_HDFS = new java.util.HashMap<String, String>();
+    /*character varying*/
+    TYPE_CONEVERsION_MAP_HDFS.put(  "varchar2"						, "STRING" );
+    TYPE_CONEVERsION_MAP_HDFS.put(  "nvarchar2"						, "STRING" );
+    TYPE_CONEVERsION_MAP_HDFS.put(  "varchar"						, "STRING" );
+    TYPE_CONEVERsION_MAP_HDFS.put(  "nvarchar"						, "STRING" );
+    TYPE_CONEVERsION_MAP_HDFS.put(  "text"							, "STRING" );
+    TYPE_CONEVERsION_MAP_HDFS.put(  "ntext"							, "STRING" );
+    TYPE_CONEVERsION_MAP_HDFS.put(  "char varying"					, "STRING" );
+    TYPE_CONEVERsION_MAP_HDFS.put(  "character varying"				, "STRING" );
+    TYPE_CONEVERsION_MAP_HDFS.put(  "anydata"						, "STRING" );
+    TYPE_CONEVERsION_MAP_HDFS.put(  "sys.anydata"					, "STRING" );
+    /** TODO
+    TYPE_CONEVERsION_MAP_HDFS.put(  "system.xnp_message_type"		, "STRING" );*/
+    TYPE_CONEVERsION_MAP_HDFS.put(  "mdsys.sdo_geometry"				, "STRING" );
+    /* bytea */  
+    TYPE_CONEVERsION_MAP_HDFS.put(  "blob"							, "STRING" );
+    TYPE_CONEVERsION_MAP_HDFS.put(  "raw"							, "STRING" );
+    TYPE_CONEVERsION_MAP_HDFS.put(  "long raw"						, "STRING" );
+    TYPE_CONEVERsION_MAP_HDFS.put(  "enum"							, "STRING" );
+    TYPE_CONEVERsION_MAP_HDFS.put(  "set"							, "STRING" );
+    TYPE_CONEVERsION_MAP_HDFS.put(  "char() for bit data"			, "STRING" );
+    TYPE_CONEVERsION_MAP_HDFS.put(  "VARCHAR () FOR BIT DATA"		, "STRING" );
+    /* text */  
+    TYPE_CONEVERsION_MAP_HDFS.put(  "urowid"							, "STRING" );
+    TYPE_CONEVERsION_MAP_HDFS.put(  "rowid"							, "STRING" );
+    TYPE_CONEVERsION_MAP_HDFS.put(  "long"							, "STRING" );
+    TYPE_CONEVERsION_MAP_HDFS.put(  "clob"							, "STRING" );
+    TYPE_CONEVERsION_MAP_HDFS.put(  "char large object"				, "STRING" );
+    TYPE_CONEVERsION_MAP_HDFS.put(  "character large object"			, "STRING" );
+    /* date */  
+    TYPE_CONEVERsION_MAP_HDFS.put(  "ansidate"						, "STRING" );
+    TYPE_CONEVERsION_MAP_HDFS.put(  "date"							, "STRING" );
+    TYPE_CONEVERsION_MAP_HDFS.put(  "datetime"						, "STRING" );
+    TYPE_CONEVERsION_MAP_HDFS.put(  "datetime2"						, "STRING" );
+    /* numeric */  
+    TYPE_CONEVERsION_MAP_HDFS.put(  "integer"						, "BIGINT" );
+    TYPE_CONEVERsION_MAP_HDFS.put(  "integer1"						, "BIGINT" );
+    TYPE_CONEVERsION_MAP_HDFS.put(  "small integer"					, "BIGINT" );
+    TYPE_CONEVERsION_MAP_HDFS.put(  "int"							, "BIGINT" );
+    TYPE_CONEVERsION_MAP_HDFS.put(  "int1"							, "BIGINT" );
+    TYPE_CONEVERsION_MAP_HDFS.put(  "int2"							, "BIGINT" );
+    TYPE_CONEVERsION_MAP_HDFS.put(  "int4"							, "BIGINT" );
+    TYPE_CONEVERsION_MAP_HDFS.put(  "int8"							, "BIGINT" );
+    TYPE_CONEVERsION_MAP_HDFS.put(  "smallint"						, "BIGINT" );
+    TYPE_CONEVERsION_MAP_HDFS.put(  "smallint unsigned"				, "BIGINT" );
+    TYPE_CONEVERsION_MAP_HDFS.put(  "tinyint"						, "BIGINT" );
+    TYPE_CONEVERsION_MAP_HDFS.put(  "mediumint"						, "BIGINT" );
+    TYPE_CONEVERsION_MAP_HDFS.put(  "bigint"							, "BIGINT" );
+    TYPE_CONEVERsION_MAP_HDFS.put(  "decimal"						, "BIGINT" );
+    TYPE_CONEVERsION_MAP_HDFS.put(  "large integer"					, "BIGINT" );
+    TYPE_CONEVERsION_MAP_HDFS.put(  "big integer"					, "BIGINT" );
+    TYPE_CONEVERsION_MAP_HDFS.put(  "single-precision floating-point", "double" );
+    TYPE_CONEVERsION_MAP_HDFS.put(  "double-precision floating-point", "double" );
+    TYPE_CONEVERsION_MAP_HDFS.put(  "numeric"						, "BIGINT" );
+    TYPE_CONEVERsION_MAP_HDFS.put(  "number"							, "BIGINT" );
+    TYPE_CONEVERsION_MAP_HDFS.put(  "float"							, "double" );
+    TYPE_CONEVERsION_MAP_HDFS.put(  "float4"							, "float" );  
+    TYPE_CONEVERsION_MAP_HDFS.put(  "double"							, "double" );
+    TYPE_CONEVERsION_MAP_HDFS.put(  "decimal"						, "BIGINT" );
+   
+    
+    /* character types */
+    TYPE_CONEVERsION_MAP_HDFS.put(  "char"							, "STRING" );
+    TYPE_CONEVERsION_MAP_HDFS.put(  "nchar"							, "STRING" );
+    /* timestamps with timezone*/
+    TYPE_CONEVERsION_MAP_HDFS.put(  "timestamp with time zone"		, "STRING" );
+    TYPE_CONEVERsION_MAP_HDFS.put(  "timestamptz"					, "STRING" );
+    
+    /* timestamps withOUT timezone */
+    TYPE_CONEVERsION_MAP_HDFS.put(  "time"							, "STRING" );
+    TYPE_CONEVERsION_MAP_HDFS.put(  "timestamp without time zone"	, "STRING" );
+    TYPE_CONEVERsION_MAP_HDFS.put(  "timestamp"						, "STRING" );
+    
+    // SQL SERVER TYPES
+    TYPE_CONEVERsION_MAP_HDFS.put(  "smalldatetime"					, "STRING" );
+    TYPE_CONEVERsION_MAP_HDFS.put(  "int identity"					, "INT" );
+    TYPE_CONEVERsION_MAP_HDFS.put(  "image"       					, "STRING" );
+    TYPE_CONEVERsION_MAP_HDFS.put(  "binary"       					, "STRING" );
+    TYPE_CONEVERsION_MAP_HDFS.put(  "money"       					, "BIGINT" );
+    
+    //Bools everywhere and nowhere
+    TYPE_CONEVERsION_MAP_HDFS.put(  "bit"							, "STRING" );
+    TYPE_CONEVERsION_MAP_HDFS.put(  "bool"							, "STRING" );
+    TYPE_CONEVERsION_MAP_HDFS.put(  "boolean"						, "STRING" );
+    
+    
+    //S  A  P
+    //                    SAP TYPE    SQL TYPE                 Java type
+    TYPE_CONEVERsION_MAP_HDFS.put("P" , "BIGINT"			); // "id_Double");
+    TYPE_CONEVERsION_MAP_HDFS.put("C" , "STRING"	); // "id_String");
+    TYPE_CONEVERsION_MAP_HDFS.put("D" , "STRING"				); // "id_Date");
+    TYPE_CONEVERsION_MAP_HDFS.put("F" , "BIGINT"			); // "id_Double");
+    TYPE_CONEVERsION_MAP_HDFS.put("I" , "BIGINT"			); // "id_Integer");
+    TYPE_CONEVERsION_MAP_HDFS.put("b" , "BIGINT"			); // "id_Double");
+    TYPE_CONEVERsION_MAP_HDFS.put("s" , "BIGINT"			); // "id_Double");
+    TYPE_CONEVERsION_MAP_HDFS.put("N" , "STRING"	); // "id_String");
+    TYPE_CONEVERsION_MAP_HDFS.put("S" , "STRING"	); // "id_String");
+    TYPE_CONEVERsION_MAP_HDFS.put("T" , "STRING"				); // "id_String");
+    TYPE_CONEVERsION_MAP_HDFS.put("X" , "STRING"	); // "id_String");
+    TYPE_CONEVERsION_MAP_HDFS.put("g" , "STRING"				); // "id_String"); ABAP Type ‘G’: Variable length character string
+    TYPE_CONEVERsION_MAP_HDFS.put("y" , "STRING"				); // "id_String"); ABAP Type ‘Y’: Variable length byte array
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    RESERVED_KEYWORDS = new java.util.ArrayList<String>();
+    RESERVED_KEYWORDS.add(  "desc"			);
+    RESERVED_KEYWORDS.add(  "asc"			);
+    RESERVED_KEYWORDS.add(  "where"			);
+    RESERVED_KEYWORDS.add(  "row"			);
+    RESERVED_KEYWORDS.add(  "char"			);
+    RESERVED_KEYWORDS.add(  "not"			);
+    RESERVED_KEYWORDS.add(  "group"			);
+    RESERVED_KEYWORDS.add(  "view"			);
+    RESERVED_KEYWORDS.add(  "connect"		);
+    RESERVED_KEYWORDS.add(  "constraint"	);
+    RESERVED_KEYWORDS.add(  "constraints"	);
+    RESERVED_KEYWORDS.add(  "continue"		);
+    RESERVED_KEYWORDS.add(  "create"		);
+    RESERVED_KEYWORDS.add(  "count"			);
+    RESERVED_KEYWORDS.add(  "cross"			);
+    RESERVED_KEYWORDS.add(  "current"		);
+    RESERVED_KEYWORDS.add(  "date"			);
+    RESERVED_KEYWORDS.add(  "degree"		);
+    RESERVED_KEYWORDS.add(  "delete"		);
+    RESERVED_KEYWORDS.add(  "describe"		);
+    RESERVED_KEYWORDS.add(  "distinct"		);
+    RESERVED_KEYWORDS.add(  "domain"		);
+    RESERVED_KEYWORDS.add(  "double"		);
+    RESERVED_KEYWORDS.add(  "drop"			);
+    RESERVED_KEYWORDS.add(  "else"			);
+    RESERVED_KEYWORDS.add(  "end"			);
+    RESERVED_KEYWORDS.add(  "except"		);
+    RESERVED_KEYWORDS.add(  "escape"		);
+    RESERVED_KEYWORDS.add(  "exception"		);
+    RESERVED_KEYWORDS.add(  "exists"		);
+    RESERVED_KEYWORDS.add(  "external"		);
+    RESERVED_KEYWORDS.add(  "extract"		);
+    RESERVED_KEYWORDS.add(  "false"			);
+    RESERVED_KEYWORDS.add(  "fetch"			);
+    RESERVED_KEYWORDS.add(  "float"			);
+    RESERVED_KEYWORDS.add(  "first"			);
+    RESERVED_KEYWORDS.add(  "force"			);
+    RESERVED_KEYWORDS.add(  "for"			);
+    RESERVED_KEYWORDS.add(  "user"			);
+    RESERVED_KEYWORDS.add(  "filter"		);
+    RESERVED_KEYWORDS.add(  "deferrable"	);
+    RESERVED_KEYWORDS.add(  "distributed"	);
+    RESERVED_KEYWORDS.add(  "partition"		);
+    RESERVED_KEYWORDS.add(  "offset"		);
+    RESERVED_KEYWORDS.add(  "freeze"		);
+    RESERVED_KEYWORDS.add(  "current_date"  );
+    RESERVED_KEYWORDS.add(  "current_user"  );
+    RESERVED_KEYWORDS.add(  "range"			);
+    RESERVED_KEYWORDS.add(  "limit"			);
+    RESERVED_KEYWORDS.add(  "offset"		);
+    RESERVED_KEYWORDS.add(  "exclude"		);
+    RESERVED_KEYWORDS.add(  "character"		);
+    RESERVED_KEYWORDS.add(  "new"			);
+    RESERVED_KEYWORDS.add(  "ctid"			);
+    RESERVED_KEYWORDS.add(  "xmin"			);
+  }
+  
+
+    /**
+     * getLengthAndPrecision: return the straight expression for a CreateTable for LengthAndPrecision
+     * {talendTypes} String
+     * {Category} User Defined
+     * {param} string(length, precision) input: the length and precision which need to be combined
+     * {example} getLengthAndPrecision(length, precision) # return different output based on the data content
+     */
+    public static String getLengthAndPrecision(String typeName, int length, int precision) {
+            
+    	if (typeName.equals("text")
+    		/*|| (typeName.equals("character varying") && precision > 255)*/
+    		|| typeName.equals ("timestamp with time zone")
+    		|| typeName.equals ("timestamp without time zone")
+    		|| typeName.equals ("date")
+    		|| typeName.equals ("time")
+    		|| typeName.equals ("float")
+    		|| typeName.equals ("bytea")
+    		|| typeName.equals ("double")
+    		|| typeName.equals ("double precision")
+    		|| typeName.equals ("single-precision floating-point")
+    		|| typeName.equals ("double-precision floating-point")
+    		|| typeName.equals ("boolean")
+    	 	|| typeName.equals ("serial")){
+    		//System.out.println("Found the bugger!");
+    		return "";
+    	}   	
+	    if (length > 0  && precision > 0)
+	    	return "("+length+","+precision+")";
+	    else if (length > 0 && precision == 0)
+	    	return "("+length+")";
+	    else 
+	    	return "";
+    }
+
+    public static String fixTooShortColumn(String typeName, int length) {
+        
+    	if ((typeName.equals("character varying") && length > 400)){
+    		return "text";
+    	}
+    	else {
+    		return typeName;
+    	}
+    		
+	}
+    /**
+     * Converts SAP Types To Greenplum Data Types
+     */
+    public static String mapSAPToGreenplumTypes(String sapTypeName) {
+     
+     String forreturn = TYPE_CONEVERsION_MAP.get(sapTypeName);
+     if(forreturn == null && debugModeOn) {
+       System.out.println("Non-Trapped SAP Type Name: " + sapTypeName + " || Returned Text Type As Catch All");
+     }
+     return forreturn == null ? "text" : forreturn;
+     }
+    
+    /**
+     * Converts DB Types To Greenplum Data Types
+     */
+    public static String mapToGreenplumTypes(String typeName) {
+     
+     String forreturn = TYPE_CONEVERsION_MAP.get(typeName.toLowerCase());
+     if(forreturn == null && debugModeOn) {
+       System.out.println("Non-Trapped Type Name: " + typeName + " || Returned Text Type As Catch All");
+     }
+     System.out.println("hello");
+     return forreturn == null ? "text" : forreturn;
+     }
+    
+    
+    public static String mapMSSQLToMysqlTypes(String typeName, int len, int precision) {
+        
+        String forreturn = TYPE_CONEVERsION_MAP.get(typeName.toLowerCase());
+       // System.out.println("typeName: "+typeName+" mapped to: "+forreturn+ " length: "+len+" precision: "+precision);
+        if (forreturn != null){
+	        if (((len > 255) || ( precision > 255 )) && forreturn.equals("character varying")){
+	        		//System.out.pritln(" MYSQL EXCEPTION length: character varying "+len+ " mapped to: text");	
+	        		return "text";	        	
+	        }   		
+	        return forreturn;
+        }
+        else{
+	        if(debugModeOn) {
+	        	System.out.println("Non-Trapped Type Name: " + typeName + " || Returned Text Type As Catch All");
+	        }
+        	return "text";
+        }
+     }
+    
+    public static String mapMSSQLToPOSTGREsqlTypes(String typeName, int len, int precision, boolean TimestampToText) {
+        String forreturn = TYPE_CONEVERsION_MAP.get(typeName.toLowerCase());
+       //System.out.println("typeName: "+typeName+" mapped to: "+forreturn+ " length: "+len+" precision: "+precision);
+        if (forreturn != null){
+        	if (forreturn.equals("timestamp without time zone") && TimestampToText){
+	        	   return "text";
+        	}
+        	if (forreturn.equals("timestamp")){
+	        	   return "text";
+     	}
+	        if (((len > 255) || ( precision > 255 )) && forreturn.equals("character varying")){
+	        		return "text";	        	
+	        } 
+	        return forreturn;
+        }
+        else{
+	        if(debugModeOn) {
+	        	System.out.println("Non-Trapped Type Name: " + typeName + " || Returned Text Type As Catch All");
+	        }
+        	return "text";
+        }
+     }
+
+   	
+    
+    /**
+     * fixBadTableNames: Repairs both the column names and table names.
+     * Removes special characters such as @, # and $ from text where:
+     * # = _1
+     * @ = _2
+     * $ = _3
+     * Special Words = _4
+     * @author 212342594 - Matthew Green
+     * {Category} GEroutine
+     * {talendType} String
+     * {param} 
+     * {example} fixBadTableNames(String tableName)
+     */
+    public static String fixBadTableNames(String tableName) {
+        /*if(tableName.contains("(") || tableName.contains(")") || tableName.contains("*") ||
+        Character.isDigit(tableName.charAt(0)) || RESERVED_KEYWORDS.contains(tableName.toLowerCase())
+        || tableName.contains("#") || tableName.contains("@") || tableName.contains("$")
+        || tableName.contains("/") || tableName.contains(" "))*/
+    	if(RESERVED_KEYWORDS.contains(tableName.toLowerCase()))
+    		return "\"" + tableName.toLowerCase() + "_\"";
+        else 
+        	return "\"" + tableName.toLowerCase() + "\"";
+    	
+       }
+    
+    /**
+     * {Category} GEroutine
+     * {talendType} String
+     * {param} 
+     * {example} fixBadTableNames(String tableName, Boolean useQuote, String quoteChar)
+     */
+    public static String fixBadTableNames(String tableName, Boolean useQuote, String quoteChar) {
+    	if (!useQuote){
+    		return tableName.toLowerCase();
+    	} else 
+    		if(RESERVED_KEYWORDS.contains(tableName.toLowerCase()))
+        		return quoteChar + tableName.toLowerCase() + "_" + quoteChar;
+            else 
+            	return quoteChar + tableName.toLowerCase() + quoteChar;
+//    		return quoteChar + tableName.toLowerCase() + quoteChar;
+    	
+        /*if( useQuote && (tableName.contains(".") || tableName.contains("(") || tableName.contains(")") || tableName.contains("#") || tableName.contains("@") || tableName.contains("$") || tableName.contains("*") ||
+        		tableName.contains(":") || tableName.contains(" ") || tableName.contains("/") || Character.isDigit(tableName.charAt(0)) || RESERVED_KEYWORDS.contains(tableName.toLowerCase())))
+            return quoteChar + tableName.toLowerCase() + quoteChar;
+        else return tableName.toLowerCase();*/
+       }
+    
+    /**
+     * revertBadTableNames: Resets the bad table names to their
+     * original values example: AAPL@ would become AAPL_2 but this function 
+     * resets AAPL_2 back to the former AAPL@. Use this function when querying 
+     * the existing data source to ensure the lookup does not fail. Does not 
+     * revert column names.
+     * Resets special characters such as @, # and $ from text where:
+     * # = _1
+     * @ = _2
+     * $ = _3
+     * @author 212342594 - Matthew Green
+     */
+    public static String revertBadTableNames(String tableName) {
+      return tableName;
+    }
+    
+    /**
+     * {Category} GEroutine
+     * {talendType} String
+     * {param} 
+     * {example} maskString(String inputStr)
+     */
+    public static String maskString(String inputStr) {  	
+    	return maskString(inputStr, 2, 3);
+    }
+    
+    /**
+     * {Category} GEroutine
+     * {talendType} String
+     * {param} 
+     * {example} maskString(String inputStr, int param1, int param2)
+     */
+    public static String maskString(String inputStr, int param1, int param2) {
+    	StringBuilder sb = new StringBuilder();
+    	for(int i=0 ; i<inputStr.length() ; i++ ) {
+    	   if(i%param1 == 0 || i%param2 == 0) {
+    		   sb.append("#");
+    	    } else {
+    	       sb.append(inputStr.charAt(i));
+    	    }
+    	}
+    	return sb.toString();
+     }
+    
+    /**
+     * {Category} SQL
+     * {talendType} String
+     * {param} 
+     * {example} sqlDropTable(String schema, String schemaPrefix, String tableName)
+     */
+    public static String sqlDropTable(String schema, String schemaPrefix, String tableName) {
+    	return "DROP TABLE IF EXISTS " + sqlGetSchema(schema,schemaPrefix) + "." + tableName;    	
+    }
+    
+    /**
+     * {Category} SQL
+     * {talendType} String
+     * {param} 
+     * {example} sqlCreateTable(String schema, String schemaPrefix, String tableName,String columnList, String additionalColumns)
+     */   
+    public static String sqlCreateTable(String schema, String schemaPrefix, String tableName,String columnList, String additionalColumns) {
+    	String cols = columnList;
+    	if(additionalColumns.length()>0){
+    		if(cols.endsWith(",")){
+    			if(additionalColumns.startsWith(",") ){
+    				cols = cols.substring(0,cols.length()-1);    			
+    			}
+    			cols += additionalColumns;
+    		} else {
+    			if(false == additionalColumns.startsWith(",") ){
+    				cols += ",";
+    			}
+    			cols += additionalColumns;
+    		}
+    	}
+    	return "CREATE TABLE " + sqlGetSchema(schema,schemaPrefix) + "." + tableName +" ( " + cols +" )"+
+    		" WITH (appendonly=true, orientation=column, compresstype=quicklz)";
+    }
+    
+    /**
+     * {Category} SQL
+     * {talendType} String
+     * {param} 
+     * {example} sqlDropSchema(String schema, String schemaPrefix)
+     */
+    public static String sqlDropSchema(String schema, String schemaPrefix) {
+    	return "DROP SCHEMA IF EXISTS " +sqlGetSchema(schema,schemaPrefix) + " CASCADE";
+    }
+    
+    /**
+     * {Category} SQL
+     * {talendType} String
+     * {param} 
+     * {example} sqlCreateSchema(String schema, String schemaPrefix, String user)
+     */
+    public static String sqlCreateSchema(String schema, String schemaPrefix, String user) {
+    	return "CREATE SCHEMA " +sqlGetSchema(schema,schemaPrefix)+ " AUTHORIZATION " +user + ";" + "\n" + 
+    	"GRANT ALL ON SCHEMA " + sqlGetSchema(schema,schemaPrefix)+ " TO " + user + ";" + "\n" + 
+    	"GRANT ALL ON SCHEMA " + sqlGetSchema(schema,schemaPrefix)+ " TO public;";
+    }
+    
+    /**
+     * {Category} SQL
+     * {talendType} String
+     * {param} 
+     * {example} sqlGetSchema(String schema, String schemaPrefix)
+     */
+    public static String sqlGetSchema(String schema, String schemaPrefix) {    	
+    	return fixBadTableNames(schemaPrefix + schema.toLowerCase());
+    }
+       
+    
+    
+    
+    ///////////////////////////////////////////////////////////////////////////////
+    ///////////////////////////////////////////////////////////////////////////////
+    ///////////////////////////////////////////////////////////////////////////////
+    ////////////D   E    P     R      E     C     A     T    E   D/////////////////
+    ///////////////////////////////////////////////////////////////////////////////
+    ///////////////////////////////////////////////////////////////////////////////
+    
+    
+    /**
+     * Converts MySQL Types To Greenplum Data Types
+     */
+    public static String mapMySQLToGreenplumTypes(String mySQLTypeName) {
+     
+     String forreturn = TYPE_CONEVERsION_MAP.get(mySQLTypeName.toLowerCase());
+     if(forreturn == null && debugModeOn) {
+       System.out.println("Non-Trapped MySQL Type Name: " + mySQLTypeName + " || Returned Text Type As Catch All");
+     }
+     return forreturn == null ? "text" : forreturn;
+     }
+    
+    
+    /**
+     * Converts Teradata Types To Greenplum Data Types
+     */
+    public static String mapTeradataToGreenplumTypes(String mySQLTypeName) {
+     
+     String forreturn = TYPE_CONEVERsION_MAP.get(mySQLTypeName.toLowerCase());
+     if(forreturn == null && debugModeOn) {
+       System.out.println("Non-Trapped Teradata Type Name: " + mySQLTypeName + " || Returned Text Type As Catch All");
+     }
+     if(forreturn == "character") {
+    	 forreturn = "character varying";
+       }
+     return forreturn == null ? "text" : forreturn;
+     }
+    
+    
+    
+    
+    /**
+     * Converts Oracle Types To Greenplum Data Types
+     */
+    public static String mapOracleToGreenplumTypes(String oracleTypeName) {
+        
+     //"VARCHAR2".equals(row7.ColumnTypeName) ? "character varying" : row7.ColumnTypeName 
+    String forreturn = TYPE_CONEVERsION_MAP.get(oracleTypeName.toLowerCase());
+    if(forreturn.equals("date")){
+    	forreturn = "timestamp without time zone";
+    }
+    if(forreturn.equals("timestamp(6)")){
+    	forreturn = "timestamp(6) with time zone";
+    }
+     if(forreturn == null && debugModeOn) {
+       System.out.println("Non-Trapped Oracle Type Name: " + oracleTypeName + " || Returned Text Type As Catch All");
+     }
+     return forreturn == null ? "text" : forreturn;
+     }
+    
+    
+    public static String mapOracleToHiveTypes(String TypeName) {
+        
+        //"VARCHAR2".equals(row7.ColumnTypeName) ? "character varying" : row7.ColumnTypeName 
+       String forreturn = TYPE_CONEVERsION_MAP_HDFS.get(TypeName.toLowerCase());
+       if(forreturn.equals("date")){
+       	forreturn = "STRING";
+       }
+        if(forreturn == null && debugModeOn) {
+          System.out.println("Non-Trapped Oracle Type Name: " + TypeName + " || Returned Text Type As Catch All");
+        }
+        return forreturn == null ? "STRING" : forreturn;
+        }
+    
+    
+    
+    
+    
+    /**
+     * Converts SQLServer Types To Greenplum Data Types
+     */
+    public static String mapSQLServerToGreenplumTypes(String sqlTypeName,int len,int precision) {
+        
+        //"VARCHAR2".equals(row7.ColumnTypeName) ? "character varying" : row7.ColumnTypeName 
+    	log.debug("mapSQLServerToGreenplumTypes - " + "Started.");
+    	log.debug("mapSQLServerToGreenplumTypes parameters -  type:" + sqlTypeName+" len:"+((Integer)len).toString()+" precision:"+((Integer)precision).toString());
+       String forreturn = TYPE_CONEVERsION_MAP.get(sqlTypeName.toLowerCase().replace(" identity", ""));
+       if (forreturn.equals("timestamp without time zone")){
+     	//   return "text";
+   		}
+	   	if (sqlTypeName.toLowerCase().equals("timestamp")){
+	   		log.debug("mapSQLServerToGreenplumTypes - " + "Result: "+"text");
+	     	   return "text";
+	   	}
+       if (((len > 255) || ( precision > 255 )) && forreturn.equals("character varying")){
+    	   log.debug("mapSQLServerToGreenplumTypes - " + "Result: "+"text");
+   		return "text";	        	
+       } 
+        if(forreturn == null && debugModeOn) {
+        	log.debug("Non-Trapped SQLServer Type Name: " + sqlTypeName + " || Returned Text Type As Catch All");
+        }
+        log.debug("mapSQLServerToGreenplumTypes - " + "Result: "+forreturn == null ? "text" : forreturn);
+        return forreturn == null ? "text" : forreturn;
+        }      
+    
+    /**
+     * Converts AS400 Types To Greenplum Data Types
+     */
+    public static String mapAS400ToGreenplumTypes(String as400TypeName) {
+     
+     String forreturn = TYPE_CONEVERsION_MAP.get(as400TypeName.toLowerCase());
+     if(forreturn == null && debugModeOn) {
+       System.out.println("Non-Trapped AS400 Type Name: " + as400TypeName + " || Returned Text Type As Catch All");
+     }
+     return forreturn == null ? "text" : forreturn;
+     }
+}

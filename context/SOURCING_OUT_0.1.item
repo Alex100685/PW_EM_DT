@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:version="2.0">
+  <talendfile:ContextType confirmationNeeded="false" name="DEV" xmi:id="_hwmSgK7VEeqPrKRBCpnQ3Q">
+    <contextParameter comment="" name="SYSTEM_NAME" prompt="SYSTEM_NAME?" promptNeeded="false" type="id_String" value="gp_out_test" xmi:id="_hwmSga7VEeqPrKRBCpnQ3Q"/>
+    <contextParameter comment="" name="SOURCE_HOST" prompt="SOURCE_HOST?" promptNeeded="false" type="id_String" value="dev-gpclient-pwr.cloud.digital.ge.com" xmi:id="_hwmSgq7VEeqPrKRBCpnQ3Q"/>
+    <contextParameter comment="" name="SOURCE_PORT" prompt="SOURCE_PORT?" promptNeeded="false" type="id_Integer" value="443" xmi:id="_hwmSg67VEeqPrKRBCpnQ3Q"/>
+    <contextParameter comment="" name="SOURCE_USER" prompt="SOURCE_USER?" promptNeeded="false" type="id_String" value="502805859" xmi:id="_hwmShK7VEeqPrKRBCpnQ3Q"/>
+    <contextParameter comment="" name="SOURCE_PASSWORD" prompt="SOURCE_PASSWORD?" promptNeeded="false" type="id_Password" value="oKtf1Z1zRnyFaMuAFFMOpQ==" xmi:id="_hwmSha7VEeqPrKRBCpnQ3Q"/>
+    <contextParameter comment="" name="SOURCE_DATABASE" prompt="SOURCE_DATABASE?" promptNeeded="false" type="id_String" value="pgsdwh" xmi:id="_hwmShq7VEeqPrKRBCpnQ3Q"/>
+    <contextParameter comment="" name="ETL_STORAGE_PATH" prompt="ETL_STORAGE_PATH?" promptNeeded="false" type="id_String" value="/data/staging/g00092/lg428035/POWER_TALEND_FRAMEWORK/edl_outgestion_stage/" xmi:id="_hwmSh67VEeqPrKRBCpnQ3Q"/>
+    <contextParameter comment="" name="ETL_LOCALHOST" prompt="ETL_LOCALHOST?" promptNeeded="false" type="id_String" value="" xmi:id="_hwmSiK7VEeqPrKRBCpnQ3Q"/>
+    <contextParameter comment="" name="JOB_LABEL_NAME" prompt="JOB_LABEL_NAME?" promptNeeded="false" type="id_String" value="" xmi:id="_hwmSia7VEeqPrKRBCpnQ3Q"/>
+    <contextParameter comment="" name="MAIL_TO" prompt="MAIL_TO?" promptNeeded="false" type="id_String" value="" xmi:id="_hwmSiq7VEeqPrKRBCpnQ3Q"/>
+    <contextParameter comment="" name="SEND_MAIL" prompt="SEND_MAIL?" promptNeeded="false" type="id_String" value="N" xmi:id="_hwmSi67VEeqPrKRBCpnQ3Q"/>
+    <contextParameter comment="" name="PRIVATE_KEY" prompt="PRIVATE_KEY?" promptNeeded="false" type="id_Password" value="iNBD90/rUiSha7v2k5tBFi/RJT3gn1j5HcwREjgMkqE+szDSEHb5rvtYk7J5WHpEMiKGNURY6BZ5ANNnMi2276ZJHnMlVPz0KHSzPyUVTTpc/qLELaOGs2QQ2BtO/VSbRMYzwUNLaDqkbB9/qMyeIZU3ovAqmXw59f2ER6A0IGwLeI4IVhTNy5BeoK2bvLsf2gqJUbAt0JBmJ7gHljkZcTiu16MZZ0R1Kk1tNcDyM3Y0xq0LjQ5dHdQU1TtnxXzT7MDBH8tunzYJQji9qbWWTLqoRFQUveQsMFxgb1AKK4O3IU3VcymrENwjBQGH3L/+1+sV+qoBIrcpbMmCZiayWpKyfLu+mwa0L1hurfF4IeNmV/V5uvA3l58zde6uFE+5pOCJzCZ5FgU9Z2rkYRw4La6H8S4MmWI+12fUyb5P3uSdd/geKscA4UU8j72qEMfYkIKyn0EKSpL//VbVq1Vkab+jAMBNuINPugq5aLsyCQn9uGGxhMwq7JphrReCOA5y4tzhRmfipDHzfsYKfZzvrlTMypb2zQgQWYI6epHc5DVIL+EMogyLg3r8UID1fyBIVWHeBBz63c250lc07DW5lyEzWKOvXkOLlqW6G1PUeRoaIEXj/SiKXgWVO0ipV+dUL49q8oxrQU0kwkdd2ktOWnzUEUWdtj5k5Vy/rwHq+Qo8pQ2dt8caxIxA+9Et5mSZavPk/1IBWs7dXy3YT/XiFjLfhX4QZaMlQRDyMrig8e1PZGKZMbG4pI0QDmNhad4sJKuXUmqlcxW/w1EQaA7bLM4eqh2twFYqMXg4vxVBcZHZFQ1lXjlHZE/J8dWFEUwEjRLw72ho8IWPaIynSNrx4i6TcFR1ZtopfEwHAGUyHJQTp1ffu0V48Z8ikyEH4mX6Kas/YeN5La90DSUMFTyHu1M0VcEEz3Lbhq/3fo5skdRPAwaBe/EclAeCOhlKQNQMixFudbu1/DAU6g4wfWABqKCerejwCH25I2DXKcpy6JgHt2FDNGOvMVtAgvXNxhqRPzlYv7du5pxD2pAMAnglHxsndhtkk3caVr2rITk8JBNihb1ujiBXlE8co4JtkOlHG/pewNpsYLqo9fdKp9FhjoRAdGTDsrG53lV0SsHIWxqDdS3j6/oWnGp3dio2ODnIEcC5TB/88QKALN8rAEeaOf83tVRLcWwkgTS9T1W3acT5Ron1oRWZ3wrUlmfsuxoGdf19bPWStEdte/UPnfQGwoWAR642XPaME2Y2gZHQ0om0KznCodF7nsaPWlJNR4XKM9CNptvBwbGD2rmwkhqfVP+V41oyXLymGjbZTj0EnXavo2Cc6HAl1MX+KwAQMwWnJ4G0pt2RfbXql/QOVFS5guqYH1WttOgI/KvjgUTumscNeNAHPHCmflx1YKd5Wu7LLMNwFJdDayQ+rGnQfYS2qXEQ7hfPWaiovWqjuEUXJocE3yaa+xG/ZWiaFHrzeB1sgx00s53Ijft7dThRCOU4nhRLhzW8WEPRb6hAZsCaBftNqhkT3XEMg1REv+Ziebo6aP2dhLK6OcGbTo3SaiUGQuU7PeETsQF5u/X6L4/teakReO1BU5lMhNUgwTI1b7MuL8ym7e8GqM81z0BP3GGcbpkYyKmvAHu8i2SwRbEDplM+cL5z20vHu6/8bzc1W8H1VbAIe+eOh7fJ+9DKT6UOUdA4zOXl9GtVs6yP+CqN5R8YjReHK3JVK7LAfaw6OwbgxXFAcFQXkM8YnoloQBgYQLj7HgjDlujZM2aV5LAPOOuzlGEmjOJou93KVROsLZ33EwptYXiOo9Ijjm5Wsez2GmCq1GBTSUhyfnExctyKm6GTDm1mXJHJUZx9YNUg260pd2XfJho8X6OsEROop+2nZDYQI+pRXleO" xmi:id="_hwmSjK7VEeqPrKRBCpnQ3Q"/>
+    <contextParameter comment="" name="ETL_HOST_USER" prompt="ETL_HOST_USER?" promptNeeded="false" type="id_String" value="" xmi:id="_hwmSja7VEeqPrKRBCpnQ3Q"/>
+    <contextParameter comment="" name="ETL_HOST_PASSWORD" prompt="ETL_HOST_PASSWORD?" promptNeeded="false" type="id_Password" value="" xmi:id="_hwmSjq7VEeqPrKRBCpnQ3Q"/>
+    <contextParameter comment="" name="SOURCE_SCHEMA" prompt="SOURCE_SCHEMA?" promptNeeded="false" type="id_String" value="" xmi:id="_hwmSj67VEeqPrKRBCpnQ3Q"/>
+    <contextParameter comment="" name="ETL_HOST_PORT" prompt="ETL_HOST_PORT?" promptNeeded="false" type="id_Integer" value="22" xmi:id="_hwmSkK7VEeqPrKRBCpnQ3Q"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="PROD" xmi:id="_hwmSka7VEeqPrKRBCpnQ3Q">
+    <contextParameter comment="" name="SYSTEM_NAME" prompt="SYSTEM_NAME?" promptNeeded="false" type="id_String" value="gp_out_test" xmi:id="_hwmSkq7VEeqPrKRBCpnQ3Q"/>
+    <contextParameter comment="" name="SOURCE_HOST" prompt="SOURCE_HOST?" promptNeeded="false" type="id_String" value="gpclient-pwr.cloud.digital.ge.com" xmi:id="_hwmSk67VEeqPrKRBCpnQ3Q"/>
+    <contextParameter comment="" name="SOURCE_PORT" prompt="SOURCE_PORT?" promptNeeded="false" type="id_Integer" value="443" xmi:id="_hwmSlK7VEeqPrKRBCpnQ3Q"/>
+    <contextParameter comment="" name="SOURCE_USER" prompt="SOURCE_USER?" promptNeeded="false" type="id_String" value="502805859" xmi:id="_hwmSla7VEeqPrKRBCpnQ3Q"/>
+    <contextParameter comment="" name="SOURCE_PASSWORD" prompt="SOURCE_PASSWORD?" promptNeeded="false" type="id_Password" value="oKtf1Z1zRnyFaMuAFFMOpQ==" xmi:id="_hwmSlq7VEeqPrKRBCpnQ3Q"/>
+    <contextParameter comment="" name="SOURCE_DATABASE" prompt="SOURCE_DATABASE?" promptNeeded="false" type="id_String" value="pgsdwh" xmi:id="_hwmSl67VEeqPrKRBCpnQ3Q"/>
+    <contextParameter comment="" name="ETL_STORAGE_PATH" prompt="ETL_STORAGE_PATH?" promptNeeded="false" type="id_String" value="/data/staging/g00092/lg428035/POWER_TALEND_FRAMEWORK/edl_outgestion/" xmi:id="_hwmSmK7VEeqPrKRBCpnQ3Q"/>
+    <contextParameter comment="" name="ETL_LOCALHOST" prompt="ETL_LOCALHOST?" promptNeeded="false" type="id_String" value="" xmi:id="_hwmSma7VEeqPrKRBCpnQ3Q"/>
+    <contextParameter comment="" name="JOB_LABEL_NAME" prompt="JOB_LABEL_NAME?" promptNeeded="false" type="id_String" value="" xmi:id="_hwmSmq7VEeqPrKRBCpnQ3Q"/>
+    <contextParameter comment="" name="MAIL_TO" prompt="MAIL_TO?" promptNeeded="false" type="id_String" value="" xmi:id="_hwmSm67VEeqPrKRBCpnQ3Q"/>
+    <contextParameter comment="" name="SEND_MAIL" prompt="SEND_MAIL?" promptNeeded="false" type="id_String" value="N" xmi:id="_hwmSnK7VEeqPrKRBCpnQ3Q"/>
+    <contextParameter comment="" name="PRIVATE_KEY" prompt="PRIVATE_KEY?" promptNeeded="false" type="id_Password" value="iNBD90/rUiSha7v2k5tBFi/RJT3gn1j5HcwREjgMkqE+szDSEHb5rvtYk7J5WHpEMiKGNURY6BZ5ANNnMi2276ZJHnMlVPz0KHSzPyUVTTpc/qLELaOGs2QQ2BtO/VSbRMYzwUNLaDqkbB9/qMyeIZU3ovAqmXw59f2ER6A0IGwLeI4IVhTNy5BeoK2bvLsf2gqJUbAt0JBmJ7gHljkZcTiu16MZZ0R1Kk1tNcDyM3Y0xq0LjQ5dHdQU1TtnxXzT7MDBH8tunzYJQji9qbWWTLqoRFQUveQsMFxgb1AKK4O3IU3VcymrENwjBQGH3L/+1+sV+qoBIrcpbMmCZiayWpKyfLu+mwa0L1hurfF4IeNmV/V5uvA3l58zde6uFE+5pOCJzCZ5FgU9Z2rkYRw4La6H8S4MmWI+12fUyb5P3uSdd/geKscA4UU8j72qEMfYkIKyn0EKSpL//VbVq1Vkab+jAMBNuINPugq5aLsyCQn9uGGxhMwq7JphrReCOA5y4tzhRmfipDHzfsYKfZzvrlTMypb2zQgQWYI6epHc5DVIL+EMogyLg3r8UID1fyBIVWHeBBz63c250lc07DW5lyEzWKOvXkOLlqW6G1PUeRoaIEXj/SiKXgWVO0ipV+dUL49q8oxrQU0kwkdd2ktOWnzUEUWdtj5k5Vy/rwHq+Qo8pQ2dt8caxIxA+9Et5mSZavPk/1IBWs7dXy3YT/XiFjLfhX4QZaMlQRDyMrig8e1PZGKZMbG4pI0QDmNhad4sJKuXUmqlcxW/w1EQaA7bLM4eqh2twFYqMXg4vxVBcZHZFQ1lXjlHZE/J8dWFEUwEjRLw72ho8IWPaIynSNrx4i6TcFR1ZtopfEwHAGUyHJQTp1ffu0V48Z8ikyEH4mX6Kas/YeN5La90DSUMFTyHu1M0VcEEz3Lbhq/3fo5skdRPAwaBe/EclAeCOhlKQNQMixFudbu1/DAU6g4wfWABqKCerejwCH25I2DXKcpy6JgHt2FDNGOvMVtAgvXNxhqRPzlYv7du5pxD2pAMAnglHxsndhtkk3caVr2rITk8JBNihb1ujiBXlE8co4JtkOlHG/pewNpsYLqo9fdKp9FhjoRAdGTDsrG53lV0SsHIWxqDdS3j6/oWnGp3dio2ODnIEcC5TB/88QKALN8rAEeaOf83tVRLcWwkgTS9T1W3acT5Ron1oRWZ3wrUlmfsuxoGdf19bPWStEdte/UPnfQGwoWAR642XPaME2Y2gZHQ0om0KznCodF7nsaPWlJNR4XKM9CNptvBwbGD2rmwkhqfVP+V41oyXLymGjbZTj0EnXavo2Cc6HAl1MX+KwAQMwWnJ4G0pt2RfbXql/QOVFS5guqYH1WttOgI/KvjgUTumscNeNAHPHCmflx1YKd5Wu7LLMNwFJdDayQ+rGnQfYS2qXEQ7hfPWaiovWqjuEUXJocE3yaa+xG/ZWiaFHrzeB1sgx00s53Ijft7dThRCOU4nhRLhzW8WEPRb6hAZsCaBftNqhkT3XEMg1REv+Ziebo6aP2dhLK6OcGbTo3SaiUGQuU7PeETsQF5u/X6L4/teakReO1BU5lMhNUgwTI1b7MuL8ym7e8GqM81z0BP3GGcbpkYyKmvAHu8i2SwRbEDplM+cL5z20vHu6/8bzc1W8H1VbAIe+eOh7fJ+9DKT6UOUdA4zOXl9GtVs6yP+CqN5R8YjReHK3JVK7LAfaw6OwbgxXFAcFQXkM8YnoloQBgYQLj7HgjDlujZM2aV5LAPOOuzlGEmjOJou93KVROsLZ33EwptYXiOo9Ijjm5Wsez2GmCq1GBTSUhyfnExctyKm6GTDm1mXJHJUZx9YNUg260pd2XfJho8X6OsEROop+2nZDYQI+pRXleO" xmi:id="_hwmSna7VEeqPrKRBCpnQ3Q"/>
+    <contextParameter comment="" name="ETL_HOST_USER" prompt="ETL_HOST_USER?" promptNeeded="false" type="id_String" value="" xmi:id="_hwmSnq7VEeqPrKRBCpnQ3Q"/>
+    <contextParameter comment="" name="ETL_HOST_PASSWORD" prompt="ETL_HOST_PASSWORD?" promptNeeded="false" type="id_Password" value="" xmi:id="_hwmSn67VEeqPrKRBCpnQ3Q"/>
+    <contextParameter comment="" name="SOURCE_SCHEMA" prompt="SOURCE_SCHEMA?" promptNeeded="false" type="id_String" value="" xmi:id="_hwmSoK7VEeqPrKRBCpnQ3Q"/>
+    <contextParameter comment="" name="ETL_HOST_PORT" prompt="ETL_HOST_PORT?" promptNeeded="false" type="id_Integer" value="22" xmi:id="_hwmSoa7VEeqPrKRBCpnQ3Q"/>
+  </talendfile:ContextType>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_0fd55560-66fe-48a1-805a-91d38d4e2a22"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>e2Nm+zYisl4QcKnj+s/RU98vgXClF0Y2vVV51YEtce4vCY0TOEQp2S3MvCZiFqDQv0BI3nP8/Sqp
+UN3tkJmfIw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_b4fc1a02-ce09-430b-8306-70478a5f33d1"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>6VwJ4naXXQNSgZPmdT25Hz+HTmaIAZl0u9EP1qEhmjtpTJgy0R2SbOmstVY448cHLpLRiQeesTsT
+UTem1Gh9hQ==</DigestValue></Reference></SignedInfo><SignatureValue>pN2X056ixgyFc6+BXoL6vEY2Qg6ozK87iyBa3QBMQO7Xvnzsjw5//E6qe8u3kuoR9IXHWoKSHrlH
+pmsYk+DsKUHGvOFUCAVeimMW/oUZULhjW5YBgzKFGw7t9mfr0Bn/3ESVTrwCKAuTVLBHpBnCaDLJ
+C5BBXCmF+EBakbzx2XbegLWq3uLttJavlRwrBRsubadZ2n8rCcR1tZuFgbP2X3R/1ss4ZXg/gVD7
+F5rSqfivggJ8/mZLa8XzPyYVqE5gJIumGxqEmc2dqigRaOuVB+cKS6bwfzm24Ep4kPYKDWLKG3f9
+ZTijG3sVO5Dvu8uLKmhS6Vbpr45emTDvgALzMg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_b4fc1a02-ce09-430b-8306-70478a5f33d1" Target="#_0fd55560-66fe-48a1-805a-91d38d4e2a22"><Timestamp>2020-06-15 06:57:50</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>

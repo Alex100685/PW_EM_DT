@@ -1,0 +1,195 @@
+package routines;
+
+import java.io.BufferedReader;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.net.URL;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Calendar;
+
+
+public class Copy_of_PageScraper {
+	
+	public void Scrape() throws IOException, StringIndexOutOfBoundsException{
+		//define where the file should be output and open a FileWriter at that location
+	  	String outputLocation = "/data/files/INSTALL_BASE/OPERATIONAL_UK/BMReports/physicaldata_output.csv";
+	  	FileWriter fileWriter = new FileWriter(outputLocation);
+	  		
+	  	//define an error log showing which units had errors for which dates
+	  	String errorLocation ="/data/files/INSTALL_BASE/OPERATIONAL_UK/BMReports/physicaldata_error.csv";
+	  	FileWriter errorWriter = new FileWriter(errorLocation);
+	  	
+	  	//create a string to store which units had errors so they can be retried 
+		String errorString = null;
+			
+		//import the list of units that will be queried for 
+		String csvList = "T_ABTH7,T_ABTH7G,T_ABTH8,T_ABTH8G,T_ABTH9,T_ABTH9G,T_ABTHD,T_ANGLD-1,T_ANSUW-1,T_ARCHW-1,T_BAGE-1,T_BAGE-2,T_BAGED-1,T_BAGTD-1,T_BARK-1,T_BARK-CTRL,T_BARKB2,T_BARK_NR,T_BLLA-1,T_BOWLW-1,T_BPGRD-1,T_BPGRD-2,T_BRER_RTK,T_BRWE-1,T_BRWE-2,T_BRWE-3,T_BRWE-4,T_BRWE-5,T_BRWE-6,T_BRWE-D,T_BUSH_RTK,T_CARR-1,T_CARR-2,T_CASKD-1,T_CDCL-1,T_CHAPD-1,T_CLACD-1,T_CLCDW-1,T_CLDNW-1,T_CLDSW-1,T_CNQPS-1,T_CNQPS-2,T_CNQPS-3,T_CNQPS-4,T_COCK-1,T_COCK-2,T_COCK-3,T_COCK-4,T_COCKD-1,T_CORM_RTK,T_COSO-1,T_COTPS-1,T_COTPS-2,T_COTPS-3,T_COTPS-4,T_COTPS-S,T_CRGHD-1,T_CRGHW-1,T_CRUA-1,T_CRUA-2,T_CRUA-3,T_CRUA-4,T_CRUAD-1,T_CRYRD-2,T_CRYRW-2,T_DALRD-1,T_DAMC-1,T_DEAND-1,T_DEEP-1,T_DIDC1,T_DIDC1G,T_DIDC2,T_DIDC2G,T_DIDC3,T_DIDC3G,T_DIDC4,T_DIDC4G,T_DIDCB5,T_DIDCB6,T_DIDCBD,T_DINO-1,T_DINO-2,T_DINO-3,T_DINO-4,T_DINO-5,T_DINO-6,T_DNGB-D,T_DNGB21,T_DNGB22,T_DNLWW-1,T_DRAXX-1,T_DRAXX-10G,T_DRAXX-12G,T_DRAXX-2,T_DRAXX-3,T_DRAXX-4,T_DRAXX-5,T_DRAXX-6,T_DRAXX-9G,T_DRKPS-10,T_DRKPS-12,T_DRKPS-9,T_DUNG-1,T_DUNG-2,T_DUNG-3,T_DUNG-4,T_DUNGA-D,T_ECCFD-1,T_EDINW-1,T_EECL-1,T_EGGPS-1,T_EGGPS-2,T_EGGPS-3,T_EGGPS-4,T_EGGPS-D,T_EGLSD-1,T_ELSTR-1,T_ELVAD-1,T_ERRO-1,T_ERRO-2,T_ERRO-3,T_EXMOSSD-1,T_FALGD-1,T_FALGW-1,T_FARR-1,T_FARR-2,T_FASN-1,T_FASN-2,T_FASN-3,T_FAWL1,T_FAWL1G,T_FAWL2G,T_FAWL3,T_FAWL3G,T_FAWL4,T_FAWL4G,T_FAWLD,T_FERR-1,T_FERR-2,T_FERR-3,T_FERR-4,T_FERR-5G,T_FERR-8G,T_FFES-1,T_FFES-2,T_FFES-3,T_FFES-4,T_FFESST1,T_FFESST3,T_FIDL-1,T_FIDL-2,T_FIDL-2G,T_FIDL-3,T_FIDL-3G,T_FIDL-4,T_FIDLST1,T_FIDLST2,T_FIFE-1,T_FIFO-13,T_FIFO-14,T_FIFO-15,T_FINL-1,T_FOXJD-1,T_FOXJD-2,T_FOYE-1,T_FOYE-2,T_FOYED-1,T_FROD_NR,T_GLEND-1,T_GLNDO-1,T_GLNDOD1,T_GLNG,T_GNFSW-1,T_GNFSW-2,T_GORDD-1,T_GORDW-1,T_GOWKD-1,T_GRAI-1,T_GRAI-2,T_GRAI-3,T_GRAI-4,T_GRAI-6,T_GRAI-7,T_GRAI-8,T_GRAI-S,T_GRAI1G,T_GRAI2G,T_GRAI3G,T_GRAI4G,T_GRAI5G,T_GRGBW-1,T_GRGBW-2,T_GRGBW-3,T_GRIFW-1,T_GRIFW-2,T_GRIFWD-1,T_GRMO-1,T_GYMR-15,T_GYMR-17,T_GYMR-26,T_GYMR-28,T_GYMRD-16,T_GYMRD-2,T_GYMRD-E10,T_GYMRD-E11,T_GYMRD-W10,T_GYMRD-W11,T_GYMRW-1,T_GYMRW-2,T_HADHW-1,T_HARK_NR,T_HEYM11,T_HEYM12,T_HEYM2-D,T_HEYM27,T_HEYM28,T_HINB-7,T_HINB-8,T_HINB-D,T_HINPA-D,T_HMGTO-1,T_HMGTO-2,T_HMRPS-1,T_HMRPS-2,T_HMRPS-3,T_HMRPS-4,T_HMRPS-5,T_HMRPS-STX,T_HRSTW-1,T_HRTL-1,T_HRTL-2,T_HUMR-1,T_HUMRD-1,T_HUNB-7,T_HUNB-8,T_HUNB-D,T_INDQ-1,T_INGAD-1,T_INWID-1,T_IRNPS-1,T_IRNPS-2,T_KEAD-1,T_KEADGT-3,T_KILBW-1,T_KILBWD-1,T_KILLPG-1,T_KILLPG-2,T_KILNS-1,T_KINO-1,T_KINO-2,T_KINO-3,T_KINO-4,T_KINO1G,T_KINO4G,T_LAGA-1,T_LARYW-1,T_LARYW-2,T_LARYW-3,T_LARYW-4,T_LBAR-1,T_LBAR-1G,T_LBARD,T_LBUZ_RTK,T_LCLTW-1,T_LITTD1,T_LITTD1G,T_LITTD2,T_LITTD2G,T_LITTD3,T_LITTD3G,T_LITTDD,T_LLWSD-1,T_LNCSW-1,T_LNCSW-2,T_LNCSW-3,T_LOAN-1,T_LOAN-2,T_LOAN-3,T_LOAN-4,T_LOAND-1,T_LOAND-2,T_LONGB-RTK,T_LUICD-1,T_MARMD-1,T_MEADD-1,T_MEDP-1,T_MILWW-1,T_MILWWD-1,T_MKHLW-1,T_MOSED-1,T_MRWD-1,T_NANT-1,T_NEE-TYN01,T_OLDS-D,T_OLDS1,T_OLDS2,T_OMNDD-1,T_OMNDW-1,T_OXEN_NR,T_PARHD-1,T_PATB_RTK,T_PEHE-1,T_PEHE-2,T_PEHE-3G,T_PEHE-4G,T_PEHED-1,T_PEMB-11,T_PEMB-21,T_PEMB-31,T_PEMB-41,T_PEMB-51,T_POOBD-1,T_POPP_3RTK,T_PORGD-1,T_RATS-1,T_RATS-2,T_RATS-3,T_RATS-4,T_RATSGT-2,T_RATSGT-4,T_RAVED-1,T_ROCK-1,T_RREW-1,T_RRWW-1,T_RUGGT-6,T_RUGGT-7,T_RUGPS-6,T_RUGPS-7,T_RYHPS-1,T_SACOD-1,T_SCCL-1,T_SCCL-2,T_SCCL-3,T_SCCL-4,T_SEAB-1,T_SEAB-2,T_SELL-1,T_SFGSD-1,T_SFGSD-2,T_SFILD-1,T_SHBA-1,T_SHBA-2,T_SHRSW-1,T_SHRSW-2,T_SINGL1,T_SIZB-1,T_SIZB-2,T_SIZB-5AS,T_SIZB-D,T_SIZEA-D,T_SIZEA1,T_SIZEA2,T_SLOY-2,T_SLOY-3,T_SLOYD-1,T_SPLN-1,T_STAY-1,T_STAY-2,T_STAY-3,T_STAY-4,T_STFERGD-1,T_STRNW-1,T_SUTB-1,T_SVRP-10,T_SVRP-20,T_TDBNW-1,T_TESI-1,T_TESI-2,T_THNTO-1,T_THNTO-2,T_TILB-7,T_TILB-8,T_TILB-9,T_TILB0G,T_TILB10,T_TILB7G,T_TILB8G,T_TILB9G,T_TILBD,T_TINSD-1,T_TODSD-1,T_TORN-1,T_TORN-2,T_TORN-D,T_TRAWS-D,T_USKM-13,T_USKM-14,T_USKM-15,T_WBUGT-1,T_WBUGT-4,T_WBUPS-1,T_WBUPS-2,T_WBUPS-3,T_WBUPS-4,T_WBURB-1,T_WBURB-2,T_WBURB-3,T_WDNSO-1,T_WDNSO-2,T_WDNSW-1,T_WDNSW-2,T_WHILW-1,T_WHILW-2,T_WHISTLD-1,T_WILCT-1,T_WLNYO-2,T_WLNYW-1,T_WTMSD-1,T_WTMSO-1,T_WYLF-1,T_WYLF-2,T_WYLF-3,T_WYLF-4,T_WYLF-D1,T_WYLF-D2,T_WYLF-D3,T__DICI001,T__DICI002,T__HYELT002,T__KYELT003,T__MYELT001,T__MYELT004";
+		ArrayList<String> unitList = new ArrayList<String>(Arrays.asList(csvList.split(",")));
+		
+		
+//loop through all of the units in the UnitArray to be queried
+	    
+		for (int i = 0; i < unitList.size(); i++)
+			{
+			
+			int x = 1;
+			
+			//loop through the last Y number of days (set x < the # of days you need to loop through) 
+			while (x < 2){
+				
+				
+				//get the current date and format it the way it needs to be input on the BM website
+				DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+				Calendar cal = Calendar.getInstance();
+				
+				
+				//get the proper date for the current loop position and convert it to a string value
+				cal.add(Calendar.DAY_OF_MONTH, -x);
+				String dateValue = dateFormat.format(cal.getTime());
+				System.out.println(dateValue + " " + unitList.get(i));
+				
+				try {
+					//get the page source using the unit and date as parameters 
+					URL oracle = new URL("http://www.bmreports.com/servlet/com.logica.neta.bwp_PanBMDataServlet?param1="+unitList.get(i)+"&param2=&param3=&param4=&param5="+dateValue+"&param6=*");
+					
+					BufferedReader in = new BufferedReader(
+					new InputStreamReader(oracle.openStream()));
+		
+					String inputLine;
+		            StringBuilder a = new StringBuilder();
+		            while ((inputLine = in.readLine()) != null)
+		                a.append(inputLine);
+		            in.close();
+		
+		            String pageSource = a.toString();
+							
+			        // Find where the CSV variable is declared and ends in the page
+					int firstIndex = pageSource.indexOf("csv=") + 38;
+			        int secondIndex = pageSource.indexOf("n\"") + 1;
+			        
+			        
+			        //pull the data from the CSV variable on the page and append it to the CSV output file
+					String csvData = pageSource.substring(firstIndex, secondIndex);
+					//convert the \n text string in the page to a proper line break 
+					csvData = csvData.replaceAll("\\\\n", System.getProperty("line.separator"));
+			  		fileWriter.append(csvData);} 
+				
+				
+				//create a list with any units that encounter errors, so they can be re-tried later 
+				
+				catch (IOException e){
+					//if errorString is null (i.e. this is the first unit with an error), just add the current unit
+			  		if (errorString == null) {
+			  			errorString += unitList.get(i);
+			  		}
+			  		
+			  		//if it is not null (i.e. this isn't the first error), add a comma and the current unit 
+			  		else{
+		  			errorString += "," + unitList.get(i);
+		  			x++;
+			  		continue;
+					}
+			  		
+				}
+				
+				catch (StringIndexOutOfBoundsException e){
+					
+					if (errorString == null) {
+			  			errorString += unitList.get(i);
+			  		}
+			  		
+			  		else{
+			  		System.out.println(errorString);
+					errorString += "," + unitList.get(i);
+					x++;
+			  		continue;
+			  		}
+				}
+				
+				//continue the while loop
+				x++;   		      
+			}
+			}
+		
+		//loop a second time through the list of units that had errors above to hopefully capture the data this time
+		if(errorString != null){
+		ArrayList<String> errorList = new ArrayList<String>(Arrays.asList(errorString.split(",")));
+		
+		for (int i = 0; i < errorList.size(); i++)
+		{
+		
+			int x = 1;
+			
+			//loop through the current and last 365 days for the current unit
+			while (x < 365){
+				
+				
+				//get the current date and format it the way it needs to be input on the BM website
+				DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+				Calendar cal = Calendar.getInstance();
+				
+				
+				//get the proper date for the current loop position and convert it to a string value
+				cal.add(Calendar.DAY_OF_MONTH, -x);
+				String dateValue = dateFormat.format(cal.getTime());
+				System.out.println(dateValue + " " + errorList.get(i) + " " + i);
+				
+				try {
+					
+					//get the page source using the unit and date as parameters 
+					URL oracle = new URL("http://www.bmreports.com/servlet/com.logica.neta.bwp_PanBodServlet?param1="+errorList.get(i)+"&param2=&param3=&param4=&param5="+dateValue+"&param6=*");
+					
+					BufferedReader in = new BufferedReader(
+					new InputStreamReader(oracle.openStream()));
+		
+					String inputLine;
+		            StringBuilder a = new StringBuilder();
+		            while ((inputLine = in.readLine()) != null)
+		                a.append(inputLine);
+		            in.close();
+		
+		            String pageSource = a.toString();
+							
+			        // Find where the CSV variable is declared and ends in the page
+					int firstIndex = pageSource.indexOf("csv=") + 38;
+			        int secondIndex = pageSource.indexOf("n\"") + 1;
+			        
+			        
+			        //pull the data from the CSV variable on the page and append it to the CSV output file
+					String csvData = pageSource.substring(firstIndex, secondIndex);
+					//convert the \n text string in the page to a proper line break 
+					csvData = csvData.replaceAll("\\\\n", System.getProperty("line.separator"));
+			  		fileWriter.append(csvData);} 
+			
+			catch (IOException e){
+				errorWriter.append(dateValue + "," + errorList.get(i) + System.getProperty("line.separator"));
+				x++;
+				}
+			
+			catch (StringIndexOutOfBoundsException e){
+				errorWriter.append(dateValue + "," + errorList.get(i) + System.getProperty("line.separator"));
+				x++;
+			}
+				
+				x++;
+			
+		}
+		}
+		
+		//close the fileWriter 
+				fileWriter.close();
+				errorWriter.close();
+		
+		
+		
+		
+			
+		}
+	
+	
+	}
+}

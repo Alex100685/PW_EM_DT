@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:version="2.0">
+  <talendfile:ContextType confirmationNeeded="false" name="Default" xmi:id="_XozlYJywEemzYMLWqZgjZw">
+    <contextParameter comment="" name="GP_EM_HR_Connection_Database" prompt="GP_EM_HR_Connection_Database?" promptNeeded="false" type="id_String" value="" xmi:id="_XozlYZywEemzYMLWqZgjZw"/>
+    <contextParameter comment="" name="GP_EM_HR_Connection_Login" prompt="GP_EM_HR_Connection_Login?" promptNeeded="false" type="id_String" value="" xmi:id="_XozlYpywEemzYMLWqZgjZw"/>
+    <contextParameter comment="" name="GP_EM_HR_Connection_Password" prompt="GP_EM_HR_Connection_Password?" promptNeeded="false" type="id_Password" value="" xmi:id="_XozlY5ywEemzYMLWqZgjZw"/>
+    <contextParameter comment="" name="GP_EM_HR_Connection_Port" prompt="GP_EM_HR_Connection_Port?" promptNeeded="false" type="id_String" value="" xmi:id="_XozlZJywEemzYMLWqZgjZw"/>
+    <contextParameter comment="" name="GP_EM_HR_Connection_Schema" prompt="GP_EM_HR_Connection_Schema?" promptNeeded="false" type="id_String" value="" xmi:id="_XozlZZywEemzYMLWqZgjZw"/>
+    <contextParameter comment="" name="GP_EM_HR_Connection_Server" prompt="GP_EM_HR_Connection_Server?" promptNeeded="false" type="id_String" value="" xmi:id="_XozlZpywEemzYMLWqZgjZw"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="DEV" xmi:id="_XozlZ5ywEemzYMLWqZgjZw">
+    <contextParameter comment="" name="GP_EM_HR_Connection_Database" prompt="GP_EM_HR_Connection_Database?" promptNeeded="false" type="id_String" value="pgsdwh" xmi:id="_XozlaJywEemzYMLWqZgjZw"/>
+    <contextParameter comment="" name="GP_EM_HR_Connection_Login" prompt="GP_EM_HR_Connection_Login?" promptNeeded="false" type="id_String" value="502800685" xmi:id="_XozlaZywEemzYMLWqZgjZw"/>
+    <contextParameter comment="" name="GP_EM_HR_Connection_Password" prompt="GP_EM_HR_Connection_Password?" promptNeeded="false" type="id_Password" value="h8rQeY7+bNUAUOvtFYBJ6g==" xmi:id="_XozlapywEemzYMLWqZgjZw"/>
+    <contextParameter comment="" name="GP_EM_HR_Connection_Port" prompt="GP_EM_HR_Connection_Port?" promptNeeded="false" type="id_String" value="5432" xmi:id="_Xozla5ywEemzYMLWqZgjZw"/>
+    <contextParameter comment="" name="GP_EM_HR_Connection_Schema" prompt="GP_EM_HR_Connection_Schema?" promptNeeded="false" type="id_String" value="stg_hr" xmi:id="_XozlbJywEemzYMLWqZgjZw"/>
+    <contextParameter comment="" name="GP_EM_HR_Connection_Server" prompt="GP_EM_HR_Connection_Server?" promptNeeded="false" type="id_String" value="dev-9ha.cloud.digital.ge.com" xmi:id="_XozlbZywEemzYMLWqZgjZw"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="PROD" xmi:id="_XozlbpywEemzYMLWqZgjZw">
+    <contextParameter comment="" name="GP_EM_HR_Connection_Database" prompt="GP_EM_HR_Connection_Database?" promptNeeded="false" type="id_String" value="pgsdwh" xmi:id="_Xozlb5ywEemzYMLWqZgjZw"/>
+    <contextParameter comment="" name="GP_EM_HR_Connection_Login" prompt="GP_EM_HR_Connection_Login?" promptNeeded="false" type="id_String" value="502800685" xmi:id="_XozlcJywEemzYMLWqZgjZw"/>
+    <contextParameter comment="" name="GP_EM_HR_Connection_Password" prompt="GP_EM_HR_Connection_Password?" promptNeeded="false" type="id_Password" value="h8rQeY7+bNUAUOvtFYBJ6g==" xmi:id="_XozlcZywEemzYMLWqZgjZw"/>
+    <contextParameter comment="" name="GP_EM_HR_Connection_Port" prompt="GP_EM_HR_Connection_Port?" promptNeeded="false" type="id_String" value="5432" xmi:id="_XozlcpywEemzYMLWqZgjZw"/>
+    <contextParameter comment="" name="GP_EM_HR_Connection_Schema" prompt="GP_EM_HR_Connection_Schema?" promptNeeded="false" type="id_String" value="stg_hr" xmi:id="_Xozlc5ywEemzYMLWqZgjZw"/>
+    <contextParameter comment="" name="GP_EM_HR_Connection_Server" prompt="GP_EM_HR_Connection_Server?" promptNeeded="false" type="id_String" value="9ha.cloud.digital.ge.com" xmi:id="_XozldJywEemzYMLWqZgjZw"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="QA" xmi:id="_XozldZywEemzYMLWqZgjZw">
+    <contextParameter comment="" name="GP_EM_HR_Connection_Database" prompt="GP_EM_HR_Connection_Database?" promptNeeded="false" type="id_String" value="" xmi:id="_XozldpywEemzYMLWqZgjZw"/>
+    <contextParameter comment="" name="GP_EM_HR_Connection_Login" prompt="GP_EM_HR_Connection_Login?" promptNeeded="false" type="id_String" value="" xmi:id="_Xozld5ywEemzYMLWqZgjZw"/>
+    <contextParameter comment="" name="GP_EM_HR_Connection_Password" prompt="GP_EM_HR_Connection_Password?" promptNeeded="false" type="id_Password" value="" xmi:id="_XozleJywEemzYMLWqZgjZw"/>
+    <contextParameter comment="" name="GP_EM_HR_Connection_Port" prompt="GP_EM_HR_Connection_Port?" promptNeeded="false" type="id_String" value="" xmi:id="_XozleZywEemzYMLWqZgjZw"/>
+    <contextParameter comment="" name="GP_EM_HR_Connection_Schema" prompt="GP_EM_HR_Connection_Schema?" promptNeeded="false" type="id_String" value="" xmi:id="_XozlepywEemzYMLWqZgjZw"/>
+    <contextParameter comment="" name="GP_EM_HR_Connection_Server" prompt="GP_EM_HR_Connection_Server?" promptNeeded="false" type="id_String" value="" xmi:id="_Xozle5ywEemzYMLWqZgjZw"/>
+  </talendfile:ContextType>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_7723aa84-cc17-4018-afe7-d7cc3bafcde0"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>yZyGggLVt8lNFBXd5Ed+kLl6U7JjV0VUpPa53vc1MfzfDclhg4UiMUDVlCN2a0QS5LHM5sDE8Ctu&#13;
+WLhv9/uq9g==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_b5f00b7c-ccaa-4bed-aea8-ff744a2d14ca"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>PMmPGpcJYuWDZWsCs4uPLbdyz2vPnQfU3qOpPVm++6bz+xgPHHDVUIAvMSX1vD0s1wepRGJ7siCp&#13;
+m0XtzdziSg==</DigestValue></Reference></SignedInfo><SignatureValue>WsstDzz4OS/iREIx3Vn6vljRgv2w0oItHGT2rCksTWTSL6NcxjsvQR8+TlezCLHkWrc4vMxdYKw7&#13;
+CUfeTl6SrcwZJSbnJu3ZZa9ae4WpihmKa2Qi5xlgyR/8Ck/niSDi2wZ19Fs0almJ9ygqfQ5ecx8s&#13;
+oG610rEYzHhj/mhBEwRVnQvGuS67P88aXUiB3ifc0aoVyRep1zlQ7ERtrzzlLSgCKm3YPF97Xuk1&#13;
+Jf1HCkjCHC9JMQ5JU+9IitgMOmSDSS2b0I+tut/4Ve/MIt1Ut56tkgPj7ShcswbHXgOfqpKe2MNu&#13;
+WAZZ+f75fh/i3/uIX749G/KKn3yICcWCVlOY6Q==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_b5f00b7c-ccaa-4bed-aea8-ff744a2d14ca" Target="#_7723aa84-cc17-4018-afe7-d7cc3bafcde0"><Timestamp>2020-04-22 08:18:03</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>

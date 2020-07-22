@@ -1,0 +1,601 @@
+/**
+ * Outages.java
+ *
+ * This file was auto-generated from WSDL
+ * by the Apache Axis 1.4 Apr 22, 2006 (06:55:48 PDT) WSDL2Java emitter.
+ */
+
+package routines;
+
+public class Outages  implements java.io.Serializable {
+    private java.lang.String actualEndDate;
+
+    private java.lang.String actualStartDate;
+
+    private java.lang.String customerName;
+
+    private java.lang.String EAMEventNumber;
+
+    private java.lang.String EAMProjectNumber;
+
+    private java.lang.String eventName;
+
+    private java.lang.String eventState;
+
+    private java.lang.String notes;
+
+    private java.lang.String outageSummary;
+
+    private java.lang.String outageType;
+
+    private java.lang.String scheduledEndDate;
+
+    private java.lang.String scheduledStartDate;
+
+    private java.lang.String siteName;
+
+    private java.lang.String turbineSerialNumber;
+
+    public Outages() {
+    }
+
+    public Outages(
+           java.lang.String actualEndDate,
+           java.lang.String actualStartDate,
+           java.lang.String customerName,
+           java.lang.String EAMEventNumber,
+           java.lang.String EAMProjectNumber,
+           java.lang.String eventName,
+           java.lang.String eventState,
+           java.lang.String notes,
+           java.lang.String outageSummary,
+           java.lang.String outageType,
+           java.lang.String scheduledEndDate,
+           java.lang.String scheduledStartDate,
+           java.lang.String siteName,
+           java.lang.String turbineSerialNumber) {
+           this.actualEndDate = actualEndDate;
+           this.actualStartDate = actualStartDate;
+           this.customerName = customerName;
+           this.EAMEventNumber = EAMEventNumber;
+           this.EAMProjectNumber = EAMProjectNumber;
+           this.eventName = eventName;
+           this.eventState = eventState;
+           this.notes = notes;
+           this.outageSummary = outageSummary;
+           this.outageType = outageType;
+           this.scheduledEndDate = scheduledEndDate;
+           this.scheduledStartDate = scheduledStartDate;
+           this.siteName = siteName;
+           this.turbineSerialNumber = turbineSerialNumber;
+    }
+
+
+    /**
+     * Gets the actualEndDate value for this Outages.
+     * 
+     * @return actualEndDate
+     */
+    public java.lang.String getActualEndDate() {
+        return actualEndDate;
+    }
+
+
+    /**
+     * Sets the actualEndDate value for this Outages.
+     * 
+     * @param actualEndDate
+     */
+    public void setActualEndDate(java.lang.String actualEndDate) {
+        this.actualEndDate = actualEndDate;
+    }
+
+
+    /**
+     * Gets the actualStartDate value for this Outages.
+     * 
+     * @return actualStartDate
+     */
+    public java.lang.String getActualStartDate() {
+        return actualStartDate;
+    }
+
+
+    /**
+     * Sets the actualStartDate value for this Outages.
+     * 
+     * @param actualStartDate
+     */
+    public void setActualStartDate(java.lang.String actualStartDate) {
+        this.actualStartDate = actualStartDate;
+    }
+
+
+    /**
+     * Gets the customerName value for this Outages.
+     * 
+     * @return customerName
+     */
+    public java.lang.String getCustomerName() {
+        return customerName;
+    }
+
+
+    /**
+     * Sets the customerName value for this Outages.
+     * 
+     * @param customerName
+     */
+    public void setCustomerName(java.lang.String customerName) {
+        this.customerName = customerName;
+    }
+
+
+    /**
+     * Gets the EAMEventNumber value for this Outages.
+     * 
+     * @return EAMEventNumber
+     */
+    public java.lang.String getEAMEventNumber() {
+        return EAMEventNumber;
+    }
+
+
+    /**
+     * Sets the EAMEventNumber value for this Outages.
+     * 
+     * @param EAMEventNumber
+     */
+    public void setEAMEventNumber(java.lang.String EAMEventNumber) {
+        this.EAMEventNumber = EAMEventNumber;
+    }
+
+
+    /**
+     * Gets the EAMProjectNumber value for this Outages.
+     * 
+     * @return EAMProjectNumber
+     */
+    public java.lang.String getEAMProjectNumber() {
+        return EAMProjectNumber;
+    }
+
+
+    /**
+     * Sets the EAMProjectNumber value for this Outages.
+     * 
+     * @param EAMProjectNumber
+     */
+    public void setEAMProjectNumber(java.lang.String EAMProjectNumber) {
+        this.EAMProjectNumber = EAMProjectNumber;
+    }
+
+
+    /**
+     * Gets the eventName value for this Outages.
+     * 
+     * @return eventName
+     */
+    public java.lang.String getEventName() {
+        return eventName;
+    }
+
+
+    /**
+     * Sets the eventName value for this Outages.
+     * 
+     * @param eventName
+     */
+    public void setEventName(java.lang.String eventName) {
+        this.eventName = eventName;
+    }
+
+
+    /**
+     * Gets the eventState value for this Outages.
+     * 
+     * @return eventState
+     */
+    public java.lang.String getEventState() {
+        return eventState;
+    }
+
+
+    /**
+     * Sets the eventState value for this Outages.
+     * 
+     * @param eventState
+     */
+    public void setEventState(java.lang.String eventState) {
+        this.eventState = eventState;
+    }
+
+
+    /**
+     * Gets the notes value for this Outages.
+     * 
+     * @return notes
+     */
+    public java.lang.String getNotes() {
+        return notes;
+    }
+
+
+    /**
+     * Sets the notes value for this Outages.
+     * 
+     * @param notes
+     */
+    public void setNotes(java.lang.String notes) {
+        this.notes = notes;
+    }
+
+
+    /**
+     * Gets the outageSummary value for this Outages.
+     * 
+     * @return outageSummary
+     */
+    public java.lang.String getOutageSummary() {
+        return outageSummary;
+    }
+
+
+    /**
+     * Sets the outageSummary value for this Outages.
+     * 
+     * @param outageSummary
+     */
+    public void setOutageSummary(java.lang.String outageSummary) {
+        this.outageSummary = outageSummary;
+    }
+
+
+    /**
+     * Gets the outageType value for this Outages.
+     * 
+     * @return outageType
+     */
+    public java.lang.String getOutageType() {
+        return outageType;
+    }
+
+
+    /**
+     * Sets the outageType value for this Outages.
+     * 
+     * @param outageType
+     */
+    public void setOutageType(java.lang.String outageType) {
+        this.outageType = outageType;
+    }
+
+
+    /**
+     * Gets the scheduledEndDate value for this Outages.
+     * 
+     * @return scheduledEndDate
+     */
+    public java.lang.String getScheduledEndDate() {
+        return scheduledEndDate;
+    }
+
+
+    /**
+     * Sets the scheduledEndDate value for this Outages.
+     * 
+     * @param scheduledEndDate
+     */
+    public void setScheduledEndDate(java.lang.String scheduledEndDate) {
+        this.scheduledEndDate = scheduledEndDate;
+    }
+
+
+    /**
+     * Gets the scheduledStartDate value for this Outages.
+     * 
+     * @return scheduledStartDate
+     */
+    public java.lang.String getScheduledStartDate() {
+        return scheduledStartDate;
+    }
+
+
+    /**
+     * Sets the scheduledStartDate value for this Outages.
+     * 
+     * @param scheduledStartDate
+     */
+    public void setScheduledStartDate(java.lang.String scheduledStartDate) {
+        this.scheduledStartDate = scheduledStartDate;
+    }
+
+
+    /**
+     * Gets the siteName value for this Outages.
+     * 
+     * @return siteName
+     */
+    public java.lang.String getSiteName() {
+        return siteName;
+    }
+
+
+    /**
+     * Sets the siteName value for this Outages.
+     * 
+     * @param siteName
+     */
+    public void setSiteName(java.lang.String siteName) {
+        this.siteName = siteName;
+    }
+
+
+    /**
+     * Gets the turbineSerialNumber value for this Outages.
+     * 
+     * @return turbineSerialNumber
+     */
+    public java.lang.String getTurbineSerialNumber() {
+        return turbineSerialNumber;
+    }
+
+
+    /**
+     * Sets the turbineSerialNumber value for this Outages.
+     * 
+     * @param turbineSerialNumber
+     */
+    public void setTurbineSerialNumber(java.lang.String turbineSerialNumber) {
+        this.turbineSerialNumber = turbineSerialNumber;
+    }
+
+    private java.lang.Object __equalsCalc = null;
+    public synchronized boolean equals(java.lang.Object obj) {
+        if (!(obj instanceof Outages)) return false;
+        Outages other = (Outages) obj;
+        if (obj == null) return false;
+        if (this == obj) return true;
+        if (__equalsCalc != null) {
+            return (__equalsCalc == obj);
+        }
+        __equalsCalc = obj;
+        boolean _equals;
+        _equals = true && 
+            ((this.actualEndDate==null && other.getActualEndDate()==null) || 
+             (this.actualEndDate!=null &&
+              this.actualEndDate.equals(other.getActualEndDate()))) &&
+            ((this.actualStartDate==null && other.getActualStartDate()==null) || 
+             (this.actualStartDate!=null &&
+              this.actualStartDate.equals(other.getActualStartDate()))) &&
+            ((this.customerName==null && other.getCustomerName()==null) || 
+             (this.customerName!=null &&
+              this.customerName.equals(other.getCustomerName()))) &&
+            ((this.EAMEventNumber==null && other.getEAMEventNumber()==null) || 
+             (this.EAMEventNumber!=null &&
+              this.EAMEventNumber.equals(other.getEAMEventNumber()))) &&
+            ((this.EAMProjectNumber==null && other.getEAMProjectNumber()==null) || 
+             (this.EAMProjectNumber!=null &&
+              this.EAMProjectNumber.equals(other.getEAMProjectNumber()))) &&
+            ((this.eventName==null && other.getEventName()==null) || 
+             (this.eventName!=null &&
+              this.eventName.equals(other.getEventName()))) &&
+            ((this.eventState==null && other.getEventState()==null) || 
+             (this.eventState!=null &&
+              this.eventState.equals(other.getEventState()))) &&
+            ((this.notes==null && other.getNotes()==null) || 
+             (this.notes!=null &&
+              this.notes.equals(other.getNotes()))) &&
+            ((this.outageSummary==null && other.getOutageSummary()==null) || 
+             (this.outageSummary!=null &&
+              this.outageSummary.equals(other.getOutageSummary()))) &&
+            ((this.outageType==null && other.getOutageType()==null) || 
+             (this.outageType!=null &&
+              this.outageType.equals(other.getOutageType()))) &&
+            ((this.scheduledEndDate==null && other.getScheduledEndDate()==null) || 
+             (this.scheduledEndDate!=null &&
+              this.scheduledEndDate.equals(other.getScheduledEndDate()))) &&
+            ((this.scheduledStartDate==null && other.getScheduledStartDate()==null) || 
+             (this.scheduledStartDate!=null &&
+              this.scheduledStartDate.equals(other.getScheduledStartDate()))) &&
+            ((this.siteName==null && other.getSiteName()==null) || 
+             (this.siteName!=null &&
+              this.siteName.equals(other.getSiteName()))) &&
+            ((this.turbineSerialNumber==null && other.getTurbineSerialNumber()==null) || 
+             (this.turbineSerialNumber!=null &&
+              this.turbineSerialNumber.equals(other.getTurbineSerialNumber())));
+        __equalsCalc = null;
+        return _equals;
+    }
+
+    private boolean __hashCodeCalc = false;
+    public synchronized int hashCode() {
+        if (__hashCodeCalc) {
+            return 0;
+        }
+        __hashCodeCalc = true;
+        int _hashCode = 1;
+        if (getActualEndDate() != null) {
+            _hashCode += getActualEndDate().hashCode();
+        }
+        if (getActualStartDate() != null) {
+            _hashCode += getActualStartDate().hashCode();
+        }
+        if (getCustomerName() != null) {
+            _hashCode += getCustomerName().hashCode();
+        }
+        if (getEAMEventNumber() != null) {
+            _hashCode += getEAMEventNumber().hashCode();
+        }
+        if (getEAMProjectNumber() != null) {
+            _hashCode += getEAMProjectNumber().hashCode();
+        }
+        if (getEventName() != null) {
+            _hashCode += getEventName().hashCode();
+        }
+        if (getEventState() != null) {
+            _hashCode += getEventState().hashCode();
+        }
+        if (getNotes() != null) {
+            _hashCode += getNotes().hashCode();
+        }
+        if (getOutageSummary() != null) {
+            _hashCode += getOutageSummary().hashCode();
+        }
+        if (getOutageType() != null) {
+            _hashCode += getOutageType().hashCode();
+        }
+        if (getScheduledEndDate() != null) {
+            _hashCode += getScheduledEndDate().hashCode();
+        }
+        if (getScheduledStartDate() != null) {
+            _hashCode += getScheduledStartDate().hashCode();
+        }
+        if (getSiteName() != null) {
+            _hashCode += getSiteName().hashCode();
+        }
+        if (getTurbineSerialNumber() != null) {
+            _hashCode += getTurbineSerialNumber().hashCode();
+        }
+        __hashCodeCalc = false;
+        return _hashCode;
+    }
+
+    // Type metadata
+    private static org.apache.axis.description.TypeDesc typeDesc =
+        new org.apache.axis.description.TypeDesc(Outages.class, true);
+
+    static {
+        typeDesc.setXmlType(new javax.xml.namespace.QName("http://Www.GE.Com/Energy/Equipmenthealth/ServicesContract/2010/10", "Outages"));
+        org.apache.axis.description.ElementDesc elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("actualEndDate");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://Www.GE.Com/Energy/Equipmenthealth/ServicesContract/2010/10", "ActualEndDate"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(true);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("actualStartDate");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://Www.GE.Com/Energy/Equipmenthealth/ServicesContract/2010/10", "ActualStartDate"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(true);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("customerName");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://Www.GE.Com/Energy/Equipmenthealth/ServicesContract/2010/10", "CustomerName"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(true);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("EAMEventNumber");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://Www.GE.Com/Energy/Equipmenthealth/ServicesContract/2010/10", "EAMEventNumber"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(true);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("EAMProjectNumber");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://Www.GE.Com/Energy/Equipmenthealth/ServicesContract/2010/10", "EAMProjectNumber"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(true);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("eventName");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://Www.GE.Com/Energy/Equipmenthealth/ServicesContract/2010/10", "EventName"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(true);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("eventState");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://Www.GE.Com/Energy/Equipmenthealth/ServicesContract/2010/10", "EventState"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(true);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("notes");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://Www.GE.Com/Energy/Equipmenthealth/ServicesContract/2010/10", "Notes"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(true);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("outageSummary");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://Www.GE.Com/Energy/Equipmenthealth/ServicesContract/2010/10", "OutageSummary"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(true);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("outageType");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://Www.GE.Com/Energy/Equipmenthealth/ServicesContract/2010/10", "OutageType"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(true);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("scheduledEndDate");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://Www.GE.Com/Energy/Equipmenthealth/ServicesContract/2010/10", "ScheduledEndDate"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(true);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("scheduledStartDate");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://Www.GE.Com/Energy/Equipmenthealth/ServicesContract/2010/10", "ScheduledStartDate"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(true);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("siteName");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://Www.GE.Com/Energy/Equipmenthealth/ServicesContract/2010/10", "SiteName"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(true);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("turbineSerialNumber");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://Www.GE.Com/Energy/Equipmenthealth/ServicesContract/2010/10", "TurbineSerialNumber"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(true);
+        typeDesc.addFieldDesc(elemField);
+    }
+
+    /**
+     * Return type metadata object
+     */
+    public static org.apache.axis.description.TypeDesc getTypeDesc() {
+        return typeDesc;
+    }
+
+    /**
+     * Get Custom Serializer
+     */
+    public static org.apache.axis.encoding.Serializer getSerializer(
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
+           javax.xml.namespace.QName _xmlType) {
+        return 
+          new  org.apache.axis.encoding.ser.BeanSerializer(
+            _javaType, _xmlType, typeDesc);
+    }
+
+    /**
+     * Get Custom Deserializer
+     */
+    public static org.apache.axis.encoding.Deserializer getDeserializer(
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
+           javax.xml.namespace.QName _xmlType) {
+        return 
+          new  org.apache.axis.encoding.ser.BeanDeserializer(
+            _javaType, _xmlType, typeDesc);
+    }
+
+}

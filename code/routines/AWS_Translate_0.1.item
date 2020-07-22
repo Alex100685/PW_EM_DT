@@ -1,0 +1,80 @@
+package routines;
+//Amazon SDK 1.11.438
+
+import com.amazonaws.auth.BasicAWSCredentials;
+import com.amazonaws.auth.AWSStaticCredentialsProvider;
+
+import com.amazonaws.services.translate.AmazonTranslate;
+import com.amazonaws.services.translate.AmazonTranslateClient;
+import com.amazonaws.services.translate.AmazonTranslateClientBuilder;
+import com.amazonaws.services.translate.model.TranslateTextRequest;
+import com.amazonaws.services.translate.model.TranslateTextResult;
+
+import org.apache.commons.logging.LogFactory;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.annotation.JsonView;
+import org.apache.http.protocol.HttpRequestExecutor;
+import org.apache.http.client.HttpClient;
+import org.apache.http.conn.DnsResolver;
+import org.joda.time.format.DateTimeFormat;
+
+/*
+ * user specification: the function's comment should contain keys as follows: 1. write about the function's comment.but
+ * it must be before the "{talendTypes}" key.
+ * 
+ * 2. {talendTypes} 's value must be talend Type, it is required . its value should be one of: String, char | Character,
+ * long | Long, int | Integer, boolean | Boolean, byte | Byte, Date, double | Double, float | Float, Object, short |
+ * Short
+ * 
+ * 3. {Category} define a category for the Function. it is required. its value is user-defined .
+ * 
+ * 4. {param} 's format is: {param} <type>[(<default value or closed list values>)] <name>[ : <comment>]
+ * 
+ * <type> 's value should be one of: string, int, list, double, object, boolean, long, char, date. <name>'s value is the
+ * Function's parameter name. the {param} is optional. so if you the Function without the parameters. the {param} don't
+ * added. you can have many parameters for the Function.
+ * 
+ * 5. {example} gives a example for the Function. it is optional.
+ */
+public class AWS_Translate {
+	public static String Translate(String AWS_Access_Key,String AWS_Secret_Key, String AWS_regionName,String input_text,String source_lang_code, String target_lang_code) 
+	{
+
+	// AWS Connection
+		
+	BasicAWSCredentials awsCreds = new BasicAWSCredentials(AWS_Access_Key,AWS_Secret_Key);
+	AmazonTranslate translate = AmazonTranslateClientBuilder.standard().withCredentials(new AWSStaticCredentialsProvider(awsCreds)).withRegion(AWS_regionName).build();
+
+
+	//AWS_Translate
+
+	TranslateTextRequest request = new TranslateTextRequest()
+		                .withText(input_text)
+		                .withSourceLanguageCode(source_lang_code)
+		                .withTargetLanguageCode(target_lang_code);
+		                
+	TranslateTextResult result  = translate.translateText(request);
+	String response_text =result.toString();
+	return response_text;
+	}
+
+    /**
+     * helloExample: not return value, only print "hello" + message.
+     * 
+     * 
+     * {talendTypes} String
+     * 
+     * {Category} User Defined
+     * 
+     * {param} string("world") input: The string need to be printed.
+     * 
+     * {example} helloExemple("world") # hello world !.
+     */
+    public static void helloExample(String message) {
+        if (message == null) {
+            message = "World"; //$NON-NLS-1$
+        }
+        System.out.println("Hello " + message + " !"); //$NON-NLS-1$ //$NON-NLS-2$
+    }
+}

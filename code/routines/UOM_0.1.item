@@ -1,0 +1,1003 @@
+package routines;
+
+/*
+ * user specification: the function's comment should contain keys as follows: 1. write about the function's comment.but
+ * it must be before the "{talendTypes}" key.
+ * 
+ * 2. {talendTypes} 's value must be talend Type, it is required . its value should be one of: String, char | Character,
+ * long | Long, int | Integer, boolean | Boolean, byte | Byte, Date, double | Double, float | Float, Object, short |
+ * Short
+ * 
+ * 3. {Category} define a category for the Function. it is required. its value is user-defined .
+ * 
+ * 4. {param} 's format is: {param} <type>[(<default value or closed list values>)] <name>[ : <comment>]
+ * 
+ * <type> 's value should be one of: string, int, list, double, object, boolean, long, char, date. <name>'s value is the
+ * Function's parameter name. the {param} is optional. so if you the Function without the parameters. the {param} don't
+ * added. you can have many parameters for the Function.
+ * 
+ * 5. {example} gives a example for the Function. it is optional.
+ */
+public class UOM {
+
+    /**
+     * helloExample: not return value, only print "hello" + message.
+     * 
+     * 
+     * {talendTypes} String
+     * 
+     * {Category} User Defined
+     * 
+     * {param} string("world") input: The string need to be printed.
+     * 
+     * {example} helloExemple("world") # hello world !.
+     */
+    /*public static void helloExample(String message) {
+        if (message == null) {
+            message = "World"; //$NON-NLS-1$
+        }
+        System.out.println("Hello " + message + " !"); //$NON-NLS-1$ //$NON-NLS-2$
+    }*/
+    
+    public static String uomLogic(String message) {
+    	
+    	String returnUomValue ="";
+    	if (message ==null)
+    	{
+    		returnUomValue = "";
+    		return returnUomValue;
+    	}
+    	//String returnUomValue ="";
+    	
+    	
+    	switch(message) {
+    	
+    	case "0" :
+  	      // Statements
+  		   returnUomValue = "";
+  		   break; // optional
+  		   
+    	case "1" :
+    	      // Statements
+    		   returnUomValue = "";
+    		   break; // optional
+    		   
+    	   
+    	   case "#/sec" :
+    		// Statements
+    		   returnUomValue = "lb/sec";
+    		   break; // optional
+    	   
+    	   case "%%" :
+       		// Statements
+       		   returnUomValue = "%";
+       		   break; // optional
+       		   
+    	   case "%/min" :
+          		// Statements
+          		   returnUomValue = "%/Min";
+          		   break; // optional
+
+    	   case "%/psi" :
+       		// Statements
+       		   returnUomValue = "%/psig";
+       		   break; // optional
+       		
+    	   case "%/s" :
+          		// Statements
+          		   returnUomValue = "%/sec";
+          		   break; // optional
+          		   
+    	   case "%_S" :
+         		// Statements
+         		   returnUomValue = "%/sec";
+         		   break; // optional
+         		   
+    	   case "%_vol" :
+        		// Statements
+        		   returnUomValue = "%/v";
+        		   break; // optional
+        		   
+    	   case "?C" :
+       		// Statements
+       		   returnUomValue = "Deg C";
+       		   break; // optional
+       		   
+    	   case "?F" :
+       		// Statements
+       		   returnUomValue = "Deg F";
+       		   break; // optional
+
+    	   case "?F/min" :
+       		// Statements
+       		   returnUomValue = "Deg F/min";
+       		   break; // optional
+
+    	   case "?F/sec" :
+       		// Statements
+       		   returnUomValue = "Deg F/sec";
+       		   break; // optional
+
+    	   case "°" :
+       		// Statements
+       		   returnUomValue = "Deg";
+       		   break; // optional
+
+    	   case "°F" :
+       		// Statements
+       		   returnUomValue = "Deg F";
+       		   break; // optional
+
+    	   case "0/1" :
+       		// Statements
+       		   returnUomValue = "";
+       		   break; // optional
+
+    	   case "0F/min" :
+       		// Statements
+       		   returnUomValue = "Deg F/min";
+       		   break; // optional
+
+    	   case "1 or 0" :
+       		// Statements
+       		   returnUomValue = "";
+       		   break; // optional
+
+    	   case "AMP" :
+       		// Statements
+       		   returnUomValue = "Amps";
+       		   break; // optional
+
+    	   case "Amp." :
+       		// Statements
+       		   returnUomValue = "Amps";
+       		   break; // optional
+
+    	   case "AMPS" :
+       		// Statements
+       		   returnUomValue = "Amps";
+       		   break; // optional
+			   
+    	   case "Apms" :
+       		// Statements
+       		   returnUomValue = "Amps";
+       		   break; // optional
+
+    	   case "Bar A" :
+          		// Statements
+          		   returnUomValue = "Bar a";
+          		   break; // optional
+
+    	   case "bar d" :
+         		// Statements
+         		   returnUomValue = "Bar d";
+         		   break; // optional
+          		   
+    	   case "Bar G" :
+       		// Statements
+       		   returnUomValue = "Bar(g)";
+       		   break; // optional
+
+    	   case "bar_g" :
+       		// Statements
+       		   returnUomValue = "Bar(g)";
+       		   break; // optional
+
+    	   case "bara" :
+       		// Statements
+       		   returnUomValue = "Bar a";
+       		   break; // optional
+
+    	   case "bard" :
+       		// Statements
+       		   returnUomValue = "Bar d";
+       		   break; // optional
+
+    	   case "barg" :
+       		// Statements
+       		   returnUomValue = "Bar(g)";
+       		   break; // optional
+
+    	   case "BOOL" :
+       		// Statements
+       		   returnUomValue = "";
+       		   break; // optional
+       		   
+    	   case "btu/f3" :
+          		// Statements
+          		   returnUomValue = "BTU/f3";
+          		   break; // optional   
+
+    	   case "btu/l" :
+       		// Statements
+       		   returnUomValue = "BTU/lb";
+       		   break; // optional
+
+    	   case "BTU/LBM" :
+       		// Statements
+       		   returnUomValue = "BTU/lb";
+       		   break; // optional  
+
+    	   case "�C" :
+       		// Statements
+       		   returnUomValue = "Deg C";
+       		   break; // optional
+       		   
+    	   case "Counts" :
+          		// Statements
+          		   returnUomValue = "COUNT";
+          		   break; // optional
+
+    	   case "COUNTS" :
+         		// Statements
+         		   returnUomValue = "COUNT";
+         		   break; // optional
+
+    	   case "d" :
+       		// Statements
+       		   returnUomValue = "";
+       		   break; // optional
+
+    	   case "deg" :
+       		// Statements
+       		   returnUomValue = "Deg F";
+       		   break; // optional
+       		   
+    	   case "deg F" :
+          		// Statements
+          		   returnUomValue = "Deg F";
+          		   break; // optional
+          		   
+    	   case "deg F/sec" :
+         		// Statements
+         		   returnUomValue = "Deg F/sec";
+         		   break; // optional
+
+    	   case "DEG. C" :
+       		// Statements
+       		   returnUomValue = "Deg C";
+       		   break; // optional
+
+    	   case "Deg. F" :
+       		// Statements
+       		   returnUomValue = "Deg F";
+       		   break; // optional
+       		   
+    	   case "deg.F" :
+          		// Statements
+          		   returnUomValue = "Deg F";
+          		   break; // optional
+
+    	   case "deg. F" :
+       		// Statements
+       		   returnUomValue = "Deg F";
+       		   break; // optional
+
+    	   case "deg_C" :
+       		// Statements
+       		   returnUomValue = "Deg C";
+       		   break; // optional
+
+    	   case "DEG_F" :
+       		// Statements
+       		   returnUomValue = "Deg F";
+       		   break; // optional
+
+    	   case "degC" :
+       		// Statements
+       		   returnUomValue = "Deg C";
+       		   break; // optional
+
+    	   case "degC/sec" :
+       		// Statements
+       		   returnUomValue = "Deg C/sec";
+       		   break; // optional
+
+    	   case "DegF" :
+       		// Statements
+       		   returnUomValue = "Deg F";
+       		   break; // optional
+
+    	   case "degF/sec" :
+       		// Statements
+       		   returnUomValue = "Deg F/sec";
+       		   break; // optional
+
+    	   case "degree" :
+       		// Statements
+       		   returnUomValue = "Deg";
+       		   break; // optional
+
+    	   case "degree C" :
+       		// Statements
+       		   returnUomValue = "Deg C";
+       		   break; // optional
+       		   
+    	   case "EngineeringUnits" :
+          		// Statements
+          		   returnUomValue = "";
+          		   break; // optional
+
+    	   case "F" :
+       		// Statements
+       		   returnUomValue = "Deg F";
+       		   break; // optional
+
+
+    	   case "�F/min" :
+       		// Statements
+       		   returnUomValue = "Deg F/sec";
+       		   break; // optional
+
+    	   case "�F/s" :
+       		// Statements
+       		   returnUomValue = "Deg F/sec";
+       		   break; // optional
+
+    	   case "Fahrenheit" :
+       		// Statements
+       		   returnUomValue = "Deg F";
+       		   break; // optional
+
+    	   case "FEET" :
+       		// Statements
+       		   returnUomValue = "ft";
+       		   break; // optional
+
+    	   case "FFH/HOUR" :
+       		// Statements
+       		   returnUomValue = "FFH/hr";
+       		   break; // optional
+
+    	   case "flag" :
+       		// Statements
+       		   returnUomValue = "";
+       		   break; // optional
+
+    	   case "float" :
+       		// Statements
+       		   returnUomValue = "";
+       		   break; // optional
+
+    	   case "ft�/h" :
+       		// Statements
+       		   returnUomValue = "ft/hr";
+       		   break; // optional
+
+    	   case "FT_1" :
+       		// Statements
+       		   returnUomValue = "ft";
+       		   break; // optional
+
+    	   case "FT3_H" :
+       		// Statements
+       		   returnUomValue = "ft/hr";
+       		   break; // optional
+
+    	   case "FT-LB" :
+          		// Statements
+          		   returnUomValue = "ft-lb";
+          		   break; // optional
+       		   
+    	   case "ft�lbf" :
+       		// Statements
+       		   returnUomValue = "ft-lb";
+       		   break; // optional
+       		   
+    	   case "G" :
+          		// Statements
+          		   returnUomValue = "";
+          		   break; // optional
+       		   
+    	   case "GAL" :
+          		// Statements
+          		   returnUomValue = "Gal";
+          		   break; // optional
+          		   
+    	   case "gal/min" :
+          		// Statements
+          		   returnUomValue = "Gal/min";
+          		   break; // optional
+          		   
+    	   case "GV-Hr" :
+         		// Statements
+         		   returnUomValue = "GV-hr";
+         		   break; // optional
+
+    	   case "GW-Hr" :
+         		// Statements
+         		   returnUomValue = "GW-hr";
+         		   break; // optional
+         		   
+    	   case "HERTZ" :
+       		// Statements
+       		   returnUomValue = "Hz";
+       		   break; // optional
+
+    	   case "HOURS" :
+       		// Statements
+       		   returnUomValue = "hr";
+       		   break; // optional
+       		   
+    	   case "hours" :
+          		// Statements
+          		   returnUomValue = "hr";
+          		   break; // optional
+          		   
+    	   case "hpa" :
+         		// Statements
+         		   returnUomValue = "";
+         		   break; // optional
+       		   
+    	   case "HR" :
+          		// Statements
+          		   returnUomValue = "hr";
+          		   break; // optional
+
+    	   case "hrs" :
+       		// Statements
+       		   returnUomValue = "hr";
+       		   break; // optional
+
+    	   case "IN H2O" :
+       		// Statements
+       		   returnUomValue = "inH2O";
+       		   break; // optional
+
+    	   case "IN HG" :
+       		// Statements
+       		   returnUomValue = "inHg";
+       		   break; // optional
+
+    	   case "IN HGA" :
+       		// Statements
+       		   returnUomValue = "inHgA";
+       		   break; // optional
+
+    	   case "IN WC" :
+       		// Statements
+       		   returnUomValue = "inH2O";
+       		   break; // optional
+
+    	  /* case "hrs" :
+       		// Statements
+       		   returnUomValue = "hr";
+       		   break; // optional
+    	   */
+    	   case "in." :
+       		// Statements
+       		   returnUomValue = "in";
+       		   break; // optional
+
+    	   case "in.H2O" :
+       		// Statements
+       		   returnUomValue = "inH2O";
+       		   break; // optional
+
+    	   case "in.Hg" :
+       		// Statements
+       		   returnUomValue = "inHg";
+       		   break; // optional
+
+    	   case "IN.HG." :
+       		// Statements
+       		   returnUomValue = "inHg";
+       		   break; // optional
+
+    	   case "IN.HGA" :
+       		// Statements
+       		   returnUomValue = "inHgA";
+       		   break; // optional
+
+    	   case "in/s" :
+       		// Statements
+       		   returnUomValue = "in/sec";
+       		   break; // optional
+
+    	   case "in_H2O" :
+       		// Statements
+       		   returnUomValue = "inH2O";
+       		   break; // optional
+
+    	   case "in_wc" :
+       		// Statements
+       		   returnUomValue = "inH2O";
+       		   break; // optional
+       		   
+    	   case "INCH" :
+          		// Statements
+          		   returnUomValue = "inch";
+          		   break; // optional
+
+    	   case "INCHES" :
+       		// Statements
+       		   returnUomValue = "inch";
+       		   break; // optional
+
+    	   case "inH20" :
+       		// Statements
+       		   returnUomValue = "inH2O";
+       		   break; // optional
+
+    	   case "in-H20" :
+       		// Statements
+       		   returnUomValue = "inH2O";
+       		   break; // optional
+
+    	   case "INH20_1" :
+       		// Statements
+       		   returnUomValue = "inH2O";
+       		   break; // optional
+
+    	   case "inHg_a" :
+       		// Statements
+       		   returnUomValue = "inHgA";
+       		   break; // optional
+       		   
+    	   case "inHga" :
+          		// Statements
+          		   returnUomValue = "inHgA";
+          		   break; // optional  
+          		   
+    	   case "INWC (LB/HR)" :
+         		// Statements
+         		   returnUomValue = "INWC (lb/hr)";
+         		   break; // optional
+
+    	   case "kA" :
+       		// Statements
+       		   returnUomValue = "kAmps";
+       		   break; // optional
+       		   
+    	   case "kg" :
+          		// Statements
+          		   returnUomValue = "Kg";
+          		   break; // optional
+          		   
+    	   case "KG/CM2" :
+          		// Statements
+          		   returnUomValue = "kg/CM2";
+          		   break; // optional
+
+    	   case "kg/h" :
+       		// Statements
+       		   returnUomValue = "Kg/hr";
+       		   break; // optional
+
+    	   case "Kg/s" :
+       		// Statements
+       		   returnUomValue = "kg/sec";
+       		   break; // optional
+
+
+    	   case "Kg/sec" :
+       		// Statements
+       		   returnUomValue = "kg/sec";
+       		   break; // optional
+       		   
+    	   case "kilowatt" :
+       		// Statements
+       		   returnUomValue = "KW";
+       		   break; // optional
+       		   
+    	   case "KLB" :
+          		// Statements
+          		   returnUomValue = "Klb";
+          		   break; // optional
+
+    	   case "KLB/H" :
+       		// Statements
+       		   returnUomValue = "klb/hr";
+       		   break; // optional
+
+    	   case "KLBH" :
+       		// Statements
+       		   returnUomValue = "klb/hr";
+       		   break; // optional
+
+    	   case "klbm/hr" :
+       		// Statements
+       		   returnUomValue = "klb/hr";
+       		   break; // optional
+
+    	   case "KVARh" :
+       		// Statements
+       		   returnUomValue = "KVARhr";
+       		   break; // optional
+       		   
+    	   case "KVARHr" :
+          		// Statements
+          		   returnUomValue = "KVARhr";
+          		   break; // optional
+
+    	   case "KWH" :
+         		// Statements
+         		   returnUomValue = "kWh";
+         		   break; // optional
+         		   
+    	   case "kWh/Nm�" :
+       		// Statements
+       		   returnUomValue = "kWh/Nm";
+       		   break; // optional
+
+    	   case "KWHr" :
+       		// Statements
+       		   returnUomValue = "kWh";
+       		   break; // optional
+
+    	   case "lb force" :
+       		// Statements
+       		   returnUomValue = "lb";
+       		   break; // optional
+
+    	   case "lb/h" :
+       		// Statements
+       		   returnUomValue = "lb/hr";
+       		   break; // optional
+       		   
+    	   case "LB/HR" :
+       		// Statements
+       		   returnUomValue = "lb/hr";
+       		   break; // optional
+
+    	   case "lb/s" :
+       		// Statements
+       		   returnUomValue = "lb/sec";
+       		   break; // optional
+
+    	   case "lb/se" :
+       		// Statements
+       		   returnUomValue = "lb/sec";
+       		   break; // optional
+       		   
+    	   case "LB/SEC" :
+          		// Statements
+          		   returnUomValue = "lb/sec";
+          		   break; // optional
+
+    	   case "LB_HR" :
+       		// Statements
+       		   returnUomValue = "lb/hr";
+       		   break; // optional
+
+    	   case "LB_S" :
+       		// Statements
+       		   returnUomValue = "lb/sec";
+       		   break; // optional
+
+    	   case "LBF" :
+       		// Statements
+       		   returnUomValue = "lb";
+       		   break; // optional
+
+    	   case "lbm/s" :
+       		// Statements
+       		   returnUomValue = "lbm/sec";
+       		   break; // optional
+       		   
+    	   case "LBMOL_HR" :
+          		// Statements
+          		   returnUomValue = "LBMOL_hr";
+          		   break; // optional
+
+    	   case "LBS" :
+       		// Statements
+       		   returnUomValue = "lb";
+       		   break; // optional
+
+    	   case "LBS/HR" :
+       		// Statements
+       		   returnUomValue = "lb/hr";
+       		   break; // optional
+
+    	   case "lbs/s" :
+       		// Statements
+       		   returnUomValue = "lb/sec";
+       		   break; // optional
+
+    	   case "LOAD/UNLOAD" :
+       		// Statements
+       		   returnUomValue = "";
+       		   break; // optional
+
+    	   case "LOGIC" :
+       		// Statements
+       		   returnUomValue = "";
+       		   break; // optional
+
+    	   case "Logical" :
+       		// Statements
+       		   returnUomValue = "";
+       		   break; // optional
+
+    	   case "m/s" :
+       		// Statements
+       		   returnUomValue = "m/sec";
+       		   break; // optional
+       		   
+    	   case "m�/sec" :
+          		// Statements
+          		   returnUomValue = "m/sec";
+          		   break; // optional
+
+    	   case "m^3/h" :
+       		// Statements
+       		   returnUomValue = "m3/hr";
+       		   break; // optional
+
+    	   case "m3/h" :
+       		// Statements
+       		   returnUomValue = "m3/hr";
+       		   break; // optional
+
+    	   case "MBtu/h" :
+       		// Statements
+       		   returnUomValue = "MBTU/hr";
+       		   break; // optional
+
+    	   case "mg\\L" :
+       		// Statements
+       		   returnUomValue = "mg/L";
+       		   break; // optional
+       		   
+
+    	   case "mg_m3" :
+       		// Statements
+       		   returnUomValue = "mg/m3";
+       		   break; // optional
+
+    	   case "mils/m" :
+       		// Statements
+       		   returnUomValue = "mils/min";
+       		   break; // optional
+
+    	   case "milsP-" :
+       		// Statements
+       		   returnUomValue = "milsP";
+       		   break; // optional
+
+    	   case "mm H2O" :
+       		// Statements
+       		   returnUomValue = "mmH2O";
+       		   break; // optional
+
+    	   case "mm/s" :
+       		// Statements
+       		   returnUomValue = "mm/sec";
+       		   break; // optional
+
+    	   case "Mpa g" :
+       		// Statements
+       		   returnUomValue = "MPaG";
+       		   break; // optional
+
+    	   case "MVarh" :
+       		// Statements
+       		   returnUomValue = "MVARhr";
+       		   break; // optional
+
+    	   case "MVARHR" :
+          		// Statements
+          		   returnUomValue = "MVARhr";
+          		   break; // optional
+
+    	   case "MW/m" :
+       		// Statements
+       		   returnUomValue = "MW/min";
+       		   break; // optional
+
+    	   case "MW/s" :
+       		// Statements
+       		   returnUomValue = "MW/sec";
+       		   break; // optional
+
+    	   case "MW_M" :
+       		// Statements
+       		   returnUomValue = "MW/sec";
+       		   break; // optional
+
+    	   case "MWATT" :
+       		// Statements
+       		   returnUomValue = "MW";
+       		   break; // optional
+
+    	   case "MWATT_HR" :
+       		// Statements
+       		   returnUomValue = "MWh";
+       		   break; // optional
+
+    	   case "MWatts" :
+       		// Statements
+       		   returnUomValue = "MW";
+       		   break; // optional
+
+    	   case "MWHR" :
+       		// Statements
+       		   returnUomValue = "MWh";
+       		   break; // optional
+
+    	   case "N/A" :
+       		// Statements
+       		   returnUomValue = "";
+       		   break; // optional
+       		   
+    	   case "NA" :
+          		// Statements
+          		   returnUomValue = "";
+          		   break; // optional
+
+
+    	   case "No EngUnits" :
+       		// Statements
+       		   returnUomValue = "";
+       		   break; // optional
+
+    	   case "Ohm" :
+       		// Statements
+       		   returnUomValue = "ohms";
+       		   break; // optional
+
+    	   case "PCT" :
+       		// Statements
+       		   returnUomValue = "%";
+       		   break; // optional
+
+    	   case "PERCENT" :
+       		// Statements
+       		   returnUomValue = "%";
+       		   break; // optional
+
+    	   case "PPH_DT" :
+       		// Statements
+       		   returnUomValue = "pph-dt";
+       		   break; // optional
+
+    	   case "PPM" :
+       		// Statements
+       		   returnUomValue = "ppm(v)";
+       		   break; // optional
+
+    	   case "PPMV" :
+       		// Statements
+       		   returnUomValue = "ppm(v)";
+       		   break; // optional
+
+    	   case "PPMVD" :
+       		// Statements
+       		   returnUomValue = "ppm(v)";
+       		   break; // optional
+
+    	   case "PRESS" :
+       		// Statements
+       		   returnUomValue = "psi";
+       		   break; // optional
+
+    	   case "PRESSA" :
+       		// Statements
+       		   returnUomValue = "psiA";
+       		   break; // optional
+
+    	   case "PRESSB" :
+       		// Statements
+       		   returnUomValue = "psiB";
+       		   break; // optional
+
+    	   case "PRESSD" :
+       		// Statements
+       		   returnUomValue = "psiD";
+       		   break; // optional
+
+    	   case "PRESSG" :
+       		// Statements
+       		   returnUomValue = "psiG";
+       		   break; // optional
+
+    	   case "RAT" :
+       		// Statements
+       		   returnUomValue = "ratio";
+       		   break; // optional
+
+    	   case "rpm/m" :
+       		// Statements
+       		   returnUomValue = "rpm/min";
+       		   break; // optional
+
+    	   case "rpm/s" :
+       		// Statements
+       		   returnUomValue = "rpm/sec";
+       		   break; // optional
+
+    	   case "RPM_S" :
+       		// Statements
+       		   returnUomValue = "rpm/sec";
+       		   break; // optional
+
+    	   case "�S" :
+          		// Statements
+          		   returnUomValue = "S";
+          		   break; // optional
+
+    	   case "�S/cm" :
+       		// Statements
+       		   returnUomValue = "uS/cm";
+       		   break; // optional
+
+    	   case "Sm3/h" :
+       		// Statements
+       		   returnUomValue = "Sm3/hr";
+       		   break; // optional
+
+    	   case "STDf�/d" :
+          		// Statements
+          		   returnUomValue = "STDf/d";
+          		   break; // optional
+
+    	   case "tbd" :
+       		// Statements
+       		   returnUomValue = "";
+       		   break; // optional
+
+    	   case "TCDIF" :
+       		// Statements
+       		   returnUomValue = "TC_DIF";
+       		   break; // optional
+
+    	   case "TF" :
+       		// Statements
+       		   returnUomValue = "Deg F";
+       		   break; // optional
+
+    	   case "ug\\L" :
+       		// Statements
+       		   returnUomValue = "ug/L";
+       		   break; // optional 
+
+    	   case "Unknown" :
+       		// Statements
+       		   returnUomValue = "";
+       		   break; // optional
+
+    	   case "uS_cm" :
+       		// Statements
+       		   returnUomValue = "uS/cm";
+       		   break; // optional
+
+    	   case "Volt" :
+       		// Statements
+       		   returnUomValue = "V";
+       		   break; // optional
+
+    	   case "VOLTS" :
+       		// Statements
+       		   returnUomValue = "V";
+       		   break; // optional
+
+    	   case "WATTS" :
+       		// Statements
+       		   returnUomValue = "W";
+       		   break; // optional
+
+    	   case "�F" :
+       		// Statements
+       		   returnUomValue = "Deg F";
+       		   break; // optional
+       		   
+    	   case "?" :
+          		// Statements
+          		   returnUomValue = "";
+          		   break; // optional
+          		   
+    	   case "???" :
+          		// Statements
+          		   returnUomValue = "";
+          		   break; // optional
+          		   
+       		   // You can have any number of case statements.
+    	   default : // Optional
+    	      // Statements
+    		   returnUomValue = message;
+    	}
+        return returnUomValue;
+    }
+    
+}

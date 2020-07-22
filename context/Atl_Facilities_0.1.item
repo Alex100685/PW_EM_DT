@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:version="2.0">
+  <talendfile:ContextType confirmationNeeded="false" name="Dev" xmi:id="_VHhFwLghEeitX6rnuglL6g">
+    <contextParameter comment="" name="inputDir" prompt="inputDir?" promptNeeded="false" type="id_String" value="&quot;/data/files/ATL_FACILITIES/Input/&quot;" xmi:id="_VHhFwbghEeitX6rnuglL6g"/>
+    <contextParameter comment="" name="tempDir" prompt="tempDir?" promptNeeded="false" type="id_String" value="&quot;/data/files/ATL_FACILITIES/Temp/&quot;" xmi:id="_VHhFwrghEeitX6rnuglL6g"/>
+    <contextParameter comment="" name="archiveDir" prompt="archiveDir?" promptNeeded="false" type="id_String" value="&quot;/data/files/ATL_FACILITIES/Archive/&quot;" xmi:id="_VHhFw7ghEeitX6rnuglL6g"/>
+    <contextParameter comment="" name="errorDir" prompt="errorDir?" promptNeeded="false" type="id_String" value="&quot;/data/files/ATL_FACILITIES/Error/&quot;" xmi:id="_VHhFxLghEeitX6rnuglL6g"/>
+    <contextParameter comment="" name="smtpHost" prompt="smtpHost?" promptNeeded="false" type="id_String" value="&quot;bsemsx01.ae.ge.com&quot;" xmi:id="_VHhFxbghEeitX6rnuglL6g"/>
+    <contextParameter comment="" name="tableBadging" prompt="tableBadging?" promptNeeded="false" type="id_String" value="&quot;atl_badging&quot;" xmi:id="_VHhFxrghEeitX6rnuglL6g"/>
+    <contextParameter comment="" name="tableStgBadging" prompt="tableStgBadging?" promptNeeded="false" type="id_String" value="&quot;atl_badging_stg&quot;" xmi:id="_VHhFx7ghEeitX6rnuglL6g"/>
+    <contextParameter comment="" name="tableRoster" prompt="tableRoster?" promptNeeded="false" type="id_String" value="&quot;atl_roster&quot;" xmi:id="_VHhFyLghEeitX6rnuglL6g"/>
+    <contextParameter comment="" name="tableStgRoster" prompt="tableStgRoster?" promptNeeded="false" type="id_String" value="&quot;atl_roster_stg&quot;" xmi:id="_VHhFybghEeitX6rnuglL6g"/>
+    <contextParameter comment="" name="tableControl" prompt="tableControl?" promptNeeded="false" type="id_String" value="&quot;atl_box_upload_control_table&quot;" xmi:id="_VHhFyrghEeitX6rnuglL6g"/>
+    <contextParameter comment="" name="mail" prompt="mail?" promptNeeded="false" type="id_String" value="" xmi:id="_VHhFy7ghEeitX6rnuglL6g"/>
+    <contextParameter comment="" name="logDir" prompt="logDir?" promptNeeded="false" type="id_String" value="&quot;/data/files/ATL_FACILITIES/Log/&quot;" xmi:id="_VHhFzLghEeitX6rnuglL6g"/>
+    <contextParameter comment="" name="folder_id" prompt="folder_id?" promptNeeded="false" type="id_String" value="37237044338" xmi:id="_VHhFzbghEeitX6rnuglL6g"/>
+    <contextParameter comment="" name="sql_folder_id" prompt="sql_folder_id?" promptNeeded="false" type="id_String" value="&quot;37237044338&quot;" xmi:id="_VHhFzrghEeitX6rnuglL6g"/>
+    <contextParameter comment="" name="supportDir" prompt="supportDir?" promptNeeded="false" type="id_String" value="&quot;/data/files/ATL_FACILITIES/Support/&quot;" xmi:id="_VHhFz7ghEeitX6rnuglL6g"/>
+    <contextParameter comment="" name="box_user_sso" prompt="box_user_sso?" promptNeeded="false" type="id_String" value="212592215" xmi:id="_VHhF0LghEeitX6rnuglL6g"/>
+    <contextParameter comment="" name="box_client_id" prompt="box_client_id?" promptNeeded="false" type="id_String" value="GEDG_Talend_ETL_Client" xmi:id="_VHhF0bghEeitX6rnuglL6g"/>
+    <contextParameter comment="" name="box_client_secret" prompt="box_client_secret?" promptNeeded="false" type="id_String" value="SrWCn1riC6eRim9XEG8DOlCHlmlu8Uh4ZZ3nDQBe1fNmLREDckyKSgX6QQY42Kev" xmi:id="_VHhF0rghEeitX6rnuglL6g"/>
+    <contextParameter comment="" name="file_name" prompt="file_name?" promptNeeded="false" type="id_String" value="" xmi:id="_VHhF07ghEeitX6rnuglL6g"/>
+    <contextParameter comment="" name="file_id" prompt="file_id?" promptNeeded="false" type="id_String" value="" xmi:id="_VHhF1LghEeitX6rnuglL6g"/>
+    <contextParameter comment="Control file in Box?" name="source_file_id" prompt="source_file_id?" promptNeeded="false" type="id_String" value="282693206728" xmi:id="_VHhF1bghEeitX6rnuglL6g"/>
+    <contextParameter comment="" name="source_filepath" prompt="source_filepath?" promptNeeded="false" type="id_String" value="C:/Users/212592215/Desktop/" xmi:id="_VHhF1rghEeitX6rnuglL6g"/>
+    <contextParameter comment="" name="source_file_name" prompt="source_file_name?" promptNeeded="false" type="id_String" value="&quot;Source_File_Details.xlsx&quot;" xmi:id="_VHhF17ghEeitX6rnuglL6g"/>
+    <contextParameter comment="" name="mail_list" prompt="mail_list?" promptNeeded="false" type="id_String" value="deirdre.scott1@ge.com" xmi:id="_VHhF2LghEeitX6rnuglL6g"/>
+    <contextParameter comment="" name="mail_to" prompt="mail_to?" promptNeeded="false" type="id_String" value="&quot;deirdre.scott1@ge.com&quot;" xmi:id="_VHhF2bghEeitX6rnuglL6g"/>
+    <contextParameter comment="" name="path_folder" prompt="path_folder?" promptNeeded="false" type="id_String" value="ATL_FACILITIES/" xmi:id="_VHhF2rghEeitX6rnuglL6g"/>
+    <contextParameter comment="" name="tableCombined" prompt="tableCombined?" promptNeeded="false" type="id_String" value="&quot;atl_facilities_use_all&quot;" xmi:id="_VHhF27ghEeitX6rnuglL6g"/>
+    <contextParameter comment="" name="tableOHR" prompt="tableOHR?" promptNeeded="false" type="id_String" value="&quot;pgsdwh.ge_hr_data&quot;" xmi:id="_VHhF3LghEeitX6rnuglL6g"/>
+    <contextParameter comment="" name="newFileCounter" prompt="newFileCounter?" promptNeeded="false" type="id_Integer" value="0" xmi:id="_VHhF3bghEeitX6rnuglL6g"/>
+    <contextParameter comment="" name="tableReference" prompt="tableReference?" promptNeeded="false" type="id_String" value="&quot;atl_reference&quot;" xmi:id="_VHhF3rghEeitX6rnuglL6g"/>
+    <contextParameter comment="" name="tableStgReference" prompt="tableStgReference?" promptNeeded="false" type="id_String" value="&quot;atl_reference_stg&quot;" xmi:id="_VHhF37ghEeitX6rnuglL6g"/>
+    <contextParameter comment="" name="tableEmployee" prompt="tableEmployee?" promptNeeded="false" type="id_String" value="&quot;atl_employee&quot;" xmi:id="_VHhF4LghEeitX6rnuglL6g"/>
+    <contextParameter comment="" name="tableStgEmployee" prompt="tableStgEmployee?" promptNeeded="false" type="id_String" value="&quot;atl_employee_stg&quot;" xmi:id="_VHhF4bghEeitX6rnuglL6g"/>
+    <contextParameter comment="" name="newBadgingDataFlag" prompt="newBadgingDataFlag?" promptNeeded="false" type="id_Boolean" value="false" xmi:id="_VHhF4rghEeitX6rnuglL6g"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="Prod" xmi:id="_VHhF47ghEeitX6rnuglL6g">
+    <contextParameter comment="" name="inputDir" prompt="inputDir?" promptNeeded="false" type="id_String" value="&quot;/data/files/ATL_FACILITIES/Input/&quot;" xmi:id="_VHhF5LghEeitX6rnuglL6g"/>
+    <contextParameter comment="" name="tempDir" prompt="tempDir?" promptNeeded="false" type="id_String" value="&quot;/data/files/ATL_FACILITIES/Temp/&quot;" xmi:id="_VHhF5bghEeitX6rnuglL6g"/>
+    <contextParameter comment="" name="archiveDir" prompt="archiveDir?" promptNeeded="false" type="id_String" value="&quot;/data/files/ATL_FACILITIES/Archive/&quot;" xmi:id="_VHhF5rghEeitX6rnuglL6g"/>
+    <contextParameter comment="" name="errorDir" prompt="errorDir?" promptNeeded="false" type="id_String" value="&quot;/data/files/ATL_FACILITIES/Error/&quot;" xmi:id="_VHhF57ghEeitX6rnuglL6g"/>
+    <contextParameter comment="" name="smtpHost" prompt="smtpHost?" promptNeeded="false" type="id_String" value="&quot;bsemsx01.ae.ge.com&quot;" xmi:id="_VHhF6LghEeitX6rnuglL6g"/>
+    <contextParameter comment="" name="tableBadging" prompt="tableBadging?" promptNeeded="false" type="id_String" value="&quot;atl_badging&quot;" xmi:id="_VHhF6bghEeitX6rnuglL6g"/>
+    <contextParameter comment="" name="tableStgBadging" prompt="tableStgBadging?" promptNeeded="false" type="id_String" value="&quot;atl_badging_stg&quot;" xmi:id="_VHhF6rghEeitX6rnuglL6g"/>
+    <contextParameter comment="" name="tableRoster" prompt="tableRoster?" promptNeeded="false" type="id_String" value="&quot;atl_roster&quot;" xmi:id="_VHhF67ghEeitX6rnuglL6g"/>
+    <contextParameter comment="" name="tableStgRoster" prompt="tableStgRoster?" promptNeeded="false" type="id_String" value="&quot;atl_roster_stg&quot;" xmi:id="_VHhF7LghEeitX6rnuglL6g"/>
+    <contextParameter comment="" name="tableControl" prompt="tableControl?" promptNeeded="false" type="id_String" value="&quot;atl_box_upload_control_table&quot;" xmi:id="_VHhF7bghEeitX6rnuglL6g"/>
+    <contextParameter comment="" name="mail" prompt="mail?" promptNeeded="false" type="id_String" value="" xmi:id="_VHhF7rghEeitX6rnuglL6g"/>
+    <contextParameter comment="" name="logDir" prompt="logDir?" promptNeeded="false" type="id_String" value="&quot;/data/files/ATL_FACILITIES/Log/&quot;" xmi:id="_VHhF77ghEeitX6rnuglL6g"/>
+    <contextParameter comment="" name="folder_id" prompt="folder_id?" promptNeeded="false" type="id_String" value="37237044338" xmi:id="_VHhF8LghEeitX6rnuglL6g"/>
+    <contextParameter comment="" name="sql_folder_id" prompt="sql_folder_id?" promptNeeded="false" type="id_String" value="&quot;37237044338&quot;" xmi:id="_VHhF8bghEeitX6rnuglL6g"/>
+    <contextParameter comment="" name="supportDir" prompt="supportDir?" promptNeeded="false" type="id_String" value="&quot;/data/files/ATL_FACILITIES/Support/&quot;" xmi:id="_VHhF8rghEeitX6rnuglL6g"/>
+    <contextParameter comment="" name="box_user_sso" prompt="box_user_sso?" promptNeeded="false" type="id_String" value="212592215" xmi:id="_VHhF87ghEeitX6rnuglL6g"/>
+    <contextParameter comment="" name="box_client_id" prompt="box_client_id?" promptNeeded="false" type="id_String" value="GEDG_Talend_ETL_Client" xmi:id="_VHhF9LghEeitX6rnuglL6g"/>
+    <contextParameter comment="" name="box_client_secret" prompt="box_client_secret?" promptNeeded="false" type="id_String" value="SrWCn1riC6eRim9XEG8DOlCHlmlu8Uh4ZZ3nDQBe1fNmLREDckyKSgX6QQY42Kev" xmi:id="_VHhF9bghEeitX6rnuglL6g"/>
+    <contextParameter comment="" name="file_name" prompt="file_name?" promptNeeded="false" type="id_String" value="" xmi:id="_VHhF9rghEeitX6rnuglL6g"/>
+    <contextParameter comment="" name="file_id" prompt="file_id?" promptNeeded="false" type="id_String" value="" xmi:id="_VHhF97ghEeitX6rnuglL6g"/>
+    <contextParameter comment="Control file in Box?" name="source_file_id" prompt="source_file_id?" promptNeeded="false" type="id_String" value="206387239611" xmi:id="_VHhF-LghEeitX6rnuglL6g"/>
+    <contextParameter comment="" name="source_filepath" prompt="source_filepath?" promptNeeded="false" type="id_String" value="C:/Users/212566639/Desktop/" xmi:id="_VHhF-bghEeitX6rnuglL6g"/>
+    <contextParameter comment="" name="source_file_name" prompt="source_file_name?" promptNeeded="false" type="id_String" value="&quot;Source_File_Details.xlsx&quot;" xmi:id="_VHhF-rghEeitX6rnuglL6g"/>
+    <contextParameter comment="" name="mail_list" prompt="mail_list?" promptNeeded="false" type="id_String" value="deirdre.scott1@ge.com" xmi:id="_VHhF-7ghEeitX6rnuglL6g"/>
+    <contextParameter comment="" name="mail_to" prompt="mail_to?" promptNeeded="false" type="id_String" value="&quot;deirdre.scott1@ge.com ; scott1.francis@ge.com ; juancarlos.alvarez@ge.com&quot;" xmi:id="_VHhF_LghEeitX6rnuglL6g"/>
+    <contextParameter comment="" name="path_folder" prompt="path_folder?" promptNeeded="false" type="id_String" value="ATL_FACILITIES/" xmi:id="_VHhF_bghEeitX6rnuglL6g"/>
+    <contextParameter comment="" name="tableCombined" prompt="tableCombined?" promptNeeded="false" type="id_String" value="&quot;atl_facilities_use_all&quot;" xmi:id="_VHhF_rghEeitX6rnuglL6g"/>
+    <contextParameter comment="" name="tableOHR" prompt="tableOHR?" promptNeeded="false" type="id_String" value="&quot;pgsdwh.ge_hr_data&quot;" xmi:id="_VHhF_7ghEeitX6rnuglL6g"/>
+    <contextParameter comment="" name="newFileCounter" prompt="newFileCounter?" promptNeeded="false" type="id_Integer" value="0" xmi:id="_VHhGALghEeitX6rnuglL6g"/>
+    <contextParameter comment="" name="tableReference" prompt="tableReference?" promptNeeded="false" type="id_String" value="&quot;atl_reference&quot;" xmi:id="_VHhGAbghEeitX6rnuglL6g"/>
+    <contextParameter comment="" name="tableStgReference" prompt="tableStgReference?" promptNeeded="false" type="id_String" value="&quot;atl_reference_stg&quot;" xmi:id="_VHhGArghEeitX6rnuglL6g"/>
+    <contextParameter comment="" name="tableEmployee" prompt="tableEmployee?" promptNeeded="false" type="id_String" value="&quot;atl_employee&quot;" xmi:id="_VHhGA7ghEeitX6rnuglL6g"/>
+    <contextParameter comment="" name="tableStgEmployee" prompt="tableStgEmployee?" promptNeeded="false" type="id_String" value="&quot;atl_employee_stg&quot;" xmi:id="_VHhGBLghEeitX6rnuglL6g"/>
+    <contextParameter comment="" name="newBadgingDataFlag" prompt="newBadgingDataFlag?" promptNeeded="false" type="id_Boolean" value="false" xmi:id="_VHhGBbghEeitX6rnuglL6g"/>
+  </talendfile:ContextType>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_1dade19a-032f-490c-8bdd-0d885ef59e51"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Ixbo5r4doTp1sGHuqvNdnbwrFMGbZa2oAEaaARlYHytM0xwzm37ImpZnNwWZ8KUChnPkWPlpNJT3&#13;
+6Qf+Lcx1Fg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_cf2fcc27-a324-4986-8158-ce0a7bf9714f"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>CckMOikdHWfzQEgkwGYrWAi3AxkskcfGjoWF7sZxVe8KCBy+jGAkJ55m0dCC9H/+bf2J6uIKd+Rj&#13;
+5k30Eg3fdg==</DigestValue></Reference></SignedInfo><SignatureValue>APz56nttPq2Rc8c5bxoG9eKd+BmQrstpRNrdxvnSKhPi5Creq5yff90YmmvTOG6nZp1y6kgZ318u&#13;
+RY2bQVnSIis4C6krGZG8P5Ua1E3M8c1RNEk8At9g5gPifDCebenIY+X7ezc13a/vMAMlrujdI9JM&#13;
+YKcs2cWXUXCKvhDt2eXzx6Cr/IxagW0Z6hTtmpdKLcKLk5GF5vgH2GcVpkElLhFubbaS1p/PKWrb&#13;
+vEcCrDJsHujlpjD2JWsBF1oCimlX/urmWM4xjnWOoTgRPTQmu6xGgnF8BhMLJ9O7WOA16XwXPOOV&#13;
+AP6Uwsm/dWbq+KQ8Rh2hhUA+PwDdp1/8GVEudQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_cf2fcc27-a324-4986-8158-ce0a7bf9714f" Target="#_1dade19a-032f-490c-8bdd-0d885ef59e51"><Timestamp>2020-04-22 08:18:03</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>

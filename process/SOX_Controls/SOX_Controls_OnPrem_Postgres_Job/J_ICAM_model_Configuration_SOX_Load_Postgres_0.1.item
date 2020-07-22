@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:xmi="http://www.omg.org/XMI" defaultContext="DEV" framework="" jobType="Standard" xmi:version="2.0">
+  <context confirmationNeeded="false" name="DEV">
+    <contextParameter comment="" name="LOG_RUN_ID" prompt="LOG_RUN_ID?" promptNeeded="false" type="id_Integer" value=""/>
+    <contextParameter comment="" name="LOG_JOB_NAME" prompt="LOG_JOB_NAME?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="LOG_PLANT_NAME" prompt="LOG_PLANT_NAME?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="LOG_SYSTEM_NAME" prompt="LOG_SYSTEM_NAME?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="LOG_TABLE_NAME" prompt="LOG_TABLE_NAME?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="LOG_MESSAGE" prompt="LOG_MESSAGE?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="LOG_NO_OF_INSERTS" prompt="LOG_NO_OF_INSERTS?" promptNeeded="false" type="id_Integer" value=""/>
+    <contextParameter comment="" name="LOG_NO_OF_UPDATES" prompt="LOG_NO_OF_UPDATES?" promptNeeded="false" type="id_Integer" value=""/>
+    <contextParameter comment="" name="LOG_NO_OF_ERRORS" prompt="LOG_NO_OF_ERRORS?" promptNeeded="false" type="id_Integer" value=""/>
+    <contextParameter comment="" name="LOG_SOURCE_ROW_COUNT" prompt="LOG_SOURCE_ROW_COUNT?" promptNeeded="false" type="id_Integer" value=""/>
+    <contextParameter comment="" name="LOG_TARGET_ROW_COUNT" prompt="LOG_TARGET_ROW_COUNT?" promptNeeded="false" type="id_Integer" value=""/>
+    <contextParameter comment="" name="postgres_new_Database" prompt="postgres_new_Database?" promptNeeded="false" repositoryContextId="_7ocu4E5tEeqprNbx3_OvQA" type="id_String" value="pgsdwh"/>
+    <contextParameter comment="" name="postgres_new_Login" prompt="postgres_new_Login?" promptNeeded="false" repositoryContextId="_7ocu4E5tEeqprNbx3_OvQA" type="id_String" value="502800684"/>
+    <contextParameter comment="" name="postgres_new_Password" prompt="postgres_new_Password?" promptNeeded="false" repositoryContextId="_7ocu4E5tEeqprNbx3_OvQA" type="id_Password" value="UUKOPGTUys9/ZlGr9rcILg=="/>
+    <contextParameter comment="" name="postgres_new_Port" prompt="postgres_new_Port?" promptNeeded="false" repositoryContextId="_7ocu4E5tEeqprNbx3_OvQA" type="id_String" value="5432"/>
+    <contextParameter comment="" name="postgres_new_Schema" prompt="postgres_new_Schema?" promptNeeded="false" repositoryContextId="_7ocu4E5tEeqprNbx3_OvQA" type="id_String" value="sot_dt"/>
+    <contextParameter comment="" name="postgres_new_Server" prompt="postgres_new_Server?" promptNeeded="false" repositoryContextId="_7ocu4E5tEeqprNbx3_OvQA" type="id_String" value="alpcts000001170.corporate.ge.com"/>
+  </context>
+  <context confirmationNeeded="false" name="Default">
+    <contextParameter comment="" name="LOG_RUN_ID" prompt="LOG_RUN_ID?" promptNeeded="false" type="id_Integer" value=""/>
+    <contextParameter comment="" name="LOG_JOB_NAME" prompt="LOG_JOB_NAME?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="LOG_PLANT_NAME" prompt="LOG_PLANT_NAME?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="LOG_SYSTEM_NAME" prompt="LOG_SYSTEM_NAME?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="LOG_TABLE_NAME" prompt="LOG_TABLE_NAME?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="LOG_MESSAGE" prompt="LOG_MESSAGE?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="LOG_NO_OF_INSERTS" prompt="LOG_NO_OF_INSERTS?" promptNeeded="false" type="id_Integer" value=""/>
+    <contextParameter comment="" name="LOG_NO_OF_UPDATES" prompt="LOG_NO_OF_UPDATES?" promptNeeded="false" type="id_Integer" value=""/>
+    <contextParameter comment="" name="LOG_NO_OF_ERRORS" prompt="LOG_NO_OF_ERRORS?" promptNeeded="false" type="id_Integer" value=""/>
+    <contextParameter comment="" name="LOG_SOURCE_ROW_COUNT" prompt="LOG_SOURCE_ROW_COUNT?" promptNeeded="false" type="id_Integer" value=""/>
+    <contextParameter comment="" name="LOG_TARGET_ROW_COUNT" prompt="LOG_TARGET_ROW_COUNT?" promptNeeded="false" type="id_Integer" value=""/>
+    <contextParameter comment="" name="postgres_new_Database" prompt="postgres_new_Database?" promptNeeded="false" repositoryContextId="_7ocu4E5tEeqprNbx3_OvQA" type="id_String" value="pgsdwh"/>
+    <contextParameter comment="" name="postgres_new_Login" prompt="postgres_new_Login?" promptNeeded="false" repositoryContextId="_7ocu4E5tEeqprNbx3_OvQA" type="id_String" value="502800684"/>
+    <contextParameter comment="" name="postgres_new_Password" prompt="postgres_new_Password?" promptNeeded="false" repositoryContextId="_7ocu4E5tEeqprNbx3_OvQA" type="id_Password" value="UUKOPGTUys9/ZlGr9rcILg=="/>
+    <contextParameter comment="" name="postgres_new_Port" prompt="postgres_new_Port?" promptNeeded="false" repositoryContextId="_7ocu4E5tEeqprNbx3_OvQA" type="id_String" value="5432"/>
+    <contextParameter comment="" name="postgres_new_Schema" prompt="postgres_new_Schema?" promptNeeded="false" repositoryContextId="_7ocu4E5tEeqprNbx3_OvQA" type="id_String" value="sot_dt"/>
+    <contextParameter comment="" name="postgres_new_Server" prompt="postgres_new_Server?" promptNeeded="false" repositoryContextId="_7ocu4E5tEeqprNbx3_OvQA" type="id_String" value="alpcts000001170.corporate.ge.com"/>
+  </context>
+  <context confirmationNeeded="false" name="Prod">
+    <contextParameter comment="" name="LOG_RUN_ID" prompt="LOG_RUN_ID?" promptNeeded="false" type="id_Integer" value=""/>
+    <contextParameter comment="" name="LOG_JOB_NAME" prompt="LOG_JOB_NAME?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="LOG_PLANT_NAME" prompt="LOG_PLANT_NAME?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="LOG_SYSTEM_NAME" prompt="LOG_SYSTEM_NAME?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="LOG_TABLE_NAME" prompt="LOG_TABLE_NAME?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="LOG_MESSAGE" prompt="LOG_MESSAGE?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="LOG_NO_OF_INSERTS" prompt="LOG_NO_OF_INSERTS?" promptNeeded="false" type="id_Integer" value=""/>
+    <contextParameter comment="" name="LOG_NO_OF_UPDATES" prompt="LOG_NO_OF_UPDATES?" promptNeeded="false" type="id_Integer" value=""/>
+    <contextParameter comment="" name="LOG_NO_OF_ERRORS" prompt="LOG_NO_OF_ERRORS?" promptNeeded="false" type="id_Integer" value=""/>
+    <contextParameter comment="" name="LOG_SOURCE_ROW_COUNT" prompt="LOG_SOURCE_ROW_COUNT?" promptNeeded="false" type="id_Integer" value=""/>
+    <contextParameter comment="" name="LOG_TARGET_ROW_COUNT" prompt="LOG_TARGET_ROW_COUNT?" promptNeeded="false" type="id_Integer" value=""/>
+    <contextParameter comment="" name="postgres_new_Database" prompt="postgres_new_Database?" promptNeeded="false" repositoryContextId="_7ocu4E5tEeqprNbx3_OvQA" type="id_String" value="pgsdwh"/>
+    <contextParameter comment="" name="postgres_new_Login" prompt="postgres_new_Login?" promptNeeded="false" repositoryContextId="_7ocu4E5tEeqprNbx3_OvQA" type="id_String" value="502800684"/>
+    <contextParameter comment="" name="postgres_new_Password" prompt="postgres_new_Password?" promptNeeded="false" repositoryContextId="_7ocu4E5tEeqprNbx3_OvQA" type="id_Password" value="UUKOPGTUys9/ZlGr9rcILg=="/>
+    <contextParameter comment="" name="postgres_new_Port" prompt="postgres_new_Port?" promptNeeded="false" repositoryContextId="_7ocu4E5tEeqprNbx3_OvQA" type="id_String" value="5432"/>
+    <contextParameter comment="" name="postgres_new_Schema" prompt="postgres_new_Schema?" promptNeeded="false" repositoryContextId="_7ocu4E5tEeqprNbx3_OvQA" type="id_String" value="sot_dt"/>
+    <contextParameter comment="" name="postgres_new_Server" prompt="postgres_new_Server?" promptNeeded="false" repositoryContextId="_7ocu4E5tEeqprNbx3_OvQA" type="id_String" value="alpcts000001171.corporate.ge.com"/>
+  </context>
+  <parameters>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="0"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" show="false" value=""/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:PROPERTY_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:REPOSITORY_PROPERTY_TYPE" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="0RMsyjmybrE="/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" show="false" value="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" show="false" value="&quot;C:/Workspaces/6_3 Dev/.metadata&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" show="false" value="&quot;stats_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" show="false" value="&quot;logs_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" show="false" value="&quot;meter_file.txt&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="ISO-8859-15"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" show="false" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" show="false" value="tJDBCOutput"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="ORACLE_11"/>
+    <elementParameter field="TEXT" name="URL" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DATASOURCE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="0RMsyjmybrE="/>
+    <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" show="false" value=""/>
+    <routinesParameter id="_v_En0JAxEeifRow1DkYMwg" name="DQTechnical"/>
+    <routinesParameter id="_v948EJAxEeifRow1DkYMwg" name="DataMasking"/>
+    <routinesParameter id="_vztFUJAxEeifRow1DkYMwg" name="DataOperation"/>
+    <routinesParameter id="_v-lfoJAxEeifRow1DkYMwg" name="DataQualityDependencies"/>
+    <routinesParameter id="_v-CtEJAxEeifRow1DkYMwg" name="DataQuality"/>
+    <routinesParameter id="_v-3McJAxEeifRow1DkYMwg" name="DqStringHandling"/>
+    <routinesParameter id="_v8dYsJAxEeifRow1DkYMwg" name="Mathematical"/>
+    <routinesParameter id="_v8uecJAxEeifRow1DkYMwg" name="Numeric"/>
+    <routinesParameter id="_v81MIJAxEeifRow1DkYMwg" name="Relational"/>
+    <routinesParameter id="_v_OY0JAxEeifRow1DkYMwg" name="SQLike"/>
+    <routinesParameter id="_v9QC4JAxEeifRow1DkYMwg" name="StringHandling"/>
+    <routinesParameter id="_v9WJgJAxEeifRow1DkYMwg" name="TalendDataGenerator"/>
+    <routinesParameter id="_v9cQIJAxEeifRow1DkYMwg" name="TalendDate"/>
+    <routinesParameter id="_v9wZMJAxEeifRow1DkYMwg" name="TalendString"/>
+    <routinesParameter id="_tKnvACWCEeWXaZA-MQIdVg" name="ConvertAnyDateFormat"/>
+    <routinesParameter id="_NAsyQHRnEeS6QfVO9XSNjQ" name="ServiceImplPortBindingStub"/>
+    <routinesParameter id="_PVccEHRnEeS6QfVO9XSNjQ" name="ServiceImplServiceLocator"/>
+    <routinesParameter id="_ObeHIHRnEeS6QfVO9XSNjQ" name="ServiceImplService"/>
+    <routinesParameter id="_QMSkgHRnEeS6QfVO9XSNjQ" name="ServiceInterface"/>
+    <routinesParameter id="_rQ0H8MuIEeOReKos6ufrHA" name="BigDecHandler"/>
+    <routinesParameter id="_dgMRgJjFEeWXRKcrF23Jtg" name="Box"/>
+    <routinesParameter id="_SMoR4LtaEeOZvrcjg-VOXA" name="BuildQuery"/>
+    <routinesParameter id="_2FpUoFjxEeaPJKNKhHQFGw" name="ByteUtil"/>
+    <routinesParameter id="_Vcst8ACIEeaiHOY563SpJw" name="Copy_of_PageScraper"/>
+    <routinesParameter id="_lTJkoEKbEeWD4KoNH7eRkw" name="DateLogic"/>
+    <routinesParameter id="_8qwkYFjNEdyj6eiqDt60Og" name="DemoRoutines"/>
+    <routinesParameter id="_7ZjHcOlsEeSVveUAOdysxw" name="Exanta"/>
+    <routinesParameter id="_8qb_IKf6EeOxOahYIIWftA" name="FormatDate"/>
+    <routinesParameter id="_HKXfQGIZEd26GZmhFZLTPA" name="GetRandomPhoneNum"/>
+    <routinesParameter id="_PfOiEKKSEeW6a6IagvKPxw" name="HTMLunit"/>
+    <routinesParameter id="_G417gAc-EeKqOMQjhZ_0wQ" name="KeyManagementForSqoop"/>
+    <routinesParameter id="__S6roKlpEeGiea4NxOFRoA" name="MDM"/>
+    <routinesParameter id="_kKQdAO6yEeK1vYN4B_KFqA" name="MyDateConversion"/>
+    <routinesParameter id="_hESiUHAHEeShw6csv49m7w" name="PGSUtilities"/>
+    <routinesParameter id="_0cxqEKjAEeWk7KZ2XdQZ4Q" name="PageScraperTest"/>
+    <routinesParameter id="_ohn_QK5pEeWt7Ln6p0KPag" name="PageScraperTest_Copy"/>
+    <routinesParameter id="_uaBjsKL9EeWyoeGNf8RevA" name="PageScraper"/>
+    <routinesParameter id="_NOi2UL-FEeWmgNFzfW9xGA" name="PageScraper_bid_offer"/>
+    <routinesParameter id="_IbolANSOEeWaBOKfRvQP6Q" name="PageScraper_market_price"/>
+    <routinesParameter id="_x2FF8OntEeW3ytw6yZxb9g" name="Spain_I90DIA"/>
+    <routinesParameter id="_S0NcwAi4Eee2RYmUvkdMoQ" name="TableauFieldRenaming"/>
+    <routinesParameter id="_5dK-AAihEeesiMkRFlkuAQ" name="TableauRenaming"/>
+    <routinesParameter id="_YPo3QKMgEeWyoeGNf8RevA" name="UnitArray"/>
+    <routinesParameter id="_Yi7DgPKcEeWIaMYT0k35pg" name="com_ge_datacoe_boxhelper"/>
+    <routinesParameter id="_QsKzoKfxEeOZiNBwFUKsew" name="convertDateFormat"/>
+    <routinesParameter id="_qAoTcGouEeSyGah8667RdQ" name="customRoutinesII"/>
+    <routinesParameter id="_cwjYsGX1EeSB4YnitS8Etw" name="customRoutines"/>
+    <routinesParameter id="_0wVRcGBBEeW5LJowN3hCUw" name="fichierRef"/>
+    <routinesParameter id="_yYDTYNUrEeOb04uaGEm5UA" name="ishJava"/>
+    <routinesParameter id="_ZChZEGBVEeSqTZT6TnSmHA" name="stringToDouble"/>
+    <routinesParameter id="_YK_e8NQ1EeKQo8vOQHoo0g" name="string_to_date"/>
+    <routinesParameter id="_8dP48KMgEeWyoeGNf8RevA" name="test1"/>
+    <routinesParameter id="_13a2cLNvEeO16cZM61HkCQ" name="test_FW"/>
+    <routinesParameter id="_z241UFBXEeOKMaQAHUALEA" name="timeline_events_comments_documents"/>
+    <routinesParameter id="_fnthMHQyEeWRuI-p_fGGPw" name="to_UTC"/>
+  </parameters>
+  <node componentName="tPostgresqlRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="384" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tPostgresqlRow_1"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tPostgresqlConnection_1"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="PRIOR_TO_V9"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;5432&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="PostgreSQL"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="0RMsyjmybrE="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;truncate table sot_dt.ing_icam_model_inter;&#13;&#10;insert into  sot_dt.ing_icam_model_inter &#13;&#10;select distinct&#13;&#10;md.MDL_VER_ID,&#13;&#10;md.total_margin_adj Margin_Adj_Sales,&#13;&#10;MD.CONTRACT_CM_PCT AS GAAP_CM_PCT,&#13;&#10;md.mdl_id,&#13;&#10;--equip_id,&#13;&#10;--SUM(CASE WHEN ACTUALIZE_IND = 'P' THEN YRLY_COST ELSE 0 END) AS ing_projected_cost,&#13;&#10;sum(decode(cmgpb.actualize_ind,&#13;&#10;                          'Y',&#13;&#10;                          coalesce(act_fixed_billing, 0) +&#13;&#10;                          coalesce(act_variable_billing, 0) +&#13;&#10;                          coalesce(act_milestone_billing, 0) +&#13;&#10;                          coalesce(act_esc_billing, 0) +&#13;&#10;                          coalesce(act_extra_work_billing, 0) + coalesce(act_lease_billing, 0) +&#13;&#10;                          coalesce(act_bonus_amt, 0) - coalesce(act_ld_amt, 0) -&#13;&#10;                          coalesce(ACT_VARIABLE_CONSTRAINT, 0), &#13;&#10;                          --+coalesce(ACT_fmv_carveout, 0),&#13;&#10;                          0)) as actual_billing,&#13;&#10;sum(decode(cmgpb.actualize_ind,&#13;&#10;                          'N',&#13;&#10;                          coalesce(proj_fixed_billing, 0) +&#13;&#10;                          coalesce(proj_variable_billing, 0) +&#13;&#10;                          coalesce(proj_milestone_billing, 0) +&#13;&#10;                          coalesce(proj_esc_billing, 0) +&#13;&#10;                          coalesce(adjustments, 0) +&#13;&#10;                          coalesce(proj_extra_work_billing, 0) + coalesce(proj_lease_billing, 0) +&#13;&#10;                          coalesce(proj_bonus_amt, 0) -&#13;&#10;                          coalesce(proj_ld_amt, 0) -&#13;&#10;                          coalesce(PROJ_VARIABLE_CONSTRAINT, 0), &#13;&#10;                          --+coalesce(PROJ_fmv_carveout, 0),&#13;&#10;                          0)) as projected_billing,&#13;&#10;                                           md.COST_CTLG_VER_ID&#13;&#10;from icam_tbcam.cost_model_ver md&#13;&#10;left outer join icam_tbcam.COST_MDL_PERIOD_BILLING cmgpb&#13;&#10;on md.mdl_ver_id=cmgpb.mdl_ver_id and cmgpb.hvr_is_deleted = 0&#13;&#10;LEFT OUTER JOIN icam_tbcam.Cost_Mdl_Ver_Type CMVT ON (md.MDL_VER_TYP_ID = CMVT.MDL_VER_TYP_ID and &#13;&#10; cmvt.hvr_is_deleted = 0)&#13;&#10;LEFT OUTER JOIN icam_tbcam.COST_CATALOG cc ON (md.COST_CTLG_VER_ID = CC.CTLG_VER_ID and &#13;&#10; cc.hvr_is_deleted = 0)&#13;&#10;left outer join icam_tbcam.COST_BILLING_HEADER h on h.mdl_ver_id=cmgpb.mdl_ver_id and &#13;&#10; h.billing_ver_id=cmgpb.billing_ver_id and h.hvr_is_deleted=0&#13;&#10;WHERE MD.RELEASE_IND = 'Y'&#13;&#10;--and DECODE(MD.MDL_VER_TYP_ID,1007,'Y')='Y'&#13;&#10;AND cmvt.DWH_PUBLISH = 'D'&#13;&#10;AND cc.BUSINESS_GRP_ID ='3'&#13;&#10;--and h.active_ver_ind='Y'&#13;&#10;and md.mdl_ver_typ_id=1058&#13;&#10;and h.active_ver_ind='Y'&#13;&#10;--left outer join icam_tbcam.COSt_FINANCIAL_SUMMARY CFS  ON (CFS.MDL_VER_ID = md.MDL_VER_ID)&#13;&#10;group by md.MDL_VER_ID,&#13;&#10;md.total_margin_adj ,&#13;&#10;MD.CONTRACT_CM_PCT,&#13;&#10;md.mdl_id,&#13;&#10;md.COST_CTLG_VER_ID;&#13;&#10;CREATE INDEX if not exists ing_icam_model_inter_idx ON sot_dt.ing_icam_model_inter USING btree &#13;&#10; (MDL_VER_ID);&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="USE_SSL" show="false" value="true"/>
+    <elementParameter field="CHECK" name="PROPAGATE_RECORD_SET" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="RECORD_SET_COLUMN" show="false" value=""/>
+    <elementParameter field="CHECK" name="USE_PREPAREDSTATEMENT" value="false"/>
+    <elementParameter field="TABLE" name="SET_PREPAREDSTATEMENT_PARAMETERS" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" show="false" value="10000"/>
+    <elementParameter field="TEXT" name="LABEL" value="PGS_inter"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tPostgresqlRow_1"/>
+    <metadata connector="REJECT" name="REJECT">
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tPostgresqlRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="608" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tPostgresqlRow_2"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tPostgresqlConnection_1"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="PRIOR_TO_V9"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;5432&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="PostgreSQL"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="0RMsyjmybrE="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;&#13;&#10;drop table if exists  SOT_DT.cost_model_ver_sox_temp1;&#13;&#10;create table SOT_DT.cost_model_ver_sox_temp1&#13;&#10;as &#13;&#10;SELECT MDL_VER_ID,&#13;&#10;             BUSINESS_GRP_ID,&#13;&#10;             COST_CTLG_VER_ID,&#13;&#10;             cmv.release_ind,&#13;&#10;             cc.release_ind AS ctlg_release_ind,&#13;&#10;             cmv.MDL_VER_TYP_ID,&#13;&#10;             cmvt.dwh_publish&#13;&#10;      FROM icam_tbcam.cost_model_ver cmv&#13;&#10;        LEFT OUTER JOIN icam_tbcam.COST_CATALOG cc&#13;&#10;                     ON (CMV.COST_CTLG_VER_ID = CC.CTLG_VER_ID&#13;&#10;                    AND cc.hvr_is_deleted = 0)&#13;&#10;        LEFT OUTER JOIN icam_tbcam.Cost_Mdl_Ver_Type CMVT&#13;&#10;                     ON (CMV.MDL_VER_TYP_ID = CMVT.MDL_VER_TYP_ID&#13;&#10;                    AND cmvt.hvr_is_deleted = 0);&#13;&#10;&#13;&#10;&#13;&#10;CREATE INDEX cost_model_ver_sox_temp1_idx ON SOT_DT.cost_model_ver_sox_temp1 &#13;&#10;USING btree (mdl_ver_id, COST_CTLG_VER_ID,MDL_VER_TYP_ID,DWH_PUBLISH,BUSINESS_GRP_ID,CTLG_RELEASE_IND,RELEASE_IND);&#13;&#10;&#13;&#10;&#13;&#10;&#13;&#10;drop table if exists SOT_DT.cost_MDL_VER_EQUIP_PART_KIT_sox_temp;&#13;&#10;create table SOT_DT.cost_MDL_VER_EQUIP_PART_KIT_sox_temp&#13;&#10;as &#13;&#10;SELECT cmvepk.MDL_VER_ID,&#13;&#10;                     CTLG_VER_ID,&#13;&#10;                     EQUIP_MDL_ID&#13;&#10;              FROM icam_tbcam.cost_MDL_VER_EQUIP_PART_KIT cmvepk&#13;&#10;                INNER JOIN icam_tbcam.COST_MODEL_VER cmv&#13;&#10;                        ON (cmvepk.mdl_ver_id = cmv.mdl_ver_id&#13;&#10;                       AND cmv.hvr_is_deleted = 0)&#13;&#10;                INNER JOIN icam_tbcam.cost_part_kit_ctlg cpkc&#13;&#10;                        ON (cmvepk.part_kit_id = cpkc.part_kit_id&#13;&#10;                       AND cmv.cost_ctlg_ver_id = cpkc.ctlg_ver_id&#13;&#10;                       AND cpkc.hvr_is_deleted = 0)&#13;&#10;                INNER JOIN icam_tbcam.cost_mdl_ver_equip cmve&#13;&#10;                        ON (cmvepk.mdl_ver_id = cmve.mdl_ver_id&#13;&#10;                       AND cmvepk.equip_id = cmve.equip_id&#13;&#10;                       AND cmve.hvr_is_deleted = 0)&#13;&#10;                       ;&#13;&#10;&#13;&#10;CREATE INDEX cost_MDL_VER_EQUIP_PART_KIT_sox_temp_idx ON SOT_DT.cost_MDL_VER_EQUIP_PART_KIT_sox_temp &#13;&#10;USING btree (mdl_ver_id, CTLG_VER_ID,EQUIP_MDL_ID);&#9;&#9;&#13;&#10;&#13;&#10;Drop table if exists SOT_DT.COSt_FINANCIAL_SUMMARY_SOX_temp_1;&#13;&#10;create table SOT_DT.COSt_FINANCIAL_SUMMARY_SOX_temp_1&#13;&#10;as&#13;&#10;SELECT mdl_ver_id,ACTUALIZE_IND,yrly_cost,YRLY_PRICE, equip_id&#13;&#10;from icam_tbcam.COSt_FINANCIAL_SUMMARY;&#13;&#10;&#13;&#10;--CREATE INDEX COSt_FINANCIAL_SUMMARY_SOX_temp_1_idx ON SOT_DT.COSt_FINANCIAL_SUMMARY_SOX_temp_1 USING btree (ACTUALIZE_IND);&#9;&#9;&#13;&#10;&#13;&#10;&#13;&#10;Drop table if exists SOT_DT.COSt_FINANCIAL_SUMMARY_SOX_temp;&#13;&#10;create table SOT_DT.COSt_FINANCIAL_SUMMARY_SOX_temp&#13;&#10;as &#13;&#10;SELECT mdl_ver_id,ACTUALIZE_IND,yrly_cost,YRLY_PRICE, equip_id,&#13;&#10;                             SUM(CASE WHEN ACTUALIZE_IND = 'A' THEN YRLY_COST ELSE 0 END) as ing_Actual_Cost,&#13;&#10;SUM(CASE WHEN ACTUALIZE_IND = 'O' THEN YRLY_COST ELSE 0 END) as ing_outstanding_cost,&#13;&#10;SUM(CASE WHEN ACTUALIZE_IND IN ('A','P','O') THEN YRLY_COST ELSE 0 END) as ing_total_cost,&#13;&#10;SUM(CASE WHEN ACTUALIZE_IND = 'A' THEN YRLY_PRICE ELSE 0 END) ing_Actual_Sales,&#13;&#10;                      SUM(CASE WHEN ACTUALIZE_IND IN ('A','P','O') THEN YRLY_PRICE ELSE 0 END) as ing_total_price,    &#13;&#10;                          SUM(CASE WHEN ACTUALIZE_IND = 'P' THEN YRLY_COST ELSE 0 END) AS ing_PROJected_COST,&#13;&#10;                            sum(decode(actualize_ind, 'P', yrly_cost)) as ing_projected_sales,&#13;&#10;                            sum(decode(actualize_ind, 'O', yrly_cost)) as ing_outstanding_sales&#13;&#10;                   FROM SOT_DT.COSt_FINANCIAL_SUMMARY_SOX_temp_1&#13;&#10;                   GROUP BY mdl_ver_id,ACTUALIZE_IND,yrly_cost,YRLY_PRICE, equip_id;&#13;&#10;&#13;&#10;CREATE INDEX COSt_FINANCIAL_SUMMARY_SOX_temp_idx ON SOT_DT.COSt_FINANCIAL_SUMMARY_SOX_temp USING btree (mdl_ver_id,equip_id);&#9;&#9;&#9;   &#13;&#10;&#9;&#9;&#9;&#9;   &#13;&#10;&#13;&#10;Drop table if exists SOT_DT.ICAM_Model_config_sox_rpt_temp;&#13;&#10;create table SOT_DT.ICAM_Model_config_sox_rpt_temp&#13;&#10;as &#13;&#10;SELECT DISTINCT CT.mdl_ver_id as ing_mdl_ver_id,&#13;&#10;int.mdl_id ing_model_id,&#13;&#10;GAAP_CM_PCT*100 as ing_gaap_cm_pct,&#13;&#10;Margin_Adj_Sales as ing_Margin_Adj_Sales,&#13;&#10;actual_billing as ing_actual_billing,&#13;&#10;projected_billing as ing_projected_billing,&#13;&#10;ct.ing_Actual_Cost,&#13;&#10;ct.ing_outstanding_cost,&#13;&#10;CT.ing_PROJected_COST,&#13;&#10;ct.ing_total_cost,&#13;&#10;ct.ing_Actual_Sales,&#13;&#10;ct.yrly_cost,&#13;&#10;ct.YRLY_PRICE,&#13;&#10;ing_outstanding_sales /&#13;&#10;                   (1 -&#13;&#10;                    case GAAP_CM_PCT when 1 then 0 else GAAP_CM_PCT end) as ing_outstanding_sales,&#13;&#10;ing_projected_sales/&#13;&#10;                   (1 -&#13;&#10;                    case GAAP_CM_PCT when 1 then 0 else GAAP_CM_PCT end) as ing_projected_sales,&#13;&#10;                    ct.ing_total_price,&#13;&#10;actual_billing+projected_billing as ing_total_billing,&#13;&#10;      CT.equip_id,&#13;&#10;       MD.BUSINESS_GRP_ID&#13;&#10;FROM SOT_DT.cost_model_ver_sox_temp1 MD&#13;&#10;INNER JOIN icam_tbcam.COST_mdl_ver_equip B ON (B.MDL_VER_ID = MD.MDL_VER_ID)&#13;&#10;INNER JOIN SOT_DT.cost_MDL_VER_EQUIP_PART_KIT_sox_temp EP  ON (EP.MDL_VER_ID = MD.MDL_VER_ID  AND EP.CTLG_VER_ID = MD.COST_CTLG_VER_ID   AND EP.EQUIP_MDL_ID = B.EQUIP_MDL_ID)&#13;&#10;LEFT OUTER JOIN SOT_DT.COSt_FINANCIAL_SUMMARY_SOX_temp CT  ON (CT.MDL_VER_ID = MD.MDL_VER_ID  AND CT.EQUIP_ID = B.EQUIP_ID)&#13;&#10;left outer join sot_dt.ing_icam_model_inter int on (CT.MDL_VER_ID = int.MDL_VER_ID)&#13;&#10;WHERE &#13;&#10;--CT.mdl_ver_id in ('4540501', '4507288') AND  &#13;&#10;MD.RELEASE_IND = 'Y' AND  case MD.MDL_VER_TYP_ID when 1007 then 'Y' else MD.CTLG_RELEASE_IND end = 'Y'&#13;&#10;--AND MD.CTLG_RELEASE_IND = 'Y'&#13;&#10;and md.mdl_ver_typ_id=1058 AND   MD.DWH_PUBLISH = 'D' AND   MD.BUSINESS_GRP_ID ='3'&#13;&#10;;&#13;&#10;&#13;&#10;&#13;&#10;insert into SOT_DT.ICAM_Model_config_sox_rpt_temp&#13;&#10;SELECT DISTINCT CT.mdl_ver_id  as ing_mdl_ver_id,&#13;&#10;int.mdl_id ing_model_id,&#13;&#10;GAAP_CM_PCT*100 as ing_gaap_cm_pct,&#13;&#10;Margin_Adj_Sales as ing_Margin_Adj_Sales,&#13;&#10;actual_billing as ing_actual_billing,&#13;&#10;projected_billing as ing_projected_billing,&#13;&#10;ct.ing_Actual_Cost,&#13;&#10;ct.ing_outstanding_cost,&#13;&#10;CT.ing_PROJected_COST,&#13;&#10;ct.ing_total_cost,&#13;&#10;ct.ing_Actual_Sales,&#13;&#10;ct.yrly_cost,&#13;&#10;ct.YRLY_PRICE,&#13;&#10;ing_outstanding_sales /&#13;&#10;                   (1 -&#13;&#10;                    case GAAP_CM_PCT when 1 then 0 else GAAP_CM_PCT end) as ing_outstanding_sales,&#13;&#10;ing_projected_sales /&#13;&#10;                   (1 -&#13;&#10;                    case GAAP_CM_PCT when 1 then 0 else GAAP_CM_PCT end) as ing_projected_sales,&#13;&#10;ct.ing_total_price,                    &#13;&#10;actual_billing+projected_billing as ing_total_billing,&#13;&#10;      CT.equip_id,&#13;&#10;       MD.BUSINESS_GRP_ID    &#13;&#10;FROM SOT_DT.cost_model_ver_sox_temp1 MD&#13;&#10;  INNER JOIN icam_tbcam.COST_mdl_ver_equip B ON (B.MDL_VER_ID = MD.MDL_VER_ID)&#13;&#10;  INNER JOIN SOT_DT.cost_MDL_VER_EQUIP_PART_KIT_sox_temp EP  ON (EP.MDL_VER_ID = MD.MDL_VER_ID  AND EP.CTLG_VER_ID = MD.COST_CTLG_VER_ID  AND EP.EQUIP_MDL_ID = B.EQUIP_MDL_ID)&#13;&#10;  LEFT OUTER JOIN SOT_DT.COSt_FINANCIAL_SUMMARY_SOX_temp CT   ON (CT.MDL_VER_ID = MD.MDL_VER_ID AND CT.EQUIP_ID IS NULL)&#13;&#10;  left outer join sot_dt.ing_icam_model_inter int on (CT.MDL_VER_ID = int.MDL_VER_ID)&#13;&#10;WHERE --CT.mdl_ver_id in ('4540501', '4507288')AND &#13;&#10;MD.RELEASE_IND = 'Y'&#13;&#10;AND   case MD.MDL_VER_TYP_ID when 1007 then 'Y' else MD.CTLG_RELEASE_IND end = 'Y'&#13;&#10;--AND MD.CTLG_RELEASE_IND = 'Y'&#13;&#10;and md.mdl_ver_typ_id=1058&#13;&#10;AND   MD.DWH_PUBLISH = 'D'&#13;&#10;AND   MD.BUSINESS_GRP_ID ='3';&#13;&#10;&#13;&#10;&#9;&#9;&#9;&#9;   &#13;&#10;drop table if exists SOT_DT.ICAM_Model_config_sox_rpt_temp_2;&#13;&#10;create table SOT_DT.ICAM_Model_config_sox_rpt_temp_2&#13;&#10;as&#13;&#10;select  &#13;&#10;distinct &#13;&#10;ing_mdl_ver_id,&#13;&#10;ing_model_id,&#13;&#10;ing_gaap_cm_pct,&#13;&#10;ing_Margin_Adj_Sales,&#13;&#10;ing_actual_billing,&#13;&#10;ing_projected_billing,&#13;&#10;sum(ing_Actual_Cost) ing_Actual_Cost,&#13;&#10;sum(coalesce(ing_outstanding_cost,0)) ing_outstanding_cost ,&#13;&#10;sum (ing_PROJected_COST)ing_PROJected_COST,&#13;&#10;sum(ing_total_cost)ing_total_cost,&#13;&#10;sum(ing_Actual_Sales)ing_Actual_Sales,&#13;&#10;sum(coalesce(ing_outstanding_sales,0) ) ing_outstanding_sales,&#13;&#10;sum(ing_projected_sales) ing_projected_sales,&#13;&#10;sum(ing_total_price) ing_total_price,&#13;&#10;ing_total_billing&#13;&#10;--sum (equip_id)&#13;&#10;--equip_id,&#13;&#10;from SOT_DT.ICAM_Model_config_sox_rpt_temp&#13;&#10;group by &#13;&#10;ing_mdl_ver_id,&#13;&#10;ing_model_id,&#13;&#10;ing_gaap_cm_pct,&#13;&#10;ing_Margin_Adj_Sales,&#13;&#10;ing_actual_billing,&#13;&#10;ing_projected_billing,&#13;&#10;ing_total_billing&#13;&#10;;&#13;&#10;&#13;&#10;&#13;&#10;CREATE INDEX ICAM_Model_config_sox_rpt_temp_2_idx ON SOT_DT.ICAM_Model_config_sox_rpt_temp_2 &#13;&#10;USING btree (ing_mdl_ver_id, ing_model_id);&#9;&#9;&#13;&#10;&#13;&#10;&#13;&#10;CREATE INDEX if not exists icam_dwh_config_sox_idx ON pgsicamdwh.icam_dwh_config USING btree (mdl_ver_id,BUSINESS_GRP_ID);&#13;&#10;CREATE INDEX if not exists pg_icam_model_terms_and_conditions_sox_idx ON pgsicamdwh.pg_icam_model_terms_and_conditions USING btree (mdl_ver_id,mdl_ver_typ_id);&#9;&#9;&#9;   &#13;&#10;&#9;&#9;&#13;&#10;&#13;&#10;drop table if exists SOT_DT.ICAM_Model_config_sox_rpt_temp_3;&#13;&#10;create table SOT_DT.ICAM_Model_config_sox_rpt_temp_3&#13;&#10;as&#13;&#10;select distinct &#13;&#10;DWH_Config.mdl_ver_id as rep_model_ver_id,&#13;&#10;mdt.mdl_id as rep_model_id,&#13;&#10;icam_dwh_model_version.contract_cm_pct *100 as rep_gaap_cm_pct,&#13;&#10;--sum(DWH_Config.total_margin_adj) AS rep_total_margin_adj,&#13;&#10;case when MAX(coalesce(DWH_Config.total_margin_adj,0))=0&#13;&#10;THEN MIN(coalesce(DWH_Config.total_margin_adj,0))&#13;&#10;ELSE MAX(coalesce(DWH_Config.total_margin_adj,0))&#13;&#10;END as rep_total_margin_adj,&#13;&#10;sum(case when DWH_Config.actualize_ind='Y' &#13;&#10;THEN&#13;&#10;DWH_Config.total_billing+ coalesce(DWH_Config.lease_billing,0)&#13;&#10;ELSE 0&#13;&#10;END )as rep_actual_billing,&#13;&#10;sum(case when DWH_Config.actualize_ind='N' &#13;&#10;THEN&#13;&#10;(coalesce(DWH_Config.total_billing,0)+ coalesce(DWH_Config.lease_billing,0)-coalesce(DWH_Config.proj_variable_constraint,0))&#13;&#10;ELSE 0&#13;&#10;END) as rep_projected_billing,--actualize_ind,&#13;&#10;sum(DWH_Config.act_cost_amt) AS rep_actual_cost,&#13;&#10;sum(DWH_Config.outstanding_cost) AS rep_outstanding_cost,&#13;&#10;sum(coalesce(DWH_Config.proj_cost_amt,0)) AS rep_projected_cost,&#13;&#10;sum(DWH_Config.total_cost) AS rep_total_cost,&#13;&#10;sum(DWH_Config.act_sales_amt) AS rep_actual_sales,&#13;&#10;sum(DWH_Config.outstanding_cost/(1-icam_dwh_model_version.contract_cm_pct)) as rep_outstanding_sales,&#13;&#10;sum(DWH_Config.proj_cost_amt/(1-icam_dwh_model_version.contract_cm_pct)) as rep_projected_sales,&#13;&#10;sum(DWH_Config.total_price) as rep_total_price&#13;&#10;/*DWH_Config.actualize_ind AS rep_actualize_ind,&#13;&#10;sum(DWH_Config.total_billing) AS rep_total_billing_ori,&#13;&#10;sum(DWH_Config.lease_billing) AS rep_lease_billing,&#13;&#10;sum(DWH_Config.proj_variable_constraint) AS rep_proj_variable_constraint,&#13;&#10;sum(DWH_Config.total_price) AS rep_total_price,&#13;&#10;sum(DWH_Config.gaap_cm_pct) AS rep_gaap_cm_pct*/&#13;&#10;FROM pgsicamdwh.icam_dwh_config DWH_Config&#13;&#10;LEFT JOIN pgsicamdwh.pg_icam_model_terms_and_conditions mdt ON (DWH_Config.mdl_ver_id = mdt.mdl_ver_id)&#13;&#10;INNER JOIN pgsicamdwh.icam_dwh_model_version  icam_dwh_model_version ON (DWH_Config.mdl_ver_id = icam_dwh_model_version.mdl_ver_id)&#13;&#10;INNER JOIN icam_tbcam.cost_user cost_user ON (icam_dwh_model_version.updated_by= cost_user.user_id)&#13;&#10;WHERE icam_dwh_model_version.RELEASE_IND = 'Y'&#13;&#10;--and DECODE(MD.MDL_VER_TYP_ID,1007,'Y')='Y'&#13;&#10;AND icam_dwh_model_version.DWH_PUBLISH = 'D'&#13;&#10;AND DWH_Config.BUSINESS_GRP_ID = '3'&#13;&#10;--and h.active_ver_ind='Y'&#13;&#10;and mdt.mdl_ver_typ_id=1058&#13;&#10;group by 1,2,3&#13;&#10;;&#13;&#10;&#13;&#10;&#13;&#10;&#13;&#10;&#13;&#10;CREATE INDEX ICAM_Model_config_sox_rpt_temp_3_idx ON SOT_DT.ICAM_Model_config_sox_rpt_temp_3 &#13;&#10;USING btree (rep_model_ver_id, rep_model_id);&#9;&#13;&#10;&#13;&#10;&#13;&#10;truncate table SOT_DT.ICAM_Model_config_sox_rpt;&#13;&#10;insert into SOT_DT.ICAM_Model_config_sox_rpt  &#13;&#10;select ing_mdl_ver_id,&#13;&#10;ing_model_id,&#13;&#10;ing_gaap_cm_pct,&#13;&#10;ing_Margin_Adj_Sales,&#13;&#10;ing_actual_billing,&#13;&#10;ing_projected_billing,&#13;&#10;ing_Actual_Cost,&#13;&#10;ing_outstanding_cost,&#13;&#10;ing_PROJected_COST,&#13;&#10;ing_total_cost,&#13;&#10;ing_Actual_Sales,&#13;&#10;ing_outstanding_sales,&#13;&#10;ing_projected_sales,&#13;&#10;ing_total_billing,&#13;&#10;ing_total_price,&#13;&#10;coalesce(ing_Actual_Sales,0)+coalesce(ing_outstanding_sales,0)+coalesce(ing_projected_sales,0) as ing_total_sales,&#13;&#10;rep_model_ver_id,&#13;&#10;rep_model_id,&#13;&#10;rep_gaap_cm_pct,&#13;&#10;rep_total_margin_adj,&#13;&#10;rep_actual_billing,&#13;&#10;rep_projected_billing,&#13;&#10;rep_actual_cost,&#13;&#10;rep_outstanding_cost,&#13;&#10;rep_projected_cost,&#13;&#10;rep_total_cost,&#13;&#10;rep_actual_sales,&#13;&#10;rep_outstanding_sales,&#13;&#10;rep_projected_sales,&#13;&#10;rep_total_price,&#13;&#10;rep_total_billing,&#13;&#10;total_sales,&#13;&#10;current_timestamp as dw_load_date&#13;&#10;from SOT_DT.ICAM_Model_config_sox_rpt_temp_2 ing &#13;&#10;full outer join&#13;&#10;(&#13;&#10;select rep.* , rep_actual_billing+rep_projected_billing as rep_total_billing,&#13;&#10;rep_total_margin_adj+rep_actual_sales+rep_outstanding_sales+rep_projected_sales as total_sales&#13;&#10;from SOT_DT.ICAM_Model_config_sox_rpt_temp_3 rep &#13;&#10;) rep&#13;&#10;on coalesce(rep_model_ver_id,1)= coalesce(ing_mdl_ver_id,1) and coalesce(rep_model_id,1)= coalesce(ing_model_id,1) &#13;&#10;&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="USE_SSL" show="false" value="true"/>
+    <elementParameter field="CHECK" name="PROPAGATE_RECORD_SET" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="RECORD_SET_COLUMN" show="false" value=""/>
+    <elementParameter field="CHECK" name="USE_PREPAREDSTATEMENT" value="false"/>
+    <elementParameter field="TABLE" name="SET_PREPAREDSTATEMENT_PARAMETERS" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" show="false" value="10000"/>
+    <elementParameter field="TEXT" name="LABEL" value="PGS_final"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tPostgresqlRow_2"/>
+    <metadata connector="REJECT" name="REJECT">
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tPostgresqlConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tPostgresqlConnection_1"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_vaJmAE5tEeqprNbx3_OvQA"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="PRIOR_TO_V9"/>
+    <elementParameter field="TEXT" name="HOST" value="context.postgres_new_Server"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="POSTGRESQL"/>
+    <elementParameter field="TEXT" name="PORT" value="context.postgres_new_Port"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.postgres_new_Database"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="context.postgres_new_Schema"/>
+    <elementParameter field="TEXT" name="USER" value="context.postgres_new_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kue+YqsfU9QZ3GHLrTCsaWz4ENXHJTVHmSU="/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="SHARED_CONNECTION_NAME" show="false" value=""/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="USE_SSL" value="false"/>
+    <elementParameter field="CHECK" name="AUTO_COMMIT" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tPostgresqlClose" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="864" posY="288">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tPostgresqlClose_1"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tPostgresqlConnection_1"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tPostgresqlRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="384" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tPostgresqlRow_3"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tPostgresqlConnection_1"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="PRIOR_TO_V9"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;5432&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="PostgreSQL"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="0RMsyjmybrE="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;&#13;&#10;truncate table sot_dt.ing_icam_model_aero_inter;&#13;&#10;insert into  sot_dt.ing_icam_model_aero_inter &#13;&#10;select distinct&#13;&#10;md.MDL_VER_ID,&#13;&#10;md.total_margin_adj Margin_Adj_Sales,&#13;&#10;MD.CONTRACT_CM_PCT AS GAAP_CM_PCT,&#13;&#10;md.mdl_id,&#13;&#10;--equip_id,&#13;&#10;--SUM(CASE WHEN ACTUALIZE_IND = 'P' THEN YRLY_COST ELSE 0 END) AS ing_projected_cost,&#13;&#10;sum(decode(cmgpb.actualize_ind,&#13;&#10;                          'Y',&#13;&#10;                          coalesce(act_fixed_billing, 0) +&#13;&#10;                          coalesce(act_variable_billing, 0) +&#13;&#10;                          coalesce(act_milestone_billing, 0) +&#13;&#10;                          coalesce(act_esc_billing, 0) +&#13;&#10;                          coalesce(act_extra_work_billing, 0) + round (coalesce(act_lease_billing, 0)) +&#13;&#10;                          coalesce(act_bonus_amt, 0) - coalesce(act_ld_amt, 0) -&#13;&#10;                          coalesce(ACT_VARIABLE_CONSTRAINT, 0), &#13;&#10;                          --+coalesce(ACT_fmv_carveout, 0),&#13;&#10;                          0)) as actual_billing,&#13;&#10;sum(decode(cmgpb.actualize_ind,&#13;&#10;                          'N',&#13;&#10;                          coalesce(proj_fixed_billing, 0) +&#13;&#10;                          coalesce(proj_variable_billing, 0) +&#13;&#10;                          coalesce(proj_milestone_billing, 0) +&#13;&#10;                          coalesce(proj_esc_billing, 0) +&#13;&#10;                          coalesce(adjustments, 0) +&#13;&#10;                          coalesce(proj_extra_work_billing, 0) + round ( coalesce(proj_lease_billing, 0)) +&#13;&#10;                          coalesce(proj_bonus_amt, 0) -&#13;&#10;                          coalesce(proj_ld_amt, 0) -&#13;&#10;                          coalesce(PROJ_VARIABLE_CONSTRAINT, 0), &#13;&#10;                          --+coalesce(PROJ_fmv_carveout, 0),&#13;&#10;                          0)) as projected_billing,&#13;&#10;                                           md.COST_CTLG_VER_ID&#13;&#10;from icam_tbcam.cost_model_ver md&#13;&#10;left outer join icam_tbcam.COST_MDL_PERIOD_BILLING cmgpb&#13;&#10;on md.mdl_ver_id=cmgpb.mdl_ver_id and cmgpb.hvr_is_deleted = 0&#13;&#10;LEFT OUTER JOIN icam_tbcam.Cost_Mdl_Ver_Type CMVT ON (md.MDL_VER_TYP_ID = CMVT.MDL_VER_TYP_ID and cmvt.hvr_is_deleted = 0)&#13;&#10;LEFT OUTER JOIN icam_tbcam.COST_CATALOG cc ON (md.COST_CTLG_VER_ID = CC.CTLG_VER_ID and cc.hvr_is_deleted = 0)&#13;&#10;left outer join icam_tbcam.COST_BILLING_HEADER h on h.mdl_ver_id=cmgpb.mdl_ver_id and h.billing_ver_id=cmgpb.billing_ver_id and h.hvr_is_deleted=0&#13;&#10;WHERE MD.RELEASE_IND = 'Y'&#13;&#10;--and DECODE(MD.MDL_VER_TYP_ID,1007,'Y')='Y'&#13;&#10;AND cmvt.DWH_PUBLISH = 'D'&#13;&#10;AND cc.BUSINESS_GRP_ID ='1'&#13;&#10;--and h.active_ver_ind='Y'&#13;&#10;and md.mdl_ver_typ_id=1058&#13;&#10;and h.active_ver_ind='Y'&#13;&#10;--left outer join icam_tbcam.COSt_FINANCIAL_SUMMARY CFS  ON (CFS.MDL_VER_ID = md.MDL_VER_ID)&#13;&#10;group by md.MDL_VER_ID,&#13;&#10;md.total_margin_adj ,&#13;&#10;MD.CONTRACT_CM_PCT,&#13;&#10;md.mdl_id,&#13;&#10;md.COST_CTLG_VER_ID&#13;&#10;&#13;&#10;&#13;&#10;&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="USE_SSL" show="false" value="true"/>
+    <elementParameter field="CHECK" name="PROPAGATE_RECORD_SET" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="RECORD_SET_COLUMN" show="false" value=""/>
+    <elementParameter field="CHECK" name="USE_PREPAREDSTATEMENT" value="false"/>
+    <elementParameter field="TABLE" name="SET_PREPAREDSTATEMENT_PARAMETERS" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" show="false" value="10000"/>
+    <elementParameter field="TEXT" name="LABEL" value="aero_inter"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tPostgresqlRow_3"/>
+    <metadata connector="REJECT" name="REJECT">
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tPostgresqlRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="608" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tPostgresqlRow_4"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tPostgresqlConnection_1"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="PRIOR_TO_V9"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;5432&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="PostgreSQL"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="0RMsyjmybrE="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;&#13;&#10;insert into sot_dt.icam_model_config_sox_aero_rpt &#13;&#10;select ing_mdl_ver_id,&#13;&#10;ing_model_id,&#13;&#10;ing_gaap_cm_pct,&#13;&#10;ing_Margin_Adj_Sales,&#13;&#10;ing_actual_billing,&#13;&#10;ing_projected_billing,&#13;&#10;ing_Actual_Cost,&#13;&#10;ing_outstanding_cost,&#13;&#10;ing_PROJected_COST,&#13;&#10;ing_total_cost,&#13;&#10;ing_Actual_Sales,&#13;&#10;ing_outstanding_sales,&#13;&#10;ing_projected_sales,&#13;&#10;ing_total_billing,&#13;&#10;ing_total_price,&#13;&#10;coalesce(ing_Actual_Sales,0)+coalesce(ing_outstanding_sales,0)+coalesce(ing_projected_sales,0) as ing_total_sales,&#13;&#10;rep_model_ver_id,&#13;&#10;rep_model_id,&#13;&#10;rep_gaap_cm_pct,&#13;&#10;rep_total_margin_adj,&#13;&#10;rep_actual_billing,&#13;&#10;rep_projected_billing,&#13;&#10;rep_actual_cost,&#13;&#10;rep_outstanding_cost,&#13;&#10;rep_projected_cost,&#13;&#10;rep_total_cost,&#13;&#10;rep_actual_sales,&#13;&#10;rep_outstanding_sales,&#13;&#10;rep_projected_sales,&#13;&#10;rep_total_price,&#13;&#10;rep_total_billing,&#13;&#10;total_sales,&#13;&#10;current_timestamp as dw_load_date&#13;&#10;from (select  distinct ing_mdl_ver_id,&#13;&#10;ing_model_id,&#13;&#10;ing_gaap_cm_pct,&#13;&#10;ing_Margin_Adj_Sales,&#13;&#10;ing_actual_billing,&#13;&#10;ing_projected_billing,&#13;&#10;sum(ing_Actual_Cost) ing_Actual_Cost,&#13;&#10;sum(coalesce(ing_outstanding_cost,0)) ing_outstanding_cost ,&#13;&#10;sum (ing_PROJected_COST)ing_PROJected_COST,&#13;&#10;sum(ing_total_cost)ing_total_cost,&#13;&#10;sum(ing_Actual_Sales)ing_Actual_Sales,&#13;&#10;sum(coalesce(ing_outstanding_sales,0) ) ing_outstanding_sales,&#13;&#10;sum(ing_projected_sales) ing_projected_sales,&#13;&#10;sum(ing_total_price) ing_total_price,&#13;&#10;ing_total_billing&#13;&#10;--sum (equip_id)&#13;&#10;--equip_id,&#13;&#10;from( &#13;&#10;SELECT DISTINCT CT.mdl_ver_id as ing_mdl_ver_id,&#13;&#10;int.mdl_id ing_model_id,&#13;&#10;GAAP_CM_PCT*100 as ing_gaap_cm_pct,&#13;&#10;Margin_Adj_Sales as ing_Margin_Adj_Sales,&#13;&#10;actual_billing as ing_actual_billing,&#13;&#10;projected_billing as ing_projected_billing,&#13;&#10;ct.ing_Actual_Cost,&#13;&#10;ct.ing_outstanding_cost,&#13;&#10;CT.ing_PROJected_COST,&#13;&#10;ct.ing_total_cost,&#13;&#10;ct.ing_Actual_Sales,&#13;&#10;ct.yrly_cost,&#13;&#10;ct.YRLY_PRICE,&#13;&#10;ing_outstanding_sales /&#13;&#10;                   (1 -&#13;&#10;                    case GAAP_CM_PCT when 1 then  0 else  GAAP_CM_PCT end) as ing_outstanding_sales,&#13;&#10;ing_projected_sales/&#13;&#10;                   (1 -&#13;&#10;                    case GAAP_CM_PCT when 1 then 0 else  GAAP_CM_PCT end) as ing_projected_sales,&#13;&#10;                    ct.ing_total_price,&#13;&#10;actual_billing+projected_billing as ing_total_billing,&#13;&#10;      CT.equip_id,&#13;&#10;       MD.BUSINESS_GRP_ID&#13;&#10;FROM (SELECT MDL_VER_ID,&#13;&#10;             BUSINESS_GRP_ID,&#13;&#10;             COST_CTLG_VER_ID,&#13;&#10;             cmv.release_ind,&#13;&#10;             cc.release_ind AS ctlg_release_ind,&#13;&#10;             cmv.MDL_VER_TYP_ID,&#13;&#10;             cmvt.dwh_publish&#13;&#10;      FROM icam_tbcam.cost_model_ver cmv&#13;&#10;        LEFT OUTER JOIN icam_tbcam.COST_CATALOG cc&#13;&#10;                     ON (CMV.COST_CTLG_VER_ID = CC.CTLG_VER_ID&#13;&#10;                    AND cc.hvr_is_deleted = 0)&#13;&#10;        LEFT OUTER JOIN icam_tbcam.Cost_Mdl_Ver_Type CMVT&#13;&#10;                     ON (CMV.MDL_VER_TYP_ID = CMVT.MDL_VER_TYP_ID&#13;&#10;                    AND cmvt.hvr_is_deleted = 0)) MD&#13;&#10;  INNER JOIN icam_tbcam.COST_mdl_ver_equip B ON (B.MDL_VER_ID = MD.MDL_VER_ID)&#13;&#10;  INNER JOIN (SELECT cmvepk.MDL_VER_ID,&#13;&#10;                     CTLG_VER_ID,&#13;&#10;                     EQUIP_MDL_ID&#13;&#10;              FROM icam_tbcam.cost_MDL_VER_EQUIP_PART_KIT cmvepk&#13;&#10;                INNER JOIN icam_tbcam.COST_MODEL_VER cmv&#13;&#10;                        ON (cmvepk.mdl_ver_id = cmv.mdl_ver_id&#13;&#10;                       AND cmv.hvr_is_deleted = 0)&#13;&#10;                INNER JOIN icam_tbcam.cost_part_kit_ctlg cpkc&#13;&#10;                        ON (cmvepk.part_kit_id = cpkc.part_kit_id&#13;&#10;                       AND cmv.cost_ctlg_ver_id = cpkc.ctlg_ver_id&#13;&#10;                       AND cpkc.hvr_is_deleted = 0)&#13;&#10;                INNER JOIN icam_tbcam.cost_mdl_ver_equip cmve&#13;&#10;                        ON (cmvepk.mdl_ver_id = cmve.mdl_ver_id&#13;&#10;                       AND cmvepk.equip_id = cmve.equip_id&#13;&#10;                       AND cmve.hvr_is_deleted = 0)) EP&#13;&#10;          ON (EP.MDL_VER_ID = MD.MDL_VER_ID&#13;&#10;         AND EP.CTLG_VER_ID = MD.COST_CTLG_VER_ID&#13;&#10;         AND EP.EQUIP_MDL_ID = B.EQUIP_MDL_ID)&#13;&#10;  LEFT OUTER JOIN (SELECT mdl_ver_id,ACTUALIZE_IND,yrly_cost,YRLY_PRICE,&#13;&#10;                          equip_id,&#13;&#10;                          SUM(CASE WHEN ACTUALIZE_IND = 'A' THEN YRLY_COST ELSE 0 END) as ing_Actual_Cost,&#13;&#10;SUM(CASE WHEN ACTUALIZE_IND = 'O' THEN YRLY_COST ELSE 0 END) as ing_outstanding_cost,&#13;&#10;SUM(CASE WHEN ACTUALIZE_IND IN ('A','P','O') THEN YRLY_COST ELSE 0 END) as ing_total_cost,&#13;&#10;SUM(CASE WHEN ACTUALIZE_IND = 'A' THEN YRLY_PRICE ELSE 0 END) ing_Actual_Sales,&#13;&#10;                          SUM(CASE WHEN ACTUALIZE_IND IN ('A','P','O') THEN YRLY_PRICE ELSE 0 END) as ing_total_price,&#13;&#10;                          SUM(CASE WHEN ACTUALIZE_IND = 'P' THEN YRLY_COST ELSE 0 END) AS ing_PROJected_COST,&#13;&#10;                          sum(decode(actualize_ind, 'P', yrly_cost)) as ing_projected_sales,&#13;&#10;                          sum(decode(actualize_ind, 'O', yrly_cost)) as ing_outstanding_sales&#13;&#10;                   FROM icam_tbcam.COSt_FINANCIAL_SUMMARY&#13;&#10;                   GROUP BY mdl_ver_id,ACTUALIZE_IND,yrly_cost,YRLY_PRICE--,&#13;&#10;                           , equip_id&#13;&#10;                            ) CT&#13;&#10;               ON (CT.MDL_VER_ID = MD.MDL_VER_ID&#13;&#10;              AND CT.EQUIP_ID = B.EQUIP_ID)&#13;&#10;                    left outer join sot_dt.ing_icam_model_aero_inter int on (CT.MDL_VER_ID = int.MDL_VER_ID)&#13;&#10;WHERE --CT.mdl_ver_id in ('4540501', '4507288') AND  &#13;&#10;MD.RELEASE_IND = 'Y'&#13;&#10;AND   case MD.MDL_VER_TYP_ID when 1007 then 'Y' else MD.CTLG_RELEASE_IND = 'Y' end&#13;&#10;--AND MD.CTLG_RELEASE_IND = 'Y'&#13;&#10;and md.mdl_ver_typ_id=1058&#13;&#10;AND   MD.DWH_PUBLISH = 'D'&#13;&#10;AND   MD.BUSINESS_GRP_ID ='1'&#13;&#10;UNION&#13;&#10;SELECT DISTINCT CT.mdl_ver_id  as ing_mdl_ver_id,&#13;&#10;int.mdl_id ing_model_id,&#13;&#10;GAAP_CM_PCT*100 as ing_gaap_cm_pct,&#13;&#10;Margin_Adj_Sales as ing_Margin_Adj_Sales,&#13;&#10;actual_billing as ing_actual_billing,&#13;&#10;projected_billing as ing_projected_billing,&#13;&#10;ct.ing_Actual_Cost,&#13;&#10;ct.ing_outstanding_cost,&#13;&#10;CT.ing_PROJected_COST,&#13;&#10;ct.ing_total_cost,&#13;&#10;ct.ing_Actual_Sales,&#13;&#10;ct.yrly_cost,&#13;&#10;ct.YRLY_PRICE,&#13;&#10;ing_outstanding_sales /&#13;&#10;                   (1 -&#13;&#10;                    case GAAP_CM_PCT when  1 then 0 else GAAP_CM_PCT end ) as ing_outstanding_sales,&#13;&#10;ing_projected_sales /&#13;&#10;                   (1 -&#13;&#10;                    case GAAP_CM_PCT when 1 then 0 else GAAP_CM_PCT end) as ing_projected_sales,&#13;&#10;ct.ing_total_price,                    &#13;&#10;actual_billing+projected_billing as ing_total_billing,&#13;&#10;      CT.equip_id,&#13;&#10;       MD.BUSINESS_GRP_ID    &#13;&#10;FROM (SELECT MDL_VER_ID,&#13;&#10;             BUSINESS_GRP_ID,&#13;&#10;             COST_CTLG_VER_ID,&#13;&#10;             cmv.release_ind,&#13;&#10;             cc.release_ind AS ctlg_release_ind,&#13;&#10;             cmv.MDL_VER_TYP_ID,&#13;&#10;             cmvt.dwh_publish&#13;&#10;      FROM icam_tbcam.cost_model_ver cmv&#13;&#10;        LEFT OUTER JOIN icam_tbcam.COST_CATALOG cc&#13;&#10;                     ON (CMV.COST_CTLG_VER_ID = CC.CTLG_VER_ID&#13;&#10;                    AND cc.hvr_is_deleted = 0)&#13;&#10;        LEFT OUTER JOIN icam_tbcam.Cost_Mdl_Ver_Type CMVT&#13;&#10;                     ON (CMV.MDL_VER_TYP_ID = CMVT.MDL_VER_TYP_ID&#13;&#10;                    AND cmvt.hvr_is_deleted = 0)) MD&#13;&#10;  INNER JOIN icam_tbcam.COST_mdl_ver_equip B ON (B.MDL_VER_ID = MD.MDL_VER_ID)&#13;&#10;  INNER JOIN (SELECT cmvepk.MDL_VER_ID,&#13;&#10;                     CTLG_VER_ID,&#13;&#10;                     EQUIP_MDL_ID&#13;&#10;              FROM icam_tbcam.cost_MDL_VER_EQUIP_PART_KIT cmvepk&#13;&#10;                INNER JOIN icam_tbcam.COST_MODEL_VER cmv&#13;&#10;                        ON (cmvepk.mdl_ver_id = cmv.mdl_ver_id&#13;&#10;                       AND cmv.hvr_is_deleted = 0)&#13;&#10;                INNER JOIN icam_tbcam.cost_part_kit_ctlg cpkc&#13;&#10;                        ON (cmvepk.part_kit_id = cpkc.part_kit_id&#13;&#10;                       AND cmv.cost_ctlg_ver_id = cpkc.ctlg_ver_id&#13;&#10;                       AND cpkc.hvr_is_deleted = 0)&#13;&#10;                INNER JOIN icam_tbcam.cost_mdl_ver_equip cmve&#13;&#10;                        ON (cmvepk.mdl_ver_id = cmve.mdl_ver_id&#13;&#10;                       AND cmvepk.equip_id = cmve.equip_id&#13;&#10;                       AND cmve.hvr_is_deleted = 0)) EP&#13;&#10;          ON (EP.MDL_VER_ID = MD.MDL_VER_ID&#13;&#10;         AND EP.CTLG_VER_ID = MD.COST_CTLG_VER_ID&#13;&#10;         AND EP.EQUIP_MDL_ID = B.EQUIP_MDL_ID)&#13;&#10;  LEFT OUTER JOIN (SELECT mdl_ver_id,ACTUALIZE_IND,yrly_cost,YRLY_PRICE,&#13;&#10;                          equip_id,&#13;&#10;                             SUM(CASE WHEN ACTUALIZE_IND = 'A' THEN YRLY_COST ELSE 0 END) as ing_Actual_Cost,&#13;&#10;SUM(CASE WHEN ACTUALIZE_IND = 'O' THEN YRLY_COST ELSE 0 END) as ing_outstanding_cost,&#13;&#10;SUM(CASE WHEN ACTUALIZE_IND IN ('A','P','O') THEN YRLY_COST ELSE 0 END) as ing_total_cost,&#13;&#10;SUM(CASE WHEN ACTUALIZE_IND = 'A' THEN YRLY_PRICE ELSE 0 END) ing_Actual_Sales,&#13;&#10;                      SUM(CASE WHEN ACTUALIZE_IND IN ('A','P','O') THEN YRLY_PRICE ELSE 0 END) as ing_total_price,    &#13;&#10;                          SUM(CASE WHEN ACTUALIZE_IND = 'P' THEN YRLY_COST ELSE 0 END) AS ing_PROJected_COST,&#13;&#10;                            sum(decode(actualize_ind, 'P', yrly_cost)) as ing_projected_sales,&#13;&#10;                            sum(decode(actualize_ind, 'O', yrly_cost)) as ing_outstanding_sales&#13;&#10;                   FROM icam_tbcam.COSt_FINANCIAL_SUMMARY&#13;&#10;                   GROUP BY mdl_ver_id,ACTUALIZE_IND,yrly_cost,YRLY_PRICE--,&#13;&#10;                          , equip_id&#13;&#10;                            ) CT&#13;&#10;               ON (CT.MDL_VER_ID = MD.MDL_VER_ID&#13;&#10;               AND CT.EQUIP_ID IS NULL)&#13;&#10;                    left outer join sot_dt.ing_icam_model_aero_inter int on (CT.MDL_VER_ID = int.MDL_VER_ID)&#13;&#10;WHERE --CT.mdl_ver_id in ('4540501', '4507288')AND &#13;&#10;MD.RELEASE_IND = 'Y'&#13;&#10;AND   case MD.MDL_VER_TYP_ID when 1007 then 'Y' else MD.CTLG_RELEASE_IND ='Y' end&#13;&#10;--AND MD.CTLG_RELEASE_IND = 'Y'&#13;&#10;and md.mdl_ver_typ_id=1058&#13;&#10;AND   MD.DWH_PUBLISH = 'D'&#13;&#10;AND   MD.BUSINESS_GRP_ID ='1'&#13;&#10;)ast&#13;&#10;--where ing_mdl_ver_id = '4506020'&#13;&#10;group by &#13;&#10;ing_mdl_ver_id,&#13;&#10;ing_model_id,&#13;&#10;ing_gaap_cm_pct,&#13;&#10;ing_Margin_Adj_Sales,&#13;&#10;ing_actual_billing,&#13;&#10;ing_projected_billing,&#13;&#10;ing_total_billing&#13;&#10;--BUSINESS_GRP_ID&#13;&#10;--equip_id&#13;&#10;)ing &#13;&#10;full outer join&#13;&#10;(&#13;&#10;select ast.* , rep_actual_billing+rep_projected_billing as rep_total_billing,&#13;&#10;rep_total_margin_adj+rep_actual_sales+rep_outstanding_sales+rep_projected_sales as total_sales&#13;&#10;from(&#13;&#10;select distinct &#13;&#10;DWH_Config.mdl_ver_id as rep_model_ver_id,&#13;&#10;mdt.mdl_id as rep_model_id,&#13;&#10;icam_dwh_model_version.contract_cm_pct *100 as rep_gaap_cm_pct,&#13;&#10;--sum(DWH_Config.total_margin_adj) AS rep_total_margin_adj,&#13;&#10;case when MAX(coalesce(DWH_Config.total_margin_adj,0))=0&#13;&#10;THEN MIN(coalesce(DWH_Config.total_margin_adj,0))&#13;&#10;ELSE MAX(coalesce(DWH_Config.total_margin_adj,0))&#13;&#10;END as rep_total_margin_adj,&#13;&#10;sum(case when DWH_Config.actualize_ind='Y' &#13;&#10;THEN&#13;&#10;DWH_Config.total_billing+ coalesce(DWH_Config.lease_billing,0)&#13;&#10;ELSE 0&#13;&#10;END )as rep_actual_billing,&#13;&#10;sum(case when DWH_Config.actualize_ind='N' &#13;&#10;THEN&#13;&#10;(coalesce(DWH_Config.total_billing,0)+ coalesce(DWH_Config.lease_billing,0)-coalesce(DWH_Config.proj_variable_constraint,0))&#13;&#10;ELSE 0&#13;&#10;END) as rep_projected_billing,--actualize_ind,&#13;&#10;sum(DWH_Config.act_cost_amt) AS rep_actual_cost,&#13;&#10;sum(DWH_Config.outstanding_cost) AS rep_outstanding_cost,&#13;&#10;sum(coalesce(DWH_Config.proj_cost_amt,0)) AS rep_projected_cost,&#13;&#10;sum(DWH_Config.total_cost) AS rep_total_cost,&#13;&#10;sum(DWH_Config.act_sales_amt) AS rep_actual_sales,&#13;&#10;sum(DWH_Config.outstanding_cost/(1-icam_dwh_model_version.contract_cm_pct)) as rep_outstanding_sales,&#13;&#10;sum(DWH_Config.proj_cost_amt/(1-icam_dwh_model_version.contract_cm_pct)) as rep_projected_sales,&#13;&#10;sum(DWH_Config.total_price) as rep_total_price&#13;&#10;/*DWH_Config.actualize_ind AS rep_actualize_ind,&#13;&#10;sum(DWH_Config.total_billing) AS rep_total_billing_ori,&#13;&#10;sum(DWH_Config.lease_billing) AS rep_lease_billing,&#13;&#10;sum(DWH_Config.proj_variable_constraint) AS rep_proj_variable_constraint,&#13;&#10;sum(DWH_Config.total_price) AS rep_total_price,&#13;&#10;sum(DWH_Config.gaap_cm_pct) AS rep_gaap_cm_pct*/&#13;&#10;FROM pgsicamdwh.icam_dwh_config DWH_Config&#13;&#10;LEFT JOIN pgsicamdwh.pg_icam_model_terms_and_conditions mdt ON (DWH_Config.mdl_ver_id = mdt.mdl_ver_id)&#13;&#10;INNER JOIN pgsicamdwh.icam_dwh_model_version  icam_dwh_model_version ON (DWH_Config.mdl_ver_id = icam_dwh_model_version.mdl_ver_id)&#13;&#10;INNER JOIN icam_tbcam.cost_user cost_user ON (icam_dwh_model_version.updated_by = cost_user.user_id)&#13;&#10;WHERE icam_dwh_model_version.RELEASE_IND = 'Y'&#13;&#10;--and DECODE(MD.MDL_VER_TYP_ID,1007,'Y')='Y'&#13;&#10;AND icam_dwh_model_version.DWH_PUBLISH = 'D'&#13;&#10;AND DWH_Config.BUSINESS_GRP_ID = '1'&#13;&#10;--and h.active_ver_ind='Y'&#13;&#10;and mdt.mdl_ver_typ_id=1058&#13;&#10;group by 1,2,3&#13;&#10;)ast)rep&#13;&#10;on coalesce(rep_model_ver_id,1)= coalesce(ing_mdl_ver_id,1) and coalesce(rep_model_id,1)= coalesce(ing_model_id,1) &#13;&#10;--where ing.ing_mdl_ver_id = '4506020'&#13;&#10;&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="USE_SSL" show="false" value="true"/>
+    <elementParameter field="CHECK" name="PROPAGATE_RECORD_SET" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="RECORD_SET_COLUMN" show="false" value=""/>
+    <elementParameter field="CHECK" name="USE_PREPAREDSTATEMENT" value="false"/>
+    <elementParameter field="TABLE" name="SET_PREPAREDSTATEMENT_PARAMETERS" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" show="false" value="10000"/>
+    <elementParameter field="TEXT" name="LABEL" value="aero_final"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tPostgresqlRow_4"/>
+    <metadata connector="REJECT" name="REJECT">
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tPostgresqlRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="384" posY="352">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tPostgresqlRow_5"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tPostgresqlConnection_1"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="PRIOR_TO_V9"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;5432&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="PostgreSQL"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="0RMsyjmybrE="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;&#13;&#10;truncate table sot_dt.ing_icam_model_alstom_inter;&#13;&#10;insert into sot_dt.ing_icam_model_alstom_inter&#13;&#10;select distinct&#13;&#10;md.MDL_VER_ID,&#13;&#10;md.total_margin_adj Margin_Adj_Sales,&#13;&#10;MD.CONTRACT_CM_PCT AS GAAP_CM_PCT,&#13;&#10;md.mdl_id,&#13;&#10;--equip_id,&#13;&#10;--SUM(CASE WHEN ACTUALIZE_IND = 'P' THEN YRLY_COST ELSE 0 END) AS ing_projected_cost,&#13;&#10;sum(decode(cmgpb.actualize_ind,&#13;&#10;                          'Y',&#13;&#10;                          coalesce(act_fixed_billing, 0) +&#13;&#10;                          coalesce(act_variable_billing, 0) +&#13;&#10;                          coalesce(act_milestone_billing, 0) +&#13;&#10;                          coalesce(act_esc_billing, 0) +&#13;&#10;                          coalesce(act_extra_work_billing, 0) + coalesce(act_lease_billing, 0) +&#13;&#10;                          coalesce(act_bonus_amt, 0) - coalesce(act_ld_amt, 0) -&#13;&#10;                          coalesce(ACT_VARIABLE_CONSTRAINT, 0), &#13;&#10;                          --+coalesce(ACT_fmv_carveout, 0),&#13;&#10;                          0)) as actual_billing,&#13;&#10;sum(decode(cmgpb.actualize_ind,&#13;&#10;                          'N',&#13;&#10;                          coalesce(proj_fixed_billing, 0) +&#13;&#10;                          coalesce(proj_variable_billing, 0) +&#13;&#10;                          coalesce(proj_milestone_billing, 0) +&#13;&#10;                          coalesce(proj_esc_billing, 0) +&#13;&#10;                          coalesce(adjustments, 0) +&#13;&#10;                          coalesce(proj_extra_work_billing, 0) + coalesce(proj_lease_billing, 0) +&#13;&#10;                          coalesce(proj_bonus_amt, 0) -&#13;&#10;                          coalesce(proj_ld_amt, 0) -&#13;&#10;                          coalesce(PROJ_VARIABLE_CONSTRAINT, 0), &#13;&#10;                          --+coalesce(PROJ_fmv_carveout, 0),&#13;&#10;                          0)) as projected_billing,&#13;&#10;                                           md.COST_CTLG_VER_ID&#13;&#10;from icam_tbcam.cost_model_ver md&#13;&#10;left outer join icam_tbcam.COST_MDL_PERIOD_BILLING cmgpb&#13;&#10;on md.mdl_ver_id=cmgpb.mdl_ver_id and cmgpb.hvr_is_deleted = 0&#13;&#10;LEFT OUTER JOIN icam_tbcam.Cost_Mdl_Ver_Type CMVT ON (md.MDL_VER_TYP_ID = CMVT.MDL_VER_TYP_ID and cmvt.hvr_is_deleted = 0)&#13;&#10;LEFT OUTER JOIN icam_tbcam.COST_CATALOG cc ON (md.COST_CTLG_VER_ID = CC.CTLG_VER_ID and cc.hvr_is_deleted = 0)&#13;&#10;left outer join icam_tbcam.COST_BILLING_HEADER h on h.mdl_ver_id=cmgpb.mdl_ver_id and h.billing_ver_id=cmgpb.billing_ver_id and h.hvr_is_deleted=0&#13;&#10;WHERE MD.RELEASE_IND = 'Y'&#13;&#10;--and DECODE(MD.MDL_VER_TYP_ID,1007,'Y')='Y'&#13;&#10;AND cmvt.DWH_PUBLISH = 'D'&#13;&#10;AND cc.BUSINESS_GRP_ID ='9'&#13;&#10;--and h.active_ver_ind='Y'&#13;&#10;and md.mdl_ver_typ_id=1058&#13;&#10;and h.active_ver_ind='Y'&#13;&#10;--left outer join icam_tbcam.COSt_FINANCIAL_SUMMARY CFS  ON (CFS.MDL_VER_ID = md.MDL_VER_ID)&#13;&#10;group by md.MDL_VER_ID,&#13;&#10;md.total_margin_adj ,&#13;&#10;MD.CONTRACT_CM_PCT,&#13;&#10;md.mdl_id,&#13;&#10;md.COST_CTLG_VER_ID&#13;&#10;&#13;&#10;&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="USE_SSL" show="false" value="true"/>
+    <elementParameter field="CHECK" name="PROPAGATE_RECORD_SET" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="RECORD_SET_COLUMN" show="false" value=""/>
+    <elementParameter field="CHECK" name="USE_PREPAREDSTATEMENT" value="false"/>
+    <elementParameter field="TABLE" name="SET_PREPAREDSTATEMENT_PARAMETERS" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" show="false" value="10000"/>
+    <elementParameter field="TEXT" name="LABEL" value="alstom_inter"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tPostgresqlRow_5"/>
+    <metadata connector="REJECT" name="REJECT">
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tPostgresqlRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="608" posY="352">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tPostgresqlRow_6"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tPostgresqlConnection_1"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="PRIOR_TO_V9"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;5432&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="PostgreSQL"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="0RMsyjmybrE="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;&#13;&#10;Drop table if exists SOT_DT.icam_model_config_sox_alstom_rpt_temp;&#13;&#10;create table SOT_DT.icam_model_config_sox_alstom_rpt_temp&#13;&#10;as &#13;&#10;SELECT DISTINCT CT.mdl_ver_id as ing_mdl_ver_id,&#13;&#10;int.mdl_id ing_model_id,&#13;&#10;GAAP_CM_PCT*100 as ing_gaap_cm_pct,&#13;&#10;Margin_Adj_Sales as ing_Margin_Adj_Sales,&#13;&#10;actual_billing as ing_actual_billing,&#13;&#10;projected_billing as ing_projected_billing,&#13;&#10;ct.ing_Actual_Cost,&#13;&#10;ct.ing_outstanding_cost,&#13;&#10;CT.ing_PROJected_COST,&#13;&#10;ct.ing_total_cost,&#13;&#10;ct.ing_Actual_Sales,&#13;&#10;ct.yrly_cost,&#13;&#10;ct.YRLY_PRICE,&#13;&#10;ing_outstanding_sales /&#13;&#10;                   (1 -&#13;&#10;                    case GAAP_CM_PCT when 1 then 0 else  GAAP_CM_PCT end ) as ing_outstanding_sales,&#13;&#10;ing_projected_sales/&#13;&#10;                   (1 -&#13;&#10;                    case GAAP_CM_PCT when 1 then 0 else  GAAP_CM_PCT end ) as ing_projected_sales,&#13;&#10;                    ct.ing_total_price,&#13;&#10;actual_billing+projected_billing as ing_total_billing,&#13;&#10;      CT.equip_id,&#13;&#10;       MD.BUSINESS_GRP_ID&#13;&#10;FROM SOT_DT.cost_model_ver_sox_temp1  MD&#13;&#10;INNER JOIN icam_tbcam.COST_mdl_ver_equip B ON (B.MDL_VER_ID = MD.MDL_VER_ID)&#13;&#10;INNER JOIN SOT_DT.cost_MDL_VER_EQUIP_PART_KIT_sox_temp EP  ON (EP.MDL_VER_ID = MD.MDL_VER_ID  AND EP.CTLG_VER_ID = MD.COST_CTLG_VER_ID  AND EP.EQUIP_MDL_ID = B.EQUIP_MDL_ID)&#13;&#10;LEFT OUTER JOIN SOT_DT.COSt_FINANCIAL_SUMMARY_SOX_temp  CT ON (CT.MDL_VER_ID = MD.MDL_VER_ID  AND CT.EQUIP_ID = B.EQUIP_ID)&#13;&#10;left outer join sot_dt.ing_icam_model_alstom_inter int on (CT.MDL_VER_ID = int.MDL_VER_ID)&#13;&#10;WHERE --CT.mdl_ver_id in ('4540501', '4507288') AND  &#13;&#10;MD.RELEASE_IND = 'Y'&#13;&#10;AND   case MD.MDL_VER_TYP_ID when 1007 then 'Y' else MD.CTLG_RELEASE_IND = 'Y' end &#13;&#10;--AND MD.CTLG_RELEASE_IND = 'Y'&#13;&#10;and md.mdl_ver_typ_id=1058&#13;&#10;AND   MD.DWH_PUBLISH = 'D'&#13;&#10;AND   MD.BUSINESS_GRP_ID ='9';&#13;&#10;&#13;&#10;&#13;&#10;insert into SOT_DT.icam_model_config_sox_alstom_rpt_temp&#13;&#10;SELECT DISTINCT CT.mdl_ver_id  as ing_mdl_ver_id,&#13;&#10;int.mdl_id ing_model_id,&#13;&#10;GAAP_CM_PCT*100 as ing_gaap_cm_pct,&#13;&#10;Margin_Adj_Sales as ing_Margin_Adj_Sales,&#13;&#10;actual_billing as ing_actual_billing,&#13;&#10;projected_billing as ing_projected_billing,&#13;&#10;ct.ing_Actual_Cost,&#13;&#10;ct.ing_outstanding_cost,&#13;&#10;CT.ing_PROJected_COST,&#13;&#10;ct.ing_total_cost,&#13;&#10;ct.ing_Actual_Sales,&#13;&#10;ct.yrly_cost,&#13;&#10;ct.YRLY_PRICE,&#13;&#10;ing_outstanding_sales /&#13;&#10;                   (1 -&#13;&#10;                    case GAAP_CM_PCT when  1 then  0 else  GAAP_CM_PCT end) as ing_outstanding_sales,&#13;&#10;ing_projected_sales /&#13;&#10;                   (1 -&#13;&#10;                    case GAAP_CM_PCT when  1 then  0 else  GAAP_CM_PCT end) as ing_projected_sales,&#13;&#10;ct.ing_total_price,                    &#13;&#10;actual_billing+projected_billing as ing_total_billing,&#13;&#10;      CT.equip_id,&#13;&#10;       MD.BUSINESS_GRP_ID    &#13;&#10;FROM SOT_DT.cost_model_ver_sox_temp1  MD&#13;&#10;INNER JOIN icam_tbcam.COST_mdl_ver_equip B ON (B.MDL_VER_ID = MD.MDL_VER_ID)&#13;&#10;INNER JOIN  SOT_DT.cost_MDL_VER_EQUIP_PART_KIT_sox_temp EP ON (EP.MDL_VER_ID = MD.MDL_VER_ID AND EP.CTLG_VER_ID = MD.COST_CTLG_VER_ID  AND EP.EQUIP_MDL_ID = B.EQUIP_MDL_ID)&#13;&#10;LEFT OUTER JOIN SOT_DT.COSt_FINANCIAL_SUMMARY_SOX_temp  CT  ON (CT.MDL_VER_ID = MD.MDL_VER_ID  AND CT.EQUIP_ID IS NULL)&#13;&#10;left outer join sot_dt.ing_icam_model_alstom_inter int on (CT.MDL_VER_ID = int.MDL_VER_ID)&#13;&#10;WHERE --CT.mdl_ver_id in ('4540501', '4507288')AND &#13;&#10;MD.RELEASE_IND = 'Y'&#13;&#10;AND   case MD.MDL_VER_TYP_ID when 1007 then 'Y' else MD.CTLG_RELEASE_IND = 'Y' end&#13;&#10;--AND MD.CTLG_RELEASE_IND = 'Y'&#13;&#10;and md.mdl_ver_typ_id=1058&#13;&#10;AND   MD.DWH_PUBLISH = 'D'&#13;&#10;AND   MD.BUSINESS_GRP_ID ='9';&#13;&#10;&#13;&#10;&#13;&#10;drop table if exists SOT_DT.icam_model_config_sox_alstom_rpt_temp2;&#13;&#10;create table SOT_DT.icam_model_config_sox_alstom_rpt_temp2&#13;&#10;as&#13;&#10;select  distinct ing_mdl_ver_id,&#13;&#10;ing_model_id,&#13;&#10;ing_gaap_cm_pct,&#13;&#10;ing_Margin_Adj_Sales,&#13;&#10;ing_actual_billing,&#13;&#10;ing_projected_billing,&#13;&#10;sum(ing_Actual_Cost) ing_Actual_Cost,&#13;&#10;sum(coalesce(ing_outstanding_cost,0)) ing_outstanding_cost ,&#13;&#10;sum (ing_PROJected_COST)ing_PROJected_COST,&#13;&#10;sum(ing_total_cost)ing_total_cost,&#13;&#10;sum(ing_Actual_Sales)ing_Actual_Sales,&#13;&#10;sum(coalesce(ing_outstanding_sales,0) ) ing_outstanding_sales,&#13;&#10;sum(ing_projected_sales) ing_projected_sales,&#13;&#10;sum(ing_total_price) ing_total_price,&#13;&#10;ing_total_billing&#13;&#10;--sum (equip_id)&#13;&#10;--equip_id,&#13;&#10;from&#13;&#10;SOT_DT.icam_model_config_sox_alstom_rpt_temp&#13;&#10;group by &#13;&#10;ing_mdl_ver_id,&#13;&#10;ing_model_id,&#13;&#10;ing_gaap_cm_pct,&#13;&#10;ing_Margin_Adj_Sales,&#13;&#10;ing_actual_billing,&#13;&#10;ing_projected_billing,&#13;&#10;ing_total_billing&#13;&#10;--BUSINESS_GRP_ID&#13;&#10;--equip_id&#13;&#10;;&#13;&#10;&#13;&#10;CREATE INDEX icam_model_config_sox_alstom_rpt_temp2_idx ON SOT_DT.icam_model_config_sox_alstom_rpt_temp2 &#13;&#10;USING btree (ing_mdl_ver_id, ing_model_id);&#9;&#13;&#10;&#13;&#10;&#13;&#10;drop table if exists SOT_DT.icam_model_config_sox_alstom_rpt_temp3;&#13;&#10;create table SOT_DT.icam_model_config_sox_alstom_rpt_temp3&#13;&#10;as&#13;&#10;select distinct &#13;&#10;DWH_Config.mdl_ver_id as rep_model_ver_id,&#13;&#10;mdt.mdl_id as rep_model_id,&#13;&#10;icam_dwh_model_version.contract_cm_pct *100 as rep_gaap_cm_pct,&#13;&#10;--sum(DWH_Config.total_margin_adj) AS rep_total_margin_adj,&#13;&#10;case when MAX(coalesce(DWH_Config.total_margin_adj,0))=0&#13;&#10;THEN MIN(coalesce(DWH_Config.total_margin_adj,0))&#13;&#10;ELSE MAX(coalesce(DWH_Config.total_margin_adj,0))&#13;&#10;END as rep_total_margin_adj,&#13;&#10;sum(case when DWH_Config.actualize_ind='Y' &#13;&#10;THEN&#13;&#10;DWH_Config.total_billing+ coalesce(DWH_Config.lease_billing,0)&#13;&#10;ELSE 0&#13;&#10;END )as rep_actual_billing,&#13;&#10;sum(case when DWH_Config.actualize_ind='N' &#13;&#10;THEN&#13;&#10;(coalesce(DWH_Config.total_billing,0)+ coalesce(DWH_Config.lease_billing,0)-coalesce(DWH_Config.proj_variable_constraint,0))&#13;&#10;ELSE 0&#13;&#10;END) as rep_projected_billing,--actualize_ind,&#13;&#10;sum(DWH_Config.act_cost_amt) AS rep_actual_cost,&#13;&#10;sum(DWH_Config.outstanding_cost) AS rep_outstanding_cost,&#13;&#10;sum(coalesce(DWH_Config.proj_cost_amt,0)) AS rep_projected_cost,&#13;&#10;sum(DWH_Config.total_cost) AS rep_total_cost,&#13;&#10;sum(DWH_Config.act_sales_amt) AS rep_actual_sales,&#13;&#10;sum(DWH_Config.outstanding_cost/(1-icam_dwh_model_version.contract_cm_pct)) as rep_outstanding_sales,&#13;&#10;sum(DWH_Config.proj_cost_amt/(1-icam_dwh_model_version.contract_cm_pct)) as rep_projected_sales,&#13;&#10;sum(DWH_Config.total_price) as rep_total_price&#13;&#10;/*DWH_Config.actualize_ind AS rep_actualize_ind,&#13;&#10;sum(DWH_Config.total_billing) AS rep_total_billing_ori,&#13;&#10;sum(DWH_Config.lease_billing) AS rep_lease_billing,&#13;&#10;sum(DWH_Config.proj_variable_constraint) AS rep_proj_variable_constraint,&#13;&#10;sum(DWH_Config.total_price) AS rep_total_price,&#13;&#10;sum(DWH_Config.gaap_cm_pct) AS rep_gaap_cm_pct*/&#13;&#10;FROM pgsicamdwh.icam_dwh_config DWH_Config&#13;&#10;LEFT JOIN pgsicamdwh.pg_icam_model_terms_and_conditions mdt ON (DWH_Config.mdl_ver_id = mdt.mdl_ver_id)&#13;&#10;INNER JOIN pgsicamdwh.icam_dwh_model_version  icam_dwh_model_version ON (DWH_Config.mdl_ver_id = icam_dwh_model_version.mdl_ver_id)&#13;&#10;INNER JOIN icam_tbcam.cost_user cost_user ON (icam_dwh_model_version.updated_by = cost_user.user_id)&#13;&#10;WHERE icam_dwh_model_version.RELEASE_IND = 'Y'&#13;&#10;--and DECODE(MD.MDL_VER_TYP_ID,1007,'Y')='Y'&#13;&#10;AND icam_dwh_model_version.DWH_PUBLISH = 'D'&#13;&#10;AND DWH_Config.BUSINESS_GRP_ID = '9'&#13;&#10;--and h.active_ver_ind='Y'&#13;&#10;and mdt.mdl_ver_typ_id=1058&#13;&#10;group by 1,2,3&#13;&#10;;&#13;&#10;&#13;&#10;&#13;&#10;&#13;&#10;CREATE INDEX icam_model_config_sox_alstom_rpt_temp3_idx ON SOT_DT.icam_model_config_sox_alstom_rpt_temp3 &#13;&#10;USING btree (rep_model_ver_id, rep_model_id);&#9;&#13;&#10;&#13;&#10;truncate table sot_dt.icam_model_config_sox_alstom_rpt;&#13;&#10;insert into sot_dt.icam_model_config_sox_alstom_rpt &#13;&#10;select ing_mdl_ver_id,&#13;&#10;ing_model_id,&#13;&#10;ing_gaap_cm_pct,&#13;&#10;ing_Margin_Adj_Sales,&#13;&#10;ing_actual_billing,&#13;&#10;ing_projected_billing,&#13;&#10;ing_Actual_Cost,&#13;&#10;ing_outstanding_cost,&#13;&#10;ing_PROJected_COST,&#13;&#10;ing_total_cost,&#13;&#10;ing_Actual_Sales,&#13;&#10;ing_outstanding_sales,&#13;&#10;ing_projected_sales,&#13;&#10;ing_total_billing,&#13;&#10;ing_total_price,&#13;&#10;coalesce(ing_Actual_Sales,0)+coalesce(ing_outstanding_sales,0)+coalesce(ing_projected_sales,0) as ing_total_sales,&#13;&#10;rep_model_ver_id,&#13;&#10;rep_model_id,&#13;&#10;rep_gaap_cm_pct,&#13;&#10;rep_total_margin_adj,&#13;&#10;rep_actual_billing,&#13;&#10;rep_projected_billing,&#13;&#10;rep_actual_cost,&#13;&#10;rep_outstanding_cost,&#13;&#10;rep_projected_cost,&#13;&#10;rep_total_cost,&#13;&#10;rep_actual_sales,&#13;&#10;rep_outstanding_sales,&#13;&#10;rep_projected_sales,&#13;&#10;rep_total_price,&#13;&#10;rep_total_billing,&#13;&#10;total_sales,&#13;&#10;current_timestamp as dw_load_date&#13;&#10;from SOT_DT.icam_model_config_sox_alstom_rpt_temp2 ing &#13;&#10;full outer join&#13;&#10;(&#13;&#10;select rep.* , rep_actual_billing+rep_projected_billing as rep_total_billing,&#13;&#10;rep_total_margin_adj+rep_actual_sales+rep_outstanding_sales+rep_projected_sales as total_sales&#13;&#10;from SOT_DT.icam_model_config_sox_alstom_rpt_temp3 rep &#13;&#10;) rep&#13;&#10;on coalesce(rep_model_ver_id,1)= coalesce(ing_mdl_ver_id,1) and coalesce(rep_model_id,1)= coalesce(ing_model_id,1) &#13;&#10;;&#13;&#10;--where ing.ing_mdl_ver_id = '4506020'&#13;&#10;&#13;&#10;&#13;&#10;drop table if exists  SOT_DT.cost_model_ver_sox_temp1;&#13;&#10;drop table if exists SOT_DT.cost_MDL_VER_EQUIP_PART_KIT_sox_temp;&#13;&#10;Drop table if exists SOT_DT.COSt_FINANCIAL_SUMMARY_SOX_temp_1;&#13;&#10;Drop table if exists SOT_DT.COSt_FINANCIAL_SUMMARY_SOX_temp;&#13;&#10;Drop table if exists SOT_DT.ICAM_Model_config_sox_rpt_temp;&#13;&#10;drop table if exists SOT_DT.ICAM_Model_config_sox_rpt_temp_2;&#13;&#10;drop table if exists SOT_DT.ICAM_Model_config_sox_rpt_temp_3;&#13;&#10;drop index if exists icam_dwh_config_sox_idx;&#13;&#10;drop index if exists pg_icam_model_terms_and_conditions_sox_idx;&#13;&#10;&#13;&#10;Drop table if exists SOT_DT.icam_model_config_sox_aero_rpt_temp;&#13;&#10;drop table if exists SOT_DT.icam_model_config_sox_aero_rpt_temp_2;&#13;&#10;drop table if exists SOT_DT.icam_model_config_sox_aero_rpt_temp_3;&#13;&#10;&#13;&#10;Drop table if exists SOT_DT.icam_model_config_sox_alstom_rpt_temp;&#13;&#10;drop table if exists SOT_DT.icam_model_config_sox_alstom_rpt_temp2;&#13;&#10;drop table if exists SOT_DT.icam_model_config_sox_alstom_rpt_temp3;&#13;&#10;&#13;&#10;&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="USE_SSL" show="false" value="true"/>
+    <elementParameter field="CHECK" name="PROPAGATE_RECORD_SET" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="RECORD_SET_COLUMN" show="false" value=""/>
+    <elementParameter field="CHECK" name="USE_PREPAREDSTATEMENT" value="false"/>
+    <elementParameter field="TABLE" name="SET_PREPAREDSTATEMENT_PARAMETERS" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" show="false" value="10000"/>
+    <elementParameter field="TEXT" name="LABEL" value="alstom_final"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tPostgresqlRow_6"/>
+    <metadata connector="REJECT" name="REJECT">
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tPostgresqlRow_1" offsetLabelX="0" offsetLabelY="0" source="tPostgresqlRow_1" target="tPostgresqlRow_2">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk24"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tPostgresqlRow_2" offsetLabelX="0" offsetLabelY="0" source="tPostgresqlRow_2" target="tPostgresqlRow_3">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk25"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tPostgresqlConnection_1" offsetLabelX="0" offsetLabelY="0" source="tPostgresqlConnection_1" target="tPostgresqlRow_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk26"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tPostgresqlRow_3" offsetLabelX="0" offsetLabelY="0" source="tPostgresqlRow_3" target="tPostgresqlRow_4">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk27"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tPostgresqlRow_4" offsetLabelX="0" offsetLabelY="0" source="tPostgresqlRow_4" target="tPostgresqlRow_5">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk28"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tPostgresqlRow_5" offsetLabelX="0" offsetLabelY="0" source="tPostgresqlRow_5" target="tPostgresqlRow_6">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk29"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tPostgresqlRow_6" offsetLabelX="0" offsetLabelY="0" source="tPostgresqlRow_6" target="tPostgresqlClose_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk30"/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tPostgresqlRow_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tPostgresqlRow_2"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tPostgresqlConnection_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tPostgresqlClose_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tPostgresqlRow_3"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tPostgresqlRow_4"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tPostgresqlRow_5"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tPostgresqlRow_6"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_967e7937-36ad-4b57-b70a-09d3ca461f4e"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>euCxKF0CwYMGY8BVoCeevlNbE5+aWn2lXDdPW1eXduP23n6ltc2zam6vreC9pxi8iNFUKIxZp274&#13;
+7V3cOVjUEA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_00cb965c-6616-4bae-bddb-5e1f514cd90a"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>zRxtfVWSeSlAYQhNP6azONi2tCSsYqlaQ0vz+2KpnOKvFs+YRQzV8tL+nfC2f4in+8JMco+0ALI1&#13;
+NDHY0Fw7Eg==</DigestValue></Reference></SignedInfo><SignatureValue>ElfEOnHvJKp62u5Kh+6p+q9v0MEuleAr9LyCmqVBIodNw2pZf/daFaskdlXAsdH2WYqy3pXS3fm+&#13;
+909pLOTnM2jxBh4C8BxEf8UmhEaRhK0nOhXqN4EdfqAGXHBat/CfYQhy4tkQSPvZWQyE2+wfO9X4&#13;
+mzYXZtLdqLYbgykzOrYxjOGZwAUFJ8iow+3q7suBa5HPaERwHSeT5DeYkKjqNjVzjya15GOE5HK0&#13;
+mbxPdH0BuuvfBXPwKuPfn4ltQrQ4KCIAQ1Za1YzXrhdErIvZriqange9cGeAM+HYj08kLwxztOPM&#13;
+oyTgVgHkr44ZpQCRBeLByxZ82ocJ1px56vUJuA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_00cb965c-6616-4bae-bddb-5e1f514cd90a" Target="#_967e7937-36ad-4b57-b70a-09d3ca461f4e"><Timestamp>2020-04-22 08:20:28</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>

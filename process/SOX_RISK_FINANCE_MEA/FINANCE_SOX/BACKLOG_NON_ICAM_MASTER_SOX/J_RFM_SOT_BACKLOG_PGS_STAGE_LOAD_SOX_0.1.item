@@ -1,0 +1,1383 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:xmi="http://www.omg.org/XMI" defaultContext="Default" framework="" jobType="Standard" xmi:version="2.0">
+  <context confirmationNeeded="false" name="Default">
+    <contextParameter comment="" name="RFM_GPDB_SOT_BACKLOG_AWS_Login" prompt="RFM_GPDB_SOT_BACKLOG_AWS_Login?" promptNeeded="false" repositoryContextId="_woKUACKgEem6xLcLHx8Cdw" type="id_String" value="502799797"/>
+    <contextParameter comment="" name="RFM_GPDB_SOT_BACKLOG_AWS_Port" prompt="RFM_GPDB_SOT_BACKLOG_AWS_Port?" promptNeeded="false" repositoryContextId="_woKUACKgEem6xLcLHx8Cdw" type="id_String" value="5432"/>
+    <contextParameter comment="" name="RFM_GPDB_SOT_BACKLOG_AWS_Database" prompt="RFM_GPDB_SOT_BACKLOG_AWS_Database?" promptNeeded="false" repositoryContextId="_woKUACKgEem6xLcLHx8Cdw" type="id_String" value="pgsdwh"/>
+    <contextParameter comment="" name="RFM_GPDB_SOT_BACKLOG_AWS_Schema" prompt="RFM_GPDB_SOT_BACKLOG_AWS_Schema?" promptNeeded="false" repositoryContextId="_woKUACKgEem6xLcLHx8Cdw" type="id_String" value="sot_pgsbacklog"/>
+    <contextParameter comment="" name="RFM_GPDB_SOT_BACKLOG_AWS_Password" prompt="RFM_GPDB_SOT_BACKLOG_AWS_Password?" promptNeeded="false" repositoryContextId="_woKUACKgEem6xLcLHx8Cdw" type="id_Password" value="fi0GrmC/1V0ODoUV9RtJTQ=="/>
+    <contextParameter comment="" name="RFM_GPDB_SOT_BACKLOG_AWS_Server" prompt="RFM_GPDB_SOT_BACKLOG_AWS_Server?" promptNeeded="false" repositoryContextId="_woKUACKgEem6xLcLHx8Cdw" type="id_String" value="dev-9ha.cloud.digital.ge.com"/>
+  </context>
+  <context confirmationNeeded="false" name="Dev">
+    <contextParameter comment="" name="RFM_GPDB_SOT_BACKLOG_AWS_Login" prompt="RFM_GPDB_SOT_BACKLOG_AWS_Login?" promptNeeded="false" repositoryContextId="_woKUACKgEem6xLcLHx8Cdw" type="id_String" value="502799797"/>
+    <contextParameter comment="" name="RFM_GPDB_SOT_BACKLOG_AWS_Port" prompt="RFM_GPDB_SOT_BACKLOG_AWS_Port?" promptNeeded="false" repositoryContextId="_woKUACKgEem6xLcLHx8Cdw" type="id_String" value="5432"/>
+    <contextParameter comment="" name="RFM_GPDB_SOT_BACKLOG_AWS_Database" prompt="RFM_GPDB_SOT_BACKLOG_AWS_Database?" promptNeeded="false" repositoryContextId="_woKUACKgEem6xLcLHx8Cdw" type="id_String" value="pgsdwh"/>
+    <contextParameter comment="" name="RFM_GPDB_SOT_BACKLOG_AWS_Schema" prompt="RFM_GPDB_SOT_BACKLOG_AWS_Schema?" promptNeeded="false" repositoryContextId="_woKUACKgEem6xLcLHx8Cdw" type="id_String" value="sot_pgsbacklog"/>
+    <contextParameter comment="" name="RFM_GPDB_SOT_BACKLOG_AWS_Password" prompt="RFM_GPDB_SOT_BACKLOG_AWS_Password?" promptNeeded="false" repositoryContextId="_woKUACKgEem6xLcLHx8Cdw" type="id_Password" value="fi0GrmC/1V0ODoUV9RtJTQ=="/>
+    <contextParameter comment="" name="RFM_GPDB_SOT_BACKLOG_AWS_Server" prompt="RFM_GPDB_SOT_BACKLOG_AWS_Server?" promptNeeded="false" repositoryContextId="_woKUACKgEem6xLcLHx8Cdw" type="id_String" value="dev-9ha.cloud.digital.ge.com"/>
+  </context>
+  <context confirmationNeeded="false" name="Prod">
+    <contextParameter comment="" name="RFM_GPDB_SOT_BACKLOG_AWS_Login" prompt="RFM_GPDB_SOT_BACKLOG_AWS_Login?" promptNeeded="false" repositoryContextId="_woKUACKgEem6xLcLHx8Cdw" type="id_String" value="502799797"/>
+    <contextParameter comment="" name="RFM_GPDB_SOT_BACKLOG_AWS_Port" prompt="RFM_GPDB_SOT_BACKLOG_AWS_Port?" promptNeeded="false" repositoryContextId="_woKUACKgEem6xLcLHx8Cdw" type="id_String" value="5432"/>
+    <contextParameter comment="" name="RFM_GPDB_SOT_BACKLOG_AWS_Database" prompt="RFM_GPDB_SOT_BACKLOG_AWS_Database?" promptNeeded="false" repositoryContextId="_woKUACKgEem6xLcLHx8Cdw" type="id_String" value="pgsdwh"/>
+    <contextParameter comment="" name="RFM_GPDB_SOT_BACKLOG_AWS_Schema" prompt="RFM_GPDB_SOT_BACKLOG_AWS_Schema?" promptNeeded="false" repositoryContextId="_woKUACKgEem6xLcLHx8Cdw" type="id_String" value="sot_pgsbacklog"/>
+    <contextParameter comment="" name="RFM_GPDB_SOT_BACKLOG_AWS_Password" prompt="RFM_GPDB_SOT_BACKLOG_AWS_Password?" promptNeeded="false" repositoryContextId="_woKUACKgEem6xLcLHx8Cdw" type="id_Password" value="rrc5fueW52wV6gxceuPvkA=="/>
+    <contextParameter comment="" name="RFM_GPDB_SOT_BACKLOG_AWS_Server" prompt="RFM_GPDB_SOT_BACKLOG_AWS_Server?" promptNeeded="false" repositoryContextId="_woKUACKgEem6xLcLHx8Cdw" type="id_String" value="9ha.cloud.digital.ge.com"/>
+  </context>
+  <parameters>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="0"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" show="false" value=""/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="true"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:PROPERTY_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:REPOSITORY_PROPERTY_TYPE" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="0RMsyjmybrE="/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" show="false" value=""/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="true"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="true"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="true"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="true"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" show="false" value="&quot;C:/talend/qa/.metadata&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" show="false" value="&quot;stats_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" show="false" value="&quot;logs_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" show="false" value="&quot;meter_file.txt&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="ISO-8859-15"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" value="tMysqlOutput"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_5"/>
+    <elementParameter field="TEXT" name="URL" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;3.48.32.71&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;"/>
+    <elementParameter field="TEXT" name="DATASOURCE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;testlogdb&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value=""/>
+    <elementParameter field="TEXT" name="USER" value="&quot;talend631&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="nSmcr40OOghDG8zEa9PpZw=="/>
+    <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;talend_stats&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;talend_logs&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" value="&quot;talend_flowmeter&quot;"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" value="true"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" show="false" value=""/>
+    <routinesParameter id="_QNVYYMpoEeO1jq8eAwNUvQ" name="DQTechnical"/>
+    <routinesParameter id="_Z4RCQMWqEeOb2v5_LgjFkA" name="DataOperation"/>
+    <routinesParameter id="_QNskwMpoEeO1jq8eAwNUvQ" name="DataQuality"/>
+    <routinesParameter id="_QNGH0MpoEeO1jq8eAwNUvQ" name="DqStringHandling"/>
+    <routinesParameter id="_QM2QMMpoEeO1jq8eAwNUvQ" name="MDM"/>
+    <routinesParameter id="_Z54L0MWqEeOb2v5_LgjFkA" name="Mathematical"/>
+    <routinesParameter id="_Z7cSEMWqEeOb2v5_LgjFkA" name="Numeric"/>
+    <routinesParameter id="_Z82AQMWqEeOb2v5_LgjFkA" name="Relational"/>
+    <routinesParameter id="_XojCYMWqEeOb2v5_LgjFkA" name="SQLike"/>
+    <routinesParameter id="_Z-SKsMWqEeOb2v5_LgjFkA" name="StringHandling"/>
+    <routinesParameter id="_Z_r44MWqEeOb2v5_LgjFkA" name="TalendDataGenerator"/>
+    <routinesParameter id="_aBUQkMWqEeOb2v5_LgjFkA" name="TalendDate"/>
+    <routinesParameter id="_aC0FYMWqEeOb2v5_LgjFkA" name="TalendString"/>
+    <routinesParameter id="_6kJxAITHEeacVarjMrbhgQ" name="DataQualityDependencies"/>
+    <routinesParameter id="_1VSg4Mj3EeepVanzWe1wyQ" name="DataMasking"/>
+  </parameters>
+  <node componentName="tParallelize" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="256" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tParallelize_1"/>
+    <elementParameter field="CLOSED_LIST" name="WAIT_FOR" value="All"/>
+    <elementParameter field="TEXT" name="SLEEPTIME" value="100"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tGreenplumConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tGreenplumConnection_1"/>
+    <elementParameter field="TEXT" name="HOST" value="context.RFM_GPDB_SOT_BACKLOG_AWS_Server"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="GREENPLUM"/>
+    <elementParameter field="TEXT" name="PORT" value="context.RFM_GPDB_SOT_BACKLOG_AWS_Port"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.RFM_GPDB_SOT_BACKLOG_AWS_Database"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="context.RFM_GPDB_SOT_BACKLOG_AWS_Schema"/>
+    <elementParameter field="TEXT" name="USER" value="context.RFM_GPDB_SOT_BACKLOG_AWS_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kuetVPV/HFSFZ2C1BvSndzTrGdTks8c0L8743cGxd394MPzVRbZ1Z5LM"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="SHARED_CONNECTION_NAME" show="false" value=""/>
+    <elementParameter field="CHECK" name="USE_SSL" value="true"/>
+    <elementParameter field="CHECK" name="AUTO_COMMIT" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="GP PROD Conn"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tGreenplumRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="704" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tGreenplumRow_1"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tGreenplumConnection_1"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;5432&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="PostgreSQL"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="0RMsyjmybrE="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;parts_line_headers&quot;"/>
+    <elementParameter field="CHECK" name="USE_SSL" show="false" value="true"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;INSERT INTO SOT_PGSBACKLOG.PARTS_LINE_HEADERS&#13;&#10;select DISTINCT a.LINE_NUMBER, a.UNIT_LIST_PRICE, a.ORDERED_QUANTITY, a.REQUEST_DATE,&#13;&#10;  a.SHIPPED_QUANTITY, a.UNIT_SELLING_PRICE, a.line_category_code,&#13;&#10;a.SCHEDULE_SHIP_DATE, a.promise_date, a.ACTUAL_SHIPMENT_DATE, a.LINE_ID, a.SHIPMENT_PRIORITY_CODE,&#13;&#10;  a.FLOW_STATUS_CODE, a.INVENTORY_ITEM_ID, a.SHIP_FROM_ORG_ID, a.SOLD_TO_ORG_ID,&#13;&#10;  b.ORDER_NUMBER, b.CUST_PO_NUMBER, b.FOB_POINT_CODE,&#13;&#10;  b.TRANSACTIONAL_CURR_CODE, b.ATTRIBUTE12, b.BOOKED_DATE, b.attribute5, b.payment_term_id, b.attribute6, b.attribute7,&#13;&#10;  b.SHIP_TO_ORG_ID, b.INVOICE_TO_ORG_ID,TO_DATE(B.creation_date,'yyyy-mm-dd') creation_date,oos.name order_src_name, c.NAME trans_name, ca.NAME trns_types_name,a.line_type_id,FLEX.CUSTOMER_TYPE&#13;&#10;FROM (select distinct a.LINE_NUMBER, a.UNIT_LIST_PRICE, a.ORDERED_QUANTITY, a.REQUEST_DATE,&#13;&#10;  a.SHIPPED_QUANTITY, a.UNIT_SELLING_PRICE, a.line_category_code,&#13;&#10;a.SCHEDULE_SHIP_DATE, a.promise_date, a.ACTUAL_SHIPMENT_DATE, a.LINE_ID, a.SHIPMENT_PRIORITY_CODE,&#13;&#10;  a.FLOW_STATUS_CODE, a.header_id, a.line_type_id,&#13;&#10;a.INVENTORY_ITEM_ID, a.SHIP_FROM_ORG_ID, a.SOLD_TO_ORG_ID &#13;&#10;FROM pgsalpha.oe_order_lines_all a&#13;&#10;where a.FLOW_STATUS_CODE NOT IN ('AWAITING_RECEIPT', 'AWAITING_RETURN',&#13;&#10;  'AWAITING_RETURN_DISPOSITION', 'CANCELLED', 'CLOSED', 'ENTERED')) a&#13;&#10;LEFT OUTER JOIN  pgsalpha.oe_order_headers_all b&#13;&#10;ON (a.header_id=b.header_id)&#13;&#10;LEFT OUTER JOIN pgsalpha.oe_order_sources oos&#13;&#10;ON (b.order_source_id=oos.order_source_id)&#13;&#10;LEFT OUTER JOIN pgsalpha.oe_transaction_types_tl c&#13;&#10;ON (a.line_type_id=c.TRANSACTION_TYPE_ID)&#13;&#10;LEFT OUTER JOIN pgsalpha.OE_TRANSACTION_TYPES_TL ca&#13;&#10;ON (b.order_type_id=ca.transaction_type_id)&#13;&#10;LEFT OUTER JOIN&#13;&#10;  (SELECT distinct FLEX_VALUES.DESCRIPTION AS CUSTOMER_TYPE,&#13;&#10;    CUST_SITE.SITE_USE_ID         AS SITE_USE_ID&#13;&#10;  FROM pgsalpha.HZ_CUST_SITE_USES_ALL CUST_SITE&#13;&#10;  INNER JOIN pgsalpha.GL_CODE_COMBINATIONS CODE_COMBINATION&#13;&#10;  ON (CODE_COMBINATION.CODE_COMBINATION_ID =CUST_SITE.gl_id_rev)&#13;&#10;  INNER JOIN pgsalpha.fnd_flex_values_tl FLEX_VALUES&#13;&#10;  ON (FLEX_VALUES.FLEX_VALUE_MEANING =CODE_COMBINATION.SEGMENT2)&#13;&#10;  )flex &#13;&#10;ON (b.INVOICE_TO_ORG_ID      = flex.SITE_USE_ID)&#13;&#10;WHERE  ca.LANGUAGE                             ='US'&#13;&#10;AND (instr(ca.NAME,'NUS',0,1)               &gt;0&#13;&#10;OR instr(ca.NAME,'Energy Parts',0,1)        &gt;0&#13;&#10;OR instr(ca.NAME,'Contractual Services',0,1)&gt;0)&#13;&#10;AND (upper(ca.NAME) LIKE '%CONTRACTUAL%' OR COALESCE(FLEX.CUSTOMER_TYPE, 'Unknown') NOT LIKE 'INTERCO%WOD%(%')&#13;&#10;AND UPPER((LTRIM(b.CUST_PO_NUMBER))) NOT LIKE 'ADV%'&#13;&#10;AND COALESCE(c.NAME,'NA')                  IN ('Bill Only', 'CMU Bill Line',&#13;&#10;  'CMU Progress Bill Conversion', 'CMU Progress Conversion Z1', 'Eng Flow Bill',&#13;&#10;  'Engineering Conversion Line', 'Engineering Flow', 'Flow Conversion Line', 'Flow Line Type',&#13;&#10;  'NUS Conversion Line', 'NUS Line Type', 'Progress Bill Conversion',&#13;&#10;  'Progress Bill Conversion Z1',&#13;&#10;  'Progress Bill Line','NA','Ship Only','CMU Line Type','Eng Flow Ship','CMU Ship Bill')&quot;"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="PROPAGATE_RECORD_SET" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="RECORD_SET_COLUMN" show="false" value="line_number"/>
+    <elementParameter field="CHECK" name="USE_PREPAREDSTATEMENT" value="false"/>
+    <elementParameter field="TABLE" name="SET_PREPAREDSTATEMENT_PARAMETERS" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" show="false" value="10000"/>
+    <elementParameter field="TEXT" name="LABEL" value="PARTS_LINE_HEADERS"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="parts_line_headers" name="tGreenplumRow_1">
+      <column comment="" key="false" length="19" name="line_number" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="unit_list_price" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="ordered_quantity" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="29" name="request_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="6" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="shipped_quantity" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="unit_selling_price" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="30" name="line_category_code" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="29" name="schedule_ship_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="6" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="29" name="promise_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="6" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="29" name="actual_shipment_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="6" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="line_id" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="30" name="shipment_priority_code" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="30" name="flow_status_code" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="inventory_item_id" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="ship_from_org_id" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="sold_to_org_id" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="131089" name="order_number" nullable="true" pattern="" precision="0" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="cust_po_number" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="30" name="fob_point_code" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="15" name="transactional_curr_code" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="240" name="attribute12" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="22" name="booked_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="240" name="attribute5" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="15" name="payment_term_id" nullable="true" pattern="" precision="0" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="240" name="attribute6" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="240" name="attribute7" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="131089" name="ship_to_org_id" nullable="true" pattern="" precision="0" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="131089" name="invoice_to_org_id" nullable="true" pattern="" precision="0" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="13" name="creation_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="240" name="order_src_name" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="30" name="trans_name" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="30" name="trns_types_name" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="line_type_id" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="240" name="customer_type" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+    <metadata connector="REJECT" label="parts_line_headers" name="REJECT">
+      <column comment="" key="false" length="19" name="line_number" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="unit_list_price" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="ordered_quantity" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="29" name="request_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="6" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="shipped_quantity" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="unit_selling_price" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="30" name="line_category_code" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="29" name="schedule_ship_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="6" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="29" name="promise_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="6" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="29" name="actual_shipment_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="6" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="line_id" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="30" name="shipment_priority_code" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="30" name="flow_status_code" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="inventory_item_id" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="ship_from_org_id" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="sold_to_org_id" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="131089" name="order_number" nullable="true" pattern="" precision="0" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="cust_po_number" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="30" name="fob_point_code" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="15" name="transactional_curr_code" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="240" name="attribute12" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="22" name="booked_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="240" name="attribute5" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="15" name="payment_term_id" nullable="true" pattern="" precision="0" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="240" name="attribute6" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="240" name="attribute7" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="131089" name="ship_to_org_id" nullable="true" pattern="" precision="0" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="131089" name="invoice_to_org_id" nullable="true" pattern="" precision="0" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="13" name="creation_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="240" name="order_src_name" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="30" name="trans_name" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="30" name="trns_types_name" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="line_type_id" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="240" name="customer_type" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tGreenplumRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="896" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tGreenplumRow_2"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tGreenplumConnection_1"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;5432&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="PostgreSQL"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="0RMsyjmybrE="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;parts_backlog_stg&quot;"/>
+    <elementParameter field="CHECK" name="USE_SSL" show="false" value="true"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;INSERT INTO SOT_PGSBACKLOG.PARTS_BACKLOG_STG&#13;&#10;SELECT DISTINCT ROW_NUMBER() OVER (PARTITION BY '1' ORDER BY '1'),&#13;&#10;  'Parts' SOURCE_DATA,&#13;&#10;  TRIM(TO_CHAR(plh.ORDER_NUMBER,'9999999999999')) AS ORDER_NUMBER,&#13;&#10;  TRIM(TO_CHAR(plh.LINE_NUMBER,'999999999999'))   AS LINE_NUM,&#13;&#10;  j1.FULL_NAME                                  AS OA,&#13;&#10;  RT.SEGMENT2 SALES_REGION,&#13;&#10;  plh.order_src_name ORDER_SOURCE,&#13;&#10;  loc.COUNTRY COUNTRY_CODE,&#13;&#10;  DECODE(PLH.trns_types_name,NULL,'Not Available', PLH.trns_types_name) ORDER_TYPE,&#13;&#10;  plh.CUST_PO_NUMBER,&#13;&#10;  NULL ORDERED_PART_NUM,&#13;&#10;  e.DESCRIPTION,&#13;&#10;  MCAT1.FAMILY_CODE FAMILY_CODE,&#13;&#10;  plh.UNIT_LIST_PRICE UNIT_LIST_PRICE,&#13;&#10;  plh.ORDERED_QUANTITY QUANTITY,&#13;&#10;  rtt.name PAYMENT_TERMS,&#13;&#10;  plh.FOB_POINT_CODE TITLE_XFER_POINT,&#13;&#10;  NULL,&#13;&#10;  --FLV1.SHIP_METHOD SHIP_METHOD,&#13;&#10;  CAST(NULL AS DATE) ENTER_DATE,&#13;&#10;  plh.REQUEST_DATE REQUEST_DATE,&#13;&#10;  plh.SHIPPED_QUANTITY SHIPPED_QTY,&#13;&#10;  ccp.INSTANCE_TYPE_CODE AS TURBINE_TECHNOLOGY,&#13;&#10;  CASE&#13;&#10;    WHEN (line_cat.line_category = 'BILL ONLY'&#13;&#10;    OR line_cat.line_category    = 'BILL &amp; SHIP'&#13;&#10;    OR line_cat.line_category    ='OTHER SHIP ONLY')&#13;&#10;    THEN (plh.ORDERED_QUANTITY*plh.UNIT_SELLING_PRICE*DECODE(plh.transactional_curr_code,'USD',1,&#10;   conv_rt.conversion_rate))&#13;&#10;    ELSE 0&#13;&#10;  END extended_price,&#13;&#10;  DECODE(plh.line_category_code,'RETURN',-1,&#10; 1) * plh.ordered_quantity * cic.item_cost AS EXTENDED_COST, &#13;&#10;  CAST(NULL AS INTEGER) INVOICED_QTY,&#13;&#10;  NULL INVOICE_NUM,&#13;&#10;  CAST(NULL AS DATE) INVOICE_DATE,&#13;&#10;  CAST(NULL AS DATE) GL_POSTED_DATE,&#13;&#10;  gfs.frame_size FRAME_SIZE,&#13;&#10;  ccp.ATTRIBUTE3 AS FRAME_TYPE,&#13;&#10;  plh.SCHEDULE_SHIP_DATE SCHED_SHIP_DATE,&#13;&#10;  CASE&#13;&#10;    WHEN PLH.trans_name='Closed Lines'&#13;&#10;    THEN plh.promise_date&#13;&#10;    ELSE plh.ACTUAL_SHIPMENT_DATE&#13;&#10;  END SHIP_DATE,&#13;&#10;  PLH.transactional_curr_code CURRENCY,&#13;&#10;  LTRIM(RTRIM(PLH.trans_name)) AS LINE_TYPE,&#13;&#10;  plh.LINE_ID LINE_ID,&#13;&#10;  plh.SHIPMENT_PRIORITY_CODE PRIORITY,&#13;&#10;  plh.FLOW_STATUS_CODE LINE_STATUS,&#13;&#10;  NULL REVENUE_ACCT_NUM,&#13;&#10;  NULL ACCOUNT_NO_COMPARE,&#13;&#10;  CASE&#13;&#10;    WHEN line_cat.line_category='BILL &amp; SHIP'&#13;&#10;    OR line_cat.line_category  ='OTHER SHIP ONLY'&#13;&#10;    THEN 'Y'&#13;&#10;    ELSE 'N'&#13;&#10;  END SHIPPABLE,&#13;&#10;  CASE&#13;&#10;    WHEN line_cat.line_category='BILL &amp; SHIP'&#13;&#10;    OR line_cat.line_category  ='BILL ONLY'&#13;&#10;    THEN 'Y'&#13;&#10;    ELSE 'N'&#13;&#10;  END BILLABLE,&#13;&#10;  NULL ADV,&#13;&#10;  NULL INVOICE_FLAG,&#13;&#10;  plh.PROMISE_DATE AS PROMISE_DATE,&#13;&#10;  e.INVOICEABLE_ITEM_FLAG INVOICEABLE_ITEM_FLAG,&#13;&#10;  NULL LINE_HOLD,&#13;&#10;  PLH.CUSTOMER_TYPE,&#13;&#10;  RT.SEGMENT1   AS POLE,&#13;&#10;  ja1.FULL_NAME AS PROJ_MANAGER,&#13;&#10;  NULL HDR_HOLD,&#13;&#10;  e.segment1              AS PART_NUMBER,&#13;&#10;  ship_to_bill.PARTY_NAME AS BILL_TO_CUST_NAME,&#13;&#10;  ship_to_bill.PARTY_NAME AS SHIP_TO_CUST_NAME,&#13;&#10;  ltrim(rtrim(SUBSTR(( DECODE(PLH.trns_types_name,NULL,'Not Available',PLH.trns_types_name) ),1,&#10; 13))) PANDL,&#13;&#10;  CAST(NULL AS INTEGER) MTLS_BOOKED,&#13;&#10;  CAST(NULL AS INTEGER) SALES_BOOKED,&#13;&#10;  plh.ATTRIBUTE12 AS ADN_NUMBER,&#13;&#10;  plh.BOOKED_DATE AS BOOK_DATE,&#13;&#10;  NULL MODEL_LIST,&#13;&#10;  loc.STATE AS STATE,&#13;&#10;  CAST(NULL AS DATE) LAST_UPDATE_DATE,&#13;&#10;  CAST(NULL AS DATE) ORIG_REQUEST_DATE,&#13;&#10;  mcat.DIVISION_CODE ITEM_CATEGORY,&#13;&#10;  LTRIM(RTRIM(ccp.name)) AS TURBINE_NUM,&#13;&#10;  NULL SALES_CHANNEL,&#13;&#10;  CAST(NULL AS INTEGER) UNIT_SELLING_PRICE,&#13;&#10;  CAST(NULL AS INTEGER) LIST_PRICE_USD,&#13;&#10;  NULL TRADESPHER_FLAG,&#13;&#10;  CASE&#13;&#10;    WHEN PLH.trns_types_name LIKE 'NUS%'&#13;&#10;    THEN 'NUS'&#13;&#10;    WHEN PLH.trns_types_name LIKE 'Energy Parts%'&#13;&#10;    THEN 'Energy Parts'&#13;&#10;    WHEN PLH.trns_types_name LIKE 'Contractual Services%'&#13;&#10;    THEN 'Contractual Services'&#13;&#10;  END ME,&#13;&#10;  (plh.ORDERED_QUANTITY*plh.UNIT_SELLING_PRICE) AS ORDER_AMOUNT&#13;&#10;FROM sot_pgsbacklog.parts_line_headers PLH&#13;&#10;LEFT OUTER JOIN (SELECT DISTINCT e.DESCRIPTION,e.INVOICEABLE_ITEM_FLAG,&#13;&#10;  e.segment1,e.INVENTORY_ITEM_ID from pgsalpha.mtl_system_items_b e WHERE &#13;&#10;  e.organization_id                       =2006&#13;&#10;AND SUBSTR(e.SEGMENT1,1,4)                 != 'PROP'&#13;&#10;AND e.INVOICEABLE_ITEM_FLAG                 = 'Y')e&#13;&#10;ON (PLH.INVENTORY_ITEM_ID=e.INVENTORY_ITEM_ID)&#13;&#10;LEFT OUTER JOIN&#13;&#10;  (SELECT MAX(mc.SEGMENT1) AS DIVISION_CODE,&#13;&#10;    mic.INVENTORY_ITEM_ID  AS INVENTORY_ITEM_ID,&#13;&#10;    mic.ORGANIZATION_ID    AS ORGANIZATION_ID&#13;&#10;  FROM pgsalpha.mtl_categories_b mc&#13;&#10;  INNER JOIN pgsalpha.mtl_item_categories mic&#13;&#10;  ON (mc.CATEGORY_ID = mic.CATEGORY_ID)&#13;&#10;  INNER JOIN pgsalpha.MTL_CATEGORY_SETS_B mcs&#13;&#10;  ON (mcs.STRUCTURE_ID    = mc.STRUCTURE_ID)&#13;&#10;  WHERE  mcs.CATEGORY_SET_ID = 6&#13;&#10;  AND COALESCE(mc.SEGMENT1,'NA') NOT  IN ('ID','TC','IC')&#13;&#10;  GROUP BY INVENTORY_ITEM_ID,&#13;&#10;    ORGANIZATION_ID&#13;&#10;  ) mcat ON (PLH.INVENTORY_ITEM_ID=mcat.INVENTORY_ITEM_ID)&#13;&#10;AND (PLH.SHIP_FROM_ORG_ID         =mcat.ORGANIZATION_ID)&#13;&#10;LEFT OUTER JOIN&#13;&#10;  (SELECT MAX(mc.SEGMENT1) AS FAMILY_CODE,&#13;&#10;    mic.INVENTORY_ITEM_ID  AS INVENTORY_ITEM_ID,&#13;&#10;    mic.ORGANIZATION_ID    AS ORGANIZATION_ID&#13;&#10;  FROM pgsalpha.mtl_categories_b mc&#13;&#10;  INNER JOIN pgsalpha.mtl_item_categories mic&#13;&#10;  ON (mc.CATEGORY_ID = mic.CATEGORY_ID)&#13;&#10;  INNER JOIN pgsalpha.MTL_CATEGORY_SETS_B mcs&#13;&#10;  ON (mcs.STRUCTURE_ID    = mc.STRUCTURE_ID)&#13;&#10;  AND mcs.CATEGORY_SET_ID = 7&#13;&#10;  GROUP BY INVENTORY_ITEM_ID,&#13;&#10;    ORGANIZATION_ID&#13;&#10;  ) mcat1 ON (PLH.INVENTORY_ITEM_ID=mcat1.INVENTORY_ITEM_ID)&#13;&#10;AND (PLH.SHIP_FROM_ORG_ID          =mcat1.ORGANIZATION_ID)&#13;&#10;LEFT OUTER JOIN (select DISTINCT rtt.name,rtt.term_id from pgsalpha.ra_terms_tl rtt)rtt&#13;&#10;ON (PLH.payment_term_id=rtt.term_id)&#13;&#10;LEFT OUTER JOIN&#13;&#10;  (SELECT DISTINCT C.attribute3,&#13;&#10;    C.INSTANCE_TYPE_CODE INSTANCE_TYPE_CODE,&#13;&#10;    C.INSTANCE_ID,&#13;&#10;    ltrim(rtrim(A.name)) AS name&#13;&#10;  FROM pgsalpha.CSI_SYSTEMS_TL A&#13;&#10;  INNER JOIN pgsalpha.CSI_SYSTEMS_B B&#13;&#10;  ON (A.system_id=B.system_id)&#13;&#10;  INNER JOIN pgsalpha.CSI_ITEM_INSTANCES C&#13;&#10;  ON (B.system_id       =C.system_id)&#13;&#10;  ) ccp ON (PLH.attribute5=ccp.instance_id)&#13;&#10;LEFT OUTER JOIN pgsalpha.geps_frame_size gfs&#13;&#10;ON (ccp.attribute3=gfs.frame_type)&#13;&#10;LEFT OUTER JOIN&#13;&#10;  (SELECT DISTINCT FULL_NAME, person_id FROM pgsalpha.per_all_people_f&#13;&#10;  )j1&#13;&#10;ON (PLH.attribute6=j1.person_id)&#13;&#10;LEFT OUTER JOIN&#13;&#10;  (SELECT DISTINCT FULL_NAME, person_id FROM pgsalpha.per_all_people_f ja&#13;&#10;  )ja1&#13;&#10;ON (PLH.attribute7=ja1.person_id)&#13;&#10;-- LEFT OUTER JOIN&#13;&#10;--   (SELECT DISTINCT cst.name AS name,&#13;&#10;--     csb.customer_id&#13;&#10;--   FROM pgsalpha.CSI_SYSTEMS_B CSB,&#13;&#10;--     pgsalpha.CSI_SYSTEMS_TL CST&#13;&#10;--   WHERE CSB.SYSTEM_ID = CST.SYSTEM_ID&#13;&#10;--   AND CST.LANGUAGE    = 'US'&#13;&#10;--   ) h&#13;&#10;-- ON (PLH.SOLD_TO_ORG_ID = h.customer_id )&#13;&#10;LEFT OUTER JOIN&#13;&#10;  (SELECT HCA.account_number AS BILL_TO_CUST_NUM,&#13;&#10;    HCS.PARTY_SITE_ID        AS PARTY_SITE_ID,&#13;&#10;    HP.PARTY_ID              AS PARTY_ID,&#13;&#10;    HP.PARTY_NAME,&#13;&#10;    HCU.SITE_USE_ID AS SITE_USE_ID,&#13;&#10;    HCU.TERRITORY_ID&#13;&#10;  FROM pgsalpha.HZ_CUST_ACCOUNTS HCA,&#13;&#10;    pgsalpha.HZ_CUST_ACCT_SITES_ALL HCS,&#13;&#10;    pgsalpha.HZ_CUST_SITE_USES_ALL HCU,&#13;&#10;    pgsalpha.HZ_PARTIES HP&#13;&#10;  WHERE HCU.cust_acct_site_id = HCS.cust_acct_site_id&#13;&#10;  AND HCS.cust_account_id     = HCA.cust_account_id&#13;&#10;  AND HCA.PARTY_ID            = HP.PARTY_ID&#13;&#10;  ) ship_to_bill&#13;&#10;ON (PLH.SHIP_TO_ORG_ID=ship_to_bill.SITE_USE_ID)&#13;&#10;LEFT OUTER JOIN (select RT.segment1,RT.segment2,RT.TERRITORY_ID from PGSALPHA.RA_TERRITORIES RT)RT&#13;&#10;ON (ship_to_bill.TERRITORY_ID=RT.TERRITORY_ID)&#13;&#10;LEFT OUTER JOIN&#13;&#10;  (SELECT hzl.state,&#13;&#10;    hzl.country,&#13;&#10;    hzl.location_id AS LOCATION_ID,&#13;&#10;    hcu.SITE_USE_ID AS SITE_USE_ID&#13;&#10;  FROM pgsalpha.HZ_CUST_ACCT_SITES_ALL hcs,&#13;&#10;    pgsalpha.HZ_CUST_SITE_USES_ALL hcu,&#13;&#10;    pgsalpha.HZ_PARTY_SITES hps,&#13;&#10;    pgsalpha.hz_locations hzl,&#13;&#10;    pgsalpha.HZ_CUST_ACCOUNTS hca,&#13;&#10;    pgsalpha.HZ_PARTIES hzp&#13;&#10;  WHERE hcu.cust_acct_site_id = hcs.cust_acct_site_id&#13;&#10;  AND hcs.party_site_id       = hps.PARTY_SITE_ID&#13;&#10;  AND hps.location_id         = hzl.location_id&#13;&#10;  AND hcs.cust_account_id     = hca.cust_account_id&#13;&#10;  AND hca.party_id            = hzp.party_id&#13;&#10;  ) loc&#13;&#10;ON (PLH.SHIP_TO_ORG_ID=loc.SITE_USE_ID)&#13;&#10;LEFT OUTER JOIN&#13;&#10;  (SELECT conversion_rate ,&#13;&#10;    FROM_CURRENCY,&#13;&#10;    CONVERSION_DATE&#13;&#10;  FROM pgsalpha.gl_daily_rates&#13;&#10;  WHERE conversion_type='1000'&#13;&#10;  AND to_currency      ='USD'&#13;&#10;  -- AND CONVERSION_DATE  ='01-Jan-2014'&#13;&#10;  ) conv_rt&#13;&#10;ON (PLH.TRANSACTIONAL_CURR_CODE = conv_rt.FROM_CURRENCY AND&#13;&#10;TO_DATE(conv_rt.CONVERSION_DATE,'yyyy-mm-dd')=PLH.CREATION_DATE)&#13;&#10;LEFT OUTER JOIN&#13;&#10;  (SELECT INVENTORY_ITEM_ID,&#13;&#10;    ORGANIZATION_ID,&#13;&#10;    ITEM_COST,&#13;&#10;    COST_TYPE_ID&#13;&#10;  FROM PGSALPHA.CST_ITEM_COSTS&#13;&#10;  WHERE COST_TYPE_ID=1&#13;&#10;  )cic&#13;&#10;ON (PLH.INVENTORY_ITEM_ID=cic.INVENTORY_ITEM_ID)&#13;&#10;AND (PLH.SHIP_FROM_ORG_ID=cic.ORGANIZATION_ID)&#13;&#10;LEFT OUTER JOIN&#13;&#10;  (SELECT CAST(attribute1 AS NUMERIC(19,4)) AS attribute1,&#13;&#10;    attribute2                              AS line_category&#13;&#10;  FROM pgsalpha.fnd_flex_values lc&#13;&#10;  WHERE lc.flex_value_set_id = 1007180&#13;&#10;  )line_cat&#13;&#10;ON (PLH.line_type_id            = line_cat.attribute1)&quot;"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="PROPAGATE_RECORD_SET" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="RECORD_SET_COLUMN" show="false" value="parts_unique_id"/>
+    <elementParameter field="CHECK" name="USE_PREPAREDSTATEMENT" value="false"/>
+    <elementParameter field="TABLE" name="SET_PREPAREDSTATEMENT_PARAMETERS" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" show="false" value="10000"/>
+    <elementParameter field="TEXT" name="LABEL" value="PARTS_BACKLOG_STG"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="parts_backlog_stg" name="tGreenplumRow_2">
+      <column comment="" key="false" length="10" name="parts_unique_id" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="5" name="source_data" nullable="true" pattern="" precision="0" sourceType="BPCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="order_number" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="line_num" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="oa" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="sales_region" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="order_source" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="country_code" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="order_type" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="cust_po_number" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="ordered_part_num" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="description" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="family_code" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="unit_list_price" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="quantity" nullable="true" pattern="" precision="0" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="payment_terms" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="title_xfer_point" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="ship_method" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="13" name="enter_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="13" name="request_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="shipped_qty" nullable="true" pattern="" precision="0" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="turbine_technology" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="extended_price" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="extended_cost" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="invoiced_qty" nullable="true" pattern="" precision="0" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="invoice_num" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="13" name="invoice_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="13" name="gl_posted_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="frame_size" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="frame_type" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="13" name="sched_ship_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="13" name="ship_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="currency" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="line_type" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="22" name="line_id" nullable="true" pattern="" precision="0" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="priority" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="line_status" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="revenue_acct_num" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1000" name="account_no_compare" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="shippable" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="billable" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="adv" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="invoice_flag" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="13" name="promise_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="invoiceable_item_flag" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="400" name="line_hold" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="customer_type" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="pole" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1000" name="proj_manager" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="hdr_hold" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="part_number" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="360" name="bill_to_cust_name" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="360" name="ship_to_cust_name" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="pandl" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="22" name="mtls_booked" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="22" name="sales_booked" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="adn_number" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="13" name="book_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="model_list" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="state" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="13" name="last_update_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="13" name="orig_request_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="item_category" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="turbine_num" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="320" name="sales_channel" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="unit_selling_price" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="list_price_usd" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="tradespher_flag" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="me" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="order_amount" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+    <metadata connector="REJECT" label="parts_backlog_stg" name="REJECT">
+      <column comment="" key="false" length="10" name="parts_unique_id" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="5" name="source_data" nullable="true" pattern="" precision="0" sourceType="BPCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="order_number" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="line_num" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="oa" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="sales_region" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="order_source" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="country_code" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="order_type" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="cust_po_number" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="ordered_part_num" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="description" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="family_code" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="unit_list_price" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="quantity" nullable="true" pattern="" precision="0" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="payment_terms" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="title_xfer_point" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="ship_method" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="13" name="enter_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="13" name="request_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="shipped_qty" nullable="true" pattern="" precision="0" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="turbine_technology" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="extended_price" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="extended_cost" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="invoiced_qty" nullable="true" pattern="" precision="0" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="invoice_num" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="13" name="invoice_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="13" name="gl_posted_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="frame_size" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="frame_type" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="13" name="sched_ship_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="13" name="ship_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="currency" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="line_type" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="22" name="line_id" nullable="true" pattern="" precision="0" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="priority" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="line_status" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="revenue_acct_num" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1000" name="account_no_compare" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="shippable" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="billable" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="adv" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="invoice_flag" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="13" name="promise_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="invoiceable_item_flag" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="400" name="line_hold" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="customer_type" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="pole" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1000" name="proj_manager" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="hdr_hold" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="part_number" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="360" name="bill_to_cust_name" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="360" name="ship_to_cust_name" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="pandl" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="22" name="mtls_booked" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="22" name="sales_booked" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="adn_number" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="13" name="book_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="model_list" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="state" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="13" name="last_update_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="13" name="orig_request_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="item_category" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="turbine_num" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="320" name="sales_channel" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="unit_selling_price" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="list_price_usd" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="tradespher_flag" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="me" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="order_amount" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tGreenplumRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="512" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tGreenplumRow_6"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tGreenplumConnection_1"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;5432&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="PostgreSQL"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="0RMsyjmybrE="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;backlog_gib_src&quot;"/>
+    <elementParameter field="CHECK" name="USE_SSL" show="false" value="true"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;INSERT INTO SOT_PGSBACKLOG.BACKLOG_GIB_SRC&#13;&#10;SELECT TSN,TURBINE_TECH,FRAME_SIZE&#13;&#10;FROM&#13;&#10;SOT_PGSBACKLOG.BACKLOG_GIB_SRC_EXTND&quot;"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="PROPAGATE_RECORD_SET" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="RECORD_SET_COLUMN" show="false" value="tsn"/>
+    <elementParameter field="CHECK" name="USE_PREPAREDSTATEMENT" value="false"/>
+    <elementParameter field="TABLE" name="SET_PREPAREDSTATEMENT_PARAMETERS" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" show="false" value="10000"/>
+    <elementParameter field="TEXT" name="LABEL" value="GIB SRC LOAD"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="backlog_gib_src" name="tGreenplumRow_6">
+      <column comment="" key="false" length="500" name="tsn" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="500" name="turbine_tech" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="500" name="frame_size" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+    <metadata connector="REJECT" label="backlog_gib_src" name="REJECT">
+      <column comment="" key="false" length="500" name="tsn" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="500" name="turbine_tech" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="500" name="frame_size" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tGreenplumRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="512" posY="320">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tGreenplumRow_9"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tGreenplumConnection_1"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;5432&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="PostgreSQL"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="0RMsyjmybrE="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;fs_backlog_stg&quot;"/>
+    <elementParameter field="CHECK" name="USE_SSL" show="false" value="true"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;insert into SOT_PGSBACKLOG.FS_BACKLOG_STG&#13;&#10;SELECT FS_UNIQUE_ID,&#13;&#10;SOURCE_DATA,&#13;&#10;CUST_NM,&#13;&#10;CUST_TYPE_NM,&#13;&#10;CUST_SHIPPED_TO,&#13;&#10;CUST_ADDR_CNTRY_NM,&#13;&#10;CUST_ADDR_STATE_NM,&#13;&#10;PROJ_CLSS_DESC,&#13;&#10;PROJ_CLSS_CTGRY_DESC,&#13;&#10;PROJ_TYPE_NM,&#13;&#10;PROJ_STAT_VAL,&#13;&#10;OU,&#13;&#10;EMPLY_FULL_NM,&#13;&#10;ORG_NM,&#13;&#10;CRRCY_CD,&#13;&#10;PROJ_CRRCY_CD,&#13;&#10;TASK_SRVC_OFRING_NUM,&#13;&#10;PROJ_EVNT_ID,&#13;&#10;PROJ_PL_NM,&#13;&#10;PROJ_OWNG_ORG_NM,&#13;&#10;PROJ_CLSS_SGMNT,&#13;&#10;TASK_EQUIP_SL_NUM,&#13;&#10;TASK_TCHNLGY_CD,&#13;&#10;TASK_EQUIP_CD,&#13;&#10;PROJ_SRVC_MGR_NM,&#13;&#10;PROJ_OUTG_END_DT,&#13;&#10;PROJ_NUM,&#13;&#10;substr(PROJ_LE_ME_VAL,instr(PROJ_LE_ME_VAL,'_',1,1)+1) ME,&#13;&#10;TASK_NUM,&#13;&#10;PROJ_DESC,&#13;&#10;TASK_DESC,&#13;&#10;BACKLOG_TYPE,&#13;&#10;FUNC_CURR_TOT_ORDERS_RECV,    --IMP&#13;&#10;AGMT_NUM,&#13;&#10;AGMT_DT,&#13;&#10;CUR_SALES,&#13;&#10;FUNC_CURR_SALES_TO_DATE,   --IMP&#13;&#10;FUNC_CURR_BACKLOG_AMT,   --IMP&#13;&#10;FUNDING_CURR_TOT_ORDERS_RECV,&#13;&#10;FUNDING_CURR_SALES_TO_DATE,&#13;&#10;FUNDING_CURR_BACKLOG_AMT,&#13;&#10;BILL_PERIOD_FUNCTIONAL,&#13;&#10;BUDGET_FORCST_SALES_AMT,&#13;&#10;YYYYMMDD,&#13;&#10;CALENDAR_FISCL_YR_MO_NUM,&#13;&#10;FNDG_CRRCY,&#13;&#10;FUNC_CURR_BACKLOG_AMT*COALESCE(PRCTG,1) Allocated_Backlog,   --IMP&#13;&#10;FUNC_CURR_SALES_TO_DATE*COALESCE(PRCTG,1) Allocated_Sales,   --IMP&#13;&#10;FUNC_CURR_TOT_ORDERS_RECV*COALESCE(PRCTG,1) Allocated_Order   --IMP&#13;&#10;from&#13;&#10;(&#13;&#10;SELECT &#13;&#10;1 FS_UNIQUE_ID,&#13;&#10;'FS' SOURCE_DATA,&#13;&#10;A.* &#13;&#10;FROM &#13;&#10;(&#13;&#10;SELECT &#13;&#10;DISTINCT &#13;&#10;  OTHER_DIM_ATTRIBUTES.CUST_NM, &#13;&#10;  OTHER_DIM_ATTRIBUTES.CUST_TYPE_NM, &#13;&#10;  OTHER_DIM_ATTRIBUTES.CUSTOMER_SHIPPED_TO_NAME CUST_SHIPPED_TO, &#13;&#10;  OTHER_DIM_ATTRIBUTES.CUST_ADDR_CNTRY_NM, &#13;&#10;  OTHER_DIM_ATTRIBUTES.CUST_ADDR_STATE_NM, &#13;&#10;  OTHER_DIM_ATTRIBUTES.proj_clss_desc, &#13;&#10;  FACT_VALUES.PROJ_CLSS_CTGRY_DESC PROJ_CLSS_CTGRY_DESC, &#13;&#10;  NULL SERVICE_TYPE, &#13;&#10;  OTHER_DIM_ATTRIBUTES.PROJ_STAT_VAL, &#13;&#10;  null LOC_RGN_NM, &#13;&#10;  null LOC_STR03_LVL_5_DESC, &#13;&#10;  null LOC_STR20_lvl_3_DESC, &#13;&#10;  null LOC_CNTRY_NM, &#13;&#10;  null LOC_STR03_LVL_6_DESC, &#13;&#10;  null LOC_STR20_LVL_4_DESC, &#13;&#10;  null LOC_ME_CD, &#13;&#10;  FACT_VALUES.PROJECT_TYPE PROJ_TYPE_NM, &#13;&#10;  OTHER_DIM_ATTRIBUTES.ORG_NM OU, &#13;&#10;  OTHER_DIM_ATTRIBUTES.EMPLY_FULL_NM, &#13;&#10;  OU1.NAME ORG_NM, &#13;&#10;  null CRRCY_CD, &#13;&#10;  OTHER_DIM_ATTRIBUTES.PROJ_CRRCY_CD, &#13;&#10;  FACT_VALUES.TASK_SRVC_OFRING_NUM TASK_SRVC_OFRING_NUM, &#13;&#10;  OTHER_DIM_ATTRIBUTES.PROJ_EVNT_ID, &#13;&#10;  OTHER_DIM_ATTRIBUTES.PROJ_PL_NM, &#13;&#10;  NULL PROJ_OWNG_ORG_NM, &#13;&#10;  FACT_VALUES.PROJ_CLSS_SGMNT, &#13;&#10;  FACT_VALUES.TASK_EQUIP_SL_NUM, &#13;&#10;  FACT_VALUES.TASK_TCHNLGY_CD, &#13;&#10;  FACT_VALUES.TASK_EQUIP_CD, &#13;&#10;  FACT_VALUES.PROJ_SRVC_MGR_NM, &#13;&#10;  FACT_VALUES.PROJ_OUTG_END_DT, &#13;&#10;  FACT_VALUES.PROJ_NUM, &#13;&#10;  FACT_VALUES.PROJ_LE_ME_VAL, &#13;&#10;  FACT_VALUES.TASK_NUM, &#13;&#10;  FACT_VALUES.PROJ_DESC, &#13;&#10;  FACT_VALUES.TASK_DESC, &#13;&#10;  FACT_VALUES.BACKLOG_TYPE, &#13;&#10;  FACT_VALUES.FUNC_CURR_TOT_ORDERS_RECV, &#13;&#10;  FACT_VALUES.AGMT_NUM, &#13;&#10;  FACT_VALUES.AGMT_DT, &#13;&#10;  0 CUR_SALES, &#13;&#10;  FACT_VALUES.FUNC_CURR_SALES_TO_DATE, &#13;&#10;  FACT_VALUES.FUNC_CURR_BACKLOG_AMT,&#13;&#10;  0 FUNDING_CURR_TOT_ORDERS_RECV,&#13;&#10;  0 FUNDING_CURR_SALES_TO_DATE, &#13;&#10;  0 FUNDING_CURR_BACKLOG_AMT, &#13;&#10;  0 BILL_PERIOD_FUNCTIONAL,&#13;&#10;  BUDGET_PCTG.BUDGET_FORCST_SALES_AMT , &#13;&#10;COALESCE(SUBSTR(BUDGET_PCTG.CALENDAR_FISCL_YR_MO_NUM,1,4),&#13;&#10;  TO_CHAR(CURRENT_DATE,'YYYY'))||'-'&#13;&#10;  ||COALESCE(SUBSTR(BUDGET_PCTG.CALENDAR_FISCL_YR_MO_NUM,5,2),&#13;&#10;  TO_CHAR(CURRENT_DATE,'MM'))||'-05' AS YYYYMMDD,&#13;&#10;  CAST(BUDGET_PCTG.CALENDAR_FISCL_YR_MO_NUM AS NUMERIC) CALENDAR_FISCL_YR_MO_NUM,&#13;&#10; cast(TO_CHAR(current_date,'YYYYMM') as numeric(15,0)) CUR_YR_MN,&#13;&#10;  null FNDG_CRRCY,&#13;&#10; BUDGET_PCTG.PRCTG &#13;&#10;FROM &#13;&#10;(&#13;&#10;SELECT DISTINCT &#13;&#10;    PROJ_ALL.SEGMENT1 PROJ_NUM,&#13;&#10;    BILL_FINAL.PROJECT_ID ,&#13;&#10;    BILL_FINAL.TASK_ID,&#13;&#10;    PROJ_LE_ME_VAL.PROJ_LE_ME PROJ_LE_ME_VAL,&#13;&#10;    PTSK.TASK_NUMBER TASK_NUM,&#13;&#10;    BILL_FINAL.AGMT_NUM,&#13;&#10;    BILL_FINAL.AGMT_DT,&#13;&#10;    BILL_FINAL.PROJ_CLSS_CTGRY_DESC,&#13;&#10;    PROJ_ALL.DESCRIPTION PROJ_DESC,&#13;&#10;    PTSK.DESCRIPTION TASK_DESC,&#13;&#10;    (CASE&#13;&#10;        WHEN UPPER(PROJ_ALL.SEGMENT1) IN ('10189605')&#13;&#10;        THEN 'R'&#13;&#10;        WHEN UPPER(TYPES_ALL.ATTRIBUTE7) = 'RECEIVABLES'&#13;&#10;        THEN 'F'&#13;&#10;        WHEN UPPER(TYPES_ALL.ATTRIBUTE7) = 'REVENUE'&#13;&#10;        THEN 'F'&#13;&#10;        WHEN UPPER(TYPES_ALL.ATTRIBUTE7) = 'PROJECTS'&#13;&#10;        THEN 'R'&#13;&#10;    END) BACKLOG_TYPE,&#13;&#10;    BILL_FINAL.FUNC_CURR_SALES_TO_DATE,&#13;&#10;    PROJ_CLS.CLASS_CODE PROJ_CLSS_SGMNT,&#13;&#10;    PTSK.ATTRIBUTE1 TASK_EQUIP_SL_NUM,&#13;&#10;    PTSK.ATTRIBUTE2 TASK_TCHNLGY_CD,&#13;&#10;    PTSK.ATTRIBUTE3 TASK_EQUIP_CD,&#13;&#10;    PTSK.COMPLETION_DATE PROJ_OUTG_END_DT,&#13;&#10;    PROJ_SRVC_MGR.FULL_NAME PROJ_SRVC_MGR_NM,&#13;&#10;    BILL_FINAL.PROJFUNC_ALLOCATED_AMOUNT FUNC_CURR_TOT_ORDERS_RECV,&#13;&#10;    (BILL_FINAL.PROJFUNC_ALLOCATED_AMOUNT- BILL_FINAL.FUNC_CURR_SALES_TO_DATE) &#10; FUNC_CURR_BACKLOG_AMT,   &#13;&#10;    PTSK.ATTRIBUTE6 TASK_SRVC_OFRING_NUM,&#13;&#10;    BILL_FINAL.PROJECT_TYPE&#13;&#10;FROM&#13;&#10;(&#13;&#10;SELECT COALESCE(bill_main2.func_curr_sales_to_date, 0) func_curr_sales_to_date, &#13;&#10;      COALESCE(bill_main2.bill_period_functional_bill, 0) bill_period_functional_bill ,&#13;&#10;      PROJ_FUND.* ,&#13;&#10;      BILL_MAIN2.PROJECT_TYPE &#13;&#10;    FROM &#13;&#10;    (&#13;&#10;SELECT &#13;&#10;FUND.PROJECT_ID,&#13;&#10;FUND.TASK_ID TASK_ID,&#13;&#10;MAX(AGMT.ATTRIBUTE9) PROJ_CLSS_CTGRY_DESC,&#13;&#10;MAX(AGMT.AGREEMENT_NUM)                    AS AGMT_NUM,&#13;&#10;MAX(AGMT.CREATION_DATE)                    AS AGMT_DT,&#13;&#10;SUM(COALESCE(PROJFUNC_ALLOCATED_AMOUNT,0)) AS PROJFUNC_ALLOCATED_AMOUNT&#13;&#10;FROM &#13;&#10;  (SELECT PROJECT_ID,SEGMENT1,PROJECT_TYPE,ORG_ID &#13;&#10;  FROM PGSCHARLIE.PA_PROJECTS_ALL-- WHERE SEGMENT1 = '10186211'&#13;&#10;  ) PROJ_ALL&#13;&#10;  JOIN&#9;&#13;&#10;  (SELECT PROJECT_ID,TASK_ID,PROJFUNC_ALLOCATED_AMOUNT,AGREEMENT_ID &#13;&#10;  FROM PGSCHARLIE.PA_PROJECT_FUNDINGS)          AS FUND&#13;&#10;  ON&#13;&#10;  PROJ_ALL.PROJECT_ID = FUND.PROJECT_ID&#13;&#10;  LEFT OUTER JOIN &#13;&#10;(SELECT AGREEMENT_ID,ATTRIBUTE9,AGREEMENT_NUM,CREATION_DATE &#13;&#10;FROM PGSCHARLIE.PA_AGREEMENTS_ALL) AS AGMT&#13;&#10;ON (FUND.AGREEMENT_ID = AGMT.AGREEMENT_ID)&#13;&#10;GROUP BY &#13;&#10;FUND.PROJECT_ID, FUND.TASK_ID&#13;&#10;) PROJ_FUND&#13;&#10;LEFT JOIN&#13;&#10;      (&#13;&#10;      SELECT bill_main.*, &#13;&#10;        bill_select_period.bill_period_functional_bill &#13;&#10;      FROM &#13;&#10;        (&#13;&#10;SELECT DISTINCT AA.PROJECT_ID,&#13;&#10;        AA.TASK_ID task_id,&#13;&#10;        AA.TASK_NUMBER,&#13;&#10;        AA.PROJECT_TYPE,&#13;&#10;        SUM(COALESCE(AA.BLNG_FUNCNL_BILL_AMT,0)) FUNC_CURR_SALES_TO_DATE&#13;&#10;      FROM&#13;&#10;        (&#13;&#10;&#9;SELECT &#13;&#10;        I.PROJECT_ID PROJECT_ID,&#13;&#10;        I.TASK_ID TASK_ID,&#13;&#10;        PTSK.TASK_NUMBER,&#13;&#10;        PROJ_TYPES.PROJECT_TYPE,&#13;&#10;        SUM(I.PROJFUNC_BILL_AMOUNT) BLNG_FUNCNL_BILL_AMT&#13;&#10;  FROM &#13;&#10;  (select ACCTD_CURR_CODE,INV_CURRENCY_CODE,INVOICE_DATE,AGREEMENT_ID,&#13;&#10;  RA_INVOICE_NUMBER,ACCTD_EXCHG_RATE,TRANSFER_STATUS_CODE,&#13;&#10;  SYSTEM_REFERENCE,DRAFT_INVOICE_NUM,DRAFT_INVOICE_NUM_CREDITED,&#13;&#10;  CREATION_DATE,GENERATION_ERROR_FLAG,TRANSFER_REJECTION_REASON,&#13;&#10;  GL_DATE,BILL_THROUGH_DATE,PROJECT_ID,unearned_code_combination_id,&#13;&#10;  unbilled_code_combination_id from pgscharlie.PA_DRAFT_INVOICES_ALL&#13;&#10;  WHERE UPPER(TRANSFER_STATUS_CODE) = 'A') IA&#13;&#10;  join &#13;&#10;  (select PROJECT_ID,TASK_ID,LINE_NUM,TEXT,INV_AMOUNT,EVENT_NUM,&#13;&#10;  FUNDING_BILL_AMOUNT,PROJFUNC_BILL_AMOUNT,DRAFT_INVOICE_NUM &#13;&#10;  from pgscharlie.PA_DRAFT_INVOICE_ITEMS) I&#13;&#10;  on IA.PROJECT_ID = I.PROJECT_ID&#13;&#10;  and IA.DRAFT_INVOICE_NUM = I.DRAFT_INVOICE_NUM&#13;&#10;  join&#13;&#10;  (select segment2,code_combination_id from pgscharlie.gl_code_combinations) gl&#13;&#10;  on coalesce(IA.unearned_code_combination_id,&#10; IA.unbilled_code_combination_id) =  gl.code_combination_id&#13;&#10;  JOIN &#13;&#10;  (SELECT PROJECT_ID,SEGMENT1,PROJECT_TYPE,ORG_ID FROM PGSCHARLIE.PA_PROJECTS_ALL &#13;&#10;  --WHERE SEGMENT1 = '10186211'&#13;&#10;  ) PROJ_ALL&#13;&#10;  ON (IA.PROJECT_ID = PROJ_ALL.PROJECT_ID)&#9;&#13;&#10;  JOIN &#13;&#10;  (SELECT PROJECT_TYPE,ORG_ID FROM PGSCHARLIE.PA_PROJECT_TYPES_ALL &#13;&#10;  WHERE UPPER(ATTRIBUTE10) = 'N') PROJ_TYPES&#13;&#10;  ON (PROJ_ALL.PROJECT_TYPE = PROJ_TYPES.PROJECT_TYPE&#13;&#10;  AND PROJ_ALL.ORG_ID       = PROJ_TYPES.ORG_ID)&#13;&#10;  JOIN&#13;&#10;  (SELECT ORGANIZATION_ID,NAME FROM PGSCHARLIE.HR_ALL_ORGANIZATION_UNITS &#13;&#10;  WHERE UPPER(NAME) LIKE 'OU%') OU&#13;&#10;  ON&#13;&#10;  PROJ_ALL.ORG_ID = OU.ORGANIZATION_ID &#13;&#10;  JOIN&#13;&#10;  (SELECT TASK_ID,TASK_NUMBER FROM PGSCHARLIE.PA_TASKS) PTSK&#13;&#10;  ON I.TASK_ID = PTSK.TASK_ID&#13;&#10;  GROUP BY &#13;&#10;  I.PROJECT_ID,&#13;&#10;  I.TASK_ID,&#13;&#10;  PTSK.TASK_NUMBER,&#13;&#10;  PROJ_TYPES.PROJECT_TYPE&#13;&#10;  UNION&#13;&#10;  SELECT &#13;&#10;  REV.PROJECT_ID,&#13;&#10;  REV.TASK_ID,&#13;&#10;  PTSK.TASK_NUMBER,&#13;&#10;  PROJ_TYPES.PROJECT_TYPE,&#13;&#10;  SUM(REV.PROJFUNC_REVENUE_AMOUNT) BLNG_FUNCNL_BILL_AMT&#13;&#10;  FROM &#13;&#10;  (SELECT PROJECT_ID,TASK_ID,DRAFT_REVENUE_NUM,PROJFUNC_REVENUE_AMOUNT &#13;&#10;  FROM PGSCHARLIE.PA_DRAFT_REVENUE_ITEMS&#13;&#10;   WHERE UPPER(REVENUE_SOURCE) &lt;&gt; 'DUMMY') REV&#13;&#10;  JOIN &#13;&#10;  (SELECT PROJECT_ID,DRAFT_REVENUE_NUM FROM PGSCHARLIE.PA_DRAFT_REVENUES_ALL &#13;&#10;  WHERE UPPER(TRANSFER_STATUS_CODE) = 'A') REV_ALL&#13;&#10;  ON (REV.PROJECT_ID        = REV_ALL.PROJECT_ID&#13;&#10;  AND REV.DRAFT_REVENUE_NUM = REV_ALL.DRAFT_REVENUE_NUM)&#13;&#10;  JOIN &#13;&#10;  (SELECT PROJECT_ID,ORG_ID,PROJECT_TYPE FROM PGSCHARLIE.PA_PROJECTS_ALL &#13;&#10;  ) PROJ_ALL&#13;&#10;  ON (REV.PROJECT_ID = PROJ_ALL.PROJECT_ID)&#13;&#10;  JOIN &#13;&#10;  (SELECT PROJECT_TYPE,ORG_ID FROM PGSCHARLIE.PA_PROJECT_TYPES_ALL &#13;&#10;  WHERE UPPER(ATTRIBUTE10) = 'Y') PROJ_TYPES&#13;&#10;  ON (PROJ_ALL.PROJECT_TYPE = PROJ_TYPES.PROJECT_TYPE&#13;&#10;  AND PROJ_ALL.ORG_ID       = PROJ_TYPES.ORG_ID)&#13;&#10;  JOIN &#13;&#10;  (SELECT PROJECT_ID,TASK_ID FROM PGSCHARLIE.PA_TASKS) PA_TASK&#13;&#10;  ON ( REV.PROJECT_ID = PA_TASK.PROJECT_ID&#13;&#10;  AND REV.TASK_ID = PA_TASK.TASK_ID )&#13;&#10;  JOIN&#13;&#10;  (SELECT ORGANIZATION_ID,NAME FROM PGSCHARLIE.HR_ALL_ORGANIZATION_UNITS &#13;&#10;  WHERE UPPER(NAME) LIKE 'OU%') OU&#13;&#10;  ON&#13;&#10;  PROJ_ALL.ORG_ID = OU.ORGANIZATION_ID&#13;&#10;  JOIN&#13;&#10;  (SELECT TASK_ID,TASK_NUMBER FROM PGSCHARLIE.PA_TASKS) PTSK&#13;&#10;  ON REV.TASK_ID = PTSK.TASK_ID &#13;&#10;  GROUP BY &#13;&#10;  REV.PROJECT_ID,&#13;&#10;  REV.TASK_ID,&#13;&#10;  PTSK.TASK_NUMBER,&#13;&#10;  PROJ_TYPES.PROJECT_TYPE&#13;&#10;  ) AA&#13;&#10;  GROUP BY &#13;&#10;  AA.PROJECT_ID,&#13;&#10;  AA.TASK_ID,&#13;&#10;  AA.TASK_NUMBER,&#13;&#10;  AA.PROJECT_TYPE&#13;&#10;ORDER BY&#13;&#10;AA.TASK_NUMBER&#13;&#10;) BILL_MAIN&#13;&#10;LEFT JOIN&#13;&#10;(&#13;&#10;SELECT &#13;&#10;        I.PROJECT_ID PROJECT_ID,&#13;&#10;        I.TASK_ID TASK_ID,&#13;&#10;        PTSK.TASK_NUMBER,&#13;&#10;        SUM(I.PROJFUNC_BILL_AMOUNT) bill_period_functional_bill,&#13;&#10;        SUM(I.INV_AMOUNT)  bill_period_funding_bill&#13;&#10;  FROM &#13;&#10;  (select ACCTD_CURR_CODE,INV_CURRENCY_CODE,INVOICE_DATE,AGREEMENT_ID,&#13;&#10;  RA_INVOICE_NUMBER,ACCTD_EXCHG_RATE,TRANSFER_STATUS_CODE,&#13;&#10;  SYSTEM_REFERENCE,DRAFT_INVOICE_NUM,DRAFT_INVOICE_NUM_CREDITED,&#13;&#10;  CREATION_DATE,GENERATION_ERROR_FLAG,TRANSFER_REJECTION_REASON,&#13;&#10;  GL_DATE,BILL_THROUGH_DATE,PROJECT_ID,unearned_code_combination_id,&#13;&#10;  unbilled_code_combination_id from pgscharlie.PA_DRAFT_INVOICES_ALL&#13;&#10;  WHERE UPPER(TRANSFER_STATUS_CODE) = 'A') IA&#13;&#10;  join &#13;&#10;  (select PROJECT_ID,TASK_ID,LINE_NUM,TEXT,INV_AMOUNT,EVENT_NUM,&#13;&#10;  FUNDING_BILL_AMOUNT,PROJFUNC_BILL_AMOUNT,DRAFT_INVOICE_NUM &#13;&#10;  from pgscharlie.PA_DRAFT_INVOICE_ITEMS) I&#13;&#10;  on IA.PROJECT_ID = I.PROJECT_ID&#13;&#10;  and IA.DRAFT_INVOICE_NUM = I.DRAFT_INVOICE_NUM&#13;&#10;  join&#13;&#10;  (select segment2,code_combination_id from pgscharlie.gl_code_combinations) gl&#13;&#10;  on coalesce(IA.unearned_code_combination_id,&#10; IA.unbilled_code_combination_id) =  gl.code_combination_id&#13;&#10;  JOIN &#13;&#10;  (SELECT PROJECT_ID,SEGMENT1,PROJECT_TYPE,ORG_ID FROM PGSCHARLIE.PA_PROJECTS_ALL &#13;&#10;  --WHERE SEGMENT1 = '10186211'&#13;&#10;  ) PROJ_ALL&#13;&#10;  ON (IA.PROJECT_ID = PROJ_ALL.PROJECT_ID)&#9;&#13;&#10;  JOIN &#13;&#10;  (SELECT PROJECT_TYPE,ORG_ID FROM PGSCHARLIE.PA_PROJECT_TYPES_ALL &#13;&#10;  WHERE UPPER(ATTRIBUTE10) = 'N') PROJ_TYPES&#13;&#10;  ON (PROJ_ALL.PROJECT_TYPE = PROJ_TYPES.PROJECT_TYPE&#13;&#10;  AND PROJ_ALL.ORG_ID       = PROJ_TYPES.ORG_ID)&#13;&#10;  JOIN&#13;&#10;  (SELECT TASK_ID,TASK_NUMBER FROM PGSCHARLIE.PA_TASKS) PTSK&#13;&#10;  ON I.TASK_ID = PTSK.TASK_ID&#13;&#10;  GROUP BY &#13;&#10;  I.PROJECT_ID,&#13;&#10;  I.TASK_ID,&#13;&#10;  PTSK.TASK_NUMBER&#13;&#10;  UNION ALL&#13;&#10;  SELECT &#13;&#10;  REV.PROJECT_ID,&#13;&#10;  REV.TASK_ID,&#13;&#10;  PTSK.TASK_NUMBER,&#13;&#10;  SUM(REV.PROJFUNC_REVENUE_AMOUNT) bill_period_functional_bill,&#13;&#10;  SUM(REV.PROJFUNC_REVENUE_AMOUNT) bill_period_funding_bill&#13;&#10;  FROM &#13;&#10;  (SELECT PROJECT_ID,TASK_ID,DRAFT_REVENUE_NUM,PROJFUNC_REVENUE_AMOUNT &#13;&#10;  FROM PGSCHARLIE.PA_DRAFT_REVENUE_ITEMS&#13;&#10;   WHERE UPPER(REVENUE_SOURCE) &lt;&gt; 'DUMMY') REV&#13;&#10;  JOIN &#13;&#10;  (SELECT PROJECT_ID,DRAFT_REVENUE_NUM FROM PGSCHARLIE.PA_DRAFT_REVENUES_ALL &#13;&#10;  WHERE UPPER(TRANSFER_STATUS_CODE) = 'A') REV_ALL&#13;&#10;  ON (REV.PROJECT_ID        = REV_ALL.PROJECT_ID&#13;&#10;  AND REV.DRAFT_REVENUE_NUM = REV_ALL.DRAFT_REVENUE_NUM)&#13;&#10;  JOIN &#13;&#10;  (SELECT PROJECT_ID,ORG_ID,PROJECT_TYPE FROM PGSCHARLIE.PA_PROJECTS_ALL &#13;&#10;  ) PROJ_ALL&#13;&#10;  ON (REV.PROJECT_ID = PROJ_ALL.PROJECT_ID)&#13;&#10;  JOIN &#13;&#10;  (SELECT PROJECT_TYPE,ORG_ID FROM PGSCHARLIE.PA_PROJECT_TYPES_ALL &#13;&#10;  WHERE UPPER(ATTRIBUTE10) = 'Y') PROJ_TYPES&#13;&#10;  ON (PROJ_ALL.PROJECT_TYPE = PROJ_TYPES.PROJECT_TYPE&#13;&#10;  AND PROJ_ALL.ORG_ID       = PROJ_TYPES.ORG_ID)&#13;&#10;  JOIN &#13;&#10;  (SELECT PROJECT_ID,TASK_ID FROM PGSCHARLIE.PA_TASKS) PA_TASK&#13;&#10;  ON ( REV.PROJECT_ID = PA_TASK.PROJECT_ID&#13;&#10;  AND REV.TASK_ID = PA_TASK.TASK_ID )&#13;&#10;  JOIN&#13;&#10;  (SELECT TASK_ID,TASK_NUMBER FROM PGSCHARLIE.PA_TASKS) PTSK&#13;&#10;  ON REV.TASK_ID = PTSK.TASK_ID &#13;&#10;  GROUP BY &#13;&#10;  REV.PROJECT_ID,&#13;&#10;  REV.TASK_ID,&#13;&#10;  PTSK.TASK_NUMBER&#13;&#10; ) bill_select_period&#13;&#10; ON&#13;&#10; bill_main.project_ID = bill_select_period.project_ID  &#13;&#10; AND bill_main.task_ID  = bill_select_period.task_ID&#13;&#10;) bill_main2&#13;&#10;ON&#13;&#10;PROJ_FUND.project_id = bill_main2.project_id&#13;&#10;AND PROJ_FUND.task_id = bill_main2.task_id &#13;&#10;) BILL_FINAL        &#13;&#10;LEFT JOIN &#13;&#10;(SELECT PROJECT_ID,SEGMENT1,ORG_ID,PROJECT_TYPE,DESCRIPTION &#13;&#10;FROM PGSCHARLIE.PA_PROJECTS_ALL) PROJ_ALL&#13;&#10;ON (BILL_FINAL.PROJECT_ID = PROJ_ALL.PROJECT_ID)&#9;&#13;&#10;LEFT JOIN&#13;&#10;(SELECT TASK_ID,TASK_NUMBER,ATTRIBUTE1,ATTRIBUTE2,ATTRIBUTE3,ATTRIBUTE6,&#13;&#10;COMPLETION_DATE,DESCRIPTION FROM PGSCHARLIE.PA_TASKS) PTSK&#13;&#10;ON BILL_FINAL.TASK_ID = PTSK.TASK_ID&#13;&#10;LEFT JOIN&#13;&#10;(SELECT DISTINCT PRJ_CLS.CLASS_CODE,PRJ_CLS.PROJECT_ID PROJECT_ID &#13;&#10;FROM PGSCHARLIE.PA_PROJECT_CLASSES PRJ_CLS  &#13;&#10;WHERE upper(CLASS_CATEGORY) = 'SEGMENT') PROJ_CLS&#13;&#10;ON ( PROJ_ALL.PROJECT_ID = PROJ_CLS.PROJECT_ID )&#13;&#10;LEFT JOIN&#13;&#10;(SELECT DISTINCT L.ATTRIBUTE4 AS PROJ_LE_ME,&#13;&#10;P.PROJECT_ID                AS PROJECT_ID&#13;&#10;FROM &#13;&#10;PGSCHARLIE.FND_LOOKUP_VALUES L&#13;&#10;JOIN &#13;&#10;PGSCHARLIE.PA_PROJECT_CLASSES P&#13;&#10;ON (L.DESCRIPTION = P.CLASS_CODE)&#13;&#10;JOIN &#13;&#10;PGSCHARLIE.PA_PROJECTS_ALL PM&#13;&#10;ON (P.PROJECT_ID = PM.PROJECT_ID)&#13;&#10;JOIN &#13;&#10;PGSCHARLIE.HR_ALL_ORGANIZATION_UNITS OM&#13;&#10;ON (PM.CARRYING_OUT_ORGANIZATION_ID      = OM.ORGANIZATION_ID&#13;&#10;AND L.TAG                                = OM.NAME)&#13;&#10;WHERE &#13;&#10;UPPER(L.LOOKUP_TYPE)               = 'PS AR RELATION SEARCH'&#13;&#10;AND UPPER(P.CLASS_CATEGORY)              = 'SEGMENT'&#13;&#10;) PROJ_LE_ME_VAL &#13;&#10;ON PROJ_ALL.PROJECT_ID = PROJ_LE_ME_VAL.PROJECT_ID&#13;&#10;LEFT JOIN&#13;&#10;(SELECT PROJECT_TYPE,ORG_ID,ATTRIBUTE7 FROM PGSCHARLIE.PA_PROJECT_TYPES_ALL) TYPES_ALL&#13;&#10;ON (PROJ_ALL.PROJECT_TYPE = TYPES_ALL.PROJECT_TYPE&#13;&#10;AND PROJ_ALL.ORG_ID        =TYPES_ALL.ORG_ID ) &#13;&#10;LEFT JOIN&#13;&#10;(SELECT &#13;&#10;DISTINCT P.PROJECT_ID AS PROJECT_ID,&#13;&#10;MAX(F.FULL_NAME)            AS FULL_NAME&#13;&#10;FROM&#13;&#10;        (SELECT PPP.PROJECT_ID,&#13;&#10;          PPP.RESOURCE_SOURCE_ID PERSON_ID,&#13;&#10;        COALESCE(PPP.START_DATE_ACTIVE, TO_DATE('01/01/1900', 'MM DD YYYY')) START_DATE_ACTIVE&#13;&#10;        FROM &#13;&#10;        (SELECT PROJECT_ID,PROJECT_ROLE_ID,OBJECT_TYPE,RESOURCE_TYPE_ID,&#13;&#10;&#9;&#9;RESOURCE_SOURCE_ID,START_DATE_ACTIVE &#13;&#10;        FROM PGSCHARLIE.PA_PROJECT_PARTIES) PPP&#13;&#10;        INNER JOIN &#13;&#10;        (SELECT PROJECT_ROLE_ID,ROLE_CONTROL_CODE FROM PGSCHARLIE.PA_ROLE_CONTROLS) PRC&#13;&#10;        ON ( PPP.PROJECT_ROLE_ID = PRC.PROJECT_ROLE_ID )&#13;&#10;        INNER JOIN &#13;&#10;        (SELECT PROJECT_ROLE_TYPE,PROJECT_ROLE_ID FROM PGSCHARLIE.PA_PROJECT_ROLE_TYPES_B) PPRT&#13;&#10;        ON ( PPP.PROJECT_ROLE_ID         = PPRT.PROJECT_ROLE_ID )&#13;&#10;        WHERE &#13;&#10;        PPRT.PROJECT_ROLE_TYPE     = '1003'&#13;&#10;        AND UPPER(PPP.OBJECT_TYPE)       = 'PA_PROJECTS'&#13;&#10;        AND UPPER(PRC.ROLE_CONTROL_CODE) = 'ALLOW_AS_PROJ_MEMBER'&#13;&#10;        AND PPP.RESOURCE_TYPE_ID         = 101&#13;&#10;        ) P&#13;&#10;      INNER JOIN &#13;&#10;      (SELECT PERSON_ID,CAST(EFFECTIVE_END_DATE AS DATE) EFFECTIVE_END_DATE,FULL_NAME &#13;&#10;&#9;  FROM PGSCHARLIE.PER_ALL_PEOPLE_F) F&#13;&#10;      ON ( P.PERSON_ID = F.PERSON_ID )&#13;&#10;      INNER JOIN&#13;&#10;      (SELECT AP.PERSON_ID,&#13;&#10;          MAX(CAST(AP.EFFECTIVE_END_DATE AS DATE)) EFFECTIVE_END_DATE&#13;&#10;        FROM PGSCHARLIE.PER_ALL_PEOPLE_F AP&#13;&#10;        GROUP BY AP.PERSON_ID&#13;&#10;      ) FF&#13;&#10;      ON F.PERSON_ID         = FF.PERSON_ID&#13;&#10;      AND F.EFFECTIVE_END_DATE = FF.EFFECTIVE_END_DATE &#13;&#10;      INNER JOIN&#13;&#10;        (SELECT PPP.PROJECT_ID,&#13;&#10;          COALESCE(MAX(PPP.START_DATE_ACTIVE), TO_DATE('01/01/1900',&#10;  'MM DD YYYY')) START_DATE_ACTIVE&#13;&#10;        FROM &#13;&#10;        (SELECT PROJECT_ID,START_DATE_ACTIVE,PROJECT_ROLE_ID,OBJECT_TYPE,RESOURCE_TYPE_ID &#13;&#10;&#9;&#9;FROM PGSCHARLIE.PA_PROJECT_PARTIES) PPP&#13;&#10;        INNER JOIN &#13;&#10;        (SELECT PROJECT_ROLE_ID,ROLE_CONTROL_CODE FROM PGSCHARLIE.PA_ROLE_CONTROLS) PRC&#13;&#10;        ON ( PPP.PROJECT_ROLE_ID = PRC.PROJECT_ROLE_ID )&#13;&#10;        INNER JOIN &#13;&#10;        PGSCHARLIE.PA_PROJECT_ROLE_TYPES_B PPRT&#13;&#10;        ON ( PPP.PROJECT_ROLE_ID         = PPRT.PROJECT_ROLE_ID )&#13;&#10;        WHERE PPRT.PROJECT_ROLE_TYPE     = '1003'&#13;&#10;        AND UPPER(PPP.OBJECT_TYPE)       = 'PA_PROJECTS'&#13;&#10;        AND UPPER(PRC.ROLE_CONTROL_CODE) = 'ALLOW_AS_PROJ_MEMBER'&#13;&#10;        AND PPP.RESOURCE_TYPE_ID         = 101&#13;&#10;        GROUP BY PPP.PROJECT_ID&#13;&#10;        ) PP &#13;&#10;        ON ( P.PROJECT_ID = PP.PROJECT_ID&#13;&#10;      AND P.START_DATE_ACTIVE  = PP.START_DATE_ACTIVE )&#13;&#10;      GROUP BY P.PROJECT_ID&#13;&#10;      ) PROJ_SRVC_MGR &#13;&#10;ON PROJ_ALL.PROJECT_ID = PROJ_SRVC_MGR.PROJECT_ID&#13;&#10;WHERE&#13;&#10;(PROJ_CLS.CLASS_CODE like '%Core Maintenance%'  &#13;&#10;OR PROJ_CLS.CLASS_CODE like '%TDI%' &#13;&#10;OR PROJ_CLS.CLASS_CODE like 'TX Repairs%' &#13;&#10;OR PROJ_CLS.CLASS_CODE like 'TX Parts%' &#13;&#10;OR PROJ_LE_ME_VAL.PROJ_LE_ME like '%06' &#13;&#10;) &#13;&#10;AND UPPER(PROJ_CLS.CLASS_CODE) NOT LIKE '%SHADOW%' &#13;&#10;AND (REPLACE(PROJ_ALL.PROJECT_TYPE,'&amp;','_') not like '%T_M%' OR PROJ_ALL.SEGMENT1 in ('10189605'))&#13;&#10;) FACT_VALUES&#13;&#10;JOIN&#13;&#10;  (&#13;&#10;  SELECT DISTINCT FUND.PROJECT_ID,&#13;&#10;    FUND.TASK_ID ,&#13;&#10;    PROJ_MAIN.PROJECT_STATUS_CODE PROJ_STAT_VAL,&#13;&#10;    PROJ_MAIN.ATTRIBUTE5 PROJ_EVNT_ID,&#13;&#10;    PROJ_MAIN.PROJ_CRRCY_CD,&#13;&#10;    PROJ_MAIN.EMPLY_FULL_NM,&#13;&#10;    PROJ_PL.FULL_NAME PROJ_PL_NM,&#13;&#10;    CUSTOMER_DET.CUSTOMER_NAME cust_nm,&#13;&#10;    CASE&#13;&#10;      WHEN CUSTOMER_DET.CUSTOMER_TYPE = 'I'&#13;&#10;      THEN 'Internal'&#13;&#10;      WHEN CUSTOMER_DET.CUSTOMER_TYPE = 'R'&#13;&#10;      THEN 'External'&#13;&#10;      ELSE 'NA'&#13;&#10;    END CUST_TYPE_NM,&#13;&#10;    MAX(PROJECT_CLASS_CODES.CLASS_CODE) PROJ_CLSS_DESC,&#13;&#10;    CUSTOMER_SHIPPED_DET.CUSTOMER_SHIPPED_NAME CUSTOMER_SHIPPED_TO_NAME,&#13;&#10;    loc_det.COUNTRY CUST_ADDR_CNTRY_NM,&#13;&#10;    loc_det.STATE CUST_ADDR_STATE_NM,&#13;&#10;    PROJ_MAIN.ORG_NM,&#13;&#10;    PROJ_MAIN.PARENT_ORG_NM    &#13;&#10;  FROM &#13;&#10;  (select PROJECT_ID,TASK_ID from PGSCHARLIE.PA_PROJECT_FUNDINGS) AS FUND&#13;&#10;  JOIN&#13;&#10;    (SELECT PROJ_ALL.PROJECT_ID,&#13;&#10;      proj_all.PROJECT_STATUS_CODE,&#13;&#10;      proj_all.ATTRIBUTE5,&#13;&#10;      proj_all.PROJECT_CURRENCY_CODE PROJ_CRRCY_CD,&#13;&#10;      PROJ_SRVC_MGR.FULL_NAME EMPLY_FULL_NM,&#13;&#10;      OU.NAME ORG_NM,&#13;&#10;      (CASE WHEN CAST(OU.BUSINESS_GROUP_ID AS NUMERIC(15,0)) IS NULL THEN &#13;&#10;&#9;&#9;(CASE WHEN CAST(LE.LE_NM AS NUMERIC(15,0)) IS NULL THEN &#13;&#10;&#9;&#9;&#9;(CASE WHEN CAST(LE1.OPERATING_UNIT AS NUMERIC(15,0)) IS NOT NULL &#13;&#10;&#9;&#9;&#9;THEN CAST(LE1.OPERATING_UNIT AS NUMERIC(15,0))  &#13;&#10;&#9;&#9;&#9;ELSE 0 END)&#13;&#10;&#9;&#9;ELSE&#13;&#10;&#9;&#9;CAST(LE.LE_NM AS NUMERIC(15,0)) END)&#13;&#10;&#9;ELSE&#13;&#10;&#9;CAST(OU.BUSINESS_GROUP_ID AS NUMERIC(15,0))&#13;&#10;&#9;END) PARENT_ORG_NM&#13;&#10;    FROM &#13;&#10;    (select PROJECT_ID,PROJECT_STATUS_CODE,ATTRIBUTE5,PROJECT_CURRENCY_CODE,ORG_ID &#13;&#10;&#9;from PGSCHARLIE.PA_PROJECTS_ALL) PROJ_ALL&#13;&#10;    JOIN&#13;&#10;      (SELECT DISTINCT PPP.PROJECT_ID AS PROJECT_ID,&#13;&#10;        MAX(F.FULL_NAME)              AS FULL_NAME&#13;&#10;      FROM &#13;&#10;      (select PROJECT_ID,RESOURCE_TYPE_ID,PROJECT_ROLE_ID,RESOURCE_SOURCE_ID,OBJECT_TYPE &#13;&#10;&#9;  from PGSCHARLIE.PA_PROJECT_PARTIES) PPP&#13;&#10;      INNER JOIN &#13;&#10;      (select PROJECT_ROLE_ID,ROLE_CONTROL_CODE from PGSCHARLIE.PA_ROLE_CONTROLS) PRC&#13;&#10;      ON ( PPP.PROJECT_ROLE_ID = PRC.PROJECT_ROLE_ID )&#13;&#10;      INNER JOIN &#13;&#10;      (select PROJECT_ROLE_ID,PROJECT_ROLE_TYPE from PGSCHARLIE.PA_PROJECT_ROLE_TYPES_B) PPRT&#13;&#10;      ON ( PPP.PROJECT_ROLE_ID = PPRT.PROJECT_ROLE_ID )&#13;&#10;      INNER JOIN &#13;&#10;      (select FULL_NAME,PERSON_ID from PGSCHARLIE.PER_ALL_PEOPLE_F) F&#13;&#10;      ON ( PPP.RESOURCE_SOURCE_ID      = F.PERSON_ID )&#13;&#10;      WHERE PPRT.PROJECT_ROLE_TYPE     = '1003'&#13;&#10;      AND UPPER(PPP.OBJECT_TYPE)       = 'PA_PROJECTS'&#13;&#10;      AND UPPER(PRC.ROLE_CONTROL_CODE) = 'ALLOW_AS_PROJ_MEMBER'&#13;&#10;      AND PPP.RESOURCE_TYPE_ID         = 101&#13;&#10;      GROUP BY PPP.PROJECT_ID&#13;&#10;      ) PROJ_SRVC_MGR &#13;&#10;      ON ( PROJ_ALL.PROJECT_ID = PROJ_SRVC_MGR.PROJECT_ID )&#13;&#10;      JOIN&#13;&#10;      (SELECT ORGANIZATION_ID,NAME,BUSINESS_GROUP_ID &#13;&#10;&#9;  FROM PGSCHARLIE.HR_ALL_ORGANIZATION_UNITS WHERE UPPER(NAME) LIKE 'OU%') OU&#13;&#10;       ON&#13;&#10;       PROJ_ALL.ORG_ID = OU.ORGANIZATION_ID&#13;&#10;       LEFT JOIN&#13;&#10;       (&#13;&#10;        select &#13;&#10;&#9;DISTINCT &#13;&#10;&#9;P.LE as LE_NM, P.OPERATING_UNIT as OPERATING_UNIT&#13;&#10;&#9;from&#13;&#10;&#9;(SELECT OU1.BUSINESS_GROUP_ID, OU2.NAME BUSINESS_GROUP_NAME, &#13;&#10;&#9;OI2.ORG_INFORMATION2 LE, OU3.NAME LEGAL_ENTITY, &#13;&#10;&#9;OU1.ORGANIZATION_ID OPERATING_UNIT, OU1.NAME OU_NAME&#13;&#10;&#9;FROM&#13;&#10;&#9;(SELECT BUSINESS_GROUP_ID,ORGANIZATION_ID,NAME &#13;&#10;&#9;FROM PGSCHARLIE.HR_ALL_ORGANIZATION_UNITS) OU1,&#13;&#10;&#9;(SELECT NAME,ORGANIZATION_ID FROM PGSCHARLIE.HR_ALL_ORGANIZATION_UNITS) OU2,&#13;&#10;&#9;(SELECT ORGANIZATION_ID,NAME FROM PGSCHARLIE.HR_ALL_ORGANIZATION_UNITS) OU3,&#13;&#10;&#9;(SELECT ORGANIZATION_ID,ORG_INFORMATION_CONTEXT,ORG_INFORMATION1,ORG_INFORMATION2 &#13;&#10;&#9;FROM PGSCHARLIE.HR_ORGANIZATION_INFORMATION) OI1,&#13;&#10;&#9;(SELECT ORG_INFORMATION2,ORGANIZATION_ID,ORG_INFORMATION_CONTEXT &#13;&#10;&#9;FROM PGSCHARLIE.HR_ORGANIZATION_INFORMATION) OI2&#13;&#10;&#9;WHERE &#13;&#10;&#9;OU1.ORGANIZATION_ID = OI1.ORGANIZATION_ID &#13;&#10;&#9;AND OU1.ORGANIZATION_ID = OI2.ORGANIZATION_ID &#13;&#10;&#9;AND OU1.BUSINESS_GROUP_ID = OU2.ORGANIZATION_ID &#13;&#10;&#9;AND OI2.ORG_INFORMATION2 = OU3.ORGANIZATION_ID &#13;&#10;&#9;AND OI1.ORG_INFORMATION_CONTEXT = 'CLASS' AND OI1.ORG_INFORMATION1 = 'OPERATING_UNIT' &#13;&#10;&#9;AND OI1.ORG_INFORMATION2 = 'Y' AND OI2.ORG_INFORMATION_CONTEXT = 'Operating Unit Information') P&#13;&#10;&#9;LEFT JOIN&#13;&#10;&#9;(&#13;&#10;&#9;(select OU.ORGANIZATION_ID, OU.NAME, OI.ORG_INFORMATION1 OU&#13;&#10;&#9;from &#13;&#10;&#9;(SELECT ORGANIZATION_ID,NAME FROM PGSCHARLIE.HR_ALL_ORGANIZATION_UNITS) OU, &#13;&#10;&#9;(SELECT ORGANIZATION_ID,ORG_INFORMATION_CONTEXT,ORG_INFORMATION1 &#13;&#10;&#9;FROM PGSCHARLIE.HR_ORGANIZATION_INFORMATION) OI&#13;&#10;&#9;where OU.ORGANIZATION_ID = OI.ORGANIZATION_ID and OI.ORG_INFORMATION_CONTEXT = 'Exp Organization &#10; Defaults')&#13;&#10;&#9;union&#13;&#10;&#9;(&#13;&#10;&#9;select OU.ORGANIZATION_ID, &#13;&#10;&#9;OU.NAME, &#13;&#10;&#9;OI.ORG_INFORMATION3 OU&#13;&#10;&#9;from &#13;&#10;&#9;(SELECT ORGANIZATION_ID,NAME FROM PGSCHARLIE.HR_ALL_ORGANIZATION_UNITS) OU, &#13;&#10;&#9;(SELECT ORG_INFORMATION3,ORGANIZATION_ID,ORG_INFORMATION_CONTEXT &#13;&#10;&#9;FROM PGSCHARLIE.HR_ORGANIZATION_INFORMATION) OI&#13;&#10;&#9;where &#13;&#10;&#9;OU.ORGANIZATION_ID = OI.ORGANIZATION_ID &#13;&#10;&#9;and OI.ORG_INFORMATION_CONTEXT = 'Accounting Information')&#13;&#10;&#9;) Q&#13;&#10;&#9;ON P.OPERATING_UNIT = Q.OU&#13;&#10;&#9;) LE&#13;&#10;&#9;ON&#13;&#10;&#9;OU.ORGANIZATION_ID = LE.OPERATING_UNIT&#13;&#10;&#9;LEFT JOIN&#13;&#10;       (&#13;&#10;        select &#13;&#10;&#9;DISTINCT &#13;&#10;&#9;P.LE as LE_NM, &#13;&#10;&#9;P.OPERATING_UNIT as OPERATING_UNIT,&#13;&#10;&#9;Q.ORGANIZATION_ID as ORGANIZATION_ID&#13;&#10;&#9;from&#13;&#10;&#9;(SELECT OU1.BUSINESS_GROUP_ID, OU2.NAME BUSINESS_GROUP_NAME, &#13;&#10;&#9;OI2.ORG_INFORMATION2 LE, OU3.NAME LEGAL_ENTITY, &#13;&#10;&#9;OU1.ORGANIZATION_ID OPERATING_UNIT, OU1.NAME OU_NAME&#13;&#10;&#9;FROM&#13;&#10;&#9;(SELECT BUSINESS_GROUP_ID,ORGANIZATION_ID,NAME &#13;&#10;&#9;FROM PGSCHARLIE.HR_ALL_ORGANIZATION_UNITS) OU1,&#13;&#10;&#9;(SELECT NAME,ORGANIZATION_ID FROM PGSCHARLIE.HR_ALL_ORGANIZATION_UNITS) OU2,&#13;&#10;&#9;(SELECT ORGANIZATION_ID,NAME FROM PGSCHARLIE.HR_ALL_ORGANIZATION_UNITS) OU3,&#13;&#10;&#9;(SELECT ORGANIZATION_ID,ORG_INFORMATION_CONTEXT,ORG_INFORMATION1,ORG_INFORMATION2 &#13;&#10;&#9;FROM PGSCHARLIE.HR_ORGANIZATION_INFORMATION) OI1,&#13;&#10;&#9;(SELECT ORG_INFORMATION2,ORGANIZATION_ID,ORG_INFORMATION_CONTEXT &#13;&#10;&#9;FROM PGSCHARLIE.HR_ORGANIZATION_INFORMATION) OI2&#13;&#10;&#9;WHERE &#13;&#10;&#9;OU1.ORGANIZATION_ID = OI1.ORGANIZATION_ID &#13;&#10;&#9;AND OU1.ORGANIZATION_ID = OI2.ORGANIZATION_ID &#13;&#10;&#9;AND OU1.BUSINESS_GROUP_ID = OU2.ORGANIZATION_ID &#13;&#10;&#9;AND OI2.ORG_INFORMATION2 = OU3.ORGANIZATION_ID &#13;&#10;&#9;AND OI1.ORG_INFORMATION_CONTEXT = 'CLASS' AND OI1.ORG_INFORMATION1 = 'OPERATING_UNIT' &#13;&#10;&#9;AND OI1.ORG_INFORMATION2 = 'Y' &#13;&#10;&#9;AND OI2.ORG_INFORMATION_CONTEXT = 'Operating Unit Information') P&#13;&#10;&#9;LEFT JOIN&#13;&#10;&#9;(&#13;&#10;&#9;(select OU.ORGANIZATION_ID, OU.NAME, OI.ORG_INFORMATION1 OU&#13;&#10;&#9;from &#13;&#10;&#9;(SELECT ORGANIZATION_ID,NAME FROM PGSCHARLIE.HR_ALL_ORGANIZATION_UNITS) OU, &#13;&#10;&#9;(SELECT ORGANIZATION_ID,ORG_INFORMATION_CONTEXT,ORG_INFORMATION1 &#13;&#10;&#9;FROM PGSCHARLIE.HR_ORGANIZATION_INFORMATION) OI&#13;&#10;&#9;where OU.ORGANIZATION_ID = OI.ORGANIZATION_ID &#13;&#10;&#9;and OI.ORG_INFORMATION_CONTEXT = 'Exp Organization Defaults')&#13;&#10;&#9;union&#13;&#10;&#9;(&#13;&#10;&#9;select OU.ORGANIZATION_ID, &#13;&#10;&#9;OU.NAME, &#13;&#10;&#9;OI.ORG_INFORMATION3 OU&#13;&#10;&#9;from &#13;&#10;&#9;(SELECT ORGANIZATION_ID,NAME FROM PGSCHARLIE.HR_ALL_ORGANIZATION_UNITS) OU, &#13;&#10;&#9;(SELECT ORG_INFORMATION3,ORGANIZATION_ID,ORG_INFORMATION_CONTEXT &#13;&#10;&#9;FROM PGSCHARLIE.HR_ORGANIZATION_INFORMATION) OI&#13;&#10;&#9;where &#13;&#10;&#9;OU.ORGANIZATION_ID = OI.ORGANIZATION_ID &#13;&#10;&#9;and OI.ORG_INFORMATION_CONTEXT = 'Accounting Information')&#13;&#10;&#9;) Q&#13;&#10;&#9;ON P.OPERATING_UNIT = Q.OU&#13;&#10;&#9;) LE1&#13;&#10;&#9;ON&#13;&#10;&#9;OU.ORGANIZATION_ID = LE1.ORGANIZATION_ID&#13;&#10;    ) PROJ_MAIN &#13;&#10;    ON (FUND.PROJECT_ID             =PROJ_MAIN.PROJECT_ID)&#13;&#10;     JOIN&#13;&#10;    (SELECT PPP.PROJECT_ID AS PROJECT_ID,&#13;&#10;      MAX(F.FULL_NAME)     AS FULL_NAME&#13;&#10;    FROM &#13;&#10;    (select PROJECT_ID,RESOURCE_TYPE_ID,OBJECT_TYPE,PROJECT_ROLE_ID,RESOURCE_SOURCE_ID &#13;&#10;&#9;from PGSCHARLIE.PA_PROJECT_PARTIES) PPP&#13;&#10;    INNER JOIN &#13;&#10;    (select PROJECT_ROLE_ID,ROLE_CONTROL_CODE from PGSCHARLIE.PA_ROLE_CONTROLS) PRC&#13;&#10;    ON ( PPP.PROJECT_ROLE_ID = PRC.PROJECT_ROLE_ID )&#13;&#10;    INNER JOIN &#13;&#10;    (select PROJECT_ROLE_ID,PROJECT_ROLE_TYPE from PGSCHARLIE.PA_PROJECT_ROLE_TYPES_B) PPRT&#13;&#10;    ON ( PPP.PROJECT_ROLE_ID = PPRT.PROJECT_ROLE_ID )&#13;&#10;    JOIN &#13;&#10;    (select FULL_NAME,PERSON_ID from PGSCHARLIE.PER_ALL_PEOPLE_F) F&#13;&#10;    ON ( PPP.RESOURCE_SOURCE_ID  = F.PERSON_ID )&#13;&#10;    WHERE PPRT.PROJECT_ROLE_TYPE = 'PROJECT MANAGER'&#13;&#10;    AND PPP.OBJECT_TYPE          = 'PA_PROJECTS'&#13;&#10;    AND PRC.ROLE_CONTROL_CODE    = 'ALLOW_AS_PROJ_MEMBER'&#13;&#10;    AND PPP.RESOURCE_TYPE_ID     = 101&#13;&#10;    GROUP BY PPP.PROJECT_ID&#13;&#10;    ) PROJ_PL ON ( PROJ_MAIN.PROJECT_ID = PROJ_PL.PROJECT_ID )&#13;&#10;  JOIN&#13;&#10;    (SELECT a.PROJECT_ID PROJECT_ID,&#13;&#10;      COALESCE(b.ACCOUNT_NAME,c.PARTY_NAME) CUSTOMER_NAME,&#13;&#10;      b.CUSTOMER_TYPE&#13;&#10;    FROM &#13;&#10;    (select PROJECT_ID,BILL_TO_CUSTOMER_ID,SHIP_TO_CUSTOMER_ID,DEFAULT_TOP_TASK_CUST_FLAG &#13;&#10;&#9;from PGSCHARLIE.PA_PROJECT_CUSTOMERS) a&#13;&#10;    LEFT OUTER JOIN &#13;&#10;    (select ACCOUNT_NAME,CUSTOMER_TYPE,CUST_ACCOUNT_ID,&#10; PARTY_ID from PGSCHARLIE.HZ_CUST_ACCOUNTS) b&#13;&#10;    ON ( a.BILL_TO_CUSTOMER_ID =b.CUST_ACCOUNT_ID )&#13;&#10;    LEFT OUTER JOIN &#13;&#10;    (select PARTY_NAME,PARTY_ID from PGSCHARLIE.HZ_PARTIES) c&#13;&#10;    ON ( b.PARTY_ID                          =c.PARTY_ID )&#13;&#10;    WHERE a.DEFAULT_TOP_TASK_CUST_FLAG       = 'Y'&#13;&#10;    ) CUSTOMER_DET ON ( PROJ_MAIN.PROJECT_ID = CUSTOMER_DET.PROJECT_ID )&#13;&#10;  JOIN&#13;&#10;    (SELECT DISTINCT PC.PROJECT_ID AS PROJECT_ID ,&#13;&#10;      PC.CLASS_CODE&#13;&#10;    FROM &#13;&#10;    PGSCHARLIE.PA_PROJECT_CLASSES PC&#13;&#10;    WHERE PC.CLASS_CATEGORY = 'Segment'&#13;&#10;    ) PROJECT_CLASS_CODES&#13;&#10;  ON ( PROJ_MAIN.PROJECT_ID = PROJECT_CLASS_CODES.PROJECT_ID )&#13;&#10;  JOIN&#13;&#10;    (SELECT a.PROJECT_ID PROJECT_ID,&#13;&#10;      COALESCE(b.ACCOUNT_NAME,c.PARTY_NAME) CUSTOMER_SHIPPED_NAME,&#13;&#10;      b.CUSTOMER_TYPE&#13;&#10;    FROM &#13;&#10;    (select PROJECT_ID,SHIP_TO_CUSTOMER_ID,DEFAULT_TOP_TASK_CUST_FLAG &#13;&#10;&#9;from PGSCHARLIE.PA_PROJECT_CUSTOMERS) a&#13;&#10;    LEFT OUTER JOIN &#13;&#10;    (select ACCOUNT_NAME,CUSTOMER_TYPE,CUST_ACCOUNT_ID,PARTY_ID &#13;&#10;&#9;from PGSCHARLIE.HZ_CUST_ACCOUNTS) b&#13;&#10;    ON ( a.SHIP_TO_CUSTOMER_ID =b.CUST_ACCOUNT_ID )&#13;&#10;    LEFT OUTER JOIN &#13;&#10;    (select PARTY_NAME,PARTY_ID from PGSCHARLIE.HZ_PARTIES) c&#13;&#10;    ON ( b.PARTY_ID                                  =c.PARTY_ID )&#13;&#10;    WHERE a.DEFAULT_TOP_TASK_CUST_FLAG               = 'Y'&#13;&#10;    ) CUSTOMER_SHIPPED_DET ON ( PROJ_MAIN.PROJECT_ID = CUSTOMER_SHIPPED_DET.PROJECT_ID )&#13;&#10;  JOIN&#13;&#10;    (SELECT hzl.COUNTRY,&#13;&#10;      hzl.STATE,&#13;&#10;      PPC.PROJECT_ID PROJECT_ID&#13;&#10;    FROM &#13;&#10;    (select PROJECT_ID,SHIP_TO_ADDRESS_ID,DEFAULT_TOP_TASK_CUST_FLAG &#13;&#10;&#9;from PGSCHARLIE.PA_PROJECT_CUSTOMERS) PPC&#13;&#10;    INNER JOIN &#13;&#10;    (select CUST_ACCT_SITE_ID,PARTY_SITE_ID from PGSCHARLIE.HZ_CUST_ACCT_SITES_ALL) cas&#13;&#10;    ON ( PPC.SHIP_TO_ADDRESS_ID = cas.CUST_ACCT_SITE_ID )&#13;&#10;    INNER JOIN &#13;&#10;    (select PARTY_SITE_ID,LOCATION_ID from PGSCHARLIE.HZ_PARTY_SITES) hpc&#13;&#10;    ON ( cas.PARTY_SITE_ID =hpc.PARTY_SITE_ID )&#13;&#10;    INNER JOIN &#13;&#10;    (select COUNTRY,STATE,LOCATION_ID from PGSCHARLIE.HZ_LOCATIONS) hzl&#13;&#10;    ON ( hpc.LOCATION_ID                 = hzl.LOCATION_ID )&#13;&#10;    WHERE PPC.DEFAULT_TOP_TASK_CUST_FLAG = 'Y'&#13;&#10;    ) loc_det ON ( PROJ_MAIN.PROJECT_ID  = loc_det.PROJECT_ID )&#13;&#10;  WHERE PROJ_MAIN.PROJECT_STATUS_CODE   IN ('APPROVED', '1000', '1001','1040','1041')&#13;&#10;  GROUP BY FUND.PROJECT_ID,&#13;&#10;    FUND.TASK_ID ,&#13;&#10;    PROJ_MAIN.PROJECT_STATUS_CODE ,&#13;&#10;    PROJ_MAIN.ATTRIBUTE5 ,&#13;&#10;    PROJ_PL.FULL_NAME ,&#13;&#10;    PROJ_MAIN.ORG_NM,&#13;&#10;    proj_main.parent_org_nm,&#13;&#10;    CUSTOMER_DET.CUSTOMER_NAME ,&#13;&#10;    CASE&#13;&#10;      WHEN CUSTOMER_DET.CUSTOMER_TYPE = 'I'&#13;&#10;      THEN 'Internal'&#13;&#10;      WHEN CUSTOMER_DET.CUSTOMER_TYPE = 'R'&#13;&#10;      THEN 'External'&#13;&#10;      ELSE 'NA'&#13;&#10;    END ,&#13;&#10;    PROJ_MAIN.EMPLY_FULL_NM,&#13;&#10;    PROJ_MAIN.PROJ_CRRCY_CD,&#13;&#10;    CUSTOMER_SHIPPED_DET.CUSTOMER_SHIPPED_NAME ,&#13;&#10;    loc_det.COUNTRY ,&#13;&#10;    loc_det.STATE&#13;&#10;  ) OTHER_DIM_ATTRIBUTES &#13;&#10;ON &#13;&#10;FACT_VALUES.PROJECT_ID = OTHER_DIM_ATTRIBUTES.PROJECT_ID&#13;&#10;AND FACT_VALUES.TASK_ID = OTHER_DIM_ATTRIBUTES.TASK_ID&#13;&#10;LEFT OUTER JOIN&#13;&#10;  (SELECT PROJECT_ID,&#13;&#10;    TASK_ID,&#13;&#10;    CALENDAR_FISCL_YR_MO_NUM,&#13;&#10;    BUDGET_FORCST_SALES_AMT,&#13;&#10;    CASE&#13;&#10;      WHEN SUM(BUDGET_FORCST_SALES_AMT) OVER (PARTITION BY PROJECT_ID,TASK_ID ORDER BY 'A')=0&#13;&#10;      THEN 1                      /COUNT(BUDGET_FORCST_SALES_AMT) &#13;&#10;&#9;  OVER (PARTITION BY PROJECT_ID,TASK_ID ORDER BY 'A')&#13;&#10;      ELSE BUDGET_FORCST_SALES_AMT/SUM(BUDGET_FORCST_SALES_AMT) &#13;&#10;&#9;  OVER (PARTITION BY PROJECT_ID,TASK_ID ORDER BY 'A')&#13;&#10;    END PRCTG&#13;&#10;  FROM&#13;&#10;    (SELECT RA.PROJECT_ID,&#13;&#10;      RA.TASK_ID,&#13;&#10;      TO_CHAR(BL.START_DATE,'YYYYMM') CALENDAR_FISCL_YR_MO_NUM,&#13;&#10;      SUM(COALESCE(bl.PROJECT_REVENUE,0)) BUDGET_FORCST_SALES_AMT&#13;&#10;    FROM &#13;&#10;      (select START_DATE,PROJECT_REVENUE,RESOURCE_ASSIGNMENT_ID &#13;&#10;&#9;  from pgscharlie.PA_BUDGET_LINES) BL,&#13;&#10;      (select PROJECT_ID,TASK_ID,RESOURCE_ASSIGNMENT_ID,BUDGET_VERSION_ID &#13;&#10;&#9;  from pgscharlie.PA_RESOURCE_ASSIGNMENTS) RA,&#13;&#10;      (select BUDGET_VERSION_ID,FIN_PLAN_TYPE_ID,BUDGET_STATUS_CODE,CURRENT_FLAG &#13;&#10;&#9;  from pgscharlie.PA_BUDGET_VERSIONS) BV,&#13;&#10;      (select FIN_PLAN_TYPE_ID,name,language from pgscharlie.PA_FIN_PLAN_TYPES_TL) FP&#13;&#10;    WHERE BL.RESOURCE_ASSIGNMENT_ID      = RA.RESOURCE_ASSIGNMENT_ID&#13;&#10;    AND RA.BUDGET_VERSION_ID             = BV.BUDGET_VERSION_ID&#13;&#10;    AND BV.FIN_PLAN_TYPE_ID              = FP.FIN_PLAN_TYPE_ID&#13;&#10;    AND fp.name                          ='PS_IFS_Forecast Revenue Budget'&#13;&#10;    AND fp.language                      ='US'&#13;&#10;    AND bv.BUDGET_STATUS_CODE            ='B'&#13;&#10;    AND bv.CURRENT_FLAG                  ='Y'&#13;&#10;    AND TO_CHAR(BL.START_DATE,'YYYYMM') &gt;= TO_CHAR(CURRENT_DATE,'YYYYMM')&#13;&#10;    GROUP BY RA.PROJECT_ID,&#13;&#10;      RA.TASK_ID,&#13;&#10;      TO_CHAR(BL.START_DATE,'YYYYMM')&#13;&#10;    ) AAAA&#13;&#10;  ) BUDGET_PCTG&#13;&#10;ON ( FACT_VALUES.PROJECT_ID =BUDGET_PCTG.PROJECT_ID&#13;&#10;AND FACT_VALUES.TASK_ID     = BUDGET_PCTG.TASK_ID )&#13;&#10;LEFT JOIN&#13;&#10;(SELECT ORGANIZATION_ID,NAME,BUSINESS_GROUP_ID &#13;&#10;FROM PGSCHARLIE.HR_ALL_ORGANIZATION_UNITS WHERE UPPER(NAME) LIKE 'OU%') OU1&#13;&#10;ON&#13;&#10;OTHER_DIM_ATTRIBUTES.PARENT_ORG_NM = OU1.ORGANIZATION_ID&#13;&#10;) A&#13;&#10;) AA&#13;&#10;where &#13;&#10;(COALESCE(AA.CUST_TYPE_NM,'UNKWN')&lt;&gt;'I' OR AA.PROJ_LE_ME_VAL LIKE '%06')&#13;&#10;AND (AA.BACKLOG_TYPE='R' OR AA.PROJ_LE_ME_VAL LIKE '%06')&#13;&#10;AND AA.FUNC_CURR_BACKLOG_AMT &gt; 0&#13;&#10;AND AA.proj_num not in ('10228751','10209699')&quot;"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="PROPAGATE_RECORD_SET" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="RECORD_SET_COLUMN" show="false" value="fs_unique_id"/>
+    <elementParameter field="CHECK" name="USE_PREPAREDSTATEMENT" value="false"/>
+    <elementParameter field="TABLE" name="SET_PREPAREDSTATEMENT_PARAMETERS" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" show="false" value="10000"/>
+    <elementParameter field="TEXT" name="LABEL" value="FS STG LOAD"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="fs_backlog_stg" name="tGreenplumRow_9">
+      <column comment="" key="false" length="10" name="fs_unique_id" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="source_data" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="cust_nm" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="cust_type_nm" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="cust_shipped_to" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="cust_addr_cntry_nm" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="cust_addr_state_nm" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="proj_clss_desc" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="proj_clss_ctgry_desc" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="service_type" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="proj_stat_val" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="ou" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="emply_full_nm" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="org_nm" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="crrcy_cd" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="proj_crrcy_cd" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="task_srvc_ofring_num" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="proj_evnt_id" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="proj_pl_nm" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="proj_owng_org_nm" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="30" name="proj_clss_sgmnt" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="task_equip_sl_num" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="task_tchnlgy_cd" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="task_equip_cd" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="proj_srvc_mgr_nm" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="proj_outg_end_dt" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="proj_num" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1020" name="me" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="task_num" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="proj_desc" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="task_desc" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="backlog_type" nullable="true" pattern="" precision="0" sourceType="BPCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="func_curr_tot_orders_recv" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="agmt_num" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="29" name="agmt_dt" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="6" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="cur_sales" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="func_curr_sales_to_date" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="func_curr_backlog_amt" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="funding_curr_tot_orders_recv" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="funding_curr_sales_to_date" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="funding_curr_backlog_amt" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="bill_period_functional" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="budget_forcst_sales_amt" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="28" name="yyyymmdd" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="calendar_fiscl_yr_mo_num" nullable="true" pattern="" precision="0" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="fndg_crrcy" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="allocated_backlog" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="allocated_sales" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="allocated_order" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+    <metadata connector="REJECT" label="fs_backlog_stg" name="REJECT">
+      <column comment="" key="false" length="10" name="fs_unique_id" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="source_data" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="cust_nm" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="cust_type_nm" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="cust_shipped_to" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="cust_addr_cntry_nm" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="cust_addr_state_nm" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="proj_clss_desc" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="proj_clss_ctgry_desc" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="service_type" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="proj_stat_val" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="ou" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="emply_full_nm" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="org_nm" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="crrcy_cd" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="proj_crrcy_cd" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="task_srvc_ofring_num" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="proj_evnt_id" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="proj_pl_nm" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="proj_owng_org_nm" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="30" name="proj_clss_sgmnt" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="task_equip_sl_num" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="task_tchnlgy_cd" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="task_equip_cd" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="proj_srvc_mgr_nm" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="proj_outg_end_dt" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="proj_num" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1020" name="me" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="task_num" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="proj_desc" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="task_desc" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="backlog_type" nullable="true" pattern="" precision="0" sourceType="BPCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="func_curr_tot_orders_recv" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="agmt_num" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="29" name="agmt_dt" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="6" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="cur_sales" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="func_curr_sales_to_date" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="func_curr_backlog_amt" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="funding_curr_tot_orders_recv" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="funding_curr_sales_to_date" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="funding_curr_backlog_amt" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="bill_period_functional" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="budget_forcst_sales_amt" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="28" name="yyyymmdd" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="calendar_fiscl_yr_mo_num" nullable="true" pattern="" precision="0" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="fndg_crrcy" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="allocated_backlog" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="allocated_sales" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="allocated_order" nullable="true" pattern="" precision="4" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tGreenplumClose" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="320" posY="288">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tGreenplumClose_1"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tGreenplumConnection_1"/>
+    <elementParameter field="TEXT" name="LABEL" value="Connection close"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tGreenplumRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="512" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tGreenplumRow_3"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tGreenplumConnection_1"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;5432&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="PostgreSQL"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="0RMsyjmybrE="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="USE_SSL" show="false" value="true"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;INSERT INTO SOT_PGSBACKLOG.PARTS_LITTLE_BCKLG&#13;&#10;SELECT CAST(ORDER_NUMBER AS VARCHAR) ORD,MIN(CREATION_DATE) CD, MAX(ATTRIBUTE1) OI&#13;&#10;FROM PGSALPHA.OE_ORDER_HEADERS_ALL GROUP BY CAST(ORDER_NUMBER AS VARCHAR)&quot;"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="PROPAGATE_RECORD_SET" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="RECORD_SET_COLUMN" show="false" value=""/>
+    <elementParameter field="CHECK" name="USE_PREPAREDSTATEMENT" value="false"/>
+    <elementParameter field="TABLE" name="SET_PREPAREDSTATEMENT_PARAMETERS" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" show="false" value="10000"/>
+    <elementParameter field="TEXT" name="LABEL" value="PARTS_LITTLE_BCKLG"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tGreenplumRow_3"/>
+    <metadata connector="REJECT" name="REJECT">
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <connection connectorName="PARALLELIZE" label="Parallelize" lineStyle="13" metaname="tParallelize_1" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tParallelize_1" target="tGreenplumRow_6">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="Parallelize"/>
+    <elementParameter field="MEMO" name="FAILURE_INSTRUCTIONS" value=""/>
+  </connection>
+  <connection connectorName="PARALLELIZE" label="Parallelize" lineStyle="13" metaname="tParallelize_1" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tParallelize_1" target="tGreenplumRow_9">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="Parallelize"/>
+    <elementParameter field="MEMO" name="FAILURE_INSTRUCTIONS" value=""/>
+  </connection>
+  <connection connectorName="SYNCHRONIZE" label="Synchronize" lineStyle="12" metaname="tParallelize_1" offsetLabelX="0" offsetLabelY="0" source="tParallelize_1" target="tGreenplumClose_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="Synchronize"/>
+    <elementParameter field="MEMO" name="FAILURE_INSTRUCTIONS" value=""/>
+  </connection>
+  <connection connectorName="PARALLELIZE" label="Parallelize" lineStyle="13" metaname="tParallelize_1" offsetLabelX="0" offsetLabelY="0" outputId="3" source="tParallelize_1" target="tGreenplumRow_3">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="Parallelize"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tGreenplumConnection_1" offsetLabelX="0" offsetLabelY="0" source="tGreenplumConnection_1" target="tParallelize_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk6"/>
+    <elementParameter field="MEMO" name="FAILURE_INSTRUCTIONS" value=""/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tGreenplumRow_1" offsetLabelX="0" offsetLabelY="0" source="tGreenplumRow_1" target="tGreenplumRow_2">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk3"/>
+    <elementParameter field="MEMO" name="FAILURE_INSTRUCTIONS" value=""/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tGreenplumRow_3" offsetLabelX="0" offsetLabelY="0" source="tGreenplumRow_3" target="tGreenplumRow_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk5"/>
+  </connection>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tParallelize_1"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="Parrallel"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tGreenplumConnection_1"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="GP PROD CONNECTION"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tGreenplumRow_1"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="INSERT LINE HEADERS"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tGreenplumRow_2"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="PARTS STAGE LOAD"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tGreenplumRow_6"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="GIB SOURCE LOAD"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tGreenplumRow_9"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="FS Stage Job"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tGreenplumClose_1"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="CLOSING THE CONNECTION"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tGreenplumRow_3"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="PARTS_LITTLE_BCKLG"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_bc2a4192-17a9-4dbf-90dd-68cd45c86bbc"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>MRiNiySD1dIGjgk8xeDVYyDzwNNhZiIKeXfvUpIu6bg8P2Usz9mfDA/HrS9mPthnCEqMfh832zY2
+T1teXGQSuA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_5901d65e-7cd6-4fae-beb9-e5db0fbd23c1"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>gQWdpVt/1ojxu6vi3n92k3ixvvsJPG+c5Yyt3aCke6BLbRSCI6fzT3Mjb70+uglAD6sxyyOe13FE
+Lk5NMwdCAQ==</DigestValue></Reference></SignedInfo><SignatureValue>Awta/Y6jnBnhMDxwc84uceUixlUL2G6TjZCqca2+ZsxdgPxbLFJYpNkWawDXfFg+fg9EUWaEVchM
+jEv/4xpqH0/rdpprcXAWlhpRCYnGp+86rVgPlLkoKNIieYD42iE6xC5C4WzCzam0QSq8NRcTrq+n
+cCmpG1hPE7Kwp5p9yvTvGJN4YAUip3FpCYGj8Rt63TidOciiPClk3M09KA8FNUTP1enOVKLl13uz
+5b5OSBPQYyanj15t07NeAWMRrJm2haeQDc7yijt5imzsucQRL9RqTszX6dg4Hu+6Gjyqm0oRnkc1
+4SeboMvka1OLgRQTJtJCMQ0t/37Ksq/QZqrcng==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_5901d65e-7cd6-4fae-beb9-e5db0fbd23c1" Target="#_bc2a4192-17a9-4dbf-90dd-68cd45c86bbc"><Timestamp>2020-05-12 17:41:35</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
