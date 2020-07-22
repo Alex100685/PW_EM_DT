@@ -1,0 +1,84 @@
+package routines;
+ 
+// You may want to be more specific in your imports
+/*import java.util.*;
+
+import com.sun.xml.internal.ws.api.message.Message;
+import com.twilio.sdk.*;
+import com.twilio.sdk.resource.factory.*;
+import com.twilio.sdk.resource.instance.*;
+import com.twilio.sdk.resource.list.*;
+//import com.twilio.sdk.resource.factory.MessageFactory;
+//import com.twilio.sdk.resource.instance.Message;
+import com.twilio.sdk.resource.factory.SmsFactory;
+import com.twilio.sdk.TwilioRestClient;
+import org.apache.http.NameValuePair;
+import org.apache.http.message.BasicNameValuePair;
+import org.apache.http.conn.ClientConnectionManager;
+import org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager;
+ 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+//import com.twilio.sdk.TwilioClient;
+ 
+import javax.xml.soap.MessageFactory; */
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import org.apache.http.NameValuePair;
+import org.apache.http.message.BasicNameValuePair;
+
+import com.twilio.sdk.TwilioRestClient;
+import com.twilio.sdk.TwilioRestException;
+import com.twilio.sdk.resource.factory.CallFactory;
+import com.twilio.sdk.resource.factory.MessageFactory;
+import com.twilio.sdk.resource.factory.SmsFactory;
+import com.twilio.sdk.resource.instance.Account;
+import com.twilio.sdk.resource.instance.Message;
+
+
+public class MYFLEET4_Twilio {
+	
+	 
+	 // Matt Trial Account From : +17577746450 To: +17577755956
+	// public static final String ACCOUNT_SID = "ACebdc21d2f8c3de839e69a909e5da0774";
+	// public static final String AUTH_TOKEN = "0ff4b1032d9575e72b4f2726c938f719";
+	
+	 // Matt Live Account From : +17577746450 To: +17577755956
+	// public static final String ACCOUNT_SID = "AC3b7b915dfc3124e7d07edf5d4023b00a";
+	// public static final String AUTH_TOKEN = "243401269c82020848004b70ad630c6e";	
+	 
+	 public static final String ACCOUNT_SID = "AC3b7b915dfc3124e7d07edf5d4023b00a";
+	 public static final String AUTH_TOKEN = "243401269c82020848004b70ad630c6e";
+	
+	 
+	public static void SendSMS(String msgTo, String msgFrom, String msgBody) throws TwilioRestException
+	{
+
+	            TwilioRestClient client = new TwilioRestClient(ACCOUNT_SID, AUTH_TOKEN);
+     	            final Account mainAccount = client.getAccount();       
+	         
+/*	                final SmsFactory messageFactory = mainAccount.getSmsFactory();
+	                final Map<String, String> messageParams = new HashMap<String, String>();
+	                
+	                messageParams.put("To", msgTo); 
+	                messageParams.put("From", msgFrom);
+	                messageParams.put("Body", msgBody);
+                    
+                 	messageFactory.create(messageParams);*/
+
+     	           List<NameValuePair> params = new ArrayList<NameValuePair>(); 
+     	          params.add(new BasicNameValuePair("To", msgTo)); 
+     	          params.add(new BasicNameValuePair("From", msgFrom)); 
+     	          params.add(new BasicNameValuePair("Body", msgBody)); 
+
+     	          MessageFactory messageFactory = client.getAccount().getMessageFactory(); 
+     	          Message message = messageFactory.create(params); 
+     	          System.out.println(message.getSid()); 
+	                
+	 }
+	}

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:version="2.0">
+  <talendfile:ContextType confirmationNeeded="false" name="Default" xmi:id="_1LxKMHFREemuBYEJarZSNg">
+    <contextParameter comment="" name="Email_To" prompt="Email_To?" promptNeeded="false" type="id_String" value="manoj.kumar4@ge.com" xmi:id="_1LxKMXFREemuBYEJarZSNg"/>
+    <contextParameter comment="" name="Email_From" prompt="Email_From?" promptNeeded="false" type="id_String" value="support_team@talend.com" xmi:id="_1LxKMnFREemuBYEJarZSNg"/>
+    <contextParameter comment="" name="Email_SMTP_Host" prompt="Email_SMTP_Host?" promptNeeded="false" type="id_String" value="bsemsx01.ae.ge.com" xmi:id="_1LxKM3FREemuBYEJarZSNg"/>
+    <contextParameter comment="" name="Email_SMTP_Port" prompt="Email_SMTP_Port?" promptNeeded="false" type="id_String" value="25" xmi:id="_1LxKNHFREemuBYEJarZSNg"/>
+    <contextParameter comment="" name="Email_SMTP_UserName" prompt="Email_SMTP_UserName?" promptNeeded="false" type="id_String" value="" xmi:id="_1LxKNXFREemuBYEJarZSNg"/>
+    <contextParameter comment="" name="Email_SMTP_Password" prompt="Email_SMTP_Password?" promptNeeded="false" type="id_String" value="" xmi:id="_1LxKNnFREemuBYEJarZSNg"/>
+    <contextParameter comment="" name="Environment" prompt="Environment?" promptNeeded="false" type="id_String" value="DEV" xmi:id="_1LxKN3FREemuBYEJarZSNg"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="DEV" xmi:id="_1LxKOHFREemuBYEJarZSNg">
+    <contextParameter comment="" name="Email_To" prompt="Email_To?" promptNeeded="false" type="id_String" value="manoj.kumar4@ge.com" xmi:id="_1LxKOXFREemuBYEJarZSNg"/>
+    <contextParameter comment="" name="Email_From" prompt="Email_From?" promptNeeded="false" type="id_String" value="support_team@talend.com" xmi:id="_1LxKOnFREemuBYEJarZSNg"/>
+    <contextParameter comment="" name="Email_SMTP_Host" prompt="Email_SMTP_Host?" promptNeeded="false" type="id_String" value="bsemsx01.ae.ge.com" xmi:id="_1LxKO3FREemuBYEJarZSNg"/>
+    <contextParameter comment="" name="Email_SMTP_Port" prompt="Email_SMTP_Port?" promptNeeded="false" type="id_String" value="25" xmi:id="_1LxKPHFREemuBYEJarZSNg"/>
+    <contextParameter comment="" name="Email_SMTP_UserName" prompt="Email_SMTP_UserName?" promptNeeded="false" type="id_String" value="" xmi:id="_1LxKPXFREemuBYEJarZSNg"/>
+    <contextParameter comment="" name="Email_SMTP_Password" prompt="Email_SMTP_Password?" promptNeeded="false" type="id_String" value="" xmi:id="_1LxKPnFREemuBYEJarZSNg"/>
+    <contextParameter comment="" name="Environment" prompt="Environment?" promptNeeded="false" type="id_String" value="DEV" xmi:id="_1LxKP3FREemuBYEJarZSNg"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="PROD" xmi:id="_1LxKQHFREemuBYEJarZSNg">
+    <contextParameter comment="" name="Email_To" prompt="Email_To?" promptNeeded="false" type="id_String" value="manoj.kumar4@ge.com" xmi:id="_1LxKQXFREemuBYEJarZSNg"/>
+    <contextParameter comment="" name="Email_From" prompt="Email_From?" promptNeeded="false" type="id_String" value="support_team@talend.com" xmi:id="_1LxKQnFREemuBYEJarZSNg"/>
+    <contextParameter comment="" name="Email_SMTP_Host" prompt="Email_SMTP_Host?" promptNeeded="false" type="id_String" value="e2ksmtp01.e2k.ad.ge.com" xmi:id="_1LxKQ3FREemuBYEJarZSNg"/>
+    <contextParameter comment="" name="Email_SMTP_Port" prompt="Email_SMTP_Port?" promptNeeded="false" type="id_String" value="25" xmi:id="_1LxKRHFREemuBYEJarZSNg"/>
+    <contextParameter comment="" name="Email_SMTP_UserName" prompt="Email_SMTP_UserName?" promptNeeded="false" type="id_String" value="" xmi:id="_1LxKRXFREemuBYEJarZSNg"/>
+    <contextParameter comment="" name="Email_SMTP_Password" prompt="Email_SMTP_Password?" promptNeeded="false" type="id_String" value="" xmi:id="_1LxKRnFREemuBYEJarZSNg"/>
+    <contextParameter comment="" name="Environment" prompt="Environment?" promptNeeded="false" type="id_String" value="PROD" xmi:id="_1LxKR3FREemuBYEJarZSNg"/>
+  </talendfile:ContextType>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_79f81b21-f3ae-4f0f-bfa3-2fdc057efd63"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>YhUO0u302DEvQ8mS0z2T5AN5aJdmBA2N4vCC93HfYek0DWZoNz8CkQtJqMFnGEChx4FgoLXZvSMM&#13;
+UxC2JqLI7w==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_26702af3-dbcd-4655-9ecb-ad60d93d1339"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Xutk2dt+JJ39ih0bcqgRb4sykHipfCMhn4NkHHKJwOm/EHPsRlgkQqp/c8c7JDTW/TsX0QAQoy9g&#13;
+MTJb7YXtOQ==</DigestValue></Reference></SignedInfo><SignatureValue>S5hrDbFIjyigGjP8oy7JWhF4q7tebTKW4ijLicE+aObMgEpv6QLnjotxfDLh22jQbKhwZAsarnHm&#13;
+sj6Is/Ln0wXu4qBHFk9dDHoFGnv4CntoTIyIHoK0tj4SPjAhGOjM9du922xm0yywMwWvcxrQrVrP&#13;
+l05gZ1XkaWCb0+14HsCG0wvZZd8HsNJjrBVCJx36HByXJOOCyvMf61A7Gm5kaA0l5qn3Po06fqqV&#13;
+nFgZmFsMv0pdpL5+j2dz3oDZ7Q8/MALSimQtB6x6AjA8KT9KTmPQ/0XY/LUflFAgu6nuBIPJjQzN&#13;
+3uEo3o0mWzfP8k2ordqNd33Apye/B4/RZOCfgw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_26702af3-dbcd-4655-9ecb-ad60d93d1339" Target="#_79f81b21-f3ae-4f0f-bfa3-2fdc057efd63"><Timestamp>2020-04-22 08:18:04</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>

@@ -1,0 +1,689 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:xmi="http://www.omg.org/XMI" defaultContext="PROD" jobType="Standard" xmi:version="2.0">
+  <context confirmationNeeded="false" name="Dev_pgsdwh">
+    <contextParameter comment="" name="pgs_ing_tableau_usage1_Database" prompt="pgs_ing_tableau_usage1_Database?" promptNeeded="false" repositoryContextId="_ZXaFkKSqEeWyArlJHSY0kw" type="id_String" value="pgsdwh"/>
+    <contextParameter comment="" name="pgs_ing_tableau_usage1_Login" prompt="pgs_ing_tableau_usage1_Login?" promptNeeded="false" repositoryContextId="_ZXaFkKSqEeWyArlJHSY0kw" type="id_String" value="502438310"/>
+    <contextParameter comment="" name="pgs_ing_tableau_usage1_Password" prompt="pgs_ing_tableau_usage1_Password?" promptNeeded="false" repositoryContextId="_ZXaFkKSqEeWyArlJHSY0kw" type="id_Password" value="oCXW3q8gdzA9ZhozsFA4UQ=="/>
+    <contextParameter comment="" name="pgs_ing_tableau_usage1_Port" prompt="pgs_ing_tableau_usage1_Port?" promptNeeded="false" repositoryContextId="_ZXaFkKSqEeWyArlJHSY0kw" type="id_String" value="5432"/>
+    <contextParameter comment="" name="pgs_ing_tableau_usage1_Schema" prompt="pgs_ing_tableau_usage1_Schema?" promptNeeded="false" repositoryContextId="_ZXaFkKSqEeWyArlJHSY0kw" type="id_String" value="pgs_ing_tableau_usage"/>
+    <contextParameter comment="" name="pgs_ing_tableau_usage1_Server" prompt="pgs_ing_tableau_usage1_Server?" promptNeeded="false" repositoryContextId="_ZXaFkKSqEeWyArlJHSY0kw" type="id_String" value="9ha.cloud.digital.ge.com"/>
+  </context>
+  <context confirmationNeeded="false" name="DEV">
+    <contextParameter comment="" name="pgs_ing_tableau_usage1_Database" prompt="pgs_ing_tableau_usage1_Database?" promptNeeded="false" repositoryContextId="_ZXaFkKSqEeWyArlJHSY0kw" type="id_String" value="pgsdwh"/>
+    <contextParameter comment="" name="pgs_ing_tableau_usage1_Login" prompt="pgs_ing_tableau_usage1_Login?" promptNeeded="false" repositoryContextId="_ZXaFkKSqEeWyArlJHSY0kw" type="id_String" value="502438310"/>
+    <contextParameter comment="" name="pgs_ing_tableau_usage1_Password" prompt="pgs_ing_tableau_usage1_Password?" promptNeeded="false" repositoryContextId="_ZXaFkKSqEeWyArlJHSY0kw" type="id_Password" value="oCXW3q8gdzA9ZhozsFA4UQ=="/>
+    <contextParameter comment="" name="pgs_ing_tableau_usage1_Port" prompt="pgs_ing_tableau_usage1_Port?" promptNeeded="false" repositoryContextId="_ZXaFkKSqEeWyArlJHSY0kw" type="id_String" value="5432"/>
+    <contextParameter comment="" name="pgs_ing_tableau_usage1_Schema" prompt="pgs_ing_tableau_usage1_Schema?" promptNeeded="false" repositoryContextId="_ZXaFkKSqEeWyArlJHSY0kw" type="id_String" value="pgs_ing_tableau_usage"/>
+    <contextParameter comment="" name="pgs_ing_tableau_usage1_Server" prompt="pgs_ing_tableau_usage1_Server?" promptNeeded="false" repositoryContextId="_ZXaFkKSqEeWyArlJHSY0kw" type="id_String" value="9ha.cloud.digital.ge.com"/>
+  </context>
+  <context confirmationNeeded="false" name="QA">
+    <contextParameter comment="" name="pgs_ing_tableau_usage1_Database" prompt="pgs_ing_tableau_usage1_Database?" promptNeeded="false" repositoryContextId="_ZXaFkKSqEeWyArlJHSY0kw" type="id_String" value="pgsdwh"/>
+    <contextParameter comment="" name="pgs_ing_tableau_usage1_Login" prompt="pgs_ing_tableau_usage1_Login?" promptNeeded="false" repositoryContextId="_ZXaFkKSqEeWyArlJHSY0kw" type="id_String" value="502438310"/>
+    <contextParameter comment="" name="pgs_ing_tableau_usage1_Password" prompt="pgs_ing_tableau_usage1_Password?" promptNeeded="false" repositoryContextId="_ZXaFkKSqEeWyArlJHSY0kw" type="id_Password" value="oCXW3q8gdzA9ZhozsFA4UQ=="/>
+    <contextParameter comment="" name="pgs_ing_tableau_usage1_Port" prompt="pgs_ing_tableau_usage1_Port?" promptNeeded="false" repositoryContextId="_ZXaFkKSqEeWyArlJHSY0kw" type="id_String" value="5432"/>
+    <contextParameter comment="" name="pgs_ing_tableau_usage1_Schema" prompt="pgs_ing_tableau_usage1_Schema?" promptNeeded="false" repositoryContextId="_ZXaFkKSqEeWyArlJHSY0kw" type="id_String" value="pgs_ing_tableau_usage"/>
+    <contextParameter comment="" name="pgs_ing_tableau_usage1_Server" prompt="pgs_ing_tableau_usage1_Server?" promptNeeded="false" repositoryContextId="_ZXaFkKSqEeWyArlJHSY0kw" type="id_String" value="9ha.cloud.digital.ge.com"/>
+  </context>
+  <context confirmationNeeded="false" name="PROD">
+    <contextParameter comment="" name="pgs_ing_tableau_usage1_Database" prompt="pgs_ing_tableau_usage1_Database?" promptNeeded="false" repositoryContextId="_ZXaFkKSqEeWyArlJHSY0kw" type="id_String" value="pgsdwh"/>
+    <contextParameter comment="" name="pgs_ing_tableau_usage1_Login" prompt="pgs_ing_tableau_usage1_Login?" promptNeeded="false" repositoryContextId="_ZXaFkKSqEeWyArlJHSY0kw" type="id_String" value="502438310"/>
+    <contextParameter comment="" name="pgs_ing_tableau_usage1_Password" prompt="pgs_ing_tableau_usage1_Password?" promptNeeded="false" repositoryContextId="_ZXaFkKSqEeWyArlJHSY0kw" type="id_Password" value="oCXW3q8gdzA9ZhozsFA4UQ=="/>
+    <contextParameter comment="" name="pgs_ing_tableau_usage1_Port" prompt="pgs_ing_tableau_usage1_Port?" promptNeeded="false" repositoryContextId="_ZXaFkKSqEeWyArlJHSY0kw" type="id_String" value="5432"/>
+    <contextParameter comment="" name="pgs_ing_tableau_usage1_Schema" prompt="pgs_ing_tableau_usage1_Schema?" promptNeeded="false" repositoryContextId="_ZXaFkKSqEeWyArlJHSY0kw" type="id_String" value="pgs_ing_tableau_usage"/>
+    <contextParameter comment="" name="pgs_ing_tableau_usage1_Server" prompt="pgs_ing_tableau_usage1_Server?" promptNeeded="false" repositoryContextId="_ZXaFkKSqEeWyArlJHSY0kw" type="id_String" value="9ha.cloud.digital.ge.com"/>
+  </context>
+  <parameters>
+    <elementParameter field="CHECK" name="JOB_RUN_VM_ARGUMENTS_OPTION" show="false" value="true"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="0"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" show="false" value=""/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:PROPERTY_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:REPOSITORY_PROPERTY_TYPE" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="0RMsyjmybrE="/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" show="false" value=""/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" show="false" value="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" show="false" value="&quot;C:/talend/qa/.metadata&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" show="false" value="&quot;stats_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" show="false" value="&quot;logs_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" show="false" value="&quot;meter_file.txt&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="ISO-8859-15"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" show="false" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" show="false" value="tPostgresqlOutput"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="V9_X"/>
+    <elementParameter field="TEXT" name="URL" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;ge-talend-logserver-power-postgres-prod.c4sspcqw0zjf.us-east-1.rds.amazonaws.com&quot;"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;5432&quot;"/>
+    <elementParameter field="TEXT" name="DATASOURCE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;talendlogs&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;prodlogs&quot;"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;masteru&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="I2y3qb0V/YUmbAcU0OLLcQ=="/>
+    <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;talend_stats&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;talend_logs&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" show="false" value="&quot;talend_flowmeter&quot;"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" show="false" value="true"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" show="false" value=""/>
+    <elementParameter field="CHECK" name="UPDATE_COMPONENTS" value="false"/>
+    <elementParameter field="CHECK" name="STATS_DEFAULT_PROJECTSETTING" value="true"/>
+    <elementParameter field="PROPERTY_TYPE" name="PROPERTY_TYPE" value=""/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE:PROPERTY_TYPE" value="BUILT_IN"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE:REPOSITORY_PROPERTY_TYPE" value=""/>
+    <routinesParameter id="_dABbsBIkEeOBzIStrB4naQ" name="DQTechnical"/>
+    <routinesParameter id="_bYqhMATPEeOJNJ5bMknb8Q" name="DataOperation"/>
+    <routinesParameter id="_dANB4BIkEeOBzIStrB4naQ" name="DataQuality"/>
+    <routinesParameter id="_c_1OcBIkEeOBzIStrB4naQ" name="DqStringHandling"/>
+    <routinesParameter id="_bcf4UATPEeOJNJ5bMknb8Q" name="Mathematical"/>
+    <routinesParameter id="_bgRlEATPEeOJNJ5bMknb8Q" name="Numeric"/>
+    <routinesParameter id="_bkRUQATPEeOJNJ5bMknb8Q" name="Relational"/>
+    <routinesParameter id="_bGNfQATPEeOJNJ5bMknb8Q" name="SQLike"/>
+    <routinesParameter id="_boGrYATPEeOJNJ5bMknb8Q" name="StringHandling"/>
+    <routinesParameter id="_btb3UATPEeOJNJ5bMknb8Q" name="TalendDataGenerator"/>
+    <routinesParameter id="_bypHcATPEeOJNJ5bMknb8Q" name="TalendDate"/>
+    <routinesParameter id="_b2qEwATPEeOJNJ5bMknb8Q" name="TalendString"/>
+    <routinesParameter id="_NAsyQHRnEeS6QfVO9XSNjQ" name="ServiceImplPortBindingStub"/>
+    <routinesParameter id="_PVccEHRnEeS6QfVO9XSNjQ" name="ServiceImplServiceLocator"/>
+    <routinesParameter id="_ObeHIHRnEeS6QfVO9XSNjQ" name="ServiceImplService"/>
+    <routinesParameter id="_QMSkgHRnEeS6QfVO9XSNjQ" name="ServiceInterface"/>
+    <routinesParameter id="_SMoR4LtaEeOZvrcjg-VOXA" name="BuildQuery"/>
+    <routinesParameter id="_MdSFEAedEea7O6DdJifjLA" name="CustomFunctions"/>
+    <routinesParameter id="_8qwkYFjNEdyj6eiqDt60Og" name="DemoRoutines"/>
+    <routinesParameter id="_HKXfQGIZEd26GZmhFZLTPA" name="GetRandomPhoneNum"/>
+    <routinesParameter id="__S6roKlpEeGiea4NxOFRoA" name="MDM"/>
+    <routinesParameter id="_kKQdAO6yEeK1vYN4B_KFqA" name="MyDateConversion"/>
+    <routinesParameter id="_YK_e8NQ1EeKQo8vOQHoo0g" name="string_to_date"/>
+    <routinesParameter id="_vyJq8HubEeaszbZUc0yaWQ" name="DataQualityDependencies"/>
+    <routinesParameter id="__QyI8DmuEeiCfJw3f0jQkw" name="DataMasking"/>
+  </parameters>
+  <node componentName="tGreenplumConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tGreenplumConnection_1"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_zZd_kH5mEeWkPei28yx7oQ"/>
+    <elementParameter field="TEXT" name="HOST" value="context.pgs_ing_tableau_usage1_Server"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="GREENPLUM"/>
+    <elementParameter field="TEXT" name="PORT" value="context.pgs_ing_tableau_usage1_Port"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.pgs_ing_tableau_usage1_Database"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="context.pgs_ing_tableau_usage1_Schema"/>
+    <elementParameter field="TEXT" name="USER" value="context.pgs_ing_tableau_usage1_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kuezUSF/48zUShRgI5mr30FVUjVeLbgajTxZmIF+9xdOyg=="/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="SHARED_CONNECTION_NAME" show="false" value=""/>
+    <elementParameter field="CHECK" name="USE_SSL" value="true"/>
+    <elementParameter field="CHECK" name="AUTO_COMMIT" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="Tableau Connection"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tGreenplumRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="288" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tGreenplumRow_1"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tGreenplumConnection_1"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;5432&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="PostgreSQL"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="0RMsyjmybrE="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="USE_SSL" show="false" value="false"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;delete from pgs_ing_tableau_usage.tableau_project_workbook&quot;"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="PROPAGATE_RECORD_SET" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="RECORD_SET_COLUMN" show="false" value=""/>
+    <elementParameter field="CHECK" name="USE_PREPAREDSTATEMENT" value="false"/>
+    <elementParameter field="TABLE" name="SET_PREPAREDSTATEMENT_PARAMETERS" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" show="false" value="10000"/>
+    <elementParameter field="TEXT" name="LABEL" value="Tableau_Project_Workbook"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tGreenplumRow_1"/>
+    <metadata connector="REJECT" name="REJECT">
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tGreenplumRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="480" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tGreenplumRow_2"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tGreenplumConnection_1"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;5432&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="PostgreSQL"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="0RMsyjmybrE="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="USE_SSL" show="false" value="false"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;insert into   pgs_ing_tableau_usage.tableau_project_workbook &#13;&#10;select p.* from  (SELECT&#13;&#10;                    p.id AS   \&quot;project id  \&quot; ,&#13;&#10;                    p.name   \&quot;project name  \&quot; ,&#13;&#10;                    p.owner_id   \&quot;Project Owner id  \&quot; ,&#13;&#10;                    po.name AS   \&quot;Project Owner Name  \&quot; ,&#13;&#10;                    po.email AS   \&quot;Project Owner email  \&quot; ,&#13;&#10;                    po.friendly_name AS   \&quot;Project Owner Friendly Name  \&quot; ,&#13;&#10;                    po.custom_display_name AS   \&quot;Project Owner display name  \&quot; ,&#13;&#10;                    p.created_at   \&quot;project creation date  \&quot; ,&#13;&#10;                    p.updated_at   \&quot;project creation name  \&quot; ,&#13;&#10;                    p.state AS   \&quot;Project State  \&quot; ,&#13;&#10;                    p.description   \&quot;project description  \&quot; ,&#13;&#10;                    p.site_id ,&#13;&#10;                    s.name AS   \&quot;Site Name  \&quot; ,&#13;&#10;                    s.url_namespace AS   \&quot;Site Url  \&quot; ,&#13;&#10;                    s.status AS   \&quot;Site Status  \&quot; ,&#13;&#10;                    s.created_at AS   \&quot;Site Created date  \&quot; ,&#13;&#10;                    s.updated_at AS   \&quot;Site Updated date  \&quot; ,&#13;&#10;                    s.user_quota AS   \&quot;Site User Quota  \&quot; ,&#13;&#10;                    s.content_admin_mode ,&#13;&#10;                    s.storage_quota ,&#13;&#10;                    s.metrics_level ,&#13;&#10;                    s.status_reason ,&#13;&#10;                    s.subscriptions_enabled ,&#13;&#10;                    s.custom_subscription_footer ,&#13;&#10;                    s.custom_subscription_email ,&#13;&#10;                    s.query_limit ,&#13;&#10;                    s.authoring_disabled ,&#13;&#10;                    s.sheet_image_enabled ,&#13;&#10;                    p.special ,&#13;&#10;                    p.luid AS   \&quot;Project LuiD  \&quot; ,&#13;&#10;                    w.id AS   \&quot;workbook id  \&quot; ,&#13;&#10;                    w.name  \&quot;workbook Name  \&quot; ,&#13;&#10;                    w.repository_url AS   \&quot;Workbook Repository Url  \&quot; ,&#13;&#10;                    w.description AS   \&quot;Workbook Description  \&quot; ,&#13;&#10;                    w.created_at   \&quot;workbook created Date  \&quot; ,&#13;&#10;                    w.updated_at   \&quot;workbook updated Date  \&quot; ,&#13;&#10;                    w.owner_id AS   \&quot;Workbook Owner Id  \&quot; ,&#13;&#10;                    wo.name AS   \&quot;workbook Owner Name  \&quot; ,&#13;&#10;                    wo.email AS   \&quot;workbook Owner email  \&quot; ,&#13;&#10;                    wo.friendly_name AS   \&quot;workbook Owner Friendly Name  \&quot; ,&#13;&#10;                    wo.custom_display_name AS   \&quot;workbook Owner display name  \&quot; ,&#13;&#10;                    w.view_count AS   \&quot;Workbook View Count  \&quot; ,&#13;&#10;                    w.\&quot;size\&quot; AS   \&quot;workbook Size  \&quot; ,&#13;&#10;                    w.embedded AS   \&quot;Workbook Embedded  \&quot; ,&#13;&#10;                    w.thumb_user AS   \&quot;Workbook Thumb user  \&quot; ,&#13;&#10;                    w.refreshable_extracts AS   \&quot;Workbook Refreshable Extracts  \&quot; ,&#13;&#10;                    w.extracts_refreshed_at AS   \&quot;Workbook Extract Refreshed at  \&quot; ,&#13;&#10;                    w.lock_version AS   \&quot;Workbook Lock version  \&quot; ,&#13;&#10;                    w.state AS   \&quot;Workbook state  \&quot; ,&#13;&#10;                    w.version AS   \&quot;Workbook Version  \&quot; ,&#13;&#10;                    w.checksum AS   \&quot;Workbook CheckSum  \&quot; ,&#13;&#10;                    w.display_tabs AS   \&quot;Workbook Display Tabs  \&quot; ,&#13;&#10;                    w.data_engine_extracts AS   \&quot;Workbook Data Engine Extracts  \&quot; ,&#13;&#10;                    w.incrementable_extracts AS   \&quot;Workbook Incremental Extracts  \&quot; ,&#13;&#10;                    w.revision AS   \&quot;Workbook revision  \&quot; ,&#13;&#10;                    w.repository_data_id AS   \&quot;Repository Data Id  \&quot; ,&#13;&#10;                    w.repository_extract_data_id AS   \&quot;Repository Data Extract Id  \&quot; ,&#13;&#10;                    w.first_published_at AS   \&quot;Workbbok First Published At  \&quot; ,&#13;&#10;                    w.primary_content_url AS   \&quot;Workbook Primary Content Url  \&quot; ,&#13;&#10;                    w.share_description AS   \&quot;Workbook Share Description  \&quot; ,&#13;&#10;                    w.show_toolbar AS   \&quot;Workbook Toolbar  \&quot; ,&#13;&#10;                    w.extracts_incremented_at AS   \&quot;Workbook Extract Incremented at  \&quot; ,&#13;&#10;                    w.default_view_index AS   \&quot;Workbook Default View Index  \&quot; ,&#13;&#10;                    w.asset_key_id AS   \&quot;Workbook Asset Key Id  \&quot; ,&#13;&#10;                    w.document_version AS   \&quot;Workbook Document Version  \&quot; ,&#13;&#10;                    'View' AS transaction_type&#13;&#10;                FROM&#13;&#10;                    pgs_ing_tableau_usage.projects p left JOIN pgs_ing_tableau_usage.workbooks w&#13;&#10;                        ON w.project_id = p.id JOIN pgs_ing_tableau_usage.sites s&#13;&#10;                        ON s.id = p.site_id LEFT OUTER JOIN  (SELECT&#13;&#10;    u.id  ,&#13;&#10;    u.system_user_id ,&#13;&#10;    su.name ,&#13;&#10;    su.email ,&#13;&#10;    su.friendly_name ,&#13;&#10;    su.custom_display_name&#13;&#10;FROM&#13;&#10;    pgs_ing_tableau_usage.users u LEFT OUTER JOIN pgs_ing_tableau_usage.system_users su&#13;&#10;        ON su.id = u.system_user_id)  Po&#13;&#10;                        ON&#13;&#10;                        p.owner_id = po.id&#13;&#10;                     LEFT OUTER JOIN (SELECT&#13;&#10;    u.id  ,&#13;&#10;    u.system_user_id ,&#13;&#10;    su.name ,&#13;&#10;    su.email ,&#13;&#10;    su.friendly_name ,&#13;&#10;    su.custom_display_name&#13;&#10;FROM&#13;&#10;    pgs_ing_tableau_usage.users u LEFT OUTER JOIN pgs_ing_tableau_usage.system_users su&#13;&#10;        ON su.id = u.system_user_id) wo&#13;&#10;                        ON(&#13;&#10;                        w.owner_id = wo.id&#13;&#10;                    )&#13;&#10;&#13;&#10;) p&#13;&#10;                    &#13;&#10;                   &#13;&#10;               &quot;"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="PROPAGATE_RECORD_SET" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="RECORD_SET_COLUMN" show="false" value=""/>
+    <elementParameter field="CHECK" name="USE_PREPAREDSTATEMENT" value="false"/>
+    <elementParameter field="TABLE" name="SET_PREPAREDSTATEMENT_PARAMETERS" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" show="false" value="10000"/>
+    <elementParameter field="TEXT" name="LABEL" value="Project_Workbook_Load_View"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tGreenplumRow_2"/>
+    <metadata connector="REJECT" name="REJECT">
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tGreenplumRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="704" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tGreenplumRow_3"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tGreenplumConnection_1"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;5432&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="PostgreSQL"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="0RMsyjmybrE="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="USE_SSL" show="false" value="false"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;insert into   pgs_ing_tableau_usage.tableau_project_workbook &#13;&#10;select p.* from  (SELECT&#13;&#10;                    p.id AS   \&quot;project id  \&quot; ,&#13;&#10;                    p.name   \&quot;project name  \&quot; ,&#13;&#10;                    p.owner_id   \&quot;Project Owner id  \&quot; ,&#13;&#10;                    po.name AS   \&quot;Project Owner Name  \&quot; ,&#13;&#10;                    po.email AS   \&quot;Project Owner email  \&quot; ,&#13;&#10;                    po.friendly_name AS   \&quot;Project Owner Friendly Name  \&quot; ,&#13;&#10;                    po.custom_display_name AS   \&quot;Project Owner display name  \&quot; ,&#13;&#10;                    p.created_at   \&quot;project creation date  \&quot; ,&#13;&#10;                    p.updated_at   \&quot;project creation name  \&quot; ,&#13;&#10;                    p.state AS   \&quot;Project State  \&quot; ,&#13;&#10;                    p.description   \&quot;project description  \&quot; ,&#13;&#10;                    p.site_id ,&#13;&#10;                    s.name AS   \&quot;Site Name  \&quot; ,&#13;&#10;                    s.url_namespace AS   \&quot;Site Url  \&quot; ,&#13;&#10;                    s.status AS   \&quot;Site Status  \&quot; ,&#13;&#10;                    s.created_at AS   \&quot;Site Created date  \&quot; ,&#13;&#10;                    s.updated_at AS   \&quot;Site Updated date  \&quot; ,&#13;&#10;                    s.user_quota AS   \&quot;Site User Quota  \&quot; ,&#13;&#10;                    s.content_admin_mode ,&#13;&#10;                    s.storage_quota ,&#13;&#10;                    s.metrics_level ,&#13;&#10;                    s.status_reason ,&#13;&#10;                    s.subscriptions_enabled ,&#13;&#10;                    s.custom_subscription_footer ,&#13;&#10;                    s.custom_subscription_email ,&#13;&#10;                    s.query_limit ,&#13;&#10;                    s.authoring_disabled ,&#13;&#10;                    s.sheet_image_enabled ,&#13;&#10;                    p.special ,&#13;&#10;                    p.luid AS   \&quot;Project LuiD  \&quot; ,&#13;&#10;                    w.id AS   \&quot;workbook id  \&quot; ,&#13;&#10;                    w.name as    \&quot;workbook Name  \&quot; ,&#13;&#10;                    w.repository_url AS   \&quot;Workbook Repository Url  \&quot; ,&#13;&#10;                    w.description AS   \&quot;Workbook Description  \&quot; ,&#13;&#10;                    w.created_at   \&quot;workbook created Date  \&quot; ,&#13;&#10;                    w.updated_at   \&quot;workbook updated Date  \&quot; ,&#13;&#10;                    w.owner_id AS   \&quot;Workbook Owner Id  \&quot; ,&#13;&#10;                    wo.name AS   \&quot;workbook Owner Name  \&quot; ,&#13;&#10;                    wo.email AS   \&quot;workbook Owner email  \&quot; ,&#13;&#10;                    wo.friendly_name AS   \&quot;workbook Owner Friendly Name  \&quot; ,&#13;&#10;                    wo.custom_display_name AS   \&quot;workbook Owner display name  \&quot; ,&#13;&#10;                    w.view_count AS   \&quot;Workbook View Count  \&quot; ,&#13;&#10;                   w.\&quot;size\&quot; AS   \&quot;workbook Size  \&quot; ,&#13;&#10;                    w.embedded AS   \&quot;Workbook Embedded  \&quot; ,&#13;&#10;                    w.thumb_user AS   \&quot;Workbook Thumb user  \&quot; ,&#13;&#10;                    w.refreshable_extracts AS   \&quot;Workbook Refreshable Extracts  \&quot; ,&#13;&#10;                    w.extracts_refreshed_at AS   \&quot;Workbook Extract Refreshed at  \&quot; ,&#13;&#10;                    w.lock_version AS   \&quot;Workbook Lock version  \&quot; ,&#13;&#10;                    w.state AS   \&quot;Workbook state  \&quot; ,&#13;&#10;                    w.version AS   \&quot;Workbook Version  \&quot; ,&#13;&#10;                    w.checksum AS   \&quot;Workbook CheckSum  \&quot; ,&#13;&#10;                    w.display_tabs AS   \&quot;Workbook Display Tabs  \&quot; ,&#13;&#10;                    w.data_engine_extracts AS   \&quot;Workbook Data Engine Extracts  \&quot; ,&#13;&#10;                    w.incrementable_extracts AS   \&quot;Workbook Incremental Extracts  \&quot; ,&#13;&#10;                    w.revision AS   \&quot;Workbook revision  \&quot; ,&#13;&#10;                    w.repository_data_id AS   \&quot;Repository Data Id  \&quot; ,&#13;&#10;                    w.repository_extract_data_id AS   \&quot;Repository Data Extract Id  \&quot; ,&#13;&#10;                    w.first_published_at AS   \&quot;Workbbok First Published At  \&quot; ,&#13;&#10;                    w.primary_content_url AS   \&quot;Workbook Primary Content Url  \&quot; ,&#13;&#10;                    w.share_description AS   \&quot;Workbook Share Description  \&quot; ,&#13;&#10;                    w.show_toolbar AS   \&quot;Workbook Toolbar  \&quot; ,&#13;&#10;                    w.extracts_incremented_at AS   \&quot;Workbook Extract Incremented at  \&quot; ,&#13;&#10;                    w.default_view_index AS   \&quot;Workbook Default View Index  \&quot; ,&#13;&#10;                    w.asset_key_id AS   \&quot;Workbook Asset Key Id  \&quot; ,&#13;&#10;                    w.document_version AS   \&quot;Workbook Document Version  \&quot; ,&#13;&#10;                    'DataConnection' AS transaction_type&#13;&#10;                FROM&#13;&#10;                    pgs_ing_tableau_usage.projects p JOIN pgs_ing_tableau_usage.workbooks w&#13;&#10;                        ON w.project_id = p.id JOIN pgs_ing_tableau_usage.sites s&#13;&#10;                        ON s.id = p.site_id LEFT OUTER JOIN  (SELECT&#13;&#10;    u.id  ,&#13;&#10;    u.system_user_id ,&#13;&#10;    su.name ,&#13;&#10;    su.email ,&#13;&#10;    su.friendly_name ,&#13;&#10;    su.custom_display_name&#13;&#10;FROM&#13;&#10;    pgs_ing_tableau_usage.users u LEFT OUTER JOIN pgs_ing_tableau_usage.system_users su&#13;&#10;        ON su.id = u.system_user_id)  Po&#13;&#10;                        ON&#13;&#10;                        p.owner_id = po.id&#13;&#10;                     LEFT OUTER JOIN (SELECT&#13;&#10;    u.id  ,&#13;&#10;    u.system_user_id ,&#13;&#10;    su.name ,&#13;&#10;    su.email ,&#13;&#10;    su.friendly_name ,&#13;&#10;    su.custom_display_name&#13;&#10;FROM&#13;&#10;    pgs_ing_tableau_usage.users u LEFT OUTER JOIN pgs_ing_tableau_usage.system_users su&#13;&#10;        ON su.id = u.system_user_id) wo&#13;&#10;                        ON(&#13;&#10;                        w.owner_id = wo.id&#13;&#10;                    )&#13;&#10;&#13;&#10;) p&#13;&#10;                    &#13;&#10;                   &#13;&#10;               &quot;"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="PROPAGATE_RECORD_SET" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="RECORD_SET_COLUMN" show="false" value=""/>
+    <elementParameter field="CHECK" name="USE_PREPAREDSTATEMENT" value="false"/>
+    <elementParameter field="TABLE" name="SET_PREPAREDSTATEMENT_PARAMETERS" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" show="false" value="10000"/>
+    <elementParameter field="TEXT" name="LABEL" value="Project_Workbook_Load_DataConnection"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tGreenplumRow_3"/>
+    <metadata connector="REJECT" name="REJECT">
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tGreenplumRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="192" posY="352">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tGreenplumRow_7"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tGreenplumConnection_1"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;5432&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="PostgreSQL"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="0RMsyjmybrE="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="USE_SSL" show="false" value="false"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;delete  from  pgs_ing_tableau_usage.tableau_usage_dataconnection&quot;"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="PROPAGATE_RECORD_SET" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="RECORD_SET_COLUMN" show="false" value=""/>
+    <elementParameter field="CHECK" name="USE_PREPAREDSTATEMENT" value="false"/>
+    <elementParameter field="TABLE" name="SET_PREPAREDSTATEMENT_PARAMETERS" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" show="false" value="10000"/>
+    <elementParameter field="TEXT" name="LABEL" value="delete_dataconnection"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tGreenplumRow_7"/>
+    <metadata connector="REJECT" name="REJECT">
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tGreenplumRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="480" posY="352">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tGreenplumRow_8"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tGreenplumConnection_1"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;5432&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="PostgreSQL"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="0RMsyjmybrE="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="USE_SSL" show="false" value="false"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;insert into pgs_ing_tableau_usage.tableau_usage_dataconnection &#13;&#10; &#13;&#10;Select  &#13;&#10;   dc.owner_id as \&quot;Data Connection Workbook Id\&quot; ,&#13;&#10;    dc.id AS \&quot;Data Connection Id\&quot; ,&#13;&#10;    --b.\&quot;Data Connection Friendly Name\&quot;,&#13;&#10;    dc.server AS \&quot;Data Connection Server\&quot; ,&#13;&#10;    dc.dbclass AS \&quot;Data Connection Dbclass\&quot; ,&#13;&#10;    dc.port AS \&quot;Data Connection port\&quot; ,&#13;&#10;    dc.username AS \&quot;Data Connection Username\&quot; ,&#13;&#10;    dc.password AS \&quot;Data Connection Password\&quot; ,&#13;&#10;    dc.name AS \&quot;Data Connection Name\&quot; ,&#13;&#10;    dc.dbname AS \&quot;Data Connection Dbname\&quot; ,&#13;&#10;    dc.tablename AS \&quot;Data Connection Tablename\&quot; ,&#13;&#10;    dc.owner_type AS \&quot;Data Connection Owner Type\&quot; ,&#13;&#10;    dc.owner_id AS \&quot;Data Connection Owner Id\&quot; ,&#13;&#10;    dc.created_at AS \&quot;Data Connection Created date\&quot; ,&#13;&#10;    dc.updated_at AS \&quot;Data Connection Updated Date\&quot; ,&#13;&#10;    dc.caption AS \&quot;Data Connection Display Name\&quot; ,&#13;&#10;    dc.site_id AS \&quot;Data Connection Site Id\&quot; ,&#13;&#10;    dc.keychain AS \&quot;Data Connection Keychain\&quot; ,&#13;&#10;    dc.has_extract AS \&quot;Data Connection Has Extract\&quot; ,&#13;&#10;    ds.id AS \&quot;Data Source Id\&quot; ,&#13;&#10;    ds.name AS \&quot;Data Source Name \&quot; ,&#13;&#10;    ds.repository_url AS \&quot;Data Source Repository Url \&quot; ,&#13;&#10;    ds.owner_id AS \&quot;Data Source Owner Id \&quot; ,&#13;&#10;    ds.created_at AS \&quot;Data Source Created Date\&quot; ,&#13;&#10;    ds.updated_at AS \&quot;Data Source Updated Date \&quot; ,&#13;&#10;    ds.\&quot;size\&quot; AS \&quot;Data Source Size\&quot; ,&#13;&#10;    ds.lock_version AS \&quot;Data Source Lock Version \&quot; ,&#13;&#10;    ds.state AS \&quot;Data Source State\&quot; ,&#13;&#10;    ds.db_class AS \&quot;Data Source Db Class\&quot; ,&#13;&#10;    ds.db_name AS \&quot;Data Source Db Name\&quot; ,&#13;&#10;    ds.table_name AS \&quot;Data Source Table Name\&quot; ,&#13;&#10;    ds.site_id AS \&quot;Data Source Site Id\&quot; ,&#13;&#10;    ds.revision AS \&quot;Data Source Revision\&quot; ,&#13;&#10;    ds.repository_data_id AS \&quot;Data Source Repository Data Id\&quot; ,&#13;&#10;    ds.repository_extract_data_id AS \&quot;Data Source Repository Extract Data Id\&quot; ,&#13;&#10;    ds.embedded AS \&quot;Data Source Embedded\&quot; ,&#13;&#10;    ds.incrementable_extracts AS \&quot;Data Source Incremental Extracts\&quot; ,&#13;&#10;    ds.refreshable_extracts AS \&quot;Data Source Refreshable Extracts\&quot; ,&#13;&#10;    ds.data_engine_extracts AS \&quot;Data Source Data Engine Extracts\&quot; ,&#13;&#10;    ds.extracts_refreshed_at AS \&quot;Data Source Extract Refreshed\&quot; ,&#13;&#10;    ds.first_published_at AS \&quot;Data Source First Publish\&quot; ,&#13;&#10;    ds.connectable AS \&quot;Data Source Connectable\&quot; ,&#13;&#10;    ds.is_hierarchical AS \&quot;Data Source Is Hierarchial\&quot; ,&#13;&#10;    ds.extracts_incremented_at AS \&quot;Data Source Extracts Incremented\&quot; ,&#13;&#10;    ds.asset_key_id AS \&quot;Data Source Asset key Id\&quot; ,&#13;&#10;    ds.document_version AS \&quot;Data Source Document Version\&quot; ,&#13;&#10;    ds.description AS \&quot;Data Source Description\&quot; ,&#13;&#10;    ds.project_id AS \&quot;Data Source Project Id\&quot; ,&#13;&#10;    p.name AS \&quot;Data Source Project Name\&quot; ,&#13;&#10;    'DataConnection' AS Transaction_type&#13;&#10;    from&#13;&#10;     &#13;&#10;(Select z.*,X.dbname as dbname1 from pgs_ing_tableau_usage.data_connections Z join &#13;&#10;(Select min(id) id,dbname  from pgs_ing_tableau_usage.data_connections&#13;&#10;group by owner_id,dbname) X&#13;&#10;on z.id=X.id) dc&#13;&#10;left outer join pgs_ing_tableau_usage.datasources ds&#13;&#10;on dc.dbname=ds.repository_url&#13;&#10;LEFT OUTER JOIN pgs_ing_tableau_usage.projects p&#13;&#10;        ON ds.project_id = p.id&#13;&#10;       where dc.owner_type = 'Workbook'&#13;&#10;        &#13;&#10;       union &#13;&#10;        &#13;&#10;       SELECT&#13;&#10;   Null as  \&quot;Data Connection Workbook Id\&quot; ,&#13;&#10;    dc.id AS \&quot;Data Connection Id\&quot; ,&#13;&#10;    --b.\&quot;Data Connection Friendly Name\&quot;,&#13;&#10;    dc.server AS \&quot;Data Connection Server\&quot; ,&#13;&#10;    dc.dbclass AS \&quot;Data Connection Dbclass\&quot; ,&#13;&#10;    dc.port AS \&quot;Data Connection port\&quot; ,&#13;&#10;    dc.username AS \&quot;Data Connection Username\&quot; ,&#13;&#10;    dc.password AS \&quot;Data Connection Password\&quot; ,&#13;&#10;    dc.name AS \&quot;Data Connection Name\&quot; ,&#13;&#10;    dc.dbname AS \&quot;Data Connection Dbname\&quot; ,&#13;&#10;    dc.tablename AS \&quot;Data Connection Tablename\&quot; ,&#13;&#10;    dc.owner_type AS \&quot;Data Connection Owner Type\&quot; ,&#13;&#10;    dc.owner_id AS \&quot;Data Connection Owner Id\&quot; ,&#13;&#10;    dc.created_at AS \&quot;Data Connection Created date\&quot; ,&#13;&#10;    dc.updated_at AS \&quot;Data Connection Updated Date\&quot; ,&#13;&#10;    dc.caption AS \&quot;Data Connection Display Name\&quot; ,&#13;&#10;    dc.site_id AS \&quot;Data Connection Site Id\&quot; ,&#13;&#10;    dc.keychain AS \&quot;Data Connection Keychain\&quot; ,&#13;&#10;    dc.has_extract AS \&quot;Data Connection Has Extract\&quot; ,&#13;&#10;    ds.id AS \&quot;Data Source Id\&quot; ,&#13;&#10;    ds.name AS \&quot;Data Source Name \&quot; ,&#13;&#10;    ds.repository_url AS \&quot;Data Source Repository Url \&quot; ,&#13;&#10;    ds.owner_id AS \&quot;Data Source Owner Id \&quot; ,&#13;&#10;    ds.created_at AS \&quot;Data Source Created Date\&quot; ,&#13;&#10;    ds.updated_at AS \&quot;Data Source Updated Date \&quot; ,&#13;&#10;    ds.\&quot;size\&quot; AS \&quot;Data Source Size\&quot; ,&#13;&#10;    ds.lock_version AS \&quot;Data Source Lock Version \&quot; ,&#13;&#10;    ds.state AS \&quot;Data Source State\&quot; ,&#13;&#10;    ds.db_class AS \&quot;Data Source Db Class\&quot; ,&#13;&#10;    ds.db_name AS \&quot;Data Source Db Name\&quot; ,&#13;&#10;    ds.table_name AS \&quot;Data Source Table Name\&quot; ,&#13;&#10;    ds.site_id AS \&quot;Data Source Site Id\&quot; ,&#13;&#10;    ds.revision AS \&quot;Data Source Revision\&quot; ,&#13;&#10;    ds.repository_data_id AS \&quot;Data Source Repository Data Id\&quot; ,&#13;&#10;    ds.repository_extract_data_id AS \&quot;Data Source Repository Extract Data Id\&quot; ,&#13;&#10;    ds.embedded AS \&quot;Data Source Embedded\&quot; ,&#13;&#10;    ds.incrementable_extracts AS \&quot;Data Source Incremental Extracts\&quot; ,&#13;&#10;    ds.refreshable_extracts AS \&quot;Data Source Refreshable Extracts\&quot; ,&#13;&#10;    ds.data_engine_extracts AS \&quot;Data Source Data Engine Extracts\&quot; ,&#13;&#10;    ds.extracts_refreshed_at AS \&quot;Data Source Extract Refreshed\&quot; ,&#13;&#10;    ds.first_published_at AS \&quot;Data Source First Publish\&quot; ,&#13;&#10;    ds.connectable AS \&quot;Data Source Connectable\&quot; ,&#13;&#10;    ds.is_hierarchical AS \&quot;Data Source Is Hierarchial\&quot; ,&#13;&#10;    ds.extracts_incremented_at AS \&quot;Data Source Extracts Incremented\&quot; ,&#13;&#10;    ds.asset_key_id AS \&quot;Data Source Asset key Id\&quot; ,&#13;&#10;    ds.document_version AS \&quot;Data Source Document Version\&quot; ,&#13;&#10;    ds.description AS \&quot;Data Source Description\&quot; ,&#13;&#10;    ds.project_id AS \&quot;Data Source Project Id\&quot; ,&#13;&#10;    p.name AS \&quot;Data Source Project Name\&quot; ,&#13;&#10;    'DataConnection' AS Transaction_type&#13;&#10;FROM&#13;&#10;    pgs_ing_tableau_usage.data_connections dc JOIN pgs_ing_tableau_usage.datasources ds&#13;&#10;        ON dc.datasource_id=ds.id LEFT OUTER JOIN pgs_ing_tableau_usage.projects p&#13;&#10;        ON ds.project_id = p.id&#13;&#10;WHERE&#13;&#10;dc.owner_id=dc.datasource_id&#13;&#10;  and   dc.owner_type = 'Datasource'&#13;&#10;&quot;"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="PROPAGATE_RECORD_SET" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="RECORD_SET_COLUMN" show="false" value=""/>
+    <elementParameter field="CHECK" name="USE_PREPAREDSTATEMENT" value="false"/>
+    <elementParameter field="TABLE" name="SET_PREPAREDSTATEMENT_PARAMETERS" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" show="false" value="10000"/>
+    <elementParameter field="TEXT" name="LABEL" value="tableau_usage_dataconnection"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tGreenplumRow_8"/>
+    <metadata connector="REJECT" name="REJECT">
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tGreenplumRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="192" posY="480">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tGreenplumRow_9"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tGreenplumConnection_1"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;5432&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="PostgreSQL"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="0RMsyjmybrE="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="USE_SSL" show="false" value="false"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;delete  from pgs_ing_tableau_usage.tableau_usage_views&quot;"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="PROPAGATE_RECORD_SET" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="RECORD_SET_COLUMN" show="false" value=""/>
+    <elementParameter field="CHECK" name="USE_PREPAREDSTATEMENT" value="false"/>
+    <elementParameter field="TABLE" name="SET_PREPAREDSTATEMENT_PARAMETERS" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" show="false" value="10000"/>
+    <elementParameter field="TEXT" name="LABEL" value="delete usage_views"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tGreenplumRow_9"/>
+    <metadata connector="REJECT" name="REJECT">
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tGreenplumRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="480" posY="480">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tGreenplumRow_10"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tGreenplumConnection_1"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;5432&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="PostgreSQL"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="0RMsyjmybrE="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="USE_SSL" show="false" value="false"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;insert into pgs_ing_tableau_usage.tableau_usage_views &#13;&#10;SELECT &#13;&#10;v.id  as \&quot;View Id\&quot;,&#13;&#10;v.name as \&quot;View Name\&quot;,&#13;&#10;v.repository_url \&quot;View Repository Url\&quot;,&#13;&#10;v.description \&quot;View Description\&quot;,&#13;&#10;v.created_at as \&quot;View Creation Date\&quot; ,&#13;&#10;v.locked as \&quot;View Locked\&quot;,&#13;&#10;v.published as \&quot;View Published\&quot;,&#13;&#10;v.read_count as \&quot;View Read Count\&quot;,&#13;&#10;v.edit_count as \&quot;View Edit Count\&quot;,&#13;&#10;v.datasource_id as \&quot;View Data Source Id\&quot;,&#13;&#10;v.workbook_id as \&quot;View Workbook Id\&quot;,&#13;&#10;v.\&quot;index\&quot; as \&quot;View Index\&quot;,&#13;&#10;v.updated_at as \&quot;View Udpdated Date\&quot;,&#13;&#10;v.owner_id as \&quot;View Owner Id\&quot;,&#13;&#10;vo.name as \&quot;View Owner Name\&quot; ,&#13;&#10;vo.email as \&quot;View Owner email\&quot;,&#13;&#10;vo.friendly_name as \&quot;View Owner Friendly Name\&quot;,&#13;&#10;vo.custom_display_name as \&quot;View Owner display name\&quot;,&#13;&#10;v.fields as \&quot;View Feilds\&quot;,&#13;&#10;v.title as \&quot;View Title\&quot;,&#13;&#10;v.caption as \&quot;View Display Name\&quot;,&#13;&#10;v.sheet_id as \&quot;View Sheet Id\&quot;,&#13;&#10;v.state as \&quot;View State\&quot;,&#13;&#10;v.sheettype as \&quot;View Sheet Type\&quot;,&#13;&#10;v.repository_data_id as \&quot;View Repository Id\&quot;,&#13;&#10;v.first_published_at as \&quot;View First Published At\&quot;,&#13;&#10;v.revision as \&quot;View Revision\&quot;,&#13;&#10;'View' as transaction_type&#13;&#10;&#13;&#10;&#13;&#10;FROM&#13;&#10;pgs_ing_tableau_usage.views v &#13;&#10;left outer join pgs_ing_tableau_usage.system_users vo&#13;&#10;ON v.owner_id = vo.id&quot;"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="PROPAGATE_RECORD_SET" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="RECORD_SET_COLUMN" show="false" value=""/>
+    <elementParameter field="CHECK" name="USE_PREPAREDSTATEMENT" value="false"/>
+    <elementParameter field="TABLE" name="SET_PREPAREDSTATEMENT_PARAMETERS" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" show="false" value="10000"/>
+    <elementParameter field="TEXT" name="LABEL" value="tableau_usage_views"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tGreenplumRow_10"/>
+    <metadata connector="REJECT" name="REJECT">
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tGreenplumRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="192" posY="608">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tGreenplumRow_11"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tGreenplumConnection_1"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;5432&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="PostgreSQL"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="0RMsyjmybrE="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="USE_SSL" show="false" value="false"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;delete  from pgs_ing_tableau_usage.tableau_custom_views&quot;"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="PROPAGATE_RECORD_SET" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="RECORD_SET_COLUMN" show="false" value=""/>
+    <elementParameter field="CHECK" name="USE_PREPAREDSTATEMENT" value="false"/>
+    <elementParameter field="TABLE" name="SET_PREPAREDSTATEMENT_PARAMETERS" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" show="false" value="10000"/>
+    <elementParameter field="TEXT" name="LABEL" value="delete custom_views"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tGreenplumRow_11"/>
+    <metadata connector="REJECT" name="REJECT">
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tGreenplumRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="480" posY="608">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tGreenplumRow_12"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tGreenplumConnection_1"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;5432&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="PostgreSQL"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="0RMsyjmybrE="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="USE_SSL" show="false" value="false"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;INSERT&#13;&#10;    INTO &#13;&#10;        pgs_ing_tableau_usage.tableau_custom_views   &#13;&#10;   SELECT&#13;&#10;    cv.id \&quot;Customized View Id\&quot; ,&#13;&#10;    cv.start_view_id AS \&quot;View Id\&quot; ,&#13;&#10;    cv.name \&quot;Customized View Name\&quot; ,&#13;&#10;    cv.description \&quot;Customized View Description\&quot; ,&#13;&#10;    cv.repository_url \&quot;Customized View Repository Url\&quot; ,&#13;&#10;    cv.created_at \&quot;Customized View Creation Date\&quot; ,&#13;&#10;    cv.updated_at \&quot;Customized View Update Date\&quot; ,&#13;&#10;    cv.creator_id \&quot;Customized View Creator Id\&quot; ,&#13;&#10;    su.name as \&quot;Customized View Creator Name\&quot;,&#13;&#10;    su.email as \&quot;Customized View Creator Email\&quot;,&#13;&#10;    su.friendly_name as \&quot;Customized View Creator Friendly Name\&quot;,&#13;&#10;    cv.public AS \&quot;Customized View Public\&quot; ,&#13;&#10;    cv.\&quot;size\&quot; \&quot;Customized View Size\&quot; ,&#13;&#10;    cv.repository_data_id \&quot;Customized View Repository Data Id\&quot; ,&#13;&#10;    cv.repository_thumbnail_data_id \&quot;Customized View Thumbnail Data Id\&quot; ,&#13;&#10;    cv.url_id \&quot;Customized View Url Id\&quot; ,&#13;&#10;    'View' AS transaction_type&#13;&#10;FROM&#13;&#10;    pgs_ing_tableau_usage.customized_views cv&#13;&#10;    left outer join pgs_ing_tableau_usage.users u on &#13;&#10;    u.id=cv.creator_id&#13;&#10;    left outer join pgs_ing_tableau_usage.system_users su on su.id=u.system_user_id&#13;&#10;WHERE&#13;&#10;    cv.start_view_id = cv.view_id&quot;"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="PROPAGATE_RECORD_SET" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="RECORD_SET_COLUMN" show="false" value=""/>
+    <elementParameter field="CHECK" name="USE_PREPAREDSTATEMENT" value="false"/>
+    <elementParameter field="TABLE" name="SET_PREPAREDSTATEMENT_PARAMETERS" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" show="false" value="10000"/>
+    <elementParameter field="TEXT" name="LABEL" value="tableau_custom_views"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tGreenplumRow_12"/>
+    <metadata connector="REJECT" name="REJECT">
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tGreenplumRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="192" posY="768">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tGreenplumRow_15"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tGreenplumConnection_1"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;5432&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="PostgreSQL"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="0RMsyjmybrE="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="USE_SSL" show="false" value="false"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;delete  from pgs_ing_tableau_usage.tableau_comments &quot;"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="PROPAGATE_RECORD_SET" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="RECORD_SET_COLUMN" show="false" value=""/>
+    <elementParameter field="CHECK" name="USE_PREPAREDSTATEMENT" value="false"/>
+    <elementParameter field="TABLE" name="SET_PREPAREDSTATEMENT_PARAMETERS" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" show="false" value="10000"/>
+    <elementParameter field="TEXT" name="LABEL" value="delete comments"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tGreenplumRow_15"/>
+    <metadata connector="REJECT" name="REJECT">
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tGreenplumRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="512" posY="768">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tGreenplumRow_16"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tGreenplumConnection_1"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;5432&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="PostgreSQL"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="0RMsyjmybrE="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="USE_SSL" show="false" value="false"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;insert into pgs_ing_tableau_usage.tableau_comments&#13;&#10;&#13;&#10;SELECT c.id as \&quot;Comment Id\&quot;,&#13;&#10;   c.comment as \&quot;Comment\&quot;,&#13;&#10;   c.created_at as \&quot;Comment Created At\&quot;,&#13;&#10;   c.commentable_id as \&quot;Comment View Id\&quot;,&#13;&#10;   v.name as \&quot;Comment View Name\&quot;,&#13;&#10;   c.user_id as \&quot;Comment User Id\&quot;,&#13;&#10;   c.updated_at as \&quot;Comment Updated at\&quot;,&#13;&#10;   su.name as \&quot;Comment User Name\&quot;,&#13;&#10;   su.friendly_name as \&quot;Comment User Friendly name\&quot;&#13;&#10;FROM&#13;&#10;    pgs_ing_tableau_usage.comments c LEFT OUTER JOIN pgs_ing_tableau_usage.users u&#13;&#10;        ON u.id = c.user_id LEFT OUTER JOIN pgs_ing_tableau_usage.system_users su&#13;&#10;        ON su.id = u.system_user_id LEFT OUTER JOIN pgs_ing_tableau_usage.views v&#13;&#10;        ON v.id = c.commentable_id&quot;"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="PROPAGATE_RECORD_SET" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="RECORD_SET_COLUMN" show="false" value=""/>
+    <elementParameter field="CHECK" name="USE_PREPAREDSTATEMENT" value="false"/>
+    <elementParameter field="TABLE" name="SET_PREPAREDSTATEMENT_PARAMETERS" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" show="false" value="10000"/>
+    <elementParameter field="TEXT" name="LABEL" value="tableau comments"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tGreenplumRow_16"/>
+    <metadata connector="REJECT" name="REJECT">
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tGreenplumClose" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="672" posY="768">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tGreenplumClose_1"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tGreenplumConnection_1"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tGreenplumConnection_1" offsetLabelX="0" offsetLabelY="0" source="tGreenplumConnection_1" target="tGreenplumRow_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk1"/>
+    <elementParameter field="MEMO" name="FAILURE_INSTRUCTIONS" value=""/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tGreenplumRow_1" offsetLabelX="0" offsetLabelY="0" source="tGreenplumRow_1" target="tGreenplumRow_2">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk2"/>
+    <elementParameter field="MEMO" name="FAILURE_INSTRUCTIONS" value=""/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tGreenplumRow_2" offsetLabelX="0" offsetLabelY="0" source="tGreenplumRow_2" target="tGreenplumRow_3">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk3"/>
+    <elementParameter field="MEMO" name="FAILURE_INSTRUCTIONS" value=""/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tGreenplumRow_3" offsetLabelX="0" offsetLabelY="0" source="tGreenplumRow_3" target="tGreenplumRow_7">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk4"/>
+    <elementParameter field="MEMO" name="FAILURE_INSTRUCTIONS" value=""/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tGreenplumRow_7" offsetLabelX="0" offsetLabelY="0" source="tGreenplumRow_7" target="tGreenplumRow_8">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk8"/>
+    <elementParameter field="MEMO" name="FAILURE_INSTRUCTIONS" value=""/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tGreenplumRow_8" offsetLabelX="0" offsetLabelY="0" source="tGreenplumRow_8" target="tGreenplumRow_9">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk9"/>
+    <elementParameter field="MEMO" name="FAILURE_INSTRUCTIONS" value=""/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tGreenplumRow_9" offsetLabelX="0" offsetLabelY="0" source="tGreenplumRow_9" target="tGreenplumRow_10">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk10"/>
+    <elementParameter field="MEMO" name="FAILURE_INSTRUCTIONS" value=""/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tGreenplumRow_10" offsetLabelX="0" offsetLabelY="0" source="tGreenplumRow_10" target="tGreenplumRow_11">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk12"/>
+    <elementParameter field="MEMO" name="FAILURE_INSTRUCTIONS" value=""/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tGreenplumRow_11" offsetLabelX="0" offsetLabelY="0" source="tGreenplumRow_11" target="tGreenplumRow_12">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk13"/>
+    <elementParameter field="MEMO" name="FAILURE_INSTRUCTIONS" value=""/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tGreenplumRow_12" offsetLabelX="0" offsetLabelY="0" source="tGreenplumRow_12" target="tGreenplumRow_15">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk14"/>
+    <elementParameter field="MEMO" name="FAILURE_INSTRUCTIONS" value=""/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tGreenplumRow_15" offsetLabelX="0" offsetLabelY="0" source="tGreenplumRow_15" target="tGreenplumRow_16">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk16"/>
+    <elementParameter field="MEMO" name="FAILURE_INSTRUCTIONS" value=""/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tGreenplumRow_16" offsetLabelX="0" offsetLabelY="0" source="tGreenplumRow_16" target="tGreenplumClose_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk17"/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tGreenplumConnection_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tGreenplumRow_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tGreenplumRow_2"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tGreenplumRow_3"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tGreenplumRow_7"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tGreenplumRow_8"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tGreenplumRow_9"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tGreenplumRow_10"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tGreenplumRow_11"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tGreenplumRow_12"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tGreenplumRow_15"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tGreenplumRow_16"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tGreenplumClose_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_470f972f-29e7-463f-84fa-c70ca4f44e8f"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>zHnYaJXz8DwPzIkA5HgkrSM4EkrCa3i2zqLnrtU8QxusHMu4L1qCiniF94rOgxgZacFL0yBux26a&#13;
+eciLpzk38w==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_7c4858f3-99b2-4c94-b988-73e7cace6eb4"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>WqTh3RGfLnFj+Q9cFhwa+mD6ieIkO9NsTxKf36XEtY1+iyh08ARBUe6w0NMsr3H2qwPt8dERyRlT&#13;
+WRxDiNxp7g==</DigestValue></Reference></SignedInfo><SignatureValue>HqldJgYwDIGrRJAXdXACN4qGPjFW2HbzbB6GzA9NFmp+ljqosK3nGqQvPp59dN7QBnsQHfOguc05&#13;
+OjYsDVsUHcYYHBQDPylO+9ItThGHbLnlTwX+rFzBFCAm2AL0d1zeFccdpWCzVLDO/nJIm/dW3m5s&#13;
+X6OjzGF3YDXTlHnZE6Hqt3bpxWDX42T2Tt0sWvnRGEkSYMAZ1sZ/OPpwd+Od0ewyPNhDlNzD6xky&#13;
+hrCLIHSgvwrL7a7bc9+bhV4TztW/Uz/z4OQCaK9U4oooSaFd8ZQxdWuma8fy3frDSpyPpQuPqmfZ&#13;
+NMX5opuClhQtuQtirbo1dy1jajpRQ2iQyWyLXw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_7c4858f3-99b2-4c94-b988-73e7cace6eb4" Target="#_470f972f-29e7-463f-84fa-c70ca4f44e8f"><Timestamp>2020-04-22 08:20:32</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>

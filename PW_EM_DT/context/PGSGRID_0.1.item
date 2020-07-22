@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:version="2.0">
+  <talendfile:ContextType confirmationNeeded="false" name="Default" xmi:id="_str5sEggEeqsxOl8-qDc7w">
+    <contextParameter comment="" name="PGSGRID_Password" prompt="PGSGRID_Password?" promptNeeded="false" type="id_Password" value="N0hz2TwA1OPzuW1GJUkMFg==" xmi:id="_str5sUggEeqsxOl8-qDc7w"/>
+    <contextParameter comment="" name="PGSGRID_Database" prompt="PGSGRID_Database?" promptNeeded="false" type="id_String" value="pgsdwh" xmi:id="_str5skggEeqsxOl8-qDc7w"/>
+    <contextParameter comment="" name="PGSGRID_Server" prompt="PGSGRID_Server?" promptNeeded="false" type="id_String" value="dev-9ha.cloud.digital.ge.com" xmi:id="_str5s0ggEeqsxOl8-qDc7w"/>
+    <contextParameter comment="" name="PGSGRID_Port" prompt="PGSGRID_Port?" promptNeeded="false" type="id_String" value="5432" xmi:id="_str5tEggEeqsxOl8-qDc7w"/>
+    <contextParameter comment="" name="PGSGRID_Schema" prompt="PGSGRID_Schema?" promptNeeded="false" type="id_String" value="pgsgrid" xmi:id="_str5tUggEeqsxOl8-qDc7w"/>
+    <contextParameter comment="" name="PGSGRID_Login" prompt="PGSGRID_Login?" promptNeeded="false" type="id_String" value="502799796" xmi:id="_str5tkggEeqsxOl8-qDc7w"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="DEV" xmi:id="_str5t0ggEeqsxOl8-qDc7w">
+    <contextParameter comment="" name="PGSGRID_Password" prompt="PGSGRID_Password?" promptNeeded="false" type="id_Password" value="N0hz2TwA1OPzuW1GJUkMFg==" xmi:id="_str5uEggEeqsxOl8-qDc7w"/>
+    <contextParameter comment="" name="PGSGRID_Database" prompt="PGSGRID_Database?" promptNeeded="false" type="id_String" value="pgsdwh" xmi:id="_str5uUggEeqsxOl8-qDc7w"/>
+    <contextParameter comment="" name="PGSGRID_Server" prompt="PGSGRID_Server?" promptNeeded="false" type="id_String" value="dev-9ha.cloud.digital.ge.com" xmi:id="_str5ukggEeqsxOl8-qDc7w"/>
+    <contextParameter comment="" name="PGSGRID_Port" prompt="PGSGRID_Port?" promptNeeded="false" type="id_String" value="5432" xmi:id="_str5u0ggEeqsxOl8-qDc7w"/>
+    <contextParameter comment="" name="PGSGRID_Schema" prompt="PGSGRID_Schema?" promptNeeded="false" type="id_String" value="pgsgrid" xmi:id="_str5vEggEeqsxOl8-qDc7w"/>
+    <contextParameter comment="" name="PGSGRID_Login" prompt="PGSGRID_Login?" promptNeeded="false" type="id_String" value="502799796" xmi:id="_str5vUggEeqsxOl8-qDc7w"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="PROD" xmi:id="_str5vkggEeqsxOl8-qDc7w">
+    <contextParameter comment="" name="PGSGRID_Password" prompt="PGSGRID_Password?" promptNeeded="false" type="id_Password" value="N0hz2TwA1OPzuW1GJUkMFg==" xmi:id="_str5v0ggEeqsxOl8-qDc7w"/>
+    <contextParameter comment="" name="PGSGRID_Database" prompt="PGSGRID_Database?" promptNeeded="false" type="id_String" value="pgsdwh" xmi:id="_str5wEggEeqsxOl8-qDc7w"/>
+    <contextParameter comment="" name="PGSGRID_Server" prompt="PGSGRID_Server?" promptNeeded="false" type="id_String" value="9ha.cloud.digital.ge.com" xmi:id="_str5wUggEeqsxOl8-qDc7w"/>
+    <contextParameter comment="" name="PGSGRID_Port" prompt="PGSGRID_Port?" promptNeeded="false" type="id_String" value="5432" xmi:id="_str5wkggEeqsxOl8-qDc7w"/>
+    <contextParameter comment="" name="PGSGRID_Schema" prompt="PGSGRID_Schema?" promptNeeded="false" type="id_String" value="pgsgrid" xmi:id="_str5w0ggEeqsxOl8-qDc7w"/>
+    <contextParameter comment="" name="PGSGRID_Login" prompt="PGSGRID_Login?" promptNeeded="false" type="id_String" value="502799796" xmi:id="_str5xEggEeqsxOl8-qDc7w"/>
+  </talendfile:ContextType>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_e9d7f7ee-2b1a-449f-9e5f-13dedadf99f5"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>7YfQm77j7CLp6QvyM7AHTJh/9R2agJa8WohFHtsS81LmtZdfNdMGOBERjHrN0qBtH+PUdWhonnT5&#13;
+dUWTfyckVg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_ab641ae8-bf23-45fe-a325-bfc9db251729"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>ad02hqY+3CT/GNuzbfsES3SV+2vX70xWMd7wZSl5kwOR1xh6ec3rfwEv5nA+MmkO4JzTs48l8WQM&#13;
+Cds/aWbW5w==</DigestValue></Reference></SignedInfo><SignatureValue>CxIJiBNyPFbRRXwdG6vIlelEoGDKLqLWFePQokxKJemQcjq6PoKl6v1GhKW2O07NvD90QNy1KTv/&#13;
+2dQWKqULTiWUGZx9fWJIwou87N5SKqCdDx6rY8eIYm+O8TMm0gDAWqI6Mflc/B+zEcla7HTe3VQ0&#13;
+/ikgqRQzeIKsJ4Vq8yEBf+k8c/G2HRT7Rt/zFEWIlfYiAgHLe3F8oljzjzuimIPtIZx7NCoHbpG+&#13;
+O/R5hxDmUZi/fG6QdltWH9TP0Zec339OWxSTloXXBwsQDNHbuy5VsZt+OIsmkVfdShj0IKVs5jAF&#13;
+POx0bpETSgdt5J/1Vs3mtTGAvd0SesH5ypPflA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_ab641ae8-bf23-45fe-a325-bfc9db251729" Target="#_e9d7f7ee-2b1a-449f-9e5f-13dedadf99f5"><Timestamp>2020-04-22 08:18:04</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:version="2.0">
+  <talendfile:ContextType confirmationNeeded="false" name="PGS_DEV" xmi:id="_5oXOcFxiEemmlaotH-069A">
+    <contextParameter comment="" name="SOURCING_Server" prompt="SOURCING_Server" promptNeeded="false" type="id_String" value="3.48.35.24" xmi:id="_5oXOcVxiEemmlaotH-069A"/>
+    <contextParameter comment="" name="SOURCING_Login" prompt="SOURCING_Login" promptNeeded="false" type="id_String" value="502445787" xmi:id="_5oXOclxiEemmlaotH-069A"/>
+    <contextParameter comment="" name="SOURCING_Password" prompt="SOURCING_Password" promptNeeded="false" type="id_Password" value="CdDWhzv1Xx5tW3JNbqgndg==" xmi:id="_5oXOc1xiEemmlaotH-069A"/>
+    <contextParameter comment="" name="SOURCING_Port" prompt="SOURCING_Port" promptNeeded="false" type="id_String" value="5432" xmi:id="_5oXOdFxiEemmlaotH-069A"/>
+    <contextParameter comment="" name="SOURCING_Schema" prompt="SOURCING_Schema" promptNeeded="false" type="id_String" value="" xmi:id="_5oXOdVxiEemmlaotH-069A"/>
+    <contextParameter comment="" name="SOURCING_Database" prompt="SOURCING_Database" promptNeeded="false" type="id_String" value="sourcing" xmi:id="_5oXOdlxiEemmlaotH-069A"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="PGS_PROD" xmi:id="_5oXOd1xiEemmlaotH-069A">
+    <contextParameter comment="" name="SOURCING_Server" prompt="SOURCING_Server" promptNeeded="false" type="id_String" value="3.48.35.34" xmi:id="_5oXOeFxiEemmlaotH-069A"/>
+    <contextParameter comment="" name="SOURCING_Login" prompt="SOURCING_Login" promptNeeded="false" type="id_String" value="502445787" xmi:id="_5oXOeVxiEemmlaotH-069A"/>
+    <contextParameter comment="" name="SOURCING_Password" prompt="SOURCING_Password" promptNeeded="false" type="id_Password" value="CdDWhzv1Xx5tW3JNbqgndg==" xmi:id="_5oXOelxiEemmlaotH-069A"/>
+    <contextParameter comment="" name="SOURCING_Port" prompt="SOURCING_Port" promptNeeded="false" type="id_String" value="5432" xmi:id="_5oXOe1xiEemmlaotH-069A"/>
+    <contextParameter comment="" name="SOURCING_Schema" prompt="SOURCING_Schema" promptNeeded="false" type="id_String" value="" xmi:id="_5oXOfFxiEemmlaotH-069A"/>
+    <contextParameter comment="" name="SOURCING_Database" prompt="SOURCING_Database" promptNeeded="false" type="id_String" value="sourcing" xmi:id="_5oXOfVxiEemmlaotH-069A"/>
+  </talendfile:ContextType>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_2bbe8b2a-3d22-43cb-8066-0935933ace96"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>+L5gDUrv2pGY7akpHaHP3cozqTs+SQOQW+nb5U0S1FhGHHpoPE7HIxEdNbC0CIq91yChAySWkMWS&#13;
+eU13NlTcdw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_aad0a92a-d81e-48f3-93cc-0c09d5bccf23"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>ASw2FgtBy9gWQnz9py9NOY6KvBQcS5lLvhUr3FrrEkSYvzoZfC8zwtpVtHLMJuZAU6BKniu9fNWU&#13;
+lXkXMyXHrw==</DigestValue></Reference></SignedInfo><SignatureValue>DGAMdGUHa20839ENJkmO7bemCS32W1N37v1ulJrftxZO3lAFoAu6JqUfKXx8jfmjjl/EM+IrFd0d&#13;
+pELQ+SSkd4NbiilNQq5IRBKHRPiLlKmBxAABiGqgwTugMUeFE8pkyjcK9pUfC5y2COWZrAvVSsWk&#13;
+joUHMlnM15kvBKqc6QtMGbatid29KTU6zkR4A2SsOgv2y9LqBPEwdjfsTnwKztAGCQx7RXsgoVm/&#13;
+5WEAeU2x4e6NPAYQNw6gUg0TtF5sm1I1N3Iw6WLgQDvKrOtwLR01N3i8FynWojuR/9bYT6yR/DAw&#13;
+IGHFAwUy2UsNSIfDysE7aPO162Kf/QSDU+tOYQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_aad0a92a-d81e-48f3-93cc-0c09d5bccf23" Target="#_2bbe8b2a-3d22-43cb-8066-0935933ace96"><Timestamp>2020-04-22 08:18:03</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>

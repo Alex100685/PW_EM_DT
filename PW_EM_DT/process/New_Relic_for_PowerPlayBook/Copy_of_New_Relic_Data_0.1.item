@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:xmi="http://www.omg.org/XMI" defaultContext="Default" jobType="Standard" xmi:version="2.0">
+  <context confirmationNeeded="false" name="Default">
+    <contextParameter comment="" name="GPDB_SOT_DT_Password" prompt="GPDB_SOT_DT_Password?" promptNeeded="false" repositoryContextId="_OnoCkFT3EeiWTc_qq4iGiQ" type="id_Password" value="jaSCGwtvkj/9ESLfzHMXoA=="/>
+    <contextParameter comment="" name="GPDB_SOT_DT_Port" prompt="GPDB_SOT_DT_Port?" promptNeeded="false" repositoryContextId="_OnoCkFT3EeiWTc_qq4iGiQ" type="id_String" value="5432"/>
+    <contextParameter comment="" name="GPDB_SOT_DT_Database" prompt="GPDB_SOT_DT_Database?" promptNeeded="false" repositoryContextId="_OnoCkFT3EeiWTc_qq4iGiQ" type="id_String" value="pgsdwh"/>
+    <contextParameter comment="" name="GPDB_SOT_DT_Server" prompt="GPDB_SOT_DT_Server?" promptNeeded="false" repositoryContextId="_OnoCkFT3EeiWTc_qq4iGiQ" type="id_String" value="dev-9ha.cloud.digital.ge.com"/>
+    <contextParameter comment="" name="GPDB_SOT_DT_Login" prompt="GPDB_SOT_DT_Login?" promptNeeded="false" repositoryContextId="_OnoCkFT3EeiWTc_qq4iGiQ" type="id_String" value="502796776"/>
+    <contextParameter comment="" name="GPDB_SOT_DT_Schema" prompt="GPDB_SOT_DT_Schema?" promptNeeded="false" repositoryContextId="_OnoCkFT3EeiWTc_qq4iGiQ" type="id_String" value="sot_dt"/>
+    <contextParameter comment="" name="Talend_Server_Host" prompt="Talend_Server_Host?" promptNeeded="false" type="id_String" value="10.93.228.14"/>
+    <contextParameter comment="" name="Talend_Server_Username" prompt="Talend_Server_Username?" promptNeeded="false" type="id_String" value="lg428035"/>
+    <contextParameter comment="" name="Talend_Server_Password" prompt="Talend_Server_Password?" promptNeeded="false" type="id_Password" value="VtT+07+3qvx7aLxGLVXTsA=="/>
+    <contextParameter comment="" name="Mail_To" prompt="Mail_To?" promptNeeded="false" type="id_String" value="yerram.k@ge.com"/>
+    <contextParameter comment="" name="Mail_Cc" prompt="Mail_Cc?" promptNeeded="false" type="id_String" value="sameer.ganu@ge.com"/>
+    <contextParameter comment="" name="AWS_Table_Name" prompt="AWS_Table_Name?" promptNeeded="false" type="id_String" value="new_relic_data"/>
+    <contextParameter comment="" name="PythonPath" prompt="PythonPath?" promptNeeded="false" type="id_String" value="/home/lg425647/Python-3.6.6/python"/>
+  </context>
+  <context confirmationNeeded="false" name="Dev">
+    <contextParameter comment="" name="GPDB_SOT_DT_Password" prompt="GPDB_SOT_DT_Password?" promptNeeded="false" repositoryContextId="_OnoCkFT3EeiWTc_qq4iGiQ" type="id_Password" value="jaSCGwtvkj/9ESLfzHMXoA=="/>
+    <contextParameter comment="" name="GPDB_SOT_DT_Port" prompt="GPDB_SOT_DT_Port?" promptNeeded="false" repositoryContextId="_OnoCkFT3EeiWTc_qq4iGiQ" type="id_String" value="5432"/>
+    <contextParameter comment="" name="GPDB_SOT_DT_Database" prompt="GPDB_SOT_DT_Database?" promptNeeded="false" repositoryContextId="_OnoCkFT3EeiWTc_qq4iGiQ" type="id_String" value="pgsdwh"/>
+    <contextParameter comment="" name="GPDB_SOT_DT_Server" prompt="GPDB_SOT_DT_Server?" promptNeeded="false" repositoryContextId="_OnoCkFT3EeiWTc_qq4iGiQ" type="id_String" value="dev-9ha.cloud.digital.ge.com"/>
+    <contextParameter comment="" name="GPDB_SOT_DT_Login" prompt="GPDB_SOT_DT_Login?" promptNeeded="false" repositoryContextId="_OnoCkFT3EeiWTc_qq4iGiQ" type="id_String" value="502796776"/>
+    <contextParameter comment="" name="GPDB_SOT_DT_Schema" prompt="GPDB_SOT_DT_Schema?" promptNeeded="false" repositoryContextId="_OnoCkFT3EeiWTc_qq4iGiQ" type="id_String" value="sot_dt"/>
+    <contextParameter comment="" name="Talend_Server_Host" prompt="Talend_Server_Host?" promptNeeded="false" type="id_String" value="10.93.228.14"/>
+    <contextParameter comment="" name="Talend_Server_Username" prompt="Talend_Server_Username?" promptNeeded="false" type="id_String" value="lg428035"/>
+    <contextParameter comment="" name="Talend_Server_Password" prompt="Talend_Server_Password?" promptNeeded="false" type="id_Password" value="VtT+07+3qvx7aLxGLVXTsA=="/>
+    <contextParameter comment="" name="Mail_To" prompt="Mail_To?" promptNeeded="false" type="id_String" value="yerram.k@ge.com"/>
+    <contextParameter comment="" name="Mail_Cc" prompt="Mail_Cc?" promptNeeded="false" type="id_String" value="sameer.ganu@ge.com"/>
+    <contextParameter comment="" name="AWS_Table_Name" prompt="AWS_Table_Name?" promptNeeded="false" type="id_String" value="new_relic_data"/>
+    <contextParameter comment="" name="PythonPath" prompt="PythonPath?" promptNeeded="false" type="id_String" value="/home/lg425647/Python-3.6.6/python"/>
+  </context>
+  <context confirmationNeeded="false" name="Prod">
+    <contextParameter comment="" name="GPDB_SOT_DT_Password" prompt="GPDB_SOT_DT_Password?" promptNeeded="false" repositoryContextId="_OnoCkFT3EeiWTc_qq4iGiQ" type="id_Password" value="jaSCGwtvkj/9ESLfzHMXoA=="/>
+    <contextParameter comment="" name="GPDB_SOT_DT_Port" prompt="GPDB_SOT_DT_Port?" promptNeeded="false" repositoryContextId="_OnoCkFT3EeiWTc_qq4iGiQ" type="id_String" value="5432"/>
+    <contextParameter comment="" name="GPDB_SOT_DT_Database" prompt="GPDB_SOT_DT_Database?" promptNeeded="false" repositoryContextId="_OnoCkFT3EeiWTc_qq4iGiQ" type="id_String" value="pgsdwh"/>
+    <contextParameter comment="" name="GPDB_SOT_DT_Server" prompt="GPDB_SOT_DT_Server?" promptNeeded="false" repositoryContextId="_OnoCkFT3EeiWTc_qq4iGiQ" type="id_String" value="9ha.cloud.digital.ge.com"/>
+    <contextParameter comment="" name="GPDB_SOT_DT_Login" prompt="GPDB_SOT_DT_Login?" promptNeeded="false" repositoryContextId="_OnoCkFT3EeiWTc_qq4iGiQ" type="id_String" value="502796776"/>
+    <contextParameter comment="" name="GPDB_SOT_DT_Schema" prompt="GPDB_SOT_DT_Schema?" promptNeeded="false" repositoryContextId="_OnoCkFT3EeiWTc_qq4iGiQ" type="id_String" value="sot_dt"/>
+    <contextParameter comment="" name="Talend_Server_Host" prompt="Talend_Server_Host?" promptNeeded="false" type="id_String" value="3.48.32.82"/>
+    <contextParameter comment="" name="Talend_Server_Username" prompt="Talend_Server_Username?" promptNeeded="false" type="id_String" value="lg428035"/>
+    <contextParameter comment="" name="Talend_Server_Password" prompt="Talend_Server_Password?" promptNeeded="false" type="id_Password" value="G5kOFq0HrwiYfuuk3GCVpQ=="/>
+    <contextParameter comment="" name="Mail_To" prompt="Mail_To?" promptNeeded="false" type="id_String" value="yerram.k@ge.com"/>
+    <contextParameter comment="" name="Mail_Cc" prompt="Mail_Cc?" promptNeeded="false" type="id_String" value="sameer.ganu@ge.com"/>
+    <contextParameter comment="" name="AWS_Table_Name" prompt="AWS_Table_Name?" promptNeeded="false" type="id_String" value="new_relic_data"/>
+    <contextParameter comment="" name="PythonPath" prompt="PythonPath?" promptNeeded="false" type="id_String" value="/home/lg428035/Python-3.6.6/python"/>
+  </context>
+  <parameters>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="0"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" show="false" value=""/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:PROPERTY_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:REPOSITORY_PROPERTY_TYPE" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="0RMsyjmybrE="/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" show="false" value="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" show="false" value="&quot;C:/Workspaces/6_3 Dev/.metadata&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" show="false" value="&quot;stats_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" show="false" value="&quot;logs_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" show="false" value="&quot;meter_file.txt&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="ISO-8859-15"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" show="false" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" show="false" value="tJDBCOutput"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="ORACLE_11"/>
+    <elementParameter field="TEXT" name="URL" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DATASOURCE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="0RMsyjmybrE="/>
+    <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" show="false" value=""/>
+    <routinesParameter id="_DFq20G20EeSP6Yq-iEfhgQ" name="DQTechnical"/>
+    <routinesParameter id="_KDQXkK6HEeez_ZdxH3qrkw" name="DataMasking"/>
+    <routinesParameter id="_DHATkG20EeSP6Yq-iEfhgQ" name="DataOperation"/>
+    <routinesParameter id="_JTLxoHjdEeavh7OWxtpxSQ" name="DataQualityDependencies"/>
+    <routinesParameter id="_DDSRMm20EeSP6Yq-iEfhgQ" name="DataQuality"/>
+    <routinesParameter id="_DFFA8G20EeSP6Yq-iEfhgQ" name="DqStringHandling"/>
+    <routinesParameter id="_DHv6cG20EeSP6Yq-iEfhgQ" name="Mathematical"/>
+    <routinesParameter id="_DIzDUG20EeSP6Yq-iEfhgQ" name="Numeric"/>
+    <routinesParameter id="_DJ-vEG20EeSP6Yq-iEfhgQ" name="Relational"/>
+    <routinesParameter id="_DGQssG20EeSP6Yq-iEfhgQ" name="SQLike"/>
+    <routinesParameter id="_DLLB4G20EeSP6Yq-iEfhgQ" name="StringHandling"/>
+    <routinesParameter id="_DLxe0G20EeSP6Yq-iEfhgQ" name="TalendDataGenerator"/>
+    <routinesParameter id="_DMFA0G20EeSP6Yq-iEfhgQ" name="TalendDate"/>
+    <routinesParameter id="_DMhswG20EeSP6Yq-iEfhgQ" name="TalendString"/>
+    <routinesParameter id="_tKnvACWCEeWXaZA-MQIdVg" name="ConvertAnyDateFormat"/>
+    <routinesParameter id="_iOxDYJnNEeeuI46T9lvVrg" name="wordfrequency"/>
+    <routinesParameter id="_NAsyQHRnEeS6QfVO9XSNjQ" name="ServiceImplPortBindingStub"/>
+    <routinesParameter id="_PVccEHRnEeS6QfVO9XSNjQ" name="ServiceImplServiceLocator"/>
+    <routinesParameter id="_ObeHIHRnEeS6QfVO9XSNjQ" name="ServiceImplService"/>
+    <routinesParameter id="_QMSkgHRnEeS6QfVO9XSNjQ" name="ServiceInterface"/>
+    <routinesParameter id="_whP3wFrkEeWU-s6dkfBsWA" name="BasicHttpBinding_ITripServiceAsyncStub"/>
+    <routinesParameter id="_1zOHsFrkEeWU-s6dkfBsWA" name="OutageType"/>
+    <routinesParameter id="_n-uXkNGJEeW2fdG5IrM9wg" name="Pmar"/>
+    <routinesParameter id="_86O8gGTlEeSMmotslQmEdA" name="ClarifyInformation"/>
+    <routinesParameter id="_9jet0GTlEeSMmotslQmEdA" name="ITripServiceAsync"/>
+    <routinesParameter id="_-MDwwGTlEeSMmotslQmEdA" name="Outages"/>
+    <routinesParameter id="_-1V-UGTlEeSMmotslQmEdA" name="TripEvent"/>
+    <routinesParameter id="__etEYGTlEeSMmotslQmEdA" name="TripInformation"/>
+    <routinesParameter id="_AHUjkGTmEeSMmotslQmEdA" name="TripNotifierEvents"/>
+    <routinesParameter id="_Av5mgGTmEeSMmotslQmEdA" name="TripQuery"/>
+    <routinesParameter id="_CqnmwGTmEeSMmotslQmEdA" name="TripServiceLocator"/>
+    <routinesParameter id="_CCGOMGTmEeSMmotslQmEdA" name="TripService"/>
+    <routinesParameter id="_BZNCMGTmEeSMmotslQmEdA" name="Trips"/>
+    <routinesParameter id="_6SlQwLngEeWZRqCmUwZjEg" name="AeroTest"/>
+    <routinesParameter id="_rQ0H8MuIEeOReKos6ufrHA" name="BigDecHandler"/>
+    <routinesParameter id="_bv_6oG1IEeSBz6HqJDET5w" name="BigDecimalUtility"/>
+    <routinesParameter id="_dgMRgJjFEeWXRKcrF23Jtg" name="Box"/>
+    <routinesParameter id="_SMoR4LtaEeOZvrcjg-VOXA" name="BuildQuery"/>
+    <routinesParameter id="_2FpUoFjxEeaPJKNKhHQFGw" name="ByteUtil"/>
+    <routinesParameter id="_Vcst8ACIEeaiHOY563SpJw" name="Copy_of_PageScraper"/>
+    <routinesParameter id="_6GJOsLMoEeeGgdtAzfoc6Q" name="Copy_of_PageScraper_bid_offer"/>
+    <routinesParameter id="_MdSFEAedEea7O6DdJifjLA" name="CustomFunctions"/>
+    <routinesParameter id="_lTJkoEKbEeWD4KoNH7eRkw" name="DateLogic"/>
+    <routinesParameter id="_8qwkYFjNEdyj6eiqDt60Og" name="DemoRoutines"/>
+    <routinesParameter id="_oM_4AMvpEeSPdv2U3VjjDw" name="EO_Matlab_Routine"/>
+    <routinesParameter id="_m1he4JyuEeSGQIxyh69dVA" name="EO_Starts_Routine"/>
+    <routinesParameter id="_66aSoJD_EeSLcfAwV1BCsw" name="EO_Values_Routine"/>
+    <routinesParameter id="_7ZjHcOlsEeSVveUAOdysxw" name="Exanta"/>
+    <routinesParameter id="_8qb_IKf6EeOxOahYIIWftA" name="FormatDate"/>
+    <routinesParameter id="_HKXfQGIZEd26GZmhFZLTPA" name="GetRandomPhoneNum"/>
+    <routinesParameter id="_PfOiEKKSEeW6a6IagvKPxw" name="HTMLunit"/>
+    <routinesParameter id="_G417gAc-EeKqOMQjhZ_0wQ" name="KeyManagementForSqoop"/>
+    <routinesParameter id="_SySNEMRNEeSFEeVgnXlPGw" name="LeftpaddingString"/>
+    <routinesParameter id="__S6roKlpEeGiea4NxOFRoA" name="MDM"/>
+    <routinesParameter id="_BBx_IDmbEeelAr4c7wATkQ" name="Methods"/>
+    <routinesParameter id="_kKQdAO6yEeK1vYN4B_KFqA" name="MyDateConversion"/>
+    <routinesParameter id="_0ObKcBU6EeSkA-VeDqihSg" name="MyRoutineDemo"/>
+    <routinesParameter id="_YZ8c8GePEeWpTPdIyoXiCQ" name="MyRoutines"/>
+    <routinesParameter id="_hESiUHAHEeShw6csv49m7w" name="PGSUtilities"/>
+    <routinesParameter id="_0cxqEKjAEeWk7KZ2XdQZ4Q" name="PageScraperTest"/>
+    <routinesParameter id="_ohn_QK5pEeWt7Ln6p0KPag" name="PageScraperTest_Copy"/>
+    <routinesParameter id="_uaBjsKL9EeWyoeGNf8RevA" name="PageScraper"/>
+    <routinesParameter id="_NOi2UL-FEeWmgNFzfW9xGA" name="PageScraper_bid_offer"/>
+    <routinesParameter id="_IbolANSOEeWaBOKfRvQP6Q" name="PageScraper_market_price"/>
+    <routinesParameter id="_mXJM8LxxEeaIx_3yPWU-lg" name="QueryCreation"/>
+    <routinesParameter id="_ddHaULDCEeaJfqG0-L1GDQ" name="QueryCreator"/>
+    <routinesParameter id="_x2FF8OntEeW3ytw6yZxb9g" name="Spain_I90DIA"/>
+    <routinesParameter id="_GWfu8LDAEeaJfqG0-L1GDQ" name="Sqlinsertstmt"/>
+    <routinesParameter id="_mYXUAB1gEeeOFO7LwaomJw" name="Steamtails"/>
+    <routinesParameter id="_Zj8TgJAKEeS5pt80QJ-lyg" name="Substring_ssl_path"/>
+    <routinesParameter id="__bCHIL1AEeardYT6h_WIQw" name="Tableau_Image_Download"/>
+    <routinesParameter id="_7rdeANjfEea0ZZYWiMNiAQ" name="Test111"/>
+    <routinesParameter id="_cKiiQBfHEee6yIlgKhBezw" name="Train_Config"/>
+    <routinesParameter id="_eLKRABfZEee6yIlgKhBezw" name="Train_Configurator"/>
+    <routinesParameter id="_l0JrkFdnEeerGsT5o8zyBg" name="Trains"/>
+    <routinesParameter id="_LPhh0BPFEeexdbfXM6XnYw" name="UOM"/>
+    <routinesParameter id="_YPo3QKMgEeWyoeGNf8RevA" name="UnitArray"/>
+    <routinesParameter id="_Q7jeABlLEee3B-1_17GT0w" name="UpdatesForPlantPlans"/>
+    <routinesParameter id="_B7VwoKuMEeSsT_r6rjuoig" name="UserDefined"/>
+    <routinesParameter id="_Yi7DgPKcEeWIaMYT0k35pg" name="com_ge_datacoe_boxhelper"/>
+    <routinesParameter id="_QsKzoKfxEeOZiNBwFUKsew" name="convertDateFormat"/>
+    <routinesParameter id="_qAoTcGouEeSyGah8667RdQ" name="customRoutinesII"/>
+    <routinesParameter id="_cwjYsGX1EeSB4YnitS8Etw" name="customRoutines"/>
+    <routinesParameter id="_0wVRcGBBEeW5LJowN3hCUw" name="fichierRef"/>
+    <routinesParameter id="_yYDTYNUrEeOb04uaGEm5UA" name="ishJava"/>
+    <routinesParameter id="_CMGowO3iEeaPlJ3lmiLxVA" name="pfd_load"/>
+    <routinesParameter id="_ZChZEGBVEeSqTZT6TnSmHA" name="stringToDouble"/>
+    <routinesParameter id="_YK_e8NQ1EeKQo8vOQHoo0g" name="string_to_date"/>
+    <routinesParameter id="_6-D2EIaXEeSlz9GF_8ZE1w" name="string_trim"/>
+    <routinesParameter id="_8dP48KMgEeWyoeGNf8RevA" name="test1"/>
+    <routinesParameter id="_13a2cLNvEeO16cZM61HkCQ" name="test_FW"/>
+    <routinesParameter id="_z241UFBXEeOKMaQAHUALEA" name="timeline_events_comments_documents"/>
+    <routinesParameter id="_fnthMHQyEeWRuI-p_fGGPw" name="to_UTC"/>
+  </parameters>
+  <node componentName="tSSH" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="192" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tSSH_1"/>
+    <elementParameter field="TEXT" name="HOST" value="context.Talend_Server_Host"/>
+    <elementParameter field="TEXT" name="PORT" value="22"/>
+    <elementParameter field="TEXT" name="USER" value="context.Talend_Server_Username"/>
+    <elementParameter field="CLOSED_LIST" name="AUTH_METHOD" value="PASSWORD"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="8pW6Nmy2kudWOMAhgu+QZP45AUvCLhi6qchu3d8LCLI="/>
+    <elementParameter field="CHECK" name="PTY" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="STANDARDOUTPUT" value="TO_CONSOLE"/>
+    <elementParameter field="CLOSED_LIST" name="ERROROUTPUT" value="TO_CONSOLE"/>
+    <elementParameter field="FILE" name="PRIVATEKEY" show="false" value="&quot;/.ssh/id_dsa&quot;"/>
+    <elementParameter field="PASSWORD" name="PASSPHRASE" show="false" value="wiXuUBxiyoc5L4zXsOuoEQ=="/>
+    <elementParameter field="TEXT" name="COMMANDSEPARATOR" value="&quot;;&quot;"/>
+    <elementParameter field="TABLE" name="COMMANDS">
+      <elementValue elementRef="COMMAND" value="&quot;export s_port=\&quot;&quot;+context.GPDB_SOT_DT_Port+&quot;\&quot;&quot;"/>
+      <elementValue elementRef="COMMAND" value="&quot;export s_host=\&quot;&quot;+context.GPDB_SOT_DT_Server+&quot;\&quot;&quot;"/>
+      <elementValue elementRef="COMMAND" value="&quot;export s_database=\&quot;&quot;+context.GPDB_SOT_DT_Database+&quot;\&quot;&quot;"/>
+      <elementValue elementRef="COMMAND" value="&quot;export s_passw=\&quot;&quot; +context.GPDB_SOT_DT_Password+&quot;\&quot;&quot;"/>
+      <elementValue elementRef="COMMAND" value="&quot;export s_user=\&quot;&quot; + context.GPDB_SOT_DT_Login+&quot;\&quot;&quot;"/>
+      <elementValue elementRef="COMMAND" value="&quot;export s_schema=\&quot;sot_dt&quot;+&quot;\&quot;&quot;"/>
+      <elementValue elementRef="COMMAND" value="&quot;export s_table=\&quot;new_relic_data&quot;+&quot;\&quot;&quot;"/>
+      <elementValue elementRef="COMMAND" value="context.PythonPath + &quot; /data/staging/g00092/lg428035/PW_EM_DT/DT_OpEx/New_Relic_Data/Avail.py&quot;"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="USE_TIMEOUT" value="false"/>
+    <elementParameter field="TEXT" name="TIMEOUT" show="false" value="60"/>
+    <elementParameter field="TEXT" name="LABEL" value="Python to get data from New Relic"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tSSH_1"/>
+  </node>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tSSH_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_5f486dd0-215b-4531-9802-606c52205af6"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>PW71pvMHJlaDysWW+6vseEgn5aSH+YunHXedIktqvn34J4fal6TmUCNIe5Wnz6jmI6aTFJPdPC/z&#13;
+dpcPyRc+qA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_b43a4da3-d405-4f48-a0ee-5ca2fc0ba599"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>NAxs0YP/GyIawf7NUmrJQFG82lsWloSWsTzt/40M4Jab9vSFIeCvjMS96fr16UxvQPE5ChpFAb/E&#13;
+V0H8Ucp2KA==</DigestValue></Reference></SignedInfo><SignatureValue>QdfB7QkMmFp0Yyck2Ec8YTVRUDAkkSVeTeQM8TJ7X2aVRufZMv3GOP6YWRfAVGIe1EUosc5EV8Yq&#13;
+xDWgz0zYfpeYNyIwV4DoKWBXKfh7NjQ3+BJ7hxM2xu7ZQW3yIjHp0lLykWJdBwfdSHcwO/X+57nj&#13;
+/5IKynOaFzSueisoaBVm1Os25OQ7mG+qtPy1NqurhnH2Jp40n4wThuaft3Ggwyi/i9XG4tlbM25y&#13;
+gcoVtCVl98AWcXKHmst66cneHZQXG1L91mZjj45wbrN19cYbiWI60C6bCLXOIeY06HJ9kS31i2Yo&#13;
+MebnA+9Xpj87cSbdTRjX9bD0vmMfwW7NB5B1KA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_b43a4da3-d405-4f48-a0ee-5ca2fc0ba599" Target="#_5f486dd0-215b-4531-9802-606c52205af6"><Timestamp>2020-04-22 08:19:51</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>

@@ -1,0 +1,64 @@
+package routines;
+
+public class Country_name {
+
+   
+    public static String getCountryName(String Country) {
+        String Country_name = null;
+        try {
+        	if(Country!=null && Country.trim().length()>0)
+            {
+            	if (Country.indexOf("_") > 0){
+            		int v_index = Country.lastIndexOf("_");
+            		if (v_index > 15){
+                		Country_name = Country.substring(v_index+1);}
+                	else{
+                		Country_name = "MEXICO";
+                	}}
+                	
+            	}
+            	else{
+            		Country_name = null;
+            }
+        }
+        	catch (Exception e)
+        	{
+        		Country_name = null;
+        	}      	
+        	
+        
+      return Country_name;  
+    }
+    
+    public static String getCountryabbr(String Country) {
+        String Country_abbr = null;
+        try {
+        	if(Country!=null && Country.trim().length()>0)
+            {
+            	if (Country.indexOf("_") > 0){
+            		int v_index = Country.lastIndexOf("_");
+            		if (v_index > 15){
+            			Country_abbr = Country.substring(v_index+1,v_index+3);}
+                	else{
+                		Country_abbr = "MX";
+                	}}
+                	
+            	}
+            	else{
+            		Country_abbr = null;
+            }
+        }
+        	catch (Exception e)
+        	{
+        		Country_abbr = null;
+        	}      	
+        	
+        
+      return Country_abbr;  
+    }
+    /* public static void main(String[] args)
+	{
+		
+		System.out.println(getCountryabbr("DR4_PROCESS_LOAD_CHILE"));
+	}*/
+}

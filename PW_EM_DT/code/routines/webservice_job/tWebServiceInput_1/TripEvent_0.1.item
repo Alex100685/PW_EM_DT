@@ -1,0 +1,1637 @@
+/**
+ * TripEvent.java
+ *
+ * This file was auto-generated from WSDL
+ * by the Apache Axis 1.4 Apr 22, 2006 (06:55:48 PDT) WSDL2Java emitter.
+ */
+
+package routines;
+
+public class TripEvent  implements java.io.Serializable {
+    private java.lang.String actualShutDownDuration;
+
+    private java.lang.String alarmDropName;
+
+    private java.lang.String alarmDropNumber;
+
+    private java.lang.String applicationTripDetected;
+
+    private java.lang.String CODDate;
+
+    private java.lang.String CSAUnit;
+
+    private java.lang.String classType;
+
+    private java.lang.String componentAssociationLevel4;
+
+    private java.lang.String componentAssociationLevel5;
+
+    private java.lang.String componentAssociationLevel6;
+
+    private java.lang.String customerFeedback;
+
+    private java.lang.String customerName;
+
+    private java.lang.String detectionDate;
+
+    private java.lang.String emergencyTripNumber;
+
+    private java.lang.String equipmentName;
+
+    private java.lang.String eventCategory;
+
+    private java.lang.String eventDate;
+
+    private java.lang.String failureCategory;
+
+    private java.lang.String failureModes;
+
+    private java.lang.String finalRootCause;
+
+    private java.lang.String firedStarts;
+
+    private java.lang.String forcedOutageHours;
+
+    private java.lang.String fuel;
+
+    private java.lang.String gasFiredHours;
+
+    private java.lang.String initialRootCause;
+
+    private java.lang.String liquidFiredHours;
+
+    private java.lang.String majorEquipmentAssociation;
+
+    private java.lang.String PCATripCaseNumber;
+
+    private java.lang.String preparedBy;
+
+    private java.lang.String repeatIssue;
+
+    private java.lang.String rootCause1;
+
+    private java.lang.String rootCause2;
+
+    private java.lang.String siteName;
+
+    private java.lang.String subSystemAssociation;
+
+    private java.lang.String systemAssociation;
+
+    private java.lang.String TSNo;
+
+    private java.lang.String totalFiredHours;
+
+    private java.lang.String tripDetectionDate;
+
+    private java.lang.String tripEventLoad;
+
+    private java.lang.String tripEventSpeed;
+
+    private java.lang.String tripLogFiles;
+
+    private java.lang.String unitOperationalStatus;
+
+    public TripEvent() {
+    }
+
+    public TripEvent(
+           java.lang.String actualShutDownDuration,
+           java.lang.String alarmDropName,
+           java.lang.String alarmDropNumber,
+           java.lang.String applicationTripDetected,
+           java.lang.String CODDate,
+           java.lang.String CSAUnit,
+           java.lang.String classType,
+           java.lang.String componentAssociationLevel4,
+           java.lang.String componentAssociationLevel5,
+           java.lang.String componentAssociationLevel6,
+           java.lang.String customerFeedback,
+           java.lang.String customerName,
+           java.lang.String detectionDate,
+           java.lang.String emergencyTripNumber,
+           java.lang.String equipmentName,
+           java.lang.String eventCategory,
+           java.lang.String eventDate,
+           java.lang.String failureCategory,
+           java.lang.String failureModes,
+           java.lang.String finalRootCause,
+           java.lang.String firedStarts,
+           java.lang.String forcedOutageHours,
+           java.lang.String fuel,
+           java.lang.String gasFiredHours,
+           java.lang.String initialRootCause,
+           java.lang.String liquidFiredHours,
+           java.lang.String majorEquipmentAssociation,
+           java.lang.String PCATripCaseNumber,
+           java.lang.String preparedBy,
+           java.lang.String repeatIssue,
+           java.lang.String rootCause1,
+           java.lang.String rootCause2,
+           java.lang.String siteName,
+           java.lang.String subSystemAssociation,
+           java.lang.String systemAssociation,
+           java.lang.String TSNo,
+           java.lang.String totalFiredHours,
+           java.lang.String tripDetectionDate,
+           java.lang.String tripEventLoad,
+           java.lang.String tripEventSpeed,
+           java.lang.String tripLogFiles,
+           java.lang.String unitOperationalStatus) {
+           this.actualShutDownDuration = actualShutDownDuration;
+           this.alarmDropName = alarmDropName;
+           this.alarmDropNumber = alarmDropNumber;
+           this.applicationTripDetected = applicationTripDetected;
+           this.CODDate = CODDate;
+           this.CSAUnit = CSAUnit;
+           this.classType = classType;
+           this.componentAssociationLevel4 = componentAssociationLevel4;
+           this.componentAssociationLevel5 = componentAssociationLevel5;
+           this.componentAssociationLevel6 = componentAssociationLevel6;
+           this.customerFeedback = customerFeedback;
+           this.customerName = customerName;
+           this.detectionDate = detectionDate;
+           this.emergencyTripNumber = emergencyTripNumber;
+           this.equipmentName = equipmentName;
+           this.eventCategory = eventCategory;
+           this.eventDate = eventDate;
+           this.failureCategory = failureCategory;
+           this.failureModes = failureModes;
+           this.finalRootCause = finalRootCause;
+           this.firedStarts = firedStarts;
+           this.forcedOutageHours = forcedOutageHours;
+           this.fuel = fuel;
+           this.gasFiredHours = gasFiredHours;
+           this.initialRootCause = initialRootCause;
+           this.liquidFiredHours = liquidFiredHours;
+           this.majorEquipmentAssociation = majorEquipmentAssociation;
+           this.PCATripCaseNumber = PCATripCaseNumber;
+           this.preparedBy = preparedBy;
+           this.repeatIssue = repeatIssue;
+           this.rootCause1 = rootCause1;
+           this.rootCause2 = rootCause2;
+           this.siteName = siteName;
+           this.subSystemAssociation = subSystemAssociation;
+           this.systemAssociation = systemAssociation;
+           this.TSNo = TSNo;
+           this.totalFiredHours = totalFiredHours;
+           this.tripDetectionDate = tripDetectionDate;
+           this.tripEventLoad = tripEventLoad;
+           this.tripEventSpeed = tripEventSpeed;
+           this.tripLogFiles = tripLogFiles;
+           this.unitOperationalStatus = unitOperationalStatus;
+    }
+
+
+    /**
+     * Gets the actualShutDownDuration value for this TripEvent.
+     * 
+     * @return actualShutDownDuration
+     */
+    public java.lang.String getActualShutDownDuration() {
+        return actualShutDownDuration;
+    }
+
+
+    /**
+     * Sets the actualShutDownDuration value for this TripEvent.
+     * 
+     * @param actualShutDownDuration
+     */
+    public void setActualShutDownDuration(java.lang.String actualShutDownDuration) {
+        this.actualShutDownDuration = actualShutDownDuration;
+    }
+
+
+    /**
+     * Gets the alarmDropName value for this TripEvent.
+     * 
+     * @return alarmDropName
+     */
+    public java.lang.String getAlarmDropName() {
+        return alarmDropName;
+    }
+
+
+    /**
+     * Sets the alarmDropName value for this TripEvent.
+     * 
+     * @param alarmDropName
+     */
+    public void setAlarmDropName(java.lang.String alarmDropName) {
+        this.alarmDropName = alarmDropName;
+    }
+
+
+    /**
+     * Gets the alarmDropNumber value for this TripEvent.
+     * 
+     * @return alarmDropNumber
+     */
+    public java.lang.String getAlarmDropNumber() {
+        return alarmDropNumber;
+    }
+
+
+    /**
+     * Sets the alarmDropNumber value for this TripEvent.
+     * 
+     * @param alarmDropNumber
+     */
+    public void setAlarmDropNumber(java.lang.String alarmDropNumber) {
+        this.alarmDropNumber = alarmDropNumber;
+    }
+
+
+    /**
+     * Gets the applicationTripDetected value for this TripEvent.
+     * 
+     * @return applicationTripDetected
+     */
+    public java.lang.String getApplicationTripDetected() {
+        return applicationTripDetected;
+    }
+
+
+    /**
+     * Sets the applicationTripDetected value for this TripEvent.
+     * 
+     * @param applicationTripDetected
+     */
+    public void setApplicationTripDetected(java.lang.String applicationTripDetected) {
+        this.applicationTripDetected = applicationTripDetected;
+    }
+
+
+    /**
+     * Gets the CODDate value for this TripEvent.
+     * 
+     * @return CODDate
+     */
+    public java.lang.String getCODDate() {
+        return CODDate;
+    }
+
+
+    /**
+     * Sets the CODDate value for this TripEvent.
+     * 
+     * @param CODDate
+     */
+    public void setCODDate(java.lang.String CODDate) {
+        this.CODDate = CODDate;
+    }
+
+
+    /**
+     * Gets the CSAUnit value for this TripEvent.
+     * 
+     * @return CSAUnit
+     */
+    public java.lang.String getCSAUnit() {
+        return CSAUnit;
+    }
+
+
+    /**
+     * Sets the CSAUnit value for this TripEvent.
+     * 
+     * @param CSAUnit
+     */
+    public void setCSAUnit(java.lang.String CSAUnit) {
+        this.CSAUnit = CSAUnit;
+    }
+
+
+    /**
+     * Gets the classType value for this TripEvent.
+     * 
+     * @return classType
+     */
+    public java.lang.String getClassType() {
+        return classType;
+    }
+
+
+    /**
+     * Sets the classType value for this TripEvent.
+     * 
+     * @param classType
+     */
+    public void setClassType(java.lang.String classType) {
+        this.classType = classType;
+    }
+
+
+    /**
+     * Gets the componentAssociationLevel4 value for this TripEvent.
+     * 
+     * @return componentAssociationLevel4
+     */
+    public java.lang.String getComponentAssociationLevel4() {
+        return componentAssociationLevel4;
+    }
+
+
+    /**
+     * Sets the componentAssociationLevel4 value for this TripEvent.
+     * 
+     * @param componentAssociationLevel4
+     */
+    public void setComponentAssociationLevel4(java.lang.String componentAssociationLevel4) {
+        this.componentAssociationLevel4 = componentAssociationLevel4;
+    }
+
+
+    /**
+     * Gets the componentAssociationLevel5 value for this TripEvent.
+     * 
+     * @return componentAssociationLevel5
+     */
+    public java.lang.String getComponentAssociationLevel5() {
+        return componentAssociationLevel5;
+    }
+
+
+    /**
+     * Sets the componentAssociationLevel5 value for this TripEvent.
+     * 
+     * @param componentAssociationLevel5
+     */
+    public void setComponentAssociationLevel5(java.lang.String componentAssociationLevel5) {
+        this.componentAssociationLevel5 = componentAssociationLevel5;
+    }
+
+
+    /**
+     * Gets the componentAssociationLevel6 value for this TripEvent.
+     * 
+     * @return componentAssociationLevel6
+     */
+    public java.lang.String getComponentAssociationLevel6() {
+        return componentAssociationLevel6;
+    }
+
+
+    /**
+     * Sets the componentAssociationLevel6 value for this TripEvent.
+     * 
+     * @param componentAssociationLevel6
+     */
+    public void setComponentAssociationLevel6(java.lang.String componentAssociationLevel6) {
+        this.componentAssociationLevel6 = componentAssociationLevel6;
+    }
+
+
+    /**
+     * Gets the customerFeedback value for this TripEvent.
+     * 
+     * @return customerFeedback
+     */
+    public java.lang.String getCustomerFeedback() {
+        return customerFeedback;
+    }
+
+
+    /**
+     * Sets the customerFeedback value for this TripEvent.
+     * 
+     * @param customerFeedback
+     */
+    public void setCustomerFeedback(java.lang.String customerFeedback) {
+        this.customerFeedback = customerFeedback;
+    }
+
+
+    /**
+     * Gets the customerName value for this TripEvent.
+     * 
+     * @return customerName
+     */
+    public java.lang.String getCustomerName() {
+        return customerName;
+    }
+
+
+    /**
+     * Sets the customerName value for this TripEvent.
+     * 
+     * @param customerName
+     */
+    public void setCustomerName(java.lang.String customerName) {
+        this.customerName = customerName;
+    }
+
+
+    /**
+     * Gets the detectionDate value for this TripEvent.
+     * 
+     * @return detectionDate
+     */
+    public java.lang.String getDetectionDate() {
+        return detectionDate;
+    }
+
+
+    /**
+     * Sets the detectionDate value for this TripEvent.
+     * 
+     * @param detectionDate
+     */
+    public void setDetectionDate(java.lang.String detectionDate) {
+        this.detectionDate = detectionDate;
+    }
+
+
+    /**
+     * Gets the emergencyTripNumber value for this TripEvent.
+     * 
+     * @return emergencyTripNumber
+     */
+    public java.lang.String getEmergencyTripNumber() {
+        return emergencyTripNumber;
+    }
+
+
+    /**
+     * Sets the emergencyTripNumber value for this TripEvent.
+     * 
+     * @param emergencyTripNumber
+     */
+    public void setEmergencyTripNumber(java.lang.String emergencyTripNumber) {
+        this.emergencyTripNumber = emergencyTripNumber;
+    }
+
+
+    /**
+     * Gets the equipmentName value for this TripEvent.
+     * 
+     * @return equipmentName
+     */
+    public java.lang.String getEquipmentName() {
+        return equipmentName;
+    }
+
+
+    /**
+     * Sets the equipmentName value for this TripEvent.
+     * 
+     * @param equipmentName
+     */
+    public void setEquipmentName(java.lang.String equipmentName) {
+        this.equipmentName = equipmentName;
+    }
+
+
+    /**
+     * Gets the eventCategory value for this TripEvent.
+     * 
+     * @return eventCategory
+     */
+    public java.lang.String getEventCategory() {
+        return eventCategory;
+    }
+
+
+    /**
+     * Sets the eventCategory value for this TripEvent.
+     * 
+     * @param eventCategory
+     */
+    public void setEventCategory(java.lang.String eventCategory) {
+        this.eventCategory = eventCategory;
+    }
+
+
+    /**
+     * Gets the eventDate value for this TripEvent.
+     * 
+     * @return eventDate
+     */
+    public java.lang.String getEventDate() {
+        return eventDate;
+    }
+
+
+    /**
+     * Sets the eventDate value for this TripEvent.
+     * 
+     * @param eventDate
+     */
+    public void setEventDate(java.lang.String eventDate) {
+        this.eventDate = eventDate;
+    }
+
+
+    /**
+     * Gets the failureCategory value for this TripEvent.
+     * 
+     * @return failureCategory
+     */
+    public java.lang.String getFailureCategory() {
+        return failureCategory;
+    }
+
+
+    /**
+     * Sets the failureCategory value for this TripEvent.
+     * 
+     * @param failureCategory
+     */
+    public void setFailureCategory(java.lang.String failureCategory) {
+        this.failureCategory = failureCategory;
+    }
+
+
+    /**
+     * Gets the failureModes value for this TripEvent.
+     * 
+     * @return failureModes
+     */
+    public java.lang.String getFailureModes() {
+        return failureModes;
+    }
+
+
+    /**
+     * Sets the failureModes value for this TripEvent.
+     * 
+     * @param failureModes
+     */
+    public void setFailureModes(java.lang.String failureModes) {
+        this.failureModes = failureModes;
+    }
+
+
+    /**
+     * Gets the finalRootCause value for this TripEvent.
+     * 
+     * @return finalRootCause
+     */
+    public java.lang.String getFinalRootCause() {
+        return finalRootCause;
+    }
+
+
+    /**
+     * Sets the finalRootCause value for this TripEvent.
+     * 
+     * @param finalRootCause
+     */
+    public void setFinalRootCause(java.lang.String finalRootCause) {
+        this.finalRootCause = finalRootCause;
+    }
+
+
+    /**
+     * Gets the firedStarts value for this TripEvent.
+     * 
+     * @return firedStarts
+     */
+    public java.lang.String getFiredStarts() {
+        return firedStarts;
+    }
+
+
+    /**
+     * Sets the firedStarts value for this TripEvent.
+     * 
+     * @param firedStarts
+     */
+    public void setFiredStarts(java.lang.String firedStarts) {
+        this.firedStarts = firedStarts;
+    }
+
+
+    /**
+     * Gets the forcedOutageHours value for this TripEvent.
+     * 
+     * @return forcedOutageHours
+     */
+    public java.lang.String getForcedOutageHours() {
+        return forcedOutageHours;
+    }
+
+
+    /**
+     * Sets the forcedOutageHours value for this TripEvent.
+     * 
+     * @param forcedOutageHours
+     */
+    public void setForcedOutageHours(java.lang.String forcedOutageHours) {
+        this.forcedOutageHours = forcedOutageHours;
+    }
+
+
+    /**
+     * Gets the fuel value for this TripEvent.
+     * 
+     * @return fuel
+     */
+    public java.lang.String getFuel() {
+        return fuel;
+    }
+
+
+    /**
+     * Sets the fuel value for this TripEvent.
+     * 
+     * @param fuel
+     */
+    public void setFuel(java.lang.String fuel) {
+        this.fuel = fuel;
+    }
+
+
+    /**
+     * Gets the gasFiredHours value for this TripEvent.
+     * 
+     * @return gasFiredHours
+     */
+    public java.lang.String getGasFiredHours() {
+        return gasFiredHours;
+    }
+
+
+    /**
+     * Sets the gasFiredHours value for this TripEvent.
+     * 
+     * @param gasFiredHours
+     */
+    public void setGasFiredHours(java.lang.String gasFiredHours) {
+        this.gasFiredHours = gasFiredHours;
+    }
+
+
+    /**
+     * Gets the initialRootCause value for this TripEvent.
+     * 
+     * @return initialRootCause
+     */
+    public java.lang.String getInitialRootCause() {
+        return initialRootCause;
+    }
+
+
+    /**
+     * Sets the initialRootCause value for this TripEvent.
+     * 
+     * @param initialRootCause
+     */
+    public void setInitialRootCause(java.lang.String initialRootCause) {
+        this.initialRootCause = initialRootCause;
+    }
+
+
+    /**
+     * Gets the liquidFiredHours value for this TripEvent.
+     * 
+     * @return liquidFiredHours
+     */
+    public java.lang.String getLiquidFiredHours() {
+        return liquidFiredHours;
+    }
+
+
+    /**
+     * Sets the liquidFiredHours value for this TripEvent.
+     * 
+     * @param liquidFiredHours
+     */
+    public void setLiquidFiredHours(java.lang.String liquidFiredHours) {
+        this.liquidFiredHours = liquidFiredHours;
+    }
+
+
+    /**
+     * Gets the majorEquipmentAssociation value for this TripEvent.
+     * 
+     * @return majorEquipmentAssociation
+     */
+    public java.lang.String getMajorEquipmentAssociation() {
+        return majorEquipmentAssociation;
+    }
+
+
+    /**
+     * Sets the majorEquipmentAssociation value for this TripEvent.
+     * 
+     * @param majorEquipmentAssociation
+     */
+    public void setMajorEquipmentAssociation(java.lang.String majorEquipmentAssociation) {
+        this.majorEquipmentAssociation = majorEquipmentAssociation;
+    }
+
+
+    /**
+     * Gets the PCATripCaseNumber value for this TripEvent.
+     * 
+     * @return PCATripCaseNumber
+     */
+    public java.lang.String getPCATripCaseNumber() {
+        return PCATripCaseNumber;
+    }
+
+
+    /**
+     * Sets the PCATripCaseNumber value for this TripEvent.
+     * 
+     * @param PCATripCaseNumber
+     */
+    public void setPCATripCaseNumber(java.lang.String PCATripCaseNumber) {
+        this.PCATripCaseNumber = PCATripCaseNumber;
+    }
+
+
+    /**
+     * Gets the preparedBy value for this TripEvent.
+     * 
+     * @return preparedBy
+     */
+    public java.lang.String getPreparedBy() {
+        return preparedBy;
+    }
+
+
+    /**
+     * Sets the preparedBy value for this TripEvent.
+     * 
+     * @param preparedBy
+     */
+    public void setPreparedBy(java.lang.String preparedBy) {
+        this.preparedBy = preparedBy;
+    }
+
+
+    /**
+     * Gets the repeatIssue value for this TripEvent.
+     * 
+     * @return repeatIssue
+     */
+    public java.lang.String getRepeatIssue() {
+        return repeatIssue;
+    }
+
+
+    /**
+     * Sets the repeatIssue value for this TripEvent.
+     * 
+     * @param repeatIssue
+     */
+    public void setRepeatIssue(java.lang.String repeatIssue) {
+        this.repeatIssue = repeatIssue;
+    }
+
+
+    /**
+     * Gets the rootCause1 value for this TripEvent.
+     * 
+     * @return rootCause1
+     */
+    public java.lang.String getRootCause1() {
+        return rootCause1;
+    }
+
+
+    /**
+     * Sets the rootCause1 value for this TripEvent.
+     * 
+     * @param rootCause1
+     */
+    public void setRootCause1(java.lang.String rootCause1) {
+        this.rootCause1 = rootCause1;
+    }
+
+
+    /**
+     * Gets the rootCause2 value for this TripEvent.
+     * 
+     * @return rootCause2
+     */
+    public java.lang.String getRootCause2() {
+        return rootCause2;
+    }
+
+
+    /**
+     * Sets the rootCause2 value for this TripEvent.
+     * 
+     * @param rootCause2
+     */
+    public void setRootCause2(java.lang.String rootCause2) {
+        this.rootCause2 = rootCause2;
+    }
+
+
+    /**
+     * Gets the siteName value for this TripEvent.
+     * 
+     * @return siteName
+     */
+    public java.lang.String getSiteName() {
+        return siteName;
+    }
+
+
+    /**
+     * Sets the siteName value for this TripEvent.
+     * 
+     * @param siteName
+     */
+    public void setSiteName(java.lang.String siteName) {
+        this.siteName = siteName;
+    }
+
+
+    /**
+     * Gets the subSystemAssociation value for this TripEvent.
+     * 
+     * @return subSystemAssociation
+     */
+    public java.lang.String getSubSystemAssociation() {
+        return subSystemAssociation;
+    }
+
+
+    /**
+     * Sets the subSystemAssociation value for this TripEvent.
+     * 
+     * @param subSystemAssociation
+     */
+    public void setSubSystemAssociation(java.lang.String subSystemAssociation) {
+        this.subSystemAssociation = subSystemAssociation;
+    }
+
+
+    /**
+     * Gets the systemAssociation value for this TripEvent.
+     * 
+     * @return systemAssociation
+     */
+    public java.lang.String getSystemAssociation() {
+        return systemAssociation;
+    }
+
+
+    /**
+     * Sets the systemAssociation value for this TripEvent.
+     * 
+     * @param systemAssociation
+     */
+    public void setSystemAssociation(java.lang.String systemAssociation) {
+        this.systemAssociation = systemAssociation;
+    }
+
+
+    /**
+     * Gets the TSNo value for this TripEvent.
+     * 
+     * @return TSNo
+     */
+    public java.lang.String getTSNo() {
+        return TSNo;
+    }
+
+
+    /**
+     * Sets the TSNo value for this TripEvent.
+     * 
+     * @param TSNo
+     */
+    public void setTSNo(java.lang.String TSNo) {
+        this.TSNo = TSNo;
+    }
+
+
+    /**
+     * Gets the totalFiredHours value for this TripEvent.
+     * 
+     * @return totalFiredHours
+     */
+    public java.lang.String getTotalFiredHours() {
+        return totalFiredHours;
+    }
+
+
+    /**
+     * Sets the totalFiredHours value for this TripEvent.
+     * 
+     * @param totalFiredHours
+     */
+    public void setTotalFiredHours(java.lang.String totalFiredHours) {
+        this.totalFiredHours = totalFiredHours;
+    }
+
+
+    /**
+     * Gets the tripDetectionDate value for this TripEvent.
+     * 
+     * @return tripDetectionDate
+     */
+    public java.lang.String getTripDetectionDate() {
+        return tripDetectionDate;
+    }
+
+
+    /**
+     * Sets the tripDetectionDate value for this TripEvent.
+     * 
+     * @param tripDetectionDate
+     */
+    public void setTripDetectionDate(java.lang.String tripDetectionDate) {
+        this.tripDetectionDate = tripDetectionDate;
+    }
+
+
+    /**
+     * Gets the tripEventLoad value for this TripEvent.
+     * 
+     * @return tripEventLoad
+     */
+    public java.lang.String getTripEventLoad() {
+        return tripEventLoad;
+    }
+
+
+    /**
+     * Sets the tripEventLoad value for this TripEvent.
+     * 
+     * @param tripEventLoad
+     */
+    public void setTripEventLoad(java.lang.String tripEventLoad) {
+        this.tripEventLoad = tripEventLoad;
+    }
+
+
+    /**
+     * Gets the tripEventSpeed value for this TripEvent.
+     * 
+     * @return tripEventSpeed
+     */
+    public java.lang.String getTripEventSpeed() {
+        return tripEventSpeed;
+    }
+
+
+    /**
+     * Sets the tripEventSpeed value for this TripEvent.
+     * 
+     * @param tripEventSpeed
+     */
+    public void setTripEventSpeed(java.lang.String tripEventSpeed) {
+        this.tripEventSpeed = tripEventSpeed;
+    }
+
+
+    /**
+     * Gets the tripLogFiles value for this TripEvent.
+     * 
+     * @return tripLogFiles
+     */
+    public java.lang.String getTripLogFiles() {
+        return tripLogFiles;
+    }
+
+
+    /**
+     * Sets the tripLogFiles value for this TripEvent.
+     * 
+     * @param tripLogFiles
+     */
+    public void setTripLogFiles(java.lang.String tripLogFiles) {
+        this.tripLogFiles = tripLogFiles;
+    }
+
+
+    /**
+     * Gets the unitOperationalStatus value for this TripEvent.
+     * 
+     * @return unitOperationalStatus
+     */
+    public java.lang.String getUnitOperationalStatus() {
+        return unitOperationalStatus;
+    }
+
+
+    /**
+     * Sets the unitOperationalStatus value for this TripEvent.
+     * 
+     * @param unitOperationalStatus
+     */
+    public void setUnitOperationalStatus(java.lang.String unitOperationalStatus) {
+        this.unitOperationalStatus = unitOperationalStatus;
+    }
+
+    private java.lang.Object __equalsCalc = null;
+    public synchronized boolean equals(java.lang.Object obj) {
+        if (!(obj instanceof TripEvent)) return false;
+        TripEvent other = (TripEvent) obj;
+        if (obj == null) return false;
+        if (this == obj) return true;
+        if (__equalsCalc != null) {
+            return (__equalsCalc == obj);
+        }
+        __equalsCalc = obj;
+        boolean _equals;
+        _equals = true && 
+            ((this.actualShutDownDuration==null && other.getActualShutDownDuration()==null) || 
+             (this.actualShutDownDuration!=null &&
+              this.actualShutDownDuration.equals(other.getActualShutDownDuration()))) &&
+            ((this.alarmDropName==null && other.getAlarmDropName()==null) || 
+             (this.alarmDropName!=null &&
+              this.alarmDropName.equals(other.getAlarmDropName()))) &&
+            ((this.alarmDropNumber==null && other.getAlarmDropNumber()==null) || 
+             (this.alarmDropNumber!=null &&
+              this.alarmDropNumber.equals(other.getAlarmDropNumber()))) &&
+            ((this.applicationTripDetected==null && other.getApplicationTripDetected()==null) || 
+             (this.applicationTripDetected!=null &&
+              this.applicationTripDetected.equals(other.getApplicationTripDetected()))) &&
+            ((this.CODDate==null && other.getCODDate()==null) || 
+             (this.CODDate!=null &&
+              this.CODDate.equals(other.getCODDate()))) &&
+            ((this.CSAUnit==null && other.getCSAUnit()==null) || 
+             (this.CSAUnit!=null &&
+              this.CSAUnit.equals(other.getCSAUnit()))) &&
+            ((this.classType==null && other.getClassType()==null) || 
+             (this.classType!=null &&
+              this.classType.equals(other.getClassType()))) &&
+            ((this.componentAssociationLevel4==null && other.getComponentAssociationLevel4()==null) || 
+             (this.componentAssociationLevel4!=null &&
+              this.componentAssociationLevel4.equals(other.getComponentAssociationLevel4()))) &&
+            ((this.componentAssociationLevel5==null && other.getComponentAssociationLevel5()==null) || 
+             (this.componentAssociationLevel5!=null &&
+              this.componentAssociationLevel5.equals(other.getComponentAssociationLevel5()))) &&
+            ((this.componentAssociationLevel6==null && other.getComponentAssociationLevel6()==null) || 
+             (this.componentAssociationLevel6!=null &&
+              this.componentAssociationLevel6.equals(other.getComponentAssociationLevel6()))) &&
+            ((this.customerFeedback==null && other.getCustomerFeedback()==null) || 
+             (this.customerFeedback!=null &&
+              this.customerFeedback.equals(other.getCustomerFeedback()))) &&
+            ((this.customerName==null && other.getCustomerName()==null) || 
+             (this.customerName!=null &&
+              this.customerName.equals(other.getCustomerName()))) &&
+            ((this.detectionDate==null && other.getDetectionDate()==null) || 
+             (this.detectionDate!=null &&
+              this.detectionDate.equals(other.getDetectionDate()))) &&
+            ((this.emergencyTripNumber==null && other.getEmergencyTripNumber()==null) || 
+             (this.emergencyTripNumber!=null &&
+              this.emergencyTripNumber.equals(other.getEmergencyTripNumber()))) &&
+            ((this.equipmentName==null && other.getEquipmentName()==null) || 
+             (this.equipmentName!=null &&
+              this.equipmentName.equals(other.getEquipmentName()))) &&
+            ((this.eventCategory==null && other.getEventCategory()==null) || 
+             (this.eventCategory!=null &&
+              this.eventCategory.equals(other.getEventCategory()))) &&
+            ((this.eventDate==null && other.getEventDate()==null) || 
+             (this.eventDate!=null &&
+              this.eventDate.equals(other.getEventDate()))) &&
+            ((this.failureCategory==null && other.getFailureCategory()==null) || 
+             (this.failureCategory!=null &&
+              this.failureCategory.equals(other.getFailureCategory()))) &&
+            ((this.failureModes==null && other.getFailureModes()==null) || 
+             (this.failureModes!=null &&
+              this.failureModes.equals(other.getFailureModes()))) &&
+            ((this.finalRootCause==null && other.getFinalRootCause()==null) || 
+             (this.finalRootCause!=null &&
+              this.finalRootCause.equals(other.getFinalRootCause()))) &&
+            ((this.firedStarts==null && other.getFiredStarts()==null) || 
+             (this.firedStarts!=null &&
+              this.firedStarts.equals(other.getFiredStarts()))) &&
+            ((this.forcedOutageHours==null && other.getForcedOutageHours()==null) || 
+             (this.forcedOutageHours!=null &&
+              this.forcedOutageHours.equals(other.getForcedOutageHours()))) &&
+            ((this.fuel==null && other.getFuel()==null) || 
+             (this.fuel!=null &&
+              this.fuel.equals(other.getFuel()))) &&
+            ((this.gasFiredHours==null && other.getGasFiredHours()==null) || 
+             (this.gasFiredHours!=null &&
+              this.gasFiredHours.equals(other.getGasFiredHours()))) &&
+            ((this.initialRootCause==null && other.getInitialRootCause()==null) || 
+             (this.initialRootCause!=null &&
+              this.initialRootCause.equals(other.getInitialRootCause()))) &&
+            ((this.liquidFiredHours==null && other.getLiquidFiredHours()==null) || 
+             (this.liquidFiredHours!=null &&
+              this.liquidFiredHours.equals(other.getLiquidFiredHours()))) &&
+            ((this.majorEquipmentAssociation==null && other.getMajorEquipmentAssociation()==null) || 
+             (this.majorEquipmentAssociation!=null &&
+              this.majorEquipmentAssociation.equals(other.getMajorEquipmentAssociation()))) &&
+            ((this.PCATripCaseNumber==null && other.getPCATripCaseNumber()==null) || 
+             (this.PCATripCaseNumber!=null &&
+              this.PCATripCaseNumber.equals(other.getPCATripCaseNumber()))) &&
+            ((this.preparedBy==null && other.getPreparedBy()==null) || 
+             (this.preparedBy!=null &&
+              this.preparedBy.equals(other.getPreparedBy()))) &&
+            ((this.repeatIssue==null && other.getRepeatIssue()==null) || 
+             (this.repeatIssue!=null &&
+              this.repeatIssue.equals(other.getRepeatIssue()))) &&
+            ((this.rootCause1==null && other.getRootCause1()==null) || 
+             (this.rootCause1!=null &&
+              this.rootCause1.equals(other.getRootCause1()))) &&
+            ((this.rootCause2==null && other.getRootCause2()==null) || 
+             (this.rootCause2!=null &&
+              this.rootCause2.equals(other.getRootCause2()))) &&
+            ((this.siteName==null && other.getSiteName()==null) || 
+             (this.siteName!=null &&
+              this.siteName.equals(other.getSiteName()))) &&
+            ((this.subSystemAssociation==null && other.getSubSystemAssociation()==null) || 
+             (this.subSystemAssociation!=null &&
+              this.subSystemAssociation.equals(other.getSubSystemAssociation()))) &&
+            ((this.systemAssociation==null && other.getSystemAssociation()==null) || 
+             (this.systemAssociation!=null &&
+              this.systemAssociation.equals(other.getSystemAssociation()))) &&
+            ((this.TSNo==null && other.getTSNo()==null) || 
+             (this.TSNo!=null &&
+              this.TSNo.equals(other.getTSNo()))) &&
+            ((this.totalFiredHours==null && other.getTotalFiredHours()==null) || 
+             (this.totalFiredHours!=null &&
+              this.totalFiredHours.equals(other.getTotalFiredHours()))) &&
+            ((this.tripDetectionDate==null && other.getTripDetectionDate()==null) || 
+             (this.tripDetectionDate!=null &&
+              this.tripDetectionDate.equals(other.getTripDetectionDate()))) &&
+            ((this.tripEventLoad==null && other.getTripEventLoad()==null) || 
+             (this.tripEventLoad!=null &&
+              this.tripEventLoad.equals(other.getTripEventLoad()))) &&
+            ((this.tripEventSpeed==null && other.getTripEventSpeed()==null) || 
+             (this.tripEventSpeed!=null &&
+              this.tripEventSpeed.equals(other.getTripEventSpeed()))) &&
+            ((this.tripLogFiles==null && other.getTripLogFiles()==null) || 
+             (this.tripLogFiles!=null &&
+              this.tripLogFiles.equals(other.getTripLogFiles()))) &&
+            ((this.unitOperationalStatus==null && other.getUnitOperationalStatus()==null) || 
+             (this.unitOperationalStatus!=null &&
+              this.unitOperationalStatus.equals(other.getUnitOperationalStatus())));
+        __equalsCalc = null;
+        return _equals;
+    }
+
+    private boolean __hashCodeCalc = false;
+    public synchronized int hashCode() {
+        if (__hashCodeCalc) {
+            return 0;
+        }
+        __hashCodeCalc = true;
+        int _hashCode = 1;
+        if (getActualShutDownDuration() != null) {
+            _hashCode += getActualShutDownDuration().hashCode();
+        }
+        if (getAlarmDropName() != null) {
+            _hashCode += getAlarmDropName().hashCode();
+        }
+        if (getAlarmDropNumber() != null) {
+            _hashCode += getAlarmDropNumber().hashCode();
+        }
+        if (getApplicationTripDetected() != null) {
+            _hashCode += getApplicationTripDetected().hashCode();
+        }
+        if (getCODDate() != null) {
+            _hashCode += getCODDate().hashCode();
+        }
+        if (getCSAUnit() != null) {
+            _hashCode += getCSAUnit().hashCode();
+        }
+        if (getClassType() != null) {
+            _hashCode += getClassType().hashCode();
+        }
+        if (getComponentAssociationLevel4() != null) {
+            _hashCode += getComponentAssociationLevel4().hashCode();
+        }
+        if (getComponentAssociationLevel5() != null) {
+            _hashCode += getComponentAssociationLevel5().hashCode();
+        }
+        if (getComponentAssociationLevel6() != null) {
+            _hashCode += getComponentAssociationLevel6().hashCode();
+        }
+        if (getCustomerFeedback() != null) {
+            _hashCode += getCustomerFeedback().hashCode();
+        }
+        if (getCustomerName() != null) {
+            _hashCode += getCustomerName().hashCode();
+        }
+        if (getDetectionDate() != null) {
+            _hashCode += getDetectionDate().hashCode();
+        }
+        if (getEmergencyTripNumber() != null) {
+            _hashCode += getEmergencyTripNumber().hashCode();
+        }
+        if (getEquipmentName() != null) {
+            _hashCode += getEquipmentName().hashCode();
+        }
+        if (getEventCategory() != null) {
+            _hashCode += getEventCategory().hashCode();
+        }
+        if (getEventDate() != null) {
+            _hashCode += getEventDate().hashCode();
+        }
+        if (getFailureCategory() != null) {
+            _hashCode += getFailureCategory().hashCode();
+        }
+        if (getFailureModes() != null) {
+            _hashCode += getFailureModes().hashCode();
+        }
+        if (getFinalRootCause() != null) {
+            _hashCode += getFinalRootCause().hashCode();
+        }
+        if (getFiredStarts() != null) {
+            _hashCode += getFiredStarts().hashCode();
+        }
+        if (getForcedOutageHours() != null) {
+            _hashCode += getForcedOutageHours().hashCode();
+        }
+        if (getFuel() != null) {
+            _hashCode += getFuel().hashCode();
+        }
+        if (getGasFiredHours() != null) {
+            _hashCode += getGasFiredHours().hashCode();
+        }
+        if (getInitialRootCause() != null) {
+            _hashCode += getInitialRootCause().hashCode();
+        }
+        if (getLiquidFiredHours() != null) {
+            _hashCode += getLiquidFiredHours().hashCode();
+        }
+        if (getMajorEquipmentAssociation() != null) {
+            _hashCode += getMajorEquipmentAssociation().hashCode();
+        }
+        if (getPCATripCaseNumber() != null) {
+            _hashCode += getPCATripCaseNumber().hashCode();
+        }
+        if (getPreparedBy() != null) {
+            _hashCode += getPreparedBy().hashCode();
+        }
+        if (getRepeatIssue() != null) {
+            _hashCode += getRepeatIssue().hashCode();
+        }
+        if (getRootCause1() != null) {
+            _hashCode += getRootCause1().hashCode();
+        }
+        if (getRootCause2() != null) {
+            _hashCode += getRootCause2().hashCode();
+        }
+        if (getSiteName() != null) {
+            _hashCode += getSiteName().hashCode();
+        }
+        if (getSubSystemAssociation() != null) {
+            _hashCode += getSubSystemAssociation().hashCode();
+        }
+        if (getSystemAssociation() != null) {
+            _hashCode += getSystemAssociation().hashCode();
+        }
+        if (getTSNo() != null) {
+            _hashCode += getTSNo().hashCode();
+        }
+        if (getTotalFiredHours() != null) {
+            _hashCode += getTotalFiredHours().hashCode();
+        }
+        if (getTripDetectionDate() != null) {
+            _hashCode += getTripDetectionDate().hashCode();
+        }
+        if (getTripEventLoad() != null) {
+            _hashCode += getTripEventLoad().hashCode();
+        }
+        if (getTripEventSpeed() != null) {
+            _hashCode += getTripEventSpeed().hashCode();
+        }
+        if (getTripLogFiles() != null) {
+            _hashCode += getTripLogFiles().hashCode();
+        }
+        if (getUnitOperationalStatus() != null) {
+            _hashCode += getUnitOperationalStatus().hashCode();
+        }
+        __hashCodeCalc = false;
+        return _hashCode;
+    }
+
+    // Type metadata
+    private static org.apache.axis.description.TypeDesc typeDesc =
+        new org.apache.axis.description.TypeDesc(TripEvent.class, true);
+
+    static {
+        typeDesc.setXmlType(new javax.xml.namespace.QName("http://Www.GE.Com/Energy/Equipmenthealth/ServicesContract/2010/10", "TripEvent"));
+        org.apache.axis.description.ElementDesc elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("actualShutDownDuration");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://Www.GE.Com/Energy/Equipmenthealth/ServicesContract/2010/10", "ActualShutDownDuration"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(true);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("alarmDropName");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://Www.GE.Com/Energy/Equipmenthealth/ServicesContract/2010/10", "AlarmDropName"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(true);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("alarmDropNumber");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://Www.GE.Com/Energy/Equipmenthealth/ServicesContract/2010/10", "AlarmDropNumber"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(true);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("applicationTripDetected");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://Www.GE.Com/Energy/Equipmenthealth/ServicesContract/2010/10", "ApplicationTripDetected"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(true);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("CODDate");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://Www.GE.Com/Energy/Equipmenthealth/ServicesContract/2010/10", "CODDate"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(true);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("CSAUnit");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://Www.GE.Com/Energy/Equipmenthealth/ServicesContract/2010/10", "CSAUnit"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(true);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("classType");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://Www.GE.Com/Energy/Equipmenthealth/ServicesContract/2010/10", "ClassType"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(true);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("componentAssociationLevel4");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://Www.GE.Com/Energy/Equipmenthealth/ServicesContract/2010/10", "ComponentAssociationLevel4"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(true);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("componentAssociationLevel5");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://Www.GE.Com/Energy/Equipmenthealth/ServicesContract/2010/10", "ComponentAssociationLevel5"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(true);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("componentAssociationLevel6");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://Www.GE.Com/Energy/Equipmenthealth/ServicesContract/2010/10", "ComponentAssociationLevel6"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(true);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("customerFeedback");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://Www.GE.Com/Energy/Equipmenthealth/ServicesContract/2010/10", "CustomerFeedback"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(true);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("customerName");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://Www.GE.Com/Energy/Equipmenthealth/ServicesContract/2010/10", "CustomerName"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(true);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("detectionDate");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://Www.GE.Com/Energy/Equipmenthealth/ServicesContract/2010/10", "DetectionDate"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(true);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("emergencyTripNumber");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://Www.GE.Com/Energy/Equipmenthealth/ServicesContract/2010/10", "EmergencyTripNumber"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(true);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("equipmentName");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://Www.GE.Com/Energy/Equipmenthealth/ServicesContract/2010/10", "EquipmentName"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(true);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("eventCategory");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://Www.GE.Com/Energy/Equipmenthealth/ServicesContract/2010/10", "EventCategory"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(true);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("eventDate");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://Www.GE.Com/Energy/Equipmenthealth/ServicesContract/2010/10", "EventDate"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(true);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("failureCategory");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://Www.GE.Com/Energy/Equipmenthealth/ServicesContract/2010/10", "FailureCategory"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(true);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("failureModes");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://Www.GE.Com/Energy/Equipmenthealth/ServicesContract/2010/10", "FailureModes"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(true);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("finalRootCause");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://Www.GE.Com/Energy/Equipmenthealth/ServicesContract/2010/10", "FinalRootCause"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(true);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("firedStarts");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://Www.GE.Com/Energy/Equipmenthealth/ServicesContract/2010/10", "FiredStarts"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(true);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("forcedOutageHours");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://Www.GE.Com/Energy/Equipmenthealth/ServicesContract/2010/10", "ForcedOutageHours"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(true);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("fuel");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://Www.GE.Com/Energy/Equipmenthealth/ServicesContract/2010/10", "Fuel"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(true);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("gasFiredHours");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://Www.GE.Com/Energy/Equipmenthealth/ServicesContract/2010/10", "GasFiredHours"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(true);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("initialRootCause");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://Www.GE.Com/Energy/Equipmenthealth/ServicesContract/2010/10", "InitialRootCause"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(true);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("liquidFiredHours");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://Www.GE.Com/Energy/Equipmenthealth/ServicesContract/2010/10", "LiquidFiredHours"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(true);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("majorEquipmentAssociation");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://Www.GE.Com/Energy/Equipmenthealth/ServicesContract/2010/10", "MajorEquipmentAssociation"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(true);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("PCATripCaseNumber");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://Www.GE.Com/Energy/Equipmenthealth/ServicesContract/2010/10", "PCATripCaseNumber"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(true);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("preparedBy");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://Www.GE.Com/Energy/Equipmenthealth/ServicesContract/2010/10", "PreparedBy"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(true);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("repeatIssue");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://Www.GE.Com/Energy/Equipmenthealth/ServicesContract/2010/10", "RepeatIssue"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(true);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("rootCause1");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://Www.GE.Com/Energy/Equipmenthealth/ServicesContract/2010/10", "RootCause1"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(true);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("rootCause2");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://Www.GE.Com/Energy/Equipmenthealth/ServicesContract/2010/10", "RootCause2"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(true);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("siteName");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://Www.GE.Com/Energy/Equipmenthealth/ServicesContract/2010/10", "SiteName"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(true);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("subSystemAssociation");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://Www.GE.Com/Energy/Equipmenthealth/ServicesContract/2010/10", "SubSystemAssociation"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(true);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("systemAssociation");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://Www.GE.Com/Energy/Equipmenthealth/ServicesContract/2010/10", "SystemAssociation"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(true);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("TSNo");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://Www.GE.Com/Energy/Equipmenthealth/ServicesContract/2010/10", "TSNo"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(true);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("totalFiredHours");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://Www.GE.Com/Energy/Equipmenthealth/ServicesContract/2010/10", "TotalFiredHours"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(true);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("tripDetectionDate");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://Www.GE.Com/Energy/Equipmenthealth/ServicesContract/2010/10", "TripDetectionDate"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(true);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("tripEventLoad");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://Www.GE.Com/Energy/Equipmenthealth/ServicesContract/2010/10", "TripEventLoad"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(true);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("tripEventSpeed");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://Www.GE.Com/Energy/Equipmenthealth/ServicesContract/2010/10", "TripEventSpeed"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(true);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("tripLogFiles");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://Www.GE.Com/Energy/Equipmenthealth/ServicesContract/2010/10", "TripLogFiles"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(true);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("unitOperationalStatus");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://Www.GE.Com/Energy/Equipmenthealth/ServicesContract/2010/10", "UnitOperationalStatus"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(true);
+        typeDesc.addFieldDesc(elemField);
+    }
+
+    /**
+     * Return type metadata object
+     */
+    public static org.apache.axis.description.TypeDesc getTypeDesc() {
+        return typeDesc;
+    }
+
+    /**
+     * Get Custom Serializer
+     */
+    public static org.apache.axis.encoding.Serializer getSerializer(
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
+           javax.xml.namespace.QName _xmlType) {
+        return 
+          new  org.apache.axis.encoding.ser.BeanSerializer(
+            _javaType, _xmlType, typeDesc);
+    }
+
+    /**
+     * Get Custom Deserializer
+     */
+    public static org.apache.axis.encoding.Deserializer getDeserializer(
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
+           javax.xml.namespace.QName _xmlType) {
+        return 
+          new  org.apache.axis.encoding.ser.BeanDeserializer(
+            _javaType, _xmlType, typeDesc);
+    }
+
+}

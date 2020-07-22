@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:version="2.0">
+  <talendfile:ContextType confirmationNeeded="false" name="Default" xmi:id="_stynYEggEeqsxOl8-qDc7w">
+    <contextParameter comment="" name="SAP_Password" prompt="SAP_Password?" promptNeeded="false" type="id_Password" value="N0hz2TwA1OPzuW1GJUkMFg==" xmi:id="_stynYUggEeqsxOl8-qDc7w"/>
+    <contextParameter comment="" name="SAP_Database" prompt="SAP_Database?" promptNeeded="false" type="id_String" value="pgsdwh" xmi:id="_stynYkggEeqsxOl8-qDc7w"/>
+    <contextParameter comment="" name="SAP_Server" prompt="SAP_Server?" promptNeeded="false" type="id_String" value="dev-9ha.cloud.digital.ge.com" xmi:id="_stynY0ggEeqsxOl8-qDc7w"/>
+    <contextParameter comment="" name="SAP_Port" prompt="SAP_Port?" promptNeeded="false" type="id_String" value="5432" xmi:id="_stynZEggEeqsxOl8-qDc7w"/>
+    <contextParameter comment="" name="SAP_Schema" prompt="SAP_Schema?" promptNeeded="false" type="id_String" value="ing_repairs_r3p36data" xmi:id="_stynZUggEeqsxOl8-qDc7w"/>
+    <contextParameter comment="" name="SAP_Login" prompt="SAP_Login?" promptNeeded="false" type="id_String" value="502799796" xmi:id="_stynZkggEeqsxOl8-qDc7w"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="DEV" xmi:id="_stynZ0ggEeqsxOl8-qDc7w">
+    <contextParameter comment="" name="SAP_Password" prompt="SAP_Password?" promptNeeded="false" type="id_Password" value="N0hz2TwA1OPzuW1GJUkMFg==" xmi:id="_stynaEggEeqsxOl8-qDc7w"/>
+    <contextParameter comment="" name="SAP_Database" prompt="SAP_Database?" promptNeeded="false" type="id_String" value="pgsdwh" xmi:id="_stynaUggEeqsxOl8-qDc7w"/>
+    <contextParameter comment="" name="SAP_Server" prompt="SAP_Server?" promptNeeded="false" type="id_String" value="dev-9ha.cloud.digital.ge.com" xmi:id="_stynakggEeqsxOl8-qDc7w"/>
+    <contextParameter comment="" name="SAP_Port" prompt="SAP_Port?" promptNeeded="false" type="id_String" value="5432" xmi:id="_styna0ggEeqsxOl8-qDc7w"/>
+    <contextParameter comment="" name="SAP_Schema" prompt="SAP_Schema?" promptNeeded="false" type="id_String" value="ing_repairs_r3p36data" xmi:id="_stynbEggEeqsxOl8-qDc7w"/>
+    <contextParameter comment="" name="SAP_Login" prompt="SAP_Login?" promptNeeded="false" type="id_String" value="502799796" xmi:id="_stynbUggEeqsxOl8-qDc7w"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="PROD" xmi:id="_stynbkggEeqsxOl8-qDc7w">
+    <contextParameter comment="" name="SAP_Password" prompt="SAP_Password?" promptNeeded="false" type="id_Password" value="N0hz2TwA1OPzuW1GJUkMFg==" xmi:id="_stynb0ggEeqsxOl8-qDc7w"/>
+    <contextParameter comment="" name="SAP_Database" prompt="SAP_Database?" promptNeeded="false" type="id_String" value="pgsdwh" xmi:id="_styncEggEeqsxOl8-qDc7w"/>
+    <contextParameter comment="" name="SAP_Server" prompt="SAP_Server?" promptNeeded="false" type="id_String" value="9ha.cloud.digital.ge.com" xmi:id="_styncUggEeqsxOl8-qDc7w"/>
+    <contextParameter comment="" name="SAP_Port" prompt="SAP_Port?" promptNeeded="false" type="id_String" value="5432" xmi:id="_stynckggEeqsxOl8-qDc7w"/>
+    <contextParameter comment="" name="SAP_Schema" prompt="SAP_Schema?" promptNeeded="false" type="id_String" value="ing_repairs_r3p36data" xmi:id="_stync0ggEeqsxOl8-qDc7w"/>
+    <contextParameter comment="" name="SAP_Login" prompt="SAP_Login?" promptNeeded="false" type="id_String" value="502799796" xmi:id="_styndEggEeqsxOl8-qDc7w"/>
+  </talendfile:ContextType>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_88f8323a-a14e-4d58-93c5-1bc8f102c965"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>G8rNB0g0vCyypxIYZiVm3SSohPIlbBAqsNnIEE71ZoIE6Hp/WEhFkuge41syn3WLM/FC6Y7Ajnhf&#13;
+NiAJ6r8PDw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_13ff0db3-ff33-43e7-9299-b19d66f7d80f"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>0o2xWMXg+VIXzpX91tLFOnR5XDSTVZxZFLvjFec693TP/wIgmq5KUUpADiAOraHYiU6Uzir0eT7B&#13;
+O6K1WsQp5Q==</DigestValue></Reference></SignedInfo><SignatureValue>I//dwTsNmmnjad8qBieAsBZ7n7lHqPeOHIsnbHVBMRCSTZXQ/e6e6m9APlAqHz0enaAn545W8foW&#13;
+p7Cp45P45IvOTmdM51aHwKxBO6WQ9yh63msrb5xLZjmZTJeakpDrkWUUko8HjXNJrijL8FS4RGhn&#13;
+LugYkTUPIUk8JdkafII9ubM0Xr6q7O0DAetCXcegDt/M4df1NcTbGjNxJhoZRAno5KIvoqF7hlbY&#13;
+4LYuA5RAgr5A2pWXbXI9PcIJ+0O3C34oCX47YbVnaElmaOr3h7D3n+yoVRHlJygVf7RLW4EPhwNv&#13;
+mBJuIcNIJ+RYEEKIwe0hZSAnUNrmPnVnaaViVA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_13ff0db3-ff33-43e7-9299-b19d66f7d80f" Target="#_88f8323a-a14e-4d58-93c5-1bc8f102c965"><Timestamp>2020-04-22 08:18:04</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>

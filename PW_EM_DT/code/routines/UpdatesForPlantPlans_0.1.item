@@ -1,0 +1,227 @@
+package routines;
+
+import java.io.*;
+import java.io.File;
+import java.util.*;  // need for list objects
+import java.sql.*;
+import java.io.IOException;
+import java.io.OutputStream;
+import jxl.*;
+import jxl.Workbook;
+import jxl.write.*;
+//import java.awt.Desktop;
+
+
+
+      // basic shell for java file non servlet
+
+public class UpdatesForPlantPlans {
+
+
+//String url = "jdbc:postgresql:@3.48.32.94:5432:pgsdwh";
+//String url = "jdbc:postgresql://3.48.32.94:5432/pgsdwh";
+String url = "jdbc:postgresql://alpgpdbgp2dev.idc.ge.com:5432/pgsdwh";
+//String url = "jdbc:postgresql://3.48.32.94:5432/pgsdwh/pgsbizdim.component_db_test";
+    String username = "212485199"; 
+          //String username = "richard.delpo@ge.com";
+    String password = "unh12806yesss";
+
+
+     //   Desktop desktop;
+
+Workbook wrk1; // only reading not writing
+
+  	//WritableFont wf; 
+	//WritableCellFormat cf; 
+	//WritableWorkbook writableWorkbook;  //only reading not writing
+        //WritableSheet writableSheet;
+            
+Connection cn2;	
+
+  PreparedStatement stmt,stmt2= null;                
+
+//String sql6= "update test_new_12_20 set block_sys_id = a1 where unit_sys_id=?"; 
+
+
+
+
+
+public void loadDriver() {
+
+/*
+		           //connection to sqlite only
+
+				try {
+
+		         
+		          Class.forName("org.sqlite.JDBC");
+				  System.out.println("The Driver has been loaded successfully!");
+				}   catch (Exception E1) {
+			          System.out.println("Unable to load the Driver!");
+				  System.out.println("Exceptions:" + E1.toString());
+				  System.exit(1);
+				}
+
+						
+			 //Establishing the connection with the database
+					
+				try {
+				        cn2 = DriverManager.getConnection("jdbc:sqlite:test.db");
+					System.out.println("Connection to Server was Established");
+			        } catch (Exception E2) {
+					System.out.println(" Exceptions : " + E2.toString());
+			        }
+
+*/
+
+
+  //connection to postgres
+
+try {
+    	//Class.forName("oracle.jdbc.driver.OracleDriver");
+    	Class.forName("org.postgresql.Driver");
+	System.out.println("The Driver has been loaded successfully!");
+    	}
+    	   catch (Exception e) {
+    	          System.err.println("Unable to load driver.");
+    	}  
+    
+	  try {
+		cn2 = DriverManager.getConnection(url,username,password);
+		
+		   }
+		   catch (SQLException e) {
+		System.err.println("Unable to get beyond initial connection");
+		          e.printStackTrace();
+		   }
+
+		   System.err.println("everything loaded ok");
+
+
+
+
+
+			} // end of load driver method
+
+
+
+
+public void getSheets() {
+
+          
+    File dir = new File("c:/rick/"); // folder to store all sheets in xls format  
+    File[] files =dir.listFiles();  //gets all files from folder into array named files
+    
+    try{
+
+       //get each file from c:\rick
+
+for (int i=0;i<files.length;i++) { 
+                     
+    	String filename=files[i].getName();
+    	String f2=("c:/rick/"+filename+""); //need new string when concatenating (also full path required)
+    	System.out.println(filename);
+    	System.out.println(f2);
+	 wrk1 =  Workbook.getWorkbook(new File(f2));    //pass string f2 in
+	         	
+ 
+//stmt=cn2.prepareStatement("delete from pgsbizdim.component_db_test");
+//stmt.executeUpdate();
+stmt2=cn2.prepareStatement("select boiler_sy_id,pbus_output_th from pgsbizdim.component_db_test");
+ResultSet rs = stmt2.executeQuery();
+	  	        	int rowcount=0;  
+	  		while (rs.next()) {
+                                System.out.println(rs.getString ("boiler_sy_id")+" "+rs.getString ("pbus_output_th"));
+	  			               //System.out.println(rs.getString ("boiler_sy_id"));
+                               // System.out.println(rs.getString ("pbus_output_th"));
+                                rowcount=rs.getRow();
+                                          }
+System.out.println(rowcount);
+
+  readSheet1();  //for each workbook file, read only sheet1 positions, go to this method for updating
+                       
+        } //end of for loop to iterate thru files 
+                    
+ } //end of try block
+
+	    
+      catch (Exception e) {
+         
+     } 
+
+
+
+			} // end of get sheets method
+
+
+
+public void readSheet1() {
+
+try{
+
+Sheet sheet1 = wrk1.getSheet(0); //from workbook only get main sheet
+    // get data at fixed positions
+Cell unit_number_info = sheet1.getCell(0,0);
+Cell sootblower_oem_info = sheet1.getCell(4,4);  //read column E row 5
+    //read contents
+String sootblower_oem =sootblower_oem_info.getContents();
+String unit_number =unit_number_info.getContents();
+
+
+System.out.println("Reading sheet1 from current wkbk being pulled from folder for loop");
+
+       //update db with values
+//stmt2=cn2.prepareStatement(sql6);
+//stmt2=cn2.prepareStatement("update test_new_12_20 set cmn_system_status = ? where unit_sys_id = ?");
+stmt2=cn2.prepareStatement("update pgsbizdim.component_db_test set pbus_output_th = ? where boiler_sy_id = ?");
+                  //update col for sootblower_oem with info from each wkbk sheet1 at the sootblower oem position
+             stmt2.setString(1,sootblower_oem);	//update oem with info read from fixed positions		 
+            // stmt2.setString(2,"UNI000564");
+              //stmt2.setString(1,"xxx");
+              //stmt2.setString(2,unit_number); //where unit number = whatever unit we are on
+             stmt2.setString(2,"SY0303274");
+              stmt2.executeUpdate();
+
+         System.out.println("updating with contents as "+sootblower_oem);
+ } //end of try block
+
+	    
+      catch (Exception e) {
+         //throw new ServletException("Exception in XLS  Servlet", e);
+     } 
+
+
+} // end of read sheet method
+
+
+
+
+   
+public static void run() throws IOException {
+	//public static void main(String[] args) throws IOException {
+
+
+		UpdatesForPlantPlans ManageRecords = new UpdatesForPlantPlans(); 
+
+                 
+		  ManageRecords.loadDriver();
+                ManageRecords.getSheets();
+                //ManageRecords.initComponents();
+		//InsertRecords.mainMenu();
+		//InsertRecords.manipulateData(); 
+
+             
+		
+	}  //end of main method
+
+
+
+
+}  //end of class
+	
+
+
+
+
+
+

@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:xmi="http://www.omg.org/XMI" defaultContext="DEV" jobType="Standard" xmi:version="2.0">
+  <context confirmationNeeded="false" name="DEV">
+    <contextParameter comment="" name="MSSQL_PROD_Schema" prompt="MSSQL_PROD_Schema?" promptNeeded="false" repositoryContextId="_rfthIGDZEeSRBLhPymO_dg" type="id_String" value="itls_prod"/>
+    <contextParameter comment="" name="MSSQL_PROD_Login" prompt="MSSQL_PROD_Login?" promptNeeded="false" repositoryContextId="_rfthIGDZEeSRBLhPymO_dg" type="id_String" value="pgsitls_sch"/>
+    <contextParameter comment="" name="MSSQL_PROD_Port" prompt="MSSQL_PROD_Port?" promptNeeded="false" repositoryContextId="_rfthIGDZEeSRBLhPymO_dg" type="id_String" value="1433"/>
+    <contextParameter comment="" name="MSSQL_PROD_AdditionalParams" prompt="MSSQL_PROD_AdditionalParams?" promptNeeded="false" repositoryContextId="_rfthIGDZEeSRBLhPymO_dg" type="id_String" value=""/>
+    <contextParameter comment="" name="MSSQL_PROD_Password" prompt="MSSQL_PROD_Password?" promptNeeded="false" repositoryContextId="_rfthIGDZEeSRBLhPymO_dg" type="id_Password" value="w44B94/mggoWuePIjnTE+g=="/>
+    <contextParameter comment="" name="MSSQL_PROD_Database" prompt="MSSQL_PROD_Database?" promptNeeded="false" repositoryContextId="_rfthIGDZEeSRBLhPymO_dg" type="id_String" value="pgsitls"/>
+    <contextParameter comment="" name="MSSQL_PROD_Server" prompt="MSSQL_PROD_Server?" promptNeeded="false" repositoryContextId="_rfthIGDZEeSRBLhPymO_dg" type="id_String" value="PWPGALGAPSQL01.cloud.ge.com"/>
+    <contextParameter comment="" name="Greenplum_itls_Password" prompt="Greenplum_itls_Password?" promptNeeded="false" repositoryContextId="_r7K3UPJTEeS_f9SI8B0DAA" type="id_Password" value="hhj9evtQk80="/>
+    <contextParameter comment="" name="Greenplum_itls_Schema" prompt="Greenplum_itls_Schema?" promptNeeded="false" repositoryContextId="_r7K3UPJTEeS_f9SI8B0DAA" type="id_String" value="pgsitls"/>
+    <contextParameter comment="" name="Greenplum_itls_Port" prompt="Greenplum_itls_Port?" promptNeeded="false" repositoryContextId="_r7K3UPJTEeS_f9SI8B0DAA" type="id_String" value="5432"/>
+    <contextParameter comment="" name="Greenplum_itls_Server" prompt="Greenplum_itls_Server?" promptNeeded="false" repositoryContextId="_r7K3UPJTEeS_f9SI8B0DAA" type="id_String" value="dev-9ha.cloud.digital.ge.com"/>
+    <contextParameter comment="" name="Greenplum_itls_Login" prompt="Greenplum_itls_Login?" promptNeeded="false" repositoryContextId="_r7K3UPJTEeS_f9SI8B0DAA" type="id_String" value="pgsitls_sch"/>
+    <contextParameter comment="" name="Greenplum_itls_Database" prompt="Greenplum_itls_Database?" promptNeeded="false" repositoryContextId="_r7K3UPJTEeS_f9SI8B0DAA" type="id_String" value="pgsdwh"/>
+    <contextParameter comment="" name="GPNewDCA_pgsitls_Port" prompt="GPNewDCA_pgsitls_Port?" promptNeeded="false" repositoryContextId="_Sj1u4BWCEeWXoKX9uBHPOg" type="id_String" value="5432"/>
+    <contextParameter comment="" name="GPNewDCA_pgsitls_Schema" prompt="GPNewDCA_pgsitls_Schema?" promptNeeded="false" repositoryContextId="_Sj1u4BWCEeWXoKX9uBHPOg" type="id_String" value="pgsitls"/>
+    <contextParameter comment="" name="GPNewDCA_pgsitls_Server" prompt="GPNewDCA_pgsitls_Server?" promptNeeded="false" repositoryContextId="_Sj1u4BWCEeWXoKX9uBHPOg" type="id_String" value="dev-9ha.cloud.digital.ge.com"/>
+    <contextParameter comment="" name="GPNewDCA_pgsitls_Login" prompt="GPNewDCA_pgsitls_Login?" promptNeeded="false" repositoryContextId="_Sj1u4BWCEeWXoKX9uBHPOg" type="id_String" value="502439470"/>
+    <contextParameter comment="" name="GPNewDCA_pgsitls_Database" prompt="GPNewDCA_pgsitls_Database?" promptNeeded="false" repositoryContextId="_Sj1u4BWCEeWXoKX9uBHPOg" type="id_String" value="pgsdwh"/>
+    <contextParameter comment="" name="GPNewDCA_pgsitls_Password" prompt="GPNewDCA_pgsitls_Password?" promptNeeded="false" repositoryContextId="_Sj1u4BWCEeWXoKX9uBHPOg" type="id_Password" value="6yZmX7sVyhc0tlRjvD/SYA=="/>
+    <contextParameter comment="" name="Oracle_talendlog_Port" prompt="Oracle_talendlog_Port?" promptNeeded="false" repositoryContextId="_hGVfQAleEeWh47DAIQ_wKA" type="id_String" value="1682"/>
+    <contextParameter comment="" name="Oracle_talendlog_AdditionalParams" prompt="Oracle_talendlog_AdditionalParams?" promptNeeded="false" repositoryContextId="_hGVfQAleEeWh47DAIQ_wKA" type="id_String" value=""/>
+    <contextParameter comment="" name="Oracle_talendlog_Sid" prompt="Oracle_talendlog_Sid?" promptNeeded="false" repositoryContextId="_hGVfQAleEeWh47DAIQ_wKA" type="id_String" value="engmdmp1"/>
+    <contextParameter comment="" name="Oracle_talendlog_Server" prompt="Oracle_talendlog_Server?" promptNeeded="false" repositoryContextId="_hGVfQAleEeWh47DAIQ_wKA" type="id_String" value="pwnlq0787v01.cloud.ge.com"/>
+    <contextParameter comment="" name="Oracle_talendlog_Password" prompt="Oracle_talendlog_Password?" promptNeeded="false" repositoryContextId="_hGVfQAleEeWh47DAIQ_wKA" type="id_Password" value="UnjGg0qR4fKi+2HMcOBPSw=="/>
+    <contextParameter comment="" name="Oracle_talendlog_Login" prompt="Oracle_talendlog_Login?" promptNeeded="false" repositoryContextId="_hGVfQAleEeWh47DAIQ_wKA" type="id_String" value="talendlog_rpt"/>
+    <contextParameter comment="" name="Oracle_talendlog_Schema" prompt="Oracle_talendlog_Schema?" promptNeeded="false" repositoryContextId="_hGVfQAleEeWh47DAIQ_wKA" type="id_String" value="TALENDLOG"/>
+  </context>
+  <context confirmationNeeded="false" name="QA">
+    <contextParameter comment="" name="MSSQL_PROD_Schema" prompt="MSSQL_PROD_Schema?" promptNeeded="false" repositoryContextId="_rfthIGDZEeSRBLhPymO_dg" type="id_String" value="itls_prod"/>
+    <contextParameter comment="" name="MSSQL_PROD_Login" prompt="MSSQL_PROD_Login?" promptNeeded="false" repositoryContextId="_rfthIGDZEeSRBLhPymO_dg" type="id_String" value="pgsitls_sch"/>
+    <contextParameter comment="" name="MSSQL_PROD_Port" prompt="MSSQL_PROD_Port?" promptNeeded="false" repositoryContextId="_rfthIGDZEeSRBLhPymO_dg" type="id_String" value="1433"/>
+    <contextParameter comment="" name="MSSQL_PROD_AdditionalParams" prompt="MSSQL_PROD_AdditionalParams?" promptNeeded="false" repositoryContextId="_rfthIGDZEeSRBLhPymO_dg" type="id_String" value=""/>
+    <contextParameter comment="" name="MSSQL_PROD_Password" prompt="MSSQL_PROD_Password?" promptNeeded="false" repositoryContextId="_rfthIGDZEeSRBLhPymO_dg" type="id_Password" value="w44B94/mggoWuePIjnTE+g=="/>
+    <contextParameter comment="" name="MSSQL_PROD_Database" prompt="MSSQL_PROD_Database?" promptNeeded="false" repositoryContextId="_rfthIGDZEeSRBLhPymO_dg" type="id_String" value="pgsitls"/>
+    <contextParameter comment="" name="MSSQL_PROD_Server" prompt="MSSQL_PROD_Server?" promptNeeded="false" repositoryContextId="_rfthIGDZEeSRBLhPymO_dg" type="id_String" value="PWPGALGAPSQL01.cloud.ge.com"/>
+    <contextParameter comment="" name="Greenplum_itls_Password" prompt="Greenplum_itls_Password?" promptNeeded="false" repositoryContextId="_r7K3UPJTEeS_f9SI8B0DAA" type="id_Password" value="hhj9evtQk80="/>
+    <contextParameter comment="" name="Greenplum_itls_Schema" prompt="Greenplum_itls_Schema?" promptNeeded="false" repositoryContextId="_r7K3UPJTEeS_f9SI8B0DAA" type="id_String" value="pgsitls"/>
+    <contextParameter comment="" name="Greenplum_itls_Port" prompt="Greenplum_itls_Port?" promptNeeded="false" repositoryContextId="_r7K3UPJTEeS_f9SI8B0DAA" type="id_String" value="5432"/>
+    <contextParameter comment="" name="Greenplum_itls_Server" prompt="Greenplum_itls_Server?" promptNeeded="false" repositoryContextId="_r7K3UPJTEeS_f9SI8B0DAA" type="id_String" value="dev-9ha.cloud.digital.ge.com"/>
+    <contextParameter comment="" name="Greenplum_itls_Login" prompt="Greenplum_itls_Login?" promptNeeded="false" repositoryContextId="_r7K3UPJTEeS_f9SI8B0DAA" type="id_String" value="pgsitls_sch"/>
+    <contextParameter comment="" name="Greenplum_itls_Database" prompt="Greenplum_itls_Database?" promptNeeded="false" repositoryContextId="_r7K3UPJTEeS_f9SI8B0DAA" type="id_String" value="pgsdwh"/>
+    <contextParameter comment="" name="GPNewDCA_pgsitls_Port" prompt="GPNewDCA_pgsitls_Port?" promptNeeded="false" repositoryContextId="_Sj1u4BWCEeWXoKX9uBHPOg" type="id_String" value="5432"/>
+    <contextParameter comment="" name="GPNewDCA_pgsitls_Schema" prompt="GPNewDCA_pgsitls_Schema?" promptNeeded="false" repositoryContextId="_Sj1u4BWCEeWXoKX9uBHPOg" type="id_String" value="pgsitls"/>
+    <contextParameter comment="" name="GPNewDCA_pgsitls_Server" prompt="GPNewDCA_pgsitls_Server?" promptNeeded="false" repositoryContextId="_Sj1u4BWCEeWXoKX9uBHPOg" type="id_String" value="dev-9ha.cloud.digital.ge.com"/>
+    <contextParameter comment="" name="GPNewDCA_pgsitls_Login" prompt="GPNewDCA_pgsitls_Login?" promptNeeded="false" repositoryContextId="_Sj1u4BWCEeWXoKX9uBHPOg" type="id_String" value="502439470"/>
+    <contextParameter comment="" name="GPNewDCA_pgsitls_Database" prompt="GPNewDCA_pgsitls_Database?" promptNeeded="false" repositoryContextId="_Sj1u4BWCEeWXoKX9uBHPOg" type="id_String" value="pgsdwh"/>
+    <contextParameter comment="" name="GPNewDCA_pgsitls_Password" prompt="GPNewDCA_pgsitls_Password?" promptNeeded="false" repositoryContextId="_Sj1u4BWCEeWXoKX9uBHPOg" type="id_Password" value="6yZmX7sVyhc0tlRjvD/SYA=="/>
+    <contextParameter comment="" name="Oracle_talendlog_Port" prompt="Oracle_talendlog_Port?" promptNeeded="false" repositoryContextId="_hGVfQAleEeWh47DAIQ_wKA" type="id_String" value="1682"/>
+    <contextParameter comment="" name="Oracle_talendlog_AdditionalParams" prompt="Oracle_talendlog_AdditionalParams?" promptNeeded="false" repositoryContextId="_hGVfQAleEeWh47DAIQ_wKA" type="id_String" value=""/>
+    <contextParameter comment="" name="Oracle_talendlog_Sid" prompt="Oracle_talendlog_Sid?" promptNeeded="false" repositoryContextId="_hGVfQAleEeWh47DAIQ_wKA" type="id_String" value="engmdmp1"/>
+    <contextParameter comment="" name="Oracle_talendlog_Server" prompt="Oracle_talendlog_Server?" promptNeeded="false" repositoryContextId="_hGVfQAleEeWh47DAIQ_wKA" type="id_String" value="pwnlq0787v01.cloud.ge.com"/>
+    <contextParameter comment="" name="Oracle_talendlog_Password" prompt="Oracle_talendlog_Password?" promptNeeded="false" repositoryContextId="_hGVfQAleEeWh47DAIQ_wKA" type="id_Password" value="UnjGg0qR4fKi+2HMcOBPSw=="/>
+    <contextParameter comment="" name="Oracle_talendlog_Login" prompt="Oracle_talendlog_Login?" promptNeeded="false" repositoryContextId="_hGVfQAleEeWh47DAIQ_wKA" type="id_String" value="talendlog_rpt"/>
+    <contextParameter comment="" name="Oracle_talendlog_Schema" prompt="Oracle_talendlog_Schema?" promptNeeded="false" repositoryContextId="_hGVfQAleEeWh47DAIQ_wKA" type="id_String" value="TALENDLOG"/>
+  </context>
+  <context confirmationNeeded="false" name="PROD">
+    <contextParameter comment="" name="MSSQL_PROD_Schema" prompt="MSSQL_PROD_Schema?" promptNeeded="false" repositoryContextId="_rfthIGDZEeSRBLhPymO_dg" type="id_String" value="itls_prod"/>
+    <contextParameter comment="" name="MSSQL_PROD_Login" prompt="MSSQL_PROD_Login?" promptNeeded="false" repositoryContextId="_rfthIGDZEeSRBLhPymO_dg" type="id_String" value="pgsitls_sch"/>
+    <contextParameter comment="" name="MSSQL_PROD_Port" prompt="MSSQL_PROD_Port?" promptNeeded="false" repositoryContextId="_rfthIGDZEeSRBLhPymO_dg" type="id_String" value="1433"/>
+    <contextParameter comment="" name="MSSQL_PROD_AdditionalParams" prompt="MSSQL_PROD_AdditionalParams?" promptNeeded="false" repositoryContextId="_rfthIGDZEeSRBLhPymO_dg" type="id_String" value=""/>
+    <contextParameter comment="" name="MSSQL_PROD_Password" prompt="MSSQL_PROD_Password?" promptNeeded="false" repositoryContextId="_rfthIGDZEeSRBLhPymO_dg" type="id_Password" value="w44B94/mggoWuePIjnTE+g=="/>
+    <contextParameter comment="" name="MSSQL_PROD_Database" prompt="MSSQL_PROD_Database?" promptNeeded="false" repositoryContextId="_rfthIGDZEeSRBLhPymO_dg" type="id_String" value="pgsitls"/>
+    <contextParameter comment="" name="MSSQL_PROD_Server" prompt="MSSQL_PROD_Server?" promptNeeded="false" repositoryContextId="_rfthIGDZEeSRBLhPymO_dg" type="id_String" value="PWPGALGAPSQL01.cloud.ge.com"/>
+    <contextParameter comment="" name="Greenplum_itls_Password" prompt="Greenplum_itls_Password?" promptNeeded="false" repositoryContextId="_r7K3UPJTEeS_f9SI8B0DAA" type="id_Password" value="hhj9evtQk80="/>
+    <contextParameter comment="" name="Greenplum_itls_Schema" prompt="Greenplum_itls_Schema?" promptNeeded="false" repositoryContextId="_r7K3UPJTEeS_f9SI8B0DAA" type="id_String" value="pgsitls"/>
+    <contextParameter comment="" name="Greenplum_itls_Port" prompt="Greenplum_itls_Port?" promptNeeded="false" repositoryContextId="_r7K3UPJTEeS_f9SI8B0DAA" type="id_String" value="5432"/>
+    <contextParameter comment="" name="Greenplum_itls_Server" prompt="Greenplum_itls_Server?" promptNeeded="false" repositoryContextId="_r7K3UPJTEeS_f9SI8B0DAA" type="id_String" value="dev-9ha.cloud.digital.ge.com"/>
+    <contextParameter comment="" name="Greenplum_itls_Login" prompt="Greenplum_itls_Login?" promptNeeded="false" repositoryContextId="_r7K3UPJTEeS_f9SI8B0DAA" type="id_String" value="pgsitls_sch"/>
+    <contextParameter comment="" name="Greenplum_itls_Database" prompt="Greenplum_itls_Database?" promptNeeded="false" repositoryContextId="_r7K3UPJTEeS_f9SI8B0DAA" type="id_String" value="pgsdwh"/>
+    <contextParameter comment="" name="GPNewDCA_pgsitls_Port" prompt="GPNewDCA_pgsitls_Port?" promptNeeded="false" repositoryContextId="_Sj1u4BWCEeWXoKX9uBHPOg" type="id_String" value="5432"/>
+    <contextParameter comment="" name="GPNewDCA_pgsitls_Schema" prompt="GPNewDCA_pgsitls_Schema?" promptNeeded="false" repositoryContextId="_Sj1u4BWCEeWXoKX9uBHPOg" type="id_String" value="pgsitls"/>
+    <contextParameter comment="" name="GPNewDCA_pgsitls_Server" prompt="GPNewDCA_pgsitls_Server?" promptNeeded="false" repositoryContextId="_Sj1u4BWCEeWXoKX9uBHPOg" type="id_String" value="9ha.cloud.digital.ge.com"/>
+    <contextParameter comment="" name="GPNewDCA_pgsitls_Login" prompt="GPNewDCA_pgsitls_Login?" promptNeeded="false" repositoryContextId="_Sj1u4BWCEeWXoKX9uBHPOg" type="id_String" value="502439470"/>
+    <contextParameter comment="" name="GPNewDCA_pgsitls_Database" prompt="GPNewDCA_pgsitls_Database?" promptNeeded="false" repositoryContextId="_Sj1u4BWCEeWXoKX9uBHPOg" type="id_String" value="pgsdwh"/>
+    <contextParameter comment="" name="GPNewDCA_pgsitls_Password" prompt="GPNewDCA_pgsitls_Password?" promptNeeded="false" repositoryContextId="_Sj1u4BWCEeWXoKX9uBHPOg" type="id_Password" value="9mjG9j0AfnzlB7F+7HuAIg=="/>
+    <contextParameter comment="" name="Oracle_talendlog_Port" prompt="Oracle_talendlog_Port?" promptNeeded="false" repositoryContextId="_hGVfQAleEeWh47DAIQ_wKA" type="id_String" value="1682"/>
+    <contextParameter comment="" name="Oracle_talendlog_AdditionalParams" prompt="Oracle_talendlog_AdditionalParams?" promptNeeded="false" repositoryContextId="_hGVfQAleEeWh47DAIQ_wKA" type="id_String" value=""/>
+    <contextParameter comment="" name="Oracle_talendlog_Sid" prompt="Oracle_talendlog_Sid?" promptNeeded="false" repositoryContextId="_hGVfQAleEeWh47DAIQ_wKA" type="id_String" value="engmdmp1"/>
+    <contextParameter comment="" name="Oracle_talendlog_Server" prompt="Oracle_talendlog_Server?" promptNeeded="false" repositoryContextId="_hGVfQAleEeWh47DAIQ_wKA" type="id_String" value="pwnlq0787v01.cloud.ge.com"/>
+    <contextParameter comment="" name="Oracle_talendlog_Password" prompt="Oracle_talendlog_Password?" promptNeeded="false" repositoryContextId="_hGVfQAleEeWh47DAIQ_wKA" type="id_Password" value="UnjGg0qR4fKi+2HMcOBPSw=="/>
+    <contextParameter comment="" name="Oracle_talendlog_Login" prompt="Oracle_talendlog_Login?" promptNeeded="false" repositoryContextId="_hGVfQAleEeWh47DAIQ_wKA" type="id_String" value="talendlog_rpt"/>
+    <contextParameter comment="" name="Oracle_talendlog_Schema" prompt="Oracle_talendlog_Schema?" promptNeeded="false" repositoryContextId="_hGVfQAleEeWh47DAIQ_wKA" type="id_String" value="TALENDLOG"/>
+  </context>
+  <parameters>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="32"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="96"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" show="false" value=""/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="0RMsyjmybrE="/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" show="false" value=""/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" show="false" value="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" show="false" value="&quot;C:/talend/qa/.metadata&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" show="false" value="&quot;stats_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" show="false" value="&quot;logs_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" show="false" value="&quot;meter_file.txt&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="ISO-8859-15"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" show="false" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" show="false" value="tPostgresqlOutput"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="V9_X"/>
+    <elementParameter field="TEXT" name="URL" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;talend-log.pw.ge.com&quot;"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;5432&quot;"/>
+    <elementParameter field="TEXT" name="DATASOURCE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;talendlogs&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;prodlogs&quot;"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;talendlog&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="oLd/FUP8kqKAq+GOPWEucg=="/>
+    <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;talend_stats&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;talend_logs&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" show="false" value="&quot;talend_flowmeter&quot;"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" show="false" value="false"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" show="false" value=""/>
+    <routinesParameter id="_dUNdAAsTEeOv7LyPzqX4fQ" name="DQTechnical"/>
+    <routinesParameter id="_dTay0AsTEeOv7LyPzqX4fQ" name="DataOperation"/>
+    <routinesParameter id="_dUBPwAsTEeOv7LyPzqX4fQ" name="DataQuality"/>
+    <routinesParameter id="_dUJyoAsTEeOv7LyPzqX4fQ" name="DqStringHandling"/>
+    <routinesParameter id="_dUQgUAsTEeOv7LyPzqX4fQ" name="MDM"/>
+    <routinesParameter id="_dTfrUAsTEeOv7LyPzqX4fQ" name="Mathematical"/>
+    <routinesParameter id="_dTj8wAsTEeOv7LyPzqX4fQ" name="Numeric"/>
+    <routinesParameter id="_dTxYIAsTEeOv7LyPzqX4fQ" name="Relational"/>
+    <routinesParameter id="_csO3AAsTEeOv7LyPzqX4fQ" name="SQLike"/>
+    <routinesParameter id="_dT0bcAsTEeOv7LyPzqX4fQ" name="StringHandling"/>
+    <routinesParameter id="_dT3ewAsTEeOv7LyPzqX4fQ" name="TalendDataGenerator"/>
+    <routinesParameter id="_dT6iEAsTEeOv7LyPzqX4fQ" name="TalendDate"/>
+    <routinesParameter id="_dT9lYAsTEeOv7LyPzqX4fQ" name="TalendString"/>
+    <routinesParameter id="_TIBaIDczEeiSQsBHTOTgig" name="DataMasking"/>
+    <routinesParameter id="_fWHk4I74Eeate4G__PQfwA" name="DataQualityDependencies"/>
+  </parameters>
+  <node componentName="tLogCatcher" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="640" posY="-32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogCatcher_1"/>
+    <elementParameter field="CHECK" name="CATCH_JAVA_EXCEPTION" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_TDIE" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_TWARN" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_TACTIONFAILURE" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tLogCatcher_1">
+      <column key="false" length="0" name="moment" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column key="false" length="20" name="pid" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column key="false" length="20" name="root_pid" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column key="false" length="20" name="father_pid" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column key="false" length="50" name="project" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column key="false" length="255" name="job" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column key="false" length="50" name="context" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="3" name="priority" nullable="true" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column key="false" length="255" name="type" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column key="false" length="255" name="origin" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column key="false" length="255" name="message" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="3" name="code" nullable="true" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tSendMail" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="832" posY="-32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tSendMail_1"/>
+    <elementParameter field="TEXT" name="TO" value=" &quot;Mihaly.Minko@ge.com, Gyula.Markus@ge.com&quot;"/>
+    <elementParameter field="TEXT" name="FROM" value="&quot;talend@studio.com&quot;"/>
+    <elementParameter field="CHECK" name="NEED_PERSONAL_NAME" value="false"/>
+    <elementParameter field="TEXT" name="PERSONAL_NAME" show="false" value="&quot;sender&quot;"/>
+    <elementParameter field="TEXT" name="CC" value=""/>
+    <elementParameter field="TEXT" name="BCC" value=""/>
+    <elementParameter field="TEXT" name="SUBJECT" value="&quot;Talend Error Notification&quot;"/>
+    <elementParameter field="MEMO_MESSAGE" name="MESSAGE" value="&quot;The job runs failure, the error message is:     &quot;+ row15.message"/>
+    <elementParameter field="CHECK" name="CHECK_ATTACHMENT" value="true"/>
+    <elementParameter field="TABLE" name="ATTACHMENTS"/>
+    <elementParameter field="TABLE" name="HEADERS"/>
+    <elementParameter field="TEXT" name="SMTP_HOST" value="&quot;bsemsx01.ae.ge.com&quot;"/>
+    <elementParameter field="TEXT" name="SMTP_PORT" value="25"/>
+    <elementParameter field="CHECK" name="SSL" value="false"/>
+    <elementParameter field="CHECK" name="STARTTLS" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="IMPORTANCE" value="Normal"/>
+    <elementParameter field="CHECK" name="NEED_AUTH" value="false"/>
+    <elementParameter field="TEXT" name="AUTH_USERNAME" show="false" value="&quot;username&quot;"/>
+    <elementParameter field="PASSWORD" name="AUTH_PASSWORD" show="false" value="PoLvNyVG2XWndNDdLn696A=="/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="TEXT_SUBTYPE" value="plain"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="SET_LOCALHOST" value="false"/>
+    <elementParameter field="TEXT" name="LOCALHOST" show="false" value="&quot;localhost&quot;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tSendMail_1">
+      <column defaultValue="" key="false" length="0" name="moment" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="20" name="pid" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="20" name="root_pid" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="20" name="father_pid" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="50" name="project" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="job" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="50" name="context" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="3" name="priority" nullable="true" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="type" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="origin" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="message" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="3" name="code" nullable="true" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tGreenplumConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="32" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tGreenplumConnection_1"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_rdVNcBWBEeWXoKX9uBHPOg"/>
+    <elementParameter field="TEXT" name="HOST" value="context.GPNewDCA_pgsitls_Server"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="GREENPLUM"/>
+    <elementParameter field="TEXT" name="PORT" value="context.GPNewDCA_pgsitls_Port"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.GPNewDCA_pgsitls_Database"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="context.GPNewDCA_pgsitls_Schema"/>
+    <elementParameter field="TEXT" name="USER" value="context.GPNewDCA_pgsitls_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kuev5MwSuVmornyQUUZY261Li9tT3YzjeF3vgCggCb72zw=="/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="SHARED_CONNECTION_NAME" show="false" value=""/>
+    <elementParameter field="CHECK" name="USE_SSL" value="true"/>
+    <elementParameter field="CHECK" name="AUTO_COMMIT" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tGreenplumRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="512" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tGreenplumRow_1"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tGreenplumConnection_1"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;5432&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="PostgreSQL"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="0RMsyjmybrE="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="USE_SSL" show="false" value="true"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;INSERT INTO pgsitls.csdwh_ito_ticket_f&#13;&#10;  select a.csdwh_ito_ticket_f_key as ticket_f_key,&#13;&#10;          coalesce( ( select config_itm.configuration_item_d_key &#13;&#10;                      from  pgsitls.csdwh_ito_configuration_item_d config_itm &#13;&#10;                      where config_itm.dw_updated_by     = 'EDW' &#13;&#10;                        and UPPER (ltrim(rtrim(a.ci_name)))   = config_itm.ci_search_cd &#13;&#10;                        and a.legacy_profit_and_loss_center = config_itm.profit_loss_center_name &#13;&#10;                        and a.legacy_sub_business        = config_itm.legacy_sub_business &#13;&#10;     limit 1&#13;&#10;                      ), 0 )&#13;&#10;                      as configuration_item_d_key,&#13;&#10;          coalesce( ( select  assigned_workgroup_d_key&#13;&#10;                      from  pgsitls.csdwh_ito_assigned_workgroup_d b&#13;&#10;                      where a.assigned_workgroup_name    = b.assigned_workgroup_name&#13;&#10;                        and b.dw_updated_by              = 'EDW' ), 0 ) &#13;&#10;                                                 as assigned_workgroup_d_key,&#13;&#10;         case when strpos(a.task_number,'-')-1 = -1 &#13;&#10;                                 then a.task_number&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9; else substring(a.task_number,strpos(a.task_number,'-')-1)  &#13;&#10;&#9;&#9;  end                                       ticket_id,&#13;&#10;          coalesce( k.calender_dim_key, -300 )     as actual_end_date_key,&#13;&#10;          l.calender_dim_key                     as actual_start_date_key,&#13;&#10;          coalesce( m.calender_dim_key, -300 )     as deadline_date_key,&#13;&#10;          coalesce( h.status_d_key, 0 )            as status_d_key,&#13;&#10;          i.priority_d_key                       as priority_d_key,&#13;&#10;          0                                      as region_d_key,&#13;&#10;          current_date                              as dw_load_date,&#13;&#10;          current_date                              as dw_updated_date,&#13;&#10;          'EDW'                                  as updated_by,&#13;&#10;          coalesce( c.category_d_key, 0 )          as category_d_key,&#13;&#10;          a.actual_dur_hours_decimal             as actual_duration,&#13;&#10;          ( select  csdwh_ito_person_d_key&#13;&#10;              from  pgsitls.csdwh_ito_person_d           open_usr&#13;&#10;              where a.open_person                = open_usr.user_name&#13;&#10;                and open_usr.dw_updated_by       = 'EDW' )&#13;&#10;                                                 as csdwh_ito_person_d_key,&#13;&#10;          substring( a.short_description, 1, 255 ) as description,&#13;&#10;          NULL                                   as closure_code,&#13;&#10;          ( select  csdwh_ito_person_d_key&#13;&#10;              from  pgsitls.csdwh_ito_person_d           assign_usr&#13;&#10;              where a.assign_user                = assign_usr.user_name&#13;&#10;                and assign_usr.dw_updated_by     = 'EDW' )&#13;&#10;                                                 as assigned_person_d_key,&#13;&#10;          substring( a.contact_type, 1, 40 )     as source,&#13;&#10;          n.calender_dim_key                     as est_registration_date_key,&#13;&#10;          g.csdwh_ito_task_d_key                 as csdwh_ito_task_d_key,&#13;&#10;          NULL                                   as problem_type,&#13;&#10;          coalesce( ( select  &#13;&#10;                            config_itm_bus.config_itm_bus_org_d_key&#13;&#10;                      from  pgsitls.csdwh_ito_config_itm_bus_org_d config_itm_bus&#13;&#10;                      where config_itm_bus.dw_updated_by = 'EDW'&#13;&#10;                        and UPPER (ltrim(rtrim(a.ci_name)))                    = config_itm_bus.ci_search_cd&#13;&#10;                        and a.p_l_nm                     = config_itm_bus.profit_loss_center_name&#13;&#10;                        and a.legacy_sub_business        = config_itm_bus.legacy_sub_business  &#13;&#10;                      order by config_itm_bus_org_d_key desc  limit 1 ), 0 )&#13;&#10;                                                 as config_itm_bus_org_d_key,&#13;&#10;          a.est_actual_end_datetime              as est_actual_end_date,&#13;&#10;          a.est_actual_start_datetime            as est_actual_start_date,&#13;&#10;          a.est_deadline_datetime                as est_deadline_date,&#13;&#10;          a.est_registration_datetime            as est_registration_datetime,&#13;&#10;substring( a.closure_sub_classification, 1, 250 ) as closure_sub_classification,&#13;&#10;          substring( a.closure_classification, 1, 250 ) as closure_classification,&#13;&#10;          NULL                                   AS solution,&#13;&#10;          substring( a.preventive_action, 1, 250 ) as preventive_action,         &#13;&#10;          substring( a.resolvable_at_l1, 1, 20 ) as resolvable_at_l1,&#13;&#10;          substring( a.open_ci, 1, 40 )          as open_ci,&#13;&#10;&#13;&#10;         a.exception_dur_hours_dec              as exception_dur_hours_dec,&#13;&#10;          ( select  csdwh_ito_person_d_key&#13;&#10;              from  pgsitls.csdwh_ito_person_d           creator_usr&#13;&#10;              where a.creator_person             = creator_usr.user_name&#13;&#10;                and creator_usr.dw_updated_by    = 'EDW' )&#13;&#10;                                                 as creator_person_d_key,&#13;&#10;          substring( a.escalated, 1, 10 )        as escalated,&#13;&#10;          null                                   as project_type,&#13;&#10;          substring( a.executive_summary, 1, 255 ) as executive_summary,&#13;&#10;         substring( s.HAS_BREACHED, 1, 40 )     as made_sla,&#13;&#10;&#9;&#9; a.module_name&#9;&#9;&#9;&#9;&#9;&#9;&#9;as module_name,&#13;&#10;&#9;&#9; a.est_resolved_datetime &#9;&#9;&#9;&#9;as est_resolved_datetime,&#13;&#10;         a.est_actual_start_datetime          as est_actual_start_datetime,&#13;&#10;         a.last_update_date                       as last_update_date,&#13;&#10;         coalesce(sb.sub_business_d_key,0)   as sub_business_d_key&#13;&#10;from  pgsitls.csdwh_ito_ticket_f_staging  a&#13;&#10;left join pgsitls.csdwh_ito_category_d   c &#13;&#10;      on  a.category                             = c.category&#13;&#10;      and a.ci_class                             = c.sub_category&#13;&#10;    left join pgsitls.csdwh_ito_priority_d               i &#13;&#10;      on  a.priority                             = i.priority&#13;&#10;    left join pgsitls.csdwh_ito_status_d                 h &#13;&#10;      on  a.status                               = h.status_desc&#13;&#10;    left join pgsitls.csdwh_ito_task_d                   g &#13;&#10;      on  a.task_type                            = g.task_type&#13;&#10;    left join pgsitls.calendar_d                         l &#13;&#10;      on  a.est_actual_start_datetime_lkp        = l.calendar_date&#13;&#10;    left join pgsitls.calendar_d                         m &#13;&#10;      on  a.est_deadline_datetime_lkp            = m.calendar_date&#13;&#10;    left join pgsitls.calendar_d                         n &#13;&#10;      on  a.est_registration_datetime_lkp        = n.calendar_date&#13;&#10;    left join pgsitls.calendar_d                         k &#13;&#10;      on  a.est_actual_end_datetime_lkp          = k.calendar_date&#13;&#10;   left Join pgsitls.csdwh_ito_ticket_f_made_sla        s &#13;&#10;      on  a.task_number                          = s.TASK_NUMBER&#13;&#10;    left Join pgsitls.csdwh_ito_sub_business_d        sb &#13;&#10;      on  a.sub_business_name                    = sb.sub_business_name&quot;"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="PROPAGATE_RECORD_SET" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="RECORD_SET_COLUMN" show="false" value=""/>
+    <elementParameter field="CHECK" name="USE_PREPAREDSTATEMENT" value="false"/>
+    <elementParameter field="TABLE" name="SET_PREPAREDSTATEMENT_PARAMETERS" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" show="false" value="10000"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tGreenplumRow_1"/>
+    <metadata connector="REJECT" name="REJECT">
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tGreenplumClose" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="736" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tGreenplumClose_1"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tGreenplumConnection_1"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tGreenplumRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="288" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tGreenplumRow_2"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tGreenplumConnection_1"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;5432&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="PostgreSQL"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="0RMsyjmybrE="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="USE_SSL" show="false" value="true"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;DELETE FROM  pgsitls.csdwh_ito_ticket_f  WHERE dw_updated_by ='EDW'&quot;"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="PROPAGATE_RECORD_SET" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="RECORD_SET_COLUMN" show="false" value=""/>
+    <elementParameter field="CHECK" name="USE_PREPAREDSTATEMENT" value="false"/>
+    <elementParameter field="TABLE" name="SET_PREPAREDSTATEMENT_PARAMETERS" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" show="false" value="10000"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tGreenplumRow_2"/>
+    <metadata connector="REJECT" name="REJECT">
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <connection connectorName="FLOW" label="row15" lineStyle="0" metaname="tLogCatcher_1" offsetLabelX="0" offsetLabelY="0" source="tLogCatcher_1" target="tSendMail_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="moment"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="pid"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="root_pid"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="father_pid"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="project"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="job"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="context"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="priority"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="type"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="origin"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="message"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="code"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row15"/>
+    <elementParameter field="MEMO" name="FAILURE_INSTRUCTIONS" value=""/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tGreenplumConnection_1" offsetLabelX="0" offsetLabelY="0" source="tGreenplumConnection_1" target="tGreenplumRow_2">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk3"/>
+    <elementParameter field="MEMO" name="FAILURE_INSTRUCTIONS" value=""/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tGreenplumRow_1" offsetLabelX="0" offsetLabelY="0" source="tGreenplumRow_1" target="tGreenplumClose_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk5"/>
+    <elementParameter field="MEMO" name="FAILURE_INSTRUCTIONS" value=""/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tGreenplumRow_2" offsetLabelX="0" offsetLabelY="0" source="tGreenplumRow_2" target="tGreenplumRow_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk4"/>
+    <elementParameter field="MEMO" name="FAILURE_INSTRUCTIONS" value=""/>
+  </connection>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogCatcher_1"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="Error Email notification"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tGreenplumConnection_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tGreenplumRow_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tGreenplumClose_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tGreenplumRow_2"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_1dd242b9-bfa4-4b51-b8fc-4e4b093073ab"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>CxMOxxiCfHpI9mg+4/b7eFtmQq2/kHUm8SfvgTqMGkGiJkdd2B+zGfy5FK/W4Pi8q7GolV/zySKM&#13;
+5DAWk0vs6w==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_1e7bda08-6235-4689-8072-ccfb1fedf999"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>UsrUcD+Ykiamw5HsJwFJ2VMDXVTXPt+m2MeRuYwpNpnsKEMNS48fr5r0sr9HojnT0uwhf0jsBNzr&#13;
+Y3/rEqHTiA==</DigestValue></Reference></SignedInfo><SignatureValue>RjtdtwaYzlDdu4v6A8ydoi4n+a8WUl3M7JJM7m60Aj62saYwmkrn4GRlI6CqDiQj1siDrp62mX2J&#13;
+s34EfiHG1HWzU24Dcq8PiFx8bBC9YUE3qWT4S4W+p9DNjc6/02A2ltlcO5i47xw91I7YZT7CgsCm&#13;
+WoUj3sXZzHzvj2pK8ylG/i5daBk5HM4JwXjNcUGUOSDS4QU+jIEouZCDM61bFsQ5Rf20qDsjcMz8&#13;
+nFgvmv4YBtppPmzzWWkBAuaTtQx6besHJAetQMB44Ym44SNbFySOmEDLohMlPaIHeVaH5FtbPIGA&#13;
+xN4lpOTqHPZXqGqMl0zPRwmhDlIR9xPdpcMXig==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_1e7bda08-6235-4689-8072-ccfb1fedf999" Target="#_1dd242b9-bfa4-4b51-b8fc-4e4b093073ab"><Timestamp>2020-04-22 08:19:35</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>

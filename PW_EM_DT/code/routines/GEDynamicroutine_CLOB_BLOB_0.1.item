@@ -1,0 +1,159 @@
+package routines;
+
+import java.io.IOException;
+import java.io.Reader;
+import java.io.BufferedReader;
+import java.sql.Clob;
+import java.sql.SQLException;
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.Statement;
+import routines.system.Dynamic;
+import routines.system.DynamicMetadata;
+public class GEDynamicroutine_CLOB_BLOB {
+
+    /**
+     * returnDataAsString: return the Dynamic Data as a String with the expected Delimiter
+     * {talendTypes} String
+     * {Category} User Defined
+     * {param} string("world") input: The string need to be printed.
+     * {example} helloExemple("world") # hello world !.
+     */
+    public static String HAWQ_ADDITIONAL_COLUMNS_DATA(String ADDITIONAL_COLS, String delimiter) {
+    	
+    	if(ADDITIONAL_COLS != null && ADDITIONAL_COLS.equals("") != true)
+    	
+    		return delimiter + "False" + delimiter + "" + delimiter + "" + delimiter  + TalendDate.getDate("yyyy-MM-dd HH:mm:ss");
+    	
+    	else
+    		
+    		return "";
+    }
+    
+    /**
+     * returnDataAsString: return the Dynamic Data as a String with the expected Delimiter
+     * {talendTypes} String
+     * {Category} User Defined
+     * {param} string("world") input: The string need to be printed.
+     * {example} helloExemple("world") # hello world !
+     */
+    public static String returnDataAsString(Dynamic column,Connection conn,String Query, String delimiter) throws IOException {
+    	 
+        StringBuilder sb = new StringBuilder();
+        if (column != null) {
+          for (int i = 0; i < column.getColumnCount(); i++) {
+            if(column.getColumnValue(i)==null) {
+              sb.append("\\N");
+            } else {
+              if(column.getColumnMetadata(i).getType().equals("id_byte[]")){
+            	  byte[] bytearray = (byte[])column.getColumnValue(i);
+            	  for(int bi = 0; bi < bytearray.length; bi++){
+            		  sb.append("\\\\");
+	  					String octalValue = Integer.toOctalString(bytearray[bi]);
+	  					if(octalValue.length() > 3) {
+	  						sb.append(Integer.parseInt(octalValue.substring(8,11))-400);
+	  					} else {
+	  						if(octalValue.length() ==  2) sb.append("0");
+	  						if(octalValue.length() ==  1) sb.append("00");
+	  						sb.append(octalValue);
+	  					}
+            	    }
+                } /*else if(column.getColumnMetadata(i).getType().equals("id_byte")){
+          		sb.append("\\\\");
+          		sb.append(Integer.toOctalString(Byte.parseByte(column.getColumnValue(i).toString())).substring(0,1) );
+          		sb.append(Integer.toOctalString(Byte.parseByte(column.getColumnValue(i).toString())).substring(9,11) );
+              } */
+              else if("BLOB".equals(column.getColumnMetadata(i).getDbType())|| "CLOB".equals(column.getColumnMetadata(i).getDbType()))
+                {
+            	 ResultSet rset = null;            	  
+            	 Statement stmt = null;
+        		 Reader imstring = null;
+        		 String strng;
+        		 Clob clb;
+        		 try {
+        		       stmt = conn.createStatement();
+        		       rset = stmt.executeQuery(Query);
+                       //Clob clb = (Clob)column.getColumnValue(i);
+                       while (rset.next()){ 
+                    	if(String.valueOf(column.getColumnMetadata(i).getName()) != null)
+                    	 {
+                           clb = rset.getClob(String.valueOf(column.getColumnMetadata(i).getName()));
+                            
+        	             if(clb != null)
+        	                {
+        	    	          imstring = clb.getCharacterStream();
+							  BufferedReader bufferRead = new BufferedReader(imstring);
+        	                  while ((strng=bufferRead .readLine())!=null)
+        	                  //str.append(strng);
+        	                  sb.append(strng);
+        	    	        }
+        	             else
+ 	            	        {
+ 	            		      System.out.println("clob is null in the first loop");
+ 	            		      System.out.println("clob column name is:"+(String.valueOf(column.getColumnMetadata(i).getName())));
+ 	            		      sb.append(String.valueOf(column.getColumnValue(i)).replace("\\","\\\\").replace(delimiter,"\\" + delimiter));
+        	            	 clb = rset.getClob("audit_log");
+        	            	 if(clb != null)
+         	                    {
+         	    	              imstring = clb.getCharacterStream();
+ 							      BufferedReader bufferRead = new BufferedReader(imstring);
+         	                      while ((strng=bufferRead .readLine())!=null)
+         	                      //str.append(strng);
+         	                      sb.append(strng);
+         	    	             }
+        	            	 else
+        	            	    {
+        	            		 System.out.println("clob is null second loop");
+        	            		 sb.append(String.valueOf(column.getColumnValue(i)).replace("\\","\\\\").replace(delimiter,"\\" + delimiter));
+        	            	    }
+        	                 }
+                          }
+                    	else
+                    		sb.append(String.valueOf(column.getColumnValue(i)).replace("\\","\\\\").replace(delimiter,"\\" + delimiter));
+                       }
+        		     }catch (SQLException e) {
+							  // TODO Auto-generated catch block
+							  e.printStackTrace();
+					 }
+        	    }      		        
+                    
+        	 else 
+            	sb.append(String.valueOf(column.getColumnValue(i)).replace("\\","\\\\").replace(delimiter,"\\" + delimiter));
+               }
+            if(i!=column.getColumnCount()-1){
+              sb.append(delimiter);
+            }
+          }
+          return sb.toString().replaceAll("\\\n", "\\\\012").replaceAll("\\u0000","").replaceAll("\\x00", "").replaceAll("\\\r","\\\\015"); 
+          }
+        else 
+         return null;
+
+
+    }
+    
+    public static String returnColumnNames(Dynamic column, String delimiter) throws IOException {
+
+        StringBuilder sb = new StringBuilder();
+        if (column != null) {     
+        	for (int i = 0; i < column.getColumnCount(); i++) {
+			DynamicMetadata metadata = column.getColumnMetadata(i);
+        	
+        	  sb.append(String.valueOf(metadata.getName()));
+        	  sb.append(" ");
+        	  sb.append(String.valueOf(metadata.getType()));
+        	
+        	if (i != (column.getColumnCount() - 1)) 
+        	  sb.append(delimiter);
+        	}
+          return sb.toString().replace("\\","\\\\").replaceAll("\\\n", "").replaceAll("null","")
+          	.replaceAll("\\u0000","").replaceAll("\\x00", "").replaceAll("\\\r","");
+        }
+        else 
+         return null;
+    }
+    }
+
+
+
+
